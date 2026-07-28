@@ -2,7 +2,7 @@
 
 # many-ppt-skills
 
-**Every AI slide-deck skill worth knowing, on one page — with a benchmark instead of a star count.**
+**Every AI slide-deck skill worth knowing, gathered and compared on one page — so you can pick the right one and get on with it.**
 
 [English](README.md) · [简体中文](README.zh-CN.md)
 
@@ -19,21 +19,21 @@ turn a document into a deck that does not look machine-made. There are now 30+ s
 projects and four of them have over 20,000 stars each.
 
 Every ranking of them is a re-sort of those star counts. Stars measure how well an author
-tweets. They do not tell you whether the deck will invent your revenue figures.
+tweets. They do not tell you which one handles your code blocks, or whether the CFO will
+be able to edit slide 12.
 
-So this repo is two things:
+This repo exists to answer that in one page:
 
-1. **A registry** — every skill, both routes, with live stats and an honest read on what
-   each is actually for. Regenerated from [`data/skills.json`](data/skills.json), so the
-   numbers cannot quietly rot.
-2. **A benchmark** — [the same three materials through every skill](benchmark/), scored
-   against [a published rubric](benchmark/rubric.md), screenshots attached. Two of the
-   seven dimensions are *gating*: a deck that fabricates a number cannot outrank an honest
-   one no matter how good it looks.
+1. **Everything gathered** — every skill worth knowing, both routes, with live stats.
+   Regenerated from [`data/skills.json`](data/skills.json), so the numbers cannot quietly
+   rot.
+2. **Compared on what actually decides it** — the [route question](#start-here-which-route-are-you-on)
+   first, then what each one is genuinely for. Facts you can check, not scores I made up.
+3. **[Eight principles](principles/)** distilled from reading these projects' source — the
+   patterns 30 teams converged on independently, which is the closest thing this field has
+   to evidence.
 
-Plus [**eight principles**](principles/) distilled from reading these projects' source —
-the patterns 30 teams converged on independently, which is the closest thing this field
-has to evidence.
+Pick one, install it, move on. That is the whole intent.
 
 ---
 
@@ -151,7 +151,25 @@ essentially every scenario.
 
 ---
 
-## The benchmark
+## The benchmark — parked
+
+An earlier plan was to score every skill against a published rubric. The harness exists and
+works: three [corpora](benchmark/corpus/), a [seven-dimension rubric](benchmark/rubric.md),
+mechanical fidelity and chart checks, and blind two-judge scoring.
+
+It is **parked**, and the reason is arithmetic. One PPTX-route deck costs roughly $10 of
+agent time to generate and did not converge at that. A single pass across Tier S runs to a
+few hundred dollars — and the rubric itself says scores mean nothing below double-digit run
+counts. That is months and real money before the first defensible ranking, which is the
+wrong thing for this repo to be spending itself on. **Use the tables above to choose; they
+are facts, not scores.**
+
+What came out of the attempt is worth more than the scores would have been — the
+measurement tools, and one finding that is now
+[principle 7's evidence](principles/07-render-and-look.md).
+
+<details>
+<summary>The one run that was completed</summary>
 
 <!-- BEGIN:SCORECARD -->
 | Skill | Mean | Visual | Type | Density | Data | Content | Deliver | Effort | Runs |
@@ -161,67 +179,10 @@ essentially every scenario.
 <sub>1 run(s) so far — far too few to rank anything. Scores are provisional and every run discloses its conflicts. ⚠️ = a run gated to zero on data or content fidelity.</sub>
 <!-- END:SCORECARD -->
 
-→ [**Protocol, corpus and rubric**](benchmark/) · [run-01 write-up](benchmark/results/run-01/README.md)
+n=1, non-blind originally, and [corrected downward twice](benchmark/results/run-01/README.md#corrections)
+once measured properly. Not a ranking. → [Harness, corpus and rubric](benchmark/)
 
-**First run is in** — [frontend-slides × quarterly-review](benchmark/results/run-01/README.md),
-25/35, with the deck, all 12 screenshots and the scoring evidence committed so you can
-re-score it yourself.
-
-The finding worth the whole exercise is on slide 4. Its bar chart carries arithmetically
-perfect markup — `36.1 → height:76.5%` up to `47.2 → height:100%`, a genuine zero baseline,
-with a source comment saying exactly that. Every bar then renders at **exactly 288px**,
-because those percentages resolve against a flex column of indefinite height. The values
-span 1.31×; the pixels span 1.0000×.
-
-The skill did the data work correctly and the CSS threw it away silently. Numeric fidelity
-on that slide is 100%, so [`check_fidelity.py`](benchmark/runner/check_fidelity.py) passes
-it. Reading the source finds nothing, because the source is *right*. Only rendering the
-deck and measuring the marks catches it — which is
-[principle 7](principles/07-render-and-look.md) arriving as evidence rather than advice,
-and is now its own check:
-[`check_charts.py`](benchmark/runner/check_charts.py).
-
-Two smaller findings: the skill's "zero dependencies" principle is contradicted by its own
-template, which prescribes a remote font link; and the Signal template's selection metadata
-says `density: high` while its design recipe says "don't fill more than half a slide" — so
-following the skill correctly still lands the density wrong on a reading-first brief.
-
-> **One run is not a ranking.** n=1, against known generative variance. The operator who
-> ran the skill also wrote the corpus and the rubric, so the original scoring carried a
-> conflict — which is why the same artifacts were then re-scored by a
-> [blind two-judge panel](benchmark/runner/judge.py) that never saw the skill name or the
-> deck source. The panel disagreed with the operator on two dimensions and **both
-> corrections went against the deck**; they are recorded in `score.json` under
-> `corrections`, with the originals intact in git history.
-
-**Three corpora**, each built to provoke a specific failure:
-
-| Corpus | Stresses | Exposes |
-|---|---|---|
-| [Product launch](benchmark/corpus/01-product-launch.md) | Hero moments, low density | Generic templates, timid color, bullet-walls |
-| [Quarterly review](benchmark/corpus/02-quarterly-review.md) | Tables, charts, action titles | **Fabricated figures**, truncated tables |
-| [Tech talk](benchmark/corpus/03-tech-talk.md) | Code, diagrams, progressive build | Code-as-image, destroyed indentation |
-
-**Seven dimensions**, 0–5, max 35. Two of them — data fidelity and content fidelity — are
-**gating**: score 0 and the total caps at 17 regardless. A beautiful deck with invented
-financials is not a good deck, it is a liability.
-
-And fidelity is checked mechanically, not by eye:
-
-```bash
-python benchmark/runner/check_fidelity.py \
-  --corpus benchmark/corpus/02-quarterly-review.md \
-  --deck   benchmark/results/run-01/some-skill/02-quarterly-review/
-```
-
-It extracts every numeric token from both sides and diffs them — catching figures that
-went missing and, more importantly, figures that were invented. Exits non-zero on any
-fabrication, so it can gate CI.
-
-**The most useful thing you can contribute is an independent score.** I did the research
-that built this registry, which makes me exactly the wrong person to be the only scorer.
-Runs are blind-scored, but that mitigates bias rather than removing it.
-→ [How to contribute a run](benchmark/README.md#contributing-a-run)
+</details>
 
 ---
 
