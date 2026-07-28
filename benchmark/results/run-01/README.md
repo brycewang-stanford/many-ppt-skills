@@ -2,7 +2,7 @@
 
 **Date:** 2026-07-28 · **Agent:** Claude Code · **Model:** claude-opus-5
 **Skill commit:** [`9906a34`](https://github.com/zarazhangrui/frontend-slides/commit/9906a34d640d2111f724544cbc50f7f130569ae1)
-**Result:** [28.0 / 35](frontend-slides/02-quarterly-review/score.json)
+**Result:** [25.0 / 35](frontend-slides/02-quarterly-review/score.json) — *corrected down from 28.0; see [Corrections](#corrections)*
 
 > **Read this as harness validation, not as a verdict on the skill.** The operator who
 > executed the skill also wrote the corpus and the rubric, and then scored the output.
@@ -10,6 +10,32 @@
 > `operator_conflict: true` for exactly that reason. n=1 against known generative
 > variance. **An independent re-score of this pairing from the committed artifacts is the
 > most valuable contribution anyone can make to this repo.**
+
+---
+
+## Corrections
+
+The original scoring was done by the operator who generated the deck. The same artifacts
+were later re-scored by a [blind two-judge panel](../../runner/judge.py) — screenshots
+only, no skill name, no deck source — and measured with
+[`check_charts.py`](../../runner/check_charts.py). Two claims did not survive. Both
+corrections went **against** the deck, and the originals are intact in git history at
+`27a8244`.
+
+| Dimension | Was | Now | Why |
+|---|---:|---:|---|
+| Visual distinctiveness | 4 | **3** | The original said "No automatic deductions apply". A decorative gold rule sits under the section label on every interior slide, carrying no information — the first automatic deduction this dimension lists, and the same accent line frontend-slides' own docs ban by name. Both blind judges found it independently and cited slides. |
+| Data fidelity | 5 | **3** | The original said slide 4 "plots all eight supplied quarterly values from a genuine zero baseline". True of the markup, false of the pixels: all eight bars render at exactly 288px. The anchor for 5 requires that charts plot the actual supplied values. |
+
+The chart is the more interesting failure. Declared heights are perfect —
+`36.1 → 76.5%` through `47.2 → 100%` — and the percentages then resolve against a flex
+column of indefinite height, so CSS drops them. Values span 1.31×, rendered heights span
+1.0000×. `check_fidelity.py` scores that slide 100% because every number is present, and
+reading the source finds nothing wrong because the source *is* right.
+
+Note what this says about the original scoring: the claim cited `slide-04.png`, a
+screenshot, and described something the screenshot does not show. Looking is not the same
+as measuring, and an operator scoring their own output does both less carefully.
 
 ---
 

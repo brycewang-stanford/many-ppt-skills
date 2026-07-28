@@ -156,7 +156,7 @@ essentially every scenario.
 <!-- BEGIN:SCORECARD -->
 | Skill | Mean | Visual | Type | Density | Data | Content | Deliver | Effort | Runs |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| **frontend-slides** | **28.0**/35 | 4.0 | 4.0 | 3.0 | 5.0 | 5.0 | 3.0 | 4.0 | 1 |
+| **frontend-slides** | **25.0**/35 | 3.0 | 4.0 | 3.0 | 3.0 | 5.0 | 3.0 | 4.0 | 1 |
 
 <sub>1 run(s) so far — far too few to rank anything. Scores are provisional and every run discloses its conflicts. ⚠️ = a run gated to zero on data or content fidelity.</sub>
 <!-- END:SCORECARD -->
@@ -164,18 +164,35 @@ essentially every scenario.
 → [**Protocol, corpus and rubric**](benchmark/) · [run-01 write-up](benchmark/results/run-01/README.md)
 
 **First run is in** — [frontend-slides × quarterly-review](benchmark/results/run-01/README.md),
-28/35, with the deck, all 12 screenshots and the scoring evidence committed so you can
-re-score it yourself. It found two things worth knowing: the skill's "zero dependencies"
-principle is contradicted by its own template, which prescribes a remote font link; and the
-Signal template's selection metadata says `density: high` while its design recipe says
-"don't fill more than half a slide" — so following the skill correctly still lands the
-density wrong on a reading-first brief.
+25/35, with the deck, all 12 screenshots and the scoring evidence committed so you can
+re-score it yourself.
 
-It also broke my own harness twice, which is recorded in the write-up rather than hidden.
+The finding worth the whole exercise is on slide 4. Its bar chart carries arithmetically
+perfect markup — `36.1 → height:76.5%` up to `47.2 → height:100%`, a genuine zero baseline,
+with a source comment saying exactly that. Every bar then renders at **exactly 288px**,
+because those percentages resolve against a flex column of indefinite height. The values
+span 1.31×; the pixels span 1.0000×.
 
-> **One run is not a ranking.** The operator who ran the skill also wrote the corpus and
-> the rubric and did the scoring. That conflict is disclosed in the score file. Treat this
-> as evidence the harness works, not as a verdict on the skill.
+The skill did the data work correctly and the CSS threw it away silently. Numeric fidelity
+on that slide is 100%, so [`check_fidelity.py`](benchmark/runner/check_fidelity.py) passes
+it. Reading the source finds nothing, because the source is *right*. Only rendering the
+deck and measuring the marks catches it — which is
+[principle 7](principles/07-render-and-look.md) arriving as evidence rather than advice,
+and is now its own check:
+[`check_charts.py`](benchmark/runner/check_charts.py).
+
+Two smaller findings: the skill's "zero dependencies" principle is contradicted by its own
+template, which prescribes a remote font link; and the Signal template's selection metadata
+says `density: high` while its design recipe says "don't fill more than half a slide" — so
+following the skill correctly still lands the density wrong on a reading-first brief.
+
+> **One run is not a ranking.** n=1, against known generative variance. The operator who
+> ran the skill also wrote the corpus and the rubric, so the original scoring carried a
+> conflict — which is why the same artifacts were then re-scored by a
+> [blind two-judge panel](benchmark/runner/judge.py) that never saw the skill name or the
+> deck source. The panel disagreed with the operator on two dimensions and **both
+> corrections went against the deck**; they are recorded in `score.json` under
+> `corrections`, with the originals intact in git history.
 
 **Three corpora**, each built to provoke a specific failure:
 
