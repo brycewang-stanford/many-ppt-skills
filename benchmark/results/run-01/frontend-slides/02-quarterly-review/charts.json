@@ -1,0 +1,46 @@
+{
+  "deck": "benchmark/results/run-01/frontend-slides/02-quarterly-review/deck.html",
+  "candidate_groups": 2,
+  "broken_charts": 1,
+  "findings": [
+    {
+      "container": "div.reveal chart",
+      "mark_count": 8,
+      "values": [
+        36.1,
+        37.8,
+        39.9,
+        42,
+        41.2,
+        43.5,
+        45.1,
+        47.2
+      ],
+      "value_spread": 1.3075,
+      "rendered_axis": "height",
+      "rendered_spread": 1.0,
+      "rendered_sizes": [
+        288,
+        288,
+        288,
+        288,
+        288,
+        288,
+        288,
+        288
+      ],
+      "declared": [
+        "76.5%",
+        "80.1%",
+        "84.5%",
+        "89%",
+        "87.3%",
+        "92.2%",
+        "95.6%",
+        "100%"
+      ],
+      "verdict": "8 marks span 1.31x in value but 1.0000x in rendered height \u2014 the encoding is not reaching the pixels"
+    }
+  ],
+  "scope": "grouped bar/column marks only; line, pie and axis truncation are not checked"
+}
