@@ -1,6 +1,6 @@
 {
-  "corpus": "/Users/brycewang/Documents/GitHub/many-ppt-skills/benchmark/corpus/02-quarterly-review.md",
-  "deck": "/Users/brycewang/Documents/GitHub/many-ppt-skills/benchmark/results/run-01/frontend-slides/02-quarterly-review/deck.html",
+  "corpus": "benchmark/corpus/02-quarterly-review.md",
+  "deck": "benchmark/results/run-01/frontend-slides/02-quarterly-review/deck.html",
   "coverage_pct": 100.0,
   "kept": [
     "-110bps",

@@ -33,3 +33,5 @@ benchmark/.cache/
 # Blind-scoring sets are derived from committed artifacts, so there is nothing
 # to preserve — and KEY.json un-blinds a run, so it must never reach a PR diff.
 benchmark/results/**/_blind/
+
+社交媒体/

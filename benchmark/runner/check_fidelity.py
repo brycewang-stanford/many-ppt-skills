@@ -127,6 +127,17 @@ def content_only(text: str) -> str:
     return text[idx:] if idx != -1 else text
 
 
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+
+def rel_to_repo(p: Path) -> str:
+    """Repo-relative path, or the bare name if the target lives outside."""
+    try:
+        return str(p.resolve().relative_to(REPO_ROOT))
+    except ValueError:
+        return p.name
+
+
 def read_any(target: Path) -> tuple[str, list[Path]]:
     """Concatenate text from a file, or from every supported file in a directory."""
     if not target.exists():
@@ -252,8 +263,11 @@ def main() -> int:
         args.json.write_text(
             json.dumps(
                 {
-                    "corpus": str(args.corpus),
-                    "deck": str(args.deck),
+                    # Repo-relative where possible: these reports are committed,
+                    # and an absolute path leaks the operator's home directory
+                    # into a public artifact for no benefit.
+                    "corpus": rel_to_repo(args.corpus),
+                    "deck": rel_to_repo(args.deck),
                     "coverage_pct": round(coverage, 1),
                     "kept": kept,
                     "missing": missing,

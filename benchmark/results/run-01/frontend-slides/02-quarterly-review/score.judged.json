@@ -1,0 +1,89 @@
+{
+  "skill": "frontend-slides",
+  "corpus": "02-quarterly-review",
+  "run_id": "run-01",
+  "blind": true,
+  "scored_by": [
+    "llm-judge:sonnet",
+    "llm-judge:sonnet"
+  ],
+  "operator_conflict": false,
+  "self_reported": false,
+  "judge_count": 2,
+  "judge_prompt_sha256": "6d3cdfb05cfed872",
+  "rubric_sha256": "eb6d4dd2a71cab21",
+  "scores": {
+    "visual_distinctiveness": 3,
+    "typographic_craft": 4,
+    "hierarchy_density": 4,
+    "content_fidelity": 5,
+    "deliverable_integrity": 3
+  },
+  "data_fidelity": {
+    "score": 5,
+    "source": "check_fidelity.py (mechanical)",
+    "coverage_pct": 100.0,
+    "fabricated": {}
+  },
+  "effort_to_acceptable": {
+    "score": null,
+    "reason": "Not measurable. This dimension counts correction turns; the automated harness runs single-shot and never requests a revision, so any score here would be an artifact of the method."
+  },
+  "measured": {
+    "file_count": 1,
+    "html_file_count": 1,
+    "total_kb": 32.0,
+    "remote_dependency_count": 3,
+    "remote_hosts": [
+      "fonts.googleapis.com",
+      "fonts.gstatic.com"
+    ],
+    "self_contained": false,
+    "note": "remote_dependency_count > 0 means the deck breaks offline or when the CDN moves \u2014 rubric 6 anchor 3."
+  },
+  "disagreements": [],
+  "evidence": {
+    "visual_distinctiveness": [
+      "The deck runs a committed two-tone system (dark navy alternating with cream across slides) plus a gold accent, and deploys a recurring italic-gold word in every action title (e.g., '$47.2M' in slide-02, 'customs declined 15.8%' in slide-03, 'not yet profitable' in slide-07). This clear point of view and consistent execution warrants a base of 4. However, the small gold horizontal rule that appears under every section label (visible below 'THE QUARTER IN ONE LINE' on slide-02, 'SEGMENT DETAIL' on slide-03, 'GROSS MARGIN BRIDGE' on slide-05, and every other interior slide) is a decorative accent line carrying no information, triggering the automatic \u22121 deduction per the rubric. No other deductions apply: backgrounds alternate (not flat uniform), palette is navy-dominant (not timid), no ornamental icons, no workflow metadata. Base 4 \u2212 1 = 3.",
+      "Committed navy/cream alternating palette with warm gold accent earns a base 4: atmospheric variation across slides (cream on odd, navy on even), italic-gold emphasis on key numbers is a recurring visual motif (slide-02, slide-06, slide-12), closing slide uses faint grid overlay for depth. Automatic \u22121 applied: a small gold dash appears below every section label throughout the deck (under 'THE QUARTER IN ONE LINE' slide-02, 'SEGMENT DETAIL' slide-03, 'EIGHT QUARTERS, $M' slide-04, and so on through all 12 slides) \u2014 decorative accent lines carrying no information. A second drag: the bar chart on slide-04 renders all eight bars at essentially identical heights despite spanning 36.1\u201347.2, undermining the visual argument."
+    ],
+    "typographic_craft": [
+      "The deck pairs tracked all-caps / small-caps labels ('NORTHWIND LOGISTICS', 'SEGMENT DETAIL', 'GROSS MARGIN BRIDGE') against a high-contrast editorial serif with a well-cut italic for display and body copy \u2014 a genuine two-face pairing. Weight contrast is strong: heavy display serif on headlines, regular weight for body annotations. Table columns on slide-03 and slide-08 carry right-aligned numerals. Hierarchy reads at a glance from across a room on every slide. No overflow, clipping, or container collision is visible anywhere. What prevents a 5: tabular figure usage is unverifiable at screenshot resolution, and the display scale is not optimized across slides of varying semantic weight (e.g., slide-11's two large figures receive the same treatment as slide-07's three, despite different informational density).",
+      "A high-quality serif face with real weight and style contrast is used throughout: tracked all-caps for category labels, heavy roman for action titles, italic gold for emphasis, display-size roman for KPI figures \u2014 four genuine levels of hierarchy legible at a glance (visible in slides 02, 06, 08). No default system stack. No overflow or clipping on any slide. What prevented 5: the headline on slide-02 runs approximately 90+ characters across nearly full width, well outside the 45\u201375 optimal measure. Minor register inconsistency: sub-labels on slide-07 and slide-05 render at the same apparent weight/size, collapsing two hierarchy levels."
+    ],
+    "hierarchy_density": [
+      "Corpus 02 mandates action titles and reading-first density for an executive committee that will circulate the deck. Action-title check on slides 2\u201311 (the substantive content slides): all 10 assert a finding \u2014 slide-02 'Revenue reached $47.2M, up 12.4% \u2014 but gross margin compressed 180 bps', slide-06 'Top-10 share fell to 38% \u2014 a fourth consecutive quarter of decline', slide-09 'Fuel exposure is unhedged beyond Q1 FY27', etc. 100% asserting; no cap at 3 applies. Grouping is visual throughout (stat cards, two-column bridge panels, ruled tables). What prevents a 5: slide-07 carries only three stat figures and a one-clause subtitle with no explanatory body text, and slide-11 has just two metrics and no supporting context \u2014 both would struggle to stand alone without a presenter, drifting from the 'must stand alone when circulated' requirement in the brief.",
+      "Action-title check: 11/11 content slides assert a finding (100%, well above the 70% cap threshold). Examples: slide-03 'Growth came from brokerage and last-mile; customs declined 15.8%'; slide-09 'Fuel exposure is unhedged beyond Q1 FY27'. However, the corpus specifies reading-first density for executives who will circulate the deck standalone \u2014 and several slides are noticeably sparse for that brief: slide-07 (Last-mile) is three KPI cards with one sub-label each and no prose; slide-11 (Outlook) is two numbers; slide-09 (Risks) gives each risk 1\u20132 sentences. The KPI-card format, while visually clean, systematically trades away the prose that standalone circulation demands. Slides 03 and 08 with full tables hit the correct density; the pattern is inconsistent."
+    ],
+    "content_fidelity": [
+      "Every substantive point from the corpus is represented and traceable: headline figures ($47.2M / +12.4% / 180 bps) on slide-02; all four segment rows including the Customs \u221215.8% decline on slide-03; all eight quarterly revenue values (36.1 through 47.2) on slide-04; the full margin bridge (31.2%\u219229.4%, \u2212110 bps fuel at 14% per mile, \u221270 bps contract labor at 22% above plan, 8.1% operating margin) on slide-05; all customer metrics (44%\u219238%, 31 vs. 18 logos, 4.2%/2.1% churn) on slide-06; last-mile detail (23.4%, 16.7% share up from 15.2%, \u22123.4% improving from \u22127.9%, Q2 FY27 break-even) on slide-07; complete headcount table on slide-08; all three risks with specifics ($1.8M fuel cost, 340k sq ft leases, structural customs decline) on slide-09; all three asks ($2.4M capex/15-month payback, hedging to 60%/Q4 FY27, 8 engineering roles) on slide-10; Q4 guidance ($48.5M\u2013$50.0M / 60\u201390 bps) on slide-11. No invented figure, claim, or recommendation detected anywhere.",
+      "Every corpus figure verified against slides. Segment table (slide-03): all five rows exact \u2014 Freight $24.1M/$20.8M/+15.9%, Warehousing $13.6M/$12.9M/+5.4%, Last-mile $7.9M/$6.4M/+23.4%, Customs $1.6M/$1.9M/\u221215.8%, Total $47.2M/$42.0M/+12.4%. Eight-quarter trend (slide-04): 36.1, 37.8, 39.9, 42.0, 41.2, 43.5, 45.1, 47.2 all labeled correctly. Margin bridge (slide-05): fuel \u2212110 bps, contract labor \u221270 bps, gross margin 31.2%\u219229.4%, operating margin 8.1%, SG&A 3.2%. Customer metrics (slide-06): top-10 share 44%\u219238%, 31 logos vs 18, churn 4.2%/2.1%. Last-mile (slide-07): \u22123.4% from \u22127.9%, Q2 FY27. Headcount (slide-08): all four rows exact. Asks (slide-10): $2.4M/15-month, 60%, 8 roles. Outlook (slide-11): $48.5M\u2013$50.0M, 60\u201390 bps. No invented content found."
+    ],
+    "deliverable_integrity": [
+      "measured.json records self_contained: false, remote_dependency_count: 3, remote_hosts: ['fonts.googleapis.com', 'fonts.gstatic.com'], and explicitly notes 'remote_dependency_count > 0 means the deck breaks offline or when the CDN moves \u2014 rubric 6 anchor 3.' The HTML route anchor 3 reads: 'Works but has external dependencies \u2014 a CDN link, a remote font, a fetch \u2014 that will break offline or when the CDN moves.' The measured facts map exactly to this anchor. The deck is a single 32 KB HTML file that functions with internet access but will degrade (likely falling back to a system serif) offline or if Google Fonts moves.",
+      "From measured.json: HTML route, self_contained=false, remote_dependency_count=3, remote hosts fonts.googleapis.com and fonts.gstatic.com. The measured data's own note states 'remote_dependency_count > 0 means the deck breaks offline or when the CDN moves \u2014 rubric 6 anchor 3.' This maps exactly to the rubric's anchor 3: 'Works but has external dependencies \u2014 a CDN link, a remote font, a fetch \u2014 that will break offline or when the CDN moves.' The Google Fonts CDN is required for the serif typeface central to the deck's typographic identity; failure offline is not cosmetic."
+    ]
+  },
+  "panel_scores": {
+    "visual_distinctiveness": [
+      3,
+      3
+    ],
+    "typographic_craft": [
+      4,
+      4
+    ],
+    "hierarchy_density": [
+      4,
+      3
+    ],
+    "content_fidelity": [
+      5,
+      5
+    ],
+    "deliverable_integrity": [
+      3,
+      3
+    ]
+  }
+}
