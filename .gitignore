@@ -23,8 +23,12 @@ package-lock.json
 # repo and must NOT be ignored — anyone should be able to re-score from them.
 # Only genuinely disposable intermediates are excluded here.
 benchmark/results/**/tmp/
-benchmark/results/**/*.log
+benchmark/results/**/workspace/
 benchmark/scratch/
+
+# Shallow clones of the skills under test. Reproducible from run.json, which
+# records the exact commit each run used — and ppt-master alone is 1.3GB.
+benchmark/.cache/
 
 # Blind-scoring sets are derived from committed artifacts, so there is nothing
 # to preserve — and KEY.json un-blinds a run, so it must never reach a PR diff.

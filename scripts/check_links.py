@@ -9,6 +9,7 @@ reason to fail this repo's build.
 from __future__ import annotations
 
 import re
+import subprocess
 import sys
 from pathlib import Path
 from urllib.parse import unquote
@@ -17,7 +18,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 LINK = re.compile(r"\[[^\]]*\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
 SKIP_PREFIXES = ("http://", "https://", "mailto:", "#", "data:")
-SKIP_DIRS = {".git", "node_modules", "__pycache__", ".venv"}
+SKIP_DIRS = {".git", "node_modules", "__pycache__", ".venv", ".cache"}
 
 
 def anchors_in(path: Path) -> set[str]:
@@ -34,12 +35,32 @@ def anchors_in(path: Path) -> set[str]:
     return out
 
 
+def markdown_files() -> list[Path]:
+    """Only this repo's own markdown.
+
+    Prefer git's index: benchmark/.cache/ holds shallow clones of the skills
+    under test, and validating other projects' internal links is both noise and
+    none of our business. Falls back to a filesystem walk outside a checkout.
+    """
+    try:
+        out = subprocess.run(
+            ["git", "-C", str(ROOT), "ls-files", "-z", "*.md"],
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+        if out.returncode == 0:
+            tracked = [ROOT / p for p in out.stdout.split("\0") if p]
+            if tracked:
+                return tracked
+    except (FileNotFoundError, subprocess.TimeoutExpired):
+        pass
+
+    return [p for p in ROOT.rglob("*.md") if not any(x in SKIP_DIRS for x in p.parts)]
+
+
 def main() -> int:
-    md_files = [
-        p
-        for p in ROOT.rglob("*.md")
-        if not any(part in SKIP_DIRS for part in p.parts)
-    ]
+    md_files = markdown_files()
 
     broken: list[str] = []
     checked = 0

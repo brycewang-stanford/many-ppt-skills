@@ -1,4 +1,22 @@
 {
   "max_total": 35,
-  "skills": {}
+  "skills": {
+    "frontend-slides": {
+      "runs": 1,
+      "corpora": [
+        "02-quarterly-review"
+      ],
+      "mean_total": 28.0,
+      "gated_runs": 0,
+      "per_dimension": {
+        "visual_distinctiveness": 4.0,
+        "typographic_craft": 4.0,
+        "hierarchy_density": 3.0,
+        "data_fidelity": 5.0,
+        "content_fidelity": 5.0,
+        "deliverable_integrity": 3.0,
+        "effort_to_acceptable": 4.0
+      }
+    }
+  }
 }

@@ -1,3 +1,5 @@
-> **No benchmark runs recorded yet.** The harness, corpus and rubric are
-> complete and reproducible; scores land here as runs are completed.
-> See [the benchmark protocol](../README.md) to contribute a run.
+| Skill | Mean | Visual | Type | Density | Data | Content | Deliver | Effort | Runs |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| **frontend-slides** | **28.0**/35 | 4.0 | 4.0 | 3.0 | 5.0 | 5.0 | 3.0 | 4.0 | 1 |
+
+<sub>⚠️ = at least one run gated to zero on data or content fidelity (fabricated or lost figures). See [rubric.md](../rubric.md).</sub>

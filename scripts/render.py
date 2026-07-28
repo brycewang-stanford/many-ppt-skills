@@ -176,9 +176,72 @@ def render_counts(data: dict, stats: dict, lang: str) -> str:
     )
 
 
+SCORECARD = ROOT / "benchmark" / "results" / "scorecard.json"
+
+DIM_LABELS = [
+    ("visual_distinctiveness", "Visual", "视觉"),
+    ("typographic_craft", "Type", "字体"),
+    ("hierarchy_density", "Density", "密度"),
+    ("data_fidelity", "Data", "数据"),
+    ("content_fidelity", "Content", "内容"),
+    ("deliverable_integrity", "Deliver", "交付"),
+    ("effort_to_acceptable", "Effort", "代价"),
+]
+
+
+def render_scorecard(data: dict, stats: dict, lang: str) -> str:
+    """Benchmark results, or an honest statement that there are none yet.
+
+    Never fabricates a placeholder row — a benchmark that ships with invented
+    numbers refutes its own premise.
+    """
+    card = json.loads(SCORECARD.read_text(encoding="utf-8")) if SCORECARD.exists() else {}
+    skills = card.get("skills", {})
+    max_total = card.get("max_total", 35)
+
+    if not skills:
+        return (
+            "> **No runs recorded yet.** The corpus, rubric and harness are complete and\n"
+            "> reproducible; scores land here as runs complete."
+            if lang == "en"
+            else "> **尚无实测记录。** 语料、评分卡与工具链已完成且可复现，跑分结果会陆续落在这里。"
+        )
+
+    i = 1 if lang == "en" else 2
+    head = ("| Skill | Mean | " if lang == "en" else "| 项目 | 总分 | ") + " | ".join(
+        d[i] for d in DIM_LABELS
+    ) + (" | Runs |" if lang == "en" else " | 次数 |")
+    rows = [head, "|---|---:|" + "---:|" * len(DIM_LABELS) + "---:|"]
+
+    total_runs = 0
+    for skill, a in skills.items():
+        total_runs += a["runs"]
+        cells = " | ".join(str(a["per_dimension"][k]) for k, _, _ in DIM_LABELS)
+        flag = " ⚠️" if a.get("gated_runs") else ""
+        rows.append(
+            f"| **{skill}**{flag} | **{a['mean_total']}**/{max_total} | {cells} | {a['runs']} |"
+        )
+
+    rows.append("")
+    if lang == "en":
+        rows.append(
+            f"<sub>{total_runs} run(s) so far — far too few to rank anything. "
+            "Scores are provisional and every run discloses its conflicts. "
+            "⚠️ = a run gated to zero on data or content fidelity.</sub>"
+        )
+    else:
+        rows.append(
+            f"<sub>目前仅 {total_runs} 次实测 —— 远不足以给任何东西排名。"
+            "分数均为暂定值，每次实测都公开披露其利益冲突。"
+            "⚠️ = 该次实测在数据或内容保真上被一票否决。</sub>"
+        )
+    return "\n".join(rows)
+
+
 BLOCKS = {
     "REGISTRY": render_registry,
     "COUNTS": render_counts,
+    "SCORECARD": render_scorecard,
 }
 
 

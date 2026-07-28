@@ -1,0 +1,71 @@
+{
+  "skill": "frontend-slides",
+  "corpus": "02-quarterly-review",
+  "commit": "9906a34d640d2111f724544cbc50f7f130569ae1",
+  "run_id": "run-01",
+  "agent": "Claude Code",
+  "model": "claude-opus-5",
+  "date": "2026-07-28",
+  "self_reported": false,
+  "operator_conflict": true,
+  "scored_by": ["repo-author"],
+  "blind": false,
+
+  "scores": {
+    "visual_distinctiveness": 4,
+    "typographic_craft": 4,
+    "hierarchy_density": 3,
+    "data_fidelity": 5,
+    "content_fidelity": 5,
+    "deliverable_integrity": 3,
+    "effort_to_acceptable": 4
+  },
+
+  "evidence": {
+    "visual_distinctiveness": "contact-sheet.png — Signal system applied coherently: navy/cream dual surface alternating, single antique-gold accent confined to rules, italic emphasis and numerals, 80px grid texture on dark slides, hairline separation with no shadows or rounded corners. Reads as authored, not generated. Not a 5 because the design is inherited wholesale from bold-template-pack/signal rather than authored for this brief, and the visual idea is applied uniformly rather than developing across the deck. No automatic deductions apply: palette is committed (dominant navy + sharp gold), backgrounds carry texture and alternate surfaces, no ornamental icons, no workflow metadata on any slide.",
+    "typographic_craft": "slide-10.png, slide-04.png — deliberate three-face ladder (Source Serif 4 voice / DM Sans substance / IBM Plex Mono metadata), tabular figures in both tables, mono chrome tracked at 0.14em, consistent scale throughout. Not a 5: body sits at 21px which is the low end for a room; slide-04.png orphans 'FY25' alone on the second line of the action title; the chart's value labels sit in an aligned row rather than tracking each bar top, so they read as a number strip rather than as annotations.",
+    "hierarchy_density": "slide-10.png shows ~55% empty canvas; slides 04, 07, 11 similar. The corpus explicitly specifies reading-first density and states each slide must be comprehensible without a presenter, but the delivered deck is speaker-led in feel. Hierarchy itself is strong and consistent slide to slide, which is better than the anchor-3 description, and the deck is still usable circulated, which is why this is not a 2. Action-title check passes outright: 10 of 10 content slides assert a finding rather than label a topic (100%, well above the 70% floor).",
+    "data_fidelity": "fidelity.json — 56/56 figures reproduced, 0 fabricated, 0 missing. Both tables complete including total rows (slide-03.png segment table 5 rows, slide-08.png headcount table 5 rows). slide-04.png plots all eight supplied quarterly values from a genuine zero baseline with every value printed, so the chart is checkable against source rather than decorative. One sign-convention difference reviewed by hand and cleared: the deck writes 'customs declined 15.8%' in prose and '-15.8%' in the table; the corpus carries only the negative form. Same fact, correct wording.",
+    "content_fidelity": "contact-sheet.png — all ten corpus sections represented (headline, segment detail, eight-quarter trend, margin bridge, concentration, last-mile, headcount, risks, asks, Q4 outlook). Nothing invented. Emphasis is preserved: the margin compression is carried in the headline alongside the revenue growth rather than buried. Noted but not penalised per rubric: the deck does not carry forward the corpus's top-level 'all content is fictional' marker.",
+    "deliverable_integrity": "deck.html lines 10-13 load three font families from fonts.googleapis.com and fonts.gstatic.com — 3 remote runtime dependencies. Offline, or if the CDN moves, typography falls back to Georgia and system stacks, which is precisely what the skill's own anti-slop rules forbid. This maps exactly to anchor 3: 'works but has external dependencies that will break offline or when the CDN moves.' Everything else is clean: one 36 KB file, no external scripts, opens with no server, keyboard and click navigation work, fixed stage scales and letterboxes correctly, print CSS emits one 1920x1080 page per slide.",
+    "effort_to_acceptable": "One correction turn. First output collided text on slide 10: '.list li' was 'display: grid; grid-template-columns: 1.2em 1fr', which promoted every inline <em> to its own grid item, wrapping '$2.4M' on top of 'capex' and '60%' on top of 'of projected volume'. Fixed by switching the bullet marker to absolute positioning. Answering the skill's four Phase-1 interview questions is not counted as a correction turn per the protocol — those answers came from the corpus brief."
+  },
+
+  "metrics": {
+    "correction_turns": 1,
+    "output_size_kb": 36,
+    "external_runtime_dependencies": 3,
+    "slides_delivered": 12,
+    "slides_requested": "12-15",
+    "files_delivered": 1
+  },
+
+  "findings": [
+    {
+      "id": "zero-dependency-claim-vs-font-cdn",
+      "severity": "notable",
+      "summary": "The skill's Core Principle #1 is 'Zero Dependencies - single HTML files with inline CSS/JS', but its own html-template.md line 16 prescribes a remote font stylesheet link, and signal/design.md documents a Google Fonts preconnect pattern. Every deck produced this way carries a network dependency for its typography. The two instructions conflict, and the conflict is inherited by the output.",
+      "affects": "deliverable_integrity"
+    },
+    {
+      "id": "signal-density-metadata-contradiction",
+      "severity": "notable",
+      "summary": "bold-template-pack/selection-index.json labels the Signal template density 'high', while templates/signal/design.md states 'Density philosophy: medium-low and asymmetric' and 'Don't fill more than half a typical slide with content'. Selecting Signal for an explicitly reading-first brief on the strength of the index metadata, then generating from design.md, yields a sparse speaker-led deck for a dense reading-first request. The selection metadata and the design recipe disagree.",
+      "affects": "hierarchy_density"
+    },
+    {
+      "id": "em-inside-grid-list-item",
+      "severity": "defect",
+      "summary": "An em-dash bullet implemented as a two-column CSS grid on the <li> promotes every inline <em> to a grid item, producing overlapping text. Caught only in a rendered screenshot; the source reads as correct. Concrete instance of why principle 07 (render it and look at it) is load-bearing.",
+      "affects": "typographic_craft"
+    },
+    {
+      "id": "zero-baseline-chart-on-compressed-range",
+      "severity": "minor",
+      "summary": "The eight-quarter trend spans 36.1 to 47.2 on a zero baseline, so all eight bars look nearly identical and the chart communicates little beyond the printed values. Honest but weak as a visualization. A truncated axis would read better but would need an explicit break marker to stay honest.",
+      "affects": "visual_distinctiveness"
+    }
+  ],
+
+  "notes": "FIRST RUN — treat as harness validation more than as a verdict. Three caveats, all material: (1) the operator who executed the skill also wrote the rubric and the corpus, and also scored the result, so this is not an independent measurement; operator_conflict is set for that reason. (2) The run was not blind — there was only one entry, so anonymize.py could not do anything useful. (3) n=1 against known generative variance; a second run of the same pairing could land several points away. The single most valuable contribution anyone can make to this repo is an independent re-score of this exact pairing from the committed artifacts. This run did surface two real defects in the harness itself, both now fixed: check_fidelity.py was counting figures from the corpus operator brief (which no deck should reproduce) and was reporting sign-convention differences as fabrication."
+}

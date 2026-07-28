@@ -153,11 +153,29 @@ essentially every scenario.
 
 ## The benchmark
 
-Status: **corpus, rubric and harness are complete and reproducible. No runs recorded yet.**
-It will say exactly that until real runs land — a benchmark that ships with invented
-numbers refutes itself.
+<!-- BEGIN:SCORECARD -->
+| Skill | Mean | Visual | Type | Density | Data | Content | Deliver | Effort | Runs |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| **frontend-slides** | **28.0**/35 | 4.0 | 4.0 | 3.0 | 5.0 | 5.0 | 3.0 | 4.0 | 1 |
 
-→ [**Protocol, corpus and rubric**](benchmark/) · [current scorecard](benchmark/results/scorecard.md)
+<sub>1 run(s) so far — far too few to rank anything. Scores are provisional and every run discloses its conflicts. ⚠️ = a run gated to zero on data or content fidelity.</sub>
+<!-- END:SCORECARD -->
+
+→ [**Protocol, corpus and rubric**](benchmark/) · [run-01 write-up](benchmark/results/run-01/README.md)
+
+**First run is in** — [frontend-slides × quarterly-review](benchmark/results/run-01/README.md),
+28/35, with the deck, all 12 screenshots and the scoring evidence committed so you can
+re-score it yourself. It found two things worth knowing: the skill's "zero dependencies"
+principle is contradicted by its own template, which prescribes a remote font link; and the
+Signal template's selection metadata says `density: high` while its design recipe says
+"don't fill more than half a slide" — so following the skill correctly still lands the
+density wrong on a reading-first brief.
+
+It also broke my own harness twice, which is recorded in the write-up rather than hidden.
+
+> **One run is not a ranking.** The operator who ran the skill also wrote the corpus and
+> the rubric and did the scoring. That conflict is disclosed in the score file. Treat this
+> as evidence the harness works, not as a verdict on the skill.
 
 **Three corpora**, each built to provoke a specific failure:
 

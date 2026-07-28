@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northwind Logistics · Q3 FY26 Business Review</title>
+
+<!-- Fonts: Source Serif 4 (voice) + DM Sans (substance) + IBM Plex Mono (metadata).
+     Per frontend-slides html-template.md: use Fontshare or Google Fonts, never system fonts. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+
+<style>
+/* ===========================================
+   FIXED 16:9 STAGE: MANDATORY BASE STYLES
+   Include this ENTIRE file in every presentation.
+   Slides are authored at 1920×1080 and scaled as a whole.
+   =========================================== */
+
+/* 1. Lock the browser viewport */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: var(--stage-bg, #000);
+}
+
+/* 2. Full-window deck viewport */
+.deck-viewport {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    background: var(--stage-bg, #000);
+}
+
+/* 3. Fixed 16:9 design canvas.
+   JavaScript sets transform: translate(...) scale(...). */
+.deck-stage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    transform-origin: 0 0;
+    background: var(--slide-bg, #fff);
+}
+
+/* 4. Slides stack inside the fixed stage.
+   Content must be laid out at 1920×1080, not reflowed per device. */
+.slide {
+    position: absolute;
+    inset: 0;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    background: var(--slide-bg, #fff);
+}
+
+.slide.active,
+.slide.visible {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 1;
+}
+
+/* 5. Keep media inside authored slide bounds */
+img,
+video,
+canvas,
+svg {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* 6. Presentation chrome stays outside the slide design system */
+.deck-controls {
+    position: fixed;
+    left: 50%;
+    bottom: 22px;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+/* 7. Print one fixed-size slide per page */
+@media print {
+    html,
+    body {
+        width: 1920px;
+        height: auto;
+        overflow: visible;
+        background: #fff;
+    }
+
+    .deck-viewport {
+        position: static;
+        overflow: visible;
+        background: #fff;
+    }
+
+    .deck-stage {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: none !important;
+        background: none;
+    }
+
+    .slide {
+        position: relative;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        width: 1920px;
+        height: 1080px;
+        break-after: page;
+        page-break-after: always;
+    }
+
+    .slide:last-child {
+        break-after: auto;
+        page-break-after: auto;
+    }
+
+    .deck-controls {
+        display: none !important;
+    }
+}
+
+/* 8. Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.2s !important;
+    }
+}
+
+/* === DESIGN TOKENS ===================================================
+   Signal design system. Source design.md expresses sizes in vw/vh; per the
+   template's Fixed-Stage Policy those are design PROPORTIONS translated to
+   1920x1080 stage coordinates here, not live responsive rules.
+   1vw = 19.2px, 1vh = 10.8px at stage size.
+   ==================================================================== */
+:root {
+    /* Palette — exactly one accent (antique gold). No second hot color. */
+    --navy:            #1C2644;
+    --navy-alt:        #232F55;
+    --cream:           #F0ECE3;
+    --cream-alt:       #E6E0D4;
+    --text-warm:       #E2DCD0;   /* never pure white on navy */
+    --text-muted-dark: #8A96A8;
+    --text-hint-dark:  #4E5A6E;
+    --ink:             #1A2030;
+    --text-muted-light:#5A6270;
+    --text-hint-light: #9AA0A8;
+    --gold:            #C8A870;
+    --border-dark:     #2E3D5C;
+    --border-light:    #CAC4B4;
+
+    --stage-bg: #0E1425;
+    --slide-bg: var(--navy);
+
+    /* Type ladder: serif = voice, sans = substance, mono = metadata. */
+    --f-serif: 'Source Serif 4', Georgia, serif;
+    --f-sans:  'DM Sans', system-ui, sans-serif;
+    --f-mono:  'IBM Plex Mono', monospace;
+
+    /* Spacing (7.5vw / 5.5vh translated) */
+    --pad-x:  144px;
+    --pad-y:   60px;
+    --gap-lg:  43px;
+    --gap-md:  27px;
+    --gap-sm:  13px;
+}
+
+/* === SURFACES ========================================================
+   Dual-surface model: navy and cream are both first-class and alternate
+   freely. Only the foreground color changes; the type ladder does not.
+   ==================================================================== */
+.slide            { background: var(--navy); color: var(--text-warm); }
+.slide.cream      { background: var(--cream); color: var(--ink); }
+
+/* 80px grid texture — the system fingerprint. Dark slides only, 3% white. */
+.slide:not(.cream)::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+        linear-gradient(to right,  rgba(255,255,255,.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,.03) 1px, transparent 1px);
+    background-size: 80px 80px;
+}
+
+/* === SLIDE FRAME =====================================================
+   grid-template-rows: auto 1fr auto — chrome and foot are the auto rows.
+   Cover, chapter and statement slides are chromeless by design.
+   ==================================================================== */
+.frame {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    box-sizing: border-box;
+    padding: var(--pad-y) var(--pad-x);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.chrome, .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: var(--f-mono);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--text-muted-dark);
+}
+.cream .chrome, .cream .foot { color: var(--text-muted-light); }
+
+/* The hairline is what makes chrome read as chrome, not floating text. */
+.chrome { padding-bottom: 16px; border-bottom: 1px solid var(--border-dark); }
+.foot   { padding-top: 16px;    border-top:    1px solid var(--border-dark); }
+.cream .chrome { border-bottom-color: var(--border-light); }
+.cream .foot   { border-top-color:    var(--border-light); }
+
+.body { align-self: start; padding-top: var(--gap-lg); min-height: 0; }
+
+/* === TYPOGRAPHY ======================================================
+   Serif leads, sans supports, mono is metadata only. Crossing those rails
+   breaks the editorial separation.
+   ==================================================================== */
+.display { font-family: var(--f-serif); font-size: 182px; font-weight: 700;
+           line-height: .96; letter-spacing: -.02em; margin: 0; }
+.h1      { font-family: var(--f-serif); font-size: 100px; font-weight: 600;
+           line-height: 1.08; letter-spacing: -.01em; margin: 0; }
+.h2      { font-family: var(--f-serif); font-size: 52px;  font-weight: 600;
+           line-height: 1.16; letter-spacing: -.01em; margin: 0; }
+.h3      { font-family: var(--f-serif); font-size: 36px;  font-weight: 500;
+           line-height: 1.3;  margin: 0; }
+.lead    { font-family: var(--f-sans);  font-size: 27px;  line-height: 1.58; margin: 0; }
+.body-t  { font-family: var(--f-sans);  font-size: 21px;  line-height: 1.62; margin: 0; }
+.caption { font-family: var(--f-sans);  font-size: 16px;  line-height: 1.5;
+           color: var(--text-muted-dark); margin: 0; }
+.cream .caption { color: var(--text-muted-light); }
+
+/* The Signal moment: roman/italic mix mid-sentence, italic always gold. */
+em { font-family: var(--f-serif); font-style: italic; color: var(--gold); }
+
+/* Kicker: mono uppercase gold, 0.14em tracking. Anything else is not a kicker. */
+.kicker { font-family: var(--f-mono); font-size: 13px; font-weight: 500;
+          letter-spacing: .16em; text-transform: uppercase; color: var(--gold); margin: 0; }
+
+/* The 36px gold rule — kicker separator and chapter break. */
+.rule-gold { width: 36px; height: 1px; background: var(--gold); border: 0;
+             margin: 18px 0 0; }
+
+/* Every statistical numeral: serif 600, gold, -0.02em. */
+.stat  { font-family: var(--f-serif); font-weight: 600; color: var(--gold);
+         letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.stat-xl { font-size: 106px; line-height: 1; display: block; }
+.stat-lg { font-size: 64px;  line-height: 1; display: block; }
+
+/* Em-dash bullets in mono gold. Standard dots do not exist in this system.
+   Uses absolute positioning rather than a two-column grid: with display:grid
+   every inline <em> becomes its own grid item and collides with the text. */
+.list { list-style: none; margin: 0; padding: 0; }
+.list li { position: relative; padding-left: 1.7em;
+           margin-bottom: 18px; font-family: var(--f-sans); font-size: 21px;
+           line-height: 1.6; }
+.list li::before { content: '—'; position: absolute; left: 0; top: 0;
+                   font-family: var(--f-mono); color: var(--gold); }
+
+/* === COMPONENTS ======================================================
+   Flat plus hairline. No shadows, no rounded corners, no card chrome.
+   ==================================================================== */
+.cols  { display: grid; gap: 0; }
+.cols-2 { grid-template-columns: 1fr 1fr; }
+.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.col   { padding: 0 55px; border-left: 1px solid var(--border-dark); }
+.cream .col { border-left-color: var(--border-light); }
+.col:first-child { padding-left: 0; border-left: 0; }
+.col:last-child  { padding-right: 0; }
+
+.tile { border-top: 1px solid var(--border-dark); padding-top: 20px; }
+.cream .tile { border-top-color: var(--border-light); }
+
+table { width: 100%; border-collapse: collapse; font-family: var(--f-sans);
+        font-variant-numeric: tabular-nums; }
+th { font-family: var(--f-mono); font-size: 13px; font-weight: 500;
+     letter-spacing: .14em; text-transform: uppercase; color: var(--text-muted-dark);
+     text-align: right; padding: 0 0 14px; border-bottom: 1px solid var(--border-dark); }
+.cream th { color: var(--text-muted-light); border-bottom-color: var(--border-light); }
+th:first-child, td:first-child { text-align: left; }
+td { font-size: 22px; padding: 15px 0; border-bottom: 1px solid var(--border-dark);
+     text-align: right; }
+.cream td { border-bottom-color: var(--border-light); }
+tr.total td { border-bottom: 0; border-top: 1px solid var(--gold); font-weight: 500; }
+td.num { font-family: var(--f-serif); font-weight: 600; color: var(--gold);
+         letter-spacing: -.02em; }
+
+/* Bar chart — real values, plotted from a zero baseline and labelled, so the
+   figures stay verifiable against source rather than being decorative. */
+.chart { display: grid; grid-template-columns: repeat(8, 1fr); gap: 28px;
+         align-items: end; height: 380px; }
+.bar-col { display: flex; flex-direction: column; justify-content: flex-end;
+           height: 100%; text-align: center; }
+.bar-val { font-family: var(--f-serif); font-weight: 600; color: var(--gold);
+           font-size: 26px; letter-spacing: -.02em; margin-bottom: 12px;
+           font-variant-numeric: tabular-nums; }
+.bar { background: var(--navy-alt); border-top: 2px solid var(--gold); width: 100%; }
+.cream .bar { background: var(--cream-alt); }
+.bar-lab { font-family: var(--f-mono); font-size: 13px; letter-spacing: .1em;
+           text-transform: uppercase; color: var(--text-muted-dark);
+           margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border-dark); }
+.cream .bar-lab { color: var(--text-muted-light); border-top-color: var(--border-light); }
+
+/* === ANIMATION =======================================================
+   One orchestrated page-load with staggered reveals per slide, rather than
+   scattered micro-interactions.
+   ==================================================================== */
+@keyframes rise { from { opacity: 0; transform: translateY(22px); }
+                  to   { opacity: 1; transform: none; } }
+.slide.active .reveal { animation: rise .62s cubic-bezier(.2,.7,.3,1) backwards; }
+.slide.active .reveal:nth-child(1) { animation-delay: .05s; }
+.slide.active .reveal:nth-child(2) { animation-delay: .14s; }
+.slide.active .reveal:nth-child(3) { animation-delay: .23s; }
+.slide.active .reveal:nth-child(4) { animation-delay: .32s; }
+.slide.active .reveal:nth-child(5) { animation-delay: .41s; }
+.slide.active .reveal:nth-child(6) { animation-delay: .50s; }
+
+/* === DECK CONTROLS =================================================== */
+.deck-controls { font-family: var(--f-mono); font-size: 12px; letter-spacing: .14em;
+                 color: var(--text-hint-dark); text-transform: uppercase; }
+</style>
+</head>
+<body>
+
+<div class="deck-viewport">
+<div class="deck-stage" id="stage">
+
+<!-- === SLIDE 1 · COVER (chromeless) ================================= -->
+<section class="slide cream active">
+  <div class="frame" style="grid-template-rows: auto 1fr auto;">
+    <div class="reveal">
+      <p class="kicker">Northwind Logistics · Confidential</p>
+      <hr class="rule-gold">
+    </div>
+    <div class="reveal" style="align-self:center;">
+      <h1 class="display">Q3 FY26<br>Business <em>Review</em></h1>
+    </div>
+    <div class="reveal" style="display:flex; justify-content:space-between; align-items:baseline;
+                               border-top:1px solid var(--border-light); padding-top:20px;">
+      <p class="kicker" style="color:var(--text-muted-light);">Executive Committee</p>
+      <p class="kicker" style="color:var(--text-muted-light);">Prepared Q3 FY26</p>
+    </div>
+  </div>
+</section>
+
+<!-- === SLIDE 2 · HEADLINE ========================================== -->
+<section class="slide">
+  <div class="frame">
+    <div class="chrome"><span>Headline</span><span>02 / 12</span></div>
+    <div class="body">
+      <div class="reveal">
+        <p class="kicker">The quarter in one line</p>
+        <hr class="rule-gold">
+      </div>
+      <h2 class="h1 reveal" style="margin-top:36px; max-width:1500px;">
+        Revenue reached <em>$47.2M</em>, up 12.4% — but gross margin compressed 180&nbsp;bps
+      </h2>
+      <div class="reveal cols cols-3" style="margin-top:64px;">
+        <div class="col">
+          <div class="tile">
+            <p class="kicker" style="color:var(--text-muted-dark);">Revenue</p>
+            <span class="stat stat-lg" style="margin-top:14px;">$47.2M</span>
+            <p class="caption" style="margin-top:12px;">up 12.4% year over year</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tile">
+            <p class="kicker" style="color:var(--text-muted-dark);">Gross margin</p>
+            <span class="stat stat-lg" style="margin-top:14px;">29.4%</span>
+            <p class="caption" style="margin-top:12px;">down from 31.2%, a 180 bps compression</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tile">
+            <p class="kicker" style="color:var(--text-muted-dark);">Operating margin</p>
+            <span class="stat stat-lg" style="margin-top:14px;">8.1%</span>
+            <p class="caption" style="margin-top:12px;">held flat as SG&amp;A grew only 3.2%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="foot"><span>Northwind Logistics</span><span>Q3 FY26</span></div>
+  </div>
+</section>
+
+<!-- === SLIDE 3 · REVENUE BY SEGMENT ================================ -->
+<section class="slide cream">
+  <div class="frame">
+    <div class="chrome"><span>Revenue</span><span>03 / 12</span></div>
+    <div class="body">
+      <div class="reveal">
+        <p class="kicker">Segment detail</p>
+        <hr class="rule-gold">
+      </div>
+      <h2 class="h2 reveal" style="margin-top:26px; max-width:1450px;">
+        Growth came from brokerage and last-mile; <em>customs declined 15.8%</em>
+      </h2>
+      <div class="reveal" style="margin-top:44px;">
+        <table>
+          <thead>
+            <tr><th>Segment</th><th>Q3 FY26</th><th>Q3 FY25</th><th>YoY</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Freight brokerage</td><td class="num">$24.1M</td><td>$20.8M</td><td class="num">+15.9%</td></tr>
+            <tr><td>Warehousing</td><td class="num">$13.6M</td><td>$12.9M</td><td class="num">+5.4%</td></tr>
+            <tr><td>Last-mile delivery</td><td class="num">$7.9M</td><td>$6.4M</td><td class="num">+23.4%</td></tr>
+            <tr><td>Customs &amp; compliance</td><td class="num">$1.6M</td><td>$1.9M</td><td class="num">−15.8%</td></tr>
+            <tr class="total"><td>Total</td><td class="num">$47.2M</td><td>$42.0M</td><td class="num">+12.4%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="foot"><span>Northwind Logistics</span><span>Q3 FY26</span></div>
+  </div>
+</section>
+
+<!-- === SLIDE 4 · QUARTERLY TREND =================================== -->
+<section class="slide">
+  <div class="frame">
+    <div class="chrome"><span>Revenue</span><span>04 / 12</span></div>
+    <div class="body">
+      <div class="reveal">
+        <p class="kicker">Eight quarters, $M</p>
+        <hr class="rule-gold">
+      </div>
+      <h2 class="h2 reveal" style="margin-top:26px; max-width:1400px;">
+        Revenue has grown in seven of eight quarters, with <em>one dip in Q4 FY25</em>
+      </h2>
+      <!-- Bars plotted from a zero baseline; every value is printed above its bar
+           so the chart can be checked against source rather than trusted. -->
+      <div class="reveal chart" style="margin-top:48px;">
+        <div class="bar-col"><span class="bar-val">36.1</span><div class="bar" style="height:76.5%"></div><span class="bar-lab">Q4 FY24</span></div>
+        <div class="bar-col"><span class="bar-val">37.8</span><div class="bar" style="height:80.1%"></div><span class="bar-lab">Q1 FY25</span></div>
+        <div class="bar-col"><span class="bar-val">39.9</span><div class="bar" style="height:84.5%"></div><span class="bar-lab">Q2 FY25</span></div>
+        <div class="bar-col"><span class="bar-val">42.0</span><div class="bar" style="height:89.0%"></div><span class="bar-lab">Q3 FY25</span></div>
+        <div class="bar-col"><span class="bar-val">41.2</span><div class="bar" style="height:87.3%"></div><span class="bar-lab">Q4 FY25</span></div>
+        <div class="bar-col"><span class="bar-val">43.5</span><div class="bar" style="height:92.2%"></div><span class="bar-lab">Q1 FY26</span></div>
+        <div class="bar-col"><span class="bar-val">45.1</span><div class="bar" style="height:95.6%"></div><span class="bar-lab">Q2 FY26</span></div>
+        <div class="bar-col"><span class="bar-val">47.2</span><div class="bar" style="height:100%"></div><span class="bar-lab">Q3 FY26</span></div>
+      </div>
+    </div>
+    <div class="foot"><span>Bars plotted from a zero baseline</span><span>Q3 FY26</span></div>
+  </div>
+</section>
+
+<!-- === SLIDE 5 · MARGIN ============================================ -->
+<section class="slide cream">
+  <div class="frame">
+    <div class="chrome"><span>Margin</span><span>05 / 12</span></div>
+    <div class="body">
+      <div class="reveal">
+        <p class="kicker">Gross margin bridge</p>
+        <hr class="rule-gold">
+      </div>
+      <h2 class="h2 reveal" style="margin-top:26px; max-width:1500px;">
+        Fuel and contract labour drove the entire <em>180 bps</em> of compression
+      </h2>
+      <div class="reveal cols cols-2" style="margin-top:56px;">
+        <div class="col">
+          <div class="tile">
+            <p class="kicker" style="color:var(--text-muted-light);">Fuel</p>
+            <span class="stat stat-lg" style="margin-top:14px;">−110 bps</span>
+            <p class="body-t" style="margin-top:18px; max-width:640px;">
+              Up 14% per mile against a flat contracted rate card.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tile">
+            <p class="kicker" style="color:var(--text-muted-light);">Contract labour</p>
+            <span class="stat stat-lg" style="margin-top:14px;">−70 bps</span>
+            <p class="body-t" style="margin-top:18px; max-width:640px;">
+              Peak-season warehouse staffing ran 22% above plan.
+            </p>
+          </div>
+        </div>
+      </div>
+      <p class="lead reveal" style="margin-top:52px; max-width:1500px;">
+        Operating margin nonetheless held at <em>8.1%</em>, because SG&amp;A grew only 3.2%
+        against 12.4% revenue growth.
+      </p>
+    </div>
+    <div class="foot"><span>Gross margin 31.2% → 29.4%</span><span>Q3 FY26</span></div>
+  </div>
+</section>
+
+<!-- === SLIDE 6 · CUSTOMER CONCENTRATION ============================ -->
+<section class="slide">
+  <div class="frame">
+    <div class="chrome"><span>Customers</span><span>06 / 12</span></div>
+    <div class="body">
+      <div class="reveal">
+        <p class="kicker">Concentration risk</p>
+        <hr class="rule-gold">
+      </div>
+      <h2 class="h2 reveal" style="margin-top:26px; max-width:1500px;">
+        Top-10 share fell to <em>38%</em> — a fourth consecutive quarter of decline
+      </h2>
+      <div class="reveal cols cols-3" style="margin-top:56px;">
+        <div class="col">
+          <div class="tile">
+            <p class="kicker" style="color:var(--text-muted-dark);">Top-10 share</p>
+            <span class="stat stat-lg" style="margin-top:14px;">38%</span>
+            <p class="caption" style="margin-top:12px;">down from 44% a year ago</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tile">
+            <p class="kicker" style="color:var(--text-muted-dark);">Net new logos</p>
+            <span class="stat stat-lg" style="margin-top:14px;">31</span>
+            <p class="caption" style="margin-top:12px;">against 18 in Q3 FY25</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tile">
+            <p class="kicker" style="color:var(--text-muted-dark);">Churn</p>
+            <span class="stat stat-lg" style="margin-top:14px;">4.2%</span>
+            <p class="caption" style="margin-top:12px;">by count; 2.1% by revenue</p>
+          </div>
+        </div>
+      </div>
+      <p class="lead reveal" style="margin-top:52px; max-width:1500px;">
+        Churn by revenue running at half the rate of churn by count means the accounts
+        we lost were <em>smaller than average</em>.
+      </p>
+    </div>
+    <div class="foot"><span>Northwind Logistics</span><span>Q3 FY26</span></div>
+  </div>
+</section>
+
+<!-- === SLIDE 7 · LAST MILE ========================================= -->
+<section class="slide cream">
+  <div class="frame">
+    <div class="chrome"><span>Segments</span><span>07 / 12</span></div>
+    <div class="body">
+      <div class="reveal">
+        <p class="kicker">Last-mile delivery</p>
+        <hr class="rule-gold">
+      </div>
+      <h2 class="h2 reveal" style="margin-top:26px; max-width:1520px;">
+        Last-mile is the growth engine but is <em>not yet profitable</em>
+      </h2>
+      <div class="reveal cols cols-3" style="margin-top:56px;">
+        <div class="col">
+          <div class="tile">
+            <p class="kicker" style="color:var(--text-muted-light);">Growth</p>
+            <span class="stat stat-lg" style="margin-top:14px;">+23.4%</span>
+            <p class="caption" style="margin-top:12px;">now 16.7% of revenue, up from 15.2%</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tile">
+            <p class="kicker" style="color:var(--text-muted-light);">Contribution margin</p>
+            <span class="stat stat-lg" style="margin-top:14px;">−3.4%</span>
+            <p class="caption" style="margin-top:12px;">improving from −7.9% a year ago</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tile">
+            <p class="kicker" style="color:var(--text-muted-light);">Break-even</p>
+            <span class="stat stat-lg" style="margin-top:14px;">Q2 FY27</span>
+            <p class="caption" style="margin-top:12px;">projected at current trajectory</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="foot"><span>Northwind Logistics</span><span>Q3 FY26</span></div>
+  </div>
+</section>
+
+<!-- === SLIDE 8 · HEADCOUNT ========================================= -->
+<section class="slide">
+  <div class="frame">
+    <div class="chrome"><span>People</span><span>08 / 12</span></div>
+    <div class="body">
+      <div class="reveal">
+        <p class="kicker">Headcount</p>
+        <hr class="rule-gold">
+      </div>
+      <h2 class="h2 reveal" style="margin-top:26px; max-width:1500px;">
+        Headcount grew by <em>49</em>, concentrated in operations and engineering
+      </h2>
+      <div class="reveal" style="margin-top:44px; max-width:1200px;">
+        <table>
+          <thead>
+            <tr><th>Function</th><th>Q3 FY26</th><th>Change QoQ</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Operations</td><td class="num">812</td><td class="num">+34</td></tr>
+            <tr><td>Engineering</td><td class="num">96</td><td class="num">+11</td></tr>
+            <tr><td>Sales &amp; marketing</td><td class="num">143</td><td class="num">+6</td></tr>
+            <tr><td>G&amp;A</td><td class="num">71</td><td class="num">−2</td></tr>
+            <tr class="total"><td>Total</td><td class="num">1,122</td><td class="num">+49</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="foot"><span>Northwind Logistics</span><span>Q3 FY26</span></div>
+  </div>
+</section>
+
+<!-- === SLIDE 9 · RISKS ============================================= -->
+<section class="slide cream">
+  <div class="frame">
+    <div class="chrome"><span>Risks</span><span>09 / 12</span></div>
+    <div class="body">
+      <div class="reveal">
+        <p class="kicker">Three exposures</p>
+        <hr class="rule-gold">
+      </div>
+      <h2 class="h2 reveal" style="margin-top:26px; max-width:1500px;">
+        Fuel exposure is <em>unhedged beyond Q1 FY27</em>
+      </h2>
+      <div class="reveal cols cols-3" style="margin-top:56px;">
+        <div class="col">
+          <div class="tile">
+            <p class="kicker" style="color:var(--text-muted-light);">01 · Fuel</p>
+            <p class="body-t" style="margin-top:18px;">
+              Unhedged beyond Q1 FY27. A further 10% move costs an estimated
+              <em>$1.8M</em> annualized.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tile">
+            <p class="kicker" style="color:var(--text-muted-light);">02 · Leases</p>
+            <p class="body-t" style="margin-top:18px;">
+              Memphis and Reno renewals land in Q4 FY26, covering <em>340k sq ft</em>
+              at rates last set in 2021.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tile">
+            <p class="kicker" style="color:var(--text-muted-light);">03 · Customs</p>
+            <p class="body-t" style="margin-top:18px;">
+              The decline is <em>structural, not cyclical</em> — two clients
+              insourced the function.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="foot"><span>Northwind Logistics</span><span>Q3 FY26</span></div>
+  </div>
+</section>
+
+<!-- === SLIDE 10 · ASKS ============================================= -->
+<section class="slide">
+  <div class="frame">
+    <div class="chrome"><span>Decisions</span><span>10 / 12</span></div>
+    <div class="body">
+      <div class="reveal">
+        <p class="kicker">Three approvals requested</p>
+        <hr class="rule-gold">
+      </div>
+      <h2 class="h2 reveal" style="margin-top:26px; max-width:1500px;">
+        We are asking the committee to approve <em>three items</em> this quarter
+      </h2>
+      <ul class="list reveal" style="margin-top:52px; max-width:1450px;">
+        <li>Approve <em>$2.4M</em> capex for Reno automation, targeting a 15-month payback.</li>
+        <li>Approve fuel hedging through Q4 FY27 at up to <em>60%</em> of projected volume.</li>
+        <li>Approve <em>8</em> incremental engineering roles to accelerate the last-mile routing rebuild.</li>
+      </ul>
+    </div>
+    <div class="foot"><span>Northwind Logistics</span><span>Q3 FY26</span></div>
+  </div>
+</section>
+
+<!-- === SLIDE 11 · Q4 OUTLOOK ======================================= -->
+<section class="slide cream">
+  <div class="frame">
+    <div class="chrome"><span>Outlook</span><span>11 / 12</span></div>
+    <div class="body">
+      <div class="reveal">
+        <p class="kicker">Q4 FY26 guidance</p>
+        <hr class="rule-gold">
+      </div>
+      <h2 class="h2 reveal" style="margin-top:26px; max-width:1500px;">
+        Margin should recover <em>60–90 bps</em> as peak-season labour rolls off
+      </h2>
+      <div class="reveal cols cols-2" style="margin-top:60px;">
+        <div class="col">
+          <div class="tile">
+            <p class="kicker" style="color:var(--text-muted-light);">Revenue guidance</p>
+            <span class="stat stat-lg" style="margin-top:14px;">$48.5M–$50.0M</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tile">
+            <p class="kicker" style="color:var(--text-muted-light);">Gross margin recovery</p>
+            <span class="stat stat-lg" style="margin-top:14px;">60–90 bps</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="foot"><span>Northwind Logistics</span><span>Q3 FY26</span></div>
+  </div>
+</section>
+
+<!-- === SLIDE 12 · CLOSE (chromeless) =============================== -->
+<section class="slide">
+  <div class="frame" style="grid-template-rows: auto 1fr auto;">
+    <div class="reveal">
+      <p class="kicker">Q3 FY26 · Business Review</p>
+      <hr class="rule-gold">
+    </div>
+    <div class="reveal" style="align-self:center; max-width:1500px;">
+      <h2 class="h1">Growth is intact.<br>The work is <em>margin</em>.</h2>
+    </div>
+    <div class="reveal" style="display:flex; justify-content:space-between; align-items:baseline;
+                               border-top:1px solid var(--border-dark); padding-top:20px;">
+      <p class="kicker" style="color:var(--text-muted-dark);">Northwind Logistics</p>
+      <p class="kicker" style="color:var(--text-muted-dark);">Questions</p>
+    </div>
+  </div>
+</section>
+
+</div><!-- /deck-stage -->
+</div><!-- /deck-viewport -->
+
+<div class="deck-controls"><span id="counter">1 / 12</span></div>
+
+<script>
+/* === STAGE SCALER ====================================================
+   Render at a fixed 1920x1080 and scale the whole stage with one transform.
+   Content never reflows; the stage letterboxes or pillarboxes instead.
+   ==================================================================== */
+(function () {
+  var W = 1920, H = 1080;
+  var stage = document.getElementById('stage');
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var counter = document.getElementById('counter');
+  var i = 0;
+
+  function fit() {
+    var s = Math.min(window.innerWidth / W, window.innerHeight / H);
+    stage.style.transform =
+      'translate(' + ((window.innerWidth - W * s) / 2) + 'px,' +
+                     ((window.innerHeight - H * s) / 2) + 'px) scale(' + s + ')';
+  }
+
+  function show(n) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach(function (el, k) { el.classList.toggle('active', k === i); });
+    counter.textContent = (i + 1) + ' / ' + slides.length;
+  }
+
+  window.addEventListener('resize', fit);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); show(i + 1); }
+    if (e.key === 'ArrowLeft'  || e.key === 'PageUp')                    { e.preventDefault(); show(i - 1); }
+    if (e.key === 'Home') show(0);
+    if (e.key === 'End')  show(slides.length - 1);
+  });
+  document.addEventListener('click', function (e) {
+    show(i + (e.clientX < window.innerWidth * 0.25 ? -1 : 1));
+  });
+
+  fit();
+  show(0);
+})();
+</script>
+</body>
+</html>

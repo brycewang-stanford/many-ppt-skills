@@ -16,13 +16,23 @@ against a published rubric, with the screenshots attached.**
 | Corpus | ✅ 3 materials, complete |
 | Rubric | ✅ 7 dimensions, anchored, 2 gating |
 | Harness | ✅ fidelity checker, screenshotter, scorecard — all working |
-| **Runs** | ⬜ **none recorded yet** |
+| **Runs** | 🟡 **1 of 78** possible skill × corpus pairings |
 
-The scaffolding is real and reproducible. The scores are not there yet, and this README
-will say so plainly until they are. A benchmark that ships with invented numbers would be
-a self-refuting artifact.
+Current results: [`results/scorecard.md`](results/scorecard.md) ·
+write-up: [`run-01`](results/run-01/README.md)
 
-Current results: [`results/scorecard.md`](results/scorecard.md)
+**[run-01](results/run-01/README.md)** — frontend-slides × quarterly-review, 28/35. Deck,
+12 screenshots and per-dimension evidence all committed, so the run can be re-scored by
+anyone without trusting the number.
+
+It is one run, by an operator who also wrote the corpus and the rubric, and it is labelled
+as such in the score file. It is evidence the harness works. It is not a ranking, and this
+page will keep saying so until enough independent runs exist to support one.
+
+The run also broke the harness twice — `check_fidelity.py` was counting figures out of the
+operator brief, and was reporting sign-convention differences as fabrication. Both are
+fixed; both are written up rather than quietly patched, because a benchmark that hides its
+own tooling bugs is not worth reading.
 
 ---
 

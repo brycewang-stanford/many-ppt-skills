@@ -113,6 +113,20 @@ EXTRACTORS = {
 }
 
 
+# Corpus files open with a brief addressed to the operator — target length,
+# failure modes, worked examples of action titles. Those numbers are
+# instructions, not content to reproduce, and counting them makes every honest
+# run look like it dropped figures. Everything from this heading onward is the
+# material under test.
+CONTENT_MARKER = "## Content"
+
+
+def content_only(text: str) -> str:
+    """Trim a corpus file to the part a deck is actually expected to carry."""
+    idx = text.find(CONTENT_MARKER)
+    return text[idx:] if idx != -1 else text
+
+
 def read_any(target: Path) -> tuple[str, list[Path]]:
     """Concatenate text from a file, or from every supported file in a directory."""
     if not target.exists():
@@ -179,12 +193,30 @@ def main() -> int:
     corpus_text, _ = read_any(args.corpus)
     deck_text, deck_files = read_any(args.deck)
 
-    want = extract(corpus_text)
-    got = extract(deck_text)
+    want = extract(content_only(corpus_text))
+
+    # Pointing --deck at the corpus itself is the harness self-test: it proves
+    # the extractor round-trips. Trim both sides there, or the operator brief
+    # leaks into the deck side and reads as fabrication.
+    self_test = args.deck.resolve() == args.corpus.resolve()
+    got = extract(content_only(deck_text) if self_test else deck_text)
 
     missing = sorted(k for k in want if k not in got)
-    fabricated = sorted(k for k in got if k not in want)
     kept = sorted(k for k in want if k in got)
+
+    # A deck legitimately writes "customs declined 15.8%" where the source table
+    # says "-15.8%". Same fact, opposite sign convention. Reporting that as
+    # fabrication would fire on almost every honest run, so split it out: these
+    # need a wording check, not a fabrication verdict.
+    def unsigned(tok: str) -> str:
+        return tok.lstrip("-")
+
+    want_unsigned = {unsigned(k) for k in want}
+    fabricated, sign_diffs = [], []
+    for k in sorted(got):
+        if k in want:
+            continue
+        (sign_diffs if unsigned(k) in want_unsigned else fabricated).append(k)
 
     coverage = len(kept) / len(want) * 100 if want else 100.0
 
@@ -199,6 +231,11 @@ def main() -> int:
         print("\n  Missing from deck:")
         for k in missing:
             print(f"    − {k}")
+
+    if sign_diffs:
+        print("\n  Sign/direction differences (check the wording, not fabrication):")
+        for k in sign_diffs:
+            print(f"    ± {k}  (x{got[k]})")
 
     if fabricated:
         print("\n  ⚠️  Present in deck but NOT in corpus:")
@@ -221,6 +258,7 @@ def main() -> int:
                     "kept": kept,
                     "missing": missing,
                     "fabricated": {k: got[k] for k in fabricated},
+                    "sign_diffs": {k: got[k] for k in sign_diffs},
                 },
                 indent=2,
             )
