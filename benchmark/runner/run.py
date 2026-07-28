@@ -38,6 +38,7 @@ import os
 import shutil
 import subprocess
 import sys
+import tempfile
 import time
 from pathlib import Path
 
@@ -88,6 +89,24 @@ def sh(cmd: list[str], cwd: Path | None = None) -> str:
     return subprocess.run(
         cmd, cwd=cwd, check=True, capture_output=True, text=True
     ).stdout.strip()
+
+
+def repo_fingerprint() -> str:
+    """Hash the files a run must not be able to change: the corpus it is being
+    tested on, the rubric it will be scored against, and the harness itself.
+
+    Not a hash of the whole repo. Other sessions commit to this repository while
+    runs are in flight, and a check that fires on unrelated commits gets ignored,
+    which is worse than no check. These paths are the ones where a change during
+    a run would silently invalidate the result.
+    """
+    parts = []
+    for pattern in ("benchmark/corpus/*.md", "benchmark/rubric*.md",
+                    "benchmark/runner/*.py"):
+        for f in sorted(ROOT.glob(pattern)):
+            st = f.stat()
+            parts.append(f"{f.relative_to(ROOT)}:{st.st_size}:{st.st_mtime_ns}")
+    return hashlib.sha256("\n".join(parts).encode()).hexdigest()[:16]
 
 
 def load_registry() -> dict:
@@ -256,7 +275,18 @@ def main() -> int:
 
     out_dir = RESULTS / args.run / args.skill / corpus_id / f"rep-{args.rep:02d}"
     out_dir.mkdir(parents=True, exist_ok=True)
-    ws = out_dir / "workspace"
+
+    # The workspace lives outside the repository, deliberately.
+    #
+    # The agent under test runs with bypassPermissions, because a skill that
+    # needs to run its own scripts cannot be driven any other way. Given a cwd
+    # inside this repo it can read its way up to the corpus, the rubric, the
+    # results of other runs, and the harness itself — none of which a skill being
+    # asked "turn input.md into a deck" should ever see. Putting the workspace in
+    # a temp directory removes the reachability rather than trusting restraint.
+    ws = Path(tempfile.mkdtemp(prefix=f"ppt-run-{args.skill}-"))
+
+    repo_before = repo_fingerprint()
 
     print(f"▶ {args.skill} × {corpus_id} (rep {args.rep}, {args.model})", flush=True)
     build_workspace(ws, skill_dir, args.skill, corpus)
@@ -272,6 +302,7 @@ def main() -> int:
         invocation = "explicit" if telemetry["skill_fired"] else "never-fired"
 
     artifacts = collect(ws, out_dir / "deck")
+    repo_after = repo_fingerprint()
 
     manifest = {
         "skill": args.skill,
@@ -285,12 +316,22 @@ def main() -> int:
         "invocation": invocation,
         "prompt_sha256": hashlib.sha256(PROMPT.encode()).hexdigest()[:16],
         "artifacts": artifacts,
+        "workspace_outside_repo": True,
+        "harness_fingerprint": repo_before,
+        "harness_unchanged_during_run": repo_before == repo_after,
         **telemetry,
     }
     (out_dir / "run.json").write_text(json.dumps(manifest, indent=2) + "\n")
 
-    if not args.keep_workspace:
+    if args.keep_workspace:
+        print(f"  workspace kept at {ws}", flush=True)
+    else:
         shutil.rmtree(ws, ignore_errors=True)
+
+    if repo_before != repo_after:
+        print("  WARNING: corpus, rubric or harness changed while this run was in "
+              "flight — the result is not reproducible from the recorded inputs",
+              file=sys.stderr)
 
     status = "ok" if artifacts else "NO ARTIFACTS"
     cost = f"${telemetry['cost_usd']:.2f}" if telemetry["cost_usd"] else "?"
