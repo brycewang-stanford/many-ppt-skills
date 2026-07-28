@@ -96,6 +96,9 @@ anything was invented.
 ground truth and map them onto the dimension-6 anchors rather than re-deriving
 them.
 
+This deck was delivered on the **{route}** route, so dimension 6 is scored
+against the {route} anchor table in the rubric, not the other one.{caveat}
+
 You do not know which skill produced this deck, and you must not guess or
 speculate about it in your evidence.
 
@@ -161,6 +164,40 @@ def measure_deliverable(deck_dir: Path) -> dict:
     }
 
 
+def measure_pptx(deck: Path, entry: Path) -> dict:
+    """Facts for dimension 6 on the PPTX route, from probe_pptx.py.
+
+    The HTML question is "does it break offline". The PPTX question is entirely
+    different — are these real objects or a picture of a deck — and a screenshot
+    cannot tell the two apart. Hence the unzip-and-count, plus whatever the
+    renderer reported about font substitution, since typography judged on a
+    substituted font is not the deck's own typography.
+    """
+    sys.path.insert(0, str(Path(__file__).parent))
+    from probe_pptx import probe
+
+    measured = {"route": "pptx", **probe(deck)}
+    render_report = entry / "render.json"
+    if render_report.exists():
+        r = json.loads(render_report.read_text())
+        measured["render"] = {
+            "renderer": r.get("renderer"),
+            "fonts_missing_locally": r.get("fonts_missing_locally", []),
+            "substitution_risk": r.get("substitution_risk", False),
+        }
+    return measured
+
+
+def detect_route(entry: Path) -> tuple[str, Path | None]:
+    """PPTX wins when both are present: a skill that ships an editable .pptx is
+    judged on the promise that file makes."""
+    pptx = sorted(p for p in entry.rglob("*.pptx") if "workspace" not in p.parts)
+    if pptx:
+        return "pptx", pptx[0]
+    html = sorted(p for p in entry.rglob("*.html") if "workspace" not in p.parts)
+    return "html", (html[0] if html else None)
+
+
 def build_judge_dir(shots: list[Path], corpus: Path, measured: dict) -> Path:
     """A judging directory outside the repo, holding only what a blind judge may see.
 
@@ -178,11 +215,11 @@ def build_judge_dir(shots: list[Path], corpus: Path, measured: dict) -> Path:
     return d
 
 
-def run_judge(judge_dir: Path, model: str, budget: float) -> dict | None:
+def run_judge(judge_dir: Path, model: str, budget: float, prompt: str) -> dict | None:
     """One independent judge. Returns parsed scores, or None if it failed."""
     proc = subprocess.run(
         [
-            "claude", "-p", PROMPT,
+            "claude", "-p", prompt,
             "--setting-sources", "project",   # empty here: no skills reach the judge
             "--strict-mcp-config",
             "--permission-mode", "bypassPermissions",
@@ -279,19 +316,33 @@ def main() -> int:
         return print(f"no corpus file for {args.corpus}", file=sys.stderr) or 2
 
     deck_dir = entry / "deck" if (entry / "deck").is_dir() else entry
-    measured = measure_deliverable(deck_dir)
+    route, artifact = detect_route(entry)
+    if route == "pptx":
+        measured = measure_pptx(artifact, entry)
+        caveat = ""
+        if measured.get("render", {}).get("substitution_risk"):
+            caveat = (
+                "\n\nThese images were rendered by LibreOffice and at least one font the "
+                "deck asks for is neither installed nor embedded, so it was substituted. "
+                "Say so in your typographic_craft evidence and do not penalise the deck "
+                "for a substitution it did not ship."
+            )
+    else:
+        measured = {"route": "html", **measure_deliverable(deck_dir)}
+        caveat = ""
+    prompt = PROMPT.format(route=route.upper(), caveat=caveat)
 
     fidelity_file = entry / "fidelity.json"
     fidelity = json.loads(fidelity_file.read_text()) if fidelity_file.exists() else None
 
-    print(f"▶ judging {args.skill} × {args.corpus} — {len(shots)} slides, "
+    print(f"▶ judging {args.skill} × {args.corpus} [{route}] — {len(shots)} slides, "
           f"{args.judges} blind judges ({args.model})", flush=True)
 
     judge_dir = build_judge_dir(shots, corpus_file, measured)
     verdicts = []
     for i in range(args.judges):
         print(f"  judge {i + 1}/{args.judges} ...", flush=True)
-        v = run_judge(judge_dir, args.model, args.budget)
+        v = run_judge(judge_dir, args.model, args.budget, prompt)
         if v:
             verdicts.append(v)
     if not args.keep_judge_dir:
@@ -313,7 +364,8 @@ def main() -> int:
         "operator_conflict": False,
         "self_reported": False,
         "judge_count": len(verdicts),
-        "judge_prompt_sha256": sha16(PROMPT),
+        "route": route,
+        "judge_prompt_sha256": sha16(prompt),
         "rubric_sha256": sha16(RUBRIC.read_text()),
         "scores": {d: final[d]["score"] for d in JUDGED_DIMS},
         "data_fidelity": {
