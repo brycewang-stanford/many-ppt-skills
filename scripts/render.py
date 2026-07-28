@@ -293,6 +293,13 @@ def render_capabilities(data: dict, stats: dict, lang: str) -> str:
         for c in CAP_ORDER:
             if c not in caps:
                 continue
+            # "Offline" is an HTML-route question. A .pptx is a file by
+            # construction, so scoring it here invites a false ✅ — which is
+            # exactly what happened when one skill's docs called an intermediate
+            # SVG preview "self-contained".
+            if c == "self_contained" and s.get("route") == "pptx":
+                cells.append("n/a")
+                continue
             v = (skills[s["id"]]["caps"].get(c) or {}).get("verdict", "unclear")
             cells.append(CAP_MARK.get(v, "·"))
         rows.append(f"| **{s['name']}** | " + " | ".join(cells) + " |")
@@ -301,7 +308,8 @@ def render_capabilities(data: dict, stats: dict, lang: str) -> str:
     if lang == "en":
         rows.append(
             "<sub>✅ the docs claim it · — the docs say it does not · "
-            "· the docs are silent, which is not the same as no. "
+            "· the docs are silent, which is not the same as no · "
+            "n/a the question does not apply to that route. "
             "Read from each project's own SKILL.md and README, never from running it; "
             "every ✅ carries the sentence it came from in "
             "[`data/capabilities.json`](data/capabilities.json).</sub>"
@@ -309,7 +317,8 @@ def render_capabilities(data: dict, stats: dict, lang: str) -> str:
     else:
         rows.append(
             "<sub>✅ 文档声明支持 · — 文档明确说明不支持 · "
-            "· 文档未提及，这不等于不支持。"
+            "· 文档未提及，这不等于不支持 · "
+            "n/a 该问题对这条路线不适用。"
             "全部读自各项目自己的 SKILL.md 与 README，不是实跑验证；"
             "每个 ✅ 的出处引文都在 "
             "[`data/capabilities.json`](data/capabilities.json)。</sub>"

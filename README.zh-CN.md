@@ -152,18 +152,18 @@ Skill。现在有 30+ 个认真做的项目，其中四个 star 数都超过 2 �
 <!-- BEGIN:CAPABILITIES -->
 | 项目 | → PPTX | → PDF | 数据图表 | 代码高亮 | 图示 | 动效 | 演讲备注 | 演讲者模式 | 自定义模板 | 离线可用 |
 |---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **Anthropic PPTX (official)** | · | · | · | · | · | · | · | · | · | · |
-| **PPT Master** | · | · | · | · | · | · | · | · | · | · |
+| **Anthropic PPTX (official)** | ✅ | ✅ | ✅ | · | · | · | ✅ | · | ✅ | n/a |
+| **PPT Master** | ✅ | · | ✅ | · | ✅ | ✅ | ✅ | · | ✅ | n/a |
 | **Frontend Slides** | · | ✅ | · | · | · | ✅ | · | · | · | · |
 | **Guizang PPT Skill** | — | · | · | · | ✅ | ✅ | · | · | — | · |
-| **Huashu Design** | · | · | · | · | · | · | · | · | · | · |
-| **Visual Explainer** | · | · | · | · | · | · | · | · | · | · |
-| **HTML PPT Studio** | · | · | · | · | · | · | · | · | · | · |
+| **Huashu Design** | ✅ | ✅ | · | · | · | ✅ | ✅ | · | · | · |
+| **Visual Explainer** | · | · | · | · | ✅ | ✅ | · | · | · | ✅ |
+| **HTML PPT Studio** | · | · | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | · | — |
 | **open-slide** | · | · | · | · | · | · | · | · | · | · |
-| **Beautiful HTML Templates** | · | · | · | · | · | · | · | · | · | · |
-| **Claude Office Skills** | · | · | · | · | · | · | · | · | · | · |
+| **Beautiful HTML Templates** | · | · | · | · | · | · | · | · | · | — |
+| **Claude Office Skills** | ✅ | · | · | · | · | · | ✅ | · | ✅ | n/a |
 
-<sub>✅ 文档声明支持 · — 文档明确说明不支持 · · 文档未提及，这不等于不支持。全部读自各项目自己的 SKILL.md 与 README，不是实跑验证；每个 ✅ 的出处引文都在 [`data/capabilities.json`](data/capabilities.json)。</sub>
+<sub>✅ 文档声明支持 · — 文档明确说明不支持 · · 文档未提及，这不等于不支持 · n/a 该问题对这条路线不适用。全部读自各项目自己的 SKILL.md 与 README，不是实跑验证；每个 ✅ 的出处引文都在 [`data/capabilities.json`](data/capabilities.json)。</sub>
 <!-- END:CAPABILITIES -->
 
 中间那个值要看仔细：`·` 表示文档从未提及，**这不等于「不支持」**。这些项目里有好几个做的比

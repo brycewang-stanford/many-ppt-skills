@@ -434,8 +434,8 @@
       "runtime": [],
       "caps": {
         "native_charts": {
-          "verdict": "unclear",
-          "quote": ""
+          "verdict": "yes",
+          "quote": "Keep charts native. Use `addChart()` for everything PowerPoint can chart (pass an array of `{type, data, options}` for combos). For PowerPoint-native features the library doesn't expose (trendlines, error bars), compute the extra series yourself or post-process the generated OOXML — do not fall back to a rendered image."
         },
         "code_highlighting": {
           "verdict": "unclear",
@@ -450,24 +450,24 @@
           "quote": ""
         },
         "speaker_notes": {
-          "verdict": "unclear",
-          "quote": ""
+          "verdict": "yes",
+          "quote": "Speaker notes go in `slide.addNotes(\"...\")` (plain text, once per slide), never in a text box on the slide."
         },
         "presenter_mode": {
           "verdict": "unclear",
           "quote": ""
         },
         "pptx_export": {
-          "verdict": "unclear",
-          "quote": ""
+          "verdict": "yes",
+          "quote": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations"
         },
         "pdf_export": {
-          "verdict": "unclear",
-          "quote": ""
+          "verdict": "yes",
+          "quote": "python scripts/office/soffice.py --headless --convert-to pdf output.pptx"
         },
         "custom_template": {
-          "verdict": "unclear",
-          "quote": ""
+          "verdict": "yes",
+          "quote": "Edit an existing deck, or build from a template | unzip → edit `ppt/slides/slideN.xml` → zip"
         },
         "self_contained": {
           "verdict": "unclear",
@@ -547,24 +547,24 @@
           "quote": ""
         },
         "speaker_notes": {
-          "verdict": "unclear",
-          "quote": ""
+          "verdict": "yes",
+          "quote": "ppt/notesSlides/notesSlide{N}.xml - Speaker notes for each slide"
         },
         "presenter_mode": {
           "verdict": "unclear",
           "quote": ""
         },
         "pptx_export": {
-          "verdict": "unclear",
-          "quote": ""
+          "verdict": "yes",
+          "quote": "Create and run a JavaScript file using the html2pptx.js library to convert HTML slides to PowerPoint and save the presentation"
         },
         "pdf_export": {
           "verdict": "unclear",
           "quote": ""
         },
         "custom_template": {
-          "verdict": "unclear",
-          "quote": ""
+          "verdict": "yes",
+          "quote": "When you need to create a presentation that follows an existing template's design, you'll need to duplicate and re-arrange template slides before then replacing placeholder context."
         },
         "self_contained": {
           "verdict": "unclear",

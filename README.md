@@ -158,18 +158,18 @@ The registry above says what each project *is*. This says what its documentation
 <!-- BEGIN:CAPABILITIES -->
 | Skill | → PPTX | → PDF | Data charts | Code blocks | Diagrams | Motion | Speaker notes | Presenter mode | Your template | Offline |
 |---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **Anthropic PPTX (official)** | · | · | · | · | · | · | · | · | · | · |
-| **PPT Master** | · | · | · | · | · | · | · | · | · | · |
+| **Anthropic PPTX (official)** | ✅ | ✅ | ✅ | · | · | · | ✅ | · | ✅ | n/a |
+| **PPT Master** | ✅ | · | ✅ | · | ✅ | ✅ | ✅ | · | ✅ | n/a |
 | **Frontend Slides** | · | ✅ | · | · | · | ✅ | · | · | · | · |
 | **Guizang PPT Skill** | — | · | · | · | ✅ | ✅ | · | · | — | · |
-| **Huashu Design** | · | · | · | · | · | · | · | · | · | · |
-| **Visual Explainer** | · | · | · | · | · | · | · | · | · | · |
-| **HTML PPT Studio** | · | · | · | · | · | · | · | · | · | · |
+| **Huashu Design** | ✅ | ✅ | · | · | · | ✅ | ✅ | · | · | · |
+| **Visual Explainer** | · | · | · | · | ✅ | ✅ | · | · | · | ✅ |
+| **HTML PPT Studio** | · | · | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | · | — |
 | **open-slide** | · | · | · | · | · | · | · | · | · | · |
-| **Beautiful HTML Templates** | · | · | · | · | · | · | · | · | · | · |
-| **Claude Office Skills** | · | · | · | · | · | · | · | · | · | · |
+| **Beautiful HTML Templates** | · | · | · | · | · | · | · | · | · | — |
+| **Claude Office Skills** | ✅ | · | · | · | · | · | ✅ | · | ✅ | n/a |
 
-<sub>✅ the docs claim it · — the docs say it does not · · the docs are silent, which is not the same as no. Read from each project's own SKILL.md and README, never from running it; every ✅ carries the sentence it came from in [`data/capabilities.json`](data/capabilities.json).</sub>
+<sub>✅ the docs claim it · — the docs say it does not · · the docs are silent, which is not the same as no · n/a the question does not apply to that route. Read from each project's own SKILL.md and README, never from running it; every ✅ carries the sentence it came from in [`data/capabilities.json`](data/capabilities.json).</sub>
 <!-- END:CAPABILITIES -->
 
 Read the middle column carefully: `·` means the docs never address it, which is not the

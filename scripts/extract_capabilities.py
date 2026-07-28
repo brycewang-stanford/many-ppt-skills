@@ -129,7 +129,9 @@ CAPABILITIES: dict[str, dict] = {
     "self_contained": {
         "label_en": "Offline",
         "label_zh": "离线可用",
-        "why": "A single file with no CDN still opens in ten years.",
+        "why": ("HTML route only. Whether the *delivered deck* runs with no CDN, no "
+                "remote font and no network — an intermediate preview or build "
+                "artifact being self-contained does not count."),
         "patterns": [
             r"\bzero[- ]dependenc", r"\bself[- ]contained\b", r"\bno\s+external\s+dependenc",
             r"\bsingle[- ]file\b", r"\boffline\b", r"零依赖", r"单文件", r"离线",
