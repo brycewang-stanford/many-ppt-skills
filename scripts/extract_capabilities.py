@@ -190,16 +190,44 @@ def detect_runtime(skill_dir: Path) -> list[str]:
     return found
 
 
-def resolve_skill_dir(skill_id: str, repo_dir: Path) -> Path:
-    """Mirrors the runner's resolver so both look at the same directory."""
-    subdirs = {"ppt-master": "skills/ppt-master",
-               "visual-explainer": "plugins/visual-explainer"}
-    if skill_id in subdirs and (repo_dir / subdirs[skill_id]).is_dir():
-        return repo_dir / subdirs[skill_id]
+# Where the skill under discussion actually lives, for repos that hold more than
+# one. Every entry here was added after the shallowest-SKILL.md fallback resolved
+# to the wrong project entirely: anthropic-pptx to the scaffolding in template/,
+# claude-office-skills to its *spreadsheet* skill, open-slide to a third-party
+# design skill it vendors. Reading the wrong docs is worse than reading none —
+# it attributes one project's capabilities to another.
+SKILL_SUBDIR = {
+    "ppt-master": "skills/ppt-master",
+    "visual-explainer": "plugins/visual-explainer",
+    "anthropic-pptx": "skills/pptx",
+    "claude-office-skills": "public/pptx",
+    # A framework, not a skill. Its own documentation is README/AGENTS/CLAUDE at
+    # the top level; every SKILL.md under it is either vendored from elsewhere or
+    # a narrow sub-skill that does not describe the framework.
+    "open-slide": ".",
+}
+
+# Directories that contain somebody else's skills, or a blank scaffold. Never a
+# source of truth about the repo that hosts them.
+NOT_THE_SKILL = ("node_modules", ".git", "examples", "template", "templates",
+                 ".agents", "spec")
+
+
+def resolve_skill_dir(skill_id: str, repo_dir: Path, registry_path: str | None = None) -> Path:
+    """Find the directory whose docs describe *this* skill.
+
+    Order matters: an explicit path from data/skills.json is a curated fact and
+    outranks anything inferred. open-slide deliberately falls through to the repo
+    root — it is a framework whose own documentation is README/AGENTS/CLAUDE at
+    the top level, and every SKILL.md inside it belongs to someone else.
+    """
+    for candidate in (registry_path, SKILL_SUBDIR.get(skill_id)):
+        if candidate and (repo_dir / candidate).is_dir():
+            return repo_dir / candidate
     if (repo_dir / "SKILL.md").exists():
         return repo_dir
     candidates = [p.parent for p in repo_dir.rglob("SKILL.md")
-                  if "node_modules" not in p.parts]
+                  if not any(part in NOT_THE_SKILL for part in p.parts)]
     return min(candidates, key=lambda p: len(p.parts)) if candidates else repo_dir
 
 
@@ -228,7 +256,7 @@ def main() -> int:
         if not repo_dir.is_dir():
             missing.append(sid)
             continue
-        skill_dir = resolve_skill_dir(sid, repo_dir)
+        skill_dir = resolve_skill_dir(sid, repo_dir, skill.get("path"))
         docs = read_docs(skill_dir)
         entry = {
             "docs_read": [d[0] for d in docs],

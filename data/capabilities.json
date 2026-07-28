@@ -61,58 +61,51 @@
         "templates/README.md",
         "templates/brands/README.md",
         "templates/charts/README.md",
-        "templates/decks/README.md",
-        "templates/icons/README.md",
-        "templates/layouts/README.md"
+        "templates/decks/README.md"
       ],
       "runtime": [
         "python"
       ],
       "caps": {
         "native_charts": {
-          "value": true,
-          "source": "scripts/README.md",
-          "matched": "native-charts",
-          "evidence": "Supported parsed column/bar/line/area, pie/doughnut, scatter, and bubble charts without a baked preview receive a deterministic readable fallback marked `data-pptx-fallback-kind=\"n…"
+          "verdict": "yes",
+          "quote": "With `--native-charts-and-tables`, prepared groups become native PowerPoint Chart/Table objects from their JSON metadata."
         },
-        "code_highlighting": null,
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "diagrams": {
-          "value": true,
-          "source": "templates/README.md",
-          "matched": "architecture diagrams",
-          "evidence": "The `charts/` directory contains the registered visualization templates. For backward compatibility, the directory name remains `charts/`, but its scope includes charts, infographi…"
+          "verdict": "yes",
+          "quote": "its scope includes charts, infographics, process diagrams, relationship diagrams, strategic frameworks, and system architecture diagrams"
         },
         "animation": {
-          "value": true,
-          "source": "scripts/README.md",
-          "matched": "animation",
-          "evidence": "python3 scripts/animation_config.py scaffold <project_path>  # optional object-level animation overrides"
+          "verdict": "yes",
+          "quote": "| PPTX animations | `pptx_animations.py`, `animation_config.py` | [docs/pptx-animations.md](./docs/pptx-animations.md) |"
         },
         "speaker_notes": {
-          "value": true,
-          "source": "scripts/README.md",
-          "matched": "Speaker notes",
-          "evidence": "For SVG-authoring routes, `svg_output/` is the complete visible page-design source: every exported text, image, shape, background, and template-derived layout element is present in…"
+          "verdict": "yes",
+          "quote": "Speaker notes, animation, narration, transitions, `template-fill-pptx`, and `native-enhance-pptx` remain separately owned capabilities."
         },
-        "presenter_mode": null,
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "pptx_export": {
-          "value": true,
-          "source": "scripts/README.md",
-          "matched": ".pptx",
-          "evidence": "python3 scripts/source_to_md/ppt_to_md.py <deck.pptx>"
+          "verdict": "yes",
+          "quote": "AI-driven presentation workflow for generating editable PPTX decks, creating reusable Brand/Layout/Deck workspaces, filling native PPTX templates, and enhancing finished PPTX files."
         },
-        "pdf_export": null,
+        "pdf_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "custom_template": {
-          "value": true,
-          "source": "templates/README.md",
-          "matched": "Slide Master",
-          "evidence": "A compiled Slide Master may therefore contain both"
+          "verdict": "yes",
+          "quote": "AI-driven presentation workflow for generating editable PPTX decks, creating reusable Brand/Layout/Deck workspaces, filling native PPTX templates, and enhancing finished PPTX files."
         },
         "self_contained": {
-          "value": true,
-          "source": "scripts/README.md",
-          "matched": "self-contained",
-          "evidence": "`--inheritance-mode both` only when a separate self-contained `svg-flat/`"
+          "verdict": "yes",
+          "quote": "`finalize_svg.py` remains mandatory because it creates the self-contained `svg_final/` visual preview."
         }
       }
     },
@@ -226,45 +219,45 @@
         "node"
       ],
       "caps": {
-        "native_charts": null,
-        "code_highlighting": null,
-        "diagrams": null,
+        "native_charts": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "diagrams": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "animation": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "animation",
-          "evidence": "| 动画/导出 MP4/GIF | 标准流程 + Step 9；**任何动画开工前先按 `references/storyboard-basics.md` 出轻量分镜卡**（每一镜先是一张会动的封面）；镜头级运动（zoom/pan/转场）必读 `references/camera-language.md`；**新动画项目默认走 HyperFrames 后端*…"
+          "verdict": "yes",
+          "quote": "Stage + Sprite time-slice model · `useTime` / `useSprite` / `interpolate` / `Easing` — four APIs cover every animation need · one command exports MP4 / GIF / 60fps-interpolated / BGM-scored finals."
         },
         "speaker_notes": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "speaker notes",
-          "evidence": "| `deck_stage.js` | 做幻灯片（单文件架构，≤10页） | web component：auto-scale + 键盘导航 + slide counter + localStorage + speaker notes ⚠️ **script 必须放在 `</deck-stage>` 之后，section 的 `display: flex` …"
+          "verdict": "yes",
+          "quote": "web component：auto-scale + 键盘导航 + slide counter + localStorage + speaker notes"
         },
-        "presenter_mode": null,
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "pptx_export": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "pptxgenjs",
-          "evidence": "| `scripts/export_deck_pptx.mjs` | **HTML→可编辑 PPTX 导出** · 调 `html2pptx.js` 导出原生可编辑文本框，文字在 PPT 里双击可直接编辑。**HTML 必须符合 4 条硬约束**（见 `references/editable-pptx.md`），视觉自由度优先的场景请改走 PDF 路径。依赖…"
+          "verdict": "yes",
+          "quote": "html2pptx.js reads DOM computed styles and translates each element into real PowerPoint objects · exports are **actual text frames**, not image-bed fakes."
         },
         "pdf_export": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "转 PDF",
-          "evidence": "- **非设计的机械操作**（HTML 转 PDF、导出、截图、修 bug、纯文字改动）"
+          "verdict": "yes",
+          "quote": "幻灯片/PPT 任务走固定交付链，开工不问格式：HTML deck（每页独立 HTML + assets/deck_index.html 概览墙）→ 完成后**自动**出 PDF（scripts/export_deck_pdf.mjs，不问直接给）"
         },
         "custom_template": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "品牌色",
-          "evidence": "**核心理念：资产 > 规范**——logo / 产品图 / UI 截图比品牌色值更重要（花叔：「除了品牌色，显然该用上 logo 和产品图，否则我们在表达什么呢？」）。"
+          "verdict": "unclear",
+          "quote": ""
         },
         "self_contained": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "单文件",
-          "evidence": "🔴 **具名产品 logo 子门（spawn 三套逻辑前必过，硬要求）**：把设计里会出现的产品 / 品牌名**逐个列成清单**，确认每个都已取到官方 logo 并内嵌，再 spawn。**交付形态是「双击就能开」的单文件 HTML 时，logo/图片必须 base64 内嵌**——相对路径的交付物挪个目录就全员裂图（盲测实锤：`../assets/goog…"
+          "verdict": "unclear",
+          "quote": ""
         }
       }
     },
@@ -274,30 +267,45 @@
       ],
       "runtime": [],
       "caps": {
-        "native_charts": null,
-        "code_highlighting": null,
+        "native_charts": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "diagrams": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "Mermaid",
-          "evidence": "| Mermaid flowcharts, sequence, ER, state, class, C4, data flow | `./templates/mermaid-flowchart.html`, Mermaid sections in `./references/libraries.md` |"
+          "verdict": "yes",
+          "quote": "Flowchart, pipeline, state machine, decision tree | Mermaid"
         },
         "animation": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "animation",
-          "evidence": "- Use entrance/hover animation only when it clarifies hierarchy. Respect `prefers-reduced-motion`. Do not use continuous glow, pulse, or breathing effects on static content."
+          "verdict": "yes",
+          "quote": "Use entrance/hover animation only when it clarifies hierarchy. Respect `prefers-reduced-motion`. Do not use continuous glow, pulse, or breathing effects on static content."
         },
-        "speaker_notes": null,
-        "presenter_mode": null,
-        "pptx_export": null,
-        "pdf_export": null,
-        "custom_template": null,
+        "speaker_notes": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "pptx_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "pdf_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "custom_template": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "self_contained": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "self-contained",
-          "evidence": "description: Generate self-contained HTML visual explanations for systems, code changes, plans, data, and technical concepts. Use for diagrams, architecture overviews, diff or plan…"
+          "verdict": "yes",
+          "quote": "The final page must be a complete self-contained HTML document, including embedded CSS and any needed JS."
         }
       }
     },
@@ -314,78 +322,109 @@
         "templates/full-decks/pitch-deck/README.md",
         "templates/full-decks/presenter-mode-reveal/README.md",
         "templates/full-decks/product-launch/README.md",
-        "templates/full-decks/tech-sharing/README.md"
+        "templates/full-decks/tech-sharing/README.md",
+        "templates/full-decks/testing-safety-alert/README.md",
+        "templates/full-decks/weekly-report/README.md",
+        "templates/full-decks/xhs-pastel-card/README.md",
+        "templates/full-decks/xhs-post/README.md",
+        "templates/full-decks/xhs-white-editorial/README.md",
+        "README.zh-CN.md"
       ],
       "runtime": [],
       "caps": {
         "native_charts": {
-          "value": true,
-          "source": "README.md",
-          "matched": "chart.js",
-          "evidence": "and chart.js (optional)."
+          "verdict": "yes",
+          "quote": "Zero build. Pure static HTML/CSS/JS. CDN only for webfonts, highlight.js and chart.js (optional)."
         },
         "code_highlighting": {
-          "value": true,
-          "source": "README.md",
-          "matched": "highlight.js",
-          "evidence": "- **Zero build.** Pure static HTML/CSS/JS. CDN only for webfonts, highlight.js"
+          "verdict": "yes",
+          "quote": "Dark GitHub-ish palette (#0d1117) with JetBrains Mono accents and syntax-highlighted terminal blocks."
         },
         "diagrams": {
-          "value": true,
-          "source": "README.md",
-          "matched": "架构图",
-          "evidence": "- `knowledge-arch-blueprint` — 蓝图 / 架构图风"
+          "verdict": "yes",
+          "quote": "cover · toc · section-divider · bullets · two-column · three-column · big-quote · stat-highlight · kpi-grid · table · code · diff · terminal · flow-diagram · timeline · roadmap · mindmap · comparison · pros-cons · todo-checklist · gantt · image-hero · image-grid · chart-bar · chart-line · chart-pie · chart-radar · arch-diagram · process-steps · cta · thanks"
         },
         "animation": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "animations",
-          "evidence": "description: HTML PPT Studio — author professional static HTML presentations in many styles, layouts, and animations, all driven by templates. Use when the user asks for a presenta…"
+          "verdict": "yes",
+          "quote": "47 animations (27 CSS + 20 canvas FX)"
         },
         "speaker_notes": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "speaker notes",
-          "evidence": "If the user mentions any of: **演讲 / 分享 / 讲稿 / 逐字稿 / speaker notes / presenter view / 演讲者视图 / 提词器**, or says things like \"我要去给团队讲 xxx\", \"要做一场技术分享\", \"怕讲不流畅\", \"想要一份带逐字稿的 PPT\" — **use …"
+          "verdict": "yes",
+          "quote": "Supply notes. Wrap speaker notes in <div class=\"notes\">…</div> inside each slide. Press S to open the overlay."
         },
         "presenter_mode": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "presenter-mode",
-          "evidence": "- **15 full-deck templates** (`templates/full-decks/<name>/`) — complete multi-slide decks with scoped `.tpl-<name>` CSS. 8 extracted from real-world decks (xhs-white-editorial, gr…"
+          "verdict": "yes",
+          "quote": "Press `S` on any deck to pop open a dedicated presenter window with four draggable, resizable **magnetic cards**: current slide, next slide preview, speaker script (逐字稿), and timer."
         },
         "pptx_export": {
-          "value": true,
-          "source": "README.md",
-          "matched": "PowerPoint",
-          "evidence": "gradients and card treatments — no \"Corporate PowerPoint 2006\" vibes."
+          "verdict": "unclear",
+          "quote": ""
         },
-        "pdf_export": null,
-        "custom_template": null,
+        "pdf_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "custom_template": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "self_contained": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "self-contained",
-          "evidence": "`examples/my-talk/` as a starting point. Each folder is self-contained with"
+          "verdict": "no",
+          "quote": "Zero build. Pure static HTML/CSS/JS. CDN only for webfonts, highlight.js and chart.js (optional)."
         }
       }
     },
     "open-slide": {
       "docs_read": [
-        "SKILL.md"
+        ".agents/skills/apple-design/SKILL.md",
+        ".agents/skills/emil-design-eng/SKILL.md",
+        ".agents/skills/frontend-design/SKILL.md",
+        ".agents/skills/review-animations/SKILL.md"
       ],
-      "runtime": [],
+      "runtime": [
+        "node"
+      ],
       "caps": {
-        "native_charts": null,
-        "code_highlighting": null,
-        "diagrams": null,
-        "animation": null,
-        "speaker_notes": null,
-        "presenter_mode": null,
-        "pptx_export": null,
-        "pdf_export": null,
-        "custom_template": null,
-        "self_contained": null
+        "native_charts": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "diagrams": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "animation": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "speaker_notes": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "pptx_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "pdf_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "custom_template": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "self_contained": {
+          "verdict": "unclear",
+          "quote": ""
+        }
       }
     },
     "anthropic-pptx": {
@@ -394,16 +433,46 @@
       ],
       "runtime": [],
       "caps": {
-        "native_charts": null,
-        "code_highlighting": null,
-        "diagrams": null,
-        "animation": null,
-        "speaker_notes": null,
-        "presenter_mode": null,
-        "pptx_export": null,
-        "pdf_export": null,
-        "custom_template": null,
-        "self_contained": null
+        "native_charts": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "diagrams": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "animation": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "speaker_notes": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "pptx_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "pdf_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "custom_template": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "self_contained": {
+          "verdict": "unclear",
+          "quote": ""
+        }
       }
     },
     "beautiful-html-templates": {
@@ -413,20 +482,45 @@
       ],
       "runtime": [],
       "caps": {
-        "native_charts": null,
-        "code_highlighting": null,
-        "diagrams": null,
-        "animation": null,
-        "speaker_notes": null,
-        "presenter_mode": null,
-        "pptx_export": null,
-        "pdf_export": null,
-        "custom_template": null,
+        "native_charts": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "diagrams": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "animation": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "speaker_notes": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "pptx_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "pdf_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "custom_template": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "self_contained": {
-          "value": true,
-          "source": "AGENTS.md",
-          "matched": "self-contained",
-          "evidence": "These three preview files should be self-contained — opening any of them shows that template's title slide, populated with the user's real content."
+          "verdict": "no",
+          "quote": "Whatever the template imports from Google Fonts or declares in `font-family` — keep it. Never substitute."
         }
       }
     },
@@ -436,16 +530,46 @@
       ],
       "runtime": [],
       "caps": {
-        "native_charts": null,
-        "code_highlighting": null,
-        "diagrams": null,
-        "animation": null,
-        "speaker_notes": null,
-        "presenter_mode": null,
-        "pptx_export": null,
-        "pdf_export": null,
-        "custom_template": null,
-        "self_contained": null
+        "native_charts": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "diagrams": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "animation": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "speaker_notes": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "pptx_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "pdf_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "custom_template": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "self_contained": {
+          "verdict": "unclear",
+          "quote": ""
+        }
       }
     },
     "academic-pptx-skill": {
@@ -455,26 +579,46 @@
       ],
       "runtime": [],
       "caps": {
-        "native_charts": null,
-        "code_highlighting": null,
-        "diagrams": null,
-        "animation": null,
-        "speaker_notes": null,
-        "presenter_mode": null,
+        "native_charts": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "diagrams": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "animation": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "speaker_notes": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "pptx_export": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "pptxgenjs",
-          "evidence": "| Technical creation from scratch | PPTX skill → `pptxgenjs.md` |"
+          "verdict": "yes",
+          "quote": "This skill works alongside Anthropic's built-in PPTX skill, which handles the technical file generation."
         },
         "pdf_export": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "pdftoppm",
-          "evidence": "- Poppler (`pdftoppm`) — PDF to images"
+          "verdict": "unclear",
+          "quote": ""
         },
-        "custom_template": null,
-        "self_contained": null
+        "custom_template": {
+          "verdict": "yes",
+          "quote": "confirm with user or match their institution's template if provided"
+        },
+        "self_contained": {
+          "verdict": "unclear",
+          "quote": ""
+        }
       }
     },
     "ppt-agent-workflow-san": {
@@ -486,62 +630,96 @@
         "node"
       ],
       "caps": {
-        "native_charts": null,
-        "code_highlighting": null,
-        "diagrams": null,
-        "animation": null,
-        "speaker_notes": null,
-        "presenter_mode": null,
-        "pptx_export": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": ".pptx",
-          "evidence": "node scripts/html_to_pptx.js <input.html> <output.pptx> [--preset=v9-architecture|ai-runtime-page] [--dump-model <file.json>]"
+        "native_charts": {
+          "verdict": "unclear",
+          "quote": ""
         },
-        "pdf_export": null,
-        "custom_template": null,
-        "self_contained": null
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "diagrams": {
+          "verdict": "yes",
+          "quote": "Convert structured HTML slides into editable PowerPoint (.pptx) slides with native text boxes, shapes, chips, arrows, and panels."
+        },
+        "animation": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "speaker_notes": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "pptx_export": {
+          "verdict": "yes",
+          "quote": "Convert structured single-slide or small deck HTML files into editable PPTX slides with native text boxes, shapes, chips, arrows, and panels. Use when the user has an HTML slide/design draft and wants a high-fidelity editable PowerPoint instead of a screenshot-based export."
+        },
+        "pdf_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "custom_template": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "self_contained": {
+          "verdict": "unclear",
+          "quote": ""
+        }
       }
     },
     "frontend-slides-editable": {
       "docs_read": [
         "SKILL.md",
-        "README.md",
-        "docs/preset-previews/README.md"
+        "README.md"
       ],
       "runtime": [
         "node"
       ],
       "caps": {
-        "native_charts": null,
-        "code_highlighting": null,
-        "diagrams": null,
+        "native_charts": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "diagrams": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "animation": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "animation",
-          "evidence": "Create zero-dependency, animation-rich HTML presentations that run entirely in the browser **with a built-in editor**: move objects, multi-select with **Ctrl+click**, alignment sna…"
+          "verdict": "yes",
+          "quote": "Motion: Use **CSS-only** animations and transitions in generated decks (this skill outputs single-file HTML, no React and no Motion library). Focus on high-impact moments: one well-orchestrated load with staggered reveals (`animation-delay`) beats scattered micro-interactions."
         },
         "speaker_notes": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "speaker notes",
-          "evidence": "- Both writers emit the same intermediate: **`extracted-slides.json`** + **`assets/`** (one record per slide/page; PDF has no speaker notes — use `notes: \"\"`)."
+          "verdict": "unclear",
+          "quote": ""
         },
-        "presenter_mode": null,
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "pptx_export": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "python-pptx",
-          "evidence": "- **PPTX:** `python3 scripts/extract-pptx.py &lt;input.pptx&gt; &lt;output_dir&gt;` (install **python-pptx** if needed: `pip install python-pptx`)"
+          "verdict": "no",
+          "quote": "export a sanitized standalone `.html` that embeds the current deck state and media assets"
         },
-        "pdf_export": null,
-        "custom_template": null,
+        "pdf_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "custom_template": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "self_contained": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "zero-dependenc",
-          "evidence": "Create zero-dependency, animation-rich HTML presentations that run entirely in the browser **with a built-in editor**: move objects, multi-select with **Ctrl+click**, alignment sna…"
+          "verdict": "yes",
+          "quote": "The exported file is **portable, single-file, self-contained (no external font links), and trail-free**"
         }
       }
     },
@@ -554,31 +732,46 @@
         "node"
       ],
       "caps": {
-        "native_charts": null,
-        "code_highlighting": null,
-        "diagrams": null,
-        "animation": null,
-        "speaker_notes": null,
-        "presenter_mode": null,
+        "native_charts": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "diagrams": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "animation": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "speaker_notes": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "pptx_export": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "PowerPoint",
-          "evidence": "- ✅ 可直接导入 PowerPoint"
+          "verdict": "yes",
+          "quote": "将生成的 SVG 页面批量导出为可直接演示的 PDF 文档或 PPTX 幻灯片"
         },
         "pdf_export": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "导出 PDF",
-          "evidence": "# 仅导出 PDF"
+          "verdict": "yes",
+          "quote": "将生成的 SVG 页面批量导出为可直接演示的 PDF 文档或 PPTX 幻灯片"
         },
         "custom_template": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "品牌色",
-          "evidence": "输入你的品牌色和风格偏好，生成定制化设计规范。"
+          "verdict": "unclear",
+          "quote": ""
         },
-        "self_contained": null
+        "self_contained": {
+          "verdict": "unclear",
+          "quote": ""
+        }
       }
     },
     "mck-ppt-design-skill": {
@@ -591,29 +784,44 @@
       ],
       "caps": {
         "native_charts": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "数据图表",
-          "evidence": "- 无数据图表（donut/bar/table 类）"
+          "verdict": "yes",
+          "quote": "Chart rendering | `add_rect()` stacking (100–2,800 shapes) | `BLOCK_ARC` native arcs (3–4 shapes)"
         },
-        "code_highlighting": null,
-        "diagrams": null,
-        "animation": null,
-        "speaker_notes": null,
-        "presenter_mode": null,
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "diagrams": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "animation": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "speaker_notes": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "pptx_export": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "python-pptx",
-          "evidence": "using MckEngine (python-pptx wrapper) with McKinsey-style design. Use when"
+          "verdict": "yes",
+          "quote": "eng.save('output/deck.pptx')"
         },
-        "pdf_export": null,
-        "custom_template": null,
+        "pdf_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "custom_template": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "self_contained": {
-          "value": true,
-          "source": "README.md",
-          "matched": "Offline",
-          "evidence": "rows=[['Distribution', 'Offline-first', 'Digital-first'],"
+          "verdict": "unclear",
+          "quote": ""
         }
       }
     },
@@ -632,44 +840,44 @@
       "runtime": [],
       "caps": {
         "native_charts": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "ECharts",
-          "evidence": "| `references/charts/{basic,advanced,complex}.md` | 选定图表后 | 完整 HTML 模板（基础 8 种 / 进阶 6 种 / ECharts 级 4 种）|"
+          "verdict": "yes",
+          "quote": "全部纯 HTML/CSS/SVG 实现，无 JS 运行时（保证 svg2pptx 管线兼容）。所有图表自动适配 26 风格的 CSS 变量。"
         },
-        "code_highlighting": null,
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "diagrams": {
-          "value": true,
-          "source": "README.md",
-          "matched": "架构图",
-          "evidence": "<img src=\"assets/architecture.png\" alt=\"系统架构图\" width=\"100%\" />"
+          "verdict": "yes",
+          "quote": "架构/流程/多层关系 | diagram | 图解让观众从「听描述」变成「看全景」"
         },
         "animation": {
-          "value": true,
-          "source": "references/styles/README.md",
-          "matched": "转场",
-          "evidence": "\"variation_strategy\": \"跨页变奏策略 -- 描述在这套风格基因下，页与页之间如何制造灵动变化。例如：'深底页用网格点阵+角标装饰线制造精密仪器感，浅转场页用大面积光晕呼吸+极简留白，两种极端交替形成视觉心跳'\","
+          "verdict": "unclear",
+          "quote": ""
         },
-        "speaker_notes": null,
-        "presenter_mode": null,
+        "speaker_notes": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "pptx_export": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "python-pptx",
-          "evidence": "pip install python-pptx lxml Pillow 2>/dev/null"
+          "verdict": "yes",
+          "quote": "PPTX 兼容 | HTML → SVG → PPTX 管线，PPT 365 中右键「转换为形状」全部可编辑"
         },
-        "pdf_export": null,
+        "pdf_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "custom_template": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "品牌色",
-          "evidence": "| 执行层 | 7. 补充信息（演讲人/品牌色/必含/必避/页数/配图偏好） | 具体执行细节 |"
+          "verdict": "unclear",
+          "quote": ""
         },
         "self_contained": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "单文件",
-          "evidence": "| `references/charts/<chart_type>.md` | 单一图表精细规格 | sunbigfly 风格的单文件图表（13 个）|"
+          "verdict": "unclear",
+          "quote": ""
         }
       }
     },
@@ -681,30 +889,45 @@
       ],
       "runtime": [],
       "caps": {
-        "native_charts": null,
-        "code_highlighting": null,
-        "diagrams": null,
+        "native_charts": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "diagrams": {
+          "verdict": "yes",
+          "quote": "**结构是关系**：节点连线、Venn 图、流程箭头 — 用 HTML/SVG 绘制，而不是 bullet list"
+        },
         "animation": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "ANIMATIONS",
-          "evidence": "→ 读取 `ANIMATIONS.md` → 选择合适的动画模式"
+          "verdict": "yes",
+          "quote": "动画库（`ANIMATIONS.md`）包含 10 个章节的完整可复用代码。"
         },
-        "speaker_notes": null,
-        "presenter_mode": null,
+        "speaker_notes": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "pptx_export": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": ".pptx",
-          "evidence": "- **PPTX 文件（想重新设计）** → 让用户运行 `python3 scripts/pptx_to_brief.py 课件.pptx`，把输出的 `_brief.md` 粘贴回来，然后进入 Step 1 问受众和目标，用 skill 重新生成双通道版本"
+          "verdict": "no",
+          "quote": "输出：HTML slide deck，可直接使用"
         },
-        "pdf_export": null,
-        "custom_template": null,
+        "pdf_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "custom_template": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "self_contained": {
-          "value": true,
-          "source": "README.md",
-          "matched": "单文件",
-          "evidence": "- 单文件 SKILL.md"
+          "verdict": "yes",
+          "quote": "Output HTML files are fully self-contained."
         }
       }
     },
@@ -712,62 +935,51 @@
       "docs_read": [
         "SKILL.md",
         "skills/html-slides/SKILL.md",
-        "README.md",
-        "CLAUDE.md"
+        "README.md"
       ],
       "runtime": [
         "node"
       ],
       "caps": {
         "native_charts": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "Chart.js",
-          "evidence": "6. All JS inline (except CDN libraries: Chart.js, Mermaid, anime.js)"
+          "verdict": "yes",
+          "quote": "If any slides use **Chart** components, add Chart.js CDN in `<head>` before `<style>`: `<script src=\"https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js\"></script>`"
         },
         "code_highlighting": {
-          "value": true,
-          "source": "README.md",
-          "matched": "Syntax-highlight",
-          "evidence": "| Code Block | Syntax-highlighted terminal window |"
+          "verdict": "unclear",
+          "quote": ""
         },
         "diagrams": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "Mermaid",
-          "evidence": "6. All JS inline (except CDN libraries: Chart.js, Mermaid, anime.js)"
+          "verdict": "yes",
+          "quote": "CDN libraries for diagrams (Mermaid.js), orchestrated animations (anime.js). Use when the content calls for them."
         },
         "animation": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "animation",
-          "evidence": "Create zero-dependency, animation-rich HTML presentations that run entirely in the browser."
+          "verdict": "yes",
+          "quote": "Create zero-dependency, animation-rich HTML presentations that run entirely in the browser."
         },
         "speaker_notes": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "speaker notes",
-          "evidence": "- **Always generate speaker notes** — see Speaker Notes below"
+          "verdict": "yes",
+          "quote": "Speaker notes are **embedded inline** in each slide as a hidden JSON block."
         },
-        "presenter_mode": null,
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "pptx_export": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "python-pptx",
-          "evidence": "1. **Extract content** — Run `python scripts/extract-pptx.py <input.pptx> <output_dir>` (install python-pptx if needed: `pip install python-pptx`)"
+          "verdict": "no",
+          "quote": "Options: **Deploy to URL** / **Export to PDF** / **Both** / **No thanks**"
         },
         "pdf_export": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "Export to PDF",
-          "evidence": "Options: **Deploy to URL** / **Export to PDF** / **Both** / **No thanks**"
+          "verdict": "yes",
+          "quote": "Captures each slide as a screenshot and combines into a single PDF. Animations are not preserved (static snapshot)."
         },
-        "custom_template": null,
+        "custom_template": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "self_contained": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "zero-dependenc",
-          "evidence": "Create zero-dependency, animation-rich HTML presentations that run entirely in the browser."
+          "verdict": "unclear",
+          "quote": ""
         }
       }
     },
@@ -781,49 +993,44 @@
       ],
       "caps": {
         "native_charts": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "数据图表",
-          "evidence": "0.2 → 逐页分析内容特征（要点数量、层级关系、对比关系、数据图表）"
+          "verdict": "unclear",
+          "quote": ""
         },
-        "code_highlighting": null,
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "diagrams": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "流程图",
-          "evidence": "| 伙伴赋能 | 封面 + 内容 + 结尾 | 架构示意 + 流程图 + 对比页 |"
+          "verdict": "yes",
+          "quote": "图形 | 复杂 SVG/图表"
         },
         "animation": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "GSAP",
-          "evidence": "> v7.1：新增 Bento Motion 风格变体 — Tailwind v4 + GSAP ScrollTrigger，纯白底 + Apple 滚动动效，可选风格切换"
+          "verdict": "yes",
+          "quote": "动效 | Intersection Observer fade | GSAP ScrollTrigger（Apple 式）"
         },
-        "speaker_notes": null,
-        "presenter_mode": null,
+        "speaker_notes": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "pptx_export": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "PptxGenJS",
-          "evidence": "> ⚠️ **完整 PptxGenJS 代码见 `layout-presets.md § 版式 19-25`**，下方仅列排版原则和色块结构，供内容脚本阶段参照。"
+          "verdict": "yes",
+          "quote": "导出的 `.pptx` 完全兼容 Microsoft PowerPoint、WPS Office、Apple Keynote 等主流软件，所有文本框均可二次编辑。"
         },
         "pdf_export": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "pdftoppm",
-          "evidence": "soffice PDF → pdftoppm 预览图"
+          "verdict": "yes",
+          "quote": "用户要 PDF | 用 Playwright 截图合并导出 PDF（⚠️ 动画丢失），不依赖 OUTPUT_FORMAT"
         },
         "custom_template": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "品牌色",
-          "evidence": "4. style-guide.md      → 视觉规范（品牌色/字体/间距）"
+          "verdict": "unclear",
+          "quote": ""
         },
         "self_contained": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "零依赖",
-          "evidence": "| **单文件** | 全部 CSS/JS 内联，零依赖，可直接浏览器打开 |"
+          "verdict": "yes",
+          "quote": "单文件 | 全部 CSS/JS 内联，零依赖，可直接浏览器打开"
         }
       }
     },
@@ -833,26 +1040,46 @@
       ],
       "runtime": [],
       "caps": {
-        "native_charts": null,
-        "code_highlighting": null,
+        "native_charts": {
+          "verdict": "no",
+          "quote": "明确告知用户：文字不可搜索，图表不可编辑，后续改字需要重新生成或图像编辑。"
+        },
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "diagrams": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "架构图",
-          "evidence": "imagegen 逐页出图与人工验收。适用于 PPT、slide、架构图、技术蓝图、工作汇报和客户提案；"
+          "verdict": "yes",
+          "quote": "面板内容类型：文字、数据、图表、表格、流程、实拍、概念图或公式"
         },
-        "animation": null,
-        "speaker_notes": null,
-        "presenter_mode": null,
-        "pptx_export": null,
-        "pdf_export": null,
+        "animation": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "speaker_notes": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "pptx_export": {
+          "verdict": "no",
+          "quote": "本 skill 不实现 PPTX authoring/export。"
+        },
+        "pdf_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "custom_template": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "品牌色",
-          "evidence": "4. 风格 preset 与允许覆盖的品牌色。"
+          "verdict": "yes",
+          "quote": "华为 / 用户提供的自定义 preset"
         },
-        "self_contained": null
+        "self_contained": {
+          "verdict": "unclear",
+          "quote": ""
+        }
       }
     },
     "slide-creator": {
@@ -865,60 +1092,49 @@
         "evals/preset-surface-phase1/README.md",
         "tests/fixtures/skill-evals/README.md",
         "themes/README.md",
-        "README.zh-CN.md",
-        "themes/README.zh-CN.md"
+        "README.zh-CN.md"
       ],
       "runtime": [],
       "caps": {
         "native_charts": {
-          "value": true,
-          "source": "README.md",
-          "matched": "bar charts",
-          "evidence": "- **Inline SVG diagrams** — flowcharts, timelines, bar charts, comparison grids, org charts — no external libs"
+          "verdict": "yes",
+          "quote": "Inline SVG diagrams — flowcharts, timelines, bar charts, comparison grids, org charts — no external libs"
         },
-        "code_highlighting": null,
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "diagrams": {
-          "value": true,
-          "source": "README.zh-CN.md",
-          "matched": "流程图",
-          "evidence": "- **内联 SVG 图表** — 流程图、时间轴、条形图、对比矩阵、组织架构图，无需外部库"
+          "verdict": "yes",
+          "quote": "Inline SVG diagrams — flowcharts, timelines, bar charts, comparison grids, org charts — no external libs"
         },
         "animation": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "@keyframes",
-          "evidence": "禁止 U+FE0F。Blue Sky 模板路径还要检查 REQUIRED BLOCK、`@keyframes`、以及 `go()` 返回 boolean。"
+          "verdict": "yes",
+          "quote": "所有颜色、字体、组件、背景、动画、图表色、signature elements 都**必须且只能**来自选中的风格文件"
         },
         "speaker_notes": {
-          "value": true,
-          "source": "README.md",
-          "matched": "speaker notes",
-          "evidence": "- `PRESENTATION_SCRIPT.md` — speaker notes (auto-generated if ≥8 slides)"
+          "verdict": "yes",
+          "quote": "`PRESENTATION_SCRIPT.md` — speaker notes (auto-generated if ≥8 slides)"
         },
         "presenter_mode": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "演讲者模式",
-          "evidence": "description: 生成HTML演示文稿/幻灯片 — 稳定生成器覆盖核心风格，播放/演讲者模式。适用于路演、产品发布、技术分享、方案宣讲等场景。"
+          "verdict": "yes",
+          "quote": "**Presenter Mode** — Press `P` for synced speaker window: notes, timer, slide counter, prev/next nav; height auto-adapts"
         },
         "pptx_export": {
-          "value": true,
-          "source": "README.md",
-          "matched": "python-pptx",
-          "evidence": "For PPTX/PNG export: `clawhub install kai-html-export` or `pip install playwright python-pptx`"
+          "verdict": "yes",
+          "quote": "**PPTX / PNG export** — via [kai-html-export](https://github.com/kaisersong/kai-html-export)"
         },
-        "pdf_export": null,
+        "pdf_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "custom_template": {
-          "value": true,
-          "source": "README.zh-CN.md",
-          "matched": "品牌色",
-          "evidence": "这样 theme 才是可组合、可审查、可复用的渲染契约，而不只是“帮我套一下品牌色”。"
+          "verdict": "yes",
+          "quote": "Custom themes are supported, but they are not prompt soup. The contract is explicit: create `themes/your-theme/`, add `reference.md` for the design language, optionally add `starter.html` for complex systems"
         },
         "self_contained": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "零依赖",
-          "evidence": "生成零依赖 HTML 演示文稿，纯浏览器运行。主路径是 IR-first：`user prompt → BRIEF.json → HTML → validate`。"
+          "verdict": "unclear",
+          "quote": ""
         }
       }
     },
@@ -932,40 +1148,45 @@
         "node"
       ],
       "caps": {
-        "native_charts": null,
-        "code_highlighting": null,
-        "diagrams": null,
+        "native_charts": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "diagrams": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "animation": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "animation",
-          "evidence": "Create zero-dependency, animation-rich HTML presentations that run entirely in the browser. 50+ curated visual styles, bilingual support, PPT conversion, and one-click sharing."
+          "verdict": "yes",
+          "quote": "Create zero-dependency, animation-rich HTML presentations that run entirely in the browser."
         },
         "speaker_notes": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "speaker notes",
-          "evidence": "4. **Generate HTML** — Convert to chosen style, preserving all text, images, slide order, and speaker notes"
+          "verdict": "unclear",
+          "quote": ""
         },
-        "presenter_mode": null,
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "pptx_export": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "python-pptx",
-          "evidence": "1. **Extract content** — Run `python scripts/extract-pptx.py <input.pptx> <output_dir>` (install python-pptx if needed: `pip install python-pptx`)"
+          "verdict": "no",
+          "quote": "Options: Deploy to URL / Export to PDF / Both / No thanks"
         },
         "pdf_export": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "Export to PDF",
-          "evidence": "Options: Deploy to URL / Export to PDF / Both / No thanks"
+          "verdict": "yes",
+          "quote": "### 6B: Export to PDF\n\n1. Use Playwright to screenshot each slide at 1920×1080\n2. Combine into PDF\n3. Auto-open the result"
         },
-        "custom_template": null,
+        "custom_template": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "self_contained": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "zero dependenc",
-          "evidence": "or convert PowerPoint files. 50+ curated styles, bilingual (EN/中文), zero dependencies."
+          "verdict": "yes",
+          "quote": "Zero Dependencies — Single HTML files with inline CSS/JS. No npm, no build tools."
         }
       }
     },
@@ -1027,39 +1248,44 @@
       "runtime": [],
       "caps": {
         "native_charts": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "chart.js",
-          "evidence": "3. Recreate charts/graphs as CSS or SVG (no chart.js or external libs)"
+          "verdict": "yes",
+          "quote": "Recreate charts/graphs as CSS or SVG (no chart.js or external libs)"
         },
-        "code_highlighting": null,
-        "diagrams": null,
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "diagrams": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "animation": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "animation",
-          "evidence": "| `references/animation-patterns.md` | Effect-to-feeling table, entrance/bg CSS, tilt/magnetic JS | When adding motion effects |"
+          "verdict": "yes",
+          "quote": "Generate a single `.html` file with full animations, responsive sizing, and keyboard navigation"
         },
-        "speaker_notes": null,
-        "presenter_mode": null,
+        "speaker_notes": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "pptx_export": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "PowerPoint",
-          "evidence": "When converting from PowerPoint/PDF:"
+          "verdict": "no",
+          "quote": "Every presentation ships as a single `.html` file — no build step, no npm, no PowerPoint. Just double-click to present."
         },
         "pdf_export": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "Export to PDF",
-          "evidence": "### Export to PDF"
+          "verdict": "yes",
+          "quote": "PDF export — Chrome headless print support built in"
         },
-        "custom_template": null,
+        "custom_template": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "self_contained": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": "Zero dependenc",
-          "evidence": "description: Create stunning HTML presentations with 50,000+ unique design combinations. 50 aesthetics, 20 palettes, 10 fonts, 30+ effects. Zero dependencies, anti-AI-slop."
+          "verdict": "unclear",
+          "quote": "**Offline** — fonts load from CDN but everything else is self-contained"
         }
       }
     },
@@ -1075,26 +1301,46 @@
         "node"
       ],
       "caps": {
-        "native_charts": null,
-        "code_highlighting": null,
-        "diagrams": null,
-        "animation": null,
+        "native_charts": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "diagrams": {
+          "verdict": "yes",
+          "quote": "Preserves geometry-sensitive diagrams and strict tables when structure carries meaning."
+        },
+        "animation": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "speaker_notes": {
-          "value": true,
-          "source": "README.md",
-          "matched": "speaker-notes",
-          "evidence": "- Supports `presentation_scenario`, `quality_tier`, brand locks, and speaker-notes sidecars for public-stage decks."
+          "verdict": "yes",
+          "quote": "When `speaker_notes_mode` is enabled, generate a sidecar notes file for presenter use."
         },
-        "presenter_mode": null,
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "pptx_export": {
-          "value": true,
-          "source": "SKILL.md",
-          "matched": ".pptx",
-          "evidence": "node .\\scripts\\export_ppt.mjs --input .\\outputs\\rendered --output .\\outputs\\ppt\\deck.pptx"
+          "verdict": "yes",
+          "quote": "The PPT export is intentionally image-based for fidelity. Each slide becomes one full-bleed PNG inside a 16:9 deck."
         },
-        "pdf_export": null,
-        "custom_template": null,
-        "self_contained": null
+        "pdf_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "custom_template": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "self_contained": {
+          "verdict": "unclear",
+          "quote": ""
+        }
       }
     },
     "pptx-from-layouts": {
@@ -1104,58 +1350,52 @@
         ".claude/skills/pptx-profile/SKILL.md",
         "SKILL.md",
         "alternatives/anthropics-pptx/SKILL.md",
-        "alternatives/elite-powerpoint-designer/SKILL.md",
-        "alternatives/k-dense-pptx/SKILL.md",
-        "alternatives/powerpoint-igorwarzocha/SKILL.md",
-        "alternatives/pptx-jjuidev/SKILL.md",
-        "alternatives/pptx-samhvw8/SKILL.md",
-        "alternatives/python-pptx/SKILL.md",
-        "README.md"
+        "alternatives/elite-powerpoint-designer/SKILL.md"
       ],
       "runtime": [
         "python"
       ],
       "caps": {
         "native_charts": {
-          "value": true,
-          "source": "alternatives/anthropics-pptx/SKILL.md",
-          "matched": "bar charts",
-          "evidence": "- Horizontal bar charts instead of vertical"
+          "verdict": "unclear",
+          "quote": ""
         },
-        "code_highlighting": null,
-        "diagrams": null,
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "diagrams": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "animation": {
-          "value": true,
-          "source": "alternatives/anthropics-pptx/SKILL.md",
-          "matched": "animations",
-          "evidence": "You need raw XML access for: comments, speaker notes, slide layouts, animations, design elements, and complex formatting. For any of these features, you'll need to unpack a present…"
+          "verdict": "unclear",
+          "quote": ""
         },
         "speaker_notes": {
-          "value": true,
-          "source": "alternatives/anthropics-pptx/SKILL.md",
-          "matched": "speaker notes",
-          "evidence": "description: \"Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx files) for: (1) Creating new presentations, (2) Modifying or editing…"
+          "verdict": "unclear",
+          "quote": ""
         },
-        "presenter_mode": null,
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
         "pptx_export": {
-          "value": true,
-          "source": ".claude/skills/pptx-author/SKILL.md",
-          "matched": ".pptx",
-          "evidence": "your-template.pptx        slides.md (+ [HINT:])     slides.md + config"
+          "verdict": "yes",
+          "quote": "Generate consultant-quality PowerPoint presentations from markdown outlines using your template's actual slide master layouts."
         },
         "pdf_export": {
-          "value": true,
-          "source": "alternatives/anthropics-pptx/SKILL.md",
-          "matched": "pdftoppm",
-          "evidence": "pdftoppm -jpeg -r 150 template.pdf slide"
+          "verdict": "unclear",
+          "quote": ""
         },
         "custom_template": {
-          "value": true,
-          "source": ".claude/skills/pptx-from-layouts/SKILL.md",
-          "matched": "slide-master",
-          "evidence": "using a template's real slide-master layouts (not text overlays). Use when"
+          "verdict": "yes",
+          "quote": "To make on-brand decks, onboard your own .pptx once — profile it, generate its layout-mapping config, smoke-test, and reuse it for every future deck."
         },
-        "self_contained": null
+        "self_contained": {
+          "verdict": "unclear",
+          "quote": ""
+        }
       }
     }
   }

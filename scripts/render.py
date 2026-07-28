@@ -238,10 +238,91 @@ def render_scorecard(data: dict, stats: dict, lang: str) -> str:
     return "\n".join(rows)
 
 
+CAPS = ROOT / "data" / "capabilities.json"
+
+# Order the columns by how often they decide a choice, not alphabetically.
+CAP_ORDER = [
+    "pptx_export", "pdf_export", "native_charts", "code_highlighting",
+    "diagrams", "animation", "speaker_notes", "presenter_mode",
+    "custom_template", "self_contained",
+]
+
+CAP_MARK = {"yes": "✅", "no": "—", "unclear": "·"}
+
+
+def render_capabilities(data: dict, stats: dict, lang: str) -> str:
+    """What each skill's own documentation claims it does.
+
+    Not scores. Every ✅ is backed by a quote in data/capabilities.json, and the
+    middle value is deliberately "the docs are silent", not "no" — collapsing
+    those two would invent facts about 26 projects at once.
+    """
+    if not CAPS.exists():
+        return ("> Capability data not generated yet — run "
+                "`python scripts/read_capabilities.py`.")
+    card = json.loads(CAPS.read_text(encoding="utf-8"))
+    caps, skills = card.get("capabilities", {}), card.get("skills", {})
+    if not skills:
+        return "> Capability data is empty."
+
+    by_id = {s["id"]: s for s in data["skills"]}
+    label_key = "label_en" if lang == "en" else "label_zh"
+
+    # Only skills whose docs have actually been read. A skill that is merely
+    # absent from the run would otherwise render as a full row of "the docs are
+    # silent", which is a claim about 10 capabilities that nobody checked.
+    def was_read(sid: str) -> bool:
+        return any(isinstance(v, dict) and "verdict" in v
+                   for v in skills[sid]["caps"].values())
+
+    # Top of the registry only. A 26-row, 10-column grid is unreadable, and the
+    # skills people actually choose between are the ones with a community.
+    ranked = sorted(
+        (s for s in data["skills"] if s["id"] in skills and was_read(s["id"])),
+        key=lambda s: -(stats.get("repos", {}).get(s["repo"], {}).get("stars") or 0),
+    )[:10]
+    if not ranked:
+        return "> No skill documentation has been read yet."
+
+    head = ("| Skill | " if lang == "en" else "| 项目 | ") + " | ".join(
+        caps[c][label_key] for c in CAP_ORDER if c in caps) + " |"
+    rows = [head, "|---|" + ":-:|" * len([c for c in CAP_ORDER if c in caps])]
+
+    for s in ranked:
+        cells = []
+        for c in CAP_ORDER:
+            if c not in caps:
+                continue
+            v = (skills[s["id"]]["caps"].get(c) or {}).get("verdict", "unclear")
+            cells.append(CAP_MARK.get(v, "·"))
+        rows.append(f"| **{s['name']}** | " + " | ".join(cells) + " |")
+
+    rows.append("")
+    if lang == "en":
+        rows.append(
+            "<sub>✅ the docs claim it · — the docs say it does not · "
+            "· the docs are silent, which is not the same as no. "
+            "Read from each project's own SKILL.md and README, never from running it; "
+            "every ✅ carries the sentence it came from in "
+            "[`data/capabilities.json`](data/capabilities.json).</sub>"
+        )
+    else:
+        rows.append(
+            "<sub>✅ 文档声明支持 · — 文档明确说明不支持 · "
+            "· 文档未提及，这不等于不支持。"
+            "全部读自各项目自己的 SKILL.md 与 README，不是实跑验证；"
+            "每个 ✅ 的出处引文都在 "
+            "[`data/capabilities.json`](data/capabilities.json)。</sub>"
+        )
+    return "\n".join(rows)
+
+
+
 BLOCKS = {
     "REGISTRY": render_registry,
     "COUNTS": render_counts,
     "SCORECARD": render_scorecard,
+    "CAPABILITIES": render_capabilities,
 }
 
 

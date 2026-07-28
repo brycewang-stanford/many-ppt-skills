@@ -148,6 +148,35 @@ essentially every scenario.
 
 <sub>`*` monorepo star count — reflects the whole repo, not this one skill. `~` stale value, last refresh failed. `⚠️` copyleft license, check before commercial use.</sub>
 <!-- END:REGISTRY -->
+---
+
+## What each one actually does
+
+The registry above says what each project *is*. This says what its documentation
+*claims it does* — the columns that usually decide the choice.
+
+<!-- BEGIN:CAPABILITIES -->
+| Skill | → PPTX | → PDF | Data charts | Code blocks | Diagrams | Motion | Speaker notes | Presenter mode | Your template | Offline |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **Anthropic PPTX (official)** | · | · | · | · | · | · | · | · | · | · |
+| **PPT Master** | · | · | · | · | · | · | · | · | · | · |
+| **Frontend Slides** | · | ✅ | · | · | · | ✅ | · | · | · | · |
+| **Guizang PPT Skill** | — | · | · | · | ✅ | ✅ | · | · | — | · |
+| **Huashu Design** | · | · | · | · | · | · | · | · | · | · |
+| **Visual Explainer** | · | · | · | · | · | · | · | · | · | · |
+| **HTML PPT Studio** | · | · | · | · | · | · | · | · | · | · |
+| **open-slide** | · | · | · | · | · | · | · | · | · | · |
+| **Beautiful HTML Templates** | · | · | · | · | · | · | · | · | · | · |
+| **Claude Office Skills** | · | · | · | · | · | · | · | · | · | · |
+
+<sub>✅ the docs claim it · — the docs say it does not · · the docs are silent, which is not the same as no. Read from each project's own SKILL.md and README, never from running it; every ✅ carries the sentence it came from in [`data/capabilities.json`](data/capabilities.json).</sub>
+<!-- END:CAPABILITIES -->
+
+Read the middle column carefully: `·` means the docs never address it, which is not the
+same as "no". Several of these projects do more than they write down. Where a capability
+matters to you, the quote in [`data/capabilities.json`](data/capabilities.json) tells you
+exactly which sentence to go and check.
+
 
 ---
 

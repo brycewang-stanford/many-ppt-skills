@@ -142,6 +142,34 @@ Skill。现在有 30+ 个认真做的项目，其中四个 star 数都超过 2 �
 
 <sub>`*` monorepo star 数，反映整个仓库而非这一个 skill。`~` 上次刷新失败，为陈旧值。`⚠️` copyleft 协议，商用前请确认。</sub>
 <!-- END:REGISTRY -->
+---
+
+## 每个到底能做什么
+
+上面的登记册说的是每个项目**是什么**，这里说的是它的文档**声称它能做什么** —— 也就是通常
+真正决定选择的那几列。
+
+<!-- BEGIN:CAPABILITIES -->
+| 项目 | → PPTX | → PDF | 数据图表 | 代码高亮 | 图示 | 动效 | 演讲备注 | 演讲者模式 | 自定义模板 | 离线可用 |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **Anthropic PPTX (official)** | · | · | · | · | · | · | · | · | · | · |
+| **PPT Master** | · | · | · | · | · | · | · | · | · | · |
+| **Frontend Slides** | · | ✅ | · | · | · | ✅ | · | · | · | · |
+| **Guizang PPT Skill** | — | · | · | · | ✅ | ✅ | · | · | — | · |
+| **Huashu Design** | · | · | · | · | · | · | · | · | · | · |
+| **Visual Explainer** | · | · | · | · | · | · | · | · | · | · |
+| **HTML PPT Studio** | · | · | · | · | · | · | · | · | · | · |
+| **open-slide** | · | · | · | · | · | · | · | · | · | · |
+| **Beautiful HTML Templates** | · | · | · | · | · | · | · | · | · | · |
+| **Claude Office Skills** | · | · | · | · | · | · | · | · | · | · |
+
+<sub>✅ 文档声明支持 · — 文档明确说明不支持 · · 文档未提及，这不等于不支持。全部读自各项目自己的 SKILL.md 与 README，不是实跑验证；每个 ✅ 的出处引文都在 [`data/capabilities.json`](data/capabilities.json)。</sub>
+<!-- END:CAPABILITIES -->
+
+中间那个值要看仔细：`·` 表示文档从未提及，**这不等于「不支持」**。这些项目里有好几个做的比
+写下来的多。如果某项能力对你重要，[`data/capabilities.json`](data/capabilities.json) 里的
+引文会告诉你该去核对哪一句话。
+
 
 ---
 

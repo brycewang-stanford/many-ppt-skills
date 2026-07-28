@@ -184,7 +184,7 @@ def main() -> int:
         if not repo_dir.is_dir():
             print(f"[{i}/{len(targets)}] {sid}: not cloned, skipped", file=sys.stderr)
             continue
-        skill_dir = resolve_skill_dir(sid, repo_dir)
+        skill_dir = resolve_skill_dir(sid, repo_dir, skill.get("path"))
         docs = read_docs_text(skill_dir)
         if not docs:
             print(f"[{i}/{len(targets)}] {sid}: no docs found", file=sys.stderr)
