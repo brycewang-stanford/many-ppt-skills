@@ -102,7 +102,6 @@ essentially every scenario.
 
 | Skill | ⭐ | Route | License | What it is |
 |---|---:|---|---|---|
-| **[Anthropic PPTX (official)](https://github.com/anthropics/skills/tree/main/skills/pptx)**<br><sub>Anthropic</sub> | 164,681* | PPTX | See repo | The official baseline — create, read, edit and combine PowerPoint files. |
 | **[PPT Master](https://github.com/hugohe3/ppt-master)**<br><sub>hugohe3</sub> | 41,516 | PPTX | MIT | Documents or topics into genuinely native, editable PowerPoint decks. |
 | **[Frontend Slides](https://github.com/zarazhangrui/frontend-slides)**<br><sub>Zara Zhang</sub> | 26,461 | HTML | MIT | Beautiful slides on the web using a coding agent's frontend skills. |
 | **[Guizang PPT Skill](https://github.com/op7418/guizang-ppt-skill)**<br><sub>op7418 (歸藏)</sub> | 22,564 | HTML | ⚠️ AGPL-3.0 | Editorial-magazine and Swiss-International HTML decks, with design locked down by constraint. |
@@ -110,6 +109,7 @@ essentially every scenario.
 | **[Visual Explainer](https://github.com/nicobailon/visual-explainer)**<br><sub>nicobailon</sub> | 9,346 | HTML | MIT | Rich HTML pages or decks for diagrams, diff reviews, plan audits, data tables and project recaps. |
 | **[HTML PPT Studio](https://github.com/lewislulu/html-ppt-skill)**<br><sub>lewislulu</sub> | 7,437 | HTML | MIT | 24 themes, 31 layouts and 20+ animations for professional HTML presentations. |
 | **[open-slide](https://github.com/1weiho/open-slide)**<br><sub>1weiho</sub> | 6,027 | Framework | MIT | A slide framework built for agents — React components on a fixed 1920x1080 canvas. |
+| **[Anthropic PPTX (official)](https://github.com/anthropics/skills/tree/main/skills/pptx)**<br><sub>Anthropic</sub> | 164,681* | PPTX | See repo | The official baseline — create, read, edit and combine PowerPoint files. |
 
 ### Tier A — Production-ready (100–5k stars)
 

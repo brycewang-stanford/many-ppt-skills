@@ -1,0 +1,55 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Registry JSON is well-formed
+        run: |
+          python -c "import json,pathlib; json.loads(pathlib.Path('data/skills.json').read_text())"
+          echo "data/skills.json parses"
+
+      - name: Registry entries are complete
+        run: python scripts/validate_registry.py
+
+      - name: READMEs match the registry
+        # Fails if someone hand-edited a generated table, or edited
+        # skills.json without re-running the generator.
+        run: python scripts/render.py --check
+
+      - name: Score files are valid
+        run: python benchmark/runner/scorecard.py --validate
+
+      - name: Fidelity checker self-test
+        # The corpus scored against itself must be a perfect match. If this
+        # breaks, the benchmark's gating dimension is silently broken.
+        run: |
+          for c in benchmark/corpus/*.md; do
+            python benchmark/runner/check_fidelity.py --corpus "$c" --deck "$c" > /dev/null \
+              || { echo "self-test failed on $c"; exit 1; }
+          done
+          echo "fidelity checker self-test passed on all corpora"
+
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check internal links resolve
+        run: python scripts/check_links.py

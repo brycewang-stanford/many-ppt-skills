@@ -123,7 +123,7 @@ def markdown(agg: dict) -> str:
         return (
             "> **No benchmark runs recorded yet.** The harness, corpus and rubric are\n"
             "> complete and reproducible; scores land here as runs are completed.\n"
-            "> See [benchmark/README.md](benchmark/README.md) to contribute a run."
+            "> See [the benchmark protocol](../README.md) to contribute a run."
         )
 
     head = "| Skill | Mean | " + " | ".join(lbl for _, lbl, _ in DIMENSIONS) + " | Runs |"
@@ -138,7 +138,7 @@ def markdown(agg: dict) -> str:
     lines.append("")
     lines.append(
         "<sub>⚠️ = at least one run gated to zero on data or content fidelity "
-        "(fabricated or lost figures). See [rubric.md](benchmark/rubric.md).</sub>"
+        "(fabricated or lost figures). See [rubric.md](../rubric.md).</sub>"
     )
     return "\n".join(lines)
 

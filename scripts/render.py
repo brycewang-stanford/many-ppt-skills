@@ -53,6 +53,16 @@ def stars_of(entry: dict, stats: dict) -> int:
     return stats["repos"].get(entry["repo"], {}).get("stars", 0)
 
 
+def sort_key(entry: dict, stats: dict) -> int:
+    """Ordering weight. A monorepo's headline count belongs to the whole repo,
+    not to the one skill inside it, so ranking by it would put the official
+    baseline above projects with 40x its actual following. Sort those last
+    within their tier and let the footnote explain the asterisk."""
+    if entry.get("stars_note") == "monorepo":
+        return -1
+    return stars_of(entry, stats)
+
+
 def tier_of(entry: dict, stats: dict) -> str:
     # A monorepo's star count says nothing about the one skill inside it, so
     # anything flagged as such is pinned to Tier S by editorial judgement
@@ -117,7 +127,7 @@ def table(entries: list[dict], stats: dict, lang: str) -> str:
 
 
 def render_registry(data: dict, stats: dict, lang: str) -> str:
-    skills = sorted(data["skills"], key=lambda e: -stars_of(e, stats))
+    skills = sorted(data["skills"], key=lambda e: -sort_key(e, stats))
     out: list[str] = []
     for tier in ("S", "A", "B"):
         group = [e for e in skills if tier_of(e, stats) == tier]
@@ -127,7 +137,7 @@ def render_registry(data: dict, stats: dict, lang: str) -> str:
         out.append(table(group, stats, lang))
         out.append("")
 
-    lists = sorted(data.get("lists", []), key=lambda e: -stars_of(e, stats))
+    lists = sorted(data.get("lists", []), key=lambda e: -sort_key(e, stats))
     if lists:
         out.append("### " + ("Other curated lists" if lang == "en" else "其他精选列表") + "\n")
         out.append(table(lists, stats, lang))

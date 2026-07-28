@@ -1,0 +1,53 @@
+name: Refresh stats
+
+# Hand-maintained lists rot. This one refreshes itself: stars, forks, licenses
+# and activity are re-fetched daily and the READMEs regenerated from them.
+on:
+  schedule:
+    - cron: "17 6 * * *" # daily, off the hour to avoid the API rush
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch live GitHub stats
+        env:
+          # Lifts the API rate limit from 60/hr to 5000/hr.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/fetch_stats.py
+
+      - name: Regenerate README tables
+        run: python scripts/render.py
+
+      - name: Rebuild scorecard
+        run: python benchmark/runner/scorecard.py
+
+      - name: Open a PR if anything moved
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore: refresh registry stats"
+          title: "chore: refresh registry stats"
+          body: |
+            Automated daily refresh of GitHub stats.
+
+            Regenerated from `data/skills.json` + freshly fetched `data/stats.json`.
+            Curated research content is untouched — only derived numbers change.
+          branch: automated/refresh-stats
+          delete-branch: true
+          add-paths: |
+            data/stats.json
+            README.md
+            README.zh-CN.md
+            benchmark/results/scorecard.json
+            benchmark/results/scorecard.md

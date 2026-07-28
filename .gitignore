@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Node (only present if a contributor runs a skill locally)
+node_modules/
+package-lock.json
+
+# Benchmark working files.
+# Committed artifacts (decks, screenshots, score.json) are the point of this
+# repo and must NOT be ignored — anyone should be able to re-score from them.
+# Only genuinely disposable intermediates are excluded here.
+benchmark/results/**/tmp/
+benchmark/results/**/*.log
+benchmark/scratch/
+
+# Blind-scoring sets are derived from committed artifacts, so there is nothing
+# to preserve — and KEY.json un-blinds a run, so it must never reach a PR diff.
+benchmark/results/**/_blind/
