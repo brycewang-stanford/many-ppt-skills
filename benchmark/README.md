@@ -67,12 +67,50 @@ pip install playwright Pillow && playwright install chromium
 
 ### 2. Generate a deck
 
-Install the skill per its own instructions, then hand it the corpus verbatim:
+```bash
+python benchmark/runner/run.py \
+  --skill ppt-master \
+  --corpus benchmark/corpus/02-quarterly-review.md \
+  --run run-01 --rep 1 --budget 3.0
+```
+
+[`run.py`](runner/run.py) is the part that has to be boring and identical for every skill,
+because everything downstream inherits its bias. It holds four things fixed:
+
+- **The agent** — same model, effort and permission mode every time.
+- **The prompt** — one neutral instruction, byte-identical across skills. It names no
+  skill, requests no style, and repeats none of the corpus's own constraints. Its sha256
+  goes into the manifest so a reader can verify it was not tuned per skill.
+- **The environment** — `--setting-sources project`, so only the skill under test is
+  visible. This matters more than it sounds: a stray `frontend-design` skill in the
+  operator's `~/.claude/skills` would quietly improve every deck.
+- **The material** — the corpus copied in verbatim as `input.md`.
+
+What is deliberately *not* held fixed is how the skill gets invoked. A skill whose
+frontmatter `description` does not fire on a plain "make a deck from this" request has a
+real usability problem, so the neutral prompt runs first. If the skill never loads, the run
+retries once naming it explicitly and the manifest records `invocation: "explicit"` — a
+fact for the scorecard, not a silent fixup.
+
+Each run writes `results/<run>/<skill>/<corpus>/rep-NN/` with the artifacts, the full
+agent event log, and a manifest carrying the skill's commit SHA, cost, turn count and
+whether the skill fired.
+
+<details>
+<summary><b>Running a skill by hand instead</b></summary>
+
+Install the skill per its own instructions and hand it the corpus verbatim:
 
 ```
 Read benchmark/corpus/02-quarterly-review.md and build the deck it describes.
 Follow the brief exactly, including the target length and audience.
 ```
+
+Manual runs are weaker evidence — the operator's environment and phrasing both leak in.
+[run-01's frontend-slides result](results/run-01/README.md) was collected this way, before
+`run.py` existed, and is labelled accordingly.
+
+</details>
 
 **Rules that keep runs comparable:**
 
