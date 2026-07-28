@@ -40,7 +40,6 @@ import hashlib
 import json
 import re
 import shutil
-import statistics
 import subprocess
 import sys
 import tempfile
@@ -225,13 +224,22 @@ def run_judge(judge_dir: Path, model: str, budget: float) -> dict | None:
 
 
 def reconcile(verdicts: list[dict]) -> tuple[dict, list[dict]]:
-    """Rubric step 5: on a spread of >=2 the lower score stands, and the
-    disagreement is published rather than averaged away."""
+    """Rubric step 5: where judges differ, the lower score stands, and a spread
+    of >=2 is published rather than averaged away.
+
+    The lower score stands on *any* disagreement, not just a spread of 2. The
+    obvious alternative — average the panel and round — is worse than it looks:
+    Python's round() is banker's rounding, so a [4,3] split silently becomes 4
+    while a [3,2] split becomes 2. A benchmark cannot have a tie-break rule whose
+    direction depends on whether the scores happen to straddle an even number.
+    Taking the lower is deterministic, matches the rubric's stated direction for
+    the case it does specify, and errs against the deck under test.
+    """
     final, disagreements = {}, []
     for dim in JUDGED_DIMS:
         scores = [v[dim]["score"] for v in verdicts]
         spread = max(scores) - min(scores)
-        chosen = min(scores) if spread >= 2 else round(statistics.mean(scores))
+        chosen = min(scores)
         final[dim] = {
             "score": chosen,
             "panel": scores,
