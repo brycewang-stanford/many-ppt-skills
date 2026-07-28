@@ -198,6 +198,7 @@ def invoke(ws: Path, prompt: str, model: str, budget: float, log: Path) -> dict:
     elapsed = round(time.time() - started, 1)
 
     fired, cost, turns, result_text = False, None, None, None
+    subtype, is_error = None, None
     for line in log.read_text(errors="replace").splitlines():
         if not line.startswith("{"):
             continue
@@ -209,6 +210,11 @@ def invoke(ws: Path, prompt: str, model: str, budget: float, log: Path) -> dict:
             cost = ev.get("total_cost_usd")
             turns = ev.get("num_turns")
             result_text = ev.get("result")
+            # Distinguishes "the skill crashed" from "we cut it off". An empty
+            # artifact list means the same thing in both cases and the two are
+            # not the same result.
+            subtype = ev.get("subtype")
+            is_error = ev.get("is_error")
         blob = json.dumps(ev)
         if '"name": "Skill"' in blob or '"name":"Skill"' in blob:
             fired = True
@@ -216,6 +222,8 @@ def invoke(ws: Path, prompt: str, model: str, budget: float, log: Path) -> dict:
         "exit_code": proc.returncode,
         "elapsed_s": elapsed,
         "skill_fired": fired,
+        "terminal_subtype": subtype,
+        "is_error": is_error,
         "cost_usd": cost,
         "num_turns": turns,
         "agent_final_message": result_text,
@@ -323,7 +331,11 @@ def main() -> int:
     }
     (out_dir / "run.json").write_text(json.dumps(manifest, indent=2) + "\n")
 
-    if args.keep_workspace:
+    # A run that produced nothing is the one that most needs looking at, and its
+    # workspace is the only place the partial output exists. Deleting it on the
+    # way out — which is what happened the first time ppt-master was driven here,
+    # discarding 25 minutes of pipeline state — makes the failure unexaminable.
+    if args.keep_workspace or not artifacts:
         print(f"  workspace kept at {ws}", flush=True)
     else:
         shutil.rmtree(ws, ignore_errors=True)
