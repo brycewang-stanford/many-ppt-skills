@@ -76,7 +76,11 @@ SKIP_NAME = ("logo", "icon", "favicon", "badge", "avatar", "banner",
              "sponsor", "coffee", "star-history", "contributors", "profile",
              "watermark", "placeholder", "二维码", "赞赏", "打赏", "公众号",
              "background", "texture", "gradient", "wallpaper", "swatch",
-             "palette", "底纹", "背景图", "alipay", "paypal", "payment")
+             "palette", "底纹", "背景图", "alipay", "paypal", "payment",
+             # Diagrams about how the skill works. Real documentation, but this
+             # gallery answers "what does the output look like", and an
+             # architecture chart answers a different question.
+             "architecture", "pipeline", "flowchart", "架构", "流程图", "示意图")
 
 # Same job, but where a bare substring would do damage. "qr" inside "square" and
 # "sq" inside anything are the reason these need word boundaries; `image_7.png`
@@ -100,6 +104,100 @@ GOOD_NAME = ("screenshot", "preview", "demo", "example", "sample", "slide",
 MIN_WIDTH = 480      # narrower than this is an icon or a diagram fragment
 MIN_PIXELS = 200_000 # guards against wide-but-short header strips
 MAX_PER_SKILL = 24   # a gallery, not a file listing
+
+
+# --------------------------------------------------------------------------
+# Naming what is in the picture
+# --------------------------------------------------------------------------
+#
+# A gallery of unlabelled screenshots is a mood board. To be reproducible, each
+# image has to say which style produced it — and the projects already know: they
+# name the file `soft-editorial-4.png` or caption it "Bauhaus Geometry". Both are
+# read here rather than invented, and the source path travels with every caption
+# so a wrong label is visibly wrong.
+
+# Words that describe the file's role, not the design in it.
+LABEL_NOISE = re.compile(
+    r"^(?:style[-_ ]?preview|preview|screenshot|shot|demo|sample|hero|slide|"
+    r"page|img|image|case|example)[-_ ]+", re.IGNORECASE)
+
+# `soft-editorial-4` -> style `soft-editorial`, slide 4.
+TRAILING_INDEX = re.compile(r"[-_ ]+(\d{1,3})$")
+
+# Folder names that describe filing, not design — useless as a style label.
+GENERIC_DIRS = {"images", "image", "img", "assets", "asset", "screenshots",
+                "screenshot", "docs", "doc", "examples", "example", "static",
+                "public", "media", "preview", "previews", "demos", "demo",
+                "readme", "resources", "res", "pics", "photos", "content"}
+
+# Roles that a filename gives a frame within one style, worth keeping in the
+# caption but never part of the style token itself.
+ROLE_SUFFIX = re.compile(
+    r"[-_ ]+(cover|title|toc|closing|end|thanks|opening|index|contents)$",
+    re.IGNORECASE)
+
+
+def prettify(token: str) -> str:
+    """`arc-electric-lifestyle` -> `Arc Electric Lifestyle`, CJK left alone."""
+    parts = [p for p in re.split(r"[-_\s]+", token) if p]
+    out = []
+    for p in parts:
+        out.append(p[:1].upper() + p[1:] if p.isascii() and p.islower() else p)
+    return " ".join(out)
+
+
+def derive_naming(alt: str, path: str | None) -> tuple[str, str | None, str | None]:
+    """(label, style token, frame role) for one image.
+
+    The style token is always taken from the filename when there is one: it is
+    the string the project itself uses, so it is the string worth repeating back
+    to an agent. The label prefers the author's own caption, which reads better
+    than any filename.
+    """
+    style = role = None
+    index = None
+
+    if path:
+        stem = Path(path).stem
+        stem = LABEL_NOISE.sub("", stem) or Path(path).stem
+        m = TRAILING_INDEX.search(stem)
+        if m:
+            index, stem = m.group(1), TRAILING_INDEX.sub("", stem)
+        m = ROLE_SUFFIX.search(stem)
+        if m:
+            role, stem = m.group(1).lower(), ROLE_SUFFIX.sub("", stem)
+        style = re.sub(r"[_\s]+", "-", stem.strip("-_ ").lower()) or None
+
+    alt = " ".join((alt or "").split())
+
+    # `style-preview-a.png` reduces to "a" and `style-preview-zh-a.png` to
+    # "zh-a": filing codes, not names. Where the author captioned the image, the
+    # caption is the real name — that project's "a" is "Swiss International",
+    # and only the caption knows it. Where they did not, this drops the token
+    # rather than print a code as though it were a style you could ask for. The
+    # image keeps its linked path, so the reader can still go and look.
+    if style and (len(style) < 3 or len(style.rsplit("-", 1)[-1]) == 1):
+        slug = re.sub(r"[^a-z0-9]+", "-", alt.lower()).strip("-")
+        style = slug or None
+
+    # `ppt-workflow/01-cover.png`: the number names nothing, the folder does.
+    if not style and path:
+        parent = Path(path).parent.name.lower()
+        if parent and parent not in GENERIC_DIRS and not parent.isdigit():
+            style = re.sub(r"[_\s]+", "-", parent)
+
+    if len(alt) >= 2:
+        label = alt[:110]
+    elif style:
+        label = prettify(style)
+        if index:
+            label = f"{label} · {index}"
+    elif role:
+        label = prettify(role)
+    else:
+        label = ""
+
+    return label, style, role
 
 
 # --------------------------------------------------------------------------
@@ -343,10 +441,14 @@ def resolve(entry: dict, repo: str, sha: str, repo_dir: Path, doc_dir: str,
         if GH_ATTACHMENT.match(raw.split("?")[0]):
             if entry["source"] != "showcase":
                 return None
+            label, _, _ = derive_naming(entry["alt"], None)
             return {
                 "url": raw,
                 "repo": None,
                 "path": None,
+                "label": label,
+                "style": None,
+                "role": None,
                 "alt": entry["alt"][:200],
                 "from_doc": entry["doc"],
                 "source": "showcase",
@@ -394,12 +496,16 @@ def resolve(entry: dict, repo: str, sha: str, repo_dir: Path, doc_dir: str,
         skipped["too_small"] += 1
         return None
 
+    label, style, role = derive_naming(entry["alt"], rel)
     return {
         "url": RAW.format(repo=host_repo, sha=host_sha,
                           path=urllib.parse.quote(rel)),
         "repo": host_repo,
         "sha": host_sha,
         "path": rel,
+        "label": label,
+        "style": style,
+        "role": role,
         "alt": entry["alt"][:200],
         "from_doc": entry["doc"],
         "source": entry["source"],

@@ -339,6 +339,88 @@ SAMPLES = ROOT / "data" / "samples.json"
 GALLERY_MAX = 24
 
 
+ROLE_LABEL = {
+    "cover": ("cover", "封面"), "title": ("title", "标题页"),
+    "toc": ("contents", "目录页"), "contents": ("contents", "目录页"),
+    "index": ("contents", "目录页"), "opening": ("opening", "开场"),
+    "closing": ("closing", "结尾页"), "end": ("closing", "结尾页"),
+    "thanks": ("closing", "结尾页"),
+}
+
+
+def caption(sample: dict, skill: dict, lang: str) -> str:
+    """One line under an image: what style it is, and where that claim came from.
+
+    The path is not decoration. Every label here is derived from the project's
+    own filename or its own caption, and printing the file it came from is what
+    makes a wrong label falsifiable instead of merely authoritative.
+    """
+    bits: list[str] = []
+    label = (sample.get("label") or "").replace("|", "·").strip()
+    if label:
+        bits.append(f"<b>{label}</b>")
+
+    style = sample.get("style")
+    if style and style.lower() not in label.lower().replace(" ", "-"):
+        bits.append(f"<code>{style}</code>")
+
+    role = ROLE_LABEL.get(sample.get("role") or "")
+    if role:
+        bits.append(role[0] if lang == "en" else role[1])
+
+    where = sample.get("path")
+    if where:
+        repo = sample.get("repo") or skill["repo"]
+        bits.append(
+            f'<a href="https://github.com/{repo}/blob/{sample["sha"]}/{where}">'
+            f"<code>{where}</code></a>"
+        )
+    else:
+        bits.append("GitHub attachment" if lang == "en" else "GitHub 附件图")
+
+    if not bits:
+        return ""
+    return "<sub>" + " · ".join(bits) + "</sub>"
+
+
+def reproduce_block(skill: dict, picks: list[dict], lang: str) -> str:
+    """Install command plus the style names visible in this skill's own images.
+
+    Deliberately does not invent an invocation syntax. The install line is
+    curated in data/skills.json; the style names are the project's own strings.
+    What sits between them is the reader's prompt to write, and pretending to
+    know each project's exact phrasing would be the one unverifiable claim on
+    the page.
+    """
+    install = (skill.get("install") or {}).get("command", "").strip()
+    styles: list[str] = []
+    for s in picks:
+        st = s.get("style")
+        if st and st not in styles:
+            styles.append(st)
+    styles = styles[:12]
+
+    out: list[str] = []
+    if install:
+        out.append("```bash\n" + install + "\n```\n")
+    if styles:
+        listed = " · ".join(f"`{s}`" for s in styles)
+        if lang == "en":
+            out.append(
+                f"<sub><b>Styles below</b> {listed} — name one when you ask for a "
+                "deck. These are the project's own strings, taken from the "
+                "filenames and captions linked under each image, not names this "
+                "registry made up.</sub>\n"
+            )
+        else:
+            out.append(
+                f"<sub><b>下面出现的风格</b> {listed} —— 要哪个就在提示里点名。"
+                "这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，"
+                "不是本仓库起的名字。</sub>\n"
+            )
+    return "\n".join(out)
+
+
 def render_gallery(data: dict, stats: dict, lang: str) -> str:
     """A picture of what each skill produces.
 
@@ -400,6 +482,7 @@ def render_gallery(data: dict, stats: dict, lang: str) -> str:
                     + ("，靠前的几张是项目自己放在 README 里的" if origin == "showcase" else "")
                     + "</sub>")
         out.append(note + "\n")
+        out.append(reproduce_block(skill, picks, lang))
 
         # width="100%" rather than a pixel size: GitHub's content column is a
         # different width on desktop, mobile and in the sidebar preview, and a
@@ -408,6 +491,7 @@ def render_gallery(data: dict, stats: dict, lang: str) -> str:
         for s in picks:
             alt = (s.get("alt") or f"{skill['name']} sample").replace('"', "'")[:120]
             out.append(f'<img src="{s["url"]}" width="100%" alt="{alt}">\n')
+            out.append(caption(s, skill, lang) + "\n")
 
     if empty:
         names = "、".join(empty) if lang != "en" else ", ".join(empty)
