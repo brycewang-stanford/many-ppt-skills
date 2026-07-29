@@ -1602,6 +1602,150 @@
           "quote": "你提供的图片/视频会写入本次 deck，成品不依赖原始素材路径"
         }
       }
+    },
+    "html-anything": {
+      "docs_read": [
+        "next/src/lib/templates/skills/article-magazine/SKILL.md",
+        "next/src/lib/templates/skills/article-sketchnote-editorial/SKILL.md",
+        "next/src/lib/templates/skills/blog-post/SKILL.md",
+        "next/src/lib/templates/skills/card-twitter/SKILL.md",
+        "next/src/lib/templates/skills/card-xiaohongshu/SKILL.md",
+        "next/src/lib/templates/skills/competitive-teardown/SKILL.md",
+        "next/src/lib/templates/skills/dashboard/SKILL.md",
+        "next/src/lib/templates/skills/data-report/SKILL.md",
+        "next/src/lib/templates/skills/dating-web/SKILL.md",
+        "next/src/lib/templates/skills/deck-blueprint/SKILL.md",
+        "next/src/lib/templates/skills/deck-course-module/SKILL.md",
+        "next/src/lib/templates/skills/deck-dir-key-nav/SKILL.md",
+        "next/src/lib/templates/skills/deck-graphify-dark/SKILL.md",
+        "next/src/lib/templates/skills/deck-guizang-editorial/SKILL.md",
+        "next/src/lib/templates/skills/deck-hermes-cyber/SKILL.md",
+        "next/src/lib/templates/skills/deck-ljg-present/SKILL.md",
+        "next/src/lib/templates/skills/deck-magazine-web/SKILL.md",
+        "next/src/lib/templates/skills/deck-obsidian-claude/SKILL.md",
+        "next/src/lib/templates/skills/deck-open-slide-canvas/SKILL.md",
+        "next/src/lib/templates/skills/deck-pitch/SKILL.md",
+        "next/src/lib/templates/skills/deck-presenter-mode/SKILL.md",
+        "next/src/lib/templates/skills/deck-product-launch/SKILL.md",
+        "next/src/lib/templates/skills/deck-replit/SKILL.md",
+        "next/src/lib/templates/skills/deck-safety-alert/SKILL.md",
+        "next/src/lib/templates/skills/deck-simple/SKILL.md",
+        "next/src/lib/templates/skills/deck-swiss-international/SKILL.md",
+        "next/src/lib/templates/skills/deck-tech-sharing/SKILL.md",
+        "next/src/lib/templates/skills/deck-xhs-pastel/SKILL.md",
+        "next/src/lib/templates/skills/deck-xhs-post/SKILL.md",
+        "next/src/lib/templates/skills/deck-xhs-white/SKILL.md",
+        "next/src/lib/templates/skills/digital-eguide/SKILL.md",
+        "next/src/lib/templates/skills/doc-kami-parchment/SKILL.md",
+        "next/src/lib/templates/skills/docs-page/SKILL.md",
+        "next/src/lib/templates/skills/email-marketing/SKILL.md",
+        "next/src/lib/templates/skills/eng-runbook/SKILL.md",
+        "next/src/lib/templates/skills/exec-briefing-memo/SKILL.md",
+        "next/src/lib/templates/skills/experiment-readout/SKILL.md",
+        "next/src/lib/templates/skills/finance-report/SKILL.md",
+        "next/src/lib/templates/skills/flowai-team-dashboard/SKILL.md",
+        "next/src/lib/templates/skills/frame-data-chart-nyt/SKILL.md",
+        "next/src/lib/templates/skills/frame-flowchart-sticky/SKILL.md",
+        "next/src/lib/templates/skills/frame-glitch-title/SKILL.md",
+        "next/src/lib/templates/skills/frame-light-leak-cinema/SKILL.md"
+      ],
+      "runtime": [
+        "node"
+      ],
+      "cost_usd": 0.5322,
+      "input_tokens": 262208,
+      "caps": {
+        "native_charts": {
+          "verdict": "yes",
+          "quote": "主图表区: 至少 2 个图表 (柱状 / 折线 / 饼 / 散点), 使用 Chart.js 或 ECharts (jsdelivr CDN 引入), 数据从用户输入解析得到。"
+        },
+        "code_highlighting": {
+          "verdict": "yes",
+          "quote": "代码 / CLI 页: JetBrains Mono 高亮"
+        },
+        "diagrams": {
+          "verdict": "yes",
+          "quote": "SVG 曲线连接 + 便利贴节点 + 光标交互, 像白板 brainstorm"
+        },
+        "animation": {
+          "verdict": "yes",
+          "quote": "错峰揭示动画: 标题 fade-in (0s), kicker (200ms), 折线 stroke-dashoffset 1.2s ease-out (400ms), 数据标签依次 100ms 间隔。"
+        },
+        "speaker_notes": {
+          "verdict": "yes",
+          "quote": "每页 + `<aside class=\"notes\">` 150-300 字稿"
+        },
+        "presenter_mode": {
+          "verdict": "yes",
+          "quote": "Popup: CURRENT / NEXT / SCRIPT / TIMER 四张磁吸卡"
+        },
+        "pptx_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "pdf_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "custom_template": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "self_contained": {
+          "verdict": "unclear",
+          "quote": ""
+        }
+      }
+    },
+    "baoyu-skills": {
+      "docs_read": [
+        "SKILL.md"
+      ],
+      "runtime": [],
+      "cost_usd": 0.1823,
+      "input_tokens": 106256,
+      "caps": {
+        "native_charts": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "diagrams": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "animation": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "speaker_notes": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "pptx_export": {
+          "verdict": "yes",
+          "quote": "scripts/merge-to-pptx.ts | Merge slides into PowerPoint"
+        },
+        "pdf_export": {
+          "verdict": "yes",
+          "quote": "scripts/merge-to-pdf.ts | Merge slides into PDF"
+        },
+        "custom_template": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "self_contained": {
+          "verdict": "unclear",
+          "quote": ""
+        }
+      }
     }
   }
 }

@@ -415,12 +415,12 @@ The registry above says what each project *is*. This says what its documentation
 | **Slidev** | ✅ | ✅ | · | ✅ | ✅ | ✅ | ✅ | ✅ | · | · |
 | **PPT Master** | ✅ | · | ✅ | · | ✅ | ✅ | ✅ | · | ✅ | n/a |
 | **Frontend Slides** | · | ✅ | · | · | · | ✅ | · | · | · | · |
+| **Baoyu Skills** | ✅ | ✅ | · | · | · | · | · | · | · | · |
 | **Guizang PPT Skill** | — | · | · | · | ✅ | ✅ | · | · | — | · |
 | **Huashu Design** | ✅ | ✅ | · | · | · | ✅ | ✅ | · | · | · |
 | **Quarkdown** | · | ✅ | · | · | ✅ | · | · | · | · | · |
 | **Banana Slides** | ✅ | ✅ | · | · | · | · | · | · | · | n/a |
 | **Visual Explainer** | · | · | · | · | ✅ | ✅ | · | · | · | ✅ |
-| **HTML PPT Studio** | · | · | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | · | — |
 
 <sub>✅ the docs claim it · — the docs say it does not · · the docs are silent, which is not the same as no · n/a the question does not apply to that route. Read from each project's own SKILL.md and README, never from running it; every ✅ carries the sentence it came from in [`data/capabilities.json`](data/capabilities.json).</sub>
 <!-- END:CAPABILITIES -->

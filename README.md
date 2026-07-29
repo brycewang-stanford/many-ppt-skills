@@ -401,12 +401,12 @@ python scripts/pick.py find editorial         # 搜风格 ID 和描述
 | **Slidev** | ✅ | ✅ | · | ✅ | ✅ | ✅ | ✅ | ✅ | · | · |
 | **PPT Master** | ✅ | · | ✅ | · | ✅ | ✅ | ✅ | · | ✅ | n/a |
 | **Frontend Slides** | · | ✅ | · | · | · | ✅ | · | · | · | · |
+| **Baoyu Skills** | ✅ | ✅ | · | · | · | · | · | · | · | · |
 | **Guizang PPT Skill** | — | · | · | · | ✅ | ✅ | · | · | — | · |
 | **Huashu Design** | ✅ | ✅ | · | · | · | ✅ | ✅ | · | · | · |
 | **Quarkdown** | · | ✅ | · | · | ✅ | · | · | · | · | · |
 | **Banana Slides** | ✅ | ✅ | · | · | · | · | · | · | · | n/a |
 | **Visual Explainer** | · | · | · | · | ✅ | ✅ | · | · | · | ✅ |
-| **HTML PPT Studio** | · | · | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | · | — |
 
 <sub>✅ 文档声明支持 · — 文档明确说明不支持 · · 文档未提及，这不等于不支持 · n/a 该问题对这条路线不适用。全部读自各项目自己的 SKILL.md 与 README，不是实跑验证；每个 ✅ 的出处引文都在 [`data/capabilities.json`](data/capabilities.json)。</sub>
 <!-- END:CAPABILITIES -->
