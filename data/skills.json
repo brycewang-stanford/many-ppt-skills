@@ -2375,7 +2375,8 @@
       "lang": "zh",
       "tagline_en": "Produces single-file HTML presentations with 12 layouts, 3 themes, and interactive charts, compatible with major AI coding agents.",
       "tagline_zh": "生成包含 12 种布局、3 种主题和交互图表的单文件 HTML 演示文稿，兼容主流 AI 编程工具。",
-      "source": "discovered"
+      "source": "discovered",
+      "license_warning": true
     },
     {
       "id": "bruce-pptx-generator",
@@ -2723,7 +2724,8 @@
       "lang": "zh",
       "tagline_en": "A fork of dashi-ppt with improved content generation and third-party images removed.",
       "tagline_zh": "基于 dashi-ppt 二次开发，优化了内容生成逻辑并移除了可能涉及版权问题的图片。",
-      "source": "discovered"
+      "source": "discovered",
+      "license_warning": true
     },
     {
       "id": "special-achievement-report",
