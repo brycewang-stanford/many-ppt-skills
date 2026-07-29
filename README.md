@@ -4,6 +4,8 @@
 
 **值得知道的 AI 幻灯片 Skill 全在这一页，并排对比 —— 让你挑对一个，然后接着干活。**
 
+在[图库](#它们长什么样)里看中哪张，照 **[60 秒做出同款](#60-秒做出同款)** 三步走，就能做出你自己的那一份。
+
 [简体中文](README.md) · [English](README.en.md)
 
 <!-- BEGIN:COUNTS -->
@@ -30,6 +32,43 @@ Skill。现在有 30+ 个认真做的项目，其中四个 star 数都超过 2 �
    这是这个领域目前最接近「证据」的东西。
 
 挑一个、装上、继续干活。这就是全部意图。
+
+---
+
+## 60 秒做出同款
+
+先看[图库](#它们长什么样)，看中一张图之后照这三步走。下面用一个真实例子从头走一遍。
+
+**第一步：从图注里抄下风格 ID。** 每张图下面都有一行说明，长这样：
+
+> **Soft Editorial · 4** · `soft-editorial` · [`screenshots/soft-editorial-4.png`](https://github.com/zarazhangrui/beautiful-html-templates)
+
+等宽字体的 `soft-editorial` 就是**风格 ID** —— 抄它。它属于哪个 skill，看这组图上方的标题
+（这里是 **Frontend Slides**）。
+
+**第二步：装这个 skill。** 命令就印在那组图上面，直接复制。这个例子里是 `plugin` 方式，
+**两条命令都在 Claude Code 里面敲，不是终端**：
+
+```text
+/plugin marketplace add https://github.com/zarazhangrui/frontend-slides
+/plugin install frontend-slides@frontend-slides
+```
+
+> 一共有五种安装方式，含义不同（`clone` 是克隆进 `~/.claude/skills/` 并需要重开会话，
+> `python` 要本机装依赖，`npx` 是建项目而不是装 skill）。对照表在
+> [看中一张图，怎么做出来](#看中一张图怎么做出来)。
+
+**第三步：把风格 ID 写进你的话里。** 它不是命令行参数，就是提示词的一部分：
+
+```text
+用 soft-editorial 这个模板，把 docs/roadmap.md 做成一份 12 页的 deck，
+面向投资人，我会现场讲，所以每页字少一点。
+```
+
+就这样。**点名风格 ID 等于跳过挑选环节** —— frontend-slides 默认会先生成 3 个预览让你选，
+你直接点名就是告诉它别问了，照这个做。想看选项就别点名，直接说「帮我做一份关于 X 的 deck」。
+
+不想自己翻这一页？[下一节](#让-agent-直接帮你挑)把这个仓库本身装成 skill，让 agent 替你选。
 
 ---
 

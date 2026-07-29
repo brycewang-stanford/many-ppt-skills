@@ -25,8 +25,8 @@ choose between them.
 | 1 | [Visual distinctiveness](#1-visual-distinctiveness) | ×1 | Does it look designed, or does it look generated? |
 | 2 | [Typographic craft](#2-typographic-craft) | ×1 | Would a designer wince? |
 | 3 | [Hierarchy & density fit](#3-hierarchy--density-fit) | ×1 | Does the density match the stated audience? |
-| 4 | [Data fidelity](#4-data-fidelity) | ×1 | Did every number, table and code block survive intact? |
-| 5 | [Content fidelity](#5-content-fidelity) | ×1 | Did it keep the content — and invent nothing? |
+| 4 | [Data fidelity](#4-data-fidelity--gating) | ×1 | Did every number, table and code block survive intact? |
+| 5 | [Content fidelity](#5-content-fidelity--gating) | ×1 | Did it keep the content — and invent nothing? |
 | 6 | [Deliverable integrity](#6-deliverable-integrity) | ×1 | Does the artifact actually work where it must work? |
 | 7 | [Effort to acceptable](#7-effort-to-acceptable) | ×1 | How much correction did it take to get there? |
 

@@ -4,6 +4,11 @@
 Only internal links are checked. External URLs are deliberately left alone —
 network checks in CI are flaky, and a 404 on someone else's site is not a
 reason to fail this repo's build.
+
+Same-page anchors (`[x](#section)`) count. They used to be skipped, which meant
+the README's own navigation was the one kind of link nothing verified — and a
+long page held together by jump links is exactly where a silently dead anchor
+costs the most.
 """
 
 from __future__ import annotations
@@ -17,21 +22,40 @@ from urllib.parse import unquote
 ROOT = Path(__file__).resolve().parent.parent
 
 LINK = re.compile(r"\[[^\]]*\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
-SKIP_PREFIXES = ("http://", "https://", "mailto:", "#", "data:")
+SKIP_PREFIXES = ("http://", "https://", "mailto:", "data:")
 SKIP_DIRS = {".git", "node_modules", "__pycache__", ".venv", ".cache"}
 
 
+HTML_ANCHOR = re.compile(r"<a\b[^>]*?\b(?:id|name)=[\"\']([^\"\']+)[\"\']", re.I)
+
+
+def slug(title: str) -> str:
+    """GitHub's heading -> anchor slugging.
+
+    Two details matter and both were wrong here before. Punctuation is deleted
+    rather than replaced, and then *each* remaining space becomes its own
+    hyphen — so "3. Hierarchy & density" is `3-hierarchy--density`, with the
+    double hyphen the ampersand left behind. Underscores survive; they are word
+    characters to GitHub as much as to \w.
+    """
+    s = re.sub(r"[^\w\s-]", "", title.lower())
+    return re.sub(r"\s", "-", s).strip("-")
+
+
 def anchors_in(path: Path) -> set[str]:
-    """GitHub's heading -> anchor slugging, close enough for our own headings."""
+    """Every fragment this file offers: markdown headings and HTML anchors.
+
+    The galleries are navigated by explicit `<a id="gallery-...">` targets, so
+    reading only headings would report the whole jump index as broken.
+    """
     out: set[str] = set()
-    for line in path.read_text(encoding="utf-8", errors="replace").splitlines():
-        if not line.startswith("#"):
-            continue
-        title = line.lstrip("#").strip()
-        slug = re.sub(r"[^\w\s-]", "", title.lower())
-        slug = re.sub(r"[\s_]+", "-", slug).strip("-")
-        if slug:
-            out.add(slug)
+    text = path.read_text(encoding="utf-8", errors="replace")
+    for line in text.splitlines():
+        if line.startswith("#"):
+            s = slug(line.lstrip("#").strip())
+            if s:
+                out.add(s)
+    out.update(m.lower() for m in HTML_ANCHOR.findall(text))
     return out
 
 
@@ -72,7 +96,16 @@ def main() -> int:
                 continue
 
             target, _, frag = raw.partition("#")
+
+            # A bare "#anchor" points into the file it is written in.
             if not target:
+                if not frag:
+                    continue
+                checked += 1
+                if frag.lower() not in anchors_in(md):
+                    broken.append(
+                        f"{md.relative_to(ROOT)} -> {raw}  (no heading in this file)"
+                    )
                 continue
 
             checked += 1

@@ -4,6 +4,8 @@
 
 **Every AI slide-deck skill worth knowing, gathered and compared on one page — so you can pick the right one and get on with it.**
 
+See one you like in the [gallery](#what-they-look-like)? **[Make your own in 60 seconds](#make-your-own-in-60-seconds)** — three steps.
+
 [简体中文](README.md) · [English](README.en.md)
 
 <!-- BEGIN:COUNTS -->
@@ -34,6 +36,49 @@ This repo exists to answer that in one page:
    to evidence.
 
 Pick one, install it, move on. That is the whole intent.
+
+---
+
+## Make your own in 60 seconds
+
+Browse the [gallery](#what-they-look-like) first. Once something catches your eye, three
+steps. Here is a real one, end to end.
+
+**Step 1 — copy the style id out of the caption.** Every image has a line under it:
+
+> **Soft Editorial · 4** · `soft-editorial` · [`screenshots/soft-editorial-4.png`](https://github.com/zarazhangrui/beautiful-html-templates)
+
+The monospace `soft-editorial` is the **style id** — that is what you copy. Which skill it
+belongs to is the heading above that set of images (here, **Frontend Slides**).
+
+**Step 2 — install that skill.** The command is printed above its images, ready to copy.
+This one is the `plugin` method, so **both lines are typed inside Claude Code, not in a
+terminal**:
+
+```text
+/plugin marketplace add https://github.com/zarazhangrui/frontend-slides
+/plugin install frontend-slides@frontend-slides
+```
+
+> There are five install methods and they do different things — `clone` lands in
+> `~/.claude/skills/` and needs a session restart, `python` needs local dependencies,
+> `npx` scaffolds a project instead of installing a skill. The table is in
+> [You like one of these. Now what?](#you-like-one-of-these-now-what)
+
+**Step 3 — put the style id in what you ask for.** It is not a flag; it is part of the
+sentence:
+
+```text
+Use the soft-editorial template. Turn docs/roadmap.md into a 12-slide deck
+for investors. I'll be speaking over it, so keep the text light.
+```
+
+That is it. **Naming the style id skips the picking step** — frontend-slides generates
+three previews by default, and naming a template tells it not to ask. Want the options?
+Don't name one; just ask for a deck.
+
+Rather not read this page at all? The [next section](#let-an-agent-pick-for-you) installs
+this repository as a skill and lets an agent choose for you.
 
 ---
 
