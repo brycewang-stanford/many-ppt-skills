@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the registry tables inside README.md and README.zh-CN.md.
+"""Generate the registry tables inside README.md (Chinese) and README.en.md.
 
 Tables are written between <!-- BEGIN:BLOCK --> / <!-- END:BLOCK --> markers.
 Everything outside the markers is hand-written prose and is never touched.
@@ -360,7 +360,7 @@ def main() -> int:
     args = ap.parse_args()
 
     data, stats = load()
-    targets = [(ROOT / "README.md", "en"), (ROOT / "README.zh-CN.md", "zh")]
+    targets = [(ROOT / "README.md", "zh"), (ROOT / "README.en.md", "en")]
 
     stale = []
     for path, lang in targets:

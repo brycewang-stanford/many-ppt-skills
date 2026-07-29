@@ -9,7 +9,7 @@
 ## English
 
 These are not opinions about slide design. They are patterns extracted by reading the
-`SKILL.md`, `AGENTS.md` and source of every project in [the registry](../README.md), and
+`SKILL.md`, `AGENTS.md` and source of every project in [the registry](../README.en.md), and
 keeping only what showed up in multiple projects that had no reason to copy each other.
 
 Convergence is the filter. When a Chinese indie developer, a Silicon Valley tinkerer and
@@ -56,7 +56,7 @@ Each file follows the same shape:
 
 ## 简体中文
 
-这八条不是关于幻灯片设计的观点，而是通读[登记册](../README.zh-CN.md)里每个项目的
+这八条不是关于幻灯片设计的观点，而是通读[登记册](../README.md)里每个项目的
 `SKILL.md`、`AGENTS.md` 和源码后提取出来的模式 —— 并且只保留了那些**在多个彼此没有抄袭
 关系的项目里反复出现**的做法。
 

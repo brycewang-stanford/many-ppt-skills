@@ -7,7 +7,7 @@ WHAT THIS COVERS
 The written and curated content of this repository:
 
   - The registry data in data/skills.json and the descriptions derived from it
-  - README.md and README.zh-CN.md
+  - README.md and README.en.md
   - The benchmark corpus, rubric and protocol under benchmark/
   - The principles documents under principles/
   - Research notes under docs/
