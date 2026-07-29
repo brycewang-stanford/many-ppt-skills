@@ -9,7 +9,9 @@
       "hybrid": "Both — outputs HTML and an editable PPTX",
       "framework": "Runtime/framework rather than a pure instruction skill",
       "templates": "Template or asset library consumed by an agent",
-      "list": "Curated list / meta-resource"
+      "list": "Curated list / meta-resource",
+      "image": "Image-first — generates slide images (PNG/SVG) rather than an editable deck file",
+      "suite": "Multi-skill pack in which deck generation is one of several bundled skills"
     }
   },
   "skills": [
@@ -44,7 +46,9 @@
         "method": "python",
         "command": "git clone https://github.com/hugohe3/ppt-master && pip install -r requirements.txt"
       },
-      "requires": ["Python 3.10+"],
+      "requires": [
+        "Python 3.10+"
+      ],
       "best_for_en": "Consulting decks, RFPs and any deliverable a non-technical stakeholder must edit in PowerPoint.",
       "best_for_zh": "咨询报告、投标、需要交付给非技术方二次编辑的场合。"
     },
@@ -146,7 +150,9 @@
         "method": "skills-cli",
         "command": "npx skills add alchaincyf/huashu-design"
       },
-      "requires": ["skills CLI v1.5.19+"],
+      "requires": [
+        "skills CLI v1.5.19+"
+      ],
       "best_for_en": "When you need more than slides — prototypes, motion, infographics from one skill. One of the few that truly bridges both routes.",
       "best_for_zh": "不止要 PPT，还要原型、动效、信息图。少数真正打通两条路线的项目。"
     },
@@ -308,9 +314,18 @@
       "lang": "en",
       "tagline_en": "PPTX, DOCX, XLSX and PDF workflows with automation support.",
       "tagline_zh": "PPTX / DOCX / XLSX / PDF 全家桶，支持自动化。",
-      "highlights_en": ["Office suite coverage rather than slides alone", "Useful when a deck is one artifact in a larger document pipeline"],
-      "highlights_zh": ["覆盖整个 Office 套件而非只有幻灯片", "当 deck 只是更大文档流水线里的一环时很有用"],
-      "install": {"method": "clone", "command": "git clone https://github.com/tfriedel/claude-office-skills"},
+      "highlights_en": [
+        "Office suite coverage rather than slides alone",
+        "Useful when a deck is one artifact in a larger document pipeline"
+      ],
+      "highlights_zh": [
+        "覆盖整个 Office 套件而非只有幻灯片",
+        "当 deck 只是更大文档流水线里的一环时很有用"
+      ],
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/tfriedel/claude-office-skills"
+      },
       "best_for_en": "Document pipelines where slides, docs and spreadsheets are produced together.",
       "best_for_zh": "幻灯片、文档、表格一起产出的文档流水线。"
     },
@@ -334,7 +349,10 @@
         "内置引用规范",
         "设计成与 Anthropic 官方 PPTX skill 协同而非替代"
       ],
-      "install": {"method": "clone", "command": "git clone https://github.com/Gabberflast/academic-pptx-skill"},
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/Gabberflast/academic-pptx-skill"
+      },
       "best_for_en": "Academia. The only skill in the registry that treats citation rigor as a first-class constraint.",
       "best_for_zh": "学术场景。全表唯一把引用严谨性当成一等约束的 skill。"
     },
@@ -348,9 +366,16 @@
       "lang": "zh",
       "tagline_en": "Progressive, interactive deck generation.",
       "tagline_zh": "渐进交互式 PPT 生成 skill。",
-      "highlights_en": ["Emphasizes step-by-step confirmation over one-shot generation"],
-      "highlights_zh": ["强调逐步确认而非一次性生成"],
-      "install": {"method": "clone", "command": "git clone https://github.com/mucsbr/ppt-agent-workflow-san"},
+      "highlights_en": [
+        "Emphasizes step-by-step confirmation over one-shot generation"
+      ],
+      "highlights_zh": [
+        "强调逐步确认而非一次性生成"
+      ],
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/mucsbr/ppt-agent-workflow-san"
+      },
       "best_for_en": "Users who want to steer the deck at each step rather than review at the end.",
       "best_for_zh": "希望每一步都能介入调整、而不是最后才审阅的用户。"
     },
@@ -374,7 +399,10 @@
         "PPTX → Web 转换，也能导回去",
         "支持 Codex 与 Claude Code"
       ],
-      "install": {"method": "clone", "command": "git clone https://github.com/archlizheng/frontend-slides-editable"},
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/archlizheng/frontend-slides-editable"
+      },
       "best_for_en": "When you like frontend-slides output but need to nudge layouts by hand afterwards.",
       "best_for_zh": "喜欢 frontend-slides 的产出、但事后需要手动微调排版时。"
     },
@@ -396,7 +424,10 @@
         "五种预设：极简主义、商务咨询、科技暗黑、瑞士平面、品牌蓝",
         "Markdown 进、deck 出，没有问答环节"
       ],
-      "install": {"method": "clone", "command": "git clone https://github.com/vigorX777/ppt-svg-generator"},
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/vigorX777/ppt-svg-generator"
+      },
       "best_for_en": "Fast Markdown-to-deck conversion when you already know the style you want.",
       "best_for_zh": "已经明确风格时，快速把 Markdown 转成 deck。"
     },
@@ -418,7 +449,10 @@
         "70 种固化布局 —— PPTX 路线里最大的固定版式库",
         "刻意的扁平设计语言，对齐顶级咨询公司产出"
       ],
-      "install": {"method": "clone", "command": "git clone https://github.com/likaku/Mck-ppt-design-skill"},
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/likaku/Mck-ppt-design-skill"
+      },
       "best_for_en": "Consulting reports, board decks, investment memos.",
       "best_for_zh": "咨询报告、董事会材料、投资备忘录。"
     },
@@ -432,9 +466,18 @@
       "lang": "en",
       "tagline_en": "26 styles and 18 chart types benchmarked against Linear, Anthropic, Stripe, Apple and NYT.",
       "tagline_zh": "26 种风格、18 种图表，对标 Linear / Anthropic / Stripe / Apple / NYT。",
-      "highlights_en": ["Explicit design benchmarks against named best-in-class products", "Unusually strong chart coverage for an HTML-route skill"],
-      "highlights_zh": ["明确对标具名的一流产品设计", "对 HTML 路线来说图表覆盖异常全面"],
-      "install": {"method": "clone", "command": "git clone https://github.com/Akxan/ppt-agent-skill"},
+      "highlights_en": [
+        "Explicit design benchmarks against named best-in-class products",
+        "Unusually strong chart coverage for an HTML-route skill"
+      ],
+      "highlights_zh": [
+        "明确对标具名的一流产品设计",
+        "对 HTML 路线来说图表覆盖异常全面"
+      ],
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/Akxan/ppt-agent-skill"
+      },
       "best_for_en": "Data-heavy product decks where charts carry the argument.",
       "best_for_zh": "数据密集、靠图表说话的产品 deck。"
     },
@@ -456,7 +499,10 @@
         "全表唯一以可测量结果（留存率）而非审美为优化目标的 skill",
         "有教学设计理论支撑"
       ],
-      "install": {"method": "clone", "command": "git clone https://github.com/edu-ai-builders/visual-cognition-slides"},
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/edu-ai-builders/visual-cognition-slides"
+      },
       "best_for_en": "Teaching, training, onboarding — anywhere the audience must remember the content.",
       "best_for_zh": "教学、培训、入职 —— 任何听众必须记住内容的场合。"
     },
@@ -470,9 +516,18 @@
       "lang": "en",
       "tagline_en": "HTML slides with speaker notes, plus a companion presentation app.",
       "tagline_zh": "带演讲者备注的 HTML 幻灯片，配套放映 app。",
-      "highlights_en": ["Speaker notes are first-class", "Supports Gemini, Codex and Copilot alongside Claude"],
-      "highlights_zh": ["演讲者备注是一等公民", "除 Claude 外还支持 Gemini / Codex / Copilot"],
-      "install": {"method": "clone", "command": "git clone https://github.com/bluedusk/html-slides"},
+      "highlights_en": [
+        "Speaker notes are first-class",
+        "Supports Gemini, Codex and Copilot alongside Claude"
+      ],
+      "highlights_zh": [
+        "演讲者备注是一等公民",
+        "除 Claude 外还支持 Gemini / Codex / Copilot"
+      ],
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/bluedusk/html-slides"
+      },
       "best_for_en": "Talks where speaker notes matter as much as the slides.",
       "best_for_zh": "备注和幻灯片同等重要的演讲。"
     },
@@ -486,9 +541,16 @@
       "lang": "zh",
       "tagline_en": "KingDee corporate style decks.",
       "tagline_zh": "将内容快速生成金蝶风格 PPT。",
-      "highlights_en": ["Single-vendor corporate style — a useful reference for building your own brand skill"],
-      "highlights_zh": ["单一企业风格 —— 想做自家品牌 skill 的好参考"],
-      "install": {"method": "clone", "command": "git clone https://github.com/WayneZhon/KingDee-PPT-Skill"},
+      "highlights_en": [
+        "Single-vendor corporate style — a useful reference for building your own brand skill"
+      ],
+      "highlights_zh": [
+        "单一企业风格 —— 想做自家品牌 skill 的好参考"
+      ],
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/WayneZhon/KingDee-PPT-Skill"
+      },
       "best_for_en": "KingDee ecosystem, or as a template for your own corporate style skill.",
       "best_for_zh": "金蝶生态，或作为自建企业风格 skill 的模板。"
     },
@@ -502,9 +564,16 @@
       "lang": "zh",
       "tagline_en": "High-information-density decks in the Huawei corporate idiom.",
       "tagline_zh": "华为风格高密度信息 PPT 制作工作流。",
-      "highlights_en": ["Optimized for information density rather than whitespace — the opposite of most skills here"],
-      "highlights_zh": ["为信息密度而非留白优化 —— 和这里大多数 skill 的取向相反"],
-      "install": {"method": "clone", "command": "git clone https://github.com/zuiho-kai/huawei-style-ppt-skill"},
+      "highlights_en": [
+        "Optimized for information density rather than whitespace — the opposite of most skills here"
+      ],
+      "highlights_zh": [
+        "为信息密度而非留白优化 —— 和这里大多数 skill 的取向相反"
+      ],
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/zuiho-kai/huawei-style-ppt-skill"
+      },
       "best_for_en": "Dense internal reporting where every slide must stand alone.",
       "best_for_zh": "每页都要能独立看懂的高密度内部汇报。"
     },
@@ -518,9 +587,16 @@
       "lang": "en",
       "tagline_en": "AI planning, style discovery and PPTX export.",
       "tagline_zh": "AI 规划 + 风格发现 + PPTX 导出。",
-      "highlights_en": ["Adopts the show-don't-tell style discovery pattern popularized by frontend-slides"],
-      "highlights_zh": ["沿用了 frontend-slides 带火的 show-don't-tell 风格发现范式"],
-      "install": {"method": "clone", "command": "git clone https://github.com/kaisersong/slide-creator"},
+      "highlights_en": [
+        "Adopts the show-don't-tell style discovery pattern popularized by frontend-slides"
+      ],
+      "highlights_zh": [
+        "沿用了 frontend-slides 带火的 show-don't-tell 风格发现范式"
+      ],
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/kaisersong/slide-creator"
+      },
       "best_for_en": "A lighter-weight take on the frontend-slides workflow with PPTX export attached.",
       "best_for_zh": "frontend-slides 工作流的轻量版，附带 PPTX 导出。"
     },
@@ -534,9 +610,18 @@
       "lang": "bilingual",
       "tagline_en": "26+ styles, zero dependencies, bilingual.",
       "tagline_zh": "「你的下个 slide，何必是 PPT」—— 26+ 风格，零依赖，中英双语。",
-      "highlights_en": ["Bilingual by design", "Works with Claude Code and OpenClaw"],
-      "highlights_zh": ["原生双语设计", "支持 Claude Code 与 OpenClaw"],
-      "install": {"method": "clone", "command": "git clone https://github.com/codesstar/next-slide"},
+      "highlights_en": [
+        "Bilingual by design",
+        "Works with Claude Code and OpenClaw"
+      ],
+      "highlights_zh": [
+        "原生双语设计",
+        "支持 Claude Code 与 OpenClaw"
+      ],
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/codesstar/next-slide"
+      },
       "best_for_en": "Bilingual decks where both languages need equal typographic care.",
       "best_for_zh": "中英排版都要讲究的双语 deck。"
     },
@@ -550,9 +635,16 @@
       "lang": "bilingual",
       "tagline_en": "Enterprise HTML decks from ideas, outlines, documents or speech drafts.",
       "tagline_zh": "从想法、大纲、文档或演讲稿生成企业级 HTML 演示。",
-      "highlights_en": ["Accepts a speech draft as input — rare, and useful when the talk is written before the deck"],
-      "highlights_zh": ["接受演讲稿作为输入 —— 少见，先写稿后做 deck 时很有用"],
-      "install": {"method": "clone", "command": "git clone https://github.com/FeeiCN/slide-writer"},
+      "highlights_en": [
+        "Accepts a speech draft as input — rare, and useful when the talk is written before the deck"
+      ],
+      "highlights_zh": [
+        "接受演讲稿作为输入 —— 少见，先写稿后做 deck 时很有用"
+      ],
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/FeeiCN/slide-writer"
+      },
       "best_for_en": "Speakers who write the talk first and need slides derived from it.",
       "best_for_zh": "先写演讲稿、再据此生成幻灯片的讲者。"
     },
@@ -566,9 +658,18 @@
       "lang": "en",
       "tagline_en": "50 aesthetics x 20 palettes x 10 fonts x 5 layouts x 30+ effects.",
       "tagline_zh": "50 美学 × 20 配色 × 10 字体 × 5 布局 × 30+ 特效 = 5 万种组合。",
-      "highlights_en": ["Combinatorial approach to variety rather than curated presets", "Explicitly anti-AI-slop in its positioning"],
-      "highlights_zh": ["用组合爆炸而非精选预设来制造多样性", "定位上明确反 AI slop"],
-      "install": {"method": "clone", "command": "git clone https://github.com/nghiahsgs/skills-slides"},
+      "highlights_en": [
+        "Combinatorial approach to variety rather than curated presets",
+        "Explicitly anti-AI-slop in its positioning"
+      ],
+      "highlights_zh": [
+        "用组合爆炸而非精选预设来制造多样性",
+        "定位上明确反 AI slop"
+      ],
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/nghiahsgs/skills-slides"
+      },
       "best_for_en": "Maximum visual variety when you want to roll the dice repeatedly.",
       "best_for_zh": "想反复抽卡、追求最大视觉多样性时。"
     },
@@ -582,9 +683,18 @@
       "lang": "en",
       "tagline_en": "Page-structured Markdown into styled 1600x900 HTML slides, PNG renders and exports.",
       "tagline_zh": "结构化 Markdown → 1600×900 HTML 幻灯片 + PNG 渲染 + 可导出。",
-      "highlights_en": ["PNG render step built in, useful for previews and social sharing", "Supports Codex and Claude Code"],
-      "highlights_zh": ["内置 PNG 渲染步骤，方便预览和社交分享", "支持 Codex 与 Claude Code"],
-      "install": {"method": "clone", "command": "git clone https://github.com/Phlegonlabs/Powerpoint-fancy-design"},
+      "highlights_en": [
+        "PNG render step built in, useful for previews and social sharing",
+        "Supports Codex and Claude Code"
+      ],
+      "highlights_zh": [
+        "内置 PNG 渲染步骤，方便预览和社交分享",
+        "支持 Codex 与 Claude Code"
+      ],
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/Phlegonlabs/Powerpoint-fancy-design"
+      },
       "best_for_en": "Markdown-first workflows that also need image renders.",
       "best_for_zh": "以 Markdown 为源、同时需要图片渲染的流程。"
     },
@@ -606,9 +716,1349 @@
         "全表模板合规性最严 —— 绝不自创版式",
         "企业品牌治理不容妥协时的正确答案"
       ],
-      "install": {"method": "clone", "command": "git clone https://github.com/tristan-mcinnis/pptx-from-layouts-skill"},
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/tristan-mcinnis/pptx-from-layouts-skill"
+      },
       "best_for_en": "Regulated or brand-governed environments with a mandated corporate template.",
       "best_for_zh": "有强制企业模板、受品牌治理约束的环境。"
+    },
+    {
+      "id": "slidev",
+      "repo": "slidevjs/slidev",
+      "name": "Slidev",
+      "author": "slidevjs",
+      "route": "framework",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "A developer-focused framework for building presentation slides with Markdown and Vue.",
+      "tagline_zh": "面向开发者的演示文稿框架，使用 Markdown 和 Vue 制作幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "quarkdown",
+      "repo": "iamgio/quarkdown",
+      "name": "Quarkdown",
+      "author": "iamgio",
+      "route": "framework",
+      "license_note": "GPL-3.0",
+      "lang": "en",
+      "tagline_en": "A Markdown-based framework that produces papers, presentations, websites, and books from one source.",
+      "tagline_zh": "基于 Markdown 的框架，从单一源文件生成论文、演示文稿、网站和书籍。",
+      "source": "discovered"
+    },
+    {
+      "id": "banana-slides",
+      "repo": "Anionex/banana-slides",
+      "name": "Banana Slides",
+      "author": "Anionex",
+      "route": "pptx",
+      "license_note": "AGPL-3.0",
+      "lang": "zh",
+      "tagline_en": "AI-native PPT generator that accepts templates, text prompts, or outlines and exports editable PPTX files.",
+      "tagline_zh": "原生 AI PPT 生成器，接受模板、文字提示或大纲，导出可编辑 PPTX 文件。",
+      "source": "discovered",
+      "license_warning": true
+    },
+    {
+      "id": "html-anything",
+      "repo": "nexu-io/html-anything",
+      "name": "HTML Anything",
+      "author": "nexu-io",
+      "route": "suite",
+      "license_note": "Apache-2.0",
+      "lang": "en",
+      "tagline_en": "An agentic HTML editor with 75 skills across 9 surface types including decks, posters, and prototypes.",
+      "tagline_zh": "具有 75 个技能的智能 HTML 编辑器，涵盖幻灯片、海报和原型等 9 种输出类型。",
+      "source": "discovered"
+    },
+    {
+      "id": "dashi-ppt-skill",
+      "repo": "chuspeeism/dashi-ppt-skill",
+      "name": "Dashi PPT Skill",
+      "author": "chuspeeism",
+      "route": "hybrid",
+      "license_note": "AGPL-3.0",
+      "lang": "en",
+      "tagline_en": "Generates browser-editable presentations from multiple visual themes, exportable to HTML, PDF, and PPTX.",
+      "tagline_zh": "从多种视觉主题生成可在浏览器编辑的演示文稿，支持导出为 HTML、PDF 和 PPTX。",
+      "source": "discovered",
+      "license_warning": true
+    },
+    {
+      "id": "codex-ppt-skill",
+      "repo": "ningzimu/codex-ppt-skill",
+      "name": "Codex PPT Skill",
+      "author": "ningzimu",
+      "route": "image",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Uses GPT-Image-2 to generate image-based PowerPoint slides within Codex and compatible agents.",
+      "tagline_zh": "使用 GPT-Image-2 在 Codex 及兼容智能体中生成基于图像的 PowerPoint 幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "nanobanana-ppt-skills",
+      "repo": "op7418/NanoBanana-PPT-Skills",
+      "name": "NanoBanana PPT Skills",
+      "author": "op7418",
+      "route": "image",
+      "license_note": "Unspecified",
+      "lang": "zh",
+      "tagline_en": "AI skill that generates high-quality PPT slide images and videos with transitions and interactive playback.",
+      "tagline_zh": "AI 技能，自动生成高质量 PPT 幻灯片图片和视频，支持智能转场与交互式播放。",
+      "source": "discovered"
+    },
+    {
+      "id": "baoyu-design",
+      "repo": "JimLiu/baoyu-design",
+      "name": "Baoyu Design",
+      "author": "JimLiu",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Runs Claude's Design system prompt locally to produce UI mockups, decks, and wireframes as self-contained HTML.",
+      "tagline_zh": "在本地运行 Claude 设计系统提示，生成 UI 原型、幻灯片和线框图，输出为独立 HTML 文件。",
+      "source": "discovered"
+    },
+    {
+      "id": "gordenpptskill",
+      "repo": "GordenSun/GordenPPTSkill",
+      "name": "Gorden PPT Skill",
+      "author": "GordenSun",
+      "route": "pptx",
+      "license_note": "NOASSERTION",
+      "lang": "en",
+      "tagline_en": "Builds PPTX files from 17 Chinese templates by applying text edits defined in a JSON file, layouts intact.",
+      "tagline_zh": "通过 JSON 文件对 17 个中文模板进行纯文字编辑，生成保留布局的 PPTX 文件。",
+      "source": "discovered"
+    },
+    {
+      "id": "codex-claude-academic-skills",
+      "repo": "zLanqing/codex-claude-academic-skills",
+      "name": "Codex Claude Academic Skills",
+      "author": "zLanqing",
+      "route": "suite",
+      "license_note": "MIT",
+      "lang": "zh",
+      "tagline_en": "Three-skill suite for researchers covering paper reading, PPT/Word generation, writing help, and scientific charts.",
+      "tagline_zh": "面向科研人员的三技能套件，涵盖论文阅读、PPT/Word 生成、写作辅助及科学图表绘制。",
+      "source": "discovered"
+    },
+    {
+      "id": "oh-my-ppt",
+      "repo": "arcsin1/oh-my-ppt",
+      "name": "Oh My PPT",
+      "author": "arcsin1",
+      "route": "html",
+      "license_note": "Apache-2.0",
+      "lang": "en",
+      "tagline_en": "Takes a text description and generates clean HTML slides locally, with no internet connection required.",
+      "tagline_zh": "输入文字描述，在本地生成简洁美观的 HTML 幻灯片，无需联网。",
+      "source": "discovered"
+    },
+    {
+      "id": "image-to-editable-ppt-skill",
+      "repo": "ningzimu/image-to-editable-ppt-skill",
+      "name": "Image to Editable PPT Skill",
+      "author": "ningzimu",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Converts slide images, PDFs, and image-based PPTX files into editable PowerPoint decks.",
+      "tagline_zh": "将幻灯片图像、PDF 及基于图像的 PPTX 文件转换为可编辑的 PowerPoint 演示文稿。",
+      "source": "discovered"
+    },
+    {
+      "id": "gordensuperpptskills",
+      "repo": "GordenSun/GordenSuperPPTSkills",
+      "name": "Gorden Super PPT Skills",
+      "author": "GordenSun",
+      "route": "pptx",
+      "license_note": "Unspecified",
+      "lang": "zh",
+      "tagline_en": "Generates high-quality PPT images with GPT and converts them into fully editable PPTX files.",
+      "tagline_zh": "使用 GPT 生成高质量 PPT 图像，再将其转换为完全可编辑的 PPTX 文件。",
+      "source": "discovered"
+    },
+    {
+      "id": "cyberppt",
+      "repo": "crazyykhllc-bit/CyberPPT",
+      "name": "CyberPPT",
+      "author": "crazyykhllc-bit",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "zh",
+      "tagline_en": "Codex skill for generating dense, editable consulting-style PowerPoint decks with SCR narrative and quality checks.",
+      "tagline_zh": "用于生成高密度、可编辑咨询风格 PowerPoint 的 Codex 技能，支持 SCR 叙事与质量检查。",
+      "source": "discovered"
+    },
+    {
+      "id": "ian-handdrawn-ppt",
+      "repo": "helloianneo/ian-handdrawn-ppt",
+      "name": "Ian Handdrawn PPT",
+      "author": "helloianneo",
+      "route": "image",
+      "license_note": "MIT",
+      "lang": "zh",
+      "tagline_en": "Generates hand-drawn-style Chinese technical PPT slide images in PNG, with 21:9 covers and 16:9 body slides.",
+      "tagline_zh": "生成手绘风格的中文技术 PPT 整页图像（PNG），包含 21:9 封面和 16:9 正文配图。",
+      "source": "discovered"
+    },
+    {
+      "id": "ppt-image-first",
+      "repo": "NyxTides/ppt-image-first",
+      "name": "PPT Image First",
+      "author": "NyxTides",
+      "route": "image",
+      "license_note": "Apache-2.0",
+      "lang": "en",
+      "tagline_en": "An image-first PPT generation skill for Codex, Claude Code, and Opencode CLI agents.",
+      "tagline_zh": "面向 Codex、Claude Code 和 Opencode CLI 的以图像为优先的 PPT 生成技能。",
+      "source": "discovered"
+    },
+    {
+      "id": "gpt-image2-ppt-skills",
+      "repo": "JuneYaooo/gpt-image2-ppt-skills",
+      "name": "GPT Image2 PPT Skills",
+      "author": "JuneYaooo",
+      "route": "image",
+      "license_note": "Apache-2.0",
+      "lang": "zh",
+      "tagline_en": "Clones a PPTX layout using gpt-image-2 so you can swap in your own content; includes 10 built-in styles.",
+      "tagline_zh": "使用 gpt-image-2 克隆 PPTX 布局，替换为您的内容；内置 10 套精选风格。",
+      "source": "discovered"
+    },
+    {
+      "id": "ppt-agent-skills",
+      "repo": "sunbigfly/ppt-agent-skills",
+      "name": "PPT Agent Skills",
+      "author": "sunbigfly",
+      "route": "html",
+      "license_note": "NOASSERTION",
+      "lang": "zh",
+      "tagline_en": "A code-driven framework for generating presentations the same way you build software.",
+      "tagline_zh": "像构建软件工程一样，以代码驱动方式生成演示文稿的框架。",
+      "source": "discovered"
+    },
+    {
+      "id": "humanize-ppt",
+      "repo": "LearnPrompt/humanize-ppt",
+      "name": "Humanize PPT",
+      "author": "LearnPrompt",
+      "route": "html",
+      "license_note": "NOASSERTION",
+      "lang": "en",
+      "tagline_en": "An AST-based outline director that structures human-centered AI presentation workflows.",
+      "tagline_zh": "基于 AST 的大纲编排器，用于构建以人为中心的 AI 演示文稿工作流。",
+      "source": "discovered"
+    },
+    {
+      "id": "claudeskills",
+      "repo": "staruhub/ClaudeSkills",
+      "name": "Claude Skills",
+      "author": "staruhub",
+      "route": "suite",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "A curated set of 13 Claude Code agent skills covering decks, research, PRDs, articles, and audits.",
+      "tagline_zh": "精选 13 个 Claude Code 智能体技能，涵盖幻灯片、深度研究、PRD、文章和审计。",
+      "source": "discovered"
+    },
+    {
+      "id": "power-design",
+      "repo": "ItsssssJack/power-design",
+      "name": "Power Design",
+      "author": "ItsssssJack",
+      "route": "html",
+      "license_note": "NOASSERTION",
+      "lang": "en",
+      "tagline_en": "A Claude skill that applies brand identity and 20 design principles to produce slides that look hand-crafted.",
+      "tagline_zh": "结合品牌基因与 20 条设计原则的 Claude 技能，生成看起来非 AI 制作的幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "revealjs-skill",
+      "repo": "ryanbbrown/revealjs-skill",
+      "name": "Reveal.js Skill",
+      "author": "ryanbbrown",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "A coding agent skill for building reveal.js HTML presentations.",
+      "tagline_zh": "用于构建 reveal.js HTML 演示文稿的编码智能体技能。",
+      "source": "discovered"
+    },
+    {
+      "id": "visual-style-ppt-skill",
+      "repo": "irenerachel/visual-style-ppt-skill",
+      "name": "Visual Style PPT Skill",
+      "author": "irenerachel",
+      "route": "pptx",
+      "license_note": "Unspecified",
+      "lang": "zh",
+      "tagline_en": "A skill that runs a visual-style PPT generation workflow.",
+      "tagline_zh": "运行视觉风格 PPT 生成工作流的技能。",
+      "source": "discovered"
+    },
+    {
+      "id": "beamer-skill",
+      "repo": "Noi1r/beamer-skill",
+      "name": "Beamer Skill",
+      "author": "Noi1r",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Manages the full lifecycle of academic Beamer LaTeX slides: create, compile, review, quality score, and polish.",
+      "tagline_zh": "管理学术 Beamer LaTeX 幻灯片的完整生命周期——创建、编译、审阅、质量评分与润色。",
+      "source": "discovered"
+    },
+    {
+      "id": "paper2anything",
+      "repo": "QuZhan51496/paper2anything",
+      "name": "Paper2Anything",
+      "author": "QuZhan51496",
+      "route": "suite",
+      "license_note": "Apache-2.0",
+      "lang": "en",
+      "tagline_en": "Converts an academic paper PDF into slides, a poster, a webpage, a Xiaohongshu post, or a WeChat article.",
+      "tagline_zh": "将学术论文 PDF 转换为幻灯片、海报、网页、小红书帖子或微信文章。",
+      "source": "discovered"
+    },
+    {
+      "id": "rw-consulting-ppt",
+      "repo": "Pikapika260214/rw-consulting-ppt",
+      "name": "RW Consulting PPT",
+      "author": "Pikapika260214",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "A Codex skill for building editable consulting-style PowerPoint decks.",
+      "tagline_zh": "用于生成可编辑咨询风格 PowerPoint 演示文稿的 Codex 技能。",
+      "source": "discovered"
+    },
+    {
+      "id": "dom-to-pptx",
+      "repo": "atharva9167j/dom-to-pptx",
+      "name": "DOM to PPTX",
+      "author": "atharva9167j",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Client-side library that converts any HTML element into a pixel-accurate, fully editable PowerPoint slide.",
+      "tagline_zh": "客户端库，将任意 HTML 元素转换为像素精准、完全可编辑的 PowerPoint 幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "marp-slides",
+      "repo": "robonuggets/marp-slides",
+      "name": "Marp Slides",
+      "author": "robonuggets",
+      "route": "html",
+      "license_note": "Unspecified",
+      "lang": "en",
+      "tagline_en": "MARP presentation skill with 22 example decks, SVG charts, and dark/light themes for Claude Code.",
+      "tagline_zh": "适用于 Claude Code 的 MARP 演示文稿技能，含 22 个示例幻灯片、SVG 图表和深/浅主题。",
+      "source": "discovered"
+    },
+    {
+      "id": "beamer-academic",
+      "repo": "Faust-Donf/beamer-academic",
+      "name": "Beamer Academic",
+      "author": "Faust-Donf",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "zh",
+      "tagline_en": "Generates high-quality academic thesis defense Beamer slides from a paper with a single command.",
+      "tagline_zh": "一键从论文生成高质量学术答辩 Beamer 幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "planners-ppt-hell",
+      "repo": "thePlannerIvan/planners-ppt-hell",
+      "name": "Planners PPT Hell",
+      "author": "thePlannerIvan",
+      "route": "pptx",
+      "license_note": "AGPL-3.0",
+      "lang": "en",
+      "tagline_en": "A PPT generation skill aimed at planners.",
+      "tagline_zh": "面向规划人员的 PPT 生成技能。",
+      "source": "discovered",
+      "license_warning": true
+    },
+    {
+      "id": "thesis-defense-pptx-skill",
+      "repo": "zouchenzhen/thesis-defense-pptx-skill",
+      "name": "Thesis Defense PPTX Skill",
+      "author": "zouchenzhen",
+      "route": "pptx",
+      "license_note": "Apache-2.0",
+      "lang": "zh",
+      "tagline_en": "Generates an editable thesis-defense PPTX from a PDF or LaTeX source while preserving a chosen template.",
+      "tagline_zh": "从论文 PDF 或 LaTeX 源文件生成可编辑答辩 PPTX，同时保留指定 PPT 模板风格。",
+      "source": "discovered"
+    },
+    {
+      "id": "apple-bento-grid",
+      "repo": "hubeiqiao/apple-bento-grid",
+      "name": "Apple Bento Grid",
+      "author": "hubeiqiao",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Generates Apple-inspired bento grid presentation cards as HTML output.",
+      "tagline_zh": "生成苹果风格 Bento Grid 演示卡片，以 HTML 形式输出。",
+      "source": "discovered"
+    },
+    {
+      "id": "codex-ppt-skill-ronnie2025",
+      "repo": "Ronnie2025/codex-ppt-skill",
+      "name": "Codex PPT Skill",
+      "author": "Ronnie2025",
+      "route": "image",
+      "license_note": "MIT",
+      "lang": "zh",
+      "tagline_en": "Codex workflow for generating, composing, and SVG-decomposing Chinese business presentation slides.",
+      "tagline_zh": "面向中文 toB 商业汇报的 Codex PPT 生图、元素重组与 SVG 拆解工作流。",
+      "source": "discovered"
+    },
+    {
+      "id": "hands-on-deck",
+      "repo": "EveryInc/hands-on-deck",
+      "name": "Hands on Deck",
+      "author": "EveryInc",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "CLI tool that lets AI agents inspect, edit, create, and verify PPTX files through atomic JSON patches.",
+      "tagline_zh": "让 AI 智能体通过原子 JSON 补丁检查、编辑、创建和验证 PPTX 文件的 CLI 工具。",
+      "source": "discovered"
+    },
+    {
+      "id": "skywork-skills",
+      "repo": "SkyworkAI/Skywork-Skills",
+      "name": "Skywork Skills",
+      "author": "SkyworkAI",
+      "route": "suite",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Agent skill suite covering AI PPT, documents, Excel, images, deep research, and music for any compatible agent.",
+      "tagline_zh": "智能体技能套件，涵盖 AI PPT、文档、Excel、图像、深度研究和音乐，适用于任何兼容智能体。",
+      "source": "discovered"
+    },
+    {
+      "id": "ppt-image2-editable-rebuild",
+      "repo": "wwe-dog/ppt-image2-editable-rebuild",
+      "name": "PPT Image2 Editable Rebuild",
+      "author": "wwe-dog",
+      "route": "pptx",
+      "license_note": "Unlicense",
+      "lang": "zh",
+      "tagline_en": "Rebuilds editable PPTX files from screenshots or reference images by combining generated visuals with text shapes.",
+      "tagline_zh": "通过结合生成的视觉参考图与文本形状，将截图或参考图重建为可编辑的 PPTX 文件。",
+      "source": "discovered"
+    },
+    {
+      "id": "slide-image-to-editable-pptx",
+      "repo": "w1163222589-coder/slide-image-to-editable-pptx",
+      "name": "Slide Image to Editable PPTX",
+      "author": "w1163222589-coder",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Converts slide screenshots into editable PowerPoint decks.",
+      "tagline_zh": "将幻灯片截图转换为可编辑的 PowerPoint 演示文稿。",
+      "source": "discovered"
+    },
+    {
+      "id": "magic-slide",
+      "repo": "daniel-style/magic-slide",
+      "name": "Magic Slide",
+      "author": "daniel-style",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Generates self-contained HTML presentations with smooth Magic Move-style transitions between slides.",
+      "tagline_zh": "生成带有流畅 Magic Move 风格转场动画的独立 HTML 演示文稿。",
+      "source": "discovered"
+    },
+    {
+      "id": "presentation-skills",
+      "repo": "Sven-LI-sankyuu/presentation-skills",
+      "name": "Presentation Skills",
+      "author": "Sven-LI-sankyuu",
+      "route": "hybrid",
+      "license_note": "Unspecified",
+      "lang": "zh",
+      "tagline_en": "Codex CLI skill collection for editable PPT diagram collaboration and web demo video synthesis workflows.",
+      "tagline_zh": "Codex CLI 技能集合，涵盖可编辑 PPT 图表协作与端到端网页演示视频合成工作流。",
+      "source": "discovered"
+    },
+    {
+      "id": "claude-design-skill",
+      "repo": "jiji262/claude-design-skill",
+      "name": "Claude Design Skill",
+      "author": "jiji262",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Adapts Claude.ai's internal Design prompt locally to produce HTML decks, landing pages, prototypes, and posters.",
+      "tagline_zh": "在本地使用 Claude.ai 内部设计提示，生成 HTML 幻灯片、落地页、原型和海报。",
+      "source": "discovered"
+    },
+    {
+      "id": "servasyy-skills",
+      "repo": "huangserva/servasyy_skills",
+      "name": "Servasyy Skills",
+      "author": "huangserva",
+      "route": "suite",
+      "license_note": "Unspecified",
+      "lang": "zh",
+      "tagline_en": "A suite of AI skills covering writing, illustration, PPT, podcast, video, and comic generation.",
+      "tagline_zh": "一套覆盖写作、配图、PPT、播客、视频和漫画生成的AI技能集合。",
+      "source": "discovered"
+    },
+    {
+      "id": "ultimate-ppt-master-skill",
+      "repo": "kdnsna/ultimate-ppt-master-skill",
+      "name": "Ultimate PPT Master Skill",
+      "author": "kdnsna",
+      "route": "hybrid",
+      "license_note": "MIT",
+      "lang": "zh",
+      "tagline_en": "Clarifies audience and style, then produces an editable PPTX or web deck from a one-line prompt.",
+      "tagline_zh": "通过明确受众、场景和风格后，将一句话需求转化为可编辑的PPTX或网页幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "slide-deck-generator",
+      "repo": "code-on-sunday/slide-deck-generator",
+      "name": "Slide Deck Generator",
+      "author": "code-on-sunday",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Creates browser-based slide decks using React, Vite, and Framer Motion from a coding agent prompt.",
+      "tagline_zh": "通过编程智能体提示，使用React、Vite和Framer Motion创建基于浏览器的幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "html-ppt-designer",
+      "repo": "andyhuo520/html-ppt-designer",
+      "name": "HTML PPT Designer",
+      "author": "andyhuo520",
+      "route": "html",
+      "license_note": "Unspecified",
+      "lang": "zh",
+      "tagline_en": "Converts any content into polished HTML presentations.",
+      "tagline_zh": "将任意内容转化为精致的HTML演示文稿。",
+      "source": "discovered"
+    },
+    {
+      "id": "powerpoint-skill",
+      "repo": "Noi1r/powerpoint-skill",
+      "name": "PowerPoint Skill",
+      "author": "Noi1r",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Creates PPTX presentations with native math, LaTeX formulas, and Graphviz/Mermaid/TikZ diagrams.",
+      "tagline_zh": "生成包含原生数学公式、LaTeX和Graphviz/Mermaid/TikZ图表的PPTX演示文稿。",
+      "source": "discovered"
+    },
+    {
+      "id": "make-slide",
+      "repo": "Kuneosu/make-slide",
+      "name": "Make Slide",
+      "author": "Kuneosu",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Generates standalone HTML slide decks from a prompt.",
+      "tagline_zh": "根据提示生成独立的HTML幻灯片文件。",
+      "source": "discovered"
+    },
+    {
+      "id": "presentation-skills-pamelafox",
+      "repo": "pamelafox/presentation-skills",
+      "name": "Presentation Skills",
+      "author": "pamelafox",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "AI agent skills for processing and generating presentations, aimed at teachers and speakers.",
+      "tagline_zh": "面向教师和演讲者的AI智能体演示文稿处理技能集合。",
+      "source": "discovered"
+    },
+    {
+      "id": "ppt-report-skills",
+      "repo": "myunwang/ppt-report-skills",
+      "name": "PPT Report Skills",
+      "author": "myunwang",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "zh",
+      "tagline_en": "Builds web-based report decks with ECharts charts, per-slide files, and PDF/image export.",
+      "tagline_zh": "构建带有ECharts图表、按幻灯片分文件存储、支持PDF/图片导出的网页汇报文稿。",
+      "source": "discovered"
+    },
+    {
+      "id": "ai-paper2slide-skill",
+      "repo": "Leo1998-Lu/ai-paper2slide-skill",
+      "name": "AI Paper to Slide Skill",
+      "author": "Leo1998-Lu",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Converts AI research papers into conference-grade PowerPoint slide decks.",
+      "tagline_zh": "将AI研究论文转换为会议级别的PowerPoint幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "literature-report-ppt-builder",
+      "repo": "fangyuanopus/literature-report-ppt-builder",
+      "name": "Literature Report PPT Builder",
+      "author": "fangyuanopus",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Generates academic literature-report PowerPoint decks from research content.",
+      "tagline_zh": "根据研究内容生成学术文献报告PowerPoint幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "knight-imagetopptx-skill",
+      "repo": "knight6669/knight-imagetopptx-skill",
+      "name": "Image to PPTX Skill",
+      "author": "knight6669",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Converts slide images into editable PowerPoint files using semantic understanding.",
+      "tagline_zh": "通过语义理解将幻灯片图片转换为可编辑的PowerPoint文件。",
+      "source": "discovered"
+    },
+    {
+      "id": "cn-academic-spark",
+      "repo": "wycmochi/cn-academic-spark",
+      "name": "CN Academic Spark",
+      "author": "wycmochi",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "zh",
+      "tagline_en": "Generates editable academic PPTX from uploaded papers for thesis, lab, and course presentations.",
+      "tagline_zh": "根据上传的论文材料，为论文答辩、组会汇报等场景生成带讲稿的可编辑学术PPTX。",
+      "source": "discovered"
+    },
+    {
+      "id": "knowledge-cat-ppt-skill",
+      "repo": "gnipbao/knowledge-cat-ppt-skill",
+      "name": "Knowledge Cat PPT Skill",
+      "author": "gnipbao",
+      "route": "hybrid",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Creates and QA-checks PPT, HTML, and image-first decks using a story-first approach.",
+      "tagline_zh": "采用故事优先的方式创建并质检PPT、HTML和图片型演示文稿。",
+      "source": "discovered"
+    },
+    {
+      "id": "sjtu-ppt-template-skill",
+      "repo": "ACTAshui/sjtu-ppt-template-skill",
+      "name": "SJTU PPT Template Skill",
+      "author": "ACTAshui",
+      "route": "pptx",
+      "license_note": "Unspecified",
+      "lang": "en",
+      "tagline_en": "Creates editable PowerPoint decks styled after Shanghai Jiao Tong University templates.",
+      "tagline_zh": "生成上海交通大学风格的可编辑PowerPoint幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "deck-factory",
+      "repo": "gongnyang/deck-factory",
+      "name": "Deck Factory",
+      "author": "gongnyang",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Turns a one-line prompt into a dark-editorial HTML presentation deck.",
+      "tagline_zh": "将一行提示词转化为暗色编辑风格的HTML演示文稿。",
+      "source": "discovered"
+    },
+    {
+      "id": "space-multi-design-ppt",
+      "repo": "SpaceZephyr/space-multi-design-ppt",
+      "name": "Space Multi Design PPT",
+      "author": "SpaceZephyr",
+      "route": "pptx",
+      "license_note": "Unspecified",
+      "lang": "en",
+      "tagline_en": "Generates branded slide decks following a design system via Codex.",
+      "tagline_zh": "通过Codex按照设计系统规范生成品牌化幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "lieflat-html-design",
+      "repo": "larashero3-dotcom/lieflat-html-design",
+      "name": "Lieflat HTML Design",
+      "author": "larashero3-dotcom",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Produces HTML slide decks and Xiaohongshu cards via agent-ready design skills.",
+      "tagline_zh": "通过智能体就绪的设计技能生成HTML幻灯片和小红书卡片。",
+      "source": "discovered"
+    },
+    {
+      "id": "jiarui-svg-skills",
+      "repo": "shenxiaofeng-pro/jiarui-svg-skills",
+      "name": "Jiarui SVG Skills",
+      "author": "shenxiaofeng-pro",
+      "route": "image",
+      "license_note": "Unspecified",
+      "lang": "zh",
+      "tagline_en": "Generates branded SVG slide images with company logo, colors, and logical structure for use in PPT.",
+      "tagline_zh": "生成带有公司Logo、主色调和逻辑结构的品牌SVG幻灯片图片，可拆分用于PPT。",
+      "source": "discovered"
+    },
+    {
+      "id": "awesome-ppt-skills",
+      "repo": "stevenjinlong/awesome-ppt-skills",
+      "name": "Awesome PPT Skills",
+      "author": "stevenjinlong",
+      "route": "image",
+      "license_note": "Unspecified",
+      "lang": "zh",
+      "tagline_en": "Converts a text prompt into full-slide PPT decks rendered as images via gpt-image-2.",
+      "tagline_zh": "通过gpt-image-2将文字提示词转换为完整的全页式PPT幻灯片图片。",
+      "source": "discovered"
+    },
+    {
+      "id": "editableimage2pptskill",
+      "repo": "soulmujoco/EditableImage2PPTSkill",
+      "name": "Editable Image to PPT Skill",
+      "author": "soulmujoco",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Converts PPT slide images into editable PowerPoint decks.",
+      "tagline_zh": "将PPT幻灯片图片转换为可编辑的PowerPoint文件。",
+      "source": "discovered"
+    },
+    {
+      "id": "presentation",
+      "repo": "appautomaton/presentation",
+      "name": "Presentation",
+      "author": "appautomaton",
+      "route": "hybrid",
+      "license_note": "Unspecified",
+      "lang": "en",
+      "tagline_en": "Turns a business question into a consulting-grade deck via four composable skills for PDF and PPTX.",
+      "tagline_zh": "通过四个可组合技能将业务问题转化为咨询级PDF和PPTX演示文稿。",
+      "source": "discovered"
+    },
+    {
+      "id": "html-to-editable-pptx",
+      "repo": "Hasasasa/html-to-editable-pptx",
+      "name": "HTML to Editable PPTX",
+      "author": "Hasasasa",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Converts HTML slide decks to PPTX with native text boxes rather than screenshot images.",
+      "tagline_zh": "将HTML幻灯片转换为包含原生文字框（而非截图）的可编辑PPTX文件。",
+      "source": "discovered"
+    },
+    {
+      "id": "claude-code-codex-slide",
+      "repo": "phodal/claude-code-codex-slide",
+      "name": "Claude Code Codex Slide",
+      "author": "phodal",
+      "route": "html",
+      "license_note": "Unspecified",
+      "lang": "en",
+      "tagline_en": "Analyzes Claude Code source code via Codex and presents findings as GPT-generated slides.",
+      "tagline_zh": "通过Codex分析Claude Code源码，并以GPT生成的幻灯片呈现分析结果。",
+      "source": "discovered"
+    },
+    {
+      "id": "baoyu-xuanyi-skills",
+      "repo": "xuanxuan1983/baoyu-xuanyi-skills",
+      "name": "Baoyu Xuanyi Skills",
+      "author": "xuanxuan1983",
+      "route": "templates",
+      "license_note": "Unspecified",
+      "lang": "zh",
+      "tagline_en": "Combines Baoyu's agent skills with seven PPT style templates.",
+      "tagline_zh": "将宝玉的智能体技能与七种PPT风格模板相结合。",
+      "source": "discovered"
+    },
+    {
+      "id": "beautiful-hackathon-slides",
+      "repo": "Esther2524/beautiful-hackathon-slides",
+      "name": "Beautiful Hackathon Slides",
+      "author": "Esther2524",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Creates bold-design HTML pitch decks suited for hackathon presentations.",
+      "tagline_zh": "生成适合黑客松展示的大胆设计HTML宣传幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "imagegen-pptx-pipeline",
+      "repo": "eddyzzl/imagegen-pptx-pipeline",
+      "name": "ImageGen PPTX Pipeline",
+      "author": "eddyzzl",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Generates editable PPTX decks using image generation and converts slide images to PowerPoint.",
+      "tagline_zh": "使用图像生成技术生成可编辑PPTX幻灯片，并将幻灯片图片严格转换为PowerPoint。",
+      "source": "discovered"
+    },
+    {
+      "id": "paper-ppt-skill",
+      "repo": "xiao634zhang/paper-ppt-skill",
+      "name": "Paper PPT Skill",
+      "author": "xiao634zhang",
+      "route": "pptx",
+      "license_note": "Unspecified",
+      "lang": "zh",
+      "tagline_en": "Generates clean academic slides from a PDF paper, supporting templates, speaker notes, and images.",
+      "tagline_zh": "从PDF论文自动生成简洁的学术汇报幻灯片，支持模板定制、演讲稿导入和图片提取。",
+      "source": "discovered"
+    },
+    {
+      "id": "presentation-skill",
+      "repo": "siril9/presentation-skill",
+      "name": "Presentation Skill",
+      "author": "siril9",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Source-first Codex skill that generates editable PPTX decks with style routing and QA.",
+      "tagline_zh": "以源文件优先方式通过Codex生成可编辑PPTX幻灯片，含样式路由和质量审核。",
+      "source": "discovered"
+    },
+    {
+      "id": "slidev-skills",
+      "repo": "yoanbernabeu/slidev-skills",
+      "name": "Slidev Skills",
+      "author": "yoanbernabeu",
+      "route": "framework",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Twenty AI agent skills for building presentations with the Slidev framework.",
+      "tagline_zh": "二十个用于通过Slidev框架构建演示文稿的AI智能体技能。",
+      "source": "discovered"
+    },
+    {
+      "id": "pptskill",
+      "repo": "AIPMAndy/PPTskill",
+      "name": "PPT Skill",
+      "author": "AIPMAndy",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "zh",
+      "tagline_en": "Generates native editable PowerPoint files without requiring any design skills.",
+      "tagline_zh": "无需设计技能，通过AI生成原生可编辑的PowerPoint文件。",
+      "source": "discovered"
+    },
+    {
+      "id": "blcaptain-ppt-skill",
+      "repo": "dososo/blcaptain-ppt-skill",
+      "name": "BL Captain PPT Skill",
+      "author": "dososo",
+      "route": "html",
+      "license_note": "NOASSERTION",
+      "lang": "zh",
+      "tagline_en": "Produces single-file HTML decks across 7 design personas with machine-enforced WCAG compliance.",
+      "tagline_zh": "生成带有7种设计体系视觉风格、符合WCAG规范的单文件HTML演示文稿。",
+      "source": "discovered"
+    },
+    {
+      "id": "codeximage-to-editable-ppt-v1",
+      "repo": "wiltonesten-web/codeximage-to-editable-ppt-v1",
+      "name": "Codex Image to Editable PPT",
+      "author": "wiltonesten-web",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Rebuilds image-based PPT slides into editable PowerPoint decks via Codex.",
+      "tagline_zh": "通过Codex将图片型PPT幻灯片重建为可编辑的PowerPoint文件。",
+      "source": "discovered"
+    },
+    {
+      "id": "html-to-ppt-pdf",
+      "repo": "wangzan101/html-to-ppt-pdf",
+      "name": "HTML to PPT PDF",
+      "author": "wangzan101",
+      "route": "hybrid",
+      "license_note": "MIT",
+      "lang": "zh",
+      "tagline_en": "Converts HTML slide decks to PDF and image-based PPTX for offline use.",
+      "tagline_zh": "将HTML幻灯片转换为PDF和图片型PPTX，供线下演讲使用。",
+      "source": "discovered"
+    },
+    {
+      "id": "slides-ai-plugin",
+      "repo": "proyecto26/slides-ai-plugin",
+      "name": "Slides AI Plugin",
+      "author": "proyecto26",
+      "route": "hybrid",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Turns a single prompt into an animated HTML or editable PowerPoint presentation.",
+      "tagline_zh": "将单个提示词转化为动态HTML或可编辑PowerPoint演示文稿。",
+      "source": "discovered"
+    },
+    {
+      "id": "scholar-ppt-cn",
+      "repo": "deathcats4/scholar-ppt-cn",
+      "name": "Scholar PPT CN",
+      "author": "deathcats4",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Converts academic papers to editable PowerPoint with planning tables and mockup layouts via Codex.",
+      "tagline_zh": "通过Codex将学术论文转换为带规划表和布局草图的可编辑PowerPoint幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "narrative-engine",
+      "repo": "nraford7/Narrative-Engine",
+      "name": "Narrative Engine",
+      "author": "nraford7",
+      "route": "html",
+      "license_note": "Unspecified",
+      "lang": "en",
+      "tagline_en": "Transforms content into HTML slide decks built on storytelling and communication frameworks.",
+      "tagline_zh": "将内容转化为基于叙事与沟通框架构建的HTML幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "image-ppt-king",
+      "repo": "TateZhouSiu/image-ppt-king",
+      "name": "Image PPT King",
+      "author": "TateZhouSiu",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Converts slide screenshots and generated images into editable PPTX with OCR evidence and QA.",
+      "tagline_zh": "将幻灯片截图和生成图片通过OCR识别和质检转换为可编辑的PPTX文件。",
+      "source": "discovered"
+    },
+    {
+      "id": "ppt-design-dna",
+      "repo": "dakjdakd/PPT-Design-DNA",
+      "name": "PPT Design DNA",
+      "author": "dakjdakd",
+      "route": "html",
+      "license_note": "Apache-2.0",
+      "lang": "en",
+      "tagline_en": "Extracts visual style from reference images into Design Profiles, then applies those to HTML decks.",
+      "tagline_zh": "从参考图片中提取视觉风格并保存为设计档案，再将其应用于HTML演示文稿。",
+      "source": "discovered"
+    },
+    {
+      "id": "ppt-creater-skills",
+      "repo": "Yu-0312/ppt-creater-skills",
+      "name": "PPT Creator Skills",
+      "author": "Yu-0312",
+      "route": "pptx",
+      "license_note": "NOASSERTION",
+      "lang": "en",
+      "tagline_en": "A Claude Code skill for creating PowerPoint presentations.",
+      "tagline_zh": "用于Claude Code的PowerPoint演示文稿创建技能。",
+      "source": "discovered"
+    },
+    {
+      "id": "beamer-skill-jaxonjp",
+      "repo": "JaxonJP/beamer-skill",
+      "name": "Beamer Skill",
+      "author": "JaxonJP",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Full-lifecycle skill for academic Beamer LaTeX presentations: compile, review, QA, and TikZ audit.",
+      "tagline_zh": "面向学术Beamer LaTeX演示文稿的全流程技能：编译、审阅、质检和TikZ审计。",
+      "source": "discovered"
+    },
+    {
+      "id": "competition-ppt-template-first-skill",
+      "repo": "che626/competition-ppt-template-first-skill",
+      "name": "Competition PPT Template Skill",
+      "author": "che626",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Generates editable PPTX competition and defense presentations with real evidence using a template-first approach.",
+      "tagline_zh": "使用模板优先方式生成含真实证据的可编辑竞赛与答辩 PPTX 演示文稿。",
+      "source": "discovered"
+    },
+    {
+      "id": "slide-wright",
+      "repo": "arifszn/slide-wright",
+      "name": "Slide Wright",
+      "author": "arifszn",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Generates unique reveal.js HTML slide decks with a distinct design for each prompt.",
+      "tagline_zh": "为每个提示生成具有独特设计的 reveal.js HTML 幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "four-up-ppt-generator",
+      "repo": "woniuniuniu/four-up-ppt-generator",
+      "name": "Four-Up PPT Generator",
+      "author": "woniuniuniu",
+      "route": "pptx",
+      "license_note": "AGPL-3.0",
+      "lang": "en",
+      "tagline_en": "Generates four-slide-per-page PPTX layouts, based on the guizang-ppt-skill.",
+      "tagline_zh": "基于 guizang-ppt-skill 生成每页四格布局的 PPTX 演示文稿。",
+      "source": "discovered",
+      "license_warning": true
+    },
+    {
+      "id": "nanobanana-ppt-skills-xj-bear",
+      "repo": "xj-bear/NanoBanana-PPT-Skills",
+      "name": "NanoBanana PPT Skills",
+      "author": "xj-bear",
+      "route": "pptx",
+      "license_note": "Unspecified",
+      "lang": "en",
+      "tagline_en": "Generates PPT files with AI, including support for Veo video content.",
+      "tagline_zh": "使用 AI 生成 PPT 文件，支持 Veo 视频内容。",
+      "source": "discovered"
+    },
+    {
+      "id": "nanobanana-ppt-skills-girish6055",
+      "repo": "girish6055/NanoBanana-PPT-Skills",
+      "name": "NanoBanana PPT Skills",
+      "author": "girish6055",
+      "route": "pptx",
+      "license_note": "Unspecified",
+      "lang": "en",
+      "tagline_en": "Generates PPT files with AI-driven smart transitions and interactive playback.",
+      "tagline_zh": "使用 AI 生成带有智能切换和交互式播放功能的 PPT 文件。",
+      "source": "discovered"
+    },
+    {
+      "id": "ppt-image-share-builder",
+      "repo": "uuoov/ppt-image-share-builder",
+      "name": "PPT Image Share Builder",
+      "author": "uuoov",
+      "route": "image",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Generates PPT page images, QA contact sheets, PPTX wrappers, and timed scripts from image inputs.",
+      "tagline_zh": "从图片输入生成 PPT 页面图像、质检联系表、PPTX 封装文件和时序脚本。",
+      "source": "discovered"
+    },
+    {
+      "id": "halfai-gufappt",
+      "repo": "HalfAI1102/HalfAI-gufappt",
+      "name": "HalfAI Gufa PPT",
+      "author": "HalfAI1102",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "zh",
+      "tagline_en": "Generates traditional-style editable PPTX files suited for school, workplace, and defense presentations.",
+      "tagline_zh": "生成适合学校、职场和答辩场景的传统风格可编辑 PPTX 文件。",
+      "source": "discovered"
+    },
+    {
+      "id": "slide-design-skill",
+      "repo": "SlideSpeak/slide-design-skill",
+      "name": "Slide Design Skill",
+      "author": "SlideSpeak",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Takes a deck description and renders 1920x1080 HTML slides with a derived style, real charts, tables, and images.",
+      "tagline_zh": "根据演示文稿描述生成带有定制样式、真实图表、表格和图片的 1920x1080 HTML 幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "better-ppt-html-deck",
+      "repo": "ziguishian/better-ppt-html-deck",
+      "name": "Better PPT HTML Deck",
+      "author": "ziguishian",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "zh",
+      "tagline_en": "Confirms visual direction first, then generates an editable, previewable, and exportable HTML presentation.",
+      "tagline_zh": "先确认视觉方向，再生成可编辑、可预览、可导出的 HTML 演示文稿。",
+      "source": "discovered"
+    },
+    {
+      "id": "create-html-deck",
+      "repo": "awesome-skills/create-html-deck",
+      "name": "Create HTML Deck",
+      "author": "awesome-skills",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Builds and verifies browser-native HTML presentations for display on laptops and projectors.",
+      "tagline_zh": "构建并验证适用于笔记本电脑和投影仪的原生浏览器 HTML 演示文稿。",
+      "source": "discovered"
+    },
+    {
+      "id": "aws-html-slides",
+      "repo": "lanceli93/aws-html-slides",
+      "name": "AWS HTML Slides",
+      "author": "lanceli93",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Creates animation-rich HTML presentations from scratch or converts existing PowerPoint files.",
+      "tagline_zh": "从头创建富含动画效果的 HTML 演示文稿，或将现有 PowerPoint 文件转换为 HTML 格式。",
+      "source": "discovered"
+    },
+    {
+      "id": "pradaslides",
+      "repo": "prodigeproject/pradaslides",
+      "name": "Prada Slides",
+      "author": "prodigeproject",
+      "route": "hybrid",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Generates PPTX, HTML slides, and PDFs, and handles deck planning for a given audience.",
+      "tagline_zh": "生成 PPTX、HTML 幻灯片和 PDF，并针对目标受众进行演示文稿规划。",
+      "source": "discovered"
+    },
+    {
+      "id": "japanese-corporate-pptx-skill",
+      "repo": "gonta223/japanese-corporate-pptx-skill",
+      "name": "Japanese Corporate PPTX Skill",
+      "author": "gonta223",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Generates corporate-style PPTX presentations in Japanese.",
+      "tagline_zh": "生成日式企业风格的 PPTX 演示文稿。",
+      "source": "discovered"
+    },
+    {
+      "id": "editable-leadership-pptx",
+      "repo": "CamelKing1997/editable-leadership-pptx",
+      "name": "Editable Leadership PPTX",
+      "author": "CamelKing1997",
+      "route": "pptx",
+      "license_note": "Apache-2.0",
+      "lang": "en",
+      "tagline_en": "Builds editable leadership, executive, and project update PPTX slides with repo-backed evidence and screenshot QA.",
+      "tagline_zh": "构建带有仓库证据支撑和截图质检的可编辑领导力、高管及项目汇报 PPTX 幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "slidestage-pack",
+      "repo": "SlideStage/slidestage-pack",
+      "name": "SlideStage Pack",
+      "author": "SlideStage",
+      "route": "html",
+      "license_note": "Unspecified",
+      "lang": "en",
+      "tagline_en": "Packages HTML slides into a distributable bundle for sharing or deployment.",
+      "tagline_zh": "将 HTML 幻灯片打包为可分享或部署的发布包。",
+      "source": "discovered"
+    },
+    {
+      "id": "deckset-claude-skill",
+      "repo": "doudou1337/deckset-claude-skill",
+      "name": "Deckset Claude Skill",
+      "author": "doudou1337",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Takes markdown input and generates Deckset presentation files with documentation and examples.",
+      "tagline_zh": "接受 Markdown 输入，生成包含文档和示例的 Deckset 演示文稿文件。",
+      "source": "discovered"
+    },
+    {
+      "id": "presentation-skill-orangeviolin",
+      "repo": "OrangeViolin/presentation-skill",
+      "name": "Presentation Skill",
+      "author": "OrangeViolin",
+      "route": "html",
+      "license_note": "Unspecified",
+      "lang": "zh",
+      "tagline_en": "Takes a topic and generates a playable HTML slideshow in one of 62 brand design styles.",
+      "tagline_zh": "输入主题，从62种品牌设计风格中生成可播放的HTML幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "econ-empirical-paper-ppt-skill",
+      "repo": "1793065778/econ-empirical-paper-ppt-skill",
+      "name": "Econ Empirical Paper PPT Skill",
+      "author": "1793065778",
+      "route": "pptx",
+      "license_note": "Unspecified",
+      "lang": "en",
+      "tagline_en": "Converts empirical economics papers into structured presentation blueprints ready for PowerPoint.",
+      "tagline_zh": "将实证经济学论文转换为适合PowerPoint使用的结构化演示文稿蓝图。",
+      "source": "discovered"
+    },
+    {
+      "id": "html-to-pptx",
+      "repo": "Emily27-alt/html-to-pptx",
+      "name": "HTML to PPTX",
+      "author": "Emily27-alt",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Converts HTML slide decks into editable .pptx files using native shapes, not screenshots.",
+      "tagline_zh": "将HTML幻灯片转换为使用原生形状（而非截图）的可编辑.pptx文件。",
+      "source": "discovered"
+    },
+    {
+      "id": "neon-slides",
+      "repo": "lqshow/neon-slides",
+      "name": "Neon Slides",
+      "author": "lqshow",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Turns a text outline into a neon-dark themed HTML slide deck for technical presentations.",
+      "tagline_zh": "将文本大纲转换为适合技术演示的暗色霓虹主题HTML幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "claude-html-slide-builder",
+      "repo": "mathruffian-dot/claude-html-slide-builder",
+      "name": "Claude HTML Slide Builder",
+      "author": "mathruffian-dot",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "zh",
+      "tagline_en": "Converts teaching materials into interactive Reveal.js HTML slides and deploys them to GitHub Pages.",
+      "tagline_zh": "将教材转换为AI互动式Reveal.js HTML演示文稿，并一键部署到GitHub Pages。",
+      "source": "discovered"
+    },
+    {
+      "id": "30x-mckinsey-research-deck",
+      "repo": "norahe0304-art/30x-mckinsey-research-deck",
+      "name": "30x McKinsey Research Deck",
+      "author": "norahe0304-art",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "zh",
+      "tagline_en": "Turns a research prompt into a McKinsey-style market research deck with adversarially verified data using a multi-agent pipeline.",
+      "tagline_zh": "通过多智能体流水线，将研究提示词转化为经过对抗验证的麦肯锡风格市场研究幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "keynote-slides-skill",
+      "repo": "dbmcco/keynote-slides-skill",
+      "name": "Keynote Slides Skill",
+      "author": "dbmcco",
+      "route": "html",
+      "license_note": "Unspecified",
+      "lang": "en",
+      "tagline_en": "Generates HTML-based presentation slides in a Keynote style.",
+      "tagline_zh": "生成 Keynote 风格的 HTML 演示幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "ppt-agent",
+      "repo": "joker-sxj/ppt-agent",
+      "name": "PPT Agent",
+      "author": "joker-sxj",
+      "route": "hybrid",
+      "license_note": "MIT",
+      "lang": "zh",
+      "tagline_en": "Converts a topic into an editable .pptx file and full-page SVG web preview through a six-stage pipeline.",
+      "tagline_zh": "通过六阶段流水线，将主题转化为可逐元素编辑的 .pptx 文件及整页 SVG 网页预览。",
+      "source": "discovered"
+    },
+    {
+      "id": "interactive-slides",
+      "repo": "sylvial928/interactive-slides",
+      "name": "Interactive Slides",
+      "author": "sylvial928",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Creates animated, interactive web presentations with style presets, brand kit support, and one-click PowerPoint export.",
+      "tagline_zh": "生成带有风格预设、品牌套件支持和一键导出 PowerPoint 功能的动画交互式网页演示文稿。",
+      "source": "discovered"
+    },
+    {
+      "id": "pptx-template-skills",
+      "repo": "CxyZyr/PPTX-Template-Skills",
+      "name": "PPTX Template Skills",
+      "author": "CxyZyr",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Parses a PowerPoint template into a machine-readable contract, then fills it with new content to produce a completed deck.",
+      "tagline_zh": "将 PowerPoint 模板解析为机器可读的结构描述，再用新内容填充，生成完整的演示文稿。",
+      "source": "discovered"
+    },
+    {
+      "id": "kai-presentation",
+      "repo": "yevvonlim/kai-presentation",
+      "name": "KAI Presentation",
+      "author": "yevvonlim",
+      "route": "html",
+      "license_note": "Unspecified",
+      "lang": "en",
+      "tagline_en": "Generates KAI-branded HTML presentation decks from prompts.",
+      "tagline_zh": "根据提示生成 KAI 品牌风格的 HTML 演示文稿。",
+      "source": "discovered"
+    },
+    {
+      "id": "ai-draw-skill",
+      "repo": "stone-yu/ai-draw-skill",
+      "name": "AI Draw Skill",
+      "author": "stone-yu",
+      "route": "html",
+      "license_note": "Unspecified",
+      "lang": "zh",
+      "tagline_en": "Turns text, links, images, or PDFs into an HTML slide deck or diagram, with 36 PPT themes and 12 diagram themes.",
+      "tagline_zh": "将文字、链接、图片或 PDF 转换为 HTML 幻灯片或图表，提供 36 种 PPT 主题和 12 种图表主题。",
+      "source": "discovered"
+    },
+    {
+      "id": "keynot",
+      "repo": "shawnzam/keynot",
+      "name": "Keynot",
+      "author": "shawnzam",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Converts any prompt into a self-contained HTML slide deck without requiring Keynote or PowerPoint.",
+      "tagline_zh": "无需 Keynote 或 PowerPoint，将任意提示词转换为独立的 HTML 幻灯片。",
+      "source": "discovered"
+    },
+    {
+      "id": "mbb-decks",
+      "repo": "floflo11/mbb-decks",
+      "name": "MBB Decks",
+      "author": "floflo11",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Produces MBB-style consulting .pptx decks with action-title slides, MECE bullets, and company logos as bullet markers.",
+      "tagline_zh": "生成 MBB 风格的咨询 .pptx 文件，包含行动标题、MECE 要点和公司 Logo 项目符号。",
+      "source": "discovered"
+    },
+    {
+      "id": "cyberbin-ppt-skill",
+      "repo": "caikankan/cyberbin-ppt-skill",
+      "name": "CyberBin PPT Skill",
+      "author": "caikankan",
+      "route": "html",
+      "license_note": "AGPL-3.0",
+      "lang": "en",
+      "tagline_en": "Generates local HTML slide decks from prompts.",
+      "tagline_zh": "根据提示在本地生成 HTML 幻灯片。",
+      "source": "discovered",
+      "license_warning": true
     }
   ],
   "lists": [

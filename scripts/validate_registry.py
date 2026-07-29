@@ -15,7 +15,8 @@ ROOT = Path(__file__).resolve().parent.parent
 SKILLS = ROOT / "data" / "skills.json"
 
 REQUIRED = ["id", "repo", "name", "route", "tagline_en", "tagline_zh"]
-VALID_ROUTES = {"html", "pptx", "hybrid", "framework", "templates", "list"}
+VALID_ROUTES = {"html", "pptx", "hybrid", "image", "suite",
+                "framework", "templates", "list"}
 VALID_LANG = {"en", "zh", "bilingual"}
 
 

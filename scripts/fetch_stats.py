@@ -16,6 +16,8 @@ import argparse
 import json
 import os
 import sys
+import shutil
+import subprocess
 import time
 import urllib.error
 import urllib.request
@@ -41,23 +43,49 @@ def _headers() -> dict[str, str]:
     return h
 
 
+def _shape(d: dict) -> dict:
+    return {
+        "stars": d["stargazers_count"],
+        "forks": d["forks_count"],
+        "open_issues": d["open_issues_count"],
+        "license": (d.get("license") or {}).get("spdx_id"),
+        "created_at": d["created_at"][:10],
+        "pushed_at": d["pushed_at"][:10],
+        "archived": d["archived"],
+        "homepage": d.get("homepage") or None,
+        "default_branch": d.get("default_branch", "main"),
+    }
+
+
+def fetch_via_gh(repo: str) -> dict | None:
+    """Fallback that shells out to the GitHub CLI.
+
+    Sustained urllib use dies partway through a large registry: after roughly
+    thirty sequential HTTPS connections every subsequent one fails with
+    `[Errno 22] Invalid argument`, which is a local socket problem rather than
+    anything GitHub did. `gh` handles connection reuse properly and got through
+    hundreds of calls in the same session, so it is the more reliable path once
+    the registry outgrew a couple of dozen entries.
+    """
+    if not shutil.which("gh"):
+        return None
+    try:
+        out = subprocess.run(["gh", "api", f"repos/{repo}"], capture_output=True,
+                             text=True, timeout=45)
+        if out.returncode != 0:
+            return None
+        return _shape(json.loads(out.stdout))
+    except (subprocess.SubprocessError, json.JSONDecodeError, KeyError):
+        return None
+
+
 def fetch(repo: str, retries: int = 3) -> dict | None:
     req = urllib.request.Request(API.format(repo=repo), headers=_headers())
     for attempt in range(retries):
         try:
             with urllib.request.urlopen(req, timeout=30) as resp:
                 d = json.load(resp)
-            return {
-                "stars": d["stargazers_count"],
-                "forks": d["forks_count"],
-                "open_issues": d["open_issues_count"],
-                "license": (d.get("license") or {}).get("spdx_id"),
-                "created_at": d["created_at"][:10],
-                "pushed_at": d["pushed_at"][:10],
-                "archived": d["archived"],
-                "homepage": d.get("homepage") or None,
-                "default_branch": d.get("default_branch", "main"),
-            }
+            return _shape(d)
         except urllib.error.HTTPError as e:
             if e.code == 404:
                 print(f"  !! {repo}: not found (renamed or deleted?)", file=sys.stderr)
@@ -69,13 +97,35 @@ def fetch(repo: str, retries: int = 3) -> dict | None:
                 continue
             print(f"  !! {repo}: HTTP {e.code}", file=sys.stderr)
             return None
-        except (urllib.error.URLError, KeyError, json.JSONDecodeError) as e:
+        # OSError, not URLError. A connection reset while *reading* the response
+        # body surfaces as a bare ConnectionResetError, which URLError does not
+        # cover — and at 137 repos that stopped being hypothetical. URLError is
+        # itself an OSError subclass, so this catches both.
+        except (OSError, KeyError, json.JSONDecodeError) as e:
             if attempt < retries - 1:
-                time.sleep(2)
+                time.sleep(2 * (attempt + 1))
                 continue
+            via_gh = fetch_via_gh(repo)
+            if via_gh is not None:
+                return via_gh
             print(f"  !! {repo}: {e}", file=sys.stderr)
             return None
     return None
+
+
+def _write(out: dict, failed: list[str]) -> None:
+    STATS.write_text(
+        json.dumps(
+            {
+                "refreshed_at": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+                "failed": failed,
+                "repos": dict(sorted(out.items())),
+            },
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
 
 
 def all_repos(data: dict) -> list[str]:
@@ -118,6 +168,10 @@ def main() -> int:
             continue
         out[repo] = result
         print(f"  {result['stars']:>7,}  {repo}")
+        # Checkpoint as we go. This used to write once at the end, so a reset on
+        # repo 120 of 137 discarded every earlier fetch.
+        if len(out) % 20 == 0:
+            _write(out, failed)
 
     # Preserve prior values for repos that failed this run, so a transient
     # outage degrades to stale data rather than blank data.

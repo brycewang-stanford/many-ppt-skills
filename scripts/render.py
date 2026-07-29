@@ -31,6 +31,8 @@ ROUTE_LABEL = {
     "html": ("HTML", "HTML"),
     "pptx": ("PPTX", "PPTX"),
     "hybrid": ("Both", "双路线"),
+    "image": ("Image", "图片"),
+    "suite": ("Suite", "套件"),
     "framework": ("Framework", "框架"),
     "templates": ("Templates", "模板库"),
     "list": ("List", "列表"),
