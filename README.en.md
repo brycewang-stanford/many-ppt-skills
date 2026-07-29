@@ -180,6 +180,306 @@ exactly which sentence to go and check.
 
 ---
 
+## What they look like
+
+The two tables above say what each project *is* and what it *claims*. Neither answers
+the question you actually walked in with, which is whether you like what comes out. So
+here is every picture these projects publish of their own work.
+
+Read them for what they are: **each frame is the one that team chose**. A wall of
+marketing shots is not a like-for-like comparison — no two of these decks are even on
+the same content. The use is elsewhere. It eliminates half the registry in thirty
+seconds, which is the decision most people came here to make.
+
+<!-- BEGIN:GALLERY -->
+#### [PPT Master](https://github.com/hugohe3/ppt-master) · 41,516 ⭐ · PPTX
+
+<sub>Documents or topics into genuinely native, editable PowerPoint decks.</sub>
+
+<a href="https://github.com/hugohe3/ppt-master"><img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/docs/assets/screenshots/preview_pritzker_2026.png" width="32.1%" alt="Editorial magazine — Pritzker 2026 architecture review"></a>
+<a href="https://github.com/hugohe3/ppt-master"><img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/docs/assets/screenshots/preview_global_ai_capital.png" width="32.1%" alt="Data journalism — Global AI Capital 2026"></a>
+<a href="https://github.com/hugohe3/ppt-master"><img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/docs/assets/screenshots/preview_swiss_grid.png" width="32.1%" alt="Swiss typographic grid — Grid Systems primer"></a>
+<a href="https://github.com/hugohe3/ppt-master"><img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/docs/assets/screenshots/preview_glassmorphism_demo.png" width="32.1%" alt="Glassmorphism SaaS — AI Agent engineering demo"></a>
+<a href="https://github.com/hugohe3/ppt-master"><img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/docs/assets/screenshots/preview_sugar_rush_memphis.png" width="32.1%" alt="Memphis pop — Sugar Rush festival"></a>
+<a href="https://github.com/hugohe3/ppt-master"><img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/docs/assets/screenshots/preview_indie_bookstore_zine.png" width="32.1%" alt="Risograph zine — Indie bookstore guide"></a>
+<a href="https://github.com/hugohe3/ppt-master"><img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/docs/assets/screenshots/archive/preview_academic_medical.png" width="32.1%" alt="PPT Master sample"></a>
+<a href="https://github.com/hugohe3/ppt-master"><img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/docs/assets/screenshots/archive/preview_dark_art_mv.png" width="32.1%" alt="PPT Master sample"></a>
+<a href="https://github.com/hugohe3/ppt-master"><img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/docs/assets/screenshots/archive/preview_launch_xiaomi.png" width="32.1%" alt="PPT Master sample"></a>
+
+<sub>9 of 267 images found in [`hugohe3/ppt-master`](https://github.com/hugohe3/ppt-master) · first frames are the ones the project puts in its own README</sub>
+
+#### [Frontend Slides](https://github.com/zarazhangrui/frontend-slides) · 26,461 ⭐ · HTML
+
+<sub>Beautiful slides on the web using a coding agent's frontend skills.</sub>
+
+<a href="https://github.com/zarazhangrui/frontend-slides"><img src="https://raw.githubusercontent.com/zarazhangrui/beautiful-html-templates/e5e204fb1f3b06290846e7dcd7aceddabeceec8c/screenshots/soft-editorial-4.png" width="32.1%" alt="Soft Editorial — slide 4"></a>
+<a href="https://github.com/zarazhangrui/frontend-slides"><img src="https://raw.githubusercontent.com/zarazhangrui/beautiful-html-templates/e5e204fb1f3b06290846e7dcd7aceddabeceec8c/screenshots/soft-editorial-6.png" width="32.1%" alt="Soft Editorial — slide 6"></a>
+<a href="https://github.com/zarazhangrui/frontend-slides"><img src="https://raw.githubusercontent.com/zarazhangrui/beautiful-html-templates/e5e204fb1f3b06290846e7dcd7aceddabeceec8c/screenshots/soft-editorial-10.png" width="32.1%" alt="Soft Editorial — slide 10"></a>
+<a href="https://github.com/zarazhangrui/frontend-slides"><img src="https://raw.githubusercontent.com/zarazhangrui/beautiful-html-templates/e5e204fb1f3b06290846e7dcd7aceddabeceec8c/screenshots/editorial-forest-1.png" width="32.1%" alt="Editorial Forest — slide 1"></a>
+<a href="https://github.com/zarazhangrui/frontend-slides"><img src="https://raw.githubusercontent.com/zarazhangrui/beautiful-html-templates/e5e204fb1f3b06290846e7dcd7aceddabeceec8c/screenshots/editorial-forest-2.png" width="32.1%" alt="Editorial Forest — slide 2"></a>
+<a href="https://github.com/zarazhangrui/frontend-slides"><img src="https://raw.githubusercontent.com/zarazhangrui/beautiful-html-templates/e5e204fb1f3b06290846e7dcd7aceddabeceec8c/screenshots/editorial-forest-5.png" width="32.1%" alt="Editorial Forest — slide 5"></a>
+<a href="https://github.com/zarazhangrui/frontend-slides"><img src="https://raw.githubusercontent.com/zarazhangrui/beautiful-html-templates/e5e204fb1f3b06290846e7dcd7aceddabeceec8c/screenshots/pin-and-paper-1.png" width="32.1%" alt="Pin & Paper — slide 1"></a>
+<a href="https://github.com/zarazhangrui/frontend-slides"><img src="https://raw.githubusercontent.com/zarazhangrui/beautiful-html-templates/e5e204fb1f3b06290846e7dcd7aceddabeceec8c/screenshots/pin-and-paper-11.png" width="32.1%" alt="Pin & Paper — slide 11"></a>
+<a href="https://github.com/zarazhangrui/frontend-slides"><img src="https://raw.githubusercontent.com/zarazhangrui/beautiful-html-templates/e5e204fb1f3b06290846e7dcd7aceddabeceec8c/screenshots/pin-and-paper-3.png" width="32.1%" alt="Pin & Paper — slide 3"></a>
+
+<sub>9 of 102 images found in [`zarazhangrui/frontend-slides`](https://github.com/zarazhangrui/frontend-slides) · first frames are the ones the project puts in its own README</sub>
+
+#### [Guizang PPT Skill](https://github.com/op7418/guizang-ppt-skill) · 22,564 ⭐ · HTML
+
+<sub>Editorial-magazine and Swiss-International HTML decks, with design locked down by constraint.</sub>
+
+<a href="https://github.com/op7418/guizang-ppt-skill"><img src="https://github.com/user-attachments/assets/5dc316a2-401c-4e37-9123-ea081b6ae470" width="32.1%" alt="Style A 电子杂志风效果展示"></a>
+<a href="https://github.com/op7418/guizang-ppt-skill"><img src="https://github.com/user-attachments/assets/8960e78c-69bb-4b7e-aa95-6fad64b70314" width="32.1%" alt="Style B 瑞士国际主义效果展示"></a>
+<a href="https://github.com/op7418/guizang-ppt-skill"><img src="https://github.com/user-attachments/assets/df21dbcb-5fe4-4852-a91a-a9cf00aceeb4" width="32.1%" alt="墨水经典主题预览"></a>
+<a href="https://github.com/op7418/guizang-ppt-skill"><img src="https://github.com/user-attachments/assets/99ce0fd2-72a6-4368-a75a-a8e21657a537" width="32.1%" alt="靛蓝瓷主题预览"></a>
+<a href="https://github.com/op7418/guizang-ppt-skill"><img src="https://github.com/user-attachments/assets/bcc1cc4c-5e8e-4467-ae8d-f5801ae73657" width="32.1%" alt="森林墨主题预览"></a>
+<a href="https://github.com/op7418/guizang-ppt-skill"><img src="https://github.com/user-attachments/assets/dfea080e-e916-417e-93cd-0a3628de84ca" width="32.1%" alt="牛皮纸主题预览"></a>
+<a href="https://github.com/op7418/guizang-ppt-skill"><img src="https://github.com/user-attachments/assets/f3705592-9a72-4dbc-9818-df3aea61bc75" width="32.1%" alt="沙丘主题预览"></a>
+<a href="https://github.com/op7418/guizang-ppt-skill"><img src="https://github.com/user-attachments/assets/c02d02f7-ce6f-4e16-b8a6-778c96851f94" width="32.1%" alt="克莱因蓝瑞士主题预览"></a>
+<a href="https://github.com/op7418/guizang-ppt-skill"><img src="https://github.com/user-attachments/assets/c310a8c4-5d28-450e-b49a-6ac5b6ba4785" width="32.1%" alt="柠檬黄瑞士主题预览"></a>
+
+<sub>9 of 13 images found in [`op7418/guizang-ppt-skill`](https://github.com/op7418/guizang-ppt-skill) · first frames are the ones the project puts in its own README</sub>
+
+#### [Huashu Design](https://github.com/alchaincyf/huashu-design) · 22,135 ⭐ · Both
+
+<sub>HTML-native design skill — prototypes, decks, motion and design critique, not just slides.</sub>
+
+<a href="https://github.com/alchaincyf/huashu-design"><img src="https://raw.githubusercontent.com/alchaincyf/huashu-design/1572d431f1411c82ec0baea94dea6a45f6063b26/assets/showcases/ppt/ppt-build.png" width="32.1%" alt="Huashu Design sample"></a>
+<a href="https://github.com/alchaincyf/huashu-design"><img src="https://raw.githubusercontent.com/alchaincyf/huashu-design/1572d431f1411c82ec0baea94dea6a45f6063b26/assets/showcases/ppt/ppt-pentagram.png" width="32.1%" alt="Huashu Design sample"></a>
+<a href="https://github.com/alchaincyf/huashu-design"><img src="https://raw.githubusercontent.com/alchaincyf/huashu-design/1572d431f1411c82ec0baea94dea6a45f6063b26/assets/showcases/ppt/ppt-takram.png" width="32.1%" alt="Huashu Design sample"></a>
+<a href="https://github.com/alchaincyf/huashu-design"><img src="https://raw.githubusercontent.com/alchaincyf/huashu-design/1572d431f1411c82ec0baea94dea6a45f6063b26/assets/showcases/website-ai-nav/ainav-build.png" width="32.1%" alt="Huashu Design sample"></a>
+<a href="https://github.com/alchaincyf/huashu-design"><img src="https://raw.githubusercontent.com/alchaincyf/huashu-design/1572d431f1411c82ec0baea94dea6a45f6063b26/assets/showcases/website-ai-nav/ainav-pentagram.png" width="32.1%" alt="Huashu Design sample"></a>
+<a href="https://github.com/alchaincyf/huashu-design"><img src="https://raw.githubusercontent.com/alchaincyf/huashu-design/1572d431f1411c82ec0baea94dea6a45f6063b26/assets/showcases/website-ai-nav/ainav-takram.png" width="32.1%" alt="Huashu Design sample"></a>
+<a href="https://github.com/alchaincyf/huashu-design"><img src="https://raw.githubusercontent.com/alchaincyf/huashu-design/1572d431f1411c82ec0baea94dea6a45f6063b26/assets/showcases/website-ai-writing/aiwriting-build.png" width="32.1%" alt="Huashu Design sample"></a>
+<a href="https://github.com/alchaincyf/huashu-design"><img src="https://raw.githubusercontent.com/alchaincyf/huashu-design/1572d431f1411c82ec0baea94dea6a45f6063b26/assets/showcases/website-ai-writing/aiwriting-pentagram.png" width="32.1%" alt="Huashu Design sample"></a>
+<a href="https://github.com/alchaincyf/huashu-design"><img src="https://raw.githubusercontent.com/alchaincyf/huashu-design/1572d431f1411c82ec0baea94dea6a45f6063b26/assets/showcases/website-ai-writing/aiwriting-takram.png" width="32.1%" alt="Huashu Design sample"></a>
+
+<sub>9 of 24 images found in [`alchaincyf/huashu-design`](https://github.com/alchaincyf/huashu-design)</sub>
+
+#### [HTML PPT Studio](https://github.com/lewislulu/html-ppt-skill) · 7,437 ⭐ · HTML
+
+<sub>24 themes, 31 layouts and 20+ animations for professional HTML presentations.</sub>
+
+<a href="https://github.com/lewislulu/html-ppt-skill"><img src="https://raw.githubusercontent.com/lewislulu/html-ppt-skill/f3a8435d3901697d5ac5e64d356c933637e43107/docs/readme/themes.png" width="32.1%" alt="36 themes · 8 of them"></a>
+<a href="https://github.com/lewislulu/html-ppt-skill"><img src="https://raw.githubusercontent.com/lewislulu/html-ppt-skill/f3a8435d3901697d5ac5e64d356c933637e43107/docs/readme/templates.png" width="32.1%" alt="14 full-deck templates"></a>
+<a href="https://github.com/lewislulu/html-ppt-skill"><img src="https://raw.githubusercontent.com/lewislulu/html-ppt-skill/f3a8435d3901697d5ac5e64d356c933637e43107/docs/readme/layouts.png" width="32.1%" alt="31 single-page layouts"></a>
+<a href="https://github.com/lewislulu/html-ppt-skill"><img src="https://raw.githubusercontent.com/lewislulu/html-ppt-skill/f3a8435d3901697d5ac5e64d356c933637e43107/docs/readme/layouts-live.gif" width="32.1%" alt="31 layouts auto-cycling through real template files"></a>
+<a href="https://github.com/lewislulu/html-ppt-skill"><img src="https://raw.githubusercontent.com/lewislulu/html-ppt-skill/f3a8435d3901697d5ac5e64d356c933637e43107/docs/readme/hero.gif" width="32.1%" alt="html-ppt — cover with live previews"></a>
+<a href="https://github.com/lewislulu/html-ppt-skill"><img src="https://raw.githubusercontent.com/lewislulu/html-ppt-skill/f3a8435d3901697d5ac5e64d356c933637e43107/docs/readme/presenter-mode.png" width="32.1%" alt="Presenter mode with 4 magnetic cards"></a>
+<a href="https://github.com/lewislulu/html-ppt-skill"><img src="https://raw.githubusercontent.com/lewislulu/html-ppt-skill/f3a8435d3901697d5ac5e64d356c933637e43107/docs/readme/animations.png" width="32.1%" alt="47 animations — 27 CSS + 20 canvas FX"></a>
+<a href="https://github.com/lewislulu/html-ppt-skill"><img src="https://raw.githubusercontent.com/lewislulu/html-ppt-skill/f3a8435d3901697d5ac5e64d356c933637e43107/scripts/verify-output/animation-showcase/animation-showcase_01.png" width="32.1%" alt="HTML PPT Studio sample"></a>
+<a href="https://github.com/lewislulu/html-ppt-skill"><img src="https://raw.githubusercontent.com/lewislulu/html-ppt-skill/f3a8435d3901697d5ac5e64d356c933637e43107/scripts/verify-output/animation-showcase/animation-showcase_02.png" width="32.1%" alt="HTML PPT Studio sample"></a>
+
+<sub>9 of 63 images found in [`lewislulu/html-ppt-skill`](https://github.com/lewislulu/html-ppt-skill) · first frames are the ones the project puts in its own README</sub>
+
+#### [open-slide](https://github.com/1weiho/open-slide) · 6,027 ⭐ · Framework
+
+<sub>A slide framework built for agents — React components on a fixed 1920x1080 canvas.</sub>
+
+<a href="https://github.com/1weiho/open-slide"><img src="https://github.com/user-attachments/assets/02f5e6d7-12a7-4a8e-88e7-ae8770a96584" width="32.1%" alt="open-slide github cover"></a>
+<a href="https://github.com/1weiho/open-slide"><img src="https://raw.githubusercontent.com/1weiho/open-slide/35dc46ca27716ea86f8a76710bbd3640e9590628/apps/demo/slides/open-slide-on-replit/assets/replit-features-result.webp" width="32.1%" alt="open-slide sample"></a>
+<a href="https://github.com/1weiho/open-slide"><img src="https://raw.githubusercontent.com/1weiho/open-slide/35dc46ca27716ea86f8a76710bbd3640e9590628/apps/demo/slides/open-slide-on-replit/assets/create-slide-skill.webp" width="32.1%" alt="open-slide sample"></a>
+<a href="https://github.com/1weiho/open-slide"><img src="https://raw.githubusercontent.com/1weiho/open-slide/35dc46ca27716ea86f8a76710bbd3640e9590628/apps/demo/slides/open-slide-on-replit/assets/openslide-home.webp" width="32.1%" alt="open-slide sample"></a>
+<a href="https://github.com/1weiho/open-slide"><img src="https://raw.githubusercontent.com/1weiho/open-slide/35dc46ca27716ea86f8a76710bbd3640e9590628/apps/demo/slides/open-slide-on-replit/assets/replit-agent-home.webp" width="32.1%" alt="open-slide sample"></a>
+<a href="https://github.com/1weiho/open-slide"><img src="https://raw.githubusercontent.com/1weiho/open-slide/35dc46ca27716ea86f8a76710bbd3640e9590628/apps/web/public/assets/screenshots/assets-manager.webp" width="32.1%" alt="open-slide sample"></a>
+<a href="https://github.com/1weiho/open-slide"><img src="https://raw.githubusercontent.com/1weiho/open-slide/35dc46ca27716ea86f8a76710bbd3640e9590628/apps/web/public/assets/screenshots/inspector.webp" width="32.1%" alt="open-slide sample"></a>
+<a href="https://github.com/1weiho/open-slide"><img src="https://raw.githubusercontent.com/1weiho/open-slide/35dc46ca27716ea86f8a76710bbd3640e9590628/apps/web/public/assets/screenshots/presenter.webp" width="32.1%" alt="open-slide sample"></a>
+<a href="https://github.com/1weiho/open-slide"><img src="https://raw.githubusercontent.com/1weiho/open-slide/35dc46ca27716ea86f8a76710bbd3640e9590628/apps/web/public/assets/screenshots/theme.webp" width="32.1%" alt="open-slide sample"></a>
+
+<sub>9 of 16 images found in [`1weiho/open-slide`](https://github.com/1weiho/open-slide) · first frames are the ones the project puts in its own README</sub>
+
+#### [Beautiful HTML Templates](https://github.com/zarazhangrui/beautiful-html-templates) · 3,918 ⭐ · Templates
+
+<sub>34 HTML slide templates with index.json metadata so any agent can pick the right one.</sub>
+
+<a href="https://github.com/zarazhangrui/beautiful-html-templates"><img src="https://raw.githubusercontent.com/zarazhangrui/beautiful-html-templates/e5e204fb1f3b06290846e7dcd7aceddabeceec8c/screenshots/soft-editorial-4.png" width="32.1%" alt="Soft Editorial — slide 4"></a>
+<a href="https://github.com/zarazhangrui/beautiful-html-templates"><img src="https://raw.githubusercontent.com/zarazhangrui/beautiful-html-templates/e5e204fb1f3b06290846e7dcd7aceddabeceec8c/screenshots/soft-editorial-6.png" width="32.1%" alt="Soft Editorial — slide 6"></a>
+<a href="https://github.com/zarazhangrui/beautiful-html-templates"><img src="https://raw.githubusercontent.com/zarazhangrui/beautiful-html-templates/e5e204fb1f3b06290846e7dcd7aceddabeceec8c/screenshots/soft-editorial-10.png" width="32.1%" alt="Soft Editorial — slide 10"></a>
+<a href="https://github.com/zarazhangrui/beautiful-html-templates"><img src="https://raw.githubusercontent.com/zarazhangrui/beautiful-html-templates/e5e204fb1f3b06290846e7dcd7aceddabeceec8c/screenshots/editorial-forest-1.png" width="32.1%" alt="Editorial Forest — slide 1"></a>
+<a href="https://github.com/zarazhangrui/beautiful-html-templates"><img src="https://raw.githubusercontent.com/zarazhangrui/beautiful-html-templates/e5e204fb1f3b06290846e7dcd7aceddabeceec8c/screenshots/editorial-forest-2.png" width="32.1%" alt="Editorial Forest — slide 2"></a>
+<a href="https://github.com/zarazhangrui/beautiful-html-templates"><img src="https://raw.githubusercontent.com/zarazhangrui/beautiful-html-templates/e5e204fb1f3b06290846e7dcd7aceddabeceec8c/screenshots/editorial-forest-5.png" width="32.1%" alt="Editorial Forest — slide 5"></a>
+<a href="https://github.com/zarazhangrui/beautiful-html-templates"><img src="https://raw.githubusercontent.com/zarazhangrui/beautiful-html-templates/e5e204fb1f3b06290846e7dcd7aceddabeceec8c/screenshots/pin-and-paper-1.png" width="32.1%" alt="Pin & Paper — slide 1"></a>
+<a href="https://github.com/zarazhangrui/beautiful-html-templates"><img src="https://raw.githubusercontent.com/zarazhangrui/beautiful-html-templates/e5e204fb1f3b06290846e7dcd7aceddabeceec8c/screenshots/pin-and-paper-11.png" width="32.1%" alt="Pin & Paper — slide 11"></a>
+<a href="https://github.com/zarazhangrui/beautiful-html-templates"><img src="https://raw.githubusercontent.com/zarazhangrui/beautiful-html-templates/e5e204fb1f3b06290846e7dcd7aceddabeceec8c/screenshots/pin-and-paper-3.png" width="32.1%" alt="Pin & Paper — slide 3"></a>
+
+<sub>9 of 102 images found in [`zarazhangrui/beautiful-html-templates`](https://github.com/zarazhangrui/beautiful-html-templates) · first frames are the ones the project puts in its own README</sub>
+
+#### [PPT Agent Workflow San](https://github.com/mucsbr/ppt-agent-workflow-san) · 617 ⭐ · HTML
+
+<sub>Progressive, interactive deck generation.</sub>
+
+<a href="https://github.com/mucsbr/ppt-agent-workflow-san"><img src="https://raw.githubusercontent.com/mucsbr/ppt-agent-workflow-san/801cd2bd46c3cc4ca2c846ff28da2d9284816cd9/2.png" width="32.1%" alt="html-slide-to-pptx-preview"></a>
+<a href="https://github.com/mucsbr/ppt-agent-workflow-san"><img src="https://raw.githubusercontent.com/mucsbr/ppt-agent-workflow-san/801cd2bd46c3cc4ca2c846ff28da2d9284816cd9/1.png" width="32.1%" alt="ppt-workflow-preview"></a>
+<a href="https://github.com/mucsbr/ppt-agent-workflow-san"><img src="https://raw.githubusercontent.com/mucsbr/ppt-agent-workflow-san/801cd2bd46c3cc4ca2c846ff28da2d9284816cd9/ppt-workflow/01-cover.png" width="32.1%" alt="PPT Agent Workflow San sample"></a>
+<a href="https://github.com/mucsbr/ppt-agent-workflow-san"><img src="https://raw.githubusercontent.com/mucsbr/ppt-agent-workflow-san/801cd2bd46c3cc4ca2c846ff28da2d9284816cd9/ppt-workflow/02-core-conclusion.png" width="32.1%" alt="PPT Agent Workflow San sample"></a>
+<a href="https://github.com/mucsbr/ppt-agent-workflow-san"><img src="https://raw.githubusercontent.com/mucsbr/ppt-agent-workflow-san/801cd2bd46c3cc4ca2c846ff28da2d9284816cd9/ppt-workflow/03-positioning.png" width="32.1%" alt="PPT Agent Workflow San sample"></a>
+<a href="https://github.com/mucsbr/ppt-agent-workflow-san"><img src="https://raw.githubusercontent.com/mucsbr/ppt-agent-workflow-san/801cd2bd46c3cc4ca2c846ff28da2d9284816cd9/ppt-workflow/04-users-scenarios.png" width="32.1%" alt="PPT Agent Workflow San sample"></a>
+<a href="https://github.com/mucsbr/ppt-agent-workflow-san"><img src="https://raw.githubusercontent.com/mucsbr/ppt-agent-workflow-san/801cd2bd46c3cc4ca2c846ff28da2d9284816cd9/ppt-workflow/05-growth-flywheel.png" width="32.1%" alt="PPT Agent Workflow San sample"></a>
+<a href="https://github.com/mucsbr/ppt-agent-workflow-san"><img src="https://raw.githubusercontent.com/mucsbr/ppt-agent-workflow-san/801cd2bd46c3cc4ca2c846ff28da2d9284816cd9/ppt-workflow/06-competition.png" width="32.1%" alt="PPT Agent Workflow San sample"></a>
+<a href="https://github.com/mucsbr/ppt-agent-workflow-san"><img src="https://raw.githubusercontent.com/mucsbr/ppt-agent-workflow-san/801cd2bd46c3cc4ca2c846ff28da2d9284816cd9/ppt-workflow/07-risks.png" width="32.1%" alt="PPT Agent Workflow San sample"></a>
+
+<sub>9 of 10 images found in [`mucsbr/ppt-agent-workflow-san`](https://github.com/mucsbr/ppt-agent-workflow-san) · first frames are the ones the project puts in its own README</sub>
+
+#### [Frontend Slides Editable](https://github.com/archlizheng/frontend-slides-editable) · 445 ⭐ · Both
+
+<sub>Editable HTML decks with drag-resize, reordering, local save and PPTX conversion.</sub>
+
+<a href="https://github.com/archlizheng/frontend-slides-editable"><img src="https://raw.githubusercontent.com/archlizheng/frontend-slides-editable/e5663e6a0bdc2c2a673198bab3fb61036a7f20ee/docs/preset-previews/cobalt-grid-cover.png" width="32.1%" alt="Cobalt Grid editable deck preview"></a>
+<a href="https://github.com/archlizheng/frontend-slides-editable"><img src="https://raw.githubusercontent.com/archlizheng/frontend-slides-editable/e5663e6a0bdc2c2a673198bab3fb61036a7f20ee/docs/preset-previews/studio-volt-cover.png" width="32.1%" alt="Studio editable deck preview"></a>
+<a href="https://github.com/archlizheng/frontend-slides-editable"><img src="https://raw.githubusercontent.com/archlizheng/frontend-slides-editable/e5663e6a0bdc2c2a673198bab3fb61036a7f20ee/docs/preset-previews/soft-editorial-cover.png" width="32.1%" alt="Soft Editorial editable deck preview"></a>
+<a href="https://github.com/archlizheng/frontend-slides-editable"><img src="https://raw.githubusercontent.com/archlizheng/frontend-slides-editable/e5663e6a0bdc2c2a673198bab3fb61036a7f20ee/docs/preset-previews/bold-signal-cover.png" width="32.1%" alt="Bold Signal — first slide"></a>
+<a href="https://github.com/archlizheng/frontend-slides-editable"><img src="https://raw.githubusercontent.com/archlizheng/frontend-slides-editable/e5663e6a0bdc2c2a673198bab3fb61036a7f20ee/docs/preset-previews/electric-studio-cover.png" width="32.1%" alt="Electric Studio — first slide"></a>
+<a href="https://github.com/archlizheng/frontend-slides-editable"><img src="https://raw.githubusercontent.com/archlizheng/frontend-slides-editable/e5663e6a0bdc2c2a673198bab3fb61036a7f20ee/docs/preset-previews/creative-voltage-cover.png" width="32.1%" alt="Creative Voltage — first slide"></a>
+<a href="https://github.com/archlizheng/frontend-slides-editable"><img src="https://raw.githubusercontent.com/archlizheng/frontend-slides-editable/e5663e6a0bdc2c2a673198bab3fb61036a7f20ee/docs/preset-previews/dark-botanical-cover.png" width="32.1%" alt="Dark Botanical — first slide"></a>
+<a href="https://github.com/archlizheng/frontend-slides-editable"><img src="https://raw.githubusercontent.com/archlizheng/frontend-slides-editable/e5663e6a0bdc2c2a673198bab3fb61036a7f20ee/docs/preset-previews/notebook-tabs-cover.png" width="32.1%" alt="Notebook Tabs — first slide"></a>
+<a href="https://github.com/archlizheng/frontend-slides-editable"><img src="https://raw.githubusercontent.com/archlizheng/frontend-slides-editable/e5663e6a0bdc2c2a673198bab3fb61036a7f20ee/docs/preset-previews/pastel-geometry-cover.png" width="32.1%" alt="Pastel Geometry — first slide"></a>
+
+<sub>9 of 114 images found in [`archlizheng/frontend-slides-editable`](https://github.com/archlizheng/frontend-slides-editable) · first frames are the ones the project puts in its own README</sub>
+
+#### [PPT SVG Generator](https://github.com/vigorX777/ppt-svg-generator) · 248 ⭐ · PPTX
+
+<sub>Markdown to PPT or PDF via SVG, with preset styles.</sub>
+
+<a href="https://github.com/vigorX777/ppt-svg-generator"><img src="https://github.com/user-attachments/assets/2454e688-d3b8-40a2-a3f8-893bbe5060ee" width="48%" alt="image"></a>
+<a href="https://github.com/vigorX777/ppt-svg-generator"><img src="https://github.com/user-attachments/assets/97847c7f-5dc3-4a39-b4d8-ee3dc7d0396b" width="48%" alt="PixPin_2026-01-25_15-58-40"></a>
+
+<sub>2 of 2 images found in [`vigorX777/ppt-svg-generator`](https://github.com/vigorX777/ppt-svg-generator) · first frames are the ones the project puts in its own README</sub>
+
+#### [Mck PPT Design System](https://github.com/likaku/Mck-ppt-design-skill) · 229 ⭐ · PPTX
+
+<sub>Consulting-firm-style design system: 70 layout patterns, flat design, python-pptx.</sub>
+
+<a href="https://github.com/likaku/Mck-ppt-design-skill"><img src="https://github.com/user-attachments/assets/075ec46d-dd73-4454-92d0-84184b78d276" width="32.1%" alt="Cover"></a>
+<a href="https://github.com/likaku/Mck-ppt-design-skill"><img src="https://github.com/user-attachments/assets/3b25f071-8a81-48e3-a62b-9d9be9026f2e" width="32.1%" alt="Content"></a>
+<a href="https://github.com/likaku/Mck-ppt-design-skill"><img src="https://github.com/user-attachments/assets/be327c14-aff9-459f-89b0-d4a8bffaabfc" width="32.1%" alt="Table"></a>
+<a href="https://github.com/likaku/Mck-ppt-design-skill"><img src="https://github.com/user-attachments/assets/687cee47-13bb-4d6b-840f-77f8e001a62b" width="32.1%" alt="4-Column"></a>
+<a href="https://github.com/likaku/Mck-ppt-design-skill"><img src="https://github.com/user-attachments/assets/41371c47-608f-4857-9bfe-791121ec1579" width="32.1%" alt="Colors"></a>
+<a href="https://github.com/likaku/Mck-ppt-design-skill"><img src="https://github.com/user-attachments/assets/c5b6e52a-fd91-4c28-88a4-82fdfedfd956" width="32.1%" alt="Summary"></a>
+
+<sub>6 of 6 images found in [`likaku/Mck-ppt-design-skill`](https://github.com/likaku/Mck-ppt-design-skill) · first frames are the ones the project puts in its own README</sub>
+
+#### [PPT Agent Skill](https://github.com/Akxan/ppt-agent-skill) · 114 ⭐ · HTML
+
+<sub>26 styles and 18 chart types benchmarked against Linear, Anthropic, Stripe, Apple and NYT.</sub>
+
+<a href="https://github.com/Akxan/ppt-agent-skill"><img src="https://raw.githubusercontent.com/Akxan/ppt-agent-skill/01825dee2ad40a8c719824252605396b9a570d57/assets/hero-all.png" width="32.1%" alt="26 风格预览"></a>
+<a href="https://github.com/Akxan/ppt-agent-skill"><img src="https://raw.githubusercontent.com/Akxan/ppt-agent-skill/01825dee2ad40a8c719824252605396b9a570d57/assets/architecture.png" width="32.1%" alt="系统架构图"></a>
+<a href="https://github.com/Akxan/ppt-agent-skill"><img src="https://raw.githubusercontent.com/Akxan/ppt-agent-skill/01825dee2ad40a8c719824252605396b9a570d57/assets/hero-vibrant.png" width="32.1%" alt="活力鲜明 4 风格"></a>
+<a href="https://github.com/Akxan/ppt-agent-skill"><img src="https://raw.githubusercontent.com/Akxan/ppt-agent-skill/01825dee2ad40a8c719824252605396b9a570d57/assets/hero-natural-retro.png" width="32.1%" alt="自然/复古 4 风格"></a>
+<a href="https://github.com/Akxan/ppt-agent-skill"><img src="https://raw.githubusercontent.com/Akxan/ppt-agent-skill/01825dee2ad40a8c719824252605396b9a570d57/assets/hero-dark-professional.png" width="32.1%" alt="暗色专业 7 风格"></a>
+<a href="https://github.com/Akxan/ppt-agent-skill"><img src="https://raw.githubusercontent.com/Akxan/ppt-agent-skill/01825dee2ad40a8c719824252605396b9a570d57/assets/hero-light-premium.png" width="32.1%" alt="浅色高级 8 风格"></a>
+<a href="https://github.com/Akxan/ppt-agent-skill"><img src="https://raw.githubusercontent.com/Akxan/ppt-agent-skill/01825dee2ad40a8c719824252605396b9a570d57/assets/hero-cultural-oriental.png" width="32.1%" alt="东方文化 3 风格"></a>
+<a href="https://github.com/Akxan/ppt-agent-skill"><img src="https://raw.githubusercontent.com/Akxan/ppt-agent-skill/01825dee2ad40a8c719824252605396b9a570d57/ppt-output/style-gallery/bauhaus_block.png" width="32.1%" alt="PPT Agent Skill sample"></a>
+<a href="https://github.com/Akxan/ppt-agent-skill"><img src="https://raw.githubusercontent.com/Akxan/ppt-agent-skill/01825dee2ad40a8c719824252605396b9a570d57/ppt-output/style-gallery/blue_white.png" width="32.1%" alt="PPT Agent Skill sample"></a>
+
+<sub>9 of 33 images found in [`Akxan/ppt-agent-skill`](https://github.com/Akxan/ppt-agent-skill) · first frames are the ones the project puts in its own README</sub>
+
+#### [HTML Slides](https://github.com/bluedusk/html-slides) · 70 ⭐ · HTML
+
+<sub>HTML slides with speaker notes, plus a companion presentation app.</sub>
+
+<a href="https://github.com/bluedusk/html-slides"><img src="https://raw.githubusercontent.com/bluedusk/html-slides/d8289f4c317905cc5d0ca265d32b791e6cb387b7/eval/content/assets/screenshot.jpg" width="32.1%" alt="HTML Slides sample"></a>
+<a href="https://github.com/bluedusk/html-slides"><img src="https://raw.githubusercontent.com/bluedusk/html-slides/d8289f4c317905cc5d0ca265d32b791e6cb387b7/testing/assets/screenshot.jpg" width="32.1%" alt="HTML Slides sample"></a>
+<a href="https://github.com/bluedusk/html-slides"><img src="https://raw.githubusercontent.com/bluedusk/html-slides/d8289f4c317905cc5d0ca265d32b791e6cb387b7/eval/content/assets/hero.jpg" width="32.1%" alt="HTML Slides sample"></a>
+<a href="https://github.com/bluedusk/html-slides"><img src="https://raw.githubusercontent.com/bluedusk/html-slides/d8289f4c317905cc5d0ca265d32b791e6cb387b7/testing/assets/hero.jpg" width="32.1%" alt="HTML Slides sample"></a>
+
+<sub>4 of 4 images found in [`bluedusk/html-slides`](https://github.com/bluedusk/html-slides)</sub>
+
+#### [KingDee PPT Skill](https://github.com/WayneZhon/KingDee-PPT-Skill) · 56 ⭐ · HTML
+
+<sub>KingDee corporate style decks.</sub>
+
+<a href="https://github.com/WayneZhon/KingDee-PPT-Skill"><img src="https://raw.githubusercontent.com/WayneZhon/KingDee-PPT-Skill/28ca93aadeefc91fcc64152714ddeece15f13e1d/assets/closing_thanks.png" width="84%" alt="KingDee PPT Skill sample"></a>
+
+<sub>1 of 1 images found in [`WayneZhon/KingDee-PPT-Skill`](https://github.com/WayneZhon/KingDee-PPT-Skill)</sub>
+
+#### [Slide Creator](https://github.com/kaisersong/slide-creator) · 46 ⭐ · Both
+
+<sub>AI planning, style discovery and PPTX export.</sub>
+
+<a href="https://github.com/kaisersong/slide-creator"><img src="https://raw.githubusercontent.com/kaisersong/slide-creator/d0cf041e3a87db2ac75f8f583fc91a600e369e70/demos/screenshots/strategy-consulting.png" width="32.1%" alt="Strategy Consulting"></a>
+<a href="https://github.com/kaisersong/slide-creator"><img src="https://raw.githubusercontent.com/kaisersong/slide-creator/d0cf041e3a87db2ac75f8f583fc91a600e369e70/demos/screenshots/blue-sky.png" width="32.1%" alt="Blue Sky"></a>
+<a href="https://github.com/kaisersong/slide-creator"><img src="https://raw.githubusercontent.com/kaisersong/slide-creator/d0cf041e3a87db2ac75f8f583fc91a600e369e70/demos/screenshots/bold-signal.png" width="32.1%" alt="Bold Signal"></a>
+<a href="https://github.com/kaisersong/slide-creator"><img src="https://raw.githubusercontent.com/kaisersong/slide-creator/d0cf041e3a87db2ac75f8f583fc91a600e369e70/demos/screenshots/electric-studio.png" width="32.1%" alt="Electric Studio"></a>
+<a href="https://github.com/kaisersong/slide-creator"><img src="https://raw.githubusercontent.com/kaisersong/slide-creator/d0cf041e3a87db2ac75f8f583fc91a600e369e70/demos/screenshots/creative-voltage.png" width="32.1%" alt="Creative Voltage"></a>
+<a href="https://github.com/kaisersong/slide-creator"><img src="https://raw.githubusercontent.com/kaisersong/slide-creator/d0cf041e3a87db2ac75f8f583fc91a600e369e70/demos/screenshots/dark-botanical.png" width="32.1%" alt="Dark Botanical"></a>
+<a href="https://github.com/kaisersong/slide-creator"><img src="https://raw.githubusercontent.com/kaisersong/slide-creator/d0cf041e3a87db2ac75f8f583fc91a600e369e70/demos/screenshots/notebook-tabs.png" width="32.1%" alt="Notebook Tabs"></a>
+<a href="https://github.com/kaisersong/slide-creator"><img src="https://raw.githubusercontent.com/kaisersong/slide-creator/d0cf041e3a87db2ac75f8f583fc91a600e369e70/demos/screenshots/pastel-geometry.png" width="32.1%" alt="Pastel Geometry"></a>
+<a href="https://github.com/kaisersong/slide-creator"><img src="https://raw.githubusercontent.com/kaisersong/slide-creator/d0cf041e3a87db2ac75f8f583fc91a600e369e70/demos/screenshots/split-pastel.png" width="32.1%" alt="Split Pastel"></a>
+
+<sub>9 of 23 images found in [`kaisersong/slide-creator`](https://github.com/kaisersong/slide-creator) · first frames are the ones the project puts in its own README</sub>
+
+#### [next-slide](https://github.com/codesstar/next-slide) · 43 ⭐ · HTML
+
+<sub>26+ styles, zero dependencies, bilingual.</sub>
+
+<a href="https://github.com/codesstar/next-slide"><img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-electric-lifestyle.webp" width="32.1%" alt="next-slide sample"></a>
+<a href="https://github.com/codesstar/next-slide"><img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-lifestyle-running.webp" width="32.1%" alt="next-slide sample"></a>
+<a href="https://github.com/codesstar/next-slide"><img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-noir-case.webp" width="32.1%" alt="next-slide sample"></a>
+<a href="https://github.com/codesstar/next-slide"><img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/jinxiufang-lifestyle.webp" width="32.1%" alt="next-slide sample"></a>
+<a href="https://github.com/codesstar/next-slide"><img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/motion-brand-showcase.webp" width="32.1%" alt="next-slide sample"></a>
+<a href="https://github.com/codesstar/next-slide"><img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/xiaomi-smart-home-lifestyle.webp" width="32.1%" alt="next-slide sample"></a>
+<a href="https://github.com/codesstar/next-slide"><img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/shanyin-tea-product.webp" width="32.1%" alt="next-slide sample"></a>
+<a href="https://github.com/codesstar/next-slide"><img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/agent-eval.webp" width="32.1%" alt="next-slide sample"></a>
+<a href="https://github.com/codesstar/next-slide"><img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/agent-hero.webp" width="32.1%" alt="next-slide sample"></a>
+
+<sub>9 of 60 images found in [`codesstar/next-slide`](https://github.com/codesstar/next-slide)</sub>
+
+#### [Slide Writer](https://github.com/FeeiCN/slide-writer) · 40 ⭐ · HTML
+
+<sub>Enterprise HTML decks from ideas, outlines, documents or speech drafts.</sub>
+
+<a href="https://github.com/FeeiCN/slide-writer"><img src="https://raw.githubusercontent.com/FeeiCN/slide-writer/3c4524c4abb3310fdee106282d0a64f156fd4ff6/examples/before-after.png" width="32.1%" alt="Slide-Writer Demo"></a>
+<a href="https://github.com/FeeiCN/slide-writer"><img src="https://raw.githubusercontent.com/FeeiCN/slide-writer/3c4524c4abb3310fdee106282d0a64f156fd4ff6/examples/slide-writer.png" width="32.1%" alt="Slide-Writer"></a>
+<a href="https://github.com/FeeiCN/slide-writer"><img src="https://raw.githubusercontent.com/FeeiCN/slide-writer/3c4524c4abb3310fdee106282d0a64f156fd4ff6/examples/test-antgroup-eric.png" width="32.1%" alt="Slide Writer sample"></a>
+<a href="https://github.com/FeeiCN/slide-writer"><img src="https://raw.githubusercontent.com/FeeiCN/slide-writer/3c4524c4abb3310fdee106282d0a64f156fd4ff6/examples/test-tencent-pony-ma.png" width="32.1%" alt="Slide Writer sample"></a>
+<a href="https://github.com/FeeiCN/slide-writer"><img src="https://raw.githubusercontent.com/FeeiCN/slide-writer/3c4524c4abb3310fdee106282d0a64f156fd4ff6/examples/test-alibaba-jack-ma.png" width="32.1%" alt="Slide Writer sample"></a>
+
+<sub>5 of 5 images found in [`FeeiCN/slide-writer`](https://github.com/FeeiCN/slide-writer) · first frames are the ones the project puts in its own README</sub>
+
+#### [Skills Slides](https://github.com/nghiahsgs/skills-slides) · 30 ⭐ · HTML
+
+<sub>50 aesthetics x 20 palettes x 10 fonts x 5 layouts x 30+ effects.</sub>
+
+<a href="https://github.com/nghiahsgs/skills-slides"><img src="https://raw.githubusercontent.com/nghiahsgs/skills-slides/c271d3cda03bf79733cc91ba28e25716196638b7/examples/screenshots/slide-06-features.png" width="32.1%" alt="Feature grid — 6 cards with 3D tilt hover"></a>
+<a href="https://github.com/nghiahsgs/skills-slides"><img src="https://raw.githubusercontent.com/nghiahsgs/skills-slides/c271d3cda03bf79733cc91ba28e25716196638b7/examples/screenshots/slide-07-checklist.png" width="32.1%" alt="Anti-slop checklist — 10-point quality gate"></a>
+<a href="https://github.com/nghiahsgs/skills-slides"><img src="https://raw.githubusercontent.com/nghiahsgs/skills-slides/c271d3cda03bf79733cc91ba28e25716196638b7/examples/screenshots/slide-01-title.png" width="32.1%" alt="Skills Slides sample"></a>
+<a href="https://github.com/nghiahsgs/skills-slides"><img src="https://raw.githubusercontent.com/nghiahsgs/skills-slides/c271d3cda03bf79733cc91ba28e25716196638b7/examples/screenshots/slide-03-50k.png" width="32.1%" alt="Skills Slides sample"></a>
+
+<sub>4 of 4 images found in [`nghiahsgs/skills-slides`](https://github.com/nghiahsgs/skills-slides) · first frames are the ones the project puts in its own README</sub>
+
+#### [PowerPoint Fancy Design](https://github.com/Phlegonlabs/Powerpoint-fancy-design) · 27 ⭐ · Both
+
+<sub>Page-structured Markdown into styled 1600x900 HTML slides, PNG renders and exports.</sub>
+
+<a href="https://github.com/Phlegonlabs/Powerpoint-fancy-design"><img src="https://raw.githubusercontent.com/Phlegonlabs/Powerpoint-fancy-design/d6167dbc5d1ee9a0f3b2b90b399156322e9178ae/assets/style-preview-a.png" width="32.1%" alt="Swiss International"></a>
+<a href="https://github.com/Phlegonlabs/Powerpoint-fancy-design"><img src="https://raw.githubusercontent.com/Phlegonlabs/Powerpoint-fancy-design/d6167dbc5d1ee9a0f3b2b90b399156322e9178ae/assets/style-preview-b.png" width="32.1%" alt="East Asian Minimalism"></a>
+<a href="https://github.com/Phlegonlabs/Powerpoint-fancy-design"><img src="https://raw.githubusercontent.com/Phlegonlabs/Powerpoint-fancy-design/d6167dbc5d1ee9a0f3b2b90b399156322e9178ae/assets/style-preview-c.png" width="32.1%" alt="Risograph Print"></a>
+<a href="https://github.com/Phlegonlabs/Powerpoint-fancy-design"><img src="https://raw.githubusercontent.com/Phlegonlabs/Powerpoint-fancy-design/d6167dbc5d1ee9a0f3b2b90b399156322e9178ae/assets/style-preview-d.png" width="32.1%" alt="Bauhaus Geometry"></a>
+<a href="https://github.com/Phlegonlabs/Powerpoint-fancy-design"><img src="https://raw.githubusercontent.com/Phlegonlabs/Powerpoint-fancy-design/d6167dbc5d1ee9a0f3b2b90b399156322e9178ae/assets/style-preview-e.png" width="32.1%" alt="Organic Handcrafted"></a>
+<a href="https://github.com/Phlegonlabs/Powerpoint-fancy-design"><img src="https://raw.githubusercontent.com/Phlegonlabs/Powerpoint-fancy-design/d6167dbc5d1ee9a0f3b2b90b399156322e9178ae/assets/style-preview-f.png" width="32.1%" alt="Art Deco Luxury"></a>
+<a href="https://github.com/Phlegonlabs/Powerpoint-fancy-design"><img src="https://raw.githubusercontent.com/Phlegonlabs/Powerpoint-fancy-design/d6167dbc5d1ee9a0f3b2b90b399156322e9178ae/assets/style-preview-g.png" width="32.1%" alt="Neo Brutalism"></a>
+<a href="https://github.com/Phlegonlabs/Powerpoint-fancy-design"><img src="https://raw.githubusercontent.com/Phlegonlabs/Powerpoint-fancy-design/d6167dbc5d1ee9a0f3b2b90b399156322e9178ae/assets/style-preview-h.png" width="32.1%" alt="Retro Futurism"></a>
+<a href="https://github.com/Phlegonlabs/Powerpoint-fancy-design"><img src="https://raw.githubusercontent.com/Phlegonlabs/Powerpoint-fancy-design/d6167dbc5d1ee9a0f3b2b90b399156322e9178ae/assets/style-preview-i.png" width="32.1%" alt="Dark Editorial"></a>
+
+<sub>9 of 30 images found in [`Phlegonlabs/Powerpoint-fancy-design`](https://github.com/Phlegonlabs/Powerpoint-fancy-design) · first frames are the ones the project puts in its own README</sub>
+
+#### [PPTX from Layouts](https://github.com/tristan-mcinnis/pptx-from-layouts-skill) · 9 ⭐ · PPTX
+
+<sub>Generate decks from markdown strictly through a template's slide master layouts.</sub>
+
+<a href="https://github.com/tristan-mcinnis/pptx-from-layouts-skill"><img src="https://raw.githubusercontent.com/tristan-mcinnis/pptx-from-layouts-skill/53b0e750694d807e3510c2017744197c3c5089b0/docs/pipeline.png" width="48%" alt="PPTX-from-layouts pipeline"></a>
+<a href="https://github.com/tristan-mcinnis/pptx-from-layouts-skill"><img src="https://raw.githubusercontent.com/tristan-mcinnis/pptx-from-layouts-skill/53b0e750694d807e3510c2017744197c3c5089b0/examples/q1-strategy/thumbnail.jpg" width="48%" alt="PPTX from Layouts sample"></a>
+
+<sub>2 of 2 images found in [`tristan-mcinnis/pptx-from-layouts-skill`](https://github.com/tristan-mcinnis/pptx-from-layouts-skill) · first frames are the ones the project puts in its own README</sub>
+
+<sub>No imagery in the repositories of: Anthropic PPTX (official), Visual Explainer, Claude Office Skills, Academic PPTX, Visual Cognition Slides, Huawei Style PPT Skill.</sub>
+
+<sub>**141 images, all of them the projects' own.** Each was read from the repository at a pinned commit and is linked back to its source. Nothing here was produced by running a skill, so treat it as what each team chose to show off — not as a like-for-like comparison. Regenerate with `python scripts/fetch_samples.py`.</sub>
+<!-- END:GALLERY -->
+
+---
+
 ## The benchmark — parked
 
 An earlier plan was to score every skill against a published rubric. The harness exists and
@@ -243,17 +543,25 @@ oddly specific prohibition, that is a real fingerprint of machine-generated desi
 Hand-maintained lists rot. This one is generated:
 
 ```
-data/skills.json ──▶ curated research, the only file written by hand
-data/stats.json  ──▶ live GitHub numbers, refreshed daily by CI
+data/skills.json       ──▶ curated research, the only file written by hand
+data/stats.json        ──▶ live GitHub numbers, refreshed daily by CI
+data/capabilities.json ──▶ documented capabilities, with the quote each rests on
+data/samples.json      ──▶ sample imagery, pinned to the commit it was read at
         │
-        └──▶ scripts/render.py ──▶ tables inside README.md + README.en.md
+        └──▶ scripts/render.py ──▶ tables and galleries in README.md + README.en.md
 ```
 
 ```bash
-python scripts/fetch_stats.py     # refresh stars, forks, licenses, activity
-python scripts/render.py          # regenerate every table in both READMEs
-python scripts/render.py --check  # CI gate: fails if the READMEs drifted
+python scripts/fetch_stats.py       # refresh stars, forks, licenses, activity
+python scripts/fetch_samples.py     # re-harvest sample imagery from each repo
+python scripts/fetch_samples.py --verify   # every pinned image still exists
+python scripts/render.py            # regenerate every table in both READMEs
+python scripts/render.py --check    # CI gate: fails if the READMEs drifted
 ```
+
+Gallery images are never copied into this repository. Each one is a link to the
+source project's own file at a fixed commit, so the picture cannot change under the
+caption and the attribution cannot be lost.
 
 A GitHub Action runs this daily and opens a PR when numbers move. Editing a table by hand
 is a no-op — the next run overwrites it. Edit `data/skills.json`.

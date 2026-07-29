@@ -327,11 +327,110 @@ def render_capabilities(data: dict, stats: dict, lang: str) -> str:
 
 
 
+SAMPLES = ROOT / "data" / "samples.json"
+
+# Nine reads as a gallery and still lets a phone scroll past a skill it does not
+# want. The rest stay one click away in the source repo rather than being
+# silently dropped — the count in each caption says how many there were.
+GALLERY_MAX = 9
+GALLERY_COLS = 3
+
+
+def render_gallery(data: dict, stats: dict, lang: str) -> str:
+    """A picture of what each skill produces.
+
+    Every image here is the *project's own* screenshot, lifted from its
+    repository at a pinned commit. None of them were produced by running the
+    skill, so this is a gallery of what 26 teams chose to show off — closer to
+    marketing than to measurement, and labelled that way. It is still the
+    fastest way to answer the question the tables cannot.
+    """
+    if not SAMPLES.exists():
+        return ("> Sample imagery not harvested yet — run "
+                "`python scripts/fetch_samples.py`.")
+    card = json.loads(SAMPLES.read_text(encoding="utf-8"))
+    by_skill = card.get("skills", {})
+    if not by_skill:
+        return "> No sample imagery collected."
+
+    ranked = sorted(data["skills"], key=lambda s: -stars_of(s, stats))
+    out: list[str] = []
+    shown = 0
+    empty: list[str] = []
+
+    for skill in ranked:
+        entry = by_skill.get(skill["id"]) or {}
+        samples = entry.get("samples", [])
+        if not samples:
+            empty.append(skill["name"])
+            continue
+
+        picks = samples[:GALLERY_MAX]
+        shown += len(picks)
+        stars = fmt_stars(skill, stats)
+        route = ROUTE_LABEL[skill["route"]][0 if lang == "en" else 1]
+        tag = skill.get("tagline_en" if lang == "en" else "tagline_zh", "")
+
+        out.append(f"#### [{skill['name']}]({repo_link(skill)}) · {stars} ⭐ · {route}\n")
+        out.append(f"<sub>{tag}</sub>\n")
+
+        # Percentage widths let GitHub reflow the row on a narrow screen instead
+        # of overflowing it, which fixed pixel widths do.
+        width = {1: "84%", 2: "48%"}.get(len(picks), f"{100 / GALLERY_COLS - 1.2:.1f}%")
+        for s in picks:
+            alt = (s.get("alt") or f"{skill['name']} sample").replace('"', "'")[:120]
+            out.append(
+                f'<a href="{repo_link(skill)}">'
+                f'<img src="{s["url"]}" width="{width}" alt="{alt}"></a>'
+            )
+        out.append("")
+
+        found = entry.get("found", len(samples))
+        origin = "showcase" if picks[0]["source"] == "showcase" else "repo"
+        if lang == "en":
+            note = (f"<sub>{len(picks)} of {found} images found in "
+                    f"[`{entry.get('repo', skill['repo'])}`]({repo_link(skill)})"
+                    + (" · first frames are the ones the project puts in its own README"
+                       if origin == "showcase" else "")
+                    + "</sub>")
+        else:
+            note = (f"<sub>取自 [`{entry.get('repo', skill['repo'])}`]({repo_link(skill)}) "
+                    f"的 {found} 张图中的 {len(picks)} 张"
+                    + ("，靠前的几张是项目自己放在 README 里的" if origin == "showcase" else "")
+                    + "</sub>")
+        out.append(note + "\n")
+
+    if empty:
+        names = "、".join(empty) if lang != "en" else ", ".join(empty)
+        out.append(
+            f"<sub>No imagery in the repositories of: {names}.</sub>\n"
+            if lang == "en"
+            else f"<sub>以下项目的仓库里没有可用图片：{names}。</sub>\n"
+        )
+
+    if lang == "en":
+        out.append(
+            f"<sub>**{shown} images, all of them the projects' own.** Each was read from "
+            "the repository at a pinned commit and is linked back to its source. "
+            "Nothing here was produced by running a skill, so treat it as what each "
+            "team chose to show off — not as a like-for-like comparison. "
+            "Regenerate with `python scripts/fetch_samples.py`.</sub>"
+        )
+    else:
+        out.append(
+            f"<sub>**共 {shown} 张，全部来自各项目自己的仓库。** 每张都读自锁定的 commit，"
+            "并链回出处。**没有任何一张是本仓库跑出来的**，所以它反映的是每个团队愿意拿出来展示"
+            "的样子，不是同题横评。用 `python scripts/fetch_samples.py` 重新生成。</sub>"
+        )
+    return "\n".join(out)
+
+
 BLOCKS = {
     "REGISTRY": render_registry,
     "COUNTS": render_counts,
     "SCORECARD": render_scorecard,
     "CAPABILITIES": render_capabilities,
+    "GALLERY": render_gallery,
 }
 
 
