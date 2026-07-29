@@ -66,11 +66,13 @@ def sort_key(entry: dict, stats: dict) -> int:
 
 
 def tier_of(entry: dict, stats: dict) -> str:
-    # A monorepo's star count says nothing about the one skill inside it, so
-    # anything flagged as such is pinned to Tier S by editorial judgement
-    # rather than by its (meaningless here) headline number.
-    if entry.get("stars_note") == "monorepo":
-        return "S"
+    # `pin_tier` is a deliberate editorial override, used for the official
+    # Anthropic baseline: it belongs at the top whatever the number says. It is
+    # kept separate from `stars_note` on purpose — being a monorepo says the
+    # star count is unattributable, which is a reason to *demote* within a tier,
+    # never a reason to promote into one.
+    if entry.get("pin_tier"):
+        return entry["pin_tier"]
     s = stars_of(entry, stats)
     if s >= TIER_S_MIN:
         return "S"
@@ -98,6 +100,18 @@ def fmt_stars(entry: dict, stats: dict) -> str:
     return f"{val}~" if s.get("stale") else val
 
 
+def is_researched(entry: dict) -> bool:
+    """True when someone read this project and wrote down how to install it.
+
+    The registry has two populations. A minority were read by hand and carry an
+    install command, highlights and a `best_for`. The rest arrived from the
+    automated discovery sweep with only what the repo metadata states. Both are
+    worth listing, but pretending they are the same claim would be dishonest —
+    so the tables mark the difference instead of hiding it.
+    """
+    return "install" in entry
+
+
 def license_cell(entry: dict, stats: dict) -> str:
     lic = stats["repos"].get(entry["repo"], {}).get("license")
     if lic in (None, "NOASSERTION"):
@@ -115,7 +129,8 @@ def table(entries: list[dict], stats: dict, lang: str) -> str:
 
     rows = [head]
     for e in entries:
-        name = f"**[{e['name']}]({repo_link(e)})**"
+        dagger = "" if is_researched(e) else "†"
+        name = f"**[{e['name']}]({repo_link(e)})**{dagger}"
         author = e.get("author")
         by = f"<br><sub>{author}</sub>" if author else ""
         rows.append(
@@ -147,12 +162,17 @@ def render_registry(data: dict, stats: dict, lang: str) -> str:
 
     if lang == "en":
         out.append(
-            "<sub>`*` monorepo star count — reflects the whole repo, not this one skill. "
+            "<sub>`†` listed from the automated discovery sweep: the tagline and licence are read "
+            "from the repository, but nobody has read its SKILL.md, so there is no install command "
+            "or capability data for it yet. Rows without a dagger were researched by hand.<br>"
+            "`*` monorepo star count — reflects the whole repo, not this one skill. "
             "`~` stale value, last refresh failed. `⚠️` copyleft license, check before commercial use.</sub>"
         )
     else:
         out.append(
-            "<sub>`*` monorepo star 数，反映整个仓库而非这一个 skill。"
+            "<sub>`†` 来自自动发现，只核对了仓库自己写的一句话与协议，没人读过它的 SKILL.md，"
+            "因此还没有安装命令和能力数据。没有剑标的是人工逐个读过的。<br>"
+            "`*` monorepo star 数，反映整个仓库而非这一个 skill。"
             "`~` 上次刷新失败，为陈旧值。`⚠️` copyleft 协议，商用前请确认。</sub>"
         )
     return "\n".join(out)
@@ -165,17 +185,27 @@ def render_counts(data: dict, stats: dict, lang: str) -> str:
     for e in data["skills"]:
         routes[e["route"]] = routes.get(e["route"], 0) + 1
     when = stats.get("refreshed_at", "—")
+    read = sum(1 for e in data["skills"] if is_researched(e))
     if lang == "en":
         return (
-            f"**{n} skills tracked** · **{total:,} combined stars** · "
+            f"**{n} skills tracked**, **{read} of them read by hand** · **{total:,} combined stars** · "
             f"{routes.get('html', 0)} HTML-native · {routes.get('pptx', 0)} native PPTX · "
             f"{routes.get('hybrid', 0)} both · data refreshed **{when}**"
         )
     return (
-        f"**收录 {n} 个 skill** · **合计 {total:,} star** · "
+        f"**收录 {n} 个 skill**，其中 **{read} 个人工读过** · **合计 {total:,} star** · "
         f"HTML 路线 {routes.get('html', 0)} 个 · PPTX 路线 {routes.get('pptx', 0)} 个 · "
         f"双路线 {routes.get('hybrid', 0)} 个 · 数据刷新于 **{when}**"
     )
+
+
+def render_tracked(data: dict, stats: dict, lang: str) -> str:
+    """Just the number, for use inside a prose sentence."""
+    return str(len(data["skills"]))
+
+
+def render_researched(data: dict, stats: dict, lang: str) -> str:
+    return str(sum(1 for e in data["skills"] if is_researched(e)))
 
 
 SCORECARD = ROOT / "benchmark" / "results" / "scorecard.json"
@@ -277,8 +307,9 @@ def render_capabilities(data: dict, stats: dict, lang: str) -> str:
         return any(isinstance(v, dict) and "verdict" in v
                    for v in skills[sid]["caps"].values())
 
-    # Top of the registry only. A 26-row, 10-column grid is unreadable, and the
-    # skills people actually choose between are the ones with a community.
+    # Top of the registry only. A 10-column grid one row per skill would be
+    # unreadable at this size, and the skills people actually choose between
+    # are the ones with a community.
     ranked = sorted(
         (s for s in data["skills"] if s["id"] in skills and was_read(s["id"])),
         key=lambda s: -(stats.get("repos", {}).get(s["repo"], {}).get("stars") or 0),
@@ -493,7 +524,7 @@ def render_gallery(data: dict, stats: dict, lang: str) -> str:
     if not by_skill:
         return "> No sample imagery collected."
 
-    ranked = sorted(data["skills"], key=lambda s: -stars_of(s, stats))
+    ranked = sorted(data["skills"], key=lambda s: -sort_key(s, stats))
     withimg = [s for s in ranked if (by_skill.get(s["id"]) or {}).get("samples")]
     empty = [s["name"] for s in ranked if not (by_skill.get(s["id"]) or {}).get("samples")]
 
@@ -580,6 +611,8 @@ def render_gallery(data: dict, stats: dict, lang: str) -> str:
 BLOCKS = {
     "REGISTRY": render_registry,
     "COUNTS": render_counts,
+    "TRACKED": render_tracked,
+    "RESEARCHED": render_researched,
     "SCORECARD": render_scorecard,
     "CAPABILITIES": render_capabilities,
     "GALLERY": render_gallery,
@@ -599,10 +632,16 @@ def apply_blocks(text: str, data: dict, stats: dict, lang: str) -> str:
             print(f"  (no {name} block in this file, skipping)", file=sys.stderr)
             continue
         body = fn(data, stats, lang)
-        text = pattern.sub(
-            lambda m: f"{m.group(1)}\n{body}\n{m.group(3)}",
-            text,
-        )
+
+        def replace(m: re.Match) -> str:
+            # A block written entirely on one line is a number dropped into the
+            # middle of a sentence; forcing newlines around it would put a
+            # line break mid-paragraph. Block-style markers keep their newlines.
+            if "\n" not in m.group(0):
+                return f"{m.group(1)}{body}{m.group(3)}"
+            return f"{m.group(1)}\n{body}\n{m.group(3)}"
+
+        text = pattern.sub(replace, text)
     return text
 
 

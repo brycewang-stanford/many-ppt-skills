@@ -48,6 +48,6 @@ jobs:
           add-paths: |
             data/stats.json
             README.md
-            README.zh-CN.md
+            README.en.md
             benchmark/results/scorecard.json
             benchmark/results/scorecard.md

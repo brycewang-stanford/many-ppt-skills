@@ -127,9 +127,14 @@ def cmd_list(args, skills, stats, samples, caps) -> int:
     for s in rows:
         n = len((samples.get(s["id"]) or {}).get("samples", []))
         img = f"{n} samples" if n else "no samples"
-        print(f"{s['id']:26s} {stars(s, stats):>7,}*  {ROUTE_NAME.get(s['route'], s['route']):<14} {img}")
+        mark = "" if "install" in s else " †"
+        print(f"{s['id']:26s} {stars(s, stats):>7,}*  {ROUTE_NAME.get(s['route'], s['route']):<14} {img}{mark}")
         print(f"{'':26s} {s['tagline_en']}")
+    unread = sum(1 for s in rows if "install" not in s)
     print(f"\n{len(rows)} skill(s). `pick.py show <id>` for install command and styles.")
+    if unread:
+        print(f"† {unread} of them came from automated discovery — listed, but not yet "
+              "read by hand, so there is no install command for them.")
     return 0
 
 
@@ -155,6 +160,14 @@ def cmd_show(args, skills, stats, samples, caps) -> int:
         print(f"\n  install ({install.get('method')}) — {note}")
         for line in install["command"].splitlines():
             print(f"      {line}")
+    else:
+        # Silence here reads as "no install needed", which is wrong. Say plainly
+        # that the gap is in this registry, not in the project.
+        print("\n  install   NOT RECORDED. This entry came from the automated")
+        print("            discovery sweep — the tagline and licence above are")
+        print("            read from the repository, but nobody has read its")
+        print("            SKILL.md yet. Get the command from the repo itself:")
+        print(f"            https://github.com/{s['repo']}")
 
     entry = samples.get(s["id"]) or {}
     ids = style_ids(entry)

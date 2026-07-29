@@ -13,15 +13,37 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SKILLS = ROOT / "data" / "skills.json"
+STATS = ROOT / "data" / "stats.json"
 
 REQUIRED = ["id", "repo", "name", "route", "tagline_en", "tagline_zh"]
 VALID_ROUTES = {"html", "pptx", "hybrid", "image", "suite",
                 "framework", "templates", "list"}
 VALID_LANG = {"en", "zh", "bilingual"}
 
+# GitHub's licence key vs. the prose we write in `license_note`. Only listed
+# here when the two spellings differ enough that a substring test would fail.
+LICENSE_ALIASES = {
+    "NOASSERTION": {"custom", "unspecified", "see repo", "noassertion"},
+    "Unlicense": {"unlicense", "public domain"},
+}
+
+
+def license_matches(note: str, api: str) -> bool:
+    """Does the hand-written note still agree with what GitHub reports?"""
+    note = (note or "").strip().lower()
+    if not note:
+        return True
+    if api in LICENSE_ALIASES:
+        return note in LICENSE_ALIASES[api]
+    # "MIT" vs "MIT License", "AGPL-3.0" vs "⚠️ AGPL-3.0" — a prefix match on
+    # the family is enough, and avoids churn over cosmetic spellings.
+    return api.lower().split("-")[0] in note
+
 
 def main() -> int:
     data = json.loads(SKILLS.read_text(encoding="utf-8"))
+    stats = (json.loads(STATS.read_text(encoding="utf-8")).get("repos", {})
+             if STATS.exists() else {})
     errors: list[str] = []
     warnings: list[str] = []
 
@@ -70,6 +92,24 @@ def main() -> int:
             warnings.append(
                 f"{label}: AGPL license without `license_warning: true` — "
                 "readers should be flagged before commercial use"
+            )
+
+        # Pointing at a subdirectory means the star count on the row belongs to
+        # the parent repo, not to the one skill we are linking. Saying so is the
+        # whole argument of this registry, so it is enforced rather than trusted.
+        if e.get("path") and e.get("stars_note") != "monorepo":
+            errors.append(
+                f"{label}: has `path` (links into a subdirectory) but no "
+                "`stars_note: monorepo` — its stars are not this skill's"
+            )
+
+        # `license_note` is hand-written and drifts as upstream adds a LICENSE
+        # file. stats.json already holds the authoritative answer, so compare.
+        api_license = (stats.get(repo) or {}).get("license")
+        if api_license and not license_matches(e.get("license_note", ""), api_license):
+            warnings.append(
+                f"{label}: license_note `{e.get('license_note')}` but GitHub "
+                f"reports `{api_license}` — re-check and update the note"
             )
 
         for key in ("highlights_en", "highlights_zh"):

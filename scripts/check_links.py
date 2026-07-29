@@ -30,7 +30,7 @@ HTML_ANCHOR = re.compile(r"<a\b[^>]*?\b(?:id|name)=[\"\']([^\"\']+)[\"\']", re.I
 
 
 def slug(title: str) -> str:
-    """GitHub's heading -> anchor slugging.
+    r"""GitHub's heading -> anchor slugging.
 
     Two details matter and both were wrong here before. Punctuation is deleted
     rather than replaced, and then *each* remaining space becomes its own

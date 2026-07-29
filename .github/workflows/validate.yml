@@ -31,6 +31,11 @@ jobs:
         # skills.json without re-running the generator.
         run: python scripts/render.py --check
 
+      - name: Packaged SKILL.md matches the canonical one
+        # The plugin copy under skills/ is generated from the root SKILL.md.
+        # Without this, the two drift silently and the plugin ships stale text.
+        run: python scripts/sync_plugin.py --check
+
       - name: Score files are valid
         run: python benchmark/runner/scorecard.py --validate
 
