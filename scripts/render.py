@@ -329,11 +329,14 @@ def render_capabilities(data: dict, stats: dict, lang: str) -> str:
 
 SAMPLES = ROOT / "data" / "samples.json"
 
-# Nine reads as a gallery and still lets a phone scroll past a skill it does not
-# want. The rest stay one click away in the source repo rather than being
-# silently dropped — the count in each caption says how many there were.
-GALLERY_MAX = 9
-GALLERY_COLS = 3
+# Every image the harvest kept, rendered at full width, one per line. A slide is
+# a dense object — a 32%-wide thumbnail of a 1920x1080 deck is ~300px across,
+# which is too small to read the type or judge the hierarchy, and judging exactly
+# those things is the entire reason to look. Downsizing them to fit more per row
+# optimises the page at the expense of the decision it exists to support.
+#
+# The cost is a long page, paid back by the jump index above the gallery.
+GALLERY_MAX = 24
 
 
 def render_gallery(data: dict, stats: dict, lang: str) -> str:
@@ -354,51 +357,57 @@ def render_gallery(data: dict, stats: dict, lang: str) -> str:
         return "> No sample imagery collected."
 
     ranked = sorted(data["skills"], key=lambda s: -stars_of(s, stats))
+    withimg = [s for s in ranked if (by_skill.get(s["id"]) or {}).get("samples")]
+    empty = [s["name"] for s in ranked if not (by_skill.get(s["id"]) or {}).get("samples")]
+
     out: list[str] = []
     shown = 0
-    empty: list[str] = []
 
-    for skill in ranked:
-        entry = by_skill.get(skill["id"]) or {}
-        samples = entry.get("samples", [])
-        if not samples:
-            empty.append(skill["name"])
-            continue
+    # Full-size images make a long page, so the way in is an index rather than a
+    # scroll. Explicit anchors, because GitHub's generated heading slugs would
+    # have to be reverse-engineered from a heading carrying a link and a star count.
+    if withimg:
+        jumps = " · ".join(
+            f"[{s['name']}](#gallery-{s['id']}) "
+            f"<sub>{len((by_skill[s['id']])['samples'])}</sub>"
+            for s in withimg
+        )
+        out.append(("**Jump to:** " if lang == "en" else "**跳到：**") + jumps + "\n")
 
-        picks = samples[:GALLERY_MAX]
+    for skill in withimg:
+        entry = by_skill[skill["id"]]
+        picks = entry["samples"][:GALLERY_MAX]
         shown += len(picks)
         stars = fmt_stars(skill, stats)
         route = ROUTE_LABEL[skill["route"]][0 if lang == "en" else 1]
         tag = skill.get("tagline_en" if lang == "en" else "tagline_zh", "")
 
+        out.append(f'<a id="gallery-{skill["id"]}"></a>\n')
         out.append(f"#### [{skill['name']}]({repo_link(skill)}) · {stars} ⭐ · {route}\n")
         out.append(f"<sub>{tag}</sub>\n")
 
-        # Percentage widths let GitHub reflow the row on a narrow screen instead
-        # of overflowing it, which fixed pixel widths do.
-        width = {1: "84%", 2: "48%"}.get(len(picks), f"{100 / GALLERY_COLS - 1.2:.1f}%")
-        for s in picks:
-            alt = (s.get("alt") or f"{skill['name']} sample").replace('"', "'")[:120]
-            out.append(
-                f'<a href="{repo_link(skill)}">'
-                f'<img src="{s["url"]}" width="{width}" alt="{alt}"></a>'
-            )
-        out.append("")
-
-        found = entry.get("found", len(samples))
+        found = entry.get("found", len(entry["samples"]))
         origin = "showcase" if picks[0]["source"] == "showcase" else "repo"
         if lang == "en":
-            note = (f"<sub>{len(picks)} of {found} images found in "
-                    f"[`{entry.get('repo', skill['repo'])}`]({repo_link(skill)})"
-                    + (" · first frames are the ones the project puts in its own README"
-                       if origin == "showcase" else "")
+            note = (f"<sub>{len(picks)} of {found} images in "
+                    f"[`{entry.get('repo') or skill['repo']}`]({repo_link(skill)})"
+                    + (" · the leading frames are the ones the project puts in its "
+                       "own README" if origin == "showcase" else "")
                     + "</sub>")
         else:
-            note = (f"<sub>取自 [`{entry.get('repo', skill['repo'])}`]({repo_link(skill)}) "
-                    f"的 {found} 张图中的 {len(picks)} 张"
+            note = (f"<sub>取自 [`{entry.get('repo') or skill['repo']}`]({repo_link(skill)}) "
+                    f"的 {found} 张图，此处 {len(picks)} 张"
                     + ("，靠前的几张是项目自己放在 README 里的" if origin == "showcase" else "")
                     + "</sub>")
         out.append(note + "\n")
+
+        # width="100%" rather than a pixel size: GitHub's content column is a
+        # different width on desktop, mobile and in the sidebar preview, and a
+        # percentage is the only one of those that is right in all three. Each
+        # image is its own paragraph so they stack instead of flowing inline.
+        for s in picks:
+            alt = (s.get("alt") or f"{skill['name']} sample").replace('"', "'")[:120]
+            out.append(f'<img src="{s["url"]}" width="100%" alt="{alt}">\n')
 
     if empty:
         names = "、".join(empty) if lang != "en" else ", ".join(empty)
@@ -410,17 +419,21 @@ def render_gallery(data: dict, stats: dict, lang: str) -> str:
 
     if lang == "en":
         out.append(
-            f"<sub>**{shown} images, all of them the projects' own.** Each was read from "
-            "the repository at a pinned commit and is linked back to its source. "
-            "Nothing here was produced by running a skill, so treat it as what each "
-            "team chose to show off — not as a like-for-like comparison. "
+            f"<sub>**{shown} images, all of them the projects' own**, shown full size "
+            "rather than as thumbnails — a slide is too dense to judge at 300px. Each "
+            "was read from its repository at a pinned commit, credited in the caption "
+            "above it, and served from that repository rather than copied here. "
+            "Nothing was produced by running a skill, so treat it as what each team "
+            "chose to show off — not as a like-for-like comparison. "
             "Regenerate with `python scripts/fetch_samples.py`.</sub>"
         )
     else:
         out.append(
-            f"<sub>**共 {shown} 张，全部来自各项目自己的仓库。** 每张都读自锁定的 commit，"
-            "并链回出处。**没有任何一张是本仓库跑出来的**，所以它反映的是每个团队愿意拿出来展示"
-            "的样子，不是同题横评。用 `python scripts/fetch_samples.py` 重新生成。</sub>"
+            f"<sub>**共 {shown} 张，全部来自各项目自己的仓库**，按原尺寸完整展示、不做缩略图 —— "
+            "幻灯片信息密度高，缩到 300px 根本看不清字体和层次。每张都读自锁定的 commit，"
+            "出处写在它上方的说明里，并且直接由原仓库提供、没有复制到本仓库。"
+            "**没有任何一张是本仓库跑出来的**，所以它反映的是每个团队愿意拿出来展示的样子，"
+            "不是同题横评。用 `python scripts/fetch_samples.py` 重新生成。</sub>"
         )
     return "\n".join(out)
 
