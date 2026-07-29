@@ -33,6 +33,35 @@ Skill。现在有 30+ 个认真做的项目，其中四个 star 数都超过 2 �
 
 ---
 
+## 让 agent 直接帮你挑
+
+这个仓库本身也是一个 skill。装上之后，你不用自己翻这一页 —— 直接说「我要做一份给投资人的
+deck」，它会先问路线问题，再给出具体的 skill、安装命令和风格 ID。
+
+```bash
+# 作为 Claude Code 插件
+/plugin marketplace add https://github.com/brycewang-stanford/many-ppt-skills
+/plugin install many-ppt-skills@many-ppt-skills
+
+# 或者直接克隆成个人 skill
+git clone https://github.com/brycewang-stanford/many-ppt-skills ~/.claude/skills/many-ppt-skills
+```
+
+背后是一个命令行查询层，你也可以自己用：
+
+```bash
+python scripts/pick.py route                  # 路线问题 + 各路线数量
+python scripts/pick.py list --route pptx      # 某条路线下的 skill
+python scripts/pick.py show ppt-master        # 安装命令、风格 ID、能力
+python scripts/pick.py styles frontend-slides # 全部风格 ID 及对应样例图
+python scripts/pick.py find editorial         # 搜风格 ID 和描述
+```
+
+**它只做选型，不生成 deck**，也不会替你编造别人项目的调用语法 —— 那以各项目自己的
+`SKILL.md` 为准。详见 [`SKILL.md`](SKILL.md)。
+
+---
+
 ## 从这里开始：你走哪条路线？
 
 这是唯一真正重要的决策，而且它和审美无关。
@@ -229,7 +258,7 @@ Skill。现在有 30+ 个认真做的项目，其中四个 star 数都超过 2 �
 > 第四步那句关于预览的描述，是从 frontend-slides 的 SKILL.md 里读到的，只对它成立。
 
 <!-- BEGIN:GALLERY -->
-**跳到：**[PPT Master](#gallery-ppt-master) <sub>24</sub> · [Frontend Slides](#gallery-frontend-slides) <sub>24</sub> · [Guizang PPT Skill](#gallery-guizang-ppt-skill) <sub>13</sub> · [Huashu Design](#gallery-huashu-design) <sub>24</sub> · [HTML PPT Studio](#gallery-html-ppt-skill) <sub>24</sub> · [open-slide](#gallery-open-slide) <sub>16</sub> · [Beautiful HTML Templates](#gallery-beautiful-html-templates) <sub>24</sub> · [PPT Agent Workflow San](#gallery-ppt-agent-workflow-san) <sub>10</sub> · [Frontend Slides Editable](#gallery-frontend-slides-editable) <sub>24</sub> · [PPT SVG Generator](#gallery-ppt-svg-generator) <sub>2</sub> · [Mck PPT Design System](#gallery-mck-ppt-design-skill) <sub>6</sub> · [PPT Agent Skill](#gallery-ppt-agent-skill) <sub>24</sub> · [HTML Slides](#gallery-html-slides-bluedusk) <sub>4</sub> · [KingDee PPT Skill](#gallery-kingdee-ppt-skill) <sub>1</sub> · [Slide Creator](#gallery-slide-creator) <sub>23</sub> · [next-slide](#gallery-next-slide) <sub>24</sub> · [Slide Writer](#gallery-slide-writer) <sub>5</sub> · [Skills Slides](#gallery-skills-slides) <sub>4</sub> · [PowerPoint Fancy Design](#gallery-powerpoint-fancy-design) <sub>24</sub> · [PPTX from Layouts](#gallery-pptx-from-layouts) <sub>1</sub>
+**跳到：**[PPT Master](#gallery-ppt-master) <sub>24</sub> · [Frontend Slides](#gallery-frontend-slides) <sub>24</sub> · [Guizang PPT Skill](#gallery-guizang-ppt-skill) <sub>13</sub> · [Huashu Design](#gallery-huashu-design) <sub>24</sub> · [HTML PPT Studio](#gallery-html-ppt-skill) <sub>24</sub> · [open-slide](#gallery-open-slide) <sub>16</sub> · [Beautiful HTML Templates](#gallery-beautiful-html-templates) <sub>24</sub> · [PPT Agent Workflow San](#gallery-ppt-agent-workflow-san) <sub>10</sub> · [Frontend Slides Editable](#gallery-frontend-slides-editable) <sub>24</sub> · [PPT SVG Generator](#gallery-ppt-svg-generator) <sub>2</sub> · [Mck PPT Design System](#gallery-mck-ppt-design-skill) <sub>6</sub> · [PPT Agent Skill](#gallery-ppt-agent-skill) <sub>24</sub> · [HTML Slides](#gallery-html-slides-bluedusk) <sub>4</sub> · [KingDee PPT Skill](#gallery-kingdee-ppt-skill) <sub>1</sub> · [Slide Creator](#gallery-slide-creator) <sub>23</sub> · [next-slide](#gallery-next-slide) <sub>1</sub> · [Slide Writer](#gallery-slide-writer) <sub>5</sub> · [Skills Slides](#gallery-skills-slides) <sub>4</sub> · [PowerPoint Fancy Design](#gallery-powerpoint-fancy-design) <sub>24</sub> · [PPTX from Layouts](#gallery-pptx-from-layouts) <sub>1</sub>
 
 <a id="gallery-ppt-master"></a>
 
@@ -237,7 +266,7 @@ Skill。现在有 30+ 个认真做的项目，其中四个 star 数都超过 2 �
 
 <sub>把文档或主题变成真正原生可编辑的 PPTX。</sub>
 
-<sub>取自 [`hugohe3/ppt-master`](https://github.com/hugohe3/ppt-master) 的 265 张图，此处 24 张，靠前的几张是项目自己放在 README 里的</sub>
+<sub>取自 [`hugohe3/ppt-master`](https://github.com/hugohe3/ppt-master) 的 46 张图，此处 24 张，靠前的几张是项目自己放在 README 里的</sub>
 
 ```bash
 git clone https://github.com/hugohe3/ppt-master && pip install -r requirements.txt
@@ -293,53 +322,53 @@ git clone https://github.com/hugohe3/ppt-master && pip install -r requirements.t
 
 <sub><b>Tech Claude Plans</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/docs/assets/screenshots/archive/preview_tech_claude_plans.png"><code>docs/assets/screenshots/archive/preview_tech_claude_plans.png</code></a></sub>
 
-<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_image_text_showcase/images/p01_cover.png" width="100%" alt="PPT Master sample">
+<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_home_design_trends_2026/images/retro_style.png" width="100%" alt="PPT Master sample">
 
-<sub><b>P01</b> · 封面 · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_image_text_showcase/images/p01_cover.png"><code>examples/ppt169_image_text_showcase/images/p01_cover.png</code></a></sub>
+<sub><b>Retro Style</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_home_design_trends_2026/images/retro_style.png"><code>examples/ppt169_home_design_trends_2026/images/retro_style.png</code></a></sub>
 
-<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_image_text_showcase/images/p11_papercut.png" width="100%" alt="PPT Master sample">
+<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_home_design_trends_2026/images/cream_style.png" width="100%" alt="PPT Master sample">
 
-<sub><b>P11 Papercut</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_image_text_showcase/images/p11_papercut.png"><code>examples/ppt169_image_text_showcase/images/p11_papercut.png</code></a></sub>
+<sub><b>Cream Style</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_home_design_trends_2026/images/cream_style.png"><code>examples/ppt169_home_design_trends_2026/images/cream_style.png</code></a></sub>
 
-<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_image_text_showcase/images/p20_closing.png" width="100%" alt="PPT Master sample">
+<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_home_design_trends_2026/images/bohemian_style.png" width="100%" alt="PPT Master sample">
 
-<sub><b>P20</b> · 结尾页 · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_image_text_showcase/images/p20_closing.png"><code>examples/ppt169_image_text_showcase/images/p20_closing.png</code></a></sub>
+<sub><b>Bohemian Style</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_home_design_trends_2026/images/bohemian_style.png"><code>examples/ppt169_home_design_trends_2026/images/bohemian_style.png</code></a></sub>
 
-<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_kimsoong_loyalty_programme/images/customer_insight.png" width="100%" alt="PPT Master sample">
+<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/docs/assets/hero-liziqi-colors.gif" width="100%" alt="PPT Master sample">
 
-<sub><b>Customer Insight</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_kimsoong_loyalty_programme/images/customer_insight.png"><code>examples/ppt169_kimsoong_loyalty_programme/images/customer_insight.png</code></a></sub>
+<sub><b>Liziqi Colors</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/docs/assets/hero-liziqi-colors.gif"><code>docs/assets/hero-liziqi-colors.gif</code></a></sub>
 
-<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_indie_bookstore_zine_guide/images/zine_folding_hands.png" width="100%" alt="PPT Master sample">
+<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/skills/ppt-master/references/ai-image-comparison/rendering/3d-isometric.png" width="100%" alt="PPT Master sample">
 
-<sub><b>Zine Folding Hands</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_indie_bookstore_zine_guide/images/zine_folding_hands.png"><code>examples/ppt169_indie_bookstore_zine_guide/images/zine_folding_hands.png</code></a></sub>
+<sub><b>3d Isometric</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/skills/ppt-master/references/ai-image-comparison/rendering/3d-isometric.png"><code>skills/ppt-master/references/ai-image-comparison/rendering/3d-isometric.png</code></a></sub>
 
-<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_sugar_rush_memphis/images/installation.png" width="100%" alt="PPT Master sample">
+<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/skills/ppt-master/references/ai-image-comparison/rendering/blueprint.png" width="100%" alt="PPT Master sample">
 
-<sub><b>Installation</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_sugar_rush_memphis/images/installation.png"><code>examples/ppt169_sugar_rush_memphis/images/installation.png</code></a></sub>
+<sub><b>Blueprint</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/skills/ppt-master/references/ai-image-comparison/rendering/blueprint.png"><code>skills/ppt-master/references/ai-image-comparison/rendering/blueprint.png</code></a></sub>
 
-<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_sugar_rush_memphis/images/market.png" width="100%" alt="PPT Master sample">
+<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/skills/ppt-master/references/ai-image-comparison/rendering/chalkboard.png" width="100%" alt="PPT Master sample">
 
-<sub><b>Market</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_sugar_rush_memphis/images/market.png"><code>examples/ppt169_sugar_rush_memphis/images/market.png</code></a></sub>
+<sub><b>Chalkboard</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/skills/ppt-master/references/ai-image-comparison/rendering/chalkboard.png"><code>skills/ppt-master/references/ai-image-comparison/rendering/chalkboard.png</code></a></sub>
 
-<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_image_text_showcase/images/p19_collage1.png" width="100%" alt="PPT Master sample">
+<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/skills/ppt-master/references/ai-image-comparison/rendering/corporate-photo.png" width="100%" alt="PPT Master sample">
 
-<sub><b>P19 Collage1</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_image_text_showcase/images/p19_collage1.png"><code>examples/ppt169_image_text_showcase/images/p19_collage1.png</code></a></sub>
+<sub><b>Corporate Photo</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/skills/ppt-master/references/ai-image-comparison/rendering/corporate-photo.png"><code>skills/ppt-master/references/ai-image-comparison/rendering/corporate-photo.png</code></a></sub>
 
-<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_image_text_showcase/images/p19_collage2.png" width="100%" alt="PPT Master sample">
+<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/skills/ppt-master/references/ai-image-comparison/rendering/digital-dashboard.png" width="100%" alt="PPT Master sample">
 
-<sub><b>P19 Collage2</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_image_text_showcase/images/p19_collage2.png"><code>examples/ppt169_image_text_showcase/images/p19_collage2.png</code></a></sub>
+<sub><b>Digital Dashboard</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/skills/ppt-master/references/ai-image-comparison/rendering/digital-dashboard.png"><code>skills/ppt-master/references/ai-image-comparison/rendering/digital-dashboard.png</code></a></sub>
 
-<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_pritzker_2026/images/oma_new_museum_interior.png" width="100%" alt="PPT Master sample">
+<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/skills/ppt-master/references/ai-image-comparison/rendering/editorial.png" width="100%" alt="PPT Master sample">
 
-<sub><b>Oma New Museum Interior</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_pritzker_2026/images/oma_new_museum_interior.png"><code>examples/ppt169_pritzker_2026/images/oma_new_museum_interior.png</code></a></sub>
+<sub><b>Editorial</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/skills/ppt-master/references/ai-image-comparison/rendering/editorial.png"><code>skills/ppt-master/references/ai-image-comparison/rendering/editorial.png</code></a></sub>
 
-<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_attention_is_all_you_need/images/positional_encoding.png" width="100%" alt="PPT Master sample">
+<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/skills/ppt-master/references/ai-image-comparison/rendering/fantasy-animation.png" width="100%" alt="PPT Master sample">
 
-<sub><b>Positional Encoding</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_attention_is_all_you_need/images/positional_encoding.png"><code>examples/ppt169_attention_is_all_you_need/images/positional_encoding.png</code></a></sub>
+<sub><b>Fantasy Animation</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/skills/ppt-master/references/ai-image-comparison/rendering/fantasy-animation.png"><code>skills/ppt-master/references/ai-image-comparison/rendering/fantasy-animation.png</code></a></sub>
 
-<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_attention_is_all_you_need/images/sequence_evolution.png" width="100%" alt="PPT Master sample">
+<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/7ae3721c856fedb921d6acec52c7de69181f5194/skills/ppt-master/references/ai-image-comparison/rendering/flat.png" width="100%" alt="PPT Master sample">
 
-<sub><b>Sequence Evolution</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/examples/ppt169_attention_is_all_you_need/images/sequence_evolution.png"><code>examples/ppt169_attention_is_all_you_need/images/sequence_evolution.png</code></a></sub>
+<sub><b>Flat</b> · <a href="https://github.com/hugohe3/ppt-master/blob/7ae3721c856fedb921d6acec52c7de69181f5194/skills/ppt-master/references/ai-image-comparison/rendering/flat.png"><code>skills/ppt-master/references/ai-image-comparison/rendering/flat.png</code></a></sub>
 
 <a id="gallery-frontend-slides"></a>
 
@@ -1416,109 +1445,17 @@ git clone https://github.com/kaisersong/slide-creator
 
 <sub>「你的下个 slide，何必是 PPT」—— 26+ 风格，零依赖，中英双语。</sub>
 
-<sub>取自 [`codesstar/next-slide`](https://github.com/codesstar/next-slide) 的 57 张图，此处 24 张</sub>
+<sub>取自 [`codesstar/next-slide`](https://github.com/codesstar/next-slide) 的 1 张图，此处 1 张</sub>
 
 ```bash
 git clone https://github.com/codesstar/next-slide
 ```
 
-<sub><b>下面出现的风格</b> `arc-electric-lifestyle` · `arc-lifestyle-running` · `arc-noir-case` · `jinxiufang-lifestyle` · `motion-brand-showcase` · `xiaomi-smart-home-lifestyle` · `shanyin-tea-product` · `agent-eval` · `agent-hero` · `agent-tools` · `arc-electric-flatlay` · `arc-exploded-view` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-electric-lifestyle.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Arc Electric Lifestyle</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-electric-lifestyle.webp"><code>scenarios/images/arc-electric-lifestyle.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-lifestyle-running.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Arc Lifestyle Running</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-lifestyle-running.webp"><code>scenarios/images/arc-lifestyle-running.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-noir-case.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Arc Noir Case</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-noir-case.webp"><code>scenarios/images/arc-noir-case.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/jinxiufang-lifestyle.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Jinxiufang Lifestyle</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/jinxiufang-lifestyle.webp"><code>scenarios/images/jinxiufang-lifestyle.webp</code></a></sub>
+<sub><b>下面出现的风格</b> `motion-brand-showcase` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
 
 <img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/motion-brand-showcase.webp" width="100%" alt="next-slide sample">
 
 <sub><b>Motion Brand Showcase</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/motion-brand-showcase.webp"><code>scenarios/images/motion-brand-showcase.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/xiaomi-smart-home-lifestyle.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Xiaomi Smart Home Lifestyle</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/xiaomi-smart-home-lifestyle.webp"><code>scenarios/images/xiaomi-smart-home-lifestyle.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/shanyin-tea-product.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Shanyin Tea Product</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/shanyin-tea-product.webp"><code>scenarios/images/shanyin-tea-product.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/agent-eval.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Agent Eval</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/agent-eval.webp"><code>scenarios/images/agent-eval.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/agent-hero.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Agent Hero</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/agent-hero.webp"><code>scenarios/images/agent-hero.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/agent-tools.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Agent Tools</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/agent-tools.webp"><code>scenarios/images/agent-tools.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-electric-flatlay.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Arc Electric Flatlay</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-electric-flatlay.webp"><code>scenarios/images/arc-electric-flatlay.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-exploded-view.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Arc Exploded View</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-exploded-view.webp"><code>scenarios/images/arc-exploded-view.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-hero-voltage.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Arc Hero Voltage</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-hero-voltage.webp"><code>scenarios/images/arc-hero-voltage.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-neon-audio-viz.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Arc Neon Audio Viz</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-neon-audio-viz.webp"><code>scenarios/images/arc-neon-audio-viz.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-neon-hero.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Arc Neon Hero</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-neon-hero.webp"><code>scenarios/images/arc-neon-hero.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-noir-hero.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Arc Noir Hero</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-noir-hero.webp"><code>scenarios/images/arc-noir-hero.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-soundwave.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Arc Soundwave</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/arc-soundwave.webp"><code>scenarios/images/arc-soundwave.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/clarity-app-ui.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Clarity App Ui</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/clarity-app-ui.webp"><code>scenarios/images/clarity-app-ui.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/clarity-workspace.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Clarity Workspace</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/clarity-workspace.webp"><code>scenarios/images/clarity-workspace.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/ecom-1111-hero.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Ecom 1111 Hero</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/ecom-1111-hero.webp"><code>scenarios/images/ecom-1111-hero.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/ecom-beauty-hero.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Ecom Beauty Hero</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/ecom-beauty-hero.webp"><code>scenarios/images/ecom-beauty-hero.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/ecom-thermos-hero.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Ecom Thermos Hero</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/ecom-thermos-hero.webp"><code>scenarios/images/ecom-thermos-hero.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/greenplate-hero-product.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Greenplate Hero Product</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/greenplate-hero-product.webp"><code>scenarios/images/greenplate-hero-product.webp</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/codesstar/next-slide/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/jinxiufang-embroidery.webp" width="100%" alt="next-slide sample">
-
-<sub><b>Jinxiufang Embroidery</b> · <a href="https://github.com/codesstar/next-slide/blob/e92c1b2506e6cf5acff7d2b92339ba0c0ce2af22/scenarios/images/jinxiufang-embroidery.webp"><code>scenarios/images/jinxiufang-embroidery.webp</code></a></sub>
 
 <a id="gallery-slide-writer"></a>
 
@@ -1714,7 +1651,7 @@ git clone https://github.com/tristan-mcinnis/pptx-from-layouts-skill
 
 <sub>以下项目的仓库里没有可用图片：Anthropic PPTX (official)、Visual Explainer、Claude Office Skills、Academic PPTX、Visual Cognition Slides、Huawei Style PPT Skill。</sub>
 
-<sub>**共 301 张，全部来自各项目自己的仓库**，按原尺寸完整展示、不做缩略图 —— 幻灯片信息密度高，缩到 300px 根本看不清字体和层次。每张都读自锁定的 commit，出处写在它上方的说明里，并且直接由原仓库提供、没有复制到本仓库。**没有任何一张是本仓库跑出来的**，所以它反映的是每个团队愿意拿出来展示的样子，不是同题横评。用 `python scripts/fetch_samples.py` 重新生成。</sub>
+<sub>**共 278 张，全部来自各项目自己的仓库**，按原尺寸完整展示、不做缩略图 —— 幻灯片信息密度高，缩到 300px 根本看不清字体和层次。每张都读自锁定的 commit，出处写在它上方的说明里，并且直接由原仓库提供、没有复制到本仓库。**没有任何一张是本仓库跑出来的**，所以它反映的是每个团队愿意拿出来展示的样子，不是同题横评。用 `python scripts/fetch_samples.py` 重新生成。</sub>
 <!-- END:GALLERY -->
 
 ---

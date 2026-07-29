@@ -93,6 +93,32 @@ SKIP_PATTERNS = (
     re.compile(r"(?:^|/)(?:image|img|figure|fig|pic)[-_]?\d+\.[a-z]+$"),
 )
 
+# Folders holding what goes *into* a deck rather than a picture *of* one. The
+# projects that ship worked examples put the deck's own illustrations here —
+# stock photography, AI-generated spots, per-page art — and they sail through
+# every size and aspect check because they are full-bleed 16:9 by design. One
+# project's entire sample set was stock photos of people at laptops.
+#
+# Applied only to repo-scanned files. An image the author embedded in their own
+# README is a deliberate choice and is trusted wherever it lives.
+INGREDIENT_DIRS = {"images", "img", "photos", "pics", "pictures", "media"}
+
+# ...unless the file names itself as a picture of a deck, which is the escape
+# hatch for a project that files its screenshots under `docs/images/`.
+#
+# "cover" is deliberately absent. It is ambiguous in exactly the wrong way —
+# `p01_cover.png` and `book-cover1.png` are cover *artwork* drawn for a slide,
+# not a picture of a cover slide, and admitting them puts `book-cover1` in the
+# list of styles an agent is told it can ask for.
+#
+# Bounded, because "lifestyle" contains "style" — an unbounded match let a
+# folder of stock photography back in under exactly that spelling. The trailing
+# `s?` keeps `themes.png` and `slides.png` working.
+PREVIEW_HINT = re.compile(
+    r"(?<![a-z])(?:screenshots?|previews?|slides?|decks?|themes?|styles?|"
+    r"layouts?|showcases?)(?![a-z])|截图|预览"
+)
+
 # Fragments that mark an asset as very likely to *be* the output. Used only to
 # rank, never to exclude — a project that names its screenshots `1.png` should
 # not be punished for it.
@@ -414,6 +440,9 @@ def repo_images(repo_dir: Path) -> list[dict]:
         if any(part in SKIP_DIRS for part in rel.parts):
             continue
         if is_skippable(rel.as_posix()):
+            continue
+        if any(part.lower() in INGREDIENT_DIRS for part in rel.parts[:-1]) and \
+                not PREVIEW_HINT.search(rel.name.lower()):
             continue
         out.append({
             "raw": rel.as_posix(),

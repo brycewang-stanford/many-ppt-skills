@@ -1,0 +1,26 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "many-ppt-skills",
+  "description": "Pick an AI slide-deck skill and a concrete visual style, from a registry that compares them on one page.",
+  "owner": {
+    "name": "brycewang-stanford",
+    "url": "https://github.com/brycewang-stanford"
+  },
+  "plugins": [
+    {
+      "name": "many-ppt-skills",
+      "description": "Routes to the right AI slide-deck skill and names a style id you can ask for, backed by sample imagery read from the projects' own repositories.",
+      "source": "./plugins/many-ppt-skills",
+      "category": "productivity",
+      "tags": [
+        "presentations",
+        "slides",
+        "deck",
+        "pptx",
+        "html",
+        "registry",
+        "templates"
+      ]
+    }
+  ]
+}

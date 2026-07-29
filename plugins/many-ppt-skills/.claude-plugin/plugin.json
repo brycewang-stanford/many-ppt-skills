@@ -1,0 +1,23 @@
+{
+  "name": "many-ppt-skills",
+  "version": "0.1.0",
+  "description": "Routes to the right AI slide-deck skill and names a style id you can ask for, backed by sample imagery read from the projects' own repositories.",
+  "skills": "./skills/",
+  "author": {
+    "name": "many-ppt-skills contributors",
+    "url": "https://github.com/brycewang-stanford/many-ppt-skills"
+  },
+  "homepage": "https://github.com/brycewang-stanford/many-ppt-skills",
+  "repository": "https://github.com/brycewang-stanford/many-ppt-skills",
+  "license": "MIT",
+  "keywords": [
+    "presentations",
+    "slides",
+    "deck",
+    "pptx",
+    "html",
+    "registry",
+    "templates",
+    "design"
+  ]
+}
