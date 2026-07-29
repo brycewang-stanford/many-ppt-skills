@@ -11,8 +11,11 @@ about how to *invoke* another project is asserted: that belongs to each
 project's own SKILL.md and is the one thing this registry cannot verify.
 
     python scripts/pick.py route                 # the HTML vs PPTX decision
-    python scripts/pick.py list --route pptx --ready   # installable, one route
-    python scripts/pick.py show ppt-master       # one skill, in full
+    python scripts/pick.py installed             # what the user already has
+    python scripts/pick.py caps                  # requirements you can filter on
+    python scripts/pick.py list --route pptx --ready --cap speaker_notes
+    python scripts/pick.py compare ppt-master frontend-slides
+    python scripts/pick.py show ppt-master --why # one skill, with the evidence
     python scripts/pick.py styles frontend-slides
     python scripts/pick.py find editorial        # search styles and blurbs
 """
@@ -47,6 +50,10 @@ ROUTE_NAME = {
     "suite": "skill suite", "image": "image-first",
     "framework": "framework", "templates": "template library",
 }
+
+# Which language the project's own documentation is written in. It decides
+# whether the user can read the trigger phrases they are being handed off to.
+LANG_NAME = {"en": "English", "zh": "Chinese", "bilingual": "English + Chinese"}
 
 
 def load(name: str) -> dict:
@@ -99,6 +106,25 @@ def style_ids(entry: dict) -> list[str]:
     return out
 
 
+def cap_verdicts(sid: str, caps: dict) -> dict[str, dict]:
+    """This skill's capability verdicts, or {} if nobody has read its docs.
+
+    Three verdicts, and the difference matters when recommending: `yes` and
+    `no` are both things the project's own documentation says, `unclear` only
+    means the docs are silent — never that the feature is absent.
+    """
+    entry = caps.get("skills", {}).get(sid) or {}
+    return {k: v for k, v in (entry.get("caps") or {}).items() if isinstance(v, dict)}
+
+
+def claims(sid: str, caps: dict, verdict: str = "yes") -> list[str]:
+    return [k for k, v in cap_verdicts(sid, caps).items() if v.get("verdict") == verdict]
+
+
+def cap_label(key: str, caps: dict) -> str:
+    return (caps.get("capabilities", {}).get(key) or {}).get("label_en", key)
+
+
 # --------------------------------------------------------------------------
 # Commands
 # --------------------------------------------------------------------------
@@ -133,11 +159,27 @@ def cmd_list(args, skills, stats, samples, caps) -> int:
     if args.route:
         rows = [s for s in rows if s["route"] == args.route]
     if args.ready:
-        rows = [s for s in rows if (s.get("install") or {}).get("command")]
+        rows = [s for s in rows if installable(s)]
+    if args.lang:
+        # zh-only documentation is a real handover problem, not a detail: the
+        # user ends up reading trigger phrases they cannot read. `bilingual`
+        # satisfies either request.
+        rows = [s for s in rows
+                if s.get("lang") in (args.lang, "bilingual")]
+    if args.cap:
+        # Only the 30 hand-read skills have verdicts at all, so this filter
+        # implicitly restricts to those. That is the honest behaviour: a
+        # requirement can only be checked where someone checked it.
+        rows = [s for s in rows
+                if all(c in claims(s["id"], caps) for c in args.cap)]
     if args.limit:
         rows = rows[: args.limit]
     if not rows:
         print("no skills match that filter", file=sys.stderr)
+        if args.cap:
+            print("Capability filters only match the skills whose docs have been "
+                  "read by hand — try fewer --cap flags, or `pick.py caps` to see "
+                  "how many skills document each one.", file=sys.stderr)
         return 1
 
     for s in rows:
@@ -170,6 +212,19 @@ def cmd_show(args, skills, stats, samples, caps) -> int:
              if s.get("license_warning") else ""))
     print(f"  what      {s['tagline_en']}")
     print(f"  best for  {s.get('best_for_en', '—')}")
+    print(f"  docs in   {LANG_NAME.get(s.get('lang', ''), '—')}")
+
+    # Hard prerequisites, from two sources: `requires` is hand-recorded from the
+    # project's install instructions, `runtime` is what reading its docs turned
+    # up. Both are the difference between an install that works and one that
+    # half-works, so they go above the command, not in a footnote.
+    entry_caps = caps.get("skills", {}).get(s["id"]) or {}
+    needs = list(s.get("requires") or []) + [
+        r for r in (entry_caps.get("runtime") or [])
+        if not any(r.lower() in q.lower() for q in (s.get("requires") or []))
+    ]
+    if needs:
+        print(f"  requires  {', '.join(needs)}")
 
     install = s.get("install") or {}
     if install.get("command"):
@@ -194,13 +249,34 @@ def cmd_show(args, skills, stats, samples, caps) -> int:
             print("      " + "  ".join(f"{c:22s}" for c in chunk).rstrip())
         print("      -> name one of these when you ask for a deck")
 
-    entry_caps = (caps.get("skills", {}).get(s["id"]) or {}).get("caps", {})
-    claimed = [k for k, v in entry_caps.items()
-               if isinstance(v, dict) and v.get("verdict") == "yes"]
-    if claimed:
-        labels = caps.get("capabilities", {})
-        print("\n  documented capabilities (what its docs claim, not tested here):")
-        print("      " + ", ".join(labels.get(c, {}).get("label_en", c) for c in claimed))
+    hl = s.get("highlights_en") or []
+    if hl:
+        print("\n  what its docs single out:")
+        for h in hl[:4]:
+            print(f"      - {h if len(h) < 96 else h[:93] + '...'}")
+
+    verdicts = cap_verdicts(s["id"], caps)
+    if verdicts:
+        print("\n  capabilities as its own docs describe them (not tested here):")
+        for verdict, gloss in (("yes", "documented"),
+                               ("no", "documented as NOT supported"),
+                               ("unclear", "docs silent — not the same as absent")):
+            hits = [k for k, v in verdicts.items() if v.get("verdict") == verdict]
+            if hits:
+                print(f"      {verdict:8s} {', '.join(cap_label(k, caps) for k in hits)}")
+                if verdict != "yes":
+                    print(f"      {'':8s} ({gloss})")
+        if args.why:
+            print("\n  the quote each claim rests on:")
+            for k, v in verdicts.items():
+                if v.get("verdict") in ("yes", "no") and v.get("quote"):
+                    print(f"      {cap_label(k, caps)} [{v['verdict']}]")
+                    print(f"        \"{v['quote'][:160]}\"")
+        else:
+            print("      -> `show --why` prints the quote each claim rests on")
+    else:
+        print("\n  capabilities NOT ASSESSED — nobody has read this project's docs")
+        print("      for this registry. Absence here says nothing about the project.")
 
     print("\n  NOTE: how to phrase the request is defined by this project's own")
     print("        SKILL.md, not by this registry. Read it if the style id alone")
@@ -226,6 +302,148 @@ def cmd_styles(args, skills, stats, samples, caps) -> int:
         label = p.get("label") or ""
         print(f"  {st:24s} {label[:52]}")
         print(f"  {'':24s} {p['url']}")
+    return 0
+
+
+def cmd_caps(args, skills, stats, samples, caps) -> int:
+    """The requirement vocabulary, so the agent knows what it can ask about."""
+    labels = caps.get("capabilities", {})
+    if not labels:
+        print("data/capabilities.json missing or empty", file=sys.stderr)
+        return 1
+
+    assessed = [s for s in skills if cap_verdicts(s["id"], caps)]
+    print(f"Requirements you can filter on. {len(assessed)} of {len(skills)} skills\n"
+          f"have had their docs read; the rest cannot be filtered at all.\n")
+    for key, meta in labels.items():
+        yes = sum(1 for s in assessed if key in claims(s["id"], caps))
+        no = sum(1 for s in assessed if key in claims(s["id"], caps, "no"))
+        print(f"  {key:20s} {meta.get('label_en', key)}")
+        print(f"  {'':20s} {yes} document it, {no} document its absence, "
+              f"{len(assessed) - yes - no} are silent")
+        print(f"  {'':20s} why it matters: {meta.get('why', '—')}")
+    print("\n  pick.py list --cap speaker_notes --cap native_charts --ready")
+    print("  -> ask the user which of these they actually need before filtering.")
+    print("     Filtering on a requirement they do not have throws away good")
+    print("     skills whose docs simply did not mention it.")
+    return 0
+
+
+def cmd_compare(args, skills, stats, samples, caps) -> int:
+    """Side by side, for when more than one candidate survived the route test."""
+    picked: list[dict] = []
+    for sid in args.skills:
+        s = by_id(skills, sid)
+        if not s:
+            print(f"unknown skill: {sid} — try `pick.py list`", file=sys.stderr)
+            return 1
+        picked.append(s)
+
+    w = 24
+    def row(label: str, values: list[str]) -> None:
+        print(f"  {label:16s}" + "".join(f"{v[:w - 2]:{w}s}" for v in values))
+
+    print()
+    row("", [s["id"] for s in picked])
+    row("", ["-" * (w - 3) for _ in picked])
+    row("stars", [f"{stars(s, stats):,}" for s in picked])
+    row("route", [ROUTE_NAME.get(s["route"], s["route"]) for s in picked])
+    row("license", [(s.get("license_note") or "—")
+                    + (" (copyleft)" if s.get("license_warning") else "")
+                    for s in picked])
+    row("docs in", [LANG_NAME.get(s.get("lang", ""), "—") for s in picked])
+    row("install", [((s.get("install") or {}).get("method") or "NOT RECORDED")
+                    for s in picked])
+    row("requires", [", ".join(s.get("requires") or []) or "—" for s in picked])
+    row("styles", [str(len(style_ids(samples.get(s["id"]) or {}))) or "0"
+                   for s in picked])
+
+    labels = caps.get("capabilities", {})
+    if labels:
+        print()
+        for key, meta in labels.items():
+            cells = []
+            for s in picked:
+                v = cap_verdicts(s["id"], caps).get(key) or {}
+                cells.append({"yes": "yes", "no": "NO", "unclear": "?"}
+                             .get(v.get("verdict"), "not read"))
+            if set(cells) == {"not read"}:
+                continue
+            row(meta.get("label_en", key)[:15], cells)
+        print("\n  yes = its docs say so   NO = its docs say it does not")
+        print("  ?   = docs silent, which is not the same as absent")
+        print("  not read = nobody has assessed this project for the registry")
+
+    print("\n  `pick.py show <id> --why` for install commands and the quotes.")
+    return 0
+
+
+# Where the deck skills in this registry land once installed. Checked in this
+# order; a plugin install and a clone can both be present.
+INSTALL_ROOTS = (
+    "~/.claude/skills", "~/.claude/plugins", ".claude/skills", ".claude/plugins",
+)
+
+
+def cmd_installed(args, skills, stats, samples, caps) -> int:
+    """Which registry skills are already on this machine.
+
+    SKILL.md says to step aside if the user already has a deck skill they are
+    happy with. That instruction needs a way to find out, and guessing from the
+    conversation is how an agent ends up re-installing what is already there.
+    """
+    # Ids first, and they win: 12 repo basenames are shared by two or three
+    # entries (forks and copies of ppt-master, frontend-slides and friends), so
+    # a basename match on those would confidently name the wrong project. Drop
+    # the ambiguous ones rather than picking whichever came last.
+    names: dict[str, dict] = {s["id"].lower(): s for s in skills}
+    basenames: dict[str, list[dict]] = {}
+    for s in skills:
+        basenames.setdefault(s["repo"].split("/")[-1].lower(), []).append(s)
+    for base, owners in basenames.items():
+        if len(owners) == 1 and base not in names:
+            names[base] = owners[0]
+
+    found: dict[str, list[str]] = {}
+    roots_seen: list[str] = []
+    for root in INSTALL_ROOTS:
+        p = Path(root).expanduser()
+        if not p.is_dir():
+            continue
+        roots_seen.append(str(p))
+        # Skill directories sit one or two levels down: ~/.claude/skills/<name>,
+        # and ~/.claude/plugins/<plugin>/skills/<name> for a plugin install.
+        candidates = [c for c in p.iterdir() if c.is_dir()]
+        for c in list(candidates):
+            nested = c / "skills"
+            if nested.is_dir():
+                candidates += [g for g in nested.iterdir() if g.is_dir()]
+        for child in candidates:
+            hit = names.get(child.name.lower())
+            if hit:
+                found.setdefault(hit["id"], []).append(str(child))
+
+    if not roots_seen:
+        print("None of the usual skill directories exist here, so nothing is")
+        print("installed for this user — or they install somewhere custom.")
+        print("Looked in: " + ", ".join(INSTALL_ROOTS))
+        return 0
+
+    if not found:
+        print(f"No registry skill found in: {', '.join(roots_seen)}")
+        print("\nThis is a directory-name match, so a skill installed under a")
+        print("renamed folder will not show up. Ask before assuming nothing is there.")
+        return 0
+
+    print("Already installed (directory-name match, so treat as a strong hint):\n")
+    for sid, paths in found.items():
+        s = by_id(skills, sid)
+        print(f"  {sid:26s} {ROUTE_NAME.get(s['route'], s['route'])}")
+        print(f"  {'':26s} {s['tagline_en']}")
+        for path in paths:
+            print(f"  {'':26s} {path}")
+    print("\nIf one of these covers what the user is asking for, say so and use it.")
+    print("Do not re-litigate the choice or install a second deck skill alongside it.")
     return 0
 
 
@@ -268,9 +486,23 @@ def main() -> int:
     p.add_argument("--limit", type=int)
     p.add_argument("--ready", action="store_true",
                    help="only entries with a recorded install command")
+    p.add_argument("--lang", choices=("en", "zh"),
+                   help="documentation language the user can read")
+    p.add_argument("--cap", action="append", metavar="KEY",
+                   help="require a documented capability; repeat to require several "
+                        "(`pick.py caps` lists the keys)")
+
+    sub.add_parser("caps", help="the requirements you can filter on, and why each matters")
 
     p = sub.add_parser("show", help="one skill: install command, styles, capabilities")
     p.add_argument("skill")
+    p.add_argument("--why", action="store_true",
+                   help="also print the doc quote each capability claim rests on")
+
+    p = sub.add_parser("compare", help="two or more skills side by side")
+    p.add_argument("skills", nargs="+", metavar="ID")
+
+    sub.add_parser("installed", help="which registry skills are already on this machine")
 
     p = sub.add_parser("styles", help="every style id and sample image for one skill")
     p.add_argument("skill")
@@ -286,7 +518,8 @@ def main() -> int:
 
     return {
         "route": cmd_route, "list": cmd_list, "show": cmd_show,
-        "styles": cmd_styles, "find": cmd_find,
+        "styles": cmd_styles, "find": cmd_find, "caps": cmd_caps,
+        "compare": cmd_compare, "installed": cmd_installed,
     }[args.cmd](args, skills, stats, samples, caps)
 
 
