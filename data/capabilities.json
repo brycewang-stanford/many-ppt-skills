@@ -49,7 +49,7 @@
     "self_contained": {
       "label_en": "Offline",
       "label_zh": "离线可用",
-      "why": "A single file with no CDN still opens in ten years."
+      "why": "HTML route only. Whether the *delivered deck* runs with no CDN, no remote font and no network — an intermediate preview or build artifact being self-contained does not count."
     }
   },
   "skills": {
@@ -1395,6 +1395,211 @@
         "self_contained": {
           "verdict": "unclear",
           "quote": ""
+        }
+      }
+    },
+    "slidev": {
+      "docs_read": [
+        "SKILL.md",
+        "README.md"
+      ],
+      "runtime": [],
+      "cost_usd": 0.2347,
+      "input_tokens": 98925,
+      "caps": {
+        "native_charts": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "code_highlighting": {
+          "verdict": "yes",
+          "quote": "Syntax-highlighted code snippets with animations"
+        },
+        "diagrams": {
+          "verdict": "yes",
+          "quote": "Mathematical equations (LaTeX) or diagrams (Mermaid, PlantUML)"
+        },
+        "animation": {
+          "verdict": "yes",
+          "quote": "Animations - Click animations, transitions, motion effects"
+        },
+        "speaker_notes": {
+          "verdict": "yes",
+          "quote": "Record presentations with presenter notes"
+        },
+        "presenter_mode": {
+          "verdict": "yes",
+          "quote": "Presenter Mode - Recording, timer, remote access"
+        },
+        "pptx_export": {
+          "verdict": "yes",
+          "quote": "Export to PDF, PPTX, or host as SPA"
+        },
+        "pdf_export": {
+          "verdict": "yes",
+          "quote": "Export to PDF, PPTX, or host as SPA"
+        },
+        "custom_template": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "self_contained": {
+          "verdict": "unclear",
+          "quote": ""
+        }
+      }
+    },
+    "quarkdown": {
+      "docs_read": [
+        "SKILL.md"
+      ],
+      "runtime": [],
+      "cost_usd": 0.155,
+      "input_tokens": 94986,
+      "caps": {
+        "native_charts": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "diagrams": {
+          "verdict": "yes",
+          "quote": "Quarkdown adds function calls (`.func {arg}`), variables, layouts, math, diagrams, and document types (plain/paged/slides/docs)."
+        },
+        "animation": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "speaker_notes": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "pptx_export": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "pdf_export": {
+          "verdict": "yes",
+          "quote": "It compiles `.qd` source files to HTML, PDF, or plaintext"
+        },
+        "custom_template": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "self_contained": {
+          "verdict": "unclear",
+          "quote": ""
+        }
+      }
+    },
+    "banana-slides": {
+      "docs_read": [
+        "SKILL.md"
+      ],
+      "runtime": [],
+      "cost_usd": 0.1088,
+      "input_tokens": 93813,
+      "caps": {
+        "native_charts": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "diagrams": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "animation": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "speaker_notes": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "pptx_export": {
+          "verdict": "yes",
+          "quote": "export a project to PPTX, PDF, or images"
+        },
+        "pdf_export": {
+          "verdict": "yes",
+          "quote": "banana-cli exports pdf --output ./report.pdf"
+        },
+        "custom_template": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "self_contained": {
+          "verdict": "unclear",
+          "quote": ""
+        }
+      }
+    },
+    "dashi-ppt-skill": {
+      "docs_read": [
+        "SKILL.md",
+        "README.md",
+        "project/packages/html-deck-to-pptx/README.md"
+      ],
+      "runtime": [
+        "node"
+      ],
+      "cost_usd": 0.278,
+      "input_tokens": 119804,
+      "caps": {
+        "native_charts": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "code_highlighting": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "diagrams": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "animation": {
+          "verdict": "yes",
+          "quote": "元素出现动画使用页面组件自带的原生效果。页面切换动画可以在预览控制面板里调整。"
+        },
+        "speaker_notes": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "presenter_mode": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "pptx_export": {
+          "verdict": "yes",
+          "quote": "可以导出 HTML、PDF 或 PPTX"
+        },
+        "pdf_export": {
+          "verdict": "yes",
+          "quote": "可以导出 HTML、PDF 或 PPTX"
+        },
+        "custom_template": {
+          "verdict": "unclear",
+          "quote": ""
+        },
+        "self_contained": {
+          "verdict": "yes",
+          "quote": "你提供的图片/视频会写入本次 deck，成品不依赖原始素材路径"
         }
       }
     }

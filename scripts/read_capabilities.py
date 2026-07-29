@@ -124,7 +124,14 @@ def read_docs_text(skill_dir: Path) -> list[tuple[str, str]]:
     return docs
 
 
-def ask(docs: list[tuple[str, str]], prompt: str, model: str, budget: float) -> dict | None:
+def ask(docs: list[tuple[str, str]], prompt: str, model: str,
+        budget: float) -> tuple[dict | None, float, int]:
+    """Returns (verdicts, cost_usd, input_tokens).
+
+    The cost comes back from the CLI on every call and used to be thrown away,
+    which meant the only honest answer to "what will the rest of this cost" was
+    a guess. It is recorded per skill now.
+    """
     work = Path(tempfile.mkdtemp(prefix="cap-read-"))
     (work / "docs").mkdir()
     for name, text in docs:
@@ -139,18 +146,23 @@ def ask(docs: list[tuple[str, str]], prompt: str, model: str, budget: float) -> 
             cwd=work, capture_output=True, text=True, timeout=900,
         )
     except subprocess.TimeoutExpired:
-        return None
+        return None, 0.0, 0
     finally:
         shutil.rmtree(work, ignore_errors=True)
 
     if proc.returncode != 0:
-        return None
+        return None, 0.0, 0
     try:
-        # The schema-validated object is in `structured_output`; `result` is the
-        # model's prose summary and reading it would discard every verdict.
-        return json.loads(proc.stdout).get("structured_output")
+        env = json.loads(proc.stdout)
     except json.JSONDecodeError:
-        return None
+        return None, 0.0, 0
+    usage = env.get("usage") or {}
+    tokens = (usage.get("input_tokens", 0)
+              + usage.get("cache_creation_input_tokens", 0)
+              + usage.get("cache_read_input_tokens", 0))
+    # The schema-validated object is in `structured_output`; `result` is the
+    # model's prose summary and reading it would discard every verdict.
+    return env.get("structured_output"), env.get("total_cost_usd") or 0.0, tokens
 
 
 def main() -> int:
@@ -178,6 +190,8 @@ def main() -> int:
 
     targets = [s for s in registry["skills"]
                if not args.only or s["id"] in args.only]
+    spent = 0.0
+    read = 0
     for i, skill in enumerate(targets, 1):
         sid = skill["id"]
         repo_dir = CACHE / sid
@@ -190,7 +204,9 @@ def main() -> int:
             print(f"[{i}/{len(targets)}] {sid}: no docs found", file=sys.stderr)
             continue
 
-        verdicts = ask(docs, prompt, args.model, args.budget)
+        verdicts, cost, tokens = ask(docs, prompt, args.model, args.budget)
+        spent += cost
+        read += 1
         if verdicts is None:
             print(f"[{i}/{len(targets)}] {sid}: read failed", file=sys.stderr)
             continue
@@ -198,15 +214,30 @@ def main() -> int:
         result["skills"][sid] = {
             "docs_read": [d[0].replace("__", "/") for d in docs],
             "runtime": detect_runtime(skill_dir),
+            "cost_usd": round(cost, 4),
+            "input_tokens": tokens,
             "caps": verdicts,
         }
         yes = sum(1 for v in verdicts.values() if v["verdict"] == "yes")
         no = sum(1 for v in verdicts.values() if v["verdict"] == "no")
         print(f"[{i}/{len(targets)}] {sid:24s} {yes} yes · {no} no · "
-              f"{len(CAPABILITIES) - yes - no} unclear", flush=True)
+              f"{len(CAPABILITIES) - yes - no} unclear · "
+              f"${cost:.3f} · {tokens:,} tok", flush=True)
         OUT.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n")
 
-    print(f"\nwrote {OUT.relative_to(ROOT)} — {len(result['skills'])} skill(s)")
+    done = len(result["skills"])
+    print(f"\nwrote {OUT.relative_to(ROOT)} — {done} skill(s)")
+    print(f"spent ${spent:.2f} on this run across {read} read(s)")
+    remaining = len(registry["skills"]) - done
+    if remaining > 0 and read > 0:
+        # Divide by what was actually read, not by len(targets). Most targets
+        # bail out before ask() because they were never cloned, so averaging
+        # over all of them understates the true per-skill price by the ratio
+        # between the two -- and this number exists precisely to answer "what
+        # will the rest cost", where being 50x low is worse than saying nothing.
+        per = spent / read
+        print(f"~${per:.3f}/skill measured — {remaining} left "
+              f"would be about ${per * remaining:.2f}")
     return 0
 
 
