@@ -3,7 +3,7 @@
   "failed": [],
   "repos": {
     "anthropics/skills": {
-      "stars": 164900,
+      "stars": 164904,
       "forks": 19591,
       "open_issues": 1066,
       "license": null,
@@ -14,7 +14,7 @@
       "default_branch": "main"
     },
     "slidevjs/slidev": {
-      "stars": 47881,
+      "stars": 47882,
       "forks": 2132,
       "open_issues": 215,
       "license": "MIT",
@@ -36,7 +36,7 @@
       "default_branch": "main"
     },
     "zarazhangrui/frontend-slides": {
-      "stars": 26543,
+      "stars": 26544,
       "forks": 2155,
       "open_issues": 65,
       "license": "MIT",
@@ -46,8 +46,19 @@
       "homepage": null,
       "default_branch": "main"
     },
+    "JimLiu/baoyu-skills": {
+      "stars": 24301,
+      "forks": 2702,
+      "open_issues": 5,
+      "license": "MIT",
+      "created_at": "2026-01-13",
+      "pushed_at": "2026-07-04",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
     "op7418/guizang-ppt-skill": {
-      "stars": 22644,
+      "stars": 22647,
       "forks": 1644,
       "open_issues": 30,
       "license": "AGPL-3.0",
@@ -58,7 +69,7 @@
       "default_branch": "main"
     },
     "alchaincyf/huashu-design": {
-      "stars": 22178,
+      "stars": 22179,
       "forks": 2627,
       "open_issues": 7,
       "license": "MIT",
@@ -135,7 +146,7 @@
       "default_branch": "main"
     },
     "chuspeeism/dashi-ppt-skill": {
-      "stars": 4375,
+      "stars": 4376,
       "forks": 414,
       "open_issues": 6,
       "license": "AGPL-3.0",
@@ -146,7 +157,7 @@
       "default_branch": "main"
     },
     "ningzimu/codex-ppt-skill": {
-      "stars": 4278,
+      "stars": 4279,
       "forks": 208,
       "open_issues": 3,
       "license": "MIT",
@@ -190,7 +201,7 @@
       "default_branch": "main"
     },
     "GordenSun/GordenPPTSkill": {
-      "stars": 2816,
+      "stars": 2817,
       "forks": 261,
       "open_issues": 1,
       "license": "NOASSERTION",
@@ -201,7 +212,7 @@
       "default_branch": "main"
     },
     "zLanqing/codex-claude-academic-skills": {
-      "stars": 2341,
+      "stars": 2342,
       "forks": 155,
       "open_issues": 2,
       "license": "MIT",
@@ -385,6 +396,17 @@
       "pushed_at": "2026-05-02",
       "archived": false,
       "homepage": null,
+      "default_branch": "main"
+    },
+    "sanjay3290/ai-skills": {
+      "stars": 358,
+      "forks": 37,
+      "open_issues": 3,
+      "license": "Apache-2.0",
+      "created_at": "2025-12-22",
+      "pushed_at": "2026-07-09",
+      "archived": false,
+      "homepage": "https://deepwiki.com/sanjay3290/ai-skills",
       "default_branch": "main"
     },
     "irenerachel/visual-style-ppt-skill": {
@@ -627,6 +649,17 @@
       "pushed_at": "2026-07-24",
       "archived": false,
       "homepage": "https://kdnsna.github.io/ultimate-ppt-master-skill/",
+      "default_branch": "main"
+    },
+    "bytonylee/future-slide": {
+      "stars": 143,
+      "forks": 27,
+      "open_issues": 0,
+      "license": "Apache-2.0",
+      "created_at": "2026-04-23",
+      "pushed_at": "2026-06-02",
+      "archived": false,
+      "homepage": "https://future-slide.tonylee.im",
       "default_branch": "main"
     },
     "code-on-sunday/slide-deck-generator": {
@@ -1175,6 +1208,17 @@
       "license": "MIT",
       "created_at": "2026-03-21",
       "pushed_at": "2026-05-23",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "jxshow/Jingge-PPT-sense-deck-skill": {
+      "stars": 23,
+      "forks": 4,
+      "open_issues": 0,
+      "license": null,
+      "created_at": "2026-04-28",
+      "pushed_at": "2026-05-14",
       "archived": false,
       "homepage": null,
       "default_branch": "main"

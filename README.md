@@ -9,7 +9,7 @@
 [简体中文](README.md) · [English](README.en.md)
 
 <!-- BEGIN:COUNTS -->
-**收录 137 个 skill** · **合计 271,011 star** · HTML 路线 54 个 · PPTX 路线 49 个 · 双路线 13 个 · 数据刷新于 **2026-07-29**
+**收录 141 个 skill** · **合计 295,846 star** · HTML 路线 55 个 · PPTX 路线 49 个 · 双路线 13 个 · 数据刷新于 **2026-07-29**
 <!-- END:COUNTS -->
 
 </div>
@@ -164,30 +164,31 @@ python scripts/pick.py find editorial         # 搜风格 ID 和描述
 
 | 项目 | ⭐ | 路线 | License | 一句话 |
 |---|---:|---|---|---|
-| **[Slidev](https://github.com/slidevjs/slidev)**<br><sub>slidevjs</sub> | 47,881 | 框架 | MIT | 面向开发者的演示文稿框架，使用 Markdown 和 Vue 制作幻灯片。 |
+| **[Slidev](https://github.com/slidevjs/slidev)**<br><sub>slidevjs</sub> | 47,882 | 框架 | MIT | 面向开发者的演示文稿框架，使用 Markdown 和 Vue 制作幻灯片。 |
 | **[PPT Master](https://github.com/hugohe3/ppt-master)**<br><sub>hugohe3</sub> | 41,709 | PPTX | MIT | 把文档或主题变成真正原生可编辑的 PPTX。 |
-| **[Frontend Slides](https://github.com/zarazhangrui/frontend-slides)**<br><sub>Zara Zhang</sub> | 26,543 | HTML | MIT | 用 Coding Agent 的前端能力做好看的网页幻灯片。 |
-| **[Guizang PPT Skill](https://github.com/op7418/guizang-ppt-skill)**<br><sub>op7418 (歸藏)</sub> | 22,644 | HTML | ⚠️ AGPL-3.0 | 杂志编辑风与瑞士国际风 HTML 幻灯片，以「锁死约束」保证一致性。 |
-| **[Huashu Design](https://github.com/alchaincyf/huashu-design)**<br><sub>花生 (alchaincyf)</sub> | 22,178 | 双路线 | MIT | HTML 原生设计 skill —— 高保真原型、幻灯片、动效与设计评审，不止是 PPT。 |
+| **[Frontend Slides](https://github.com/zarazhangrui/frontend-slides)**<br><sub>Zara Zhang</sub> | 26,544 | HTML | MIT | 用 Coding Agent 的前端能力做好看的网页幻灯片。 |
+| **[Baoyu Skills](https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-slide-deck)**<br><sub>JimLiu (宝玉)</sub> | 24,301 | 套件 | MIT | 22 个技能的个人合集，其中 baoyu-slide-deck 把文章或大纲变成幻灯片。 |
+| **[Guizang PPT Skill](https://github.com/op7418/guizang-ppt-skill)**<br><sub>op7418 (歸藏)</sub> | 22,647 | HTML | ⚠️ AGPL-3.0 | 杂志编辑风与瑞士国际风 HTML 幻灯片，以「锁死约束」保证一致性。 |
+| **[Huashu Design](https://github.com/alchaincyf/huashu-design)**<br><sub>花生 (alchaincyf)</sub> | 22,179 | 双路线 | MIT | HTML 原生设计 skill —— 高保真原型、幻灯片、动效与设计评审，不止是 PPT。 |
 | **[Quarkdown](https://github.com/iamgio/quarkdown)**<br><sub>iamgio</sub> | 15,835 | 框架 | GPL-3.0 | 基于 Markdown 的框架，从单一源文件生成论文、演示文稿、网站和书籍。 |
 | **[Banana Slides](https://github.com/Anionex/banana-slides)**<br><sub>Anionex</sub> | 15,343 | PPTX | ⚠️ AGPL-3.0 | 原生 AI PPT 生成器，接受模板、文字提示或大纲，导出可编辑 PPTX 文件。 |
 | **[Visual Explainer](https://github.com/nicobailon/visual-explainer)**<br><sub>nicobailon</sub> | 9,350 | HTML | MIT | 为图表、diff 评审、方案审计、数据表和项目复盘生成 HTML 页面或幻灯片。 |
 | **[HTML Anything](https://github.com/nexu-io/html-anything)**<br><sub>nexu-io</sub> | 7,992 | 套件 | Apache-2.0 | 具有 75 个技能的智能 HTML 编辑器，涵盖幻灯片、海报和原型等 9 种输出类型。 |
 | **[HTML PPT Studio](https://github.com/lewislulu/html-ppt-skill)**<br><sub>lewislulu</sub> | 7,462 | HTML | MIT | 24 主题 × 31 布局 × 20+ 动效的专业 HTML 演示。 |
 | **[open-slide](https://github.com/1weiho/open-slide)**<br><sub>1weiho</sub> | 6,038 | 框架 | MIT | 为 Agent 而生的幻灯片框架 —— React 组件渲染到固定 1920×1080 画布。 |
-| **[Anthropic PPTX (official)](https://github.com/anthropics/skills/tree/main/skills/pptx)**<br><sub>Anthropic</sub> | 164,900* | PPTX | See repo | 官方基线方案 —— 创建、读取、编辑与合并 PowerPoint 文件。 |
+| **[Anthropic PPTX (official)](https://github.com/anthropics/skills/tree/main/skills/pptx)**<br><sub>Anthropic</sub> | 164,904* | PPTX | See repo | 官方基线方案 —— 创建、读取、编辑与合并 PowerPoint 文件。 |
 
 ### Tier A — 生产可用（100–5k star）
 
 | 项目 | ⭐ | 路线 | License | 一句话 |
 |---|---:|---|---|---|
-| **[Dashi PPT Skill](https://github.com/chuspeeism/dashi-ppt-skill)**<br><sub>chuspeeism</sub> | 4,375 | 双路线 | ⚠️ AGPL-3.0 | 从多种视觉主题生成可在浏览器编辑的演示文稿，支持导出为 HTML、PDF 和 PPTX。 |
-| **[Codex PPT Skill](https://github.com/ningzimu/codex-ppt-skill)**<br><sub>ningzimu</sub> | 4,278 | 图片 | MIT | 使用 GPT-Image-2 在 Codex 及兼容智能体中生成基于图像的 PowerPoint 幻灯片。 |
+| **[Dashi PPT Skill](https://github.com/chuspeeism/dashi-ppt-skill)**<br><sub>chuspeeism</sub> | 4,376 | 双路线 | ⚠️ AGPL-3.0 | 从多种视觉主题生成可在浏览器编辑的演示文稿，支持导出为 HTML、PDF 和 PPTX。 |
+| **[Codex PPT Skill](https://github.com/ningzimu/codex-ppt-skill)**<br><sub>ningzimu</sub> | 4,279 | 图片 | MIT | 使用 GPT-Image-2 在 Codex 及兼容智能体中生成基于图像的 PowerPoint 幻灯片。 |
 | **[Beautiful HTML Templates](https://github.com/zarazhangrui/beautiful-html-templates)**<br><sub>Zara Zhang</sub> | 3,936 | 模板库 | MIT | 34 套 HTML 幻灯片模板，配 index.json 元数据供任意 Agent 检索选用。 |
 | **[NanoBanana PPT Skills](https://github.com/op7418/NanoBanana-PPT-Skills)**<br><sub>op7418</sub> | 3,165 | 图片 | Unspecified | AI 技能，自动生成高质量 PPT 幻灯片图片和视频，支持智能转场与交互式播放。 |
 | **[Baoyu Design](https://github.com/JimLiu/baoyu-design)**<br><sub>JimLiu</sub> | 2,875 | HTML | MIT | 在本地运行 Claude 设计系统提示，生成 UI 原型、幻灯片和线框图，输出为独立 HTML 文件。 |
-| **[Gorden PPT Skill](https://github.com/GordenSun/GordenPPTSkill)**<br><sub>GordenSun</sub> | 2,816 | PPTX | NOASSERTION | 通过 JSON 文件对 17 个中文模板进行纯文字编辑，生成保留布局的 PPTX 文件。 |
-| **[Codex Claude Academic Skills](https://github.com/zLanqing/codex-claude-academic-skills)**<br><sub>zLanqing</sub> | 2,341 | 套件 | MIT | 面向科研人员的三技能套件，涵盖论文阅读、PPT/Word 生成、写作辅助及科学图表绘制。 |
+| **[Gorden PPT Skill](https://github.com/GordenSun/GordenPPTSkill)**<br><sub>GordenSun</sub> | 2,817 | PPTX | NOASSERTION | 通过 JSON 文件对 17 个中文模板进行纯文字编辑，生成保留布局的 PPTX 文件。 |
+| **[Codex Claude Academic Skills](https://github.com/zLanqing/codex-claude-academic-skills)**<br><sub>zLanqing</sub> | 2,342 | 套件 | MIT | 面向科研人员的三技能套件，涵盖论文阅读、PPT/Word 生成、写作辅助及科学图表绘制。 |
 | **[Oh My PPT](https://github.com/arcsin1/oh-my-ppt)**<br><sub>arcsin1</sub> | 1,808 | HTML | Apache-2.0 | 输入文字描述，在本地生成简洁美观的 HTML 幻灯片，无需联网。 |
 | **[Image to Editable PPT Skill](https://github.com/ningzimu/image-to-editable-ppt-skill)**<br><sub>ningzimu</sub> | 1,662 | PPTX | MIT | 将幻灯片图像、PDF 及基于图像的 PPTX 文件转换为可编辑的 PowerPoint 演示文稿。 |
 | **[Gorden Super PPT Skills](https://github.com/GordenSun/GordenSuperPPTSkills)**<br><sub>GordenSun</sub> | 1,654 | PPTX | Unspecified | 使用 GPT 生成高质量 PPT 图像，再将其转换为完全可编辑的 PPTX 文件。 |
@@ -204,6 +205,7 @@ python scripts/pick.py find editorial         # 搜风格 ID 和描述
 | **[Power Design](https://github.com/ItsssssJack/power-design)**<br><sub>ItsssssJack</sub> | 572 | HTML | NOASSERTION | 结合品牌基因与 20 条设计原则的 Claude 技能，生成看起来非 AI 制作的幻灯片。 |
 | **[Frontend Slides Editable](https://github.com/archlizheng/frontend-slides-editable)**<br><sub>archlizheng</sub> | 446 | 双路线 | MIT | 可编辑 HTML 幻灯片：拖拽缩放、页序调整、本地保存、PPTX 互转。 |
 | **[Reveal.js Skill](https://github.com/ryanbbrown/revealjs-skill)**<br><sub>ryanbbrown</sub> | 379 | HTML | MIT | 用于构建 reveal.js HTML 演示文稿的编码智能体技能。 |
+| **[AI Skills (Cross-Platform)](https://github.com/sanjay3290/ai-skills/tree/main/skills/google-slides)**<br><sub>sanjay3290</sub> | 358 | 套件 | Apache-2.0 | 面向 Claude Code、Cursor 与 Codex 的 24 个跨平台技能，含 Google Slides。 |
 | **[Visual Style PPT Skill](https://github.com/irenerachel/visual-style-ppt-skill)**<br><sub>irenerachel</sub> | 357 | PPTX | Unspecified | 运行视觉风格 PPT 生成工作流的技能。 |
 | **[Beamer Skill](https://github.com/Noi1r/beamer-skill)**<br><sub>Noi1r</sub> | 319 | HTML | MIT | 管理学术 Beamer LaTeX 幻灯片的完整生命周期——创建、编译、审阅、质量评分与润色。 |
 | **[RW Consulting PPT](https://github.com/Pikapika260214/rw-consulting-ppt)**<br><sub>Pikapika260214</sub> | 317 | PPTX | MIT | 用于生成可编辑咨询风格 PowerPoint 演示文稿的 Codex 技能。 |
@@ -226,6 +228,7 @@ python scripts/pick.py find editorial         # 搜风格 ID 和描述
 | **[Claude Design Skill](https://github.com/jiji262/claude-design-skill)**<br><sub>jiji262</sub> | 161 | HTML | MIT | 在本地使用 Claude.ai 内部设计提示，生成 HTML 幻灯片、落地页、原型和海报。 |
 | **[Servasyy Skills](https://github.com/huangserva/servasyy_skills)**<br><sub>huangserva</sub> | 151 | 套件 | Unspecified | 一套覆盖写作、配图、PPT、播客、视频和漫画生成的AI技能集合。 |
 | **[Ultimate PPT Master Skill](https://github.com/kdnsna/ultimate-ppt-master-skill)**<br><sub>kdnsna</sub> | 146 | 双路线 | MIT | 通过明确受众、场景和风格后，将一句话需求转化为可编辑的PPTX或网页幻灯片。 |
+| **[Future Slide](https://github.com/bytonylee/future-slide)**<br><sub>bytonylee</sub> | 143 | 套件 | Apache-2.0 | 十个幻灯片技能，按规划 / 提示 / 渲染拆分，同时覆盖 HTML 与 GPT 生图两条路线。 |
 | **[Slide Deck Generator](https://github.com/code-on-sunday/slide-deck-generator)**<br><sub>code-on-sunday</sub> | 134 | HTML | MIT | 通过编程智能体提示，使用React、Vite和Framer Motion创建基于浏览器的幻灯片。 |
 | **[PPT Agent Skill](https://github.com/Akxan/ppt-agent-skill)**<br><sub>Akxan</sub> | 116 | HTML | MIT | 26 种风格、18 种图表，对标 Linear / Anthropic / Stripe / Apple / NYT。 |
 | **[HTML PPT Designer](https://github.com/andyhuo520/html-ppt-designer)**<br><sub>andyhuo520</sub> | 115 | HTML | Unspecified | 将任意内容转化为精致的HTML演示文稿。 |
@@ -279,6 +282,7 @@ python scripts/pick.py find editorial         # 搜风格 ID 和描述
 | **[PPT Design DNA](https://github.com/dakjdakd/PPT-Design-DNA)**<br><sub>dakjdakd</sub> | 26 | HTML | Apache-2.0 | 从参考图片中提取视觉风格并保存为设计档案，再将其应用于HTML演示文稿。 |
 | **[PPT Creator Skills](https://github.com/Yu-0312/ppt-creater-skills)**<br><sub>Yu-0312</sub> | 25 | PPTX | NOASSERTION | 用于Claude Code的PowerPoint演示文稿创建技能。 |
 | **[Beamer Skill](https://github.com/JaxonJP/beamer-skill)**<br><sub>JaxonJP</sub> | 23 | HTML | MIT | 面向学术Beamer LaTeX演示文稿的全流程技能：编译、审阅、质检和TikZ审计。 |
+| **[Jingge Sense Deck](https://github.com/jxshow/Jingge-PPT-sense-deck-skill)**<br><sub>jxshow</sub> | 23 | HTML | Unspecified | 注重整套幻灯片视觉调性一致的 HTML deck 技能。 |
 | **[Presentation Skill](https://github.com/OrangeViolin/presentation-skill)**<br><sub>OrangeViolin</sub> | 22 | HTML | Unspecified | 输入主题，从62种品牌设计风格中生成可播放的HTML幻灯片。 |
 | **[Econ Empirical Paper PPT Skill](https://github.com/1793065778/econ-empirical-paper-ppt-skill)**<br><sub>1793065778</sub> | 22 | PPTX | Unspecified | 将实证经济学论文转换为适合PowerPoint使用的结构化演示文稿蓝图。 |
 | **[HTML to PPTX](https://github.com/Emily27-alt/html-to-pptx)**<br><sub>Emily27-alt</sub> | 20 | PPTX | MIT | 将HTML幻灯片转换为使用原生形状（而非截图）的可编辑.pptx文件。 |
@@ -522,7 +526,7 @@ git clone https://github.com/hugohe3/ppt-master && pip install -r requirements.t
 
 <a id="gallery-frontend-slides"></a>
 
-#### [Frontend Slides](https://github.com/zarazhangrui/frontend-slides) · 26,543 ⭐ · HTML
+#### [Frontend Slides](https://github.com/zarazhangrui/frontend-slides) · 26,544 ⭐ · HTML
 
 <sub>用 Coding Agent 的前端能力做好看的网页幻灯片。</sub>
 
@@ -633,7 +637,7 @@ git clone https://github.com/hugohe3/ppt-master && pip install -r requirements.t
 
 <a id="gallery-guizang-ppt-skill"></a>
 
-#### [Guizang PPT Skill](https://github.com/op7418/guizang-ppt-skill) · 22,644 ⭐ · HTML
+#### [Guizang PPT Skill](https://github.com/op7418/guizang-ppt-skill) · 22,647 ⭐ · HTML
 
 <sub>杂志编辑风与瑞士国际风 HTML 幻灯片，以「锁死约束」保证一致性。</sub>
 
@@ -699,7 +703,7 @@ npx skills add https://github.com/op7418/guizang-ppt-skill --skill guizang-ppt-s
 
 <a id="gallery-huashu-design"></a>
 
-#### [Huashu Design](https://github.com/alchaincyf/huashu-design) · 22,178 ⭐ · 双路线
+#### [Huashu Design](https://github.com/alchaincyf/huashu-design) · 22,179 ⭐ · 双路线
 
 <sub>HTML 原生设计 skill —— 高保真原型、幻灯片、动效与设计评审，不止是 PPT。</sub>
 
@@ -1799,7 +1803,7 @@ git clone https://github.com/tristan-mcinnis/pptx-from-layouts-skill
 
 <sub><b>Thumbnail</b> · <a href="https://github.com/tristan-mcinnis/pptx-from-layouts-skill/blob/53b0e750694d807e3510c2017744197c3c5089b0/examples/q1-strategy/thumbnail.jpg"><code>examples/q1-strategy/thumbnail.jpg</code></a></sub>
 
-<sub>以下项目的仓库里没有可用图片：Anthropic PPTX (official)、Slidev、Quarkdown、Banana Slides、Visual Explainer、HTML Anything、Dashi PPT Skill、Codex PPT Skill、NanoBanana PPT Skills、Baoyu Design、Gorden PPT Skill、Codex Claude Academic Skills、Oh My PPT、Image to Editable PPT Skill、Gorden Super PPT Skills、CyberPPT、Ian Handdrawn PPT、PPT Image First、GPT Image2 PPT Skills、PPT Agent Skills、Humanize PPT、Claude Office Skills、Academic PPTX、Claude Skills、Power Design、Reveal.js Skill、Visual Style PPT Skill、Beamer Skill、RW Consulting PPT、Paper2Anything、DOM to PPTX、Marp Slides、Beamer Academic、Planners PPT Hell、Thesis Defense PPTX Skill、Apple Bento Grid、Codex PPT Skill、Hands on Deck、Skywork Skills、PPT Image2 Editable Rebuild、Slide Image to Editable PPTX、Magic Slide、Presentation Skills、Claude Design Skill、Servasyy Skills、Ultimate PPT Master Skill、Slide Deck Generator、HTML PPT Designer、Presentation Skills、PowerPoint Skill、Make Slide、PPT Report Skills、AI Paper to Slide Skill、Literature Report PPT Builder、Image to PPTX Skill、Visual Cognition Slides、CN Academic Spark、Knowledge Cat PPT Skill、SJTU PPT Template Skill、Deck Factory、Space Multi Design PPT、Lieflat HTML Design、Jiarui SVG Skills、Awesome PPT Skills、Editable Image to PPT Skill、Presentation、Huawei Style PPT Skill、HTML to Editable PPTX、Claude Code Codex Slide、Baoyu Xuanyi Skills、Beautiful Hackathon Slides、ImageGen PPTX Pipeline、Paper PPT Skill、Presentation Skill、Slidev Skills、PPT Skill、Codex Image to Editable PPT、BL Captain PPT Skill、HTML to PPT PDF、Slides AI Plugin、Scholar PPT CN、Narrative Engine、Image PPT King、PPT Design DNA、PPT Creator Skills、Beamer Skill、Presentation Skill、Econ Empirical Paper PPT Skill、HTML to PPTX、Neon Slides、Claude HTML Slide Builder、30x McKinsey Research Deck、Keynote Slides Skill、PPT Agent、Interactive Slides、PPTX Template Skills、KAI Presentation、AI Draw Skill、Keynot、MBB Decks、CyberBin PPT Skill、Competition PPT Template Skill、Slide Wright、Four-Up PPT Generator、NanoBanana PPT Skills、NanoBanana PPT Skills、PPT Image Share Builder、HalfAI Gufa PPT、Slide Design Skill、Better PPT HTML Deck、Create HTML Deck、AWS HTML Slides、Prada Slides、Japanese Corporate PPTX Skill、Editable Leadership PPTX、SlideStage Pack、Deckset Claude Skill。</sub>
+<sub>以下项目的仓库里没有可用图片：Anthropic PPTX (official)、Slidev、Baoyu Skills、Quarkdown、Banana Slides、Visual Explainer、HTML Anything、Dashi PPT Skill、Codex PPT Skill、NanoBanana PPT Skills、Baoyu Design、Gorden PPT Skill、Codex Claude Academic Skills、Oh My PPT、Image to Editable PPT Skill、Gorden Super PPT Skills、CyberPPT、Ian Handdrawn PPT、PPT Image First、GPT Image2 PPT Skills、PPT Agent Skills、Humanize PPT、Claude Office Skills、Academic PPTX、Claude Skills、Power Design、Reveal.js Skill、AI Skills (Cross-Platform)、Visual Style PPT Skill、Beamer Skill、RW Consulting PPT、Paper2Anything、DOM to PPTX、Marp Slides、Beamer Academic、Planners PPT Hell、Thesis Defense PPTX Skill、Apple Bento Grid、Codex PPT Skill、Hands on Deck、Skywork Skills、PPT Image2 Editable Rebuild、Slide Image to Editable PPTX、Magic Slide、Presentation Skills、Claude Design Skill、Servasyy Skills、Ultimate PPT Master Skill、Future Slide、Slide Deck Generator、HTML PPT Designer、Presentation Skills、PowerPoint Skill、Make Slide、PPT Report Skills、AI Paper to Slide Skill、Literature Report PPT Builder、Image to PPTX Skill、Visual Cognition Slides、CN Academic Spark、Knowledge Cat PPT Skill、SJTU PPT Template Skill、Deck Factory、Space Multi Design PPT、Lieflat HTML Design、Jiarui SVG Skills、Awesome PPT Skills、Editable Image to PPT Skill、Presentation、Huawei Style PPT Skill、HTML to Editable PPTX、Claude Code Codex Slide、Baoyu Xuanyi Skills、Beautiful Hackathon Slides、ImageGen PPTX Pipeline、Paper PPT Skill、Presentation Skill、Slidev Skills、PPT Skill、Codex Image to Editable PPT、BL Captain PPT Skill、HTML to PPT PDF、Slides AI Plugin、Scholar PPT CN、Narrative Engine、Image PPT King、PPT Design DNA、PPT Creator Skills、Beamer Skill、Jingge Sense Deck、Presentation Skill、Econ Empirical Paper PPT Skill、HTML to PPTX、Neon Slides、Claude HTML Slide Builder、30x McKinsey Research Deck、Keynote Slides Skill、PPT Agent、Interactive Slides、PPTX Template Skills、KAI Presentation、AI Draw Skill、Keynot、MBB Decks、CyberBin PPT Skill、Competition PPT Template Skill、Slide Wright、Four-Up PPT Generator、NanoBanana PPT Skills、NanoBanana PPT Skills、PPT Image Share Builder、HalfAI Gufa PPT、Slide Design Skill、Better PPT HTML Deck、Create HTML Deck、AWS HTML Slides、Prada Slides、Japanese Corporate PPTX Skill、Editable Leadership PPTX、SlideStage Pack、Deckset Claude Skill。</sub>
 
 <sub>**共 278 张，全部来自各项目自己的仓库**，按原尺寸完整展示、不做缩略图 —— 幻灯片信息密度高，缩到 300px 根本看不清字体和层次。每张都读自锁定的 commit，出处写在它上方的说明里，并且直接由原仓库提供、没有复制到本仓库。**没有任何一张是本仓库跑出来的**，所以它反映的是每个团队愿意拿出来展示的样子，不是同题横评。用 `python scripts/fetch_samples.py` 重新生成。</sub>
 <!-- END:GALLERY -->
