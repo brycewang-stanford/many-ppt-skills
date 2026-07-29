@@ -37,15 +37,28 @@ with the current per-route counts.
 
 The data files total roughly 200KB. Reading them into context to answer one
 question is the mistake this repository has a whole principle about
-(`principles/05-progressive-disclosure.md`). Use the CLI:
+(`principles/05-progressive-disclosure.md`). Use the CLI.
+
+**Run it by absolute path.** Your working directory is the user's project, not
+this skill — a bare `scripts/pick.py` resolves against their repo and fails with
+"can't open file". Build the path from this skill's own directory, which the
+loader gives you when this file opens (Claude Code prints it as *Base directory
+for this skill*; a plugin install exposes it as `${CLAUDE_PLUGIN_ROOT}`). Set it
+once:
 
 ```bash
-python scripts/pick.py route                  # the decision above, plus counts
-python scripts/pick.py list --route pptx      # skills on one route, most-starred first
-python scripts/pick.py show ppt-master        # install command, style ids, capabilities
-python scripts/pick.py styles frontend-slides # every style id with its sample image URL
-python scripts/pick.py find editorial         # search style ids and descriptions
+SKILL_DIR=~/.claude/skills/many-ppt-skills   # or ${CLAUDE_PLUGIN_ROOT}, or the base directory printed above
+
+python "$SKILL_DIR/scripts/pick.py" route                  # the decision above, plus counts
+python "$SKILL_DIR/scripts/pick.py" list --route pptx      # skills on one route, most-starred first
+python "$SKILL_DIR/scripts/pick.py" show ppt-master        # install command, style ids, capabilities
+python "$SKILL_DIR/scripts/pick.py" styles frontend-slides # every style id with its sample image URL
+python "$SKILL_DIR/scripts/pick.py" find editorial         # search style ids and descriptions
 ```
+
+The script finds its own data files relative to itself, so only the path to the
+script matters. Never `cd` into the skill directory — that would move the user's
+shell out of their project.
 
 `show` is the one to reach for once a candidate exists: it prints the install
 command, what that install method actually does, the style ids the project uses,

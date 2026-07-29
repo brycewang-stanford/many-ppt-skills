@@ -10,7 +10,7 @@
     {
       "name": "many-ppt-skills",
       "description": "Routes to the right AI slide-deck skill and names a style id you can ask for, backed by sample imagery read from the projects' own repositories.",
-      "source": "./plugins/many-ppt-skills",
+      "source": "./",
       "category": "productivity",
       "tags": [
         "presentations",

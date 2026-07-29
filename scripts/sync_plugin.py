@@ -4,7 +4,7 @@
 The repository is installable two ways, and they want the file in two places:
 
   * `git clone ... ~/.claude/skills/many-ppt-skills` reads `SKILL.md` at the root
-  * `/plugin marketplace add` reads `plugins/<name>/skills/<name>/SKILL.md`
+  * `/plugin marketplace add` reads `skills/<name>/SKILL.md`
 
 The root file is canonical and hand-edited; the packaged one is a copy. Two
 hand-maintained copies of the same document is precisely the failure this
@@ -23,7 +23,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CANONICAL = ROOT / "SKILL.md"
-PACKAGED = ROOT / "plugins" / "many-ppt-skills" / "skills" / "many-ppt-skills" / "SKILL.md"
+PACKAGED = ROOT / "skills" / "many-ppt-skills" / "SKILL.md"
 
 BANNER = (
     "<!-- Generated from the SKILL.md at the repository root by\n"
