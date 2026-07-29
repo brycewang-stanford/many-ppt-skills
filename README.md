@@ -181,16 +181,52 @@ Skill。现在有 30+ 个认真做的项目，其中四个 star 数都超过 2 �
 **全部按原尺寸铺开，不做缩略图。** 幻灯片是高密度的东西，缩成一排小图只能看出配色，
 看不出字体、层次和留白 —— 而要挑的恰恰是后面这些。页面因此很长，用下面的目录直接跳。
 
-**每张图都能顺着复现。** 看中一张，你手上就有三样东西：它属于哪个 skill、这个设计叫什么
-（`soft-editorial` 这种，是**项目自己用的字符串**）、以及原始文件的链接。每个 skill 上面
-还有它的安装命令。装上，把风格名点给 agent，就能开始 —— 这也是这个仓库真正想做成的事。
-
 风格名和说明全部**读自项目自己的文件名与图注**，不是本仓库起的。每张图下面都标着出处路径
 并链回原文件，所以标错了也是看得出来的。
 
 请按它的本来面目看：**每一张都是各团队自己挑的那一帧**。一堆宣传图不是同题横评 ——
 这些 deck 甚至不是同一份内容，谁也没跑过谁的题。它真正的用处在别处：三十秒之内砍掉
 一半候选，而这恰恰是大多数人来这一页要做的事。
+
+### 看中一张图，怎么做出来
+
+**一、记下图下面那两样东西。** 每张图的说明行长这样：
+
+> **Soft Editorial · 4** · `soft-editorial` · [`screenshots/soft-editorial-4.png`](https://github.com/zarazhangrui/beautiful-html-templates)
+
+粗体是人话名字，`等宽` 的那个是**风格 ID** —— 这是你等下要点名的字符串。最后是出处文件，
+点进去能看到原件。
+
+**二、装它所属的 skill。** 命令就在这一节每个 skill 的标题下面，直接复制。
+但**五种安装方式的含义不一样**，别装错地方：
+
+<!-- BEGIN:INSTALLMETHODS -->
+| 安装方式 | 实际发生了什么 | 数量 |
+|---|---|---:|
+| `clone` | 克隆进 `~/.claude/skills/`，也就是 Claude Code 找个人 skill 的地方。重开一个会话就能用。 | 20 |
+| `plugin` | 两条命令是在 **Claude Code 里面**敲的，不是终端。先加 marketplace，再从里面装。 | 2 |
+| `skills-cli` | 跨 agent 的安装器，不止 Claude Code 能用。 | 2 |
+| `python` | 需要本机有 Python。克隆下来、装依赖，然后让 agent 在这个目录里干活。 | 1 |
+| `npx` | 它是**建项目**，不是装 skill —— 跑完你得到一个可以直接开工的目录。 | 1 |
+<!-- END:INSTALLMETHODS -->
+
+**三、跟 agent 说人话，并点名风格 ID。** 风格名不是命令行参数，是给 agent 的指令内容：
+
+```text
+用 soft-editorial 这个模板，把 docs/roadmap.md 做成一份 12 页的 deck，
+面向投资人，讲的时候我会展开，所以每页字少一点。
+```
+
+**四、知道你在跳过什么。** 有些 skill 默认会先生成几个预览让你挑 —— 比如 frontend-slides
+的 SKILL.md 写着默认生成 3 个预览（1 个稳妥预设 + 1 个 bold 模板 + 1 个 wildcard）。
+**你直接点名模板 ID，就是跳过这一步**，它会去读那个模板的 `design.md` 然后照着做。
+想让它给你几个选项，就别点名，直接说「帮我做一份关于 X 的 deck」。
+
+> **两点实话。** 安装命令来自人工维护的 [`data/skills.json`](data/skills.json)，风格 ID 来自
+> 项目自己的文件 —— 我核对过 `soft-editorial` 等确实是 frontend-slides 自带
+> `bold-template-pack/selection-index.json` 里的 slug（共 34 个）。但**本仓库没有实跑过
+> 这 26 个 skill 的调用**，各项目的具体触发词和参数以它自己的 SKILL.md 为准。
+> 第四步那句关于预览的描述，是从 frontend-slides 的 SKILL.md 里读到的，只对它成立。
 
 <!-- BEGIN:GALLERY -->
 **跳到：**[PPT Master](#gallery-ppt-master) <sub>24</sub> · [Frontend Slides](#gallery-frontend-slides) <sub>24</sub> · [Guizang PPT Skill](#gallery-guizang-ppt-skill) <sub>13</sub> · [Huashu Design](#gallery-huashu-design) <sub>24</sub> · [HTML PPT Studio](#gallery-html-ppt-skill) <sub>24</sub> · [open-slide](#gallery-open-slide) <sub>16</sub> · [Beautiful HTML Templates](#gallery-beautiful-html-templates) <sub>24</sub> · [PPT Agent Workflow San](#gallery-ppt-agent-workflow-san) <sub>10</sub> · [Frontend Slides Editable](#gallery-frontend-slides-editable) <sub>24</sub> · [PPT SVG Generator](#gallery-ppt-svg-generator) <sub>2</sub> · [Mck PPT Design System](#gallery-mck-ppt-design-skill) <sub>6</sub> · [PPT Agent Skill](#gallery-ppt-agent-skill) <sub>24</sub> · [HTML Slides](#gallery-html-slides-bluedusk) <sub>4</sub> · [KingDee PPT Skill](#gallery-kingdee-ppt-skill) <sub>1</sub> · [Slide Creator](#gallery-slide-creator) <sub>23</sub> · [next-slide](#gallery-next-slide) <sub>24</sub> · [Slide Writer](#gallery-slide-writer) <sub>5</sub> · [Skills Slides](#gallery-skills-slides) <sub>4</sub> · [PowerPoint Fancy Design](#gallery-powerpoint-fancy-design) <sub>24</sub> · [PPTX from Layouts](#gallery-pptx-from-layouts) <sub>1</sub>

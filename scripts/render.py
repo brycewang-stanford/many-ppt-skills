@@ -339,6 +339,59 @@ SAMPLES = ROOT / "data" / "samples.json"
 GALLERY_MAX = 24
 
 
+# What each install method in data/skills.json actually does. Five of them, and
+# they are not interchangeable: two put a skill where Claude Code will find it,
+# one is a plugin install, one needs Python on the machine, and one scaffolds a
+# project instead of installing anything. Telling a reader to "install it" without
+# saying which of those they are in for is where reproduction actually breaks.
+INSTALL_METHOD = {
+    "clone": (
+        "Clones into `~/.claude/skills/`, where Claude Code looks for personal "
+        "skills. Restart the session and it is available.",
+        "克隆进 `~/.claude/skills/`，也就是 Claude Code 找个人 skill 的地方。"
+        "重开一个会话就能用。",
+    ),
+    "plugin": (
+        "Two commands typed **inside Claude Code**, not in a terminal. Adds the "
+        "marketplace, then installs from it.",
+        "两条命令是在 **Claude Code 里面**敲的，不是终端。先加 marketplace，再从里面装。",
+    ),
+    "skills-cli": (
+        "Agent-agnostic installer. Works outside Claude Code too.",
+        "跨 agent 的安装器，不止 Claude Code 能用。",
+    ),
+    "python": (
+        "Needs Python on your machine. Clone it, install the dependencies, then "
+        "point your agent at the cloned directory.",
+        "需要本机有 Python。克隆下来、装依赖，然后让 agent 在这个目录里干活。",
+    ),
+    "npx": (
+        "Scaffolds a project rather than installing a skill — you get a working "
+        "directory to build in.",
+        "它是**建项目**，不是装 skill —— 跑完你得到一个可以直接开工的目录。",
+    ),
+}
+
+
+def render_install_methods(data: dict, stats: dict, lang: str) -> str:
+    """The install-method table, counted from the registry so it cannot drift."""
+    counts: dict[str, int] = {}
+    for s in data["skills"]:
+        m = (s.get("install") or {}).get("method")
+        if m:
+            counts[m] = counts.get(m, 0) + 1
+
+    i = 0 if lang == "en" else 1
+    head = ("| Install method | What it actually does | Skills |\n|---|---|---:|"
+            if lang == "en"
+            else "| 安装方式 | 实际发生了什么 | 数量 |\n|---|---|---:|")
+    rows = [head]
+    for method, n in sorted(counts.items(), key=lambda kv: -kv[1]):
+        note = INSTALL_METHOD.get(method, ("", ""))[i]
+        rows.append(f"| `{method}` | {note} | {n} |")
+    return "\n".join(rows)
+
+
 ROLE_LABEL = {
     "cover": ("cover", "封面"), "title": ("title", "标题页"),
     "toc": ("contents", "目录页"), "contents": ("contents", "目录页"),
@@ -528,6 +581,7 @@ BLOCKS = {
     "SCORECARD": render_scorecard,
     "CAPABILITIES": render_capabilities,
     "GALLERY": render_gallery,
+    "INSTALLMETHODS": render_install_methods,
 }
 
 

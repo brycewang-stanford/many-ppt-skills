@@ -191,12 +191,6 @@ into a contact sheet it tells you the palette and nothing else — not the type,
 hierarchy, not the whitespace, which are the things you are choosing between. That makes
 for a long page, so there is a jump index below.
 
-**Every image is meant to be reproducible.** When one catches your eye you have three
-things: which skill made it, what that design is called (`soft-editorial` and the like —
-**the project's own string**), and a link to the original file. Each skill carries its
-install command above its images. Install it, name the style, and you are started. That
-is the point of this page.
-
 The names are **read from each project's own filenames and captions**, never invented
 here. Every image cites the file it came from and links back to it, so a wrong label is
 one click from being caught.
@@ -205,6 +199,50 @@ Read them for what they are: **each frame is the one that team chose**. A wall o
 marketing shots is not a like-for-like comparison — no two of these decks are even on
 the same content. The use is elsewhere. It eliminates half the registry in thirty
 seconds, which is the decision most people came here to make.
+
+### You like one of these. Now what?
+
+**1. Take the two things under the image.** Every caption reads like this:
+
+> **Soft Editorial · 4** · `soft-editorial` · [`screenshots/soft-editorial-4.png`](https://github.com/zarazhangrui/beautiful-html-templates)
+
+Bold is the readable name. The `monospace` one is the **style ID** — that is the string
+you are going to name. Last is the source file, which you can open and check.
+
+**2. Install the skill it belongs to.** The command sits under that skill's heading in
+this section, ready to copy. But **the five install methods do different things**, and
+installing into the wrong place is the usual reason nothing happens:
+
+<!-- BEGIN:INSTALLMETHODS -->
+| Install method | What it actually does | Skills |
+|---|---|---:|
+| `clone` | Clones into `~/.claude/skills/`, where Claude Code looks for personal skills. Restart the session and it is available. | 20 |
+| `plugin` | Two commands typed **inside Claude Code**, not in a terminal. Adds the marketplace, then installs from it. | 2 |
+| `skills-cli` | Agent-agnostic installer. Works outside Claude Code too. | 2 |
+| `python` | Needs Python on your machine. Clone it, install the dependencies, then point your agent at the cloned directory. | 1 |
+| `npx` | Scaffolds a project rather than installing a skill — you get a working directory to build in. | 1 |
+<!-- END:INSTALLMETHODS -->
+
+**3. Talk to your agent in plain language, and name the style ID.** It is not a
+command-line flag; it is part of what you ask for:
+
+```text
+Use the soft-editorial template. Turn docs/roadmap.md into a 12-slide deck
+for investors. I'll be speaking over it, so keep the text light.
+```
+
+**4. Know what naming it skips.** Some skills show you options first — frontend-slides'
+SKILL.md says it generates 3 previews by default (one safe preset, one bold template,
+one wildcard). **Naming a template ID skips that**: it reads that template's `design.md`
+and builds from it. Want the options instead? Don't name one — just ask for a deck.
+
+> **Two honest notes.** Install commands come from the hand-maintained
+> [`data/skills.json`](data/skills.json); style IDs come from the projects' own files — I
+> checked that `soft-editorial` and its neighbours really are slugs in frontend-slides'
+> bundled `bold-template-pack/selection-index.json` (34 of them). But **this registry has
+> not run all 26 skills**, so each project's own SKILL.md is the authority on its trigger
+> phrases and arguments. Step 4's description of previews was read out of
+> frontend-slides' SKILL.md and holds for that skill only.
 
 <!-- BEGIN:GALLERY -->
 **Jump to:** [PPT Master](#gallery-ppt-master) <sub>24</sub> · [Frontend Slides](#gallery-frontend-slides) <sub>24</sub> · [Guizang PPT Skill](#gallery-guizang-ppt-skill) <sub>13</sub> · [Huashu Design](#gallery-huashu-design) <sub>24</sub> · [HTML PPT Studio](#gallery-html-ppt-skill) <sub>24</sub> · [open-slide](#gallery-open-slide) <sub>16</sub> · [Beautiful HTML Templates](#gallery-beautiful-html-templates) <sub>24</sub> · [PPT Agent Workflow San](#gallery-ppt-agent-workflow-san) <sub>10</sub> · [Frontend Slides Editable](#gallery-frontend-slides-editable) <sub>24</sub> · [PPT SVG Generator](#gallery-ppt-svg-generator) <sub>2</sub> · [Mck PPT Design System](#gallery-mck-ppt-design-skill) <sub>6</sub> · [PPT Agent Skill](#gallery-ppt-agent-skill) <sub>24</sub> · [HTML Slides](#gallery-html-slides-bluedusk) <sub>4</sub> · [KingDee PPT Skill](#gallery-kingdee-ppt-skill) <sub>1</sub> · [Slide Creator](#gallery-slide-creator) <sub>23</sub> · [next-slide](#gallery-next-slide) <sub>24</sub> · [Slide Writer](#gallery-slide-writer) <sub>5</sub> · [Skills Slides](#gallery-skills-slides) <sub>4</sub> · [PowerPoint Fancy Design](#gallery-powerpoint-fancy-design) <sub>24</sub> · [PPTX from Layouts](#gallery-pptx-from-layouts) <sub>1</sub>
