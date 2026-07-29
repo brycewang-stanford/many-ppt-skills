@@ -112,7 +112,8 @@ def slug(repo: str, taken: set[str]) -> str:
     return cand
 
 
-def write_taglines(rows: list[dict], model: str, batch: int = 20) -> dict[str, dict]:
+def write_taglines(rows: list[dict], model: str, batch: int = 20,
+                   cache: Path | None = None) -> dict[str, dict]:
     """Batches are kept small on purpose. At 40 repos a batch the model answered
     for most of them and silently dropped the rest — 31 of 111 entries went
     missing that way, with no error anywhere, because a short array is still a
@@ -140,6 +141,11 @@ def write_taglines(rows: list[dict], model: str, batch: int = 20) -> dict[str, d
             print(f"  batch {i // batch + 1} failed: {exc}", file=sys.stderr)
         finally:
             shutil.rmtree(work, ignore_errors=True)
+        # Checkpoint after every batch. Writing only at the end meant an
+        # interrupted run threw away every tagline it had already paid for, and
+        # the whole thing had to be regenerated from scratch.
+        if cache is not None:
+            cache.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n")
         print(f"  batch {i // batch + 1}: {len(out)} written so far",
               file=sys.stderr, flush=True)
     return out
@@ -152,6 +158,8 @@ def main() -> int:
     ap.add_argument("--model", default="sonnet")
     ap.add_argument("--min-stars", type=int, default=10)
     ap.add_argument("--batch", type=int, default=20)
+    ap.add_argument("--cache", type=Path,
+                    help="reuse taglines across interrupted runs")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
@@ -186,7 +194,12 @@ def main() -> int:
         return 0
 
     print("writing bilingual taglines ...")
-    taglines = write_taglines(rows, args.model, args.batch)
+    cache = args.cache
+    prior = json.loads(cache.read_text()) if cache and cache.exists() else {}
+    todo = [r for r in rows if r["repo"] not in prior]
+    if prior:
+        print(f"  reusing {len(prior)} cached tagline(s)")
+    taglines = {**prior, **write_taglines(todo, args.model, args.batch, cache)}
 
     added = 0
     for r in rows:
