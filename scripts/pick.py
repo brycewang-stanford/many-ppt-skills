@@ -11,7 +11,7 @@ about how to *invoke* another project is asserted: that belongs to each
 project's own SKILL.md and is the one thing this registry cannot verify.
 
     python scripts/pick.py route                 # the HTML vs PPTX decision
-    python scripts/pick.py list --route pptx     # skills on one route
+    python scripts/pick.py list --route pptx --ready   # installable, one route
     python scripts/pick.py show ppt-master       # one skill, in full
     python scripts/pick.py styles frontend-slides
     python scripts/pick.py find editorial        # search styles and blurbs
@@ -39,9 +39,13 @@ INSTALL_NOTE = {
     "npx": "scaffolds a project rather than installing a skill",
 }
 
+# Every route value that appears in data/skills.json needs an entry here: the
+# key set is also what `list --route` will accept, so a missing one silently
+# makes those skills unreachable from the CLI. validate_registry.py enforces it.
 ROUTE_NAME = {
     "html": "HTML-native", "pptx": "native PPTX", "hybrid": "both routes",
-    "framework": "framework", "templates": "template library", "list": "curated list",
+    "suite": "skill suite", "image": "image-first",
+    "framework": "framework", "templates": "template library",
 }
 
 
@@ -74,6 +78,16 @@ def by_id(skills: list[dict], sid: str) -> dict | None:
         if low in (s["repo"].lower(), s["name"].lower()):
             return s
     return None
+
+
+def installable(skill: dict) -> bool:
+    """True when this registry actually knows how to install the skill.
+
+    177 of the entries came from the automated discovery sweep and carry no
+    install command. They are worth listing, but recommending one as *the*
+    answer leaves the user with nothing to run.
+    """
+    return bool((skill.get("install") or {}).get("command"))
 
 
 def style_ids(entry: dict) -> list[str]:
@@ -118,6 +132,8 @@ def cmd_list(args, skills, stats, samples, caps) -> int:
     rows = sorted(skills, key=lambda s: -stars(s, stats))
     if args.route:
         rows = [s for s in rows if s["route"] == args.route]
+    if args.ready:
+        rows = [s for s in rows if (s.get("install") or {}).get("command")]
     if args.limit:
         rows = rows[: args.limit]
     if not rows:
@@ -127,14 +143,15 @@ def cmd_list(args, skills, stats, samples, caps) -> int:
     for s in rows:
         n = len((samples.get(s["id"]) or {}).get("samples", []))
         img = f"{n} samples" if n else "no samples"
-        mark = "" if "install" in s else " †"
+        mark = "" if installable(s) else " †"
         print(f"{s['id']:26s} {stars(s, stats):>7,}*  {ROUTE_NAME.get(s['route'], s['route']):<14} {img}{mark}")
         print(f"{'':26s} {s['tagline_en']}")
-    unread = sum(1 for s in rows if "install" not in s)
+    unread = sum(1 for s in rows if not installable(s))
     print(f"\n{len(rows)} skill(s). `pick.py show <id>` for install command and styles.")
     if unread:
         print(f"† {unread} of them came from automated discovery — listed, but not yet "
               "read by hand, so there is no install command for them.")
+        print("  Do not recommend a † entry as the answer; `list --ready` hides them.")
     return 0
 
 
@@ -249,6 +266,8 @@ def main() -> int:
     p = sub.add_parser("list", help="skills, most-starred first")
     p.add_argument("--route", choices=sorted(ROUTE_NAME))
     p.add_argument("--limit", type=int)
+    p.add_argument("--ready", action="store_true",
+                   help="only entries with a recorded install command")
 
     p = sub.add_parser("show", help="one skill: install command, styles, capabilities")
     p.add_argument("skill")

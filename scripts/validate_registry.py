@@ -116,6 +116,17 @@ def main() -> int:
             if key in e and not isinstance(e[key], list):
                 errors.append(f"{label}: `{key}` must be a list")
 
+    # `pick.py list --route` builds its choices from ROUTE_NAME, so a route in
+    # use here but missing there makes those skills unreachable from the CLI —
+    # which is how `suite` and `image` went unqueryable for 18 entries.
+    sys.path.insert(0, str(ROOT / "scripts"))
+    from pick import ROUTE_NAME  # noqa: E402
+
+    unlabelled = {e["route"] for e in data["skills"] if e.get("route")} - set(ROUTE_NAME)
+    for r in sorted(unlabelled):
+        errors.append(f"route `{r}` is used in skills.json but has no label in "
+                      "pick.py ROUTE_NAME — `pick.py list --route` will reject it")
+
     for w in warnings:
         print(f"  warning: {w}", file=sys.stderr)
     for err in errors:

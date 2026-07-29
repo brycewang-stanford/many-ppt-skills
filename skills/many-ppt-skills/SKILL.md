@@ -52,20 +52,36 @@ once:
 ```bash
 SKILL_DIR=~/.claude/skills/many-ppt-skills   # or ${CLAUDE_PLUGIN_ROOT}, or the base directory printed above
 
-python "$SKILL_DIR/scripts/pick.py" route                  # the decision above, plus counts
-python "$SKILL_DIR/scripts/pick.py" list --route pptx      # skills on one route, most-starred first
-python "$SKILL_DIR/scripts/pick.py" show ppt-master        # install command, style ids, capabilities
-python "$SKILL_DIR/scripts/pick.py" styles frontend-slides # every style id with its sample image URL
-python "$SKILL_DIR/scripts/pick.py" find editorial         # search style ids and descriptions
+python "$SKILL_DIR/scripts/pick.py" route                        # the decision above, plus counts
+python "$SKILL_DIR/scripts/pick.py" list --route pptx --ready    # one route, installable, most-starred first
+python "$SKILL_DIR/scripts/pick.py" show ppt-master              # install command, style ids, capabilities
+python "$SKILL_DIR/scripts/pick.py" styles frontend-slides       # every style id with its sample image URL
+python "$SKILL_DIR/scripts/pick.py" find editorial               # search style ids and descriptions
 ```
 
-The script finds its own data files relative to itself, so only the path to the
-script matters. Never `cd` into the skill directory — that would move the user's
-shell out of their project.
+`--route` takes `html`, `pptx`, `hybrid`, `suite`, `image`, `framework` or
+`templates`; `--limit N` trims the output. The script finds its own data files
+relative to itself, so only the path to the script matters. Never `cd` into the
+skill directory — that would move the user's shell out of their project.
 
 `show` is the one to reach for once a candidate exists: it prints the install
 command, what that install method actually does, the style ids the project uses,
 and the capabilities its own documentation claims.
+
+**Most entries cannot be installed from here.** The majority came from an
+automated discovery sweep: real repositories, read for tagline and licence, but
+nobody has read their `SKILL.md`, so this registry holds no install command for
+them. `list` marks them `†` and `show` says so in place of the command. Pass
+`--ready` to hide them — recommending a `†` entry leaves the user with nothing
+to run. Mention one only as a "there is also…" aside, pointing at its repo.
+
+## If the user already named a style id
+
+Start from `find <id>` instead of `route`. A style id is not unique — several
+projects ship a `soft-editorial`, and they are different decks. `find` prints
+every skill that uses the name; pick between them on the route question above,
+then confirm with `styles <skill>` so the user is looking at the image that
+actually belongs to the skill you are about to recommend.
 
 ## Reporting a recommendation
 
@@ -109,7 +125,8 @@ options, tell them not to name one.
   same as the feature being absent. `data/capabilities.json` carries the quote
   each claim rests on.
 - **Star counts measure attention, not quality.** They order the list; they do
-  not justify a recommendation on their own.
+  not justify a recommendation on their own. Where a row links into a
+  subdirectory of a monorepo, the stars belong to the parent repo.
 - **Check the licence before recommending for commercial work.** `show` flags
   copyleft. One skill in the registry is AGPL-3.0.
 
