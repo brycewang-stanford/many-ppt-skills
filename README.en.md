@@ -9,7 +9,7 @@ See one you like in the [gallery](#what-they-look-like)? **[Make your own in 60 
 [简体中文](README.md) · [English](README.en.md)
 
 <!-- BEGIN:COUNTS -->
-**26 skills tracked** · **143,031 combined stars** · 13 HTML-native · 7 native PPTX · 4 both · data refreshed **2026-07-28**
+**137 skills tracked** · **271,011 combined stars** · 54 HTML-native · 49 native PPTX · 13 both · data refreshed **2026-07-29**
 <!-- END:COUNTS -->
 
 </div>
@@ -178,41 +178,152 @@ essentially every scenario.
 
 | Skill | ⭐ | Route | License | What it is |
 |---|---:|---|---|---|
-| **[PPT Master](https://github.com/hugohe3/ppt-master)**<br><sub>hugohe3</sub> | 41,516 | PPTX | MIT | Documents or topics into genuinely native, editable PowerPoint decks. |
-| **[Frontend Slides](https://github.com/zarazhangrui/frontend-slides)**<br><sub>Zara Zhang</sub> | 26,461 | HTML | MIT | Beautiful slides on the web using a coding agent's frontend skills. |
-| **[Guizang PPT Skill](https://github.com/op7418/guizang-ppt-skill)**<br><sub>op7418 (歸藏)</sub> | 22,564 | HTML | ⚠️ AGPL-3.0 | Editorial-magazine and Swiss-International HTML decks, with design locked down by constraint. |
-| **[Huashu Design](https://github.com/alchaincyf/huashu-design)**<br><sub>花生 (alchaincyf)</sub> | 22,135 | Both | MIT | HTML-native design skill — prototypes, decks, motion and design critique, not just slides. |
-| **[Visual Explainer](https://github.com/nicobailon/visual-explainer)**<br><sub>nicobailon</sub> | 9,346 | HTML | MIT | Rich HTML pages or decks for diagrams, diff reviews, plan audits, data tables and project recaps. |
-| **[HTML PPT Studio](https://github.com/lewislulu/html-ppt-skill)**<br><sub>lewislulu</sub> | 7,437 | HTML | MIT | 24 themes, 31 layouts and 20+ animations for professional HTML presentations. |
-| **[open-slide](https://github.com/1weiho/open-slide)**<br><sub>1weiho</sub> | 6,027 | Framework | MIT | A slide framework built for agents — React components on a fixed 1920x1080 canvas. |
-| **[Anthropic PPTX (official)](https://github.com/anthropics/skills/tree/main/skills/pptx)**<br><sub>Anthropic</sub> | 164,681* | PPTX | See repo | The official baseline — create, read, edit and combine PowerPoint files. |
+| **[Slidev](https://github.com/slidevjs/slidev)**<br><sub>slidevjs</sub> | 47,881 | Framework | MIT | A developer-focused framework for building presentation slides with Markdown and Vue. |
+| **[PPT Master](https://github.com/hugohe3/ppt-master)**<br><sub>hugohe3</sub> | 41,709 | PPTX | MIT | Documents or topics into genuinely native, editable PowerPoint decks. |
+| **[Frontend Slides](https://github.com/zarazhangrui/frontend-slides)**<br><sub>Zara Zhang</sub> | 26,543 | HTML | MIT | Beautiful slides on the web using a coding agent's frontend skills. |
+| **[Guizang PPT Skill](https://github.com/op7418/guizang-ppt-skill)**<br><sub>op7418 (歸藏)</sub> | 22,644 | HTML | ⚠️ AGPL-3.0 | Editorial-magazine and Swiss-International HTML decks, with design locked down by constraint. |
+| **[Huashu Design](https://github.com/alchaincyf/huashu-design)**<br><sub>花生 (alchaincyf)</sub> | 22,178 | Both | MIT | HTML-native design skill — prototypes, decks, motion and design critique, not just slides. |
+| **[Quarkdown](https://github.com/iamgio/quarkdown)**<br><sub>iamgio</sub> | 15,835 | Framework | GPL-3.0 | A Markdown-based framework that produces papers, presentations, websites, and books from one source. |
+| **[Banana Slides](https://github.com/Anionex/banana-slides)**<br><sub>Anionex</sub> | 15,343 | PPTX | ⚠️ AGPL-3.0 | AI-native PPT generator that accepts templates, text prompts, or outlines and exports editable PPTX files. |
+| **[Visual Explainer](https://github.com/nicobailon/visual-explainer)**<br><sub>nicobailon</sub> | 9,350 | HTML | MIT | Rich HTML pages or decks for diagrams, diff reviews, plan audits, data tables and project recaps. |
+| **[HTML Anything](https://github.com/nexu-io/html-anything)**<br><sub>nexu-io</sub> | 7,992 | Suite | Apache-2.0 | An agentic HTML editor with 75 skills across 9 surface types including decks, posters, and prototypes. |
+| **[HTML PPT Studio](https://github.com/lewislulu/html-ppt-skill)**<br><sub>lewislulu</sub> | 7,462 | HTML | MIT | 24 themes, 31 layouts and 20+ animations for professional HTML presentations. |
+| **[open-slide](https://github.com/1weiho/open-slide)**<br><sub>1weiho</sub> | 6,038 | Framework | MIT | A slide framework built for agents — React components on a fixed 1920x1080 canvas. |
+| **[Anthropic PPTX (official)](https://github.com/anthropics/skills/tree/main/skills/pptx)**<br><sub>Anthropic</sub> | 164,900* | PPTX | See repo | The official baseline — create, read, edit and combine PowerPoint files. |
 
 ### Tier A — Production-ready (100–5k stars)
 
 | Skill | ⭐ | Route | License | What it is |
 |---|---:|---|---|---|
-| **[Beautiful HTML Templates](https://github.com/zarazhangrui/beautiful-html-templates)**<br><sub>Zara Zhang</sub> | 3,918 | Templates | MIT | 34 HTML slide templates with index.json metadata so any agent can pick the right one. |
+| **[Dashi PPT Skill](https://github.com/chuspeeism/dashi-ppt-skill)**<br><sub>chuspeeism</sub> | 4,375 | Both | ⚠️ AGPL-3.0 | Generates browser-editable presentations from multiple visual themes, exportable to HTML, PDF, and PPTX. |
+| **[Codex PPT Skill](https://github.com/ningzimu/codex-ppt-skill)**<br><sub>ningzimu</sub> | 4,278 | Image | MIT | Uses GPT-Image-2 to generate image-based PowerPoint slides within Codex and compatible agents. |
+| **[Beautiful HTML Templates](https://github.com/zarazhangrui/beautiful-html-templates)**<br><sub>Zara Zhang</sub> | 3,936 | Templates | MIT | 34 HTML slide templates with index.json metadata so any agent can pick the right one. |
+| **[NanoBanana PPT Skills](https://github.com/op7418/NanoBanana-PPT-Skills)**<br><sub>op7418</sub> | 3,165 | Image | Unspecified | AI skill that generates high-quality PPT slide images and videos with transitions and interactive playback. |
+| **[Baoyu Design](https://github.com/JimLiu/baoyu-design)**<br><sub>JimLiu</sub> | 2,875 | HTML | MIT | Runs Claude's Design system prompt locally to produce UI mockups, decks, and wireframes as self-contained HTML. |
+| **[Gorden PPT Skill](https://github.com/GordenSun/GordenPPTSkill)**<br><sub>GordenSun</sub> | 2,816 | PPTX | NOASSERTION | Builds PPTX files from 17 Chinese templates by applying text edits defined in a JSON file, layouts intact. |
+| **[Codex Claude Academic Skills](https://github.com/zLanqing/codex-claude-academic-skills)**<br><sub>zLanqing</sub> | 2,341 | Suite | MIT | Three-skill suite for researchers covering paper reading, PPT/Word generation, writing help, and scientific charts. |
+| **[Oh My PPT](https://github.com/arcsin1/oh-my-ppt)**<br><sub>arcsin1</sub> | 1,808 | HTML | Apache-2.0 | Takes a text description and generates clean HTML slides locally, with no internet connection required. |
+| **[Image to Editable PPT Skill](https://github.com/ningzimu/image-to-editable-ppt-skill)**<br><sub>ningzimu</sub> | 1,662 | PPTX | MIT | Converts slide images, PDFs, and image-based PPTX files into editable PowerPoint decks. |
+| **[Gorden Super PPT Skills](https://github.com/GordenSun/GordenSuperPPTSkills)**<br><sub>GordenSun</sub> | 1,654 | PPTX | Unspecified | Generates high-quality PPT images with GPT and converts them into fully editable PPTX files. |
+| **[CyberPPT](https://github.com/crazyykhllc-bit/CyberPPT)**<br><sub>crazyykhllc-bit</sub> | 1,479 | PPTX | MIT | Codex skill for generating dense, editable consulting-style PowerPoint decks with SCR narrative and quality checks. |
+| **[Ian Handdrawn PPT](https://github.com/helloianneo/ian-handdrawn-ppt)**<br><sub>helloianneo</sub> | 1,289 | Image | MIT | Generates hand-drawn-style Chinese technical PPT slide images in PNG, with 21:9 covers and 16:9 body slides. |
+| **[PPT Image First](https://github.com/NyxTides/ppt-image-first)**<br><sub>NyxTides</sub> | 1,174 | Image | Apache-2.0 | An image-first PPT generation skill for Codex, Claude Code, and Opencode CLI agents. |
+| **[GPT Image2 PPT Skills](https://github.com/JuneYaooo/gpt-image2-ppt-skills)**<br><sub>JuneYaooo</sub> | 1,115 | Image | Apache-2.0 | Clones a PPTX layout using gpt-image-2 so you can swap in your own content; includes 10 built-in styles. |
+| **[PPT Agent Skills](https://github.com/sunbigfly/ppt-agent-skills)**<br><sub>sunbigfly</sub> | 862 | HTML | NOASSERTION | A code-driven framework for generating presentations the same way you build software. |
+| **[Humanize PPT](https://github.com/LearnPrompt/humanize-ppt)**<br><sub>LearnPrompt</sub> | 836 | HTML | NOASSERTION | An AST-based outline director that structures human-centered AI presentation workflows. |
 | **[Claude Office Skills](https://github.com/tfriedel/claude-office-skills)**<br><sub>tfriedel</sub> | 798 | PPTX | Unspecified | PPTX, DOCX, XLSX and PDF workflows with automation support. |
-| **[Academic PPTX](https://github.com/Gabberflast/academic-pptx-skill)**<br><sub>Gabberflast</sub> | 722 | PPTX | MIT | Conference talks, seminar slides, thesis defenses and grant briefings. |
-| **[PPT Agent Workflow San](https://github.com/mucsbr/ppt-agent-workflow-san)**<br><sub>mucsbr</sub> | 617 | HTML | Unspecified | Progressive, interactive deck generation. |
-| **[Frontend Slides Editable](https://github.com/archlizheng/frontend-slides-editable)**<br><sub>archlizheng</sub> | 445 | Both | MIT | Editable HTML decks with drag-resize, reordering, local save and PPTX conversion. |
+| **[Academic PPTX](https://github.com/Gabberflast/academic-pptx-skill)**<br><sub>Gabberflast</sub> | 723 | PPTX | MIT | Conference talks, seminar slides, thesis defenses and grant briefings. |
+| **[Claude Skills](https://github.com/staruhub/ClaudeSkills)**<br><sub>staruhub</sub> | 632 | Suite | MIT | A curated set of 13 Claude Code agent skills covering decks, research, PRDs, articles, and audits. |
+| **[PPT Agent Workflow San](https://github.com/mucsbr/ppt-agent-workflow-san)**<br><sub>mucsbr</sub> | 618 | HTML | Unspecified | Progressive, interactive deck generation. |
+| **[Power Design](https://github.com/ItsssssJack/power-design)**<br><sub>ItsssssJack</sub> | 572 | HTML | NOASSERTION | A Claude skill that applies brand identity and 20 design principles to produce slides that look hand-crafted. |
+| **[Frontend Slides Editable](https://github.com/archlizheng/frontend-slides-editable)**<br><sub>archlizheng</sub> | 446 | Both | MIT | Editable HTML decks with drag-resize, reordering, local save and PPTX conversion. |
+| **[Reveal.js Skill](https://github.com/ryanbbrown/revealjs-skill)**<br><sub>ryanbbrown</sub> | 379 | HTML | MIT | A coding agent skill for building reveal.js HTML presentations. |
+| **[Visual Style PPT Skill](https://github.com/irenerachel/visual-style-ppt-skill)**<br><sub>irenerachel</sub> | 357 | PPTX | Unspecified | A skill that runs a visual-style PPT generation workflow. |
+| **[Beamer Skill](https://github.com/Noi1r/beamer-skill)**<br><sub>Noi1r</sub> | 319 | HTML | MIT | Manages the full lifecycle of academic Beamer LaTeX slides: create, compile, review, quality score, and polish. |
+| **[RW Consulting PPT](https://github.com/Pikapika260214/rw-consulting-ppt)**<br><sub>Pikapika260214</sub> | 317 | PPTX | MIT | A Codex skill for building editable consulting-style PowerPoint decks. |
+| **[Paper2Anything](https://github.com/QuZhan51496/paper2anything)**<br><sub>QuZhan51496</sub> | 315 | Suite | Apache-2.0 | Converts an academic paper PDF into slides, a poster, a webpage, a Xiaohongshu post, or a WeChat article. |
+| **[DOM to PPTX](https://github.com/atharva9167j/dom-to-pptx)**<br><sub>atharva9167j</sub> | 302 | PPTX | MIT | Client-side library that converts any HTML element into a pixel-accurate, fully editable PowerPoint slide. |
+| **[Marp Slides](https://github.com/robonuggets/marp-slides)**<br><sub>robonuggets</sub> | 271 | HTML | Unspecified | MARP presentation skill with 22 example decks, SVG charts, and dark/light themes for Claude Code. |
+| **[Beamer Academic](https://github.com/Faust-Donf/beamer-academic)**<br><sub>Faust-Donf</sub> | 257 | HTML | MIT | Generates high-quality academic thesis defense Beamer slides from a paper with a single command. |
 | **[PPT SVG Generator](https://github.com/vigorX777/ppt-svg-generator)**<br><sub>vigorX777</sub> | 248 | PPTX | MIT | Markdown to PPT or PDF via SVG, with preset styles. |
-| **[Mck PPT Design System](https://github.com/likaku/Mck-ppt-design-skill)**<br><sub>likaku</sub> | 229 | PPTX | Apache-2.0 | Consulting-firm-style design system: 70 layout patterns, flat design, python-pptx. |
-| **[PPT Agent Skill](https://github.com/Akxan/ppt-agent-skill)**<br><sub>Akxan</sub> | 114 | HTML | MIT | 26 styles and 18 chart types benchmarked against Linear, Anthropic, Stripe, Apple and NYT. |
+| **[Mck PPT Design System](https://github.com/likaku/Mck-ppt-design-skill)**<br><sub>likaku</sub> | 230 | PPTX | Apache-2.0 | Consulting-firm-style design system: 70 layout patterns, flat design, python-pptx. |
+| **[Planners PPT Hell](https://github.com/thePlannerIvan/planners-ppt-hell)**<br><sub>thePlannerIvan</sub> | 216 | PPTX | ⚠️ AGPL-3.0 | A PPT generation skill aimed at planners. |
+| **[Thesis Defense PPTX Skill](https://github.com/zouchenzhen/thesis-defense-pptx-skill)**<br><sub>zouchenzhen</sub> | 208 | PPTX | Apache-2.0 | Generates an editable thesis-defense PPTX from a PDF or LaTeX source while preserving a chosen template. |
+| **[Apple Bento Grid](https://github.com/hubeiqiao/apple-bento-grid)**<br><sub>hubeiqiao</sub> | 204 | HTML | MIT | Generates Apple-inspired bento grid presentation cards as HTML output. |
+| **[Codex PPT Skill](https://github.com/Ronnie2025/codex-ppt-skill)**<br><sub>Ronnie2025</sub> | 198 | Image | MIT | Codex workflow for generating, composing, and SVG-decomposing Chinese business presentation slides. |
+| **[Hands on Deck](https://github.com/EveryInc/hands-on-deck)**<br><sub>EveryInc</sub> | 198 | PPTX | MIT | CLI tool that lets AI agents inspect, edit, create, and verify PPTX files through atomic JSON patches. |
+| **[Skywork Skills](https://github.com/SkyworkAI/Skywork-Skills)**<br><sub>SkyworkAI</sub> | 194 | Suite | MIT | Agent skill suite covering AI PPT, documents, Excel, images, deep research, and music for any compatible agent. |
+| **[PPT Image2 Editable Rebuild](https://github.com/wwe-dog/ppt-image2-editable-rebuild)**<br><sub>wwe-dog</sub> | 186 | PPTX | Unlicense | Rebuilds editable PPTX files from screenshots or reference images by combining generated visuals with text shapes. |
+| **[Slide Image to Editable PPTX](https://github.com/w1163222589-coder/slide-image-to-editable-pptx)**<br><sub>w1163222589-coder</sub> | 172 | PPTX | MIT | Converts slide screenshots into editable PowerPoint decks. |
+| **[Magic Slide](https://github.com/daniel-style/magic-slide)**<br><sub>daniel-style</sub> | 170 | HTML | MIT | Generates self-contained HTML presentations with smooth Magic Move-style transitions between slides. |
+| **[Presentation Skills](https://github.com/Sven-LI-sankyuu/presentation-skills)**<br><sub>Sven-LI-sankyuu</sub> | 161 | Both | Unspecified | Codex CLI skill collection for editable PPT diagram collaboration and web demo video synthesis workflows. |
+| **[Claude Design Skill](https://github.com/jiji262/claude-design-skill)**<br><sub>jiji262</sub> | 161 | HTML | MIT | Adapts Claude.ai's internal Design prompt locally to produce HTML decks, landing pages, prototypes, and posters. |
+| **[Servasyy Skills](https://github.com/huangserva/servasyy_skills)**<br><sub>huangserva</sub> | 151 | Suite | Unspecified | A suite of AI skills covering writing, illustration, PPT, podcast, video, and comic generation. |
+| **[Ultimate PPT Master Skill](https://github.com/kdnsna/ultimate-ppt-master-skill)**<br><sub>kdnsna</sub> | 146 | Both | MIT | Clarifies audience and style, then produces an editable PPTX or web deck from a one-line prompt. |
+| **[Slide Deck Generator](https://github.com/code-on-sunday/slide-deck-generator)**<br><sub>code-on-sunday</sub> | 134 | HTML | MIT | Creates browser-based slide decks using React, Vite, and Framer Motion from a coding agent prompt. |
+| **[PPT Agent Skill](https://github.com/Akxan/ppt-agent-skill)**<br><sub>Akxan</sub> | 116 | HTML | MIT | 26 styles and 18 chart types benchmarked against Linear, Anthropic, Stripe, Apple and NYT. |
+| **[HTML PPT Designer](https://github.com/andyhuo520/html-ppt-designer)**<br><sub>andyhuo520</sub> | 115 | HTML | Unspecified | Converts any content into polished HTML presentations. |
+| **[Presentation Skills](https://github.com/pamelafox/presentation-skills)**<br><sub>pamelafox</sub> | 105 | HTML | MIT | AI agent skills for processing and generating presentations, aimed at teachers and speakers. |
+| **[PowerPoint Skill](https://github.com/Noi1r/powerpoint-skill)**<br><sub>Noi1r</sub> | 104 | PPTX | MIT | Creates PPTX presentations with native math, LaTeX formulas, and Graphviz/Mermaid/TikZ diagrams. |
+| **[Make Slide](https://github.com/Kuneosu/make-slide)**<br><sub>Kuneosu</sub> | 104 | HTML | MIT | Generates standalone HTML slide decks from a prompt. |
 
 ### Tier B — Specialized & emerging (<100 stars)
 
 | Skill | ⭐ | Route | License | What it is |
 |---|---:|---|---|---|
+| **[PPT Report Skills](https://github.com/myunwang/ppt-report-skills)**<br><sub>myunwang</sub> | 96 | HTML | MIT | Builds web-based report decks with ECharts charts, per-slide files, and PDF/image export. |
+| **[AI Paper to Slide Skill](https://github.com/Leo1998-Lu/ai-paper2slide-skill)**<br><sub>Leo1998-Lu</sub> | 95 | PPTX | MIT | Converts AI research papers into conference-grade PowerPoint slide decks. |
+| **[Literature Report PPT Builder](https://github.com/fangyuanopus/literature-report-ppt-builder)**<br><sub>fangyuanopus</sub> | 91 | PPTX | MIT | Generates academic literature-report PowerPoint decks from research content. |
+| **[Image to PPTX Skill](https://github.com/knight6669/knight-imagetopptx-skill)**<br><sub>knight6669</sub> | 84 | PPTX | MIT | Converts slide images into editable PowerPoint files using semantic understanding. |
 | **[Visual Cognition Slides](https://github.com/edu-ai-builders/visual-cognition-slides)**<br><sub>edu-ai-builders</sub> | 81 | HTML | MIT | Slide design grounded in cognitive science and instructional design, optimized for retention. |
+| **[CN Academic Spark](https://github.com/wycmochi/cn-academic-spark)**<br><sub>wycmochi</sub> | 77 | PPTX | MIT | Generates editable academic PPTX from uploaded papers for thesis, lab, and course presentations. |
+| **[Knowledge Cat PPT Skill](https://github.com/gnipbao/knowledge-cat-ppt-skill)**<br><sub>gnipbao</sub> | 77 | Both | MIT | Creates and QA-checks PPT, HTML, and image-first decks using a story-first approach. |
+| **[SJTU PPT Template Skill](https://github.com/ACTAshui/sjtu-ppt-template-skill)**<br><sub>ACTAshui</sub> | 74 | PPTX | Unspecified | Creates editable PowerPoint decks styled after Shanghai Jiao Tong University templates. |
+| **[Deck Factory](https://github.com/gongnyang/deck-factory)**<br><sub>gongnyang</sub> | 72 | HTML | MIT | Turns a one-line prompt into a dark-editorial HTML presentation deck. |
 | **[HTML Slides](https://github.com/bluedusk/html-slides)**<br><sub>bluedusk</sub> | 70 | HTML | MIT | HTML slides with speaker notes, plus a companion presentation app. |
+| **[Space Multi Design PPT](https://github.com/SpaceZephyr/space-multi-design-ppt)**<br><sub>SpaceZephyr</sub> | 66 | PPTX | Unspecified | Generates branded slide decks following a design system via Codex. |
+| **[Lieflat HTML Design](https://github.com/larashero3-dotcom/lieflat-html-design)**<br><sub>larashero3-dotcom</sub> | 63 | HTML | MIT | Produces HTML slide decks and Xiaohongshu cards via agent-ready design skills. |
+| **[Jiarui SVG Skills](https://github.com/shenxiaofeng-pro/jiarui-svg-skills)**<br><sub>shenxiaofeng-pro</sub> | 60 | Image | Unspecified | Generates branded SVG slide images with company logo, colors, and logical structure for use in PPT. |
+| **[Awesome PPT Skills](https://github.com/stevenjinlong/awesome-ppt-skills)**<br><sub>stevenjinlong</sub> | 57 | Image | Unspecified | Converts a text prompt into full-slide PPT decks rendered as images via gpt-image-2. |
+| **[Editable Image to PPT Skill](https://github.com/soulmujoco/EditableImage2PPTSkill)**<br><sub>soulmujoco</sub> | 57 | PPTX | MIT | Converts PPT slide images into editable PowerPoint decks. |
 | **[KingDee PPT Skill](https://github.com/WayneZhon/KingDee-PPT-Skill)**<br><sub>WayneZhon</sub> | 56 | HTML | MIT | KingDee corporate style decks. |
+| **[Presentation](https://github.com/appautomaton/presentation)**<br><sub>appautomaton</sub> | 53 | Both | Unspecified | Turns a business question into a consulting-grade deck via four composable skills for PDF and PPTX. |
 | **[Huawei Style PPT Skill](https://github.com/zuiho-kai/huawei-style-ppt-skill)**<br><sub>zuiho-kai</sub> | 52 | HTML | Custom | High-information-density decks in the Huawei corporate idiom. |
 | **[Slide Creator](https://github.com/kaisersong/slide-creator)**<br><sub>kaisersong</sub> | 46 | Both | Unspecified | AI planning, style discovery and PPTX export. |
 | **[next-slide](https://github.com/codesstar/next-slide)**<br><sub>codesstar</sub> | 43 | HTML | MIT | 26+ styles, zero dependencies, bilingual. |
+| **[HTML to Editable PPTX](https://github.com/Hasasasa/html-to-editable-pptx)**<br><sub>Hasasasa</sub> | 43 | PPTX | MIT | Converts HTML slide decks to PPTX with native text boxes rather than screenshot images. |
 | **[Slide Writer](https://github.com/FeeiCN/slide-writer)**<br><sub>FeeiCN</sub> | 40 | HTML | MIT | Enterprise HTML decks from ideas, outlines, documents or speech drafts. |
-| **[Skills Slides](https://github.com/nghiahsgs/skills-slides)**<br><sub>nghiahsgs</sub> | 30 | HTML | Unspecified | 50 aesthetics x 20 palettes x 10 fonts x 5 layouts x 30+ effects. |
+| **[Claude Code Codex Slide](https://github.com/phodal/claude-code-codex-slide)**<br><sub>phodal</sub> | 39 | HTML | Unspecified | Analyzes Claude Code source code via Codex and presents findings as GPT-generated slides. |
+| **[Baoyu Xuanyi Skills](https://github.com/xuanxuan1983/baoyu-xuanyi-skills)**<br><sub>xuanxuan1983</sub> | 39 | Templates | Unspecified | Combines Baoyu's agent skills with seven PPT style templates. |
+| **[Beautiful Hackathon Slides](https://github.com/Esther2524/beautiful-hackathon-slides)**<br><sub>Esther2524</sub> | 38 | HTML | MIT | Creates bold-design HTML pitch decks suited for hackathon presentations. |
+| **[ImageGen PPTX Pipeline](https://github.com/eddyzzl/imagegen-pptx-pipeline)**<br><sub>eddyzzl</sub> | 37 | PPTX | MIT | Generates editable PPTX decks using image generation and converts slide images to PowerPoint. |
+| **[Paper PPT Skill](https://github.com/xiao634zhang/paper-ppt-skill)**<br><sub>xiao634zhang</sub> | 35 | PPTX | Unspecified | Generates clean academic slides from a PDF paper, supporting templates, speaker notes, and images. |
+| **[Presentation Skill](https://github.com/siril9/presentation-skill)**<br><sub>siril9</sub> | 34 | PPTX | MIT | Source-first Codex skill that generates editable PPTX decks with style routing and QA. |
+| **[Slidev Skills](https://github.com/yoanbernabeu/slidev-skills)**<br><sub>yoanbernabeu</sub> | 33 | Framework | MIT | Twenty AI agent skills for building presentations with the Slidev framework. |
+| **[PPT Skill](https://github.com/AIPMAndy/PPTskill)**<br><sub>AIPMAndy</sub> | 32 | PPTX | MIT | Generates native editable PowerPoint files without requiring any design skills. |
+| **[Codex Image to Editable PPT](https://github.com/wiltonesten-web/codeximage-to-editable-ppt-v1)**<br><sub>wiltonesten-web</sub> | 32 | PPTX | MIT | Rebuilds image-based PPT slides into editable PowerPoint decks via Codex. |
+| **[BL Captain PPT Skill](https://github.com/dososo/blcaptain-ppt-skill)**<br><sub>dososo</sub> | 31 | HTML | NOASSERTION | Produces single-file HTML decks across 7 design personas with machine-enforced WCAG compliance. |
+| **[HTML to PPT PDF](https://github.com/wangzan101/html-to-ppt-pdf)**<br><sub>wangzan101</sub> | 30 | Both | MIT | Converts HTML slide decks to PDF and image-based PPTX for offline use. |
+| **[Skills Slides](https://github.com/nghiahsgs/skills-slides)**<br><sub>nghiahsgs</sub> | 29 | HTML | Unspecified | 50 aesthetics x 20 palettes x 10 fonts x 5 layouts x 30+ effects. |
+| **[Slides AI Plugin](https://github.com/proyecto26/slides-ai-plugin)**<br><sub>proyecto26</sub> | 29 | Both | MIT | Turns a single prompt into an animated HTML or editable PowerPoint presentation. |
+| **[Scholar PPT CN](https://github.com/deathcats4/scholar-ppt-cn)**<br><sub>deathcats4</sub> | 28 | PPTX | MIT | Converts academic papers to editable PowerPoint with planning tables and mockup layouts via Codex. |
 | **[PowerPoint Fancy Design](https://github.com/Phlegonlabs/Powerpoint-fancy-design)**<br><sub>Phlegonlabs</sub> | 27 | Both | Unspecified | Page-structured Markdown into styled 1600x900 HTML slides, PNG renders and exports. |
+| **[Narrative Engine](https://github.com/nraford7/Narrative-Engine)**<br><sub>nraford7</sub> | 27 | HTML | Unspecified | Transforms content into HTML slide decks built on storytelling and communication frameworks. |
+| **[Image PPT King](https://github.com/TateZhouSiu/image-ppt-king)**<br><sub>TateZhouSiu</sub> | 27 | PPTX | MIT | Converts slide screenshots and generated images into editable PPTX with OCR evidence and QA. |
+| **[PPT Design DNA](https://github.com/dakjdakd/PPT-Design-DNA)**<br><sub>dakjdakd</sub> | 26 | HTML | Apache-2.0 | Extracts visual style from reference images into Design Profiles, then applies those to HTML decks. |
+| **[PPT Creator Skills](https://github.com/Yu-0312/ppt-creater-skills)**<br><sub>Yu-0312</sub> | 25 | PPTX | NOASSERTION | A Claude Code skill for creating PowerPoint presentations. |
+| **[Beamer Skill](https://github.com/JaxonJP/beamer-skill)**<br><sub>JaxonJP</sub> | 23 | HTML | MIT | Full-lifecycle skill for academic Beamer LaTeX presentations: compile, review, QA, and TikZ audit. |
+| **[Presentation Skill](https://github.com/OrangeViolin/presentation-skill)**<br><sub>OrangeViolin</sub> | 22 | HTML | Unspecified | Takes a topic and generates a playable HTML slideshow in one of 62 brand design styles. |
+| **[Econ Empirical Paper PPT Skill](https://github.com/1793065778/econ-empirical-paper-ppt-skill)**<br><sub>1793065778</sub> | 22 | PPTX | Unspecified | Converts empirical economics papers into structured presentation blueprints ready for PowerPoint. |
+| **[HTML to PPTX](https://github.com/Emily27-alt/html-to-pptx)**<br><sub>Emily27-alt</sub> | 20 | PPTX | MIT | Converts HTML slide decks into editable .pptx files using native shapes, not screenshots. |
+| **[Neon Slides](https://github.com/lqshow/neon-slides)**<br><sub>lqshow</sub> | 20 | HTML | MIT | Turns a text outline into a neon-dark themed HTML slide deck for technical presentations. |
+| **[Claude HTML Slide Builder](https://github.com/mathruffian-dot/claude-html-slide-builder)**<br><sub>mathruffian-dot</sub> | 20 | HTML | MIT | Converts teaching materials into interactive Reveal.js HTML slides and deploys them to GitHub Pages. |
+| **[30x McKinsey Research Deck](https://github.com/norahe0304-art/30x-mckinsey-research-deck)**<br><sub>norahe0304-art</sub> | 19 | PPTX | MIT | Turns a research prompt into a McKinsey-style market research deck with adversarially verified data using a multi-agent pipeline. |
+| **[Keynote Slides Skill](https://github.com/dbmcco/keynote-slides-skill)**<br><sub>dbmcco</sub> | 19 | HTML | Unspecified | Generates HTML-based presentation slides in a Keynote style. |
+| **[PPT Agent](https://github.com/joker-sxj/ppt-agent)**<br><sub>joker-sxj</sub> | 19 | Both | MIT | Converts a topic into an editable .pptx file and full-page SVG web preview through a six-stage pipeline. |
+| **[Interactive Slides](https://github.com/sylvial928/interactive-slides)**<br><sub>sylvial928</sub> | 18 | HTML | MIT | Creates animated, interactive web presentations with style presets, brand kit support, and one-click PowerPoint export. |
+| **[PPTX Template Skills](https://github.com/CxyZyr/PPTX-Template-Skills)**<br><sub>CxyZyr</sub> | 17 | PPTX | MIT | Parses a PowerPoint template into a machine-readable contract, then fills it with new content to produce a completed deck. |
+| **[KAI Presentation](https://github.com/yevvonlim/kai-presentation)**<br><sub>yevvonlim</sub> | 16 | HTML | Unspecified | Generates KAI-branded HTML presentation decks from prompts. |
+| **[AI Draw Skill](https://github.com/stone-yu/ai-draw-skill)**<br><sub>stone-yu</sub> | 15 | HTML | Unspecified | Turns text, links, images, or PDFs into an HTML slide deck or diagram, with 36 PPT themes and 12 diagram themes. |
+| **[Keynot](https://github.com/shawnzam/keynot)**<br><sub>shawnzam</sub> | 15 | HTML | MIT | Converts any prompt into a self-contained HTML slide deck without requiring Keynote or PowerPoint. |
+| **[MBB Decks](https://github.com/floflo11/mbb-decks)**<br><sub>floflo11</sub> | 15 | PPTX | MIT | Produces MBB-style consulting .pptx decks with action-title slides, MECE bullets, and company logos as bullet markers. |
+| **[CyberBin PPT Skill](https://github.com/caikankan/cyberbin-ppt-skill)**<br><sub>caikankan</sub> | 14 | HTML | ⚠️ AGPL-3.0 | Generates local HTML slide decks from prompts. |
+| **[Competition PPT Template Skill](https://github.com/che626/competition-ppt-template-first-skill)**<br><sub>che626</sub> | 13 | PPTX | MIT | Generates editable PPTX competition and defense presentations with real evidence using a template-first approach. |
+| **[Slide Wright](https://github.com/arifszn/slide-wright)**<br><sub>arifszn</sub> | 13 | HTML | MIT | Generates unique reveal.js HTML slide decks with a distinct design for each prompt. |
+| **[Four-Up PPT Generator](https://github.com/woniuniuniu/four-up-ppt-generator)**<br><sub>woniuniuniu</sub> | 13 | PPTX | ⚠️ AGPL-3.0 | Generates four-slide-per-page PPTX layouts, based on the guizang-ppt-skill. |
+| **[NanoBanana PPT Skills](https://github.com/xj-bear/NanoBanana-PPT-Skills)**<br><sub>xj-bear</sub> | 13 | PPTX | Unspecified | Generates PPT files with AI, including support for Veo video content. |
+| **[NanoBanana PPT Skills](https://github.com/girish6055/NanoBanana-PPT-Skills)**<br><sub>girish6055</sub> | 13 | PPTX | Unspecified | Generates PPT files with AI-driven smart transitions and interactive playback. |
+| **[PPT Image Share Builder](https://github.com/uuoov/ppt-image-share-builder)**<br><sub>uuoov</sub> | 13 | Image | MIT | Generates PPT page images, QA contact sheets, PPTX wrappers, and timed scripts from image inputs. |
+| **[HalfAI Gufa PPT](https://github.com/HalfAI1102/HalfAI-gufappt)**<br><sub>HalfAI1102</sub> | 12 | PPTX | MIT | Generates traditional-style editable PPTX files suited for school, workplace, and defense presentations. |
+| **[Slide Design Skill](https://github.com/SlideSpeak/slide-design-skill)**<br><sub>SlideSpeak</sub> | 12 | HTML | MIT | Takes a deck description and renders 1920x1080 HTML slides with a derived style, real charts, tables, and images. |
+| **[Better PPT HTML Deck](https://github.com/ziguishian/better-ppt-html-deck)**<br><sub>ziguishian</sub> | 12 | HTML | MIT | Confirms visual direction first, then generates an editable, previewable, and exportable HTML presentation. |
+| **[Create HTML Deck](https://github.com/awesome-skills/create-html-deck)**<br><sub>awesome-skills</sub> | 12 | HTML | MIT | Builds and verifies browser-native HTML presentations for display on laptops and projectors. |
+| **[AWS HTML Slides](https://github.com/lanceli93/aws-html-slides)**<br><sub>lanceli93</sub> | 11 | HTML | MIT | Creates animation-rich HTML presentations from scratch or converts existing PowerPoint files. |
+| **[Prada Slides](https://github.com/prodigeproject/pradaslides)**<br><sub>prodigeproject</sub> | 11 | Both | MIT | Generates PPTX, HTML slides, and PDFs, and handles deck planning for a given audience. |
+| **[Japanese Corporate PPTX Skill](https://github.com/gonta223/japanese-corporate-pptx-skill)**<br><sub>gonta223</sub> | 11 | PPTX | MIT | Generates corporate-style PPTX presentations in Japanese. |
+| **[Editable Leadership PPTX](https://github.com/CamelKing1997/editable-leadership-pptx)**<br><sub>CamelKing1997</sub> | 11 | PPTX | Apache-2.0 | Builds editable leadership, executive, and project update PPTX slides with repo-backed evidence and screenshot QA. |
+| **[SlideStage Pack](https://github.com/SlideStage/slidestage-pack)**<br><sub>SlideStage</sub> | 10 | HTML | Unspecified | Packages HTML slides into a distributable bundle for sharing or deployment. |
+| **[Deckset Claude Skill](https://github.com/doudou1337/deckset-claude-skill)**<br><sub>doudou1337</sub> | 10 | HTML | MIT | Takes markdown input and generates Deckset presentation files with documentation and examples. |
 | **[PPTX from Layouts](https://github.com/tristan-mcinnis/pptx-from-layouts-skill)**<br><sub>tristan-mcinnis</sub> | 9 | PPTX | MIT | Generate decks from markdown strictly through a template's slide master layouts. |
 
 ### Other curated lists
@@ -325,7 +436,7 @@ and builds from it. Want the options instead? Don't name one — just ask for a 
 
 <a id="gallery-ppt-master"></a>
 
-#### [PPT Master](https://github.com/hugohe3/ppt-master) · 41,516 ⭐ · PPTX
+#### [PPT Master](https://github.com/hugohe3/ppt-master) · 41,709 ⭐ · PPTX
 
 <sub>Documents or topics into genuinely native, editable PowerPoint decks.</sub>
 
@@ -435,7 +546,7 @@ git clone https://github.com/hugohe3/ppt-master && pip install -r requirements.t
 
 <a id="gallery-frontend-slides"></a>
 
-#### [Frontend Slides](https://github.com/zarazhangrui/frontend-slides) · 26,461 ⭐ · HTML
+#### [Frontend Slides](https://github.com/zarazhangrui/frontend-slides) · 26,543 ⭐ · HTML
 
 <sub>Beautiful slides on the web using a coding agent's frontend skills.</sub>
 
@@ -546,7 +657,7 @@ git clone https://github.com/hugohe3/ppt-master && pip install -r requirements.t
 
 <a id="gallery-guizang-ppt-skill"></a>
 
-#### [Guizang PPT Skill](https://github.com/op7418/guizang-ppt-skill) · 22,564 ⭐ · HTML
+#### [Guizang PPT Skill](https://github.com/op7418/guizang-ppt-skill) · 22,644 ⭐ · HTML
 
 <sub>Editorial-magazine and Swiss-International HTML decks, with design locked down by constraint.</sub>
 
@@ -612,7 +723,7 @@ npx skills add https://github.com/op7418/guizang-ppt-skill --skill guizang-ppt-s
 
 <a id="gallery-huashu-design"></a>
 
-#### [Huashu Design](https://github.com/alchaincyf/huashu-design) · 22,135 ⭐ · Both
+#### [Huashu Design](https://github.com/alchaincyf/huashu-design) · 22,178 ⭐ · Both
 
 <sub>HTML-native design skill — prototypes, decks, motion and design critique, not just slides.</sub>
 
@@ -722,7 +833,7 @@ npx skills add alchaincyf/huashu-design
 
 <a id="gallery-html-ppt-skill"></a>
 
-#### [HTML PPT Studio](https://github.com/lewislulu/html-ppt-skill) · 7,437 ⭐ · HTML
+#### [HTML PPT Studio](https://github.com/lewislulu/html-ppt-skill) · 7,462 ⭐ · HTML
 
 <sub>24 themes, 31 layouts and 20+ animations for professional HTML presentations.</sub>
 
@@ -832,7 +943,7 @@ git clone https://github.com/lewislulu/html-ppt-skill ~/.claude/skills/html-ppt-
 
 <a id="gallery-open-slide"></a>
 
-#### [open-slide](https://github.com/1weiho/open-slide) · 6,027 ⭐ · Framework
+#### [open-slide](https://github.com/1weiho/open-slide) · 6,038 ⭐ · Framework
 
 <sub>A slide framework built for agents — React components on a fixed 1920x1080 canvas.</sub>
 
@@ -910,7 +1021,7 @@ npx @open-slide/cli init my-slide
 
 <a id="gallery-beautiful-html-templates"></a>
 
-#### [Beautiful HTML Templates](https://github.com/zarazhangrui/beautiful-html-templates) · 3,918 ⭐ · Templates
+#### [Beautiful HTML Templates](https://github.com/zarazhangrui/beautiful-html-templates) · 3,936 ⭐ · Templates
 
 <sub>34 HTML slide templates with index.json metadata so any agent can pick the right one.</sub>
 
@@ -1020,7 +1131,7 @@ git clone https://github.com/zarazhangrui/beautiful-html-templates
 
 <a id="gallery-ppt-agent-workflow-san"></a>
 
-#### [PPT Agent Workflow San](https://github.com/mucsbr/ppt-agent-workflow-san) · 617 ⭐ · HTML
+#### [PPT Agent Workflow San](https://github.com/mucsbr/ppt-agent-workflow-san) · 618 ⭐ · HTML
 
 <sub>Progressive, interactive deck generation.</sub>
 
@@ -1074,7 +1185,7 @@ git clone https://github.com/mucsbr/ppt-agent-workflow-san
 
 <a id="gallery-frontend-slides-editable"></a>
 
-#### [Frontend Slides Editable](https://github.com/archlizheng/frontend-slides-editable) · 445 ⭐ · Both
+#### [Frontend Slides Editable](https://github.com/archlizheng/frontend-slides-editable) · 446 ⭐ · Both
 
 <sub>Editable HTML decks with drag-resize, reordering, local save and PPTX conversion.</sub>
 
@@ -1204,7 +1315,7 @@ git clone https://github.com/vigorX777/ppt-svg-generator
 
 <a id="gallery-mck-ppt-design-skill"></a>
 
-#### [Mck PPT Design System](https://github.com/likaku/Mck-ppt-design-skill) · 229 ⭐ · PPTX
+#### [Mck PPT Design System](https://github.com/likaku/Mck-ppt-design-skill) · 230 ⭐ · PPTX
 
 <sub>Consulting-firm-style design system: 70 layout patterns, flat design, python-pptx.</sub>
 
@@ -1240,7 +1351,7 @@ git clone https://github.com/likaku/Mck-ppt-design-skill
 
 <a id="gallery-ppt-agent-skill"></a>
 
-#### [PPT Agent Skill](https://github.com/Akxan/ppt-agent-skill) · 114 ⭐ · HTML
+#### [PPT Agent Skill](https://github.com/Akxan/ppt-agent-skill) · 116 ⭐ · HTML
 
 <sub>26 styles and 18 chart types benchmarked against Linear, Anthropic, Stripe, Apple and NYT.</sub>
 
@@ -1556,7 +1667,7 @@ git clone https://github.com/FeeiCN/slide-writer
 
 <a id="gallery-skills-slides"></a>
 
-#### [Skills Slides](https://github.com/nghiahsgs/skills-slides) · 30 ⭐ · HTML
+#### [Skills Slides](https://github.com/nghiahsgs/skills-slides) · 29 ⭐ · HTML
 
 <sub>50 aesthetics x 20 palettes x 10 fonts x 5 layouts x 30+ effects.</sub>
 
@@ -1712,7 +1823,7 @@ git clone https://github.com/tristan-mcinnis/pptx-from-layouts-skill
 
 <sub><b>Thumbnail</b> · <a href="https://github.com/tristan-mcinnis/pptx-from-layouts-skill/blob/53b0e750694d807e3510c2017744197c3c5089b0/examples/q1-strategy/thumbnail.jpg"><code>examples/q1-strategy/thumbnail.jpg</code></a></sub>
 
-<sub>No imagery in the repositories of: Anthropic PPTX (official), Visual Explainer, Claude Office Skills, Academic PPTX, Visual Cognition Slides, Huawei Style PPT Skill.</sub>
+<sub>No imagery in the repositories of: Anthropic PPTX (official), Slidev, Quarkdown, Banana Slides, Visual Explainer, HTML Anything, Dashi PPT Skill, Codex PPT Skill, NanoBanana PPT Skills, Baoyu Design, Gorden PPT Skill, Codex Claude Academic Skills, Oh My PPT, Image to Editable PPT Skill, Gorden Super PPT Skills, CyberPPT, Ian Handdrawn PPT, PPT Image First, GPT Image2 PPT Skills, PPT Agent Skills, Humanize PPT, Claude Office Skills, Academic PPTX, Claude Skills, Power Design, Reveal.js Skill, Visual Style PPT Skill, Beamer Skill, RW Consulting PPT, Paper2Anything, DOM to PPTX, Marp Slides, Beamer Academic, Planners PPT Hell, Thesis Defense PPTX Skill, Apple Bento Grid, Codex PPT Skill, Hands on Deck, Skywork Skills, PPT Image2 Editable Rebuild, Slide Image to Editable PPTX, Magic Slide, Presentation Skills, Claude Design Skill, Servasyy Skills, Ultimate PPT Master Skill, Slide Deck Generator, HTML PPT Designer, Presentation Skills, PowerPoint Skill, Make Slide, PPT Report Skills, AI Paper to Slide Skill, Literature Report PPT Builder, Image to PPTX Skill, Visual Cognition Slides, CN Academic Spark, Knowledge Cat PPT Skill, SJTU PPT Template Skill, Deck Factory, Space Multi Design PPT, Lieflat HTML Design, Jiarui SVG Skills, Awesome PPT Skills, Editable Image to PPT Skill, Presentation, Huawei Style PPT Skill, HTML to Editable PPTX, Claude Code Codex Slide, Baoyu Xuanyi Skills, Beautiful Hackathon Slides, ImageGen PPTX Pipeline, Paper PPT Skill, Presentation Skill, Slidev Skills, PPT Skill, Codex Image to Editable PPT, BL Captain PPT Skill, HTML to PPT PDF, Slides AI Plugin, Scholar PPT CN, Narrative Engine, Image PPT King, PPT Design DNA, PPT Creator Skills, Beamer Skill, Presentation Skill, Econ Empirical Paper PPT Skill, HTML to PPTX, Neon Slides, Claude HTML Slide Builder, 30x McKinsey Research Deck, Keynote Slides Skill, PPT Agent, Interactive Slides, PPTX Template Skills, KAI Presentation, AI Draw Skill, Keynot, MBB Decks, CyberBin PPT Skill, Competition PPT Template Skill, Slide Wright, Four-Up PPT Generator, NanoBanana PPT Skills, NanoBanana PPT Skills, PPT Image Share Builder, HalfAI Gufa PPT, Slide Design Skill, Better PPT HTML Deck, Create HTML Deck, AWS HTML Slides, Prada Slides, Japanese Corporate PPTX Skill, Editable Leadership PPTX, SlideStage Pack, Deckset Claude Skill.</sub>
 
 <sub>**278 images, all of them the projects' own**, shown full size rather than as thumbnails — a slide is too dense to judge at 300px. Each was read from its repository at a pinned commit, credited in the caption above it, and served from that repository rather than copied here. Nothing was produced by running a skill, so treat it as what each team chose to show off — not as a like-for-like comparison. Regenerate with `python scripts/fetch_samples.py`.</sub>
 <!-- END:GALLERY -->
