@@ -2962,6 +2962,70 @@
       "lang": "en",
       "license_note": "MIT",
       "source": "discovered"
+    },
+    {
+      "id": "university-ppt-skill",
+      "repo": "SiyuQiannn/university-ppt-skill",
+      "name": "University PPT Skill",
+      "author": "SiyuQiannn",
+      "author_url": "https://github.com/SiyuQiannn",
+      "route": "templates",
+      "license_note": "NOASSERTION",
+      "lang": "zh",
+      "tagline_en": "Editable university-branded PPTX built from school theme tokens and a reusable layout library.",
+      "tagline_zh": "以校色 token 与可复用版式库生成可编辑的高校主题 PPTX 演示文稿。",
+      "highlights_en": [
+        "Spec-first workflow: request to deck_spec.json to strict validation to PPTX assembly to preview QA",
+        "School colours are abstracted into eight theme tokens, so one layout library migrates across universities",
+        "Structure suite (cover, TOC, section, content master, ending) plus layouts for cards, timelines, pyramids and comparisons",
+        "QA rules catch stretched logos, leftover Office blue/green/orange and residual source-template text",
+        "Prototype status: verified 2026-07-14 on a red-theme school; the scripts are PowerShell and Windows-only"
+      ],
+      "highlights_zh": [
+        "spec-first 工作流:用户请求 → deck_spec.json → 严格校验 → PPTX 组装 → 预览与 QA",
+        "校色抽象成八个主题 token,同一套版式库可在不同学校间迁移",
+        "结构套件(封面/目录/章节/内容母版/结尾)加上要点卡片、时间线、金字塔、对比等版式库",
+        "内置质量规则,拦截 logo 拉伸、残留 Office 蓝绿橙配色与来源模板文字",
+        "当前为原型:2026-07-14 在红色系高校主题上验证,脚本为 PowerShell,仅限 Windows"
+      ],
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/SiyuQiannn/university-ppt-skill"
+      },
+      "requires": [
+        "Windows",
+        "PowerShell",
+        "Microsoft PowerPoint"
+      ],
+      "best_for_en": "Coursework, thesis-defence and competition decks that must carry a school's identity and stay editable.",
+      "best_for_zh": "需要体现校方视觉识别、又必须保持可编辑的课程汇报、论文答辩与竞赛路演 PPT。",
+      "source": "discovered"
+    },
+    {
+      "id": "image-to-editable-ppt-skill-zhoujie97",
+      "repo": "zhoujie97/image-to-editable-ppt-skill",
+      "name": "Image to Editable PPT Skill (zhoujie97)",
+      "author": "zhoujie97",
+      "author_url": "https://github.com/zhoujie97",
+      "route": "pptx",
+      "license_note": "Unspecified",
+      "lang": "zh",
+      "tagline_en": "Rebuilds screenshots and infographics into editable PowerPoint shapes, text boxes and SVG icons.",
+      "tagline_zh": "把截图与信息图重建为可编辑的 PowerPoint 文本框、原生形状与 SVG 图标。",
+      "source": "discovered"
+    },
+    {
+      "id": "claude-ppt-skills",
+      "repo": "sunxiaohui2025/claude-ppt-skills",
+      "name": "Claude PPT Skills",
+      "author": "sunxiaohui2025",
+      "author_url": "https://github.com/sunxiaohui2025",
+      "route": "html",
+      "license_note": "Unspecified",
+      "lang": "zh",
+      "tagline_en": "Single-file HTML decks in six styles, with in-browser editing and a thumbnail overview grid.",
+      "tagline_zh": "生成六种风格的单文件 HTML 横向翻页 PPT,支持网页在线编辑与缩略图总览。",
+      "source": "discovered"
     }
   ],
   "lists": [

@@ -9,7 +9,7 @@
 [简体中文](README.md) · [English](README.en.md)
 
 <!-- BEGIN:COUNTS -->
-**收录 207 个 skill**，其中 **29 个人工读过** · **合计 271,800 star** · HTML 路线 78 个 · PPTX 路线 76 个 · 双路线 24 个 · 数据刷新于 **2026-07-29**
+**收录 210 个 skill**，其中 **30 个人工读过** · **合计 271,800 star** · HTML 路线 79 个 · PPTX 路线 77 个 · 双路线 24 个 · 数据刷新于 **2026-07-29**
 <!-- END:COUNTS -->
 
 </div>
@@ -17,7 +17,7 @@
 ---
 
 Coding Agent 把 CSS 写好了，半年之内冒出一整个新品类：把文档变成不像机器做的幻灯片的
-Skill。这一页收录了 <!-- BEGIN:TRACKED -->207<!-- END:TRACKED --> 个，其中四个 star 数都超过 2 万。
+Skill。这一页收录了 <!-- BEGIN:TRACKED -->210<!-- END:TRACKED --> 个，其中四个 star 数都超过 2 万。
 
 而所有关于它们的排名，都只是 star 数的重新排序。**star 衡量的是作者会不会发推，不能告诉你
 哪一个能处理好你的代码块，也不能告诉你财务总监能不能编辑第 12 页。**
@@ -381,6 +381,9 @@ python scripts/pick.py find editorial         # 搜风格 ID 和描述
 | **[Paper Deck Reveal](https://github.com/O0000-code/paper-deck-reveal)** | — | 框架 | Apache-2.0 | 基于 reveal.js 的技能:把学术论文转为带交互演示的离线可投影幻灯片。 |
 | **[Codex Slides](https://github.com/nexu-io/codex-slides)** | — | 框架 | MIT | 面向 Codex 的 AI 幻灯片工作台:图像原生画布、并行渲染、支持 PDF/PPTX 导出。 |
 | **[3D HTML Slide Skill](https://github.com/yoshifujidesign/3d-html-slide-skill)**† | — | HTML | MIT | Claude Code 技能:一键生成带 Three.js 线框背景的单文件 HTML 演示幻灯片。 |
+| **[University PPT Skill](https://github.com/SiyuQiannn/university-ppt-skill)**<br><sub>SiyuQiannn</sub> | — | 模板库 | NOASSERTION | 以校色 token 与可复用版式库生成可编辑的高校主题 PPTX 演示文稿。 |
+| **[Image to Editable PPT Skill (zhoujie97)](https://github.com/zhoujie97/image-to-editable-ppt-skill)**†<br><sub>zhoujie97</sub> | — | PPTX | Unspecified | 把截图与信息图重建为可编辑的 PowerPoint 文本框、原生形状与 SVG 图标。 |
+| **[Claude PPT Skills](https://github.com/sunxiaohui2025/claude-ppt-skills)**†<br><sub>sunxiaohui2025</sub> | — | HTML | Unspecified | 生成六种风格的单文件 HTML 横向翻页 PPT,支持网页在线编辑与缩略图总览。 |
 
 ### 其他精选列表
 
@@ -452,7 +455,7 @@ python scripts/pick.py find editorial         # 搜风格 ID 和描述
 <!-- BEGIN:INSTALLMETHODS -->
 | 安装方式 | 实际发生了什么 | 数量 |
 |---|---|---:|
-| `clone` | 克隆进 `~/.claude/skills/`，也就是 Claude Code 找个人 skill 的地方。重开一个会话就能用。 | 23 |
+| `clone` | 克隆进 `~/.claude/skills/`，也就是 Claude Code 找个人 skill 的地方。重开一个会话就能用。 | 24 |
 | `plugin` | 两条命令是在 **Claude Code 里面**敲的，不是终端。先加 marketplace，再从里面装。 | 2 |
 | `skills-cli` | 跨 agent 的安装器，不止 Claude Code 能用。 | 2 |
 | `python` | 需要本机有 Python。克隆下来、装依赖，然后让 agent 在这个目录里干活。 | 1 |
@@ -478,7 +481,7 @@ python scripts/pick.py find editorial         # 搜风格 ID 和描述
 > 第四步那句关于预览的描述，是从 frontend-slides 的 SKILL.md 里读到的，只对它成立。
 
 <!-- BEGIN:GALLERY -->
-**跳到：**[PPT Master](#gallery-ppt-master) <sub>24</sub> · [Frontend Slides](#gallery-frontend-slides) <sub>24</sub> · [Guizang PPT Skill](#gallery-guizang-ppt-skill) <sub>13</sub> · [Huashu Design](#gallery-huashu-design) <sub>24</sub> · [HTML PPT Studio](#gallery-html-ppt-skill) <sub>24</sub> · [open-slide](#gallery-open-slide) <sub>16</sub> · [Beautiful HTML Templates](#gallery-beautiful-html-templates) <sub>24</sub> · [PPT Agent Workflow San](#gallery-ppt-agent-workflow-san) <sub>10</sub> · [Frontend Slides Editable](#gallery-frontend-slides-editable) <sub>24</sub> · [PPT SVG Generator](#gallery-ppt-svg-generator) <sub>2</sub> · [Mck PPT Design System](#gallery-mck-ppt-design-skill) <sub>6</sub> · [PPT Agent Skill](#gallery-ppt-agent-skill) <sub>24</sub> · [HTML Slides](#gallery-html-slides-bluedusk) <sub>4</sub> · [KingDee PPT Skill](#gallery-kingdee-ppt-skill) <sub>1</sub> · [Slide Creator](#gallery-slide-creator) <sub>23</sub> · [next-slide](#gallery-next-slide) <sub>1</sub> · [Slide Writer](#gallery-slide-writer) <sub>5</sub> · [Skills Slides](#gallery-skills-slides) <sub>4</sub> · [PowerPoint Fancy Design](#gallery-powerpoint-fancy-design) <sub>24</sub> · [PPTX from Layouts](#gallery-pptx-from-layouts) <sub>1</sub> · [PPTWork](#gallery-pptwork) <sub>24</sub> · [Paper Deck Reveal](#gallery-paper-deck-reveal) <sub>22</sub> · [Codex Slides](#gallery-codex-slides) <sub>24</sub> · [3D HTML Slide Skill](#gallery-3d-html-slide-skill) <sub>2</sub>
+**跳到：**[PPT Master](#gallery-ppt-master) <sub>24</sub> · [Frontend Slides](#gallery-frontend-slides) <sub>24</sub> · [Guizang PPT Skill](#gallery-guizang-ppt-skill) <sub>13</sub> · [Huashu Design](#gallery-huashu-design) <sub>24</sub> · [HTML PPT Studio](#gallery-html-ppt-skill) <sub>24</sub> · [open-slide](#gallery-open-slide) <sub>16</sub> · [Beautiful HTML Templates](#gallery-beautiful-html-templates) <sub>24</sub> · [PPT Agent Workflow San](#gallery-ppt-agent-workflow-san) <sub>10</sub> · [Frontend Slides Editable](#gallery-frontend-slides-editable) <sub>24</sub> · [PPT SVG Generator](#gallery-ppt-svg-generator) <sub>2</sub> · [Mck PPT Design System](#gallery-mck-ppt-design-skill) <sub>6</sub> · [PPT Agent Skill](#gallery-ppt-agent-skill) <sub>24</sub> · [HTML Slides](#gallery-html-slides-bluedusk) <sub>4</sub> · [KingDee PPT Skill](#gallery-kingdee-ppt-skill) <sub>1</sub> · [Slide Creator](#gallery-slide-creator) <sub>23</sub> · [next-slide](#gallery-next-slide) <sub>1</sub> · [Slide Writer](#gallery-slide-writer) <sub>5</sub> · [Skills Slides](#gallery-skills-slides) <sub>4</sub> · [PowerPoint Fancy Design](#gallery-powerpoint-fancy-design) <sub>24</sub> · [PPTX from Layouts](#gallery-pptx-from-layouts) <sub>1</sub> · [PPTWork](#gallery-pptwork) <sub>24</sub> · [Paper Deck Reveal](#gallery-paper-deck-reveal) <sub>22</sub> · [Codex Slides](#gallery-codex-slides) <sub>24</sub> · [3D HTML Slide Skill](#gallery-3d-html-slide-skill) <sub>2</sub> · [University PPT Skill](#gallery-university-ppt-skill) <sub>10</sub> · [Image to Editable PPT Skill (zhoujie97)](#gallery-image-to-editable-ppt-skill-zhoujie97) <sub>4</sub> · [Claude PPT Skills](#gallery-claude-ppt-skills) <sub>3</sub>
 
 <a id="gallery-ppt-master"></a>
 
@@ -2208,9 +2211,110 @@ git clone https://github.com/nexu-io/codex-slides && cd codex-slides
 
 <sub><b>EP133-2_2</b> · GitHub 附件图</sub>
 
+<a id="gallery-university-ppt-skill"></a>
+
+#### [University PPT Skill](https://github.com/SiyuQiannn/university-ppt-skill) · — ⭐ · 模板库
+
+<sub>以校色 token 与可复用版式库生成可编辑的高校主题 PPTX 演示文稿。</sub>
+
+<sub>取自 [`SiyuQiannn/university-ppt-skill`](https://github.com/SiyuQiannn/university-ppt-skill) 的 10 张图，此处 10 张，靠前的几张是项目自己放在 README 里的</sub>
+
+```bash
+git clone https://github.com/SiyuQiannn/university-ppt-skill
+```
+
+<sub><b>下面出现的风格</b> `contact-sheet` · `02-图文案例证据-源模板复刻` · `05-对比分析框架-源模板复刻` · `03-流程时间线阶段-源模板复刻` · `01-综合卡片要点-源模板复刻` · `06-数据图表表格-源模板复刻` · `08-循环网络关系-源模板复刻` · `spec-driven-demo-contact-sheet` · `04-层级金字塔框架-源模板复刻` · `10-图标素材库-源模板复刻` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/examples/preview_contact_sheet.png" width="100%" alt="Preview">
+
+<sub><b>Preview</b> · <code>contact-sheet</code> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/examples/preview_contact_sheet.png"><code>examples/preview_contact_sheet.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_02_%E5%9B%BE%E6%96%87%E6%A1%88%E4%BE%8B%E8%AF%81%E6%8D%AE_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>02 图文案例证据 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_02_图文案例证据_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_02_图文案例证据_源模板复刻.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_05_%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90%E6%A1%86%E6%9E%B6_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>05 对比分析框架 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_05_对比分析框架_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_05_对比分析框架_源模板复刻.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_03_%E6%B5%81%E7%A8%8B%E6%97%B6%E9%97%B4%E7%BA%BF%E9%98%B6%E6%AE%B5_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>03 流程时间线阶段 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_03_流程时间线阶段_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_03_流程时间线阶段_源模板复刻.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_01_%E7%BB%BC%E5%90%88%E5%8D%A1%E7%89%87%E8%A6%81%E7%82%B9_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>01 综合卡片要点 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_01_综合卡片要点_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_01_综合卡片要点_源模板复刻.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_06_%E6%95%B0%E6%8D%AE%E5%9B%BE%E8%A1%A8%E8%A1%A8%E6%A0%BC_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>06 数据图表表格 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_06_数据图表表格_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_06_数据图表表格_源模板复刻.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_08_%E5%BE%AA%E7%8E%AF%E7%BD%91%E7%BB%9C%E5%85%B3%E7%B3%BB_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>08 循环网络关系 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_08_循环网络关系_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_08_循环网络关系_源模板复刻.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/examples/spec_driven_demo_contact_sheet.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>Spec Driven Demo Contact Sheet</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/examples/spec_driven_demo_contact_sheet.png"><code>examples/spec_driven_demo_contact_sheet.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_04_%E5%B1%82%E7%BA%A7%E9%87%91%E5%AD%97%E5%A1%94%E6%A1%86%E6%9E%B6_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>04 层级金字塔框架 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_04_层级金字塔框架_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_04_层级金字塔框架_源模板复刻.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_10_%E5%9B%BE%E6%A0%87%E7%B4%A0%E6%9D%90%E5%BA%93_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>10 图标素材库 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_10_图标素材库_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_10_图标素材库_源模板复刻.png</code></a></sub>
+
+<a id="gallery-image-to-editable-ppt-skill-zhoujie97"></a>
+
+#### [Image to Editable PPT Skill (zhoujie97)](https://github.com/zhoujie97/image-to-editable-ppt-skill) · — ⭐ · PPTX
+
+<sub>把截图与信息图重建为可编辑的 PowerPoint 文本框、原生形状与 SVG 图标。</sub>
+
+<sub>取自 [`zhoujie97/image-to-editable-ppt-skill`](https://github.com/zhoujie97/image-to-editable-ppt-skill) 的 4 张图，此处 4 张，靠前的几张是项目自己放在 README 里的</sub>
+
+<sub><b>下面出现的风格</b> `效果图1` · `效果图2` · `原图2` · `原图1` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
+
+<img src="https://raw.githubusercontent.com/zhoujie97/image-to-editable-ppt-skill/e3c39d907ec6abf5266e4491c6aa001b663b9207/%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%95%88%E6%9E%9C%E5%9B%BE1.png" width="100%" alt="alt text">
+
+<sub><b>alt text</b> · <code>效果图1</code> · <a href="https://github.com/zhoujie97/image-to-editable-ppt-skill/blob/e3c39d907ec6abf5266e4491c6aa001b663b9207/效果图/效果图1.png"><code>效果图/效果图1.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zhoujie97/image-to-editable-ppt-skill/e3c39d907ec6abf5266e4491c6aa001b663b9207/%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%95%88%E6%9E%9C%E5%9B%BE2.png" width="100%" alt="alt text">
+
+<sub><b>alt text</b> · <code>效果图2</code> · <a href="https://github.com/zhoujie97/image-to-editable-ppt-skill/blob/e3c39d907ec6abf5266e4491c6aa001b663b9207/效果图/效果图2.png"><code>效果图/效果图2.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zhoujie97/image-to-editable-ppt-skill/e3c39d907ec6abf5266e4491c6aa001b663b9207/%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%8E%9F%E5%9B%BE2.png" width="100%" alt="alt text">
+
+<sub><b>alt text</b> · <code>原图2</code> · <a href="https://github.com/zhoujie97/image-to-editable-ppt-skill/blob/e3c39d907ec6abf5266e4491c6aa001b663b9207/效果图/原图2.png"><code>效果图/原图2.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zhoujie97/image-to-editable-ppt-skill/e3c39d907ec6abf5266e4491c6aa001b663b9207/%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%8E%9F%E5%9B%BE1.jpg" width="100%" alt="alt text">
+
+<sub><b>alt text</b> · <code>原图1</code> · <a href="https://github.com/zhoujie97/image-to-editable-ppt-skill/blob/e3c39d907ec6abf5266e4491c6aa001b663b9207/效果图/原图1.jpg"><code>效果图/原图1.jpg</code></a></sub>
+
+<a id="gallery-claude-ppt-skills"></a>
+
+#### [Claude PPT Skills](https://github.com/sunxiaohui2025/claude-ppt-skills) · — ⭐ · HTML
+
+<sub>生成六种风格的单文件 HTML 横向翻页 PPT,支持网页在线编辑与缩略图总览。</sub>
+
+<sub>取自 [`sunxiaohui2025/claude-ppt-skills`](https://github.com/sunxiaohui2025/claude-ppt-skills) 的 3 张图，此处 3 张，靠前的几张是项目自己放在 README 里的</sub>
+
+
+<img src="https://github.com/user-attachments/assets/d8742e1d-0fc1-4930-ac9a-6cc783fd47cd" width="100%" alt="截屏2026-05-28 15 23 36">
+
+<sub><b>截屏2026-05-28 15 23 36</b> · GitHub 附件图</sub>
+
+<img src="https://github.com/user-attachments/assets/df1b2e93-14b7-49ac-b0e9-0d99e630d382" width="100%" alt="image">
+
+<sub><b>image</b> · GitHub 附件图</sub>
+
+<img src="https://github.com/user-attachments/assets/da11e54a-f568-4204-9146-35f7acc57f5a" width="100%" alt="image">
+
+<sub><b>image</b> · GitHub 附件图</sub>
+
 <sub>以下项目的仓库里没有可用图片：Slidev、Quarkdown、Banana Slides、Visual Explainer、HTML Anything、Dashi PPT Skill、Codex PPT Skill、NanoBanana PPT Skills、Baoyu Design、Gorden PPT Skill、Codex Claude Academic Skills、Oh My PPT、Image to Editable PPT Skill、Gorden Super PPT Skills、CyberPPT、Ian Handdrawn PPT、PPT Image First、GPT Image2 PPT Skills、PPT Agent Skills、Humanize PPT、Claude Office Skills、Academic PPTX、Claude Skills、Power Design、Reveal.js Skill、Visual Style PPT Skill、Beamer Skill、RW Consulting PPT、Paper2Anything、DOM to PPTX、Marp Slides、Beamer Academic、Planners PPT Hell、Thesis Defense PPTX Skill、Apple Bento Grid、Codex PPT Skill、Hands on Deck、Skywork Skills、PPT Image2 Editable Rebuild、Slide Image to Editable PPTX、Magic Slide、Presentation Skills、Claude Design Skill、Servasyy Skills、Ultimate PPT Master Skill、Future Slide、Slide Deck Generator、HTML PPT Designer、Presentation Skills、PowerPoint Skill、Make Slide、PPT Report Skills、AI Paper to Slide Skill、Literature Report PPT Builder、Image to PPTX Skill、Visual Cognition Slides、CN Academic Spark、Knowledge Cat PPT Skill、SJTU PPT Template Skill、Deck Factory、Space Multi Design PPT、Lieflat HTML Design、Jiarui SVG Skills、Awesome PPT Skills、Editable Image to PPT Skill、Presentation、Huawei Style PPT Skill、HTML to Editable PPTX、Claude Code Codex Slide、Baoyu Xuanyi Skills、Beautiful Hackathon Slides、ImageGen PPTX Pipeline、Paper PPT Skill、Presentation Skill、Codex Image to Editable PPT、Slidev Skills、PPT Skill、BL Captain PPT Skill、HTML to PPT PDF、Slides AI Plugin、Scholar PPT CN、Narrative Engine、Image PPT King、PPT Design DNA、PPT Creator Skills、Beamer Skill、Jingge Sense Deck、Presentation Skill、Econ Empirical Paper PPT Skill、HTML to PPTX、Neon Slides、Claude HTML Slide Builder、30x McKinsey Research Deck、Keynote Slides Skill、PPT Agent、Interactive Slides、PPTX Template Skills、KAI Presentation、AI Draw Skill、Keynot、MBB Decks、Slide Wright、CyberBin PPT Skill、Competition PPT Template Skill、Four-Up PPT Generator、NanoBanana PPT Skills、NanoBanana PPT Skills、PPT Image Share Builder、HalfAI Gufa PPT、Slide Design Skill、Better PPT HTML Deck、Create HTML Deck、AWS HTML Slides、Prada Slides、Japanese Corporate PPTX Skill、Editable Leadership PPTX、SlideStage Pack、Deckset Claude Skill、McKinsey HTML Design Skill、IML PPTX、GZR NSFC PPT Skill、HTML to PPTX Skill、Bento PPT Skill、SlideSmith、Fudan University PPT Skill、Presentation Chef、Paper Figure PPTX Skill、AI Editable PPT Skill、Hand-Drawn PPT Skill、Guizang PPT Skill、TalkTrack、HTML PPT Skill、HTML to PPTX、PPT Expert Team、Vela Slides、Paper to LaTeX PPT、SOIL Deck Skills、PPT Master、PPT Image to Editable、Modern PPT、Bruce PPTX Generator、PPT Skill、Xidian Slides Skill、Presentation Forge、Tekion Slide Generator、Paper to Slides Skill、PPT Skills、Editable PPTX Skill、Pitch Deck Iterator、Zhongguose PPT Skill、ZJ Lab Academic PPTX Skills、Research Group PPT Skill、Paper to Scholar Slides、Consulting Diagnosis PPT Skill、Token Slides、Aham PPT、Notrat PPT Studio、Web PPT、Codex XKPPT Skill、High Quality Slides、PPT Design Skill、PowerPoint Skill、Slide Weaver、Competition PPT Skill、HFUT Presentation Studio、SJTU Beamer PPT、Frontend Slides、HTML Report Generator、Demo Prep Skill、Avatar PPT Master、Special Achievement Report、HTML PPT Academic Skill、HTML PPT Video Skill、PPT Template Fill、AI PPT Skill、SVG to PPTX Skill、Doc to PPT Skill、Economics Empirical PPT Skill、SlideSage、USTC PPT Template、Anthropic PPTX (official)、Baoyu Skills、AI Skills (Cross-Platform)。</sub>
 
-<sub>**共 350 张，全部来自各项目自己的仓库**，按原尺寸完整展示、不做缩略图 —— 幻灯片信息密度高，缩到 300px 根本看不清字体和层次。每张都读自锁定的 commit，出处写在它上方的说明里，并且直接由原仓库提供、没有复制到本仓库。**没有任何一张是本仓库跑出来的**，所以它反映的是每个团队愿意拿出来展示的样子，不是同题横评。用 `python scripts/fetch_samples.py` 重新生成。</sub>
+<sub>**共 367 张，全部来自各项目自己的仓库**，按原尺寸完整展示、不做缩略图 —— 幻灯片信息密度高，缩到 300px 根本看不清字体和层次。每张都读自锁定的 commit，出处写在它上方的说明里，并且直接由原仓库提供、没有复制到本仓库。**没有任何一张是本仓库跑出来的**，所以它反映的是每个团队愿意拿出来展示的样子，不是同题横评。用 `python scripts/fetch_samples.py` 重新生成。</sub>
 <!-- END:GALLERY -->
 
 ---
@@ -2317,7 +2421,7 @@ GitHub Action 每天跑一次，数字变化时自动开 PR。**手工改表格�
 - **生成式的方差是真实存在的。** 同一个 skill、同一个 prompt，两次产出就是不一样。在样本量
   进入两位数之前，小的分差不说明任何问题。
 - **描述基于文档**，不是基于「我亲手都做过 deck」。登记册里
-  <!-- BEGIN:RESEARCHED -->29<!-- END:RESEARCHED --> 个是人工逐个读过 SKILL.md 的，
+  <!-- BEGIN:RESEARCHED -->30<!-- END:RESEARCHED --> 个是人工逐个读过 SKILL.md 的，
   其余带 `†` 的只核对了仓库自己写的一句话。我实际跑过的，档案里会写明。
 - **这是个快速变化的领域。** 所有内容都带日期，请看清楚。
 

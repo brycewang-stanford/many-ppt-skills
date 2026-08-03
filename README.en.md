@@ -9,7 +9,7 @@ See one you like in the [gallery](#what-they-look-like)? **[Make your own in 60 
 [简体中文](README.md) · [English](README.en.md)
 
 <!-- BEGIN:COUNTS -->
-**207 skills tracked**, **29 of them read by hand** · **271,800 combined stars** · 78 HTML-native · 76 native PPTX · 24 both · data refreshed **2026-07-29**
+**210 skills tracked**, **30 of them read by hand** · **271,800 combined stars** · 79 HTML-native · 77 native PPTX · 24 both · data refreshed **2026-07-29**
 <!-- END:COUNTS -->
 
 </div>
@@ -18,7 +18,7 @@ See one you like in the [gallery](#what-they-look-like)? **[Make your own in 60 
 
 Coding agents got good at CSS, and in six months a whole category appeared: skills that
 turn a document into a deck that does not look machine-made. This page tracks
-<!-- BEGIN:TRACKED -->207<!-- END:TRACKED --> of them, and four have over 20,000 stars each.
+<!-- BEGIN:TRACKED -->210<!-- END:TRACKED --> of them, and four have over 20,000 stars each.
 
 Every ranking of them is a re-sort of those star counts. Stars measure how well an author
 tweets. They do not tell you which one handles your code blocks, or whether the CFO will
@@ -395,6 +395,9 @@ essentially every scenario.
 | **[Paper Deck Reveal](https://github.com/O0000-code/paper-deck-reveal)** | — | Framework | Apache-2.0 | Reveal.js skill that turns an academic paper into an offline deck with interactive demos. |
 | **[Codex Slides](https://github.com/nexu-io/codex-slides)** | — | Framework | MIT | AI slide studio for Codex: image-native decks, parallel render, and PDF/PPTX export. |
 | **[3D HTML Slide Skill](https://github.com/yoshifujidesign/3d-html-slide-skill)**† | — | HTML | MIT | Claude Code skill that generates a single-file HTML slide deck with Three.js wireframe backgrounds. |
+| **[University PPT Skill](https://github.com/SiyuQiannn/university-ppt-skill)**<br><sub>SiyuQiannn</sub> | — | Templates | NOASSERTION | Editable university-branded PPTX built from school theme tokens and a reusable layout library. |
+| **[Image to Editable PPT Skill (zhoujie97)](https://github.com/zhoujie97/image-to-editable-ppt-skill)**†<br><sub>zhoujie97</sub> | — | PPTX | Unspecified | Rebuilds screenshots and infographics into editable PowerPoint shapes, text boxes and SVG icons. |
+| **[Claude PPT Skills](https://github.com/sunxiaohui2025/claude-ppt-skills)**†<br><sub>sunxiaohui2025</sub> | — | HTML | Unspecified | Single-file HTML decks in six styles, with in-browser editing and a thumbnail overview grid. |
 
 ### Other curated lists
 
@@ -473,7 +476,7 @@ installing into the wrong place is the usual reason nothing happens:
 <!-- BEGIN:INSTALLMETHODS -->
 | Install method | What it actually does | Skills |
 |---|---|---:|
-| `clone` | Clones into `~/.claude/skills/`, where Claude Code looks for personal skills. Restart the session and it is available. | 23 |
+| `clone` | Clones into `~/.claude/skills/`, where Claude Code looks for personal skills. Restart the session and it is available. | 24 |
 | `plugin` | Two commands typed **inside Claude Code**, not in a terminal. Adds the marketplace, then installs from it. | 2 |
 | `skills-cli` | Agent-agnostic installer. Works outside Claude Code too. | 2 |
 | `python` | Needs Python on your machine. Clone it, install the dependencies, then point your agent at the cloned directory. | 1 |
@@ -502,7 +505,7 @@ and builds from it. Want the options instead? Don't name one — just ask for a 
 > frontend-slides' SKILL.md and holds for that skill only.
 
 <!-- BEGIN:GALLERY -->
-**Jump to:** [PPT Master](#gallery-ppt-master) <sub>24</sub> · [Frontend Slides](#gallery-frontend-slides) <sub>24</sub> · [Guizang PPT Skill](#gallery-guizang-ppt-skill) <sub>13</sub> · [Huashu Design](#gallery-huashu-design) <sub>24</sub> · [HTML PPT Studio](#gallery-html-ppt-skill) <sub>24</sub> · [open-slide](#gallery-open-slide) <sub>16</sub> · [Beautiful HTML Templates](#gallery-beautiful-html-templates) <sub>24</sub> · [PPT Agent Workflow San](#gallery-ppt-agent-workflow-san) <sub>10</sub> · [Frontend Slides Editable](#gallery-frontend-slides-editable) <sub>24</sub> · [PPT SVG Generator](#gallery-ppt-svg-generator) <sub>2</sub> · [Mck PPT Design System](#gallery-mck-ppt-design-skill) <sub>6</sub> · [PPT Agent Skill](#gallery-ppt-agent-skill) <sub>24</sub> · [HTML Slides](#gallery-html-slides-bluedusk) <sub>4</sub> · [KingDee PPT Skill](#gallery-kingdee-ppt-skill) <sub>1</sub> · [Slide Creator](#gallery-slide-creator) <sub>23</sub> · [next-slide](#gallery-next-slide) <sub>1</sub> · [Slide Writer](#gallery-slide-writer) <sub>5</sub> · [Skills Slides](#gallery-skills-slides) <sub>4</sub> · [PowerPoint Fancy Design](#gallery-powerpoint-fancy-design) <sub>24</sub> · [PPTX from Layouts](#gallery-pptx-from-layouts) <sub>1</sub> · [PPTWork](#gallery-pptwork) <sub>24</sub> · [Paper Deck Reveal](#gallery-paper-deck-reveal) <sub>22</sub> · [Codex Slides](#gallery-codex-slides) <sub>24</sub> · [3D HTML Slide Skill](#gallery-3d-html-slide-skill) <sub>2</sub>
+**Jump to:** [PPT Master](#gallery-ppt-master) <sub>24</sub> · [Frontend Slides](#gallery-frontend-slides) <sub>24</sub> · [Guizang PPT Skill](#gallery-guizang-ppt-skill) <sub>13</sub> · [Huashu Design](#gallery-huashu-design) <sub>24</sub> · [HTML PPT Studio](#gallery-html-ppt-skill) <sub>24</sub> · [open-slide](#gallery-open-slide) <sub>16</sub> · [Beautiful HTML Templates](#gallery-beautiful-html-templates) <sub>24</sub> · [PPT Agent Workflow San](#gallery-ppt-agent-workflow-san) <sub>10</sub> · [Frontend Slides Editable](#gallery-frontend-slides-editable) <sub>24</sub> · [PPT SVG Generator](#gallery-ppt-svg-generator) <sub>2</sub> · [Mck PPT Design System](#gallery-mck-ppt-design-skill) <sub>6</sub> · [PPT Agent Skill](#gallery-ppt-agent-skill) <sub>24</sub> · [HTML Slides](#gallery-html-slides-bluedusk) <sub>4</sub> · [KingDee PPT Skill](#gallery-kingdee-ppt-skill) <sub>1</sub> · [Slide Creator](#gallery-slide-creator) <sub>23</sub> · [next-slide](#gallery-next-slide) <sub>1</sub> · [Slide Writer](#gallery-slide-writer) <sub>5</sub> · [Skills Slides](#gallery-skills-slides) <sub>4</sub> · [PowerPoint Fancy Design](#gallery-powerpoint-fancy-design) <sub>24</sub> · [PPTX from Layouts](#gallery-pptx-from-layouts) <sub>1</sub> · [PPTWork](#gallery-pptwork) <sub>24</sub> · [Paper Deck Reveal](#gallery-paper-deck-reveal) <sub>22</sub> · [Codex Slides](#gallery-codex-slides) <sub>24</sub> · [3D HTML Slide Skill](#gallery-3d-html-slide-skill) <sub>2</sub> · [University PPT Skill](#gallery-university-ppt-skill) <sub>10</sub> · [Image to Editable PPT Skill (zhoujie97)](#gallery-image-to-editable-ppt-skill-zhoujie97) <sub>4</sub> · [Claude PPT Skills](#gallery-claude-ppt-skills) <sub>3</sub>
 
 <a id="gallery-ppt-master"></a>
 
@@ -2232,9 +2235,110 @@ git clone https://github.com/nexu-io/codex-slides && cd codex-slides
 
 <sub><b>EP133-2_2</b> · GitHub attachment</sub>
 
+<a id="gallery-university-ppt-skill"></a>
+
+#### [University PPT Skill](https://github.com/SiyuQiannn/university-ppt-skill) · — ⭐ · Templates
+
+<sub>Editable university-branded PPTX built from school theme tokens and a reusable layout library.</sub>
+
+<sub>10 of 10 images in [`SiyuQiannn/university-ppt-skill`](https://github.com/SiyuQiannn/university-ppt-skill) · the leading frames are the ones the project puts in its own README</sub>
+
+```bash
+git clone https://github.com/SiyuQiannn/university-ppt-skill
+```
+
+<sub><b>Styles below</b> `contact-sheet` · `02-图文案例证据-源模板复刻` · `05-对比分析框架-源模板复刻` · `03-流程时间线阶段-源模板复刻` · `01-综合卡片要点-源模板复刻` · `06-数据图表表格-源模板复刻` · `08-循环网络关系-源模板复刻` · `spec-driven-demo-contact-sheet` · `04-层级金字塔框架-源模板复刻` · `10-图标素材库-源模板复刻` — name one when you ask for a deck. These are the project's own strings, taken from the filenames and captions linked under each image, not names this registry made up.</sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/examples/preview_contact_sheet.png" width="100%" alt="Preview">
+
+<sub><b>Preview</b> · <code>contact-sheet</code> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/examples/preview_contact_sheet.png"><code>examples/preview_contact_sheet.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_02_%E5%9B%BE%E6%96%87%E6%A1%88%E4%BE%8B%E8%AF%81%E6%8D%AE_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>02 图文案例证据 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_02_图文案例证据_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_02_图文案例证据_源模板复刻.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_05_%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90%E6%A1%86%E6%9E%B6_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>05 对比分析框架 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_05_对比分析框架_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_05_对比分析框架_源模板复刻.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_03_%E6%B5%81%E7%A8%8B%E6%97%B6%E9%97%B4%E7%BA%BF%E9%98%B6%E6%AE%B5_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>03 流程时间线阶段 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_03_流程时间线阶段_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_03_流程时间线阶段_源模板复刻.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_01_%E7%BB%BC%E5%90%88%E5%8D%A1%E7%89%87%E8%A6%81%E7%82%B9_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>01 综合卡片要点 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_01_综合卡片要点_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_01_综合卡片要点_源模板复刻.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_06_%E6%95%B0%E6%8D%AE%E5%9B%BE%E8%A1%A8%E8%A1%A8%E6%A0%BC_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>06 数据图表表格 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_06_数据图表表格_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_06_数据图表表格_源模板复刻.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_08_%E5%BE%AA%E7%8E%AF%E7%BD%91%E7%BB%9C%E5%85%B3%E7%B3%BB_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>08 循环网络关系 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_08_循环网络关系_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_08_循环网络关系_源模板复刻.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/examples/spec_driven_demo_contact_sheet.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>Spec Driven Demo Contact Sheet</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/examples/spec_driven_demo_contact_sheet.png"><code>examples/spec_driven_demo_contact_sheet.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_04_%E5%B1%82%E7%BA%A7%E9%87%91%E5%AD%97%E5%A1%94%E6%A1%86%E6%9E%B6_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>04 层级金字塔框架 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_04_层级金字塔框架_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_04_层级金字塔框架_源模板复刻.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_10_%E5%9B%BE%E6%A0%87%E7%B4%A0%E6%9D%90%E5%BA%93_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>10 图标素材库 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_10_图标素材库_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_10_图标素材库_源模板复刻.png</code></a></sub>
+
+<a id="gallery-image-to-editable-ppt-skill-zhoujie97"></a>
+
+#### [Image to Editable PPT Skill (zhoujie97)](https://github.com/zhoujie97/image-to-editable-ppt-skill) · — ⭐ · PPTX
+
+<sub>Rebuilds screenshots and infographics into editable PowerPoint shapes, text boxes and SVG icons.</sub>
+
+<sub>4 of 4 images in [`zhoujie97/image-to-editable-ppt-skill`](https://github.com/zhoujie97/image-to-editable-ppt-skill) · the leading frames are the ones the project puts in its own README</sub>
+
+<sub><b>Styles below</b> `效果图1` · `效果图2` · `原图2` · `原图1` — name one when you ask for a deck. These are the project's own strings, taken from the filenames and captions linked under each image, not names this registry made up.</sub>
+
+<img src="https://raw.githubusercontent.com/zhoujie97/image-to-editable-ppt-skill/e3c39d907ec6abf5266e4491c6aa001b663b9207/%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%95%88%E6%9E%9C%E5%9B%BE1.png" width="100%" alt="alt text">
+
+<sub><b>alt text</b> · <code>效果图1</code> · <a href="https://github.com/zhoujie97/image-to-editable-ppt-skill/blob/e3c39d907ec6abf5266e4491c6aa001b663b9207/效果图/效果图1.png"><code>效果图/效果图1.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zhoujie97/image-to-editable-ppt-skill/e3c39d907ec6abf5266e4491c6aa001b663b9207/%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%95%88%E6%9E%9C%E5%9B%BE2.png" width="100%" alt="alt text">
+
+<sub><b>alt text</b> · <code>效果图2</code> · <a href="https://github.com/zhoujie97/image-to-editable-ppt-skill/blob/e3c39d907ec6abf5266e4491c6aa001b663b9207/效果图/效果图2.png"><code>效果图/效果图2.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zhoujie97/image-to-editable-ppt-skill/e3c39d907ec6abf5266e4491c6aa001b663b9207/%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%8E%9F%E5%9B%BE2.png" width="100%" alt="alt text">
+
+<sub><b>alt text</b> · <code>原图2</code> · <a href="https://github.com/zhoujie97/image-to-editable-ppt-skill/blob/e3c39d907ec6abf5266e4491c6aa001b663b9207/效果图/原图2.png"><code>效果图/原图2.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zhoujie97/image-to-editable-ppt-skill/e3c39d907ec6abf5266e4491c6aa001b663b9207/%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%8E%9F%E5%9B%BE1.jpg" width="100%" alt="alt text">
+
+<sub><b>alt text</b> · <code>原图1</code> · <a href="https://github.com/zhoujie97/image-to-editable-ppt-skill/blob/e3c39d907ec6abf5266e4491c6aa001b663b9207/效果图/原图1.jpg"><code>效果图/原图1.jpg</code></a></sub>
+
+<a id="gallery-claude-ppt-skills"></a>
+
+#### [Claude PPT Skills](https://github.com/sunxiaohui2025/claude-ppt-skills) · — ⭐ · HTML
+
+<sub>Single-file HTML decks in six styles, with in-browser editing and a thumbnail overview grid.</sub>
+
+<sub>3 of 3 images in [`sunxiaohui2025/claude-ppt-skills`](https://github.com/sunxiaohui2025/claude-ppt-skills) · the leading frames are the ones the project puts in its own README</sub>
+
+
+<img src="https://github.com/user-attachments/assets/d8742e1d-0fc1-4930-ac9a-6cc783fd47cd" width="100%" alt="截屏2026-05-28 15 23 36">
+
+<sub><b>截屏2026-05-28 15 23 36</b> · GitHub attachment</sub>
+
+<img src="https://github.com/user-attachments/assets/df1b2e93-14b7-49ac-b0e9-0d99e630d382" width="100%" alt="image">
+
+<sub><b>image</b> · GitHub attachment</sub>
+
+<img src="https://github.com/user-attachments/assets/da11e54a-f568-4204-9146-35f7acc57f5a" width="100%" alt="image">
+
+<sub><b>image</b> · GitHub attachment</sub>
+
 <sub>No imagery in the repositories of: Slidev, Quarkdown, Banana Slides, Visual Explainer, HTML Anything, Dashi PPT Skill, Codex PPT Skill, NanoBanana PPT Skills, Baoyu Design, Gorden PPT Skill, Codex Claude Academic Skills, Oh My PPT, Image to Editable PPT Skill, Gorden Super PPT Skills, CyberPPT, Ian Handdrawn PPT, PPT Image First, GPT Image2 PPT Skills, PPT Agent Skills, Humanize PPT, Claude Office Skills, Academic PPTX, Claude Skills, Power Design, Reveal.js Skill, Visual Style PPT Skill, Beamer Skill, RW Consulting PPT, Paper2Anything, DOM to PPTX, Marp Slides, Beamer Academic, Planners PPT Hell, Thesis Defense PPTX Skill, Apple Bento Grid, Codex PPT Skill, Hands on Deck, Skywork Skills, PPT Image2 Editable Rebuild, Slide Image to Editable PPTX, Magic Slide, Presentation Skills, Claude Design Skill, Servasyy Skills, Ultimate PPT Master Skill, Future Slide, Slide Deck Generator, HTML PPT Designer, Presentation Skills, PowerPoint Skill, Make Slide, PPT Report Skills, AI Paper to Slide Skill, Literature Report PPT Builder, Image to PPTX Skill, Visual Cognition Slides, CN Academic Spark, Knowledge Cat PPT Skill, SJTU PPT Template Skill, Deck Factory, Space Multi Design PPT, Lieflat HTML Design, Jiarui SVG Skills, Awesome PPT Skills, Editable Image to PPT Skill, Presentation, Huawei Style PPT Skill, HTML to Editable PPTX, Claude Code Codex Slide, Baoyu Xuanyi Skills, Beautiful Hackathon Slides, ImageGen PPTX Pipeline, Paper PPT Skill, Presentation Skill, Codex Image to Editable PPT, Slidev Skills, PPT Skill, BL Captain PPT Skill, HTML to PPT PDF, Slides AI Plugin, Scholar PPT CN, Narrative Engine, Image PPT King, PPT Design DNA, PPT Creator Skills, Beamer Skill, Jingge Sense Deck, Presentation Skill, Econ Empirical Paper PPT Skill, HTML to PPTX, Neon Slides, Claude HTML Slide Builder, 30x McKinsey Research Deck, Keynote Slides Skill, PPT Agent, Interactive Slides, PPTX Template Skills, KAI Presentation, AI Draw Skill, Keynot, MBB Decks, Slide Wright, CyberBin PPT Skill, Competition PPT Template Skill, Four-Up PPT Generator, NanoBanana PPT Skills, NanoBanana PPT Skills, PPT Image Share Builder, HalfAI Gufa PPT, Slide Design Skill, Better PPT HTML Deck, Create HTML Deck, AWS HTML Slides, Prada Slides, Japanese Corporate PPTX Skill, Editable Leadership PPTX, SlideStage Pack, Deckset Claude Skill, McKinsey HTML Design Skill, IML PPTX, GZR NSFC PPT Skill, HTML to PPTX Skill, Bento PPT Skill, SlideSmith, Fudan University PPT Skill, Presentation Chef, Paper Figure PPTX Skill, AI Editable PPT Skill, Hand-Drawn PPT Skill, Guizang PPT Skill, TalkTrack, HTML PPT Skill, HTML to PPTX, PPT Expert Team, Vela Slides, Paper to LaTeX PPT, SOIL Deck Skills, PPT Master, PPT Image to Editable, Modern PPT, Bruce PPTX Generator, PPT Skill, Xidian Slides Skill, Presentation Forge, Tekion Slide Generator, Paper to Slides Skill, PPT Skills, Editable PPTX Skill, Pitch Deck Iterator, Zhongguose PPT Skill, ZJ Lab Academic PPTX Skills, Research Group PPT Skill, Paper to Scholar Slides, Consulting Diagnosis PPT Skill, Token Slides, Aham PPT, Notrat PPT Studio, Web PPT, Codex XKPPT Skill, High Quality Slides, PPT Design Skill, PowerPoint Skill, Slide Weaver, Competition PPT Skill, HFUT Presentation Studio, SJTU Beamer PPT, Frontend Slides, HTML Report Generator, Demo Prep Skill, Avatar PPT Master, Special Achievement Report, HTML PPT Academic Skill, HTML PPT Video Skill, PPT Template Fill, AI PPT Skill, SVG to PPTX Skill, Doc to PPT Skill, Economics Empirical PPT Skill, SlideSage, USTC PPT Template, Anthropic PPTX (official), Baoyu Skills, AI Skills (Cross-Platform).</sub>
 
-<sub>**350 images, all of them the projects' own**, shown full size rather than as thumbnails — a slide is too dense to judge at 300px. Each was read from its repository at a pinned commit, credited in the caption above it, and served from that repository rather than copied here. Nothing was produced by running a skill, so treat it as what each team chose to show off — not as a like-for-like comparison. Regenerate with `python scripts/fetch_samples.py`.</sub>
+<sub>**367 images, all of them the projects' own**, shown full size rather than as thumbnails — a slide is too dense to judge at 300px. Each was read from its repository at a pinned commit, credited in the caption above it, and served from that repository rather than copied here. Nothing was produced by running a skill, so treat it as what each team chose to show off — not as a like-for-like comparison. Regenerate with `python scripts/fetch_samples.py`.</sub>
 <!-- END:GALLERY -->
 
 ---
@@ -2348,7 +2452,7 @@ git history.
 - **Generative variance is real.** Same skill, same prompt, different output. Small score
   gaps will not mean anything until run counts are in the double digits.
 - **Descriptions come from documentation**, not from having personally shipped a deck with
-  each one. <!-- BEGIN:RESEARCHED -->29<!-- END:RESEARCHED --> entries were read by hand,
+  each one. <!-- BEGIN:RESEARCHED -->30<!-- END:RESEARCHED --> entries were read by hand,
   SKILL.md included; the rest carry a `†` and rest on what the repository says about itself.
   Where I have run something, the dossier says so.
 - **This is a fast-moving field.** Everything here carries a date. Check it.
