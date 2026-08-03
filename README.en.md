@@ -9,7 +9,7 @@ See one you like in the [gallery](#what-they-look-like)? **[Make your own in 60 
 [简体中文](README.md) · [English](README.en.md)
 
 <!-- BEGIN:COUNTS -->
-**218 skills tracked**, **34 of them read by hand** · **271,800 combined stars** · 81 HTML-native · 78 native PPTX · 25 both · data refreshed **2026-07-29**
+**223 skills tracked**, **35 of them read by hand** · **271,800 combined stars** · 82 HTML-native · 79 native PPTX · 25 both · data refreshed **2026-07-29**
 <!-- END:COUNTS -->
 
 </div>
@@ -18,7 +18,7 @@ See one you like in the [gallery](#what-they-look-like)? **[Make your own in 60 
 
 Coding agents got good at CSS, and in six months a whole category appeared: skills that
 turn a document into a deck that does not look machine-made. This page tracks
-<!-- BEGIN:TRACKED -->218<!-- END:TRACKED --> of them, and four have over 20,000 stars each.
+<!-- BEGIN:TRACKED -->223<!-- END:TRACKED --> of them, and four have over 20,000 stars each.
 
 Every ranking of them is a re-sort of those star counts. Stars measure how well an author
 tweets. They do not tell you which one handles your code blocks, or whether the CFO will
@@ -406,6 +406,11 @@ essentially every scenario.
 | **[CUHK Slides Template (HTML)](https://github.com/HarlandZZC/cuhk-slides-template-html)**<br><sub>HarlandZZC</sub> | — | Templates | MIT | One self-contained HTML slide template in CUHK colours, plus a Markdown-to-slides skill. |
 | **[TaoHtml](https://github.com/TaoGEO/TaoHtml)**†<br><sub>TaoGEO</sub> | — | HTML | MIT | Redesigns an existing Word, PDF or PPT into a 16:9 offline HTML deck with staged animation. |
 | **[Google Slides Deck Skill](https://github.com/eranw2000/google-slides-skill)**<br><sub>eranw2000</sub> | — | Framework | MIT | Rebuilds a Google Slides deck through the API, rendering each slide to PNG to check its work. |
+| **[Inspiration Deck Workshop](https://github.com/zjsthmjialin/inspiration-deck-workshop)**<br><sub>zjsthmjialin</sub> | — | Templates | MIT | 23 themes and 25 page layouts for animated static HTML decks, driven from a small CLI. |
+| **[HTML Presentation Skill](https://github.com/defreitassl/html-presentation-skill)**†<br><sub>defreitassl</sub> | — | HTML | MIT | Turns documents, notes or briefs into a standalone HTML presentation, then validates it. |
+| **[PPTX Deck Creation Kit](https://github.com/kimtth/agent-pptify-kit)**†<br><sub>kimtth</sub> | — | PPTX | MIT | Coordinate-explicit PPTX specs that stay native objects, shipped as a Copilot plugin. |
+| **[TikTok Slideshow Command Center](https://github.com/Meliwat/vyral-tiktok-slideshow-skill)**†<br><sub>Meliwat</sub> | — | Image | MIT | Plans TikTok photo carousels: content angle, slide design and posting cadence in one pass. |
+| **[PPT Deck Builder Skill](https://github.com/lk251066/ppt-deck-builder-skill)**†<br><sub>lk251066</sub> | — | Image | Unspecified | Renders each page as a finished image, repairs only the bad pages, then packs a PPTX. |
 
 ### Other curated lists
 
@@ -484,7 +489,7 @@ installing into the wrong place is the usual reason nothing happens:
 <!-- BEGIN:INSTALLMETHODS -->
 | Install method | What it actually does | Skills |
 |---|---|---:|
-| `clone` | Clones into `~/.claude/skills/`, where Claude Code looks for personal skills. Restart the session and it is available. | 27 |
+| `clone` | Clones into `~/.claude/skills/`, where Claude Code looks for personal skills. Restart the session and it is available. | 28 |
 | `python` | Needs Python on your machine. Clone it, install the dependencies, then point your agent at the cloned directory. | 2 |
 | `plugin` | Two commands typed **inside Claude Code**, not in a terminal. Adds the marketplace, then installs from it. | 2 |
 | `skills-cli` | Agent-agnostic installer. Works outside Claude Code too. | 2 |
@@ -513,7 +518,7 @@ and builds from it. Want the options instead? Don't name one — just ask for a 
 > frontend-slides' SKILL.md and holds for that skill only.
 
 <!-- BEGIN:GALLERY -->
-**Jump to:** [PPT Master](#gallery-ppt-master) <sub>24</sub> · [Frontend Slides](#gallery-frontend-slides) <sub>24</sub> · [Guizang PPT Skill](#gallery-guizang-ppt-skill) <sub>13</sub> · [Huashu Design](#gallery-huashu-design) <sub>24</sub> · [HTML PPT Studio](#gallery-html-ppt-skill) <sub>24</sub> · [open-slide](#gallery-open-slide) <sub>16</sub> · [Beautiful HTML Templates](#gallery-beautiful-html-templates) <sub>24</sub> · [PPT Agent Workflow San](#gallery-ppt-agent-workflow-san) <sub>10</sub> · [Frontend Slides Editable](#gallery-frontend-slides-editable) <sub>24</sub> · [PPT SVG Generator](#gallery-ppt-svg-generator) <sub>2</sub> · [Mck PPT Design System](#gallery-mck-ppt-design-skill) <sub>6</sub> · [PPT Agent Skill](#gallery-ppt-agent-skill) <sub>24</sub> · [HTML Slides](#gallery-html-slides-bluedusk) <sub>4</sub> · [KingDee PPT Skill](#gallery-kingdee-ppt-skill) <sub>1</sub> · [Slide Creator](#gallery-slide-creator) <sub>23</sub> · [next-slide](#gallery-next-slide) <sub>1</sub> · [Slide Writer](#gallery-slide-writer) <sub>5</sub> · [Skills Slides](#gallery-skills-slides) <sub>4</sub> · [PowerPoint Fancy Design](#gallery-powerpoint-fancy-design) <sub>24</sub> · [PPTX from Layouts](#gallery-pptx-from-layouts) <sub>1</sub> · [PPTWork](#gallery-pptwork) <sub>24</sub> · [Paper Deck Reveal](#gallery-paper-deck-reveal) <sub>22</sub> · [Codex Slides](#gallery-codex-slides) <sub>24</sub> · [3D HTML Slide Skill](#gallery-3d-html-slide-skill) <sub>2</sub> · [University PPT Skill](#gallery-university-ppt-skill) <sub>10</sub> · [Image to Editable PPT Skill (zhoujie97)](#gallery-image-to-editable-ppt-skill-zhoujie97) <sub>4</sub> · [Claude PPT Skills](#gallery-claude-ppt-skills) <sub>3</sub> · [Econ Slides Skill](#gallery-econ-slides-skill) <sub>5</sub> · [GHB PPT Skill](#gallery-ghb-ppt-skill) <sub>1</sub> · [OpenCode PPT Studio](#gallery-oc-sdk-ppt) <sub>3</sub> · [Course HTML Slides Builder](#gallery-course-html-slides-skill) <sub>9</sub> · [Excalidraw Slides Generator](#gallery-excalidraw-slides-skills) <sub>5</sub> · [CUHK Slides Template (HTML)](#gallery-cuhk-slides-template-html) <sub>2</sub> · [TaoHtml](#gallery-taohtml) <sub>12</sub> · [Google Slides Deck Skill](#gallery-google-slides-skill) <sub>1</sub>
+**Jump to:** [PPT Master](#gallery-ppt-master) <sub>24</sub> · [Frontend Slides](#gallery-frontend-slides) <sub>24</sub> · [Guizang PPT Skill](#gallery-guizang-ppt-skill) <sub>13</sub> · [Huashu Design](#gallery-huashu-design) <sub>24</sub> · [HTML PPT Studio](#gallery-html-ppt-skill) <sub>24</sub> · [open-slide](#gallery-open-slide) <sub>16</sub> · [Beautiful HTML Templates](#gallery-beautiful-html-templates) <sub>24</sub> · [PPT Agent Workflow San](#gallery-ppt-agent-workflow-san) <sub>10</sub> · [Frontend Slides Editable](#gallery-frontend-slides-editable) <sub>24</sub> · [PPT SVG Generator](#gallery-ppt-svg-generator) <sub>2</sub> · [Mck PPT Design System](#gallery-mck-ppt-design-skill) <sub>6</sub> · [PPT Agent Skill](#gallery-ppt-agent-skill) <sub>24</sub> · [HTML Slides](#gallery-html-slides-bluedusk) <sub>4</sub> · [KingDee PPT Skill](#gallery-kingdee-ppt-skill) <sub>1</sub> · [Slide Creator](#gallery-slide-creator) <sub>23</sub> · [next-slide](#gallery-next-slide) <sub>1</sub> · [Slide Writer](#gallery-slide-writer) <sub>5</sub> · [Skills Slides](#gallery-skills-slides) <sub>4</sub> · [PowerPoint Fancy Design](#gallery-powerpoint-fancy-design) <sub>24</sub> · [PPTX from Layouts](#gallery-pptx-from-layouts) <sub>1</sub> · [PPTWork](#gallery-pptwork) <sub>24</sub> · [Paper Deck Reveal](#gallery-paper-deck-reveal) <sub>22</sub> · [Codex Slides](#gallery-codex-slides) <sub>24</sub> · [3D HTML Slide Skill](#gallery-3d-html-slide-skill) <sub>2</sub> · [University PPT Skill](#gallery-university-ppt-skill) <sub>10</sub> · [Image to Editable PPT Skill (zhoujie97)](#gallery-image-to-editable-ppt-skill-zhoujie97) <sub>4</sub> · [Claude PPT Skills](#gallery-claude-ppt-skills) <sub>3</sub> · [Econ Slides Skill](#gallery-econ-slides-skill) <sub>5</sub> · [GHB PPT Skill](#gallery-ghb-ppt-skill) <sub>1</sub> · [OpenCode PPT Studio](#gallery-oc-sdk-ppt) <sub>3</sub> · [Course HTML Slides Builder](#gallery-course-html-slides-skill) <sub>9</sub> · [Excalidraw Slides Generator](#gallery-excalidraw-slides-skills) <sub>5</sub> · [CUHK Slides Template (HTML)](#gallery-cuhk-slides-template-html) <sub>2</sub> · [TaoHtml](#gallery-taohtml) <sub>12</sub> · [Google Slides Deck Skill](#gallery-google-slides-skill) <sub>1</sub> · [Inspiration Deck Workshop](#gallery-inspiration-deck-workshop) <sub>23</sub> · [HTML Presentation Skill](#gallery-html-presentation-skill) <sub>5</sub> · [PPTX Deck Creation Kit](#gallery-agent-pptify-kit) <sub>3</sub> · [TikTok Slideshow Command Center](#gallery-vyral-tiktok-slideshow-skill) <sub>6</sub> · [PPT Deck Builder Skill](#gallery-ppt-deck-builder-skill) <sub>4</sub>
 
 <a id="gallery-ppt-master"></a>
 
@@ -2591,9 +2596,227 @@ cp -R google-slides-skill/enhance-slides ~/.claude/skills/
 
 <sub><b>enhance-slides flow</b> · <a href="https://github.com/eranw2000/google-slides-skill/blob/43127d4e79f963be2243e0369b779baf453eac28/docs/enhance-slides-flow.png"><code>docs/enhance-slides-flow.png</code></a></sub>
 
+<a id="gallery-inspiration-deck-workshop"></a>
+
+#### [Inspiration Deck Workshop](https://github.com/zjsthmjialin/inspiration-deck-workshop) · — ⭐ · Templates
+
+<sub>23 themes and 25 page layouts for animated static HTML decks, driven from a small CLI.</sub>
+
+<sub>23 of 23 images in [`zjsthmjialin/inspiration-deck-workshop`](https://github.com/zjsthmjialin/inspiration-deck-workshop) · the leading frames are the ones the project puts in its own README</sub>
+
+```bash
+git clone https://github.com/zjsthmjialin/inspiration-deck-workshop && node tools/cli.mjs new my-deck --template product-launch
+```
+
+<sub><b>Styles below</b> `18-black-gold-stage` · `19-platinum-launch` · `21-signal-dashboard` · `23-vivid-pop` · `00-all-themes-contact-sheet` · `01-clear-board` · `02-mist-blue` · `03-data-brief` · `04-deep-code` · `05-terminal-signal` · `06-blueprint-grid` · `07-soft-card` — name one when you ask for a deck. These are the project's own strings, taken from the filenames and captions linked under each image, not names this registry made up.</sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/18-black-gold-stage.png" width="100%" alt="Black Gold Stage">
+
+<sub><b>Black Gold Stage</b> · <code>18-black-gold-stage</code> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/18-black-gold-stage.png"><code>docs/assets/theme-showcase/18-black-gold-stage.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/19-platinum-launch.png" width="100%" alt="Platinum Launch">
+
+<sub><b>Platinum Launch</b> · <code>19-platinum-launch</code> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/19-platinum-launch.png"><code>docs/assets/theme-showcase/19-platinum-launch.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/21-signal-dashboard.png" width="100%" alt="Signal Dashboard">
+
+<sub><b>Signal Dashboard</b> · <code>21-signal-dashboard</code> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/21-signal-dashboard.png"><code>docs/assets/theme-showcase/21-signal-dashboard.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/23-vivid-pop.png" width="100%" alt="Vivid Pop">
+
+<sub><b>Vivid Pop</b> · <code>23-vivid-pop</code> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/23-vivid-pop.png"><code>docs/assets/theme-showcase/23-vivid-pop.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/00-all-themes-contact-sheet.png" width="100%" alt="All theme preview">
+
+<sub><b>All theme preview</b> · <code>00-all-themes-contact-sheet</code> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/00-all-themes-contact-sheet.png"><code>docs/assets/theme-showcase/00-all-themes-contact-sheet.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/01-clear-board.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>01 Clear Board</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/01-clear-board.png"><code>docs/assets/theme-showcase/01-clear-board.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/02-mist-blue.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>02 Mist Blue</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/02-mist-blue.png"><code>docs/assets/theme-showcase/02-mist-blue.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/03-data-brief.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>03 Data Brief</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/03-data-brief.png"><code>docs/assets/theme-showcase/03-data-brief.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/04-deep-code.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>04 Deep Code</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/04-deep-code.png"><code>docs/assets/theme-showcase/04-deep-code.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/05-terminal-signal.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>05 Terminal Signal</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/05-terminal-signal.png"><code>docs/assets/theme-showcase/05-terminal-signal.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/06-blueprint-grid.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>06 Blueprint Grid</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/06-blueprint-grid.png"><code>docs/assets/theme-showcase/06-blueprint-grid.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/07-soft-card.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>07 Soft Card</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/07-soft-card.png"><code>docs/assets/theme-showcase/07-soft-card.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/08-editorial-space.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>08 Editorial Space</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/08-editorial-space.png"><code>docs/assets/theme-showcase/08-editorial-space.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/09-journal-spark.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>09 Journal Spark</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/09-journal-spark.png"><code>docs/assets/theme-showcase/09-journal-spark.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/11-glass-light.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>11 Glass Light</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/11-glass-light.png"><code>docs/assets/theme-showcase/11-glass-light.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/12-brand-pop.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>12 Brand Pop</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/12-brand-pop.png"><code>docs/assets/theme-showcase/12-brand-pop.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/13-paper-research.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>13 Paper Research</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/13-paper-research.png"><code>docs/assets/theme-showcase/13-paper-research.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/14-consulting-pro.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>14 Consulting Pro</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/14-consulting-pro.png"><code>docs/assets/theme-showcase/14-consulting-pro.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/15-minimal-stage.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>15 Minimal Stage</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/15-minimal-stage.png"><code>docs/assets/theme-showcase/15-minimal-stage.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/16-neon-orbit.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>16 Neon Orbit</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/16-neon-orbit.png"><code>docs/assets/theme-showcase/16-neon-orbit.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/17-quantum-grid.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>17 Quantum Grid</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/17-quantum-grid.png"><code>docs/assets/theme-showcase/17-quantum-grid.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/20-executive-ink.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>20 Executive Ink</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/20-executive-ink.png"><code>docs/assets/theme-showcase/20-executive-ink.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/22-editorial-luxe.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>22 Editorial Luxe</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/22-editorial-luxe.png"><code>docs/assets/theme-showcase/22-editorial-luxe.png</code></a></sub>
+
+<a id="gallery-html-presentation-skill"></a>
+
+#### [HTML Presentation Skill](https://github.com/defreitassl/html-presentation-skill) · — ⭐ · HTML
+
+<sub>Turns documents, notes or briefs into a standalone HTML presentation, then validates it.</sub>
+
+<sub>5 of 5 images in [`defreitassl/html-presentation-skill`](https://github.com/defreitassl/html-presentation-skill) · the leading frames are the ones the project puts in its own README</sub>
+
+<sub><b>Styles below</b> `artemis-program-overview` · `artemis-ii-executive-briefing` · `kubernetes-command-center` · `artemis-ii-mission-planner` · `who-air-pollution-dossier` — name one when you ask for a deck. These are the project's own strings, taken from the filenames and captions linked under each image, not names this registry made up.</sub>
+
+<img src="https://raw.githubusercontent.com/defreitassl/html-presentation-skill/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/artemis-program-overview.png" width="100%" alt="Artemis Program Overview preview">
+
+<sub><b>Artemis Program Overview preview</b> · <a href="https://github.com/defreitassl/html-presentation-skill/blob/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/artemis-program-overview.png"><code>assets/previews/artemis-program-overview.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/defreitassl/html-presentation-skill/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/artemis-ii-executive-briefing.png" width="100%" alt="Artemis II Executive Briefing preview">
+
+<sub><b>Artemis II Executive Briefing preview</b> · <a href="https://github.com/defreitassl/html-presentation-skill/blob/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/artemis-ii-executive-briefing.png"><code>assets/previews/artemis-ii-executive-briefing.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/defreitassl/html-presentation-skill/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/kubernetes-command-center.png" width="100%" alt="Kubernetes Command Center preview">
+
+<sub><b>Kubernetes Command Center preview</b> · <a href="https://github.com/defreitassl/html-presentation-skill/blob/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/kubernetes-command-center.png"><code>assets/previews/kubernetes-command-center.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/defreitassl/html-presentation-skill/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/artemis-ii-mission-planner.png" width="100%" alt="Artemis II Mission Planner preview">
+
+<sub><b>Artemis II Mission Planner preview</b> · <a href="https://github.com/defreitassl/html-presentation-skill/blob/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/artemis-ii-mission-planner.png"><code>assets/previews/artemis-ii-mission-planner.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/defreitassl/html-presentation-skill/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/who-air-pollution-dossier.png" width="100%" alt="WHO Ambient Air Pollution Dossier preview">
+
+<sub><b>WHO Ambient Air Pollution Dossier preview</b> · <code>who-air-pollution-dossier</code> · <a href="https://github.com/defreitassl/html-presentation-skill/blob/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/who-air-pollution-dossier.png"><code>assets/previews/who-air-pollution-dossier.png</code></a></sub>
+
+<a id="gallery-agent-pptify-kit"></a>
+
+#### [PPTX Deck Creation Kit](https://github.com/kimtth/agent-pptify-kit) · — ⭐ · PPTX
+
+<sub>Coordinate-explicit PPTX specs that stay native objects, shipped as a Copilot plugin.</sub>
+
+<sub>3 of 3 images in [`kimtth/agent-pptify-kit`](https://github.com/kimtth/agent-pptify-kit) · the leading frames are the ones the project puts in its own README</sub>
+
+<sub><b>Styles below</b> `pptify-kit-stress-demo-contact-sheet` · `pptify-kit-stress-demo-v3-contact-sheet` · `pptify-kit-stress-demo-v2-contact-sheet` — name one when you ask for a deck. These are the project's own strings, taken from the filenames and captions linked under each image, not names this registry made up.</sub>
+
+<img src="https://raw.githubusercontent.com/kimtth/agent-pptify-kit/831c9107b522baa8131e27c47d4cf04af5e54d93/docs/preview/pptify-kit-stress-demo-contact-sheet.png" width="100%" alt="Contact sheet of all 81 layouts in pptify-kit-stress-demo.pptx">
+
+<sub><b>Contact sheet of all 81 layouts in pptify-kit-stress-demo.pptx</b> · <code>pptify-kit-stress-demo-contact-sheet</code> · <a href="https://github.com/kimtth/agent-pptify-kit/blob/831c9107b522baa8131e27c47d4cf04af5e54d93/docs/preview/pptify-kit-stress-demo-contact-sheet.png"><code>docs/preview/pptify-kit-stress-demo-contact-sheet.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/kimtth/agent-pptify-kit/831c9107b522baa8131e27c47d4cf04af5e54d93/docs/preview/pptify-kit-stress-demo-v3-contact-sheet.png" width="100%" alt="Contact sheet of all 60 layouts in pptify-kit-stress-demo-v3.pptx">
+
+<sub><b>Contact sheet of all 60 layouts in pptify-kit-stress-demo-v3.pptx</b> · <code>pptify-kit-stress-demo-v3-contact-sheet</code> · <a href="https://github.com/kimtth/agent-pptify-kit/blob/831c9107b522baa8131e27c47d4cf04af5e54d93/docs/preview/pptify-kit-stress-demo-v3-contact-sheet.png"><code>docs/preview/pptify-kit-stress-demo-v3-contact-sheet.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/kimtth/agent-pptify-kit/831c9107b522baa8131e27c47d4cf04af5e54d93/docs/preview/pptify-kit-stress-demo-v2-contact-sheet.png" width="100%" alt="Contact sheet of all 50 layouts in pptify-kit-stress-demo-v2.pptx">
+
+<sub><b>Contact sheet of all 50 layouts in pptify-kit-stress-demo-v2.pptx</b> · <code>pptify-kit-stress-demo-v2-contact-sheet</code> · <a href="https://github.com/kimtth/agent-pptify-kit/blob/831c9107b522baa8131e27c47d4cf04af5e54d93/docs/preview/pptify-kit-stress-demo-v2-contact-sheet.png"><code>docs/preview/pptify-kit-stress-demo-v2-contact-sheet.png</code></a></sub>
+
+<a id="gallery-vyral-tiktok-slideshow-skill"></a>
+
+#### [TikTok Slideshow Command Center](https://github.com/Meliwat/vyral-tiktok-slideshow-skill) · — ⭐ · Image
+
+<sub>Plans TikTok photo carousels: content angle, slide design and posting cadence in one pass.</sub>
+
+<sub>6 of 6 images in [`Meliwat/vyral-tiktok-slideshow-skill`](https://github.com/Meliwat/vyral-tiktok-slideshow-skill) · the leading frames are the ones the project puts in its own README</sub>
+
+<sub><b>Styles below</b> `slide-1` · `slide-3` · `slide-5` · `command-center` · `renders` — name one when you ask for a deck. These are the project's own strings, taken from the filenames and captions linked under each image, not names this registry made up.</sub>
+
+<img src="https://raw.githubusercontent.com/Meliwat/vyral-tiktok-slideshow-skill/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-01.jpg" width="100%" alt="Slide 1">
+
+<sub><b>Slide 1</b> · <a href="https://github.com/Meliwat/vyral-tiktok-slideshow-skill/blob/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-01.jpg"><code>skill/examples/renders/slide-01.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/Meliwat/vyral-tiktok-slideshow-skill/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-03.jpg" width="100%" alt="Slide 3">
+
+<sub><b>Slide 3</b> · <a href="https://github.com/Meliwat/vyral-tiktok-slideshow-skill/blob/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-03.jpg"><code>skill/examples/renders/slide-03.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/Meliwat/vyral-tiktok-slideshow-skill/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-05.jpg" width="100%" alt="Slide 5">
+
+<sub><b>Slide 5</b> · <a href="https://github.com/Meliwat/vyral-tiktok-slideshow-skill/blob/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-05.jpg"><code>skill/examples/renders/slide-05.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/Meliwat/vyral-tiktok-slideshow-skill/f22e11a960c06d706cacbccccf5ff20985e70b9d/docs/command-center.png" width="100%" alt="The Command Center planning board">
+
+<sub><b>The Command Center planning board</b> · <a href="https://github.com/Meliwat/vyral-tiktok-slideshow-skill/blob/f22e11a960c06d706cacbccccf5ff20985e70b9d/docs/command-center.png"><code>docs/command-center.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/Meliwat/vyral-tiktok-slideshow-skill/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-02.jpg" width="100%" alt="TikTok Slideshow Command Center sample">
+
+<sub><b>Renders</b> · <a href="https://github.com/Meliwat/vyral-tiktok-slideshow-skill/blob/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-02.jpg"><code>skill/examples/renders/slide-02.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/Meliwat/vyral-tiktok-slideshow-skill/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-04.jpg" width="100%" alt="TikTok Slideshow Command Center sample">
+
+<sub><b>Renders</b> · <a href="https://github.com/Meliwat/vyral-tiktok-slideshow-skill/blob/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-04.jpg"><code>skill/examples/renders/slide-04.jpg</code></a></sub>
+
+<a id="gallery-ppt-deck-builder-skill"></a>
+
+#### [PPT Deck Builder Skill](https://github.com/lk251066/ppt-deck-builder-skill) · — ⭐ · Image
+
+<sub>Renders each page as a finished image, repairs only the bad pages, then packs a PPTX.</sub>
+
+<sub>4 of 4 images in [`lk251066/ppt-deck-builder-skill`](https://github.com/lk251066/ppt-deck-builder-skill) · the leading frames are the ones the project puts in its own README</sub>
+
+<sub><b>Styles below</b> `slide-01` · `slide-04` · `slide-06` · `slide-08` — name one when you ask for a deck. These are the project's own strings, taken from the filenames and captions linked under each image, not names this registry made up.</sub>
+
+<img src="https://raw.githubusercontent.com/lk251066/ppt-deck-builder-skill/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-01.png" width="100%" alt="slide-01">
+
+<sub><b>slide-01</b> · <a href="https://github.com/lk251066/ppt-deck-builder-skill/blob/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-01.png"><code>examples/grsai_ai_science_deck_micro_modules/slide-01.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/lk251066/ppt-deck-builder-skill/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-04.png" width="100%" alt="slide-04">
+
+<sub><b>slide-04</b> · <a href="https://github.com/lk251066/ppt-deck-builder-skill/blob/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-04.png"><code>examples/grsai_ai_science_deck_micro_modules/slide-04.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/lk251066/ppt-deck-builder-skill/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-06.png" width="100%" alt="slide-06">
+
+<sub><b>slide-06</b> · <a href="https://github.com/lk251066/ppt-deck-builder-skill/blob/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-06.png"><code>examples/grsai_ai_science_deck_micro_modules/slide-06.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/lk251066/ppt-deck-builder-skill/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-08.png" width="100%" alt="slide-08">
+
+<sub><b>slide-08</b> · <a href="https://github.com/lk251066/ppt-deck-builder-skill/blob/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-08.png"><code>examples/grsai_ai_science_deck_micro_modules/slide-08.png</code></a></sub>
+
 <sub>No imagery in the repositories of: Slidev, Quarkdown, Banana Slides, Visual Explainer, HTML Anything, Dashi PPT Skill, Codex PPT Skill, NanoBanana PPT Skills, Baoyu Design, Gorden PPT Skill, Codex Claude Academic Skills, Oh My PPT, Image to Editable PPT Skill, Gorden Super PPT Skills, CyberPPT, Ian Handdrawn PPT, PPT Image First, GPT Image2 PPT Skills, PPT Agent Skills, Humanize PPT, Claude Office Skills, Academic PPTX, Claude Skills, Power Design, Reveal.js Skill, Visual Style PPT Skill, Beamer Skill, RW Consulting PPT, Paper2Anything, DOM to PPTX, Marp Slides, Beamer Academic, Planners PPT Hell, Thesis Defense PPTX Skill, Apple Bento Grid, Codex PPT Skill, Hands on Deck, Skywork Skills, PPT Image2 Editable Rebuild, Slide Image to Editable PPTX, Magic Slide, Presentation Skills, Claude Design Skill, Servasyy Skills, Ultimate PPT Master Skill, Future Slide, Slide Deck Generator, HTML PPT Designer, Presentation Skills, PowerPoint Skill, Make Slide, PPT Report Skills, AI Paper to Slide Skill, Literature Report PPT Builder, Image to PPTX Skill, Visual Cognition Slides, CN Academic Spark, Knowledge Cat PPT Skill, SJTU PPT Template Skill, Deck Factory, Space Multi Design PPT, Lieflat HTML Design, Jiarui SVG Skills, Awesome PPT Skills, Editable Image to PPT Skill, Presentation, Huawei Style PPT Skill, HTML to Editable PPTX, Claude Code Codex Slide, Baoyu Xuanyi Skills, Beautiful Hackathon Slides, ImageGen PPTX Pipeline, Paper PPT Skill, Presentation Skill, Codex Image to Editable PPT, Slidev Skills, PPT Skill, BL Captain PPT Skill, HTML to PPT PDF, Slides AI Plugin, Scholar PPT CN, Narrative Engine, Image PPT King, PPT Design DNA, PPT Creator Skills, Beamer Skill, Jingge Sense Deck, Presentation Skill, Econ Empirical Paper PPT Skill, HTML to PPTX, Neon Slides, Claude HTML Slide Builder, 30x McKinsey Research Deck, Keynote Slides Skill, PPT Agent, Interactive Slides, PPTX Template Skills, KAI Presentation, AI Draw Skill, Keynot, MBB Decks, Slide Wright, CyberBin PPT Skill, Competition PPT Template Skill, Four-Up PPT Generator, NanoBanana PPT Skills, NanoBanana PPT Skills, PPT Image Share Builder, HalfAI Gufa PPT, Slide Design Skill, Better PPT HTML Deck, Create HTML Deck, AWS HTML Slides, Prada Slides, Japanese Corporate PPTX Skill, Editable Leadership PPTX, SlideStage Pack, Deckset Claude Skill, McKinsey HTML Design Skill, IML PPTX, GZR NSFC PPT Skill, HTML to PPTX Skill, Bento PPT Skill, SlideSmith, Fudan University PPT Skill, Presentation Chef, Paper Figure PPTX Skill, AI Editable PPT Skill, Hand-Drawn PPT Skill, Guizang PPT Skill, TalkTrack, HTML PPT Skill, HTML to PPTX, PPT Expert Team, Vela Slides, Paper to LaTeX PPT, SOIL Deck Skills, PPT Master, PPT Image to Editable, Modern PPT, Bruce PPTX Generator, PPT Skill, Xidian Slides Skill, Presentation Forge, Tekion Slide Generator, Paper to Slides Skill, PPT Skills, Editable PPTX Skill, Pitch Deck Iterator, Zhongguose PPT Skill, ZJ Lab Academic PPTX Skills, Research Group PPT Skill, Paper to Scholar Slides, Consulting Diagnosis PPT Skill, Token Slides, Aham PPT, Notrat PPT Studio, Web PPT, Codex XKPPT Skill, High Quality Slides, PPT Design Skill, PowerPoint Skill, Slide Weaver, Competition PPT Skill, HFUT Presentation Studio, SJTU Beamer PPT, Frontend Slides, HTML Report Generator, Demo Prep Skill, Avatar PPT Master, Special Achievement Report, HTML PPT Academic Skill, HTML PPT Video Skill, PPT Template Fill, AI PPT Skill, SVG to PPTX Skill, Doc to PPT Skill, Economics Empirical PPT Skill, SlideSage, USTC PPT Template, Anthropic PPTX (official), Baoyu Skills, AI Skills (Cross-Platform).</sub>
 
-<sub>**405 images, all of them the projects' own**, shown full size rather than as thumbnails — a slide is too dense to judge at 300px. Each was read from its repository at a pinned commit, credited in the caption above it, and served from that repository rather than copied here. Nothing was produced by running a skill, so treat it as what each team chose to show off — not as a like-for-like comparison. Regenerate with `python scripts/fetch_samples.py`.</sub>
+<sub>**446 images, all of them the projects' own**, shown full size rather than as thumbnails — a slide is too dense to judge at 300px. Each was read from its repository at a pinned commit, credited in the caption above it, and served from that repository rather than copied here. Nothing was produced by running a skill, so treat it as what each team chose to show off — not as a like-for-like comparison. Regenerate with `python scripts/fetch_samples.py`.</sub>
 <!-- END:GALLERY -->
 
 ---
@@ -2707,7 +2930,7 @@ git history.
 - **Generative variance is real.** Same skill, same prompt, different output. Small score
   gaps will not mean anything until run counts are in the double digits.
 - **Descriptions come from documentation**, not from having personally shipped a deck with
-  each one. <!-- BEGIN:RESEARCHED -->34<!-- END:RESEARCHED --> entries were read by hand,
+  each one. <!-- BEGIN:RESEARCHED -->35<!-- END:RESEARCHED --> entries were read by hand,
   SKILL.md included; the rest carry a `†` and rest on what the repository says about itself.
   Where I have run something, the dossier says so.
 - **This is a fast-moving field.** Everything here carries a date. Check it.

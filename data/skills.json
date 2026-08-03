@@ -3223,6 +3223,92 @@
       "best_for_en": "Teams already living in Google Slides who want an agent to fix a deck in place, not export a new one.",
       "best_for_zh": "已经在用 Google Slides、希望 Agent 就地修好演示文稿而不是另导一份的团队。",
       "source": "discovered"
+    },
+    {
+      "id": "inspiration-deck-workshop",
+      "repo": "zjsthmjialin/inspiration-deck-workshop",
+      "name": "Inspiration Deck Workshop",
+      "author": "zjsthmjialin",
+      "author_url": "https://github.com/zjsthmjialin",
+      "route": "templates",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "23 themes and 25 page layouts for animated static HTML decks, driven from a small CLI.",
+      "tagline_zh": "23 套主题与 25 种页面版式,用一个小 CLI 生成带动效的静态 HTML 演示。",
+      "highlights_en": [
+        "23 visual themes spanning business, technology, editorial, creative and premium-launch scenarios",
+        "25 reusable page layouts for covers, timelines, metrics, comparisons, roadmaps and story sections",
+        "A contact sheet of every theme ships in the repo, so you pick from rendered pages rather than names",
+        "Output is static HTML, aimed at proposal drafts, client briefings, research summaries and social carousels"
+      ],
+      "highlights_zh": [
+        "23 套视觉主题,覆盖商务、技术、编辑、创意与高端发布等场景",
+        "25 种可复用页面版式:封面、时间线、指标、对比、路线图与故事段落",
+        "仓库内附全主题总览拼图,可以看着渲染效果挑主题,而不是照名字猜",
+        "产物是静态 HTML,面向提案初稿、客户简报、研究摘要与社交轮播图"
+      ],
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/zjsthmjialin/inspiration-deck-workshop && node tools/cli.mjs new my-deck --template product-launch"
+      },
+      "requires": [
+        "Node.js"
+      ],
+      "best_for_en": "Picking a look first and filling in content second, when the deck has to land the same day.",
+      "best_for_zh": "先定风格再填内容、且当天就得交付的演示。",
+      "source": "discovered"
+    },
+    {
+      "id": "html-presentation-skill",
+      "repo": "defreitassl/html-presentation-skill",
+      "name": "HTML Presentation Skill",
+      "author": "defreitassl",
+      "author_url": "https://github.com/defreitassl",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Turns documents, notes or briefs into a standalone HTML presentation, then validates it.",
+      "tagline_zh": "把文档、笔记或简报转成独立的 HTML 演示页面,并对结果做校验。",
+      "source": "discovered"
+    },
+    {
+      "id": "agent-pptify-kit",
+      "repo": "kimtth/agent-pptify-kit",
+      "name": "PPTX Deck Creation Kit",
+      "author": "kimtth",
+      "author_url": "https://github.com/kimtth",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Coordinate-explicit PPTX specs that stay native objects, shipped as a Copilot plugin.",
+      "tagline_zh": "以显式坐标规格生成 PPTX,输出保持原生对象,并以 Copilot 插件形式分发。",
+      "source": "discovered"
+    },
+    {
+      "id": "vyral-tiktok-slideshow-skill",
+      "repo": "Meliwat/vyral-tiktok-slideshow-skill",
+      "name": "TikTok Slideshow Command Center",
+      "author": "Meliwat",
+      "author_url": "https://github.com/Meliwat",
+      "route": "image",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Plans TikTok photo carousels: content angle, slide design and posting cadence in one pass.",
+      "tagline_zh": "规划 TikTok 图文轮播:内容切角、单页设计与发布节奏一次成型。",
+      "source": "discovered"
+    },
+    {
+      "id": "ppt-deck-builder-skill",
+      "repo": "lk251066/ppt-deck-builder-skill",
+      "name": "PPT Deck Builder Skill",
+      "author": "lk251066",
+      "author_url": "https://github.com/lk251066",
+      "route": "image",
+      "license_note": "Unspecified",
+      "lang": "zh",
+      "tagline_en": "Renders each page as a finished image, repairs only the bad pages, then packs a PPTX.",
+      "tagline_zh": "逐页生成成品图,只返修出问题的单页,最后统一打包成 PPTX。",
+      "source": "discovered"
     }
   ],
   "lists": [
