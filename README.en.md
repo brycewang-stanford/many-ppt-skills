@@ -9,7 +9,7 @@ See one you like in the [gallery](#what-they-look-like)? **[Make your own in 60 
 [简体中文](README.md) · [English](README.en.md)
 
 <!-- BEGIN:COUNTS -->
-**203 skills tracked**, **26 of them read by hand** · **271,800 combined stars** · 77 HTML-native · 75 native PPTX · 24 both · data refreshed **2026-07-29**
+**207 skills tracked**, **29 of them read by hand** · **271,800 combined stars** · 78 HTML-native · 76 native PPTX · 24 both · data refreshed **2026-07-29**
 <!-- END:COUNTS -->
 
 </div>
@@ -18,7 +18,7 @@ See one you like in the [gallery](#what-they-look-like)? **[Make your own in 60 
 
 Coding agents got good at CSS, and in six months a whole category appeared: skills that
 turn a document into a deck that does not look machine-made. This page tracks
-<!-- BEGIN:TRACKED -->203<!-- END:TRACKED --> of them, and four have over 20,000 stars each.
+<!-- BEGIN:TRACKED -->207<!-- END:TRACKED --> of them, and four have over 20,000 stars each.
 
 Every ranking of them is a re-sort of those star counts. Stars measure how well an author
 tweets. They do not tell you which one handles your code blocks, or whether the CFO will
@@ -391,6 +391,10 @@ essentially every scenario.
 | **[Economics Empirical PPT Skill](https://github.com/jialiruo-png/economics-empirical-ppt-skill)**†<br><sub>jialiruo-png</sub> | 3 | PPTX | Unspecified | Generates PPTX presentations for economics, finance, and empirical research papers, with interactive prompts for page count, word count, and style. |
 | **[SlideSage](https://github.com/vedraut/slidesage)**†<br><sub>vedraut</sub> | 3 | PPTX | MIT | Generates static .pptx decks from content using storytelling and instructional design principles. |
 | **[USTC PPT Template](https://github.com/zsc58/ustc-ppt-template)**†<br><sub>zsc58</sub> | 3 | Templates | NOASSERTION | Provides a 15-slide blue academic PPT template for USTC with navigation links and a LaTeX pipeline. |
+| **[PPTWork](https://github.com/JunfengRan/PPTWork)** | — | PPTX | MIT | Two Anthropic-style Skills that plan, author, and export PowerPoint decks from HTML. |
+| **[Paper Deck Reveal](https://github.com/O0000-code/paper-deck-reveal)** | — | Framework | Apache-2.0 | Reveal.js skill that turns an academic paper into an offline deck with interactive demos. |
+| **[Codex Slides](https://github.com/nexu-io/codex-slides)** | — | Framework | MIT | AI slide studio for Codex: image-native decks, parallel render, and PDF/PPTX export. |
+| **[3D HTML Slide Skill](https://github.com/yoshifujidesign/3d-html-slide-skill)**† | — | HTML | MIT | Claude Code skill that generates a single-file HTML slide deck with Three.js wireframe backgrounds. |
 
 ### Other curated lists
 
@@ -469,7 +473,7 @@ installing into the wrong place is the usual reason nothing happens:
 <!-- BEGIN:INSTALLMETHODS -->
 | Install method | What it actually does | Skills |
 |---|---|---:|
-| `clone` | Clones into `~/.claude/skills/`, where Claude Code looks for personal skills. Restart the session and it is available. | 20 |
+| `clone` | Clones into `~/.claude/skills/`, where Claude Code looks for personal skills. Restart the session and it is available. | 23 |
 | `plugin` | Two commands typed **inside Claude Code**, not in a terminal. Adds the marketplace, then installs from it. | 2 |
 | `skills-cli` | Agent-agnostic installer. Works outside Claude Code too. | 2 |
 | `python` | Needs Python on your machine. Clone it, install the dependencies, then point your agent at the cloned directory. | 1 |
@@ -498,7 +502,7 @@ and builds from it. Want the options instead? Don't name one — just ask for a 
 > frontend-slides' SKILL.md and holds for that skill only.
 
 <!-- BEGIN:GALLERY -->
-**Jump to:** [PPT Master](#gallery-ppt-master) <sub>24</sub> · [Frontend Slides](#gallery-frontend-slides) <sub>24</sub> · [Guizang PPT Skill](#gallery-guizang-ppt-skill) <sub>13</sub> · [Huashu Design](#gallery-huashu-design) <sub>24</sub> · [HTML PPT Studio](#gallery-html-ppt-skill) <sub>24</sub> · [open-slide](#gallery-open-slide) <sub>16</sub> · [Beautiful HTML Templates](#gallery-beautiful-html-templates) <sub>24</sub> · [PPT Agent Workflow San](#gallery-ppt-agent-workflow-san) <sub>10</sub> · [Frontend Slides Editable](#gallery-frontend-slides-editable) <sub>24</sub> · [PPT SVG Generator](#gallery-ppt-svg-generator) <sub>2</sub> · [Mck PPT Design System](#gallery-mck-ppt-design-skill) <sub>6</sub> · [PPT Agent Skill](#gallery-ppt-agent-skill) <sub>24</sub> · [HTML Slides](#gallery-html-slides-bluedusk) <sub>4</sub> · [KingDee PPT Skill](#gallery-kingdee-ppt-skill) <sub>1</sub> · [Slide Creator](#gallery-slide-creator) <sub>23</sub> · [next-slide](#gallery-next-slide) <sub>1</sub> · [Slide Writer](#gallery-slide-writer) <sub>5</sub> · [Skills Slides](#gallery-skills-slides) <sub>4</sub> · [PowerPoint Fancy Design](#gallery-powerpoint-fancy-design) <sub>24</sub> · [PPTX from Layouts](#gallery-pptx-from-layouts) <sub>1</sub>
+**Jump to:** [PPT Master](#gallery-ppt-master) <sub>24</sub> · [Frontend Slides](#gallery-frontend-slides) <sub>24</sub> · [Guizang PPT Skill](#gallery-guizang-ppt-skill) <sub>13</sub> · [Huashu Design](#gallery-huashu-design) <sub>24</sub> · [HTML PPT Studio](#gallery-html-ppt-skill) <sub>24</sub> · [open-slide](#gallery-open-slide) <sub>16</sub> · [Beautiful HTML Templates](#gallery-beautiful-html-templates) <sub>24</sub> · [PPT Agent Workflow San](#gallery-ppt-agent-workflow-san) <sub>10</sub> · [Frontend Slides Editable](#gallery-frontend-slides-editable) <sub>24</sub> · [PPT SVG Generator](#gallery-ppt-svg-generator) <sub>2</sub> · [Mck PPT Design System](#gallery-mck-ppt-design-skill) <sub>6</sub> · [PPT Agent Skill](#gallery-ppt-agent-skill) <sub>24</sub> · [HTML Slides](#gallery-html-slides-bluedusk) <sub>4</sub> · [KingDee PPT Skill](#gallery-kingdee-ppt-skill) <sub>1</sub> · [Slide Creator](#gallery-slide-creator) <sub>23</sub> · [next-slide](#gallery-next-slide) <sub>1</sub> · [Slide Writer](#gallery-slide-writer) <sub>5</sub> · [Skills Slides](#gallery-skills-slides) <sub>4</sub> · [PowerPoint Fancy Design](#gallery-powerpoint-fancy-design) <sub>24</sub> · [PPTX from Layouts](#gallery-pptx-from-layouts) <sub>1</sub> · [PPTWork](#gallery-pptwork) <sub>24</sub> · [Paper Deck Reveal](#gallery-paper-deck-reveal) <sub>22</sub> · [Codex Slides](#gallery-codex-slides) <sub>24</sub> · [3D HTML Slide Skill](#gallery-3d-html-slide-skill) <sub>2</sub>
 
 <a id="gallery-ppt-master"></a>
 
@@ -1889,9 +1893,348 @@ git clone https://github.com/tristan-mcinnis/pptx-from-layouts-skill
 
 <sub><b>Thumbnail</b> · <a href="https://github.com/tristan-mcinnis/pptx-from-layouts-skill/blob/53b0e750694d807e3510c2017744197c3c5089b0/examples/q1-strategy/thumbnail.jpg"><code>examples/q1-strategy/thumbnail.jpg</code></a></sub>
 
+<a id="gallery-pptwork"></a>
+
+#### [PPTWork](https://github.com/JunfengRan/PPTWork) · — ⭐ · PPTX
+
+<sub>Two Anthropic-style Skills that plan, author, and export PowerPoint decks from HTML.</sub>
+
+<sub>24 of 28 images in [`JunfengRan/PPTWork`](https://github.com/JunfengRan/PPTWork) · the leading frames are the ones the project puts in its own README</sub>
+
+```bash
+git clone https://github.com/JunfengRan/PPTWork && cd PPTWork/ppt && npm install
+```
+
+<sub><b>Styles below</b> `showcase` · `showcase-bento` · `showcase-kpi` · `showcase-two-col` · `showcase-export` · `thumbnail` — name one when you ask for a deck. These are the project's own strings, taken from the filenames and captions linked under each image, not names this registry made up.</sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-cover.png" width="100%" alt="PPTWork capabilities cover slide">
+
+<sub><b>PPTWork capabilities cover slide</b> · <code>showcase</code> · cover · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-cover.png"><code>examples/showcase/showcase-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-bento.png" width="100%" alt="Two skills bento layout">
+
+<sub><b>Two skills bento layout</b> · <code>showcase-bento</code> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-bento.png"><code>examples/showcase/showcase-bento.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-kpi.png" width="100%" alt="AI agent market KPI row">
+
+<sub><b>AI agent market KPI row</b> · <code>showcase-kpi</code> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-kpi.png"><code>examples/showcase/showcase-kpi.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-two-col.png" width="100%" alt="Competitive landscape two-column slide">
+
+<sub><b>Competitive landscape two-column slide</b> · <code>showcase-two-col</code> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-two-col.png"><code>examples/showcase/showcase-two-col.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-export.png" width="100%" alt="Four-step CLI workflow">
+
+<sub><b>Four-step CLI workflow</b> · <code>showcase-export</code> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-export.png"><code>examples/showcase/showcase-export.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/closing/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/closing/thumbnail.png"><code>examples/ai-agent-landscape-2026/closing/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/cover/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/cover/thumbnail.png"><code>examples/ai-agent-landscape-2026/cover/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/landscape/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/landscape/thumbnail.png"><code>examples/ai-agent-landscape-2026/landscape/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/market-size/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/market-size/thumbnail.png"><code>examples/ai-agent-landscape-2026/market-size/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/problem/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/problem/thumbnail.png"><code>examples/ai-agent-landscape-2026/problem/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/roadmap/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/roadmap/thumbnail.png"><code>examples/ai-agent-landscape-2026/roadmap/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/tech-trends/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/tech-trends/thumbnail.png"><code>examples/ai-agent-landscape-2026/tech-trends/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p01-cover/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p01-cover/thumbnail.png"><code>examples/pptwork-capabilities/p01-cover/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p03-bento/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p03-bento/thumbnail.png"><code>examples/pptwork-capabilities/p03-bento/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p04-metrics/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p04-metrics/thumbnail.png"><code>examples/pptwork-capabilities/p04-metrics/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p06-workflow/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p06-workflow/thumbnail.png"><code>examples/pptwork-capabilities/p06-workflow/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p07-philosophy/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p07-philosophy/thumbnail.png"><code>examples/pptwork-capabilities/p07-philosophy/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p08-closing/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p08-closing/thumbnail.png"><code>examples/pptwork-capabilities/p08-closing/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/bento-asymmetric/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/bento-asymmetric/thumbnail.png"><code>ppt/assets/claude-warm/_preview/bento-asymmetric/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/cover-editorial/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/cover-editorial/thumbnail.png"><code>ppt/assets/claude-warm/_preview/cover-editorial/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/flow-timeline/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/flow-timeline/thumbnail.png"><code>ppt/assets/claude-warm/_preview/flow-timeline/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/quote-highlight/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/quote-highlight/thumbnail.png"><code>ppt/assets/claude-warm/_preview/quote-highlight/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/section-divider/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/section-divider/thumbnail.png"><code>ppt/assets/claude-warm/_preview/section-divider/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/corporate-light/_preview/agenda-grid/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/corporate-light/_preview/agenda-grid/thumbnail.png"><code>ppt/assets/corporate-light/_preview/agenda-grid/thumbnail.png</code></a></sub>
+
+<a id="gallery-paper-deck-reveal"></a>
+
+#### [Paper Deck Reveal](https://github.com/O0000-code/paper-deck-reveal) · — ⭐ · Framework
+
+<sub>Reveal.js skill that turns an academic paper into an offline deck with interactive demos.</sub>
+
+<sub>22 of 22 images in [`O0000-code/paper-deck-reveal`](https://github.com/O0000-code/paper-deck-reveal) · the leading frames are the ones the project puts in its own README</sub>
+
+```bash
+git clone https://github.com/O0000-code/paper-deck-reveal && cd paper-deck-reveal
+```
+
+<sub><b>Styles below</b> `hero` · `funnel` · `forest` · `interactive` · `speaker` · `presets` · `rstb20200390f02` · `rstb20200390f03` · `rstb20200390f06` · `rstb20200390f04` — name one when you ask for a deck. These are the project's own strings, taken from the filenames and captions linked under each image, not names this registry made up.</sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/hero.png" width="100%" alt="Cover slide of a journal-club deck: a red hairline rule, a Chinese framing question set above the paper's English title ">
+
+<sub><b>Cover slide of a journal-club deck: a red hairline rule, a Chinese framing question set above the paper's Engl</b> · <code>hero</code> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/hero.png"><code>docs/screenshots/hero.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/funnel.png" width="100%" alt="Participant funnel slide: recruited N = 976 → excluded −59 → analysed N = 917">
+
+<sub><b>Participant funnel slide: recruited N = 976 → excluded −59 → analysed N = 917</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/funnel.png"><code>docs/screenshots/funnel.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/forest.png" width="100%" alt="Per-language results slide: the paper">
+
+<sub><b>Per-language results slide: the paper</b> · <code>forest</code> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/forest.png"><code>docs/screenshots/forest.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/interactive.png" width="100%" alt="Interactive slide: the participant">
+
+<sub><b>Interactive slide: the participant</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/interactive.png"><code>docs/screenshots/interactive.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/speaker.png" width="100%" alt="Speaker view: current slide, next slide, timers, and nested speaker notes">
+
+<sub><b>Speaker view: current slide, next slide, timers, and nested speaker notes</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/speaker.png"><code>docs/screenshots/speaker.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/presets.png" width="100%" alt="Eight accent presets applied to the same slide of the same deck">
+
+<sub><b>Eight accent presets applied to the same slide of the same deck</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/presets.png"><code>docs/screenshots/presets.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f02.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f02</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f02.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f02.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f02.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f02</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f02.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/rstb20200390f02.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f03.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f03</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f03.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f03.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f03.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f03</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f03.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/rstb20200390f03.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f06.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f06</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f06.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f06.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f06.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f06</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f06.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/rstb20200390f06.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f04.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f04</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f04.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f04.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f04.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f04</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f04.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/rstb20200390f04.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f02.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f02</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f02.jpg"><code>docs/figures/provenance/rstb20200390f02.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f02.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f02</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f02.jpg"><code>docs/figures/rstb20200390f02.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f03.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f03</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f03.jpg"><code>docs/figures/provenance/rstb20200390f03.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f03.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f03</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f03.jpg"><code>docs/figures/rstb20200390f03.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f06.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f06</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f06.jpg"><code>docs/figures/provenance/rstb20200390f06.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f06.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f06</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f06.jpg"><code>docs/figures/rstb20200390f06.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f04.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f04</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f04.jpg"><code>docs/figures/provenance/rstb20200390f04.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f04.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f04</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f04.jpg"><code>docs/figures/rstb20200390f04.jpg</code></a></sub>
+
+<a id="gallery-codex-slides"></a>
+
+#### [Codex Slides](https://github.com/nexu-io/codex-slides) · — ⭐ · Framework
+
+<sub>AI slide studio for Codex: image-native decks, parallel render, and PDF/PPTX export.</sub>
+
+<sub>24 of 48 images in [`nexu-io/codex-slides`](https://github.com/nexu-io/codex-slides) · the leading frames are the ones the project puts in its own README</sub>
+
+```bash
+git clone https://github.com/nexu-io/codex-slides && cd codex-slides
+```
+
+<sub><b>Styles below</b> `hero` · `01-home-community` · `02-community-styles` · `04-project-questions` · `06-visual-style` · `07-parallel-generation` · `08-editor` · `09-presenter-mode` · `10-export` · `nb-vintage-patent` · `nb-visual-info-guide` · `market-report` — name one when you ask for a deck. These are the project's own strings, taken from the filenames and captions linked under each image, not names this registry made up.</sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/hero.png" width="100%" alt="Codex Slides — the open-source AI slide studio inside your coding agent, operated in the Codex in-app Browser">
+
+<sub><b>Codex Slides — the open-source AI slide studio inside your coding agent, operated in the Codex in-app Browser</b> · <code>hero</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/hero.png"><code>docs/assets/readme/hero.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/01-home-community.png" width="100%" alt="Codex Slides home with the prompt composer, scenario shortcuts, and Community Styles">
+
+<sub><b>Codex Slides home with the prompt composer, scenario shortcuts, and Community Styles</b> · <code>01-home-community</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/01-home-community.png"><code>docs/assets/readme/01-home-community.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/02-community-styles.png" width="100%" alt="Community Styles gallery with 73 visual directions">
+
+<sub><b>Community Styles gallery with 73 visual directions</b> · <code>02-community-styles</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/02-community-styles.png"><code>docs/assets/readme/02-community-styles.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/04-project-questions.png" width="100%" alt="English clarification form inside a Codex Slides project">
+
+<sub><b>English clarification form inside a Codex Slides project</b> · <code>04-project-questions</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/04-project-questions.png"><code>docs/assets/readme/04-project-questions.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/06-visual-style.png" width="100%" alt="Ranked visual direction picker inside a Codex Slides project">
+
+<sub><b>Ranked visual direction picker inside a Codex Slides project</b> · <code>06-visual-style</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/06-visual-style.png"><code>docs/assets/readme/06-visual-style.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/07-parallel-generation.png" width="100%" alt="English slide generation with completed and pending pages visible">
+
+<sub><b>English slide generation with completed and pending pages visible</b> · <code>07-parallel-generation</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/07-parallel-generation.png"><code>docs/assets/readme/07-parallel-generation.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/08-editor.png" width="100%" alt="English slide editor with the complete 16:9 canvas contained in view, editing toolbar, speaker notes, and thumbnails">
+
+<sub><b>English slide editor with the complete 16:9 canvas contained in view, editing toolbar, speaker notes, and thum</b> · <code>08-editor</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/08-editor.png"><code>docs/assets/readme/08-editor.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/09-presenter-mode.png" width="100%" alt="Audience playback and Presenter Mode menu with the complete slide visible behind it">
+
+<sub><b>Audience playback and Presenter Mode menu with the complete slide visible behind it</b> · <code>09-presenter-mode</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/09-presenter-mode.png"><code>docs/assets/readme/09-presenter-mode.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/10-export.png" width="100%" alt="English PDF and PowerPoint export menu above a fully contained 16:9 slide">
+
+<sub><b>English PDF and PowerPoint export menu above a fully contained 16:9 slide</b> · <code>10-export</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/10-export.png"><code>docs/assets/readme/10-export.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-vintage-patent.jpg" width="100%" alt="Vintage patent filing style technical page">
+
+<sub><b>Vintage patent filing style technical page</b> · <code>nb-vintage-patent</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-vintage-patent.jpg"><code>public/community/nb-vintage-patent.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-visual-info-guide.jpg" width="100%" alt="Clean visual information guide layout">
+
+<sub><b>Clean visual information guide layout</b> · <code>nb-visual-info-guide</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-visual-info-guide.jpg"><code>public/community/nb-visual-info-guide.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-market-report.png" width="100%" alt="Business and market report deck">
+
+<sub><b>Business and market report deck</b> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-market-report.png"><code>docs/assets/readme/case-market-report.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-data.png" width="100%" alt="Data visualization dashboard deck">
+
+<sub><b>Data visualization dashboard deck</b> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-data.png"><code>docs/assets/readme/case-data.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-keynote.png" width="100%" alt="Product keynote deck">
+
+<sub><b>Product keynote deck</b> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-keynote.png"><code>docs/assets/readme/case-keynote.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-editorial.png" width="100%" alt="Editorial magazine-style deck">
+
+<sub><b>Editorial magazine-style deck</b> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-editorial.png"><code>docs/assets/readme/case-editorial.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-bold-product-ad.jpg" width="100%" alt="Bold high-contrast product ad slide">
+
+<sub><b>Bold high-contrast product ad slide</b> · <code>nb-bold-product-ad</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-bold-product-ad.jpg"><code>public/community/nb-bold-product-ad.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-golden-serif-quote.jpg" width="100%" alt="Warm golden serif quote slide">
+
+<sub><b>Warm golden serif quote slide</b> · <code>nb-golden-serif-quote</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-golden-serif-quote.jpg"><code>public/community/nb-golden-serif-quote.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/foryou-pitch-midnight-traction.jpg" width="100%" alt="Midnight investor pitch title slide">
+
+<sub><b>Midnight investor pitch title slide</b> · <code>foryou-pitch-midnight-traction</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/foryou-pitch-midnight-traction.jpg"><code>public/community/foryou-pitch-midnight-traction.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/foryou-data-answer-first.jpg" width="100%" alt="Answer-first data slide with a national map and KPI callouts">
+
+<sub><b>Answer-first data slide with a national map and KPI callouts</b> · <code>foryou-data-answer-first</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/foryou-data-answer-first.jpg"><code>public/community/foryou-data-answer-first.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/foryou-craft-editorial-ink.jpg" width="100%" alt="Editorial ink-and-paper report title slide">
+
+<sub><b>Editorial ink-and-paper report title slide</b> · <code>foryou-craft-editorial-ink</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/foryou-craft-editorial-ink.jpg"><code>public/community/foryou-craft-editorial-ink.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-chalkboard-lesson.jpg" width="100%" alt="Warm chalkboard lesson layout with hand-drawn diagrams">
+
+<sub><b>Warm chalkboard lesson layout with hand-drawn diagrams</b> · <code>nb-chalkboard-lesson</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-chalkboard-lesson.jpg"><code>public/community/nb-chalkboard-lesson.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/03-scenarios.png" width="100%" alt="Scenario library with 24 presentation workflows">
+
+<sub><b>Scenario library with 24 presentation workflows</b> · <code>03-scenarios</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/03-scenarios.png"><code>docs/assets/readme/03-scenarios.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/05-research-brief.png" width="100%" alt="Source-backed English research brief in Design Files">
+
+<sub><b>Source-backed English research brief in Design Files</b> · <code>05-research-brief</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/05-research-brief.png"><code>docs/assets/readme/05-research-brief.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/05-research-outline.png" width="100%" alt="Editable English presentation outline">
+
+<sub><b>Editable English presentation outline</b> · <code>05-research-outline</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/05-research-outline.png"><code>docs/assets/readme/05-research-outline.png</code></a></sub>
+
+<a id="gallery-3d-html-slide-skill"></a>
+
+#### [3D HTML Slide Skill](https://github.com/yoshifujidesign/3d-html-slide-skill) · — ⭐ · HTML
+
+<sub>Claude Code skill that generates a single-file HTML slide deck with Three.js wireframe backgrounds.</sub>
+
+<sub>2 of 2 images in [`yoshifujidesign/3d-html-slide-skill`](https://github.com/yoshifujidesign/3d-html-slide-skill) · the leading frames are the ones the project puts in its own README</sub>
+
+
+<img src="https://github.com/user-attachments/assets/7d150a1c-73ee-429a-8315-8be2650ebe11" width="100%" alt="WS002985">
+
+<sub><b>WS002985</b> · GitHub attachment</sub>
+
+<img src="https://github.com/user-attachments/assets/1e3be001-6598-40b8-bf9f-da10e7d77f5d" width="100%" alt="EP133-2_2">
+
+<sub><b>EP133-2_2</b> · GitHub attachment</sub>
+
 <sub>No imagery in the repositories of: Slidev, Quarkdown, Banana Slides, Visual Explainer, HTML Anything, Dashi PPT Skill, Codex PPT Skill, NanoBanana PPT Skills, Baoyu Design, Gorden PPT Skill, Codex Claude Academic Skills, Oh My PPT, Image to Editable PPT Skill, Gorden Super PPT Skills, CyberPPT, Ian Handdrawn PPT, PPT Image First, GPT Image2 PPT Skills, PPT Agent Skills, Humanize PPT, Claude Office Skills, Academic PPTX, Claude Skills, Power Design, Reveal.js Skill, Visual Style PPT Skill, Beamer Skill, RW Consulting PPT, Paper2Anything, DOM to PPTX, Marp Slides, Beamer Academic, Planners PPT Hell, Thesis Defense PPTX Skill, Apple Bento Grid, Codex PPT Skill, Hands on Deck, Skywork Skills, PPT Image2 Editable Rebuild, Slide Image to Editable PPTX, Magic Slide, Presentation Skills, Claude Design Skill, Servasyy Skills, Ultimate PPT Master Skill, Future Slide, Slide Deck Generator, HTML PPT Designer, Presentation Skills, PowerPoint Skill, Make Slide, PPT Report Skills, AI Paper to Slide Skill, Literature Report PPT Builder, Image to PPTX Skill, Visual Cognition Slides, CN Academic Spark, Knowledge Cat PPT Skill, SJTU PPT Template Skill, Deck Factory, Space Multi Design PPT, Lieflat HTML Design, Jiarui SVG Skills, Awesome PPT Skills, Editable Image to PPT Skill, Presentation, Huawei Style PPT Skill, HTML to Editable PPTX, Claude Code Codex Slide, Baoyu Xuanyi Skills, Beautiful Hackathon Slides, ImageGen PPTX Pipeline, Paper PPT Skill, Presentation Skill, Codex Image to Editable PPT, Slidev Skills, PPT Skill, BL Captain PPT Skill, HTML to PPT PDF, Slides AI Plugin, Scholar PPT CN, Narrative Engine, Image PPT King, PPT Design DNA, PPT Creator Skills, Beamer Skill, Jingge Sense Deck, Presentation Skill, Econ Empirical Paper PPT Skill, HTML to PPTX, Neon Slides, Claude HTML Slide Builder, 30x McKinsey Research Deck, Keynote Slides Skill, PPT Agent, Interactive Slides, PPTX Template Skills, KAI Presentation, AI Draw Skill, Keynot, MBB Decks, Slide Wright, CyberBin PPT Skill, Competition PPT Template Skill, Four-Up PPT Generator, NanoBanana PPT Skills, NanoBanana PPT Skills, PPT Image Share Builder, HalfAI Gufa PPT, Slide Design Skill, Better PPT HTML Deck, Create HTML Deck, AWS HTML Slides, Prada Slides, Japanese Corporate PPTX Skill, Editable Leadership PPTX, SlideStage Pack, Deckset Claude Skill, McKinsey HTML Design Skill, IML PPTX, GZR NSFC PPT Skill, HTML to PPTX Skill, Bento PPT Skill, SlideSmith, Fudan University PPT Skill, Presentation Chef, Paper Figure PPTX Skill, AI Editable PPT Skill, Hand-Drawn PPT Skill, Guizang PPT Skill, TalkTrack, HTML PPT Skill, HTML to PPTX, PPT Expert Team, Vela Slides, Paper to LaTeX PPT, SOIL Deck Skills, PPT Master, PPT Image to Editable, Modern PPT, Bruce PPTX Generator, PPT Skill, Xidian Slides Skill, Presentation Forge, Tekion Slide Generator, Paper to Slides Skill, PPT Skills, Editable PPTX Skill, Pitch Deck Iterator, Zhongguose PPT Skill, ZJ Lab Academic PPTX Skills, Research Group PPT Skill, Paper to Scholar Slides, Consulting Diagnosis PPT Skill, Token Slides, Aham PPT, Notrat PPT Studio, Web PPT, Codex XKPPT Skill, High Quality Slides, PPT Design Skill, PowerPoint Skill, Slide Weaver, Competition PPT Skill, HFUT Presentation Studio, SJTU Beamer PPT, Frontend Slides, HTML Report Generator, Demo Prep Skill, Avatar PPT Master, Special Achievement Report, HTML PPT Academic Skill, HTML PPT Video Skill, PPT Template Fill, AI PPT Skill, SVG to PPTX Skill, Doc to PPT Skill, Economics Empirical PPT Skill, SlideSage, USTC PPT Template, Anthropic PPTX (official), Baoyu Skills, AI Skills (Cross-Platform).</sub>
 
-<sub>**278 images, all of them the projects' own**, shown full size rather than as thumbnails — a slide is too dense to judge at 300px. Each was read from its repository at a pinned commit, credited in the caption above it, and served from that repository rather than copied here. Nothing was produced by running a skill, so treat it as what each team chose to show off — not as a like-for-like comparison. Regenerate with `python scripts/fetch_samples.py`.</sub>
+<sub>**350 images, all of them the projects' own**, shown full size rather than as thumbnails — a slide is too dense to judge at 300px. Each was read from its repository at a pinned commit, credited in the caption above it, and served from that repository rather than copied here. Nothing was produced by running a skill, so treat it as what each team chose to show off — not as a like-for-like comparison. Regenerate with `python scripts/fetch_samples.py`.</sub>
 <!-- END:GALLERY -->
 
 ---
@@ -2005,7 +2348,7 @@ git history.
 - **Generative variance is real.** Same skill, same prompt, different output. Small score
   gaps will not mean anything until run counts are in the double digits.
 - **Descriptions come from documentation**, not from having personally shipped a deck with
-  each one. <!-- BEGIN:RESEARCHED -->26<!-- END:RESEARCHED --> entries were read by hand,
+  each one. <!-- BEGIN:RESEARCHED -->29<!-- END:RESEARCHED --> entries were read by hand,
   SKILL.md included; the rest carry a `†` and rest on what the repository says about itself.
   Where I have run something, the dossier says so.
 - **This is a fast-moving field.** Everything here carries a date. Check it.

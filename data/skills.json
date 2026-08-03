@@ -2858,6 +2858,110 @@
       "tagline_en": "Provides a 15-slide blue academic PPT template for USTC with navigation links and a LaTeX pipeline.",
       "tagline_zh": "为中国科学技术大学提供15页蓝色学术PPT模板，含全套跳转导航与LaTeX公式管线。",
       "source": "discovered"
+    },
+    {
+      "id": "pptwork",
+      "repo": "JunfengRan/PPTWork",
+      "name": "PPTWork",
+      "route": "pptx",
+      "tagline_en": "Two Anthropic-style Skills that plan, author, and export PowerPoint decks from HTML.",
+      "tagline_zh": "两个 Anthropic 风格技能:从 HTML 规划、写作并导出 PowerPoint 演示文稿。",
+      "lang": "en",
+      "license_note": "MIT",
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/JunfengRan/PPTWork && cd PPTWork/ppt && npm install"
+      },
+      "requires": [
+        "Node.js 18+",
+        "npm"
+      ],
+      "highlights_en": [
+        "Two-skill pipeline: planning + HTML authoring + native PPTX export via html2pptx-pro",
+        "Six showcase PNGs and two example decks ship under examples/",
+        "Produces native editable .pptx with real text frames, not raster images"
+      ],
+      "highlights_zh": [
+        "双技能流水线:规划 + HTML 写作 + 通过 html2pptx-pro 导出原生 PPTX",
+        "examples/ 目录下提供六张展示 PNG 和两个示例幻灯片",
+        "输出原生可编辑 .pptx,文本框真实可改,而非栅格图"
+      ],
+      "best_for_en": "Anyone who wants HTML as the source of truth and a real editable .pptx as the deliverable.",
+      "best_for_zh": "希望以 HTML 为单一真源、并交付可编辑 .pptx 的使用者。",
+      "source": "discovered"
+    },
+    {
+      "id": "paper-deck-reveal",
+      "repo": "O0000-code/paper-deck-reveal",
+      "name": "Paper Deck Reveal",
+      "route": "framework",
+      "tagline_en": "Reveal.js skill that turns an academic paper into an offline deck with interactive demos.",
+      "tagline_zh": "基于 reveal.js 的技能:把学术论文转为带交互演示的离线可投影幻灯片。",
+      "lang": "zh",
+      "license_note": "Apache-2.0",
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/O0000-code/paper-deck-reveal && cd paper-deck-reveal"
+      },
+      "requires": [
+        "Node.js 18+ with Playwright",
+        "Python 3.10+ with Pillow"
+      ],
+      "highlights_en": [
+        "Reveal.js deck pipeline with Inter/Fraunces fonts and offline assets",
+        "Three-gate review: design, render-QA, correctness",
+        "Two worked case studies (Sad Art, Grisanzio) ship as runnable evidence"
+      ],
+      "highlights_zh": [
+        "基于 reveal.js 的幻灯片流水线,内置 Inter/Fraunces 字体和离线资源",
+        "三道质量门:设计、渲染 QA、正确性",
+        "包含两个可运行案例(Sad Art、Grisanzio)作为示例"
+      ],
+      "best_for_en": "Researchers and writers who need an offline-presentable deck with embedded experiments.",
+      "best_for_zh": "需要把论文做成可离线投影、且内嵌交互实验的研究者与作者。",
+      "source": "discovered"
+    },
+    {
+      "id": "codex-slides",
+      "repo": "nexu-io/codex-slides",
+      "name": "Codex Slides",
+      "route": "framework",
+      "tagline_en": "AI slide studio for Codex: image-native decks, parallel render, and PDF/PPTX export.",
+      "tagline_zh": "面向 Codex 的 AI 幻灯片工作台:图像原生画布、并行渲染、支持 PDF/PPTX 导出。",
+      "lang": "en",
+      "license_note": "MIT",
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/nexu-io/codex-slides && cd codex-slides"
+      },
+      "requires": [
+        "Codex CLI or compatible agent runtime",
+        "Node.js 18+"
+      ],
+      "highlights_en": [
+        "Image-native rendering with style modes and a browser-first editor",
+        "MCP/CLI transports with deterministic fallback commands",
+        "Parallel slide generation; PDF and PPTX export"
+      ],
+      "highlights_zh": [
+        "图像原生画布渲染,支持多风格模式与浏览器优先编辑器",
+        "MCP/CLI 双传输通道,带确定性回退命令",
+        "并行生成幻灯片;支持 PDF 与 PPTX 导出"
+      ],
+      "best_for_en": "Anyone shipping a deck where each slide is a designed image, with deterministic export.",
+      "best_for_zh": "希望每页都是设计图、且要确定性导出的演示制作者。",
+      "source": "discovered"
+    },
+    {
+      "id": "3d-html-slide-skill",
+      "repo": "yoshifujidesign/3d-html-slide-skill",
+      "name": "3D HTML Slide Skill",
+      "route": "html",
+      "tagline_en": "Claude Code skill that generates a single-file HTML slide deck with Three.js wireframe backgrounds.",
+      "tagline_zh": "Claude Code 技能:一键生成带 Three.js 线框背景的单文件 HTML 演示幻灯片。",
+      "lang": "en",
+      "license_note": "MIT",
+      "source": "discovered"
     }
   ],
   "lists": [
