@@ -9,7 +9,7 @@
 [简体中文](README.md) · [English](README.en.md)
 
 <!-- BEGIN:COUNTS -->
-**收录 227 个 skill**，其中 **39 个人工读过** · **合计 271,800 star** · HTML 路线 83 个 · PPTX 路线 79 个 · 双路线 25 个 · 数据刷新于 **2026-07-29**
+**收录 227 个 skill**，其中 **39 个人工读过** · **合计 276,159 star** · HTML 路线 83 个 · PPTX 路线 79 个 · 双路线 25 个 · 数据刷新于 **2026-08-03**
 <!-- END:COUNTS -->
 
 </div>
@@ -164,179 +164,187 @@ python scripts/pick.py find editorial         # 搜风格 ID 和描述
 
 | 项目 | ⭐ | 路线 | License | 一句话 |
 |---|---:|---|---|---|
-| **[Slidev](https://github.com/slidevjs/slidev)**†<br><sub>slidevjs</sub> | 47,889 | 框架 | MIT | 面向开发者的演示文稿框架，使用 Markdown 和 Vue 制作幻灯片。 |
-| **[PPT Master](https://github.com/hugohe3/ppt-master)**<br><sub>hugohe3</sub> | 41,774 | PPTX | MIT | 把文档或主题变成真正原生可编辑的 PPTX。 |
-| **[Frontend Slides](https://github.com/zarazhangrui/frontend-slides)**<br><sub>Zara Zhang</sub> | 26,568 | HTML | MIT | 用 Coding Agent 的前端能力做好看的网页幻灯片。 |
-| **[Guizang PPT Skill](https://github.com/op7418/guizang-ppt-skill)**<br><sub>op7418 (歸藏)</sub> | 22,694 | HTML | ⚠️ AGPL-3.0 | 杂志编辑风与瑞士国际风 HTML 幻灯片，以「锁死约束」保证一致性。 |
-| **[Huashu Design](https://github.com/alchaincyf/huashu-design)**<br><sub>花生 (alchaincyf)</sub> | 22,190 | 双路线 | MIT | HTML 原生设计 skill —— 高保真原型、幻灯片、动效与设计评审，不止是 PPT。 |
-| **[Quarkdown](https://github.com/iamgio/quarkdown)**†<br><sub>iamgio</sub> | 15,836 | 框架 | GPL-3.0 | 基于 Markdown 的框架，从单一源文件生成论文、演示文稿、网站和书籍。 |
-| **[Banana Slides](https://github.com/Anionex/banana-slides)**†<br><sub>Anionex</sub> | 15,346 | PPTX | ⚠️ AGPL-3.0 | 原生 AI PPT 生成器，接受模板、文字提示或大纲，导出可编辑 PPTX 文件。 |
-| **[Visual Explainer](https://github.com/nicobailon/visual-explainer)**<br><sub>nicobailon</sub> | 9,351 | HTML | MIT | 为图表、diff 评审、方案审计、数据表和项目复盘生成 HTML 页面或幻灯片。 |
-| **[HTML Anything](https://github.com/nexu-io/html-anything)**†<br><sub>nexu-io</sub> | 7,996 | 套件 | Apache-2.0 | 具有 75 个技能的智能 HTML 编辑器，涵盖幻灯片、海报和原型等 9 种输出类型。 |
-| **[HTML PPT Studio](https://github.com/lewislulu/html-ppt-skill)**<br><sub>lewislulu</sub> | 7,473 | HTML | MIT | 24 主题 × 31 布局 × 20+ 动效的专业 HTML 演示。 |
-| **[open-slide](https://github.com/1weiho/open-slide)**<br><sub>1weiho</sub> | 6,042 | 框架 | MIT | 为 Agent 而生的幻灯片框架 —— React 组件渲染到固定 1920×1080 画布。 |
-| **[Anthropic PPTX (official)](https://github.com/anthropics/skills/tree/main/skills/pptx)**<br><sub>Anthropic</sub> | 164,969* | PPTX | See repo | 官方基线方案 —— 创建、读取、编辑与合并 PowerPoint 文件。 |
-| **[Baoyu Skills](https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-slide-deck)**†<br><sub>JimLiu (宝玉)</sub> | 24,310* | 套件 | MIT | 22 个技能的个人合集，其中 baoyu-slide-deck 把文章或大纲变成幻灯片。 |
+| **[Slidev](https://github.com/slidevjs/slidev)**†<br><sub>slidevjs</sub> | 47,948 | 框架 | MIT | 面向开发者的演示文稿框架，使用 Markdown 和 Vue 制作幻灯片。 |
+| **[PPT Master](https://github.com/hugohe3/ppt-master)**<br><sub>hugohe3</sub> | 42,768 | PPTX | MIT | 把文档或主题变成真正原生可编辑的 PPTX。 |
+| **[Frontend Slides](https://github.com/zarazhangrui/frontend-slides)**<br><sub>Zara Zhang</sub> | 26,827 | HTML | MIT | 用 Coding Agent 的前端能力做好看的网页幻灯片。 |
+| **[Guizang PPT Skill](https://github.com/op7418/guizang-ppt-skill)**<br><sub>op7418 (歸藏)</sub> | 23,080 | HTML | ⚠️ AGPL-3.0 | 杂志编辑风与瑞士国际风 HTML 幻灯片，以「锁死约束」保证一致性。 |
+| **[Huashu Design](https://github.com/alchaincyf/huashu-design)**<br><sub>花生 (alchaincyf)</sub> | 22,390 | 双路线 | MIT | HTML 原生设计 skill —— 高保真原型、幻灯片、动效与设计评审，不止是 PPT。 |
+| **[Quarkdown](https://github.com/iamgio/quarkdown)**†<br><sub>iamgio</sub> | 15,851 | 框架 | GPL-3.0 | 基于 Markdown 的框架，从单一源文件生成论文、演示文稿、网站和书籍。 |
+| **[Banana Slides](https://github.com/Anionex/banana-slides)**†<br><sub>Anionex</sub> | 15,375 | PPTX | ⚠️ AGPL-3.0 | 原生 AI PPT 生成器，接受模板、文字提示或大纲，导出可编辑 PPTX 文件。 |
+| **[Visual Explainer](https://github.com/nicobailon/visual-explainer)**<br><sub>nicobailon</sub> | 9,398 | HTML | MIT | 为图表、diff 评审、方案审计、数据表和项目复盘生成 HTML 页面或幻灯片。 |
+| **[HTML Anything](https://github.com/nexu-io/html-anything)**†<br><sub>nexu-io</sub> | 8,070 | 套件 | Apache-2.0 | 具有 75 个技能的智能 HTML 编辑器，涵盖幻灯片、海报和原型等 9 种输出类型。 |
+| **[HTML PPT Studio](https://github.com/lewislulu/html-ppt-skill)**<br><sub>lewislulu</sub> | 7,594 | HTML | MIT | 24 主题 × 31 布局 × 20+ 动效的专业 HTML 演示。 |
+| **[open-slide](https://github.com/1weiho/open-slide)**<br><sub>1weiho</sub> | 6,085 | 框架 | MIT | 为 Agent 而生的幻灯片框架 —— React 组件渲染到固定 1920×1080 画布。 |
+| **[Anthropic PPTX (official)](https://github.com/anthropics/skills/tree/main/skills/pptx)**<br><sub>Anthropic</sub> | 166,005* | PPTX | See repo | 官方基线方案 —— 创建、读取、编辑与合并 PowerPoint 文件。 |
+| **[Baoyu Skills](https://github.com/JimLiu/baoyu-skills/tree/main/skills/baoyu-slide-deck)**†<br><sub>JimLiu (宝玉)</sub> | 24,513* | 套件 | MIT | 22 个技能的个人合集，其中 baoyu-slide-deck 把文章或大纲变成幻灯片。 |
 
 ### Tier A — 生产可用（100–5k star）
 
 | 项目 | ⭐ | 路线 | License | 一句话 |
 |---|---:|---|---|---|
-| **[Dashi PPT Skill](https://github.com/chuspeeism/dashi-ppt-skill)**†<br><sub>chuspeeism</sub> | 4,388 | 双路线 | ⚠️ AGPL-3.0 | 从多种视觉主题生成可在浏览器编辑的演示文稿，支持导出为 HTML、PDF 和 PPTX。 |
-| **[Codex PPT Skill](https://github.com/ningzimu/codex-ppt-skill)**†<br><sub>ningzimu</sub> | 4,295 | 图片 | MIT | 使用 GPT-Image-2 在 Codex 及兼容智能体中生成基于图像的 PowerPoint 幻灯片。 |
-| **[Beautiful HTML Templates](https://github.com/zarazhangrui/beautiful-html-templates)**<br><sub>Zara Zhang</sub> | 3,940 | 模板库 | MIT | 34 套 HTML 幻灯片模板，配 index.json 元数据供任意 Agent 检索选用。 |
-| **[NanoBanana PPT Skills](https://github.com/op7418/NanoBanana-PPT-Skills)**†<br><sub>op7418</sub> | 3,167 | 图片 | Unspecified | AI 技能，自动生成高质量 PPT 幻灯片图片和视频，支持智能转场与交互式播放。 |
-| **[Baoyu Design](https://github.com/JimLiu/baoyu-design)**†<br><sub>JimLiu</sub> | 2,879 | HTML | MIT | 在本地运行 Claude 设计系统提示，生成 UI 原型、幻灯片和线框图，输出为独立 HTML 文件。 |
-| **[Gorden PPT Skill](https://github.com/GordenSun/GordenPPTSkill)**†<br><sub>GordenSun</sub> | 2,822 | PPTX | NOASSERTION | 通过 JSON 文件对 17 个中文模板进行纯文字编辑，生成保留布局的 PPTX 文件。 |
-| **[Codex Claude Academic Skills](https://github.com/zLanqing/codex-claude-academic-skills)**†<br><sub>zLanqing</sub> | 2,357 | 套件 | MIT | 面向科研人员的三技能套件，涵盖论文阅读、PPT/Word 生成、写作辅助及科学图表绘制。 |
-| **[Oh My PPT](https://github.com/arcsin1/oh-my-ppt)**†<br><sub>arcsin1</sub> | 1,810 | HTML | Apache-2.0 | 输入文字描述，在本地生成简洁美观的 HTML 幻灯片，无需联网。 |
-| **[Image to Editable PPT Skill](https://github.com/ningzimu/image-to-editable-ppt-skill)**†<br><sub>ningzimu</sub> | 1,676 | PPTX | MIT | 将幻灯片图像、PDF 及基于图像的 PPTX 文件转换为可编辑的 PowerPoint 演示文稿。 |
-| **[Gorden Super PPT Skills](https://github.com/GordenSun/GordenSuperPPTSkills)**†<br><sub>GordenSun</sub> | 1,659 | PPTX | Unspecified | 使用 GPT 生成高质量 PPT 图像，再将其转换为完全可编辑的 PPTX 文件。 |
-| **[CyberPPT](https://github.com/crazyykhllc-bit/CyberPPT)**†<br><sub>crazyykhllc-bit</sub> | 1,483 | PPTX | MIT | 用于生成高密度、可编辑咨询风格 PowerPoint 的 Codex 技能，支持 SCR 叙事与质量检查。 |
-| **[Ian Handdrawn PPT](https://github.com/helloianneo/ian-handdrawn-ppt)**†<br><sub>helloianneo</sub> | 1,292 | 图片 | MIT | 生成手绘风格的中文技术 PPT 整页图像（PNG），包含 21:9 封面和 16:9 正文配图。 |
-| **[PPT Image First](https://github.com/NyxTides/ppt-image-first)**†<br><sub>NyxTides</sub> | 1,175 | 图片 | Apache-2.0 | 面向 Codex、Claude Code 和 Opencode CLI 的以图像为优先的 PPT 生成技能。 |
-| **[GPT Image2 PPT Skills](https://github.com/JuneYaooo/gpt-image2-ppt-skills)**†<br><sub>JuneYaooo</sub> | 1,118 | 图片 | Apache-2.0 | 使用 gpt-image-2 克隆 PPTX 布局，替换为您的内容；内置 10 套精选风格。 |
-| **[PPT Agent Skills](https://github.com/sunbigfly/ppt-agent-skills)**†<br><sub>sunbigfly</sub> | 862 | HTML | NOASSERTION | 像构建软件工程一样，以代码驱动方式生成演示文稿的框架。 |
-| **[Humanize PPT](https://github.com/LearnPrompt/humanize-ppt)**†<br><sub>LearnPrompt</sub> | 837 | HTML | NOASSERTION | 基于 AST 的大纲编排器，用于构建以人为中心的 AI 演示文稿工作流。 |
-| **[Claude Office Skills](https://github.com/tfriedel/claude-office-skills)**<br><sub>tfriedel</sub> | 798 | PPTX | Unspecified | PPTX / DOCX / XLSX / PDF 全家桶，支持自动化。 |
-| **[Academic PPTX](https://github.com/Gabberflast/academic-pptx-skill)**<br><sub>Gabberflast</sub> | 724 | PPTX | MIT | 会议报告、研讨会、论文答辩与基金汇报。 |
-| **[Claude Skills](https://github.com/staruhub/ClaudeSkills)**†<br><sub>staruhub</sub> | 632 | 套件 | MIT | 精选 13 个 Claude Code 智能体技能，涵盖幻灯片、深度研究、PRD、文章和审计。 |
-| **[PPT Agent Workflow San](https://github.com/mucsbr/ppt-agent-workflow-san)**<br><sub>mucsbr</sub> | 618 | HTML | Unspecified | 渐进交互式 PPT 生成 skill。 |
-| **[Power Design](https://github.com/ItsssssJack/power-design)**†<br><sub>ItsssssJack</sub> | 575 | HTML | NOASSERTION | 结合品牌基因与 20 条设计原则的 Claude 技能，生成看起来非 AI 制作的幻灯片。 |
-| **[Frontend Slides Editable](https://github.com/archlizheng/frontend-slides-editable)**<br><sub>archlizheng</sub> | 446 | 双路线 | MIT | 可编辑 HTML 幻灯片：拖拽缩放、页序调整、本地保存、PPTX 互转。 |
-| **[Reveal.js Skill](https://github.com/ryanbbrown/revealjs-skill)**†<br><sub>ryanbbrown</sub> | 379 | HTML | MIT | 用于构建 reveal.js HTML 演示文稿的编码智能体技能。 |
-| **[Visual Style PPT Skill](https://github.com/irenerachel/visual-style-ppt-skill)**†<br><sub>irenerachel</sub> | 359 | PPTX | Unspecified | 运行视觉风格 PPT 生成工作流的技能。 |
-| **[Beamer Skill](https://github.com/Noi1r/beamer-skill)**†<br><sub>Noi1r</sub> | 319 | HTML | MIT | 管理学术 Beamer LaTeX 幻灯片的完整生命周期——创建、编译、审阅、质量评分与润色。 |
-| **[RW Consulting PPT](https://github.com/Pikapika260214/rw-consulting-ppt)**†<br><sub>Pikapika260214</sub> | 317 | PPTX | MIT | 用于生成可编辑咨询风格 PowerPoint 演示文稿的 Codex 技能。 |
-| **[Paper2Anything](https://github.com/QuZhan51496/paper2anything)**†<br><sub>QuZhan51496</sub> | 316 | 套件 | Apache-2.0 | 将学术论文 PDF 转换为幻灯片、海报、网页、小红书帖子或微信文章。 |
-| **[DOM to PPTX](https://github.com/atharva9167j/dom-to-pptx)**†<br><sub>atharva9167j</sub> | 302 | PPTX | MIT | 客户端库，将任意 HTML 元素转换为像素精准、完全可编辑的 PowerPoint 幻灯片。 |
-| **[Marp Slides](https://github.com/robonuggets/marp-slides)**†<br><sub>robonuggets</sub> | 271 | HTML | Unspecified | 适用于 Claude Code 的 MARP 演示文稿技能，含 22 个示例幻灯片、SVG 图表和深/浅主题。 |
-| **[Beamer Academic](https://github.com/Faust-Donf/beamer-academic)**†<br><sub>Faust-Donf</sub> | 258 | HTML | MIT | 一键从论文生成高质量学术答辩 Beamer 幻灯片。 |
-| **[PPT SVG Generator](https://github.com/vigorX777/ppt-svg-generator)**<br><sub>vigorX777</sub> | 248 | PPTX | MIT | Markdown → PPT / PDF，经 SVG 中转，多种预设风格。 |
-| **[Mck PPT Design System](https://github.com/likaku/Mck-ppt-design-skill)**<br><sub>likaku</sub> | 230 | PPTX | Apache-2.0 | 咨询公司风设计系统：70 种布局，扁平设计，python-pptx。 |
-| **[Planners PPT Hell](https://github.com/thePlannerIvan/planners-ppt-hell)**†<br><sub>thePlannerIvan</sub> | 216 | PPTX | ⚠️ AGPL-3.0 | 面向规划人员的 PPT 生成技能。 |
-| **[Thesis Defense PPTX Skill](https://github.com/zouchenzhen/thesis-defense-pptx-skill)**†<br><sub>zouchenzhen</sub> | 209 | PPTX | Apache-2.0 | 从论文 PDF 或 LaTeX 源文件生成可编辑答辩 PPTX，同时保留指定 PPT 模板风格。 |
-| **[Apple Bento Grid](https://github.com/hubeiqiao/apple-bento-grid)**†<br><sub>hubeiqiao</sub> | 204 | HTML | MIT | 生成苹果风格 Bento Grid 演示卡片，以 HTML 形式输出。 |
+| **[Dashi PPT Skill](https://github.com/chuspeeism/dashi-ppt-skill)**†<br><sub>chuspeeism</sub> | 4,570 | 双路线 | ⚠️ AGPL-3.0 | 从多种视觉主题生成可在浏览器编辑的演示文稿，支持导出为 HTML、PDF 和 PPTX。 |
+| **[Codex PPT Skill](https://github.com/ningzimu/codex-ppt-skill)**†<br><sub>ningzimu</sub> | 4,469 | 图片 | MIT | 使用 GPT-Image-2 在 Codex 及兼容智能体中生成基于图像的 PowerPoint 幻灯片。 |
+| **[Beautiful HTML Templates](https://github.com/zarazhangrui/beautiful-html-templates)**<br><sub>Zara Zhang</sub> | 4,010 | 模板库 | MIT | 34 套 HTML 幻灯片模板，配 index.json 元数据供任意 Agent 检索选用。 |
+| **[NanoBanana PPT Skills](https://github.com/op7418/NanoBanana-PPT-Skills)**†<br><sub>op7418</sub> | 3,183 | 图片 | Unspecified | AI 技能，自动生成高质量 PPT 幻灯片图片和视频，支持智能转场与交互式播放。 |
+| **[Baoyu Design](https://github.com/JimLiu/baoyu-design)**†<br><sub>JimLiu</sub> | 3,015 | HTML | MIT | 在本地运行 Claude 设计系统提示，生成 UI 原型、幻灯片和线框图，输出为独立 HTML 文件。 |
+| **[Gorden PPT Skill](https://github.com/GordenSun/GordenPPTSkill)**†<br><sub>GordenSun</sub> | 2,859 | PPTX | NOASSERTION | 通过 JSON 文件对 17 个中文模板进行纯文字编辑，生成保留布局的 PPTX 文件。 |
+| **[Codex Claude Academic Skills](https://github.com/zLanqing/codex-claude-academic-skills)**†<br><sub>zLanqing</sub> | 2,524 | 套件 | MIT | 面向科研人员的三技能套件，涵盖论文阅读、PPT/Word 生成、写作辅助及科学图表绘制。 |
+| **[Oh My PPT](https://github.com/arcsin1/oh-my-ppt)**†<br><sub>arcsin1</sub> | 1,827 | HTML | Apache-2.0 | 输入文字描述，在本地生成简洁美观的 HTML 幻灯片，无需联网。 |
+| **[Image to Editable PPT Skill](https://github.com/ningzimu/image-to-editable-ppt-skill)**†<br><sub>ningzimu</sub> | 1,774 | PPTX | MIT | 将幻灯片图像、PDF 及基于图像的 PPTX 文件转换为可编辑的 PowerPoint 演示文稿。 |
+| **[Gorden Super PPT Skills](https://github.com/GordenSun/GordenSuperPPTSkills)**†<br><sub>GordenSun</sub> | 1,691 | PPTX | Unspecified | 使用 GPT 生成高质量 PPT 图像，再将其转换为完全可编辑的 PPTX 文件。 |
+| **[CyberPPT](https://github.com/crazyykhllc-bit/CyberPPT)**†<br><sub>crazyykhllc-bit</sub> | 1,504 | PPTX | MIT | 用于生成高密度、可编辑咨询风格 PowerPoint 的 Codex 技能，支持 SCR 叙事与质量检查。 |
+| **[Ian Handdrawn PPT](https://github.com/helloianneo/ian-handdrawn-ppt)**†<br><sub>helloianneo</sub> | 1,296 | 图片 | MIT | 生成手绘风格的中文技术 PPT 整页图像（PNG），包含 21:9 封面和 16:9 正文配图。 |
+| **[PPT Image First](https://github.com/NyxTides/ppt-image-first)**†<br><sub>NyxTides</sub> | 1,181 | 图片 | Apache-2.0 | 面向 Codex、Claude Code 和 Opencode CLI 的以图像为优先的 PPT 生成技能。 |
+| **[GPT Image2 PPT Skills](https://github.com/JuneYaooo/gpt-image2-ppt-skills)**†<br><sub>JuneYaooo</sub> | 1,134 | 图片 | Apache-2.0 | 使用 gpt-image-2 克隆 PPTX 布局，替换为您的内容；内置 10 套精选风格。 |
+| **[PPT Agent Skills](https://github.com/sunbigfly/ppt-agent-skills)**†<br><sub>sunbigfly</sub> | 870 | HTML | NOASSERTION | 像构建软件工程一样，以代码驱动方式生成演示文稿的框架。 |
+| **[Humanize PPT](https://github.com/LearnPrompt/humanize-ppt)**†<br><sub>LearnPrompt</sub> | 848 | HTML | NOASSERTION | 基于 AST 的大纲编排器，用于构建以人为中心的 AI 演示文稿工作流。 |
+| **[Claude Office Skills](https://github.com/tfriedel/claude-office-skills)**<br><sub>tfriedel</sub> | 801 | PPTX | Unspecified | PPTX / DOCX / XLSX / PDF 全家桶，支持自动化。 |
+| **[Codex Slides](https://github.com/nexu-io/codex-slides)** | 748 | 框架 | MIT | 面向 Codex 的 AI 幻灯片工作台:图像原生画布、并行渲染、支持 PDF/PPTX 导出。 |
+| **[Academic PPTX](https://github.com/Gabberflast/academic-pptx-skill)**<br><sub>Gabberflast</sub> | 734 | PPTX | MIT | 会议报告、研讨会、论文答辩与基金汇报。 |
+| **[Claude Skills](https://github.com/staruhub/ClaudeSkills)**†<br><sub>staruhub</sub> | 658 | 套件 | MIT | 精选 13 个 Claude Code 智能体技能，涵盖幻灯片、深度研究、PRD、文章和审计。 |
+| **[PPT Agent Workflow San](https://github.com/mucsbr/ppt-agent-workflow-san)**<br><sub>mucsbr</sub> | 624 | HTML | Unspecified | 渐进交互式 PPT 生成 skill。 |
+| **[Power Design](https://github.com/ItsssssJack/power-design)**†<br><sub>ItsssssJack</sub> | 586 | HTML | NOASSERTION | 结合品牌基因与 20 条设计原则的 Claude 技能，生成看起来非 AI 制作的幻灯片。 |
+| **[Frontend Slides Editable](https://github.com/archlizheng/frontend-slides-editable)**<br><sub>archlizheng</sub> | 451 | 双路线 | MIT | 可编辑 HTML 幻灯片：拖拽缩放、页序调整、本地保存、PPTX 互转。 |
+| **[Reveal.js Skill](https://github.com/ryanbbrown/revealjs-skill)**†<br><sub>ryanbbrown</sub> | 380 | HTML | MIT | 用于构建 reveal.js HTML 演示文稿的编码智能体技能。 |
+| **[Visual Style PPT Skill](https://github.com/irenerachel/visual-style-ppt-skill)**†<br><sub>irenerachel</sub> | 364 | PPTX | Unspecified | 运行视觉风格 PPT 生成工作流的技能。 |
+| **[RW Consulting PPT](https://github.com/Pikapika260214/rw-consulting-ppt)**†<br><sub>Pikapika260214</sub> | 333 | PPTX | MIT | 用于生成可编辑咨询风格 PowerPoint 演示文稿的 Codex 技能。 |
+| **[Paper2Anything](https://github.com/QuZhan51496/paper2anything)**†<br><sub>QuZhan51496</sub> | 331 | 套件 | Apache-2.0 | 将学术论文 PDF 转换为幻灯片、海报、网页、小红书帖子或微信文章。 |
+| **[Beamer Skill](https://github.com/Noi1r/beamer-skill)**†<br><sub>Noi1r</sub> | 322 | HTML | MIT | 管理学术 Beamer LaTeX 幻灯片的完整生命周期——创建、编译、审阅、质量评分与润色。 |
+| **[DOM to PPTX](https://github.com/atharva9167j/dom-to-pptx)**†<br><sub>atharva9167j</sub> | 309 | PPTX | MIT | 客户端库，将任意 HTML 元素转换为像素精准、完全可编辑的 PowerPoint 幻灯片。 |
+| **[Marp Slides](https://github.com/robonuggets/marp-slides)**†<br><sub>robonuggets</sub> | 277 | HTML | Unspecified | 适用于 Claude Code 的 MARP 演示文稿技能，含 22 个示例幻灯片、SVG 图表和深/浅主题。 |
+| **[Beamer Academic](https://github.com/Faust-Donf/beamer-academic)**†<br><sub>Faust-Donf</sub> | 263 | HTML | MIT | 一键从论文生成高质量学术答辩 Beamer 幻灯片。 |
+| **[PPT SVG Generator](https://github.com/vigorX777/ppt-svg-generator)**<br><sub>vigorX777</sub> | 250 | PPTX | MIT | Markdown → PPT / PDF，经 SVG 中转，多种预设风格。 |
+| **[Mck PPT Design System](https://github.com/likaku/Mck-ppt-design-skill)**<br><sub>likaku</sub> | 236 | PPTX | Apache-2.0 | 咨询公司风设计系统：70 种布局，扁平设计，python-pptx。 |
+| **[Planners PPT Hell](https://github.com/thePlannerIvan/planners-ppt-hell)**†<br><sub>thePlannerIvan</sub> | 219 | PPTX | ⚠️ AGPL-3.0 | 面向规划人员的 PPT 生成技能。 |
+| **[Thesis Defense PPTX Skill](https://github.com/zouchenzhen/thesis-defense-pptx-skill)**†<br><sub>zouchenzhen</sub> | 211 | PPTX | Apache-2.0 | 从论文 PDF 或 LaTeX 源文件生成可编辑答辩 PPTX，同时保留指定 PPT 模板风格。 |
+| **[Apple Bento Grid](https://github.com/hubeiqiao/apple-bento-grid)**†<br><sub>hubeiqiao</sub> | 206 | HTML | MIT | 生成苹果风格 Bento Grid 演示卡片，以 HTML 形式输出。 |
+| **[Hands on Deck](https://github.com/EveryInc/hands-on-deck)**†<br><sub>EveryInc</sub> | 200 | PPTX | MIT | 让 AI 智能体通过原子 JSON 补丁检查、编辑、创建和验证 PPTX 文件的 CLI 工具。 |
 | **[Codex PPT Skill](https://github.com/Ronnie2025/codex-ppt-skill)**†<br><sub>Ronnie2025</sub> | 198 | 图片 | MIT | 面向中文 toB 商业汇报的 Codex PPT 生图、元素重组与 SVG 拆解工作流。 |
-| **[Hands on Deck](https://github.com/EveryInc/hands-on-deck)**†<br><sub>EveryInc</sub> | 198 | PPTX | MIT | 让 AI 智能体通过原子 JSON 补丁检查、编辑、创建和验证 PPTX 文件的 CLI 工具。 |
-| **[Skywork Skills](https://github.com/SkyworkAI/Skywork-Skills)**†<br><sub>SkyworkAI</sub> | 194 | 套件 | MIT | 智能体技能套件，涵盖 AI PPT、文档、Excel、图像、深度研究和音乐，适用于任何兼容智能体。 |
-| **[PPT Image2 Editable Rebuild](https://github.com/wwe-dog/ppt-image2-editable-rebuild)**†<br><sub>wwe-dog</sub> | 186 | PPTX | Unlicense | 通过结合生成的视觉参考图与文本形状，将截图或参考图重建为可编辑的 PPTX 文件。 |
-| **[Slide Image to Editable PPTX](https://github.com/w1163222589-coder/slide-image-to-editable-pptx)**†<br><sub>w1163222589-coder</sub> | 172 | PPTX | MIT | 将幻灯片截图转换为可编辑的 PowerPoint 演示文稿。 |
-| **[Magic Slide](https://github.com/daniel-style/magic-slide)**†<br><sub>daniel-style</sub> | 170 | HTML | MIT | 生成带有流畅 Magic Move 风格转场动画的独立 HTML 演示文稿。 |
-| **[Presentation Skills](https://github.com/Sven-LI-sankyuu/presentation-skills)**†<br><sub>Sven-LI-sankyuu</sub> | 162 | 双路线 | Unspecified | Codex CLI 技能集合，涵盖可编辑 PPT 图表协作与端到端网页演示视频合成工作流。 |
-| **[Claude Design Skill](https://github.com/jiji262/claude-design-skill)**†<br><sub>jiji262</sub> | 162 | HTML | MIT | 在本地使用 Claude.ai 内部设计提示，生成 HTML 幻灯片、落地页、原型和海报。 |
-| **[Servasyy Skills](https://github.com/huangserva/servasyy_skills)**†<br><sub>huangserva</sub> | 151 | 套件 | Unspecified | 一套覆盖写作、配图、PPT、播客、视频和漫画生成的AI技能集合。 |
-| **[Ultimate PPT Master Skill](https://github.com/kdnsna/ultimate-ppt-master-skill)**†<br><sub>kdnsna</sub> | 147 | 双路线 | MIT | 通过明确受众、场景和风格后，将一句话需求转化为可编辑的PPTX或网页幻灯片。 |
-| **[Future Slide](https://github.com/bytonylee/future-slide)**†<br><sub>bytonylee</sub> | 143 | 套件 | Apache-2.0 | 十个幻灯片技能，按规划 / 提示 / 渲染拆分，同时覆盖 HTML 与 GPT 生图两条路线。 |
-| **[Slide Deck Generator](https://github.com/code-on-sunday/slide-deck-generator)**†<br><sub>code-on-sunday</sub> | 134 | HTML | MIT | 通过编程智能体提示，使用React、Vite和Framer Motion创建基于浏览器的幻灯片。 |
-| **[PPT Agent Skill](https://github.com/Akxan/ppt-agent-skill)**<br><sub>Akxan</sub> | 116 | HTML | MIT | 26 种风格、18 种图表，对标 Linear / Anthropic / Stripe / Apple / NYT。 |
+| **[Skywork Skills](https://github.com/SkyworkAI/Skywork-Skills)**†<br><sub>SkyworkAI</sub> | 196 | 套件 | MIT | 智能体技能套件，涵盖 AI PPT、文档、Excel、图像、深度研究和音乐，适用于任何兼容智能体。 |
+| **[PPT Image2 Editable Rebuild](https://github.com/wwe-dog/ppt-image2-editable-rebuild)**†<br><sub>wwe-dog</sub> | 188 | PPTX | Unlicense | 通过结合生成的视觉参考图与文本形状，将截图或参考图重建为可编辑的 PPTX 文件。 |
+| **[Slide Image to Editable PPTX](https://github.com/w1163222589-coder/slide-image-to-editable-pptx)**†<br><sub>w1163222589-coder</sub> | 177 | PPTX | MIT | 将幻灯片截图转换为可编辑的 PowerPoint 演示文稿。 |
+| **[Magic Slide](https://github.com/daniel-style/magic-slide)**†<br><sub>daniel-style</sub> | 171 | HTML | MIT | 生成带有流畅 Magic Move 风格转场动画的独立 HTML 演示文稿。 |
+| **[Claude Design Skill](https://github.com/jiji262/claude-design-skill)**†<br><sub>jiji262</sub> | 167 | HTML | MIT | 在本地使用 Claude.ai 内部设计提示，生成 HTML 幻灯片、落地页、原型和海报。 |
+| **[Presentation Skills](https://github.com/Sven-LI-sankyuu/presentation-skills)**†<br><sub>Sven-LI-sankyuu</sub> | 163 | 双路线 | Unspecified | Codex CLI 技能集合，涵盖可编辑 PPT 图表协作与端到端网页演示视频合成工作流。 |
+| **[Servasyy Skills](https://github.com/huangserva/servasyy_skills)**†<br><sub>huangserva</sub> | 152 | 套件 | Unspecified | 一套覆盖写作、配图、PPT、播客、视频和漫画生成的AI技能集合。 |
+| **[Ultimate PPT Master Skill](https://github.com/kdnsna/ultimate-ppt-master-skill)**†<br><sub>kdnsna</sub> | 152 | 双路线 | MIT | 通过明确受众、场景和风格后，将一句话需求转化为可编辑的PPTX或网页幻灯片。 |
+| **[Future Slide](https://github.com/bytonylee/future-slide)**†<br><sub>bytonylee</sub> | 144 | 套件 | Apache-2.0 | 十个幻灯片技能，按规划 / 提示 / 渲染拆分，同时覆盖 HTML 与 GPT 生图两条路线。 |
+| **[Slide Deck Generator](https://github.com/code-on-sunday/slide-deck-generator)**†<br><sub>code-on-sunday</sub> | 138 | HTML | MIT | 通过编程智能体提示，使用React、Vite和Framer Motion创建基于浏览器的幻灯片。 |
+| **[PPT Agent Skill](https://github.com/Akxan/ppt-agent-skill)**<br><sub>Akxan</sub> | 119 | HTML | MIT | 26 种风格、18 种图表，对标 Linear / Anthropic / Stripe / Apple / NYT。 |
 | **[HTML PPT Designer](https://github.com/andyhuo520/html-ppt-designer)**†<br><sub>andyhuo520</sub> | 114 | HTML | Unspecified | 将任意内容转化为精致的HTML演示文稿。 |
-| **[Presentation Skills](https://github.com/pamelafox/presentation-skills)**†<br><sub>pamelafox</sub> | 105 | HTML | MIT | 面向教师和演讲者的AI智能体演示文稿处理技能集合。 |
-| **[PowerPoint Skill](https://github.com/Noi1r/powerpoint-skill)**†<br><sub>Noi1r</sub> | 104 | PPTX | MIT | 生成包含原生数学公式、LaTeX和Graphviz/Mermaid/TikZ图表的PPTX演示文稿。 |
-| **[Make Slide](https://github.com/Kuneosu/make-slide)**†<br><sub>Kuneosu</sub> | 104 | HTML | MIT | 根据提示生成独立的HTML幻灯片文件。 |
-| **[AI Skills (Cross-Platform)](https://github.com/sanjay3290/ai-skills/tree/main/skills/google-slides)**†<br><sub>sanjay3290</sub> | 359* | 套件 | Apache-2.0 | 面向 Claude Code、Cursor 与 Codex 的 24 个跨平台技能，含 Google Slides。 |
+| **[Presentation Skills](https://github.com/pamelafox/presentation-skills)**†<br><sub>pamelafox</sub> | 112 | HTML | MIT | 面向教师和演讲者的AI智能体演示文稿处理技能集合。 |
+| **[Make Slide](https://github.com/Kuneosu/make-slide)**†<br><sub>Kuneosu</sub> | 111 | HTML | MIT | 根据提示生成独立的HTML幻灯片文件。 |
+| **[PowerPoint Skill](https://github.com/Noi1r/powerpoint-skill)**†<br><sub>Noi1r</sub> | 106 | PPTX | MIT | 生成包含原生数学公式、LaTeX和Graphviz/Mermaid/TikZ图表的PPTX演示文稿。 |
+| **[AI Skills (Cross-Platform)](https://github.com/sanjay3290/ai-skills/tree/main/skills/google-slides)**†<br><sub>sanjay3290</sub> | 363* | 套件 | Apache-2.0 | 面向 Claude Code、Cursor 与 Codex 的 24 个跨平台技能，含 Google Slides。 |
 
 ### Tier B — 垂直与新兴（<100 star）
 
 | 项目 | ⭐ | 路线 | License | 一句话 |
 |---|---:|---|---|---|
-| **[PPT Report Skills](https://github.com/myunwang/ppt-report-skills)**†<br><sub>myunwang</sub> | 96 | HTML | MIT | 构建带有ECharts图表、按幻灯片分文件存储、支持PDF/图片导出的网页汇报文稿。 |
+| **[PPT Report Skills](https://github.com/myunwang/ppt-report-skills)**†<br><sub>myunwang</sub> | 98 | HTML | MIT | 构建带有ECharts图表、按幻灯片分文件存储、支持PDF/图片导出的网页汇报文稿。 |
 | **[AI Paper to Slide Skill](https://github.com/Leo1998-Lu/ai-paper2slide-skill)**†<br><sub>Leo1998-Lu</sub> | 95 | PPTX | MIT | 将AI研究论文转换为会议级别的PowerPoint幻灯片。 |
-| **[Literature Report PPT Builder](https://github.com/fangyuanopus/literature-report-ppt-builder)**†<br><sub>fangyuanopus</sub> | 91 | PPTX | MIT | 根据研究内容生成学术文献报告PowerPoint幻灯片。 |
+| **[Literature Report PPT Builder](https://github.com/fangyuanopus/literature-report-ppt-builder)**†<br><sub>fangyuanopus</sub> | 94 | PPTX | MIT | 根据研究内容生成学术文献报告PowerPoint幻灯片。 |
 | **[Image to PPTX Skill](https://github.com/knight6669/knight-imagetopptx-skill)**†<br><sub>knight6669</sub> | 84 | PPTX | MIT | 通过语义理解将幻灯片图片转换为可编辑的PowerPoint文件。 |
 | **[Visual Cognition Slides](https://github.com/edu-ai-builders/visual-cognition-slides)**<br><sub>edu-ai-builders</sub> | 81 | HTML | MIT | 基于认知科学与教学设计的幻灯片，优化知识留存率。 |
-| **[CN Academic Spark](https://github.com/wycmochi/cn-academic-spark)**†<br><sub>wycmochi</sub> | 78 | PPTX | MIT | 根据上传的论文材料，为论文答辩、组会汇报等场景生成带讲稿的可编辑学术PPTX。 |
-| **[Knowledge Cat PPT Skill](https://github.com/gnipbao/knowledge-cat-ppt-skill)**†<br><sub>gnipbao</sub> | 77 | 双路线 | MIT | 采用故事优先的方式创建并质检PPT、HTML和图片型演示文稿。 |
+| **[CN Academic Spark](https://github.com/wycmochi/cn-academic-spark)**†<br><sub>wycmochi</sub> | 80 | PPTX | MIT | 根据上传的论文材料，为论文答辩、组会汇报等场景生成带讲稿的可编辑学术PPTX。 |
+| **[Knowledge Cat PPT Skill](https://github.com/gnipbao/knowledge-cat-ppt-skill)**†<br><sub>gnipbao</sub> | 78 | 双路线 | MIT | 采用故事优先的方式创建并质检PPT、HTML和图片型演示文稿。 |
+| **[Starry Slides](https://github.com/StarryKit/starry-slides)**<br><sub>StarryKit</sub> | 78 | 框架 | Apache-2.0 | 以 HTML 为源文件的幻灯片编辑器,让 Agent 产出的整套 deck 保持完全可编辑。 |
 | **[SJTU PPT Template Skill](https://github.com/ACTAshui/sjtu-ppt-template-skill)**†<br><sub>ACTAshui</sub> | 74 | PPTX | Unspecified | 生成上海交通大学风格的可编辑PowerPoint幻灯片。 |
+| **[HTML Slides](https://github.com/bluedusk/html-slides)**<br><sub>bluedusk</sub> | 72 | HTML | MIT | 带演讲者备注的 HTML 幻灯片，配套放映 app。 |
 | **[Deck Factory](https://github.com/gongnyang/deck-factory)**†<br><sub>gongnyang</sub> | 72 | HTML | MIT | 将一行提示词转化为暗色编辑风格的HTML演示文稿。 |
-| **[HTML Slides](https://github.com/bluedusk/html-slides)**<br><sub>bluedusk</sub> | 70 | HTML | MIT | 带演讲者备注的 HTML 幻灯片，配套放映 app。 |
-| **[Space Multi Design PPT](https://github.com/SpaceZephyr/space-multi-design-ppt)**†<br><sub>SpaceZephyr</sub> | 66 | PPTX | Unspecified | 通过Codex按照设计系统规范生成品牌化幻灯片。 |
-| **[Lieflat HTML Design](https://github.com/larashero3-dotcom/lieflat-html-design)**†<br><sub>larashero3-dotcom</sub> | 63 | HTML | MIT | 通过智能体就绪的设计技能生成HTML幻灯片和小红书卡片。 |
-| **[Jiarui SVG Skills](https://github.com/shenxiaofeng-pro/jiarui-svg-skills)**†<br><sub>shenxiaofeng-pro</sub> | 60 | 图片 | Unspecified | 生成带有公司Logo、主色调和逻辑结构的品牌SVG幻灯片图片，可拆分用于PPT。 |
+| **[Space Multi Design PPT](https://github.com/SpaceZephyr/space-multi-design-ppt)**†<br><sub>SpaceZephyr</sub> | 70 | PPTX | Unspecified | 通过Codex按照设计系统规范生成品牌化幻灯片。 |
+| **[Lieflat HTML Design](https://github.com/larashero3-dotcom/lieflat-html-design)**†<br><sub>larashero3-dotcom</sub> | 66 | HTML | MIT | 通过智能体就绪的设计技能生成HTML幻灯片和小红书卡片。 |
+| **[Jiarui SVG Skills](https://github.com/shenxiaofeng-pro/jiarui-svg-skills)**†<br><sub>shenxiaofeng-pro</sub> | 61 | 图片 | Unspecified | 生成带有公司Logo、主色调和逻辑结构的品牌SVG幻灯片图片，可拆分用于PPT。 |
+| **[Editable Image to PPT Skill](https://github.com/soulmujoco/EditableImage2PPTSkill)**†<br><sub>soulmujoco</sub> | 58 | PPTX | MIT | 将PPT幻灯片图片转换为可编辑的PowerPoint文件。 |
 | **[Awesome PPT Skills](https://github.com/stevenjinlong/awesome-ppt-skills)**†<br><sub>stevenjinlong</sub> | 57 | 图片 | Unspecified | 通过gpt-image-2将文字提示词转换为完整的全页式PPT幻灯片图片。 |
-| **[Editable Image to PPT Skill](https://github.com/soulmujoco/EditableImage2PPTSkill)**†<br><sub>soulmujoco</sub> | 57 | PPTX | MIT | 将PPT幻灯片图片转换为可编辑的PowerPoint文件。 |
 | **[KingDee PPT Skill](https://github.com/WayneZhon/KingDee-PPT-Skill)**<br><sub>WayneZhon</sub> | 56 | HTML | MIT | 将内容快速生成金蝶风格 PPT。 |
 | **[Presentation](https://github.com/appautomaton/presentation)**†<br><sub>appautomaton</sub> | 53 | 双路线 | Unspecified | 通过四个可组合技能将业务问题转化为咨询级PDF和PPTX演示文稿。 |
 | **[Huawei Style PPT Skill](https://github.com/zuiho-kai/huawei-style-ppt-skill)**<br><sub>zuiho-kai</sub> | 52 | HTML | Custom | 华为风格高密度信息 PPT 制作工作流。 |
 | **[Slide Creator](https://github.com/kaisersong/slide-creator)**<br><sub>kaisersong</sub> | 46 | 双路线 | Unspecified | AI 规划 + 风格发现 + PPTX 导出。 |
-| **[next-slide](https://github.com/codesstar/next-slide)**<br><sub>codesstar</sub> | 43 | HTML | MIT | 「你的下个 slide，何必是 PPT」—— 26+ 风格，零依赖，中英双语。 |
-| **[HTML to Editable PPTX](https://github.com/Hasasasa/html-to-editable-pptx)**†<br><sub>Hasasasa</sub> | 43 | PPTX | MIT | 将HTML幻灯片转换为包含原生文字框（而非截图）的可编辑PPTX文件。 |
+| **[HTML to Editable PPTX](https://github.com/Hasasasa/html-to-editable-pptx)**†<br><sub>Hasasasa</sub> | 46 | PPTX | MIT | 将HTML幻灯片转换为包含原生文字框（而非截图）的可编辑PPTX文件。 |
+| **[next-slide](https://github.com/codesstar/next-slide)**<br><sub>codesstar</sub> | 44 | HTML | MIT | 「你的下个 slide，何必是 PPT」—— 26+ 风格，零依赖，中英双语。 |
 | **[Slide Writer](https://github.com/FeeiCN/slide-writer)**<br><sub>FeeiCN</sub> | 40 | HTML | MIT | 从想法、大纲、文档或演讲稿生成企业级 HTML 演示。 |
 | **[Claude Code Codex Slide](https://github.com/phodal/claude-code-codex-slide)**†<br><sub>phodal</sub> | 39 | HTML | Unspecified | 通过Codex分析Claude Code源码，并以GPT生成的幻灯片呈现分析结果。 |
 | **[Baoyu Xuanyi Skills](https://github.com/xuanxuan1983/baoyu-xuanyi-skills)**†<br><sub>xuanxuan1983</sub> | 39 | 模板库 | Unspecified | 将宝玉的智能体技能与七种PPT风格模板相结合。 |
 | **[Beautiful Hackathon Slides](https://github.com/Esther2524/beautiful-hackathon-slides)**†<br><sub>Esther2524</sub> | 38 | HTML | MIT | 生成适合黑客松展示的大胆设计HTML宣传幻灯片。 |
-| **[ImageGen PPTX Pipeline](https://github.com/eddyzzl/imagegen-pptx-pipeline)**†<br><sub>eddyzzl</sub> | 37 | PPTX | MIT | 使用图像生成技术生成可编辑PPTX幻灯片，并将幻灯片图片严格转换为PowerPoint。 |
-| **[Paper PPT Skill](https://github.com/xiao634zhang/paper-ppt-skill)**†<br><sub>xiao634zhang</sub> | 35 | PPTX | Unspecified | 从PDF论文自动生成简洁的学术汇报幻灯片，支持模板定制、演讲稿导入和图片提取。 |
-| **[Presentation Skill](https://github.com/siril9/presentation-skill)**†<br><sub>siril9</sub> | 34 | PPTX | MIT | 以源文件优先方式通过Codex生成可编辑PPTX幻灯片，含样式路由和质量审核。 |
-| **[Codex Image to Editable PPT](https://github.com/wiltonesten-web/codeximage-to-editable-ppt-v1)**†<br><sub>wiltonesten-web</sub> | 34 | PPTX | MIT | 通过Codex将图片型PPT幻灯片重建为可编辑的PowerPoint文件。 |
+| **[ImageGen PPTX Pipeline](https://github.com/eddyzzl/imagegen-pptx-pipeline)**†<br><sub>eddyzzl</sub> | 38 | PPTX | MIT | 使用图像生成技术生成可编辑PPTX幻灯片，并将幻灯片图片严格转换为PowerPoint。 |
+| **[Paper PPT Skill](https://github.com/xiao634zhang/paper-ppt-skill)**†<br><sub>xiao634zhang</sub> | 37 | PPTX | Unspecified | 从PDF论文自动生成简洁的学术汇报幻灯片，支持模板定制、演讲稿导入和图片提取。 |
+| **[Presentation Skill](https://github.com/siril9/presentation-skill)**†<br><sub>siril9</sub> | 36 | PPTX | MIT | 以源文件优先方式通过Codex生成可编辑PPTX幻灯片，含样式路由和质量审核。 |
+| **[Codex Image to Editable PPT](https://github.com/wiltonesten-web/codeximage-to-editable-ppt-v1)**†<br><sub>wiltonesten-web</sub> | 35 | PPTX | MIT | 通过Codex将图片型PPT幻灯片重建为可编辑的PowerPoint文件。 |
 | **[Slidev Skills](https://github.com/yoanbernabeu/slidev-skills)**†<br><sub>yoanbernabeu</sub> | 33 | 框架 | MIT | 二十个用于通过Slidev框架构建演示文稿的AI智能体技能。 |
 | **[PPT Skill](https://github.com/AIPMAndy/PPTskill)**†<br><sub>AIPMAndy</sub> | 33 | PPTX | MIT | 无需设计技能，通过AI生成原生可编辑的PowerPoint文件。 |
-| **[BL Captain PPT Skill](https://github.com/dososo/blcaptain-ppt-skill)**†<br><sub>dososo</sub> | 31 | HTML | NOASSERTION | 生成带有7种设计体系视觉风格、符合WCAG规范的单文件HTML演示文稿。 |
+| **[BL Captain PPT Skill](https://github.com/dososo/blcaptain-ppt-skill)**†<br><sub>dososo</sub> | 32 | HTML | NOASSERTION | 生成带有7种设计体系视觉风格、符合WCAG规范的单文件HTML演示文稿。 |
 | **[HTML to PPT PDF](https://github.com/wangzan101/html-to-ppt-pdf)**†<br><sub>wangzan101</sub> | 31 | 双路线 | MIT | 将HTML幻灯片转换为PDF和图片型PPTX，供线下演讲使用。 |
-| **[Skills Slides](https://github.com/nghiahsgs/skills-slides)**<br><sub>nghiahsgs</sub> | 29 | HTML | Unspecified | 50 美学 × 20 配色 × 10 字体 × 5 布局 × 30+ 特效 = 5 万种组合。 |
+| **[Skills Slides](https://github.com/nghiahsgs/skills-slides)**<br><sub>nghiahsgs</sub> | 30 | HTML | Unspecified | 50 美学 × 20 配色 × 10 字体 × 5 布局 × 30+ 特效 = 5 万种组合。 |
+| **[Scholar PPT CN](https://github.com/deathcats4/scholar-ppt-cn)**†<br><sub>deathcats4</sub> | 30 | PPTX | MIT | 通过Codex将学术论文转换为带规划表和布局草图的可编辑PowerPoint幻灯片。 |
 | **[Slides AI Plugin](https://github.com/proyecto26/slides-ai-plugin)**†<br><sub>proyecto26</sub> | 29 | 双路线 | MIT | 将单个提示词转化为动态HTML或可编辑PowerPoint演示文稿。 |
-| **[Scholar PPT CN](https://github.com/deathcats4/scholar-ppt-cn)**†<br><sub>deathcats4</sub> | 28 | PPTX | MIT | 通过Codex将学术论文转换为带规划表和布局草图的可编辑PowerPoint幻灯片。 |
+| **[Image PPT King](https://github.com/TateZhouSiu/image-ppt-king)**†<br><sub>TateZhouSiu</sub> | 28 | PPTX | MIT | 将幻灯片截图和生成图片通过OCR识别和质检转换为可编辑的PPTX文件。 |
 | **[PowerPoint Fancy Design](https://github.com/Phlegonlabs/Powerpoint-fancy-design)**<br><sub>Phlegonlabs</sub> | 27 | 双路线 | Unspecified | 结构化 Markdown → 1600×900 HTML 幻灯片 + PNG 渲染 + 可导出。 |
 | **[Narrative Engine](https://github.com/nraford7/Narrative-Engine)**†<br><sub>nraford7</sub> | 27 | HTML | Unspecified | 将内容转化为基于叙事与沟通框架构建的HTML幻灯片。 |
-| **[Image PPT King](https://github.com/TateZhouSiu/image-ppt-king)**†<br><sub>TateZhouSiu</sub> | 27 | PPTX | MIT | 将幻灯片截图和生成图片通过OCR识别和质检转换为可编辑的PPTX文件。 |
 | **[PPT Design DNA](https://github.com/dakjdakd/PPT-Design-DNA)**†<br><sub>dakjdakd</sub> | 26 | HTML | Apache-2.0 | 从参考图片中提取视觉风格并保存为设计档案，再将其应用于HTML演示文稿。 |
 | **[PPT Creator Skills](https://github.com/Yu-0312/ppt-creater-skills)**†<br><sub>Yu-0312</sub> | 25 | PPTX | NOASSERTION | 用于Claude Code的PowerPoint演示文稿创建技能。 |
 | **[Beamer Skill](https://github.com/JaxonJP/beamer-skill)**†<br><sub>JaxonJP</sub> | 23 | HTML | MIT | 面向学术Beamer LaTeX演示文稿的全流程技能：编译、审阅、质检和TikZ审计。 |
 | **[Jingge Sense Deck](https://github.com/jxshow/Jingge-PPT-sense-deck-skill)**†<br><sub>jxshow</sub> | 23 | HTML | Unspecified | 注重整套幻灯片视觉调性一致的 HTML deck 技能。 |
 | **[Presentation Skill](https://github.com/OrangeViolin/presentation-skill)**†<br><sub>OrangeViolin</sub> | 22 | HTML | Unspecified | 输入主题，从62种品牌设计风格中生成可播放的HTML幻灯片。 |
 | **[Econ Empirical Paper PPT Skill](https://github.com/1793065778/econ-empirical-paper-ppt-skill)**†<br><sub>1793065778</sub> | 22 | PPTX | Unspecified | 将实证经济学论文转换为适合PowerPoint使用的结构化演示文稿蓝图。 |
+| **[30x McKinsey Research Deck](https://github.com/norahe0304-art/30x-mckinsey-research-deck)**†<br><sub>norahe0304-art</sub> | 22 | PPTX | MIT | 通过多智能体流水线，将研究提示词转化为经过对抗验证的麦肯锡风格市场研究幻灯片。 |
+| **[PPT Agent](https://github.com/joker-sxj/ppt-agent)**†<br><sub>joker-sxj</sub> | 21 | 双路线 | MIT | 通过六阶段流水线，将主题转化为可逐元素编辑的 .pptx 文件及整页 SVG 网页预览。 |
 | **[HTML to PPTX](https://github.com/Emily27-alt/html-to-pptx)**†<br><sub>Emily27-alt</sub> | 20 | PPTX | MIT | 将HTML幻灯片转换为使用原生形状（而非截图）的可编辑.pptx文件。 |
 | **[Neon Slides](https://github.com/lqshow/neon-slides)**†<br><sub>lqshow</sub> | 20 | HTML | MIT | 将文本大纲转换为适合技术演示的暗色霓虹主题HTML幻灯片。 |
 | **[Claude HTML Slide Builder](https://github.com/mathruffian-dot/claude-html-slide-builder)**†<br><sub>mathruffian-dot</sub> | 20 | HTML | MIT | 将教材转换为AI互动式Reveal.js HTML演示文稿，并一键部署到GitHub Pages。 |
-| **[30x McKinsey Research Deck](https://github.com/norahe0304-art/30x-mckinsey-research-deck)**†<br><sub>norahe0304-art</sub> | 20 | PPTX | MIT | 通过多智能体流水线，将研究提示词转化为经过对抗验证的麦肯锡风格市场研究幻灯片。 |
-| **[Keynote Slides Skill](https://github.com/dbmcco/keynote-slides-skill)**†<br><sub>dbmcco</sub> | 19 | HTML | Unspecified | 生成 Keynote 风格的 HTML 演示幻灯片。 |
-| **[PPT Agent](https://github.com/joker-sxj/ppt-agent)**†<br><sub>joker-sxj</sub> | 19 | 双路线 | MIT | 通过六阶段流水线，将主题转化为可逐元素编辑的 .pptx 文件及整页 SVG 网页预览。 |
+| **[Keynote Slides Skill](https://github.com/dbmcco/keynote-slides-skill)**†<br><sub>dbmcco</sub> | 20 | HTML | Unspecified | 生成 Keynote 风格的 HTML 演示幻灯片。 |
 | **[Interactive Slides](https://github.com/sylvial928/interactive-slides)**†<br><sub>sylvial928</sub> | 18 | HTML | MIT | 生成带有风格预设、品牌套件支持和一键导出 PowerPoint 功能的动画交互式网页演示文稿。 |
-| **[PPTX Template Skills](https://github.com/CxyZyr/PPTX-Template-Skills)**†<br><sub>CxyZyr</sub> | 17 | PPTX | MIT | 将 PowerPoint 模板解析为机器可读的结构描述，再用新内容填充，生成完整的演示文稿。 |
+| **[PPTX Template Skills](https://github.com/CxyZyr/PPTX-Template-Skills)**†<br><sub>CxyZyr</sub> | 18 | PPTX | MIT | 将 PowerPoint 模板解析为机器可读的结构描述，再用新内容填充，生成完整的演示文稿。 |
+| **[Excalidraw Slides Generator](https://github.com/ZunbaRan/excalidraw-slides-skills)**†<br><sub>ZunbaRan</sub> | 18 | 框架 | Unspecified | 两阶段工作流:把文本转成 16:9 Excalidraw 幻灯片,并自动生成配套 SVG 插图。 |
+| **[MBB Decks](https://github.com/floflo11/mbb-decks)**†<br><sub>floflo11</sub> | 17 | PPTX | MIT | 生成 MBB 风格的咨询 .pptx 文件，包含行动标题、MECE 要点和公司 Logo 项目符号。 |
 | **[KAI Presentation](https://github.com/yevvonlim/kai-presentation)**†<br><sub>yevvonlim</sub> | 16 | HTML | Unspecified | 根据提示生成 KAI 品牌风格的 HTML 演示文稿。 |
-| **[AI Draw Skill](https://github.com/stone-yu/ai-draw-skill)**†<br><sub>stone-yu</sub> | 15 | HTML | Unspecified | 将文字、链接、图片或 PDF 转换为 HTML 幻灯片或图表，提供 36 种 PPT 主题和 12 种图表主题。 |
+| **[AI Draw Skill](https://github.com/stone-yu/ai-draw-skill)**†<br><sub>stone-yu</sub> | 16 | HTML | Unspecified | 将文字、链接、图片或 PDF 转换为 HTML 幻灯片或图表，提供 36 种 PPT 主题和 12 种图表主题。 |
 | **[Keynot](https://github.com/shawnzam/keynot)**†<br><sub>shawnzam</sub> | 15 | HTML | MIT | 无需 Keynote 或 PowerPoint，将任意提示词转换为独立的 HTML 幻灯片。 |
-| **[MBB Decks](https://github.com/floflo11/mbb-decks)**†<br><sub>floflo11</sub> | 15 | PPTX | MIT | 生成 MBB 风格的咨询 .pptx 文件，包含行动标题、MECE 要点和公司 Logo 项目符号。 |
 | **[Slide Wright](https://github.com/arifszn/slide-wright)**†<br><sub>arifszn</sub> | 14 | HTML | MIT | 为每个提示生成具有独特设计的 reveal.js HTML 幻灯片。 |
+| **[Four-Up PPT Generator](https://github.com/woniuniuniu/four-up-ppt-generator)**†<br><sub>woniuniuniu</sub> | 14 | PPTX | ⚠️ AGPL-3.0 | 基于 guizang-ppt-skill 生成每页四格布局的 PPTX 演示文稿。 |
+| **[Create HTML Deck](https://github.com/awesome-skills/create-html-deck)**†<br><sub>awesome-skills</sub> | 14 | HTML | MIT | 构建并验证适用于笔记本电脑和投影仪的原生浏览器 HTML 演示文稿。 |
 | **[CyberBin PPT Skill](https://github.com/caikankan/cyberbin-ppt-skill)**†<br><sub>caikankan</sub> | 14 | HTML | ⚠️ AGPL-3.0 | 根据提示在本地生成 HTML 幻灯片。 |
 | **[Competition PPT Template Skill](https://github.com/che626/competition-ppt-template-first-skill)**†<br><sub>che626</sub> | 13 | PPTX | MIT | 使用模板优先方式生成含真实证据的可编辑竞赛与答辩 PPTX 演示文稿。 |
-| **[Four-Up PPT Generator](https://github.com/woniuniuniu/four-up-ppt-generator)**†<br><sub>woniuniuniu</sub> | 13 | PPTX | ⚠️ AGPL-3.0 | 基于 guizang-ppt-skill 生成每页四格布局的 PPTX 演示文稿。 |
 | **[NanoBanana PPT Skills](https://github.com/xj-bear/NanoBanana-PPT-Skills)**†<br><sub>xj-bear</sub> | 13 | PPTX | Unspecified | 使用 AI 生成 PPT 文件，支持 Veo 视频内容。 |
 | **[NanoBanana PPT Skills](https://github.com/girish6055/NanoBanana-PPT-Skills)**†<br><sub>girish6055</sub> | 13 | PPTX | Unspecified | 使用 AI 生成带有智能切换和交互式播放功能的 PPT 文件。 |
 | **[PPT Image Share Builder](https://github.com/uuoov/ppt-image-share-builder)**†<br><sub>uuoov</sub> | 13 | 图片 | MIT | 从图片输入生成 PPT 页面图像、质检联系表、PPTX 封装文件和时序脚本。 |
+| **[Slide Design Skill](https://github.com/SlideSpeak/slide-design-skill)**†<br><sub>SlideSpeak</sub> | 13 | HTML | MIT | 根据演示文稿描述生成带有定制样式、真实图表、表格和图片的 1920x1080 HTML 幻灯片。 |
+| **[OpenCode PPT Studio](https://github.com/Honghurumeng/oc_sdk_ppt)**†<br><sub>Honghurumeng</sub> | 13 | 双路线 | Unspecified | 网页应用:先出大纲初稿,再开新会话精修,然后生成 HTML slides 并本地构建 PPTX。 |
+| **[PPTX from Layouts](https://github.com/tristan-mcinnis/pptx-from-layouts-skill)**<br><sub>tristan-mcinnis</sub> | 12 | PPTX | MIT | 严格通过模板母版版式，从 Markdown 生成 PPTX。 |
 | **[HalfAI Gufa PPT](https://github.com/HalfAI1102/HalfAI-gufappt)**†<br><sub>HalfAI1102</sub> | 12 | PPTX | MIT | 生成适合学校、职场和答辩场景的传统风格可编辑 PPTX 文件。 |
-| **[Slide Design Skill](https://github.com/SlideSpeak/slide-design-skill)**†<br><sub>SlideSpeak</sub> | 12 | HTML | MIT | 根据演示文稿描述生成带有定制样式、真实图表、表格和图片的 1920x1080 HTML 幻灯片。 |
 | **[Better PPT HTML Deck](https://github.com/ziguishian/better-ppt-html-deck)**†<br><sub>ziguishian</sub> | 12 | HTML | MIT | 先确认视觉方向，再生成可编辑、可预览、可导出的 HTML 演示文稿。 |
-| **[Create HTML Deck](https://github.com/awesome-skills/create-html-deck)**†<br><sub>awesome-skills</sub> | 12 | HTML | MIT | 构建并验证适用于笔记本电脑和投影仪的原生浏览器 HTML 演示文稿。 |
 | **[AWS HTML Slides](https://github.com/lanceli93/aws-html-slides)**†<br><sub>lanceli93</sub> | 11 | HTML | MIT | 从头创建富含动画效果的 HTML 演示文稿，或将现有 PowerPoint 文件转换为 HTML 格式。 |
 | **[Prada Slides](https://github.com/prodigeproject/pradaslides)**†<br><sub>prodigeproject</sub> | 11 | 双路线 | MIT | 生成 PPTX、HTML 幻灯片和 PDF，并针对目标受众进行演示文稿规划。 |
 | **[Japanese Corporate PPTX Skill](https://github.com/gonta223/japanese-corporate-pptx-skill)**†<br><sub>gonta223</sub> | 11 | PPTX | MIT | 生成日式企业风格的 PPTX 演示文稿。 |
 | **[Editable Leadership PPTX](https://github.com/CamelKing1997/editable-leadership-pptx)**†<br><sub>CamelKing1997</sub> | 11 | PPTX | Apache-2.0 | 构建带有仓库证据支撑和截图质检的可编辑领导力、高管及项目汇报 PPTX 幻灯片。 |
+| **[McKinsey HTML Design Skill](https://github.com/likaku/mck-html-design-skill)**†<br><sub>likaku</sub> | 11 | HTML | Apache-2.0 | 用 Python 生成麦肯锡风格的 HTML 演示文稿，内置 68 种布局，无需任何依赖。 |
 | **[SlideStage Pack](https://github.com/SlideStage/slidestage-pack)**†<br><sub>SlideStage</sub> | 10 | HTML | Unspecified | 将 HTML 幻灯片打包为可分享或部署的发布包。 |
 | **[Deckset Claude Skill](https://github.com/doudou1337/deckset-claude-skill)**†<br><sub>doudou1337</sub> | 10 | HTML | MIT | 接受 Markdown 输入，生成包含文档和示例的 Deckset 演示文稿文件。 |
-| **[McKinsey HTML Design Skill](https://github.com/likaku/mck-html-design-skill)**†<br><sub>likaku</sub> | 10 | HTML | Apache-2.0 | 用 Python 生成麦肯锡风格的 HTML 演示文稿，内置 68 种布局，无需任何依赖。 |
-| **[PPTX from Layouts](https://github.com/tristan-mcinnis/pptx-from-layouts-skill)**<br><sub>tristan-mcinnis</sub> | 9 | PPTX | MIT | 严格通过模板母版版式，从 Markdown 生成 PPTX。 |
 | **[IML PPTX](https://github.com/tangonho/iml-pptx)**†<br><sub>tangonho</sub> | 9 | PPTX | Unspecified | 将文案和幻灯片图像重建为包含原生文本框与形状的可编辑 PowerPoint 文件。 |
 | **[GZR NSFC PPT Skill](https://github.com/admithuman/gzr-nsfc-ppt-skill)**†<br><sub>admithuman</sub> | 9 | PPTX | MIT | 自动生成符合国家自然科学基金答辩风格的专业学术演示文稿。 |
+| **[Fudan University PPT Skill](https://github.com/JZCreative/Fudan-University-PPT-skill)**†<br><sub>JZCreative</sub> | 9 | 双路线 | Unspecified | 生成带有复旦大学品牌标识的学术演示文稿，支持原生 PPTX 和离线 HTML 格式，内置校徽与配色资产。 |
+| **[Presentation Chef](https://github.com/sacredvoid/presentation-chef)**†<br><sub>sacredvoid</sub> | 9 | HTML | MIT | 将任意内容转换为苹果 Keynote 风格的单文件 HTML 演示文稿，带有电影级动画效果。 |
 | **[HTML to PPTX Skill](https://github.com/artifact-kit/html-to-pptx-skill)**†<br><sub>artifact-kit</sub> | 8 | PPTX | Unspecified | 将 HTML 页面转换为可下载、可编辑的 PowerPoint 演示文稿。 |
 | **[Bento PPT Skill](https://github.com/YingYveltal/bento-ppt-skill)**†<br><sub>YingYveltal</sub> | 8 | 双路线 | MIT | 将主题转换为 16:9 Bento Grid 风格的 SVG 幻灯片，提供 HTML 预览和可编辑的 PowerPoint 导出。 |
 | **[SlideSmith](https://github.com/aryankumawat/SlideSmith-Multi-Agent-AI-Slide-Maker-)**†<br><sub>aryankumawat</sub> | 8 | 双路线 | Unspecified | 多智能体系统，通过质量校验自动生成幻灯片并支持多格式导出。 |
-| **[Fudan University PPT Skill](https://github.com/JZCreative/Fudan-University-PPT-skill)**†<br><sub>JZCreative</sub> | 8 | 双路线 | Unspecified | 生成带有复旦大学品牌标识的学术演示文稿，支持原生 PPTX 和离线 HTML 格式，内置校徽与配色资产。 |
-| **[Presentation Chef](https://github.com/sacredvoid/presentation-chef)**†<br><sub>sacredvoid</sub> | 8 | HTML | MIT | 将任意内容转换为苹果 Keynote 风格的单文件 HTML 演示文稿，带有电影级动画效果。 |
 | **[Paper Figure PPTX Skill](https://github.com/fengting124/paper-figure-pptx-skill)**†<br><sub>fengting124</sub> | 8 | PPTX | MIT | 将学术论文中的图表重建为可编辑且经 LibreOffice 验证的 PPTX 幻灯片。 |
+| **[Hand-Drawn PPT Skill](https://github.com/danny0926/ppt-skills)**†<br><sub>danny0926</sub> | 8 | 双路线 | Unspecified | 将文本转换为手绘风格（rough.js）的 PPTX 幻灯片，采用视觉优先布局和双层可编辑结构。 |
+| **[Guizang PPT Skill](https://github.com/alingowangxr/guizang-ppt-skill)**†<br><sub>alingowangxr</sub> | 8 | HTML | MIT | 生成网页版演示文稿、配图及常用社交平台封面，支持繁体中文和简体中文。 |
+| **[TalkTrack](https://github.com/RuiqiWang-LGD/TalkTrack--)**†<br><sub>RuiqiWang-LGD</sub> | 8 | PPTX | Unspecified | 将 PDF、PPT 或图片方案转换为带可朗读稿和翻页提示的伴读幻灯片。 |
+| **[HTML PPT Skill](https://github.com/chenyangji666/html-ppt-skill)**†<br><sub>chenyangji666</sub> | 8 | 框架 | MIT | 基于纯 HTML/CSS/JS 的演示文稿引擎，附带 AI 生成协议，用于创建幻灯片。 |
+| **[HTML to PPTX](https://github.com/nlj626/html-to-pptx)**†<br><sub>nlj626</sub> | 8 | PPTX | MIT | 将 html-ppt 生成的 HTML 演示文稿一键转换为可下载的 PPTX 文件。 |
 | **[AI Editable PPT Skill](https://github.com/iwbaga724-Hinda/ai-editable-ppt-skill)**†<br><sub>iwbaga724-Hinda</sub> | 7 | PPTX | Unspecified | 根据报告、大纲、模板或 AI 生成的幻灯片图像创建可编辑的 PowerPoint 演示文稿。 |
-| **[Hand-Drawn PPT Skill](https://github.com/danny0926/ppt-skills)**†<br><sub>danny0926</sub> | 7 | 双路线 | Unspecified | 将文本转换为手绘风格（rough.js）的 PPTX 幻灯片，采用视觉优先布局和双层可编辑结构。 |
-| **[Guizang PPT Skill](https://github.com/alingowangxr/guizang-ppt-skill)**†<br><sub>alingowangxr</sub> | 7 | HTML | MIT | 生成网页版演示文稿、配图及常用社交平台封面，支持繁体中文和简体中文。 |
-| **[TalkTrack](https://github.com/RuiqiWang-LGD/TalkTrack--)**†<br><sub>RuiqiWang-LGD</sub> | 7 | PPTX | Unspecified | 将 PDF、PPT 或图片方案转换为带可朗读稿和翻页提示的伴读幻灯片。 |
-| **[HTML PPT Skill](https://github.com/chenyangji666/html-ppt-skill)**†<br><sub>chenyangji666</sub> | 7 | 框架 | MIT | 基于纯 HTML/CSS/JS 的演示文稿引擎，附带 AI 生成协议，用于创建幻灯片。 |
-| **[HTML to PPTX](https://github.com/nlj626/html-to-pptx)**†<br><sub>nlj626</sub> | 7 | PPTX | MIT | 将 html-ppt 生成的 HTML 演示文稿一键转换为可下载的 PPTX 文件。 |
 | **[PPT Expert Team](https://github.com/ThunderOne18/ppt-expert-team)**†<br><sub>ThunderOne18</sub> | 7 | 双路线 | NOASSERTION | 八步工作流技能，将文章或讲稿转换为可编辑的 HTML、图片或 PPTX 幻灯片，提供六种风格。 |
 | **[Vela Slides](https://github.com/AgentiaPT/vela-slides)**†<br><sub>AgentiaPT</sub> | 7 | HTML | NOASSERTION | 一款 AI 驱动的应用与 Agent 技能，用于生成 HTML 幻灯片演示文稿。 |
 | **[Paper to LaTeX PPT](https://github.com/moyoo0/paper-to-latex-ppt)**†<br><sub>moyoo0</sub> | 7 | HTML | MIT | 输入一篇论文，输出带讲稿的汇报幻灯片，适用于组会展示。 |
 | **[SOIL Deck Skills](https://github.com/mathruffian-dot/soil-deck-skills)**†<br><sub>mathruffian-dot</sub> | 7 | 双路线 | MIT | 通过 Agent 技能生成教学幻灯片，支持全图 PPTX、可编辑 PPTX 和互动 HTML 三种格式。 |
+| **[Modern PPT](https://github.com/lainshao/modern-ppt)**†<br><sub>lainshao</sub> | 7 | HTML | ⚠️ AGPL-3.0 | 生成包含 12 种布局、3 种主题和交互图表的单文件 HTML 演示文稿，兼容主流 AI 编程工具。 |
+| **[Econ Slides Skill](https://github.com/hanlulong/econ-slides-skill)**<br><sub>hanlulong</sub> | 7 | 框架 | MIT | 把经济学论文转成 Beamer 研讨会报告,并附带按时长排布的逐字讲稿。 |
 | **[PPT Master](https://github.com/Categorytyy/ppt-master)**†<br><sub>Categorytyy</sub> | 6 | HTML | MIT | 用于生成 HTML 幻灯片演示文稿的 Agent 技能。 |
 | **[PPT Image to Editable](https://github.com/L-Luke-L/ppt-image-to-editable)**†<br><sub>L-Luke-L</sub> | 6 | PPTX | Unspecified | 一个 Codex 技能，将 AI 生成的幻灯片图片拆分并重建为可编辑的 PPTX 文件。 |
-| **[Modern PPT](https://github.com/lainshao/modern-ppt)**†<br><sub>lainshao</sub> | 6 | HTML | ⚠️ AGPL-3.0 | 生成包含 12 种布局、3 种主题和交互图表的单文件 HTML 演示文稿，兼容主流 AI 编程工具。 |
+| **[Research Group PPT Skill](https://github.com/lirouroud/research-group-ppt-skill)**†<br><sub>lirouroud</sub> | 6 | HTML | Unspecified | 读取科研进展素材，先输出逐页大纲供确认，再生成可翻页的 HTML 汇报。 |
+| **[Paper to Scholar Slides](https://github.com/ficooooo/Paper2ScholarSlides)**†<br><sub>ficooooo</sub> | 6 | PPTX | MIT | 将综述初稿与论文素材转化为结构严谨、引用清晰、图表可解释的学术 PPTX 汇报。 |
+| **[Aham PPT](https://github.com/Aham-AIAPP/aham-ppt)**†<br><sub>Aham-AIAPP</sub> | 6 | PPTX | MIT | 克制的 AI PPT 制作技能，通过参数化版式库生成规范、可编辑的 .pptx 文件。 |
 | **[Bruce PPTX Generator](https://github.com/bruc3van/bruce-pptx-generator)**†<br><sub>bruc3van</sub> | 5 | PPTX | Unspecified | 一个 Agent 技能，根据用户需求通过代码从零生成专业级 PowerPoint 演示文稿。 |
 | **[PPT Skill](https://github.com/lgwanai/ppt-skill)**†<br><sub>lgwanai</sub> | 5 | HTML | Unspecified | 支持风格克隆、内置商用 SVG 素材和专家排版经验，生成高质量 HTML 幻灯片。 |
 | **[Xidian Slides Skill](https://github.com/perper999/xidian-slides-skill)**†<br><sub>perper999</sub> | 5 | HTML | Unspecified | 按照西安电子科技大学官方视觉规范生成无依赖的 HTML 演示文稿。 |
@@ -348,11 +356,9 @@ python scripts/pick.py find editorial         # 搜风格 ID 和描述
 | **[Pitch Deck Iterator](https://github.com/MiraclePlus/pre-pp)**†<br><sub>MiraclePlus</sub> | 5 | PPTX | Unspecified | 通过 Claude Code 技能工作流对路演 PPT 进行迭代优化。 |
 | **[Zhongguose PPT Skill](https://github.com/tanglele110-hash/zhongguose-ppt-skill)**†<br><sub>tanglele110-hash</sub> | 5 | PPTX | MIT | 使用中国传统配色方案生成演示幻灯片。 |
 | **[ZJ Lab Academic PPTX Skills](https://github.com/qianmo-qp/zjlab-academic-pptx-sklls)**†<br><sub>qianmo-qp</sub> | 5 | PPTX | Unspecified | 生成用于实验室技术或学术汇报的 PPTX 幻灯片。 |
-| **[Research Group PPT Skill](https://github.com/lirouroud/research-group-ppt-skill)**†<br><sub>lirouroud</sub> | 5 | HTML | Unspecified | 读取科研进展素材，先输出逐页大纲供确认，再生成可翻页的 HTML 汇报。 |
-| **[Paper to Scholar Slides](https://github.com/ficooooo/Paper2ScholarSlides)**†<br><sub>ficooooo</sub> | 5 | PPTX | MIT | 将综述初稿与论文素材转化为结构严谨、引用清晰、图表可解释的学术 PPTX 汇报。 |
 | **[Consulting Diagnosis PPT Skill](https://github.com/Carl-Marks/consulting-diagnosis-ppt-skill)**†<br><sub>Carl-Marks</sub> | 5 | HTML | Unspecified | 经过六个阶段，从原始输入经业务分析最终生成咨询诊断报告的 HTML 幻灯片。 |
 | **[Token Slides](https://github.com/pku-lemonade/TokenSlides)**†<br><sub>pku-lemonade</sub> | 5 | 框架 | Apache-2.0 | 基于 Typst 的幻灯片主题，配合 Codex 技能将学术论文转换为演示文稿。 |
-| **[Aham PPT](https://github.com/Aham-AIAPP/aham-ppt)**†<br><sub>Aham-AIAPP</sub> | 4 | PPTX | MIT | 克制的 AI PPT 制作技能，通过参数化版式库生成规范、可编辑的 .pptx 文件。 |
+| **[KR Brand Decks](https://github.com/sylvanus4/kr-brand-decks)**<br><sub>sylvanus4</sub> | 5 | 模板库 | NOASSERTION | 23 个 skill,每个对应一家韩国企业品牌,从零构建符合该品牌规范的 PPTX。 |
 | **[Notrat PPT Studio](https://github.com/NestMold/notrat-ppt-studio-skill)**†<br><sub>NestMold</sub> | 4 | 双路线 | MIT | 使用 Notrat 创建、改编和检查 PowerPoint 文件，支持图片型、原生可编辑型和混合型输出及动画效果。 |
 | **[Web PPT](https://github.com/includewudi/web-ppt)**†<br><sub>includewudi</sub> | 4 | HTML | Unspecified | 生成零依赖的 HTML 演示文稿，可在浏览器直接打开，支持视频录制。 |
 | **[Codex XKPPT Skill](https://github.com/MURMURE11118586/codex-xkppt-skill)**†<br><sub>MURMURE11118586</sub> | 4 | PPTX | MIT | 支持从主题、文档、PDF 或 Markdown 生成可编辑演示文稿，提供模板套用、单页修改和 QA 检查流程。 |
@@ -364,6 +370,7 @@ python scripts/pick.py find editorial         # 搜风格 ID 和描述
 | **[HFUT Presentation Studio](https://github.com/linmohan00-rgb/hfut-presentation-studio)**†<br><sub>linmohan00-rgb</sub> | 4 | PPTX | Unspecified | 根据课程主题、截图或原始素材制作合肥工业大学红白风格课堂汇报 PPT，并检查排版与演讲稿。 |
 | **[SJTU Beamer PPT](https://github.com/YarthsA/sjtu-beamer-ppt)**†<br><sub>YarthsA</sub> | 4 | HTML | Unspecified | 使用 SJTUBeamer 模板生成符合上海交通大学风格的 LaTeX Beamer 演示文稿。 |
 | **[Frontend Slides](https://github.com/dreamid27/frontend-slides)**†<br><sub>dreamid27</sub> | 4 | HTML | MIT | 提供 88 种布局预设和 34 套模板，从头生成或将 PowerPoint 转换为富含动画的独立 HTML 演示文稿。 |
+| **[USTC PPT Template](https://github.com/zsc58/ustc-ppt-template)**†<br><sub>zsc58</sub> | 4 | 模板库 | NOASSERTION | 为中国科学技术大学提供15页蓝色学术PPT模板，含全套跳转导航与LaTeX公式管线。 |
 | **[HTML Report Generator](https://github.com/hpuhsp/html-report-generator)**†<br><sub>hpuhsp</sub> | 3 | HTML | Unspecified | 通过实时网络研究生成多风格、有来源引用的专业 HTML 演示文稿，适用于任意主题。 |
 | **[Demo Prep Skill](https://github.com/MohamedBIqbal/demo-prep-skill)**†<br><sub>MohamedBIqbal</sub> | 3 | 双路线 | MIT | 为产品演示生成麦肯锡风格的 HTML 或 PowerPoint 演示文稿，并内置计时功能。 |
 | **[Avatar PPT Master](https://github.com/sadfrog71/avatar-ppt-master)**†<br><sub>sadfrog71</sub> | 3 | HTML | ⚠️ AGPL-3.0 | 基于 dashi-ppt 二次开发，优化了内容生成逻辑并移除了可能涉及版权问题的图片。 |
@@ -376,38 +383,31 @@ python scripts/pick.py find editorial         # 搜风格 ID 和描述
 | **[Doc to PPT Skill](https://github.com/reskfa/skill_doc2ppt)**†<br><sub>reskfa</sub> | 3 | 双路线 | MIT | 将 Markdown 或纯文本文档转换为 Claude 原生风格的 HTML 或 PPTX 幻灯片。 |
 | **[Economics Empirical PPT Skill](https://github.com/jialiruo-png/economics-empirical-ppt-skill)**†<br><sub>jialiruo-png</sub> | 3 | PPTX | Unspecified | 为经管、金融和实证研究论文生成 PPTX 演示文稿，支持交互式选择页数、字数和风格。 |
 | **[SlideSage](https://github.com/vedraut/slidesage)**†<br><sub>vedraut</sub> | 3 | PPTX | MIT | 基于故事叙述和教学设计原则，从内容生成静态 .pptx 演示文稿，兼容任何大语言模型。 |
-| **[USTC PPT Template](https://github.com/zsc58/ustc-ppt-template)**†<br><sub>zsc58</sub> | 3 | 模板库 | NOASSERTION | 为中国科学技术大学提供15页蓝色学术PPT模板，含全套跳转导航与LaTeX公式管线。 |
-| **[PPTWork](https://github.com/JunfengRan/PPTWork)** | — | PPTX | MIT | 两个 Anthropic 风格技能:从 HTML 规划、写作并导出 PowerPoint 演示文稿。 |
-| **[Paper Deck Reveal](https://github.com/O0000-code/paper-deck-reveal)** | — | 框架 | Apache-2.0 | 基于 reveal.js 的技能:把学术论文转为带交互演示的离线可投影幻灯片。 |
-| **[Codex Slides](https://github.com/nexu-io/codex-slides)** | — | 框架 | MIT | 面向 Codex 的 AI 幻灯片工作台:图像原生画布、并行渲染、支持 PDF/PPTX 导出。 |
-| **[3D HTML Slide Skill](https://github.com/yoshifujidesign/3d-html-slide-skill)**† | — | HTML | MIT | Claude Code 技能:一键生成带 Three.js 线框背景的单文件 HTML 演示幻灯片。 |
-| **[University PPT Skill](https://github.com/SiyuQiannn/university-ppt-skill)**<br><sub>SiyuQiannn</sub> | — | 模板库 | NOASSERTION | 以校色 token 与可复用版式库生成可编辑的高校主题 PPTX 演示文稿。 |
-| **[Image to Editable PPT Skill (zhoujie97)](https://github.com/zhoujie97/image-to-editable-ppt-skill)**†<br><sub>zhoujie97</sub> | — | PPTX | Unspecified | 把截图与信息图重建为可编辑的 PowerPoint 文本框、原生形状与 SVG 图标。 |
-| **[Claude PPT Skills](https://github.com/sunxiaohui2025/claude-ppt-skills)**†<br><sub>sunxiaohui2025</sub> | — | HTML | Unspecified | 生成六种风格的单文件 HTML 横向翻页 PPT,支持网页在线编辑与缩略图总览。 |
-| **[Econ Slides Skill](https://github.com/hanlulong/econ-slides-skill)**<br><sub>hanlulong</sub> | — | 框架 | MIT | 把经济学论文转成 Beamer 研讨会报告,并附带按时长排布的逐字讲稿。 |
-| **[GHB PPT Skill](https://github.com/NickyLam/GHB-PPT-Skill)**<br><sub>NickyLam</sub> | — | PPTX | MIT | 基于企业模板输出 PPTX,SVG 转为可编辑 DrawingML,默认全离线验证。 |
-| **[OpenCode PPT Studio](https://github.com/Honghurumeng/oc_sdk_ppt)**†<br><sub>Honghurumeng</sub> | — | 双路线 | Unspecified | 网页应用:先出大纲初稿,再开新会话精修,然后生成 HTML slides 并本地构建 PPTX。 |
-| **[Course HTML Slides Builder](https://github.com/HelenSong/course-html-slides-skill)**†<br><sub>HelenSong</sub> | — | HTML | MIT | 把课程大纲转成多页 HTML 幻灯片,面向课堂投影与互动工作坊设计。 |
-| **[Excalidraw Slides Generator](https://github.com/ZunbaRan/excalidraw-slides-skills)**†<br><sub>ZunbaRan</sub> | — | 框架 | Unspecified | 两阶段工作流:把文本转成 16:9 Excalidraw 幻灯片,并自动生成配套 SVG 插图。 |
-| **[CUHK Slides Template (HTML)](https://github.com/HarlandZZC/cuhk-slides-template-html)**<br><sub>HarlandZZC</sub> | — | 模板库 | MIT | 一份自包含的港中大配色 HTML 幻灯片模板,附带 Markdown 转幻灯片的 skill。 |
-| **[TaoHtml](https://github.com/TaoGEO/TaoHtml)**†<br><sub>TaoGEO</sub> | — | HTML | MIT | 把已有的 Word、PDF 或 PPT 重新设计成带分步动效、可离线交付的 16:9 HTML 演示文稿。 |
-| **[Google Slides Deck Skill](https://github.com/eranw2000/google-slides-skill)**<br><sub>eranw2000</sub> | — | 框架 | MIT | 通过 API 重建 Google Slides 演示文稿,并把每页渲染成 PNG 回看以自查结果。 |
-| **[Inspiration Deck Workshop](https://github.com/zjsthmjialin/inspiration-deck-workshop)**<br><sub>zjsthmjialin</sub> | — | 模板库 | MIT | 23 套主题与 25 种页面版式,用一个小 CLI 生成带动效的静态 HTML 演示。 |
-| **[HTML Presentation Skill](https://github.com/defreitassl/html-presentation-skill)**†<br><sub>defreitassl</sub> | — | HTML | MIT | 把文档、笔记或简报转成独立的 HTML 演示页面,并对结果做校验。 |
-| **[PPTX Deck Creation Kit](https://github.com/kimtth/agent-pptify-kit)**†<br><sub>kimtth</sub> | — | PPTX | MIT | 以显式坐标规格生成 PPTX,输出保持原生对象,并以 Copilot 插件形式分发。 |
-| **[TikTok Slideshow Command Center](https://github.com/Meliwat/vyral-tiktok-slideshow-skill)**†<br><sub>Meliwat</sub> | — | 图片 | MIT | 规划 TikTok 图文轮播:内容切角、单页设计与发布节奏一次成型。 |
-| **[PPT Deck Builder Skill](https://github.com/lk251066/ppt-deck-builder-skill)**†<br><sub>lk251066</sub> | — | 图片 | Unspecified | 逐页生成成品图,只返修出问题的单页,最后统一打包成 PPTX。 |
-| **[Starry Slides](https://github.com/StarryKit/starry-slides)**<br><sub>StarryKit</sub> | — | 框架 | Apache-2.0 | 以 HTML 为源文件的幻灯片编辑器,让 Agent 产出的整套 deck 保持完全可编辑。 |
-| **[KR Brand Decks](https://github.com/sylvanus4/kr-brand-decks)**<br><sub>sylvanus4</sub> | — | 模板库 | NOASSERTION | 23 个 skill,每个对应一家韩国企业品牌,从零构建符合该品牌规范的 PPTX。 |
-| **[Slide Deck Skill](https://github.com/jayworker/slide-deck-skill)**<br><sub>jayworker</sub> | — | HTML | MIT | 单文件 16:9 HTML 演示,浅色仪表盘风格,每页只讲一件事。 |
-| **[Marp Slides Studio](https://github.com/unsolublesugar/marp-slides-studio)**<br><sub>unsolublesugar</sub> | — | 模板库 | MIT | 50 套 Marp 主题,配主题画廊、对比度检查与四个面向 Agent 的 deck 制作 skill。 |
+| **[3D HTML Slide Skill](https://github.com/yoshifujidesign/3d-html-slide-skill)**† | 3 | HTML | MIT | Claude Code 技能:一键生成带 Three.js 线框背景的单文件 HTML 演示幻灯片。 |
+| **[Image to Editable PPT Skill (zhoujie97)](https://github.com/zhoujie97/image-to-editable-ppt-skill)**†<br><sub>zhoujie97</sub> | 3 | PPTX | Unspecified | 把截图与信息图重建为可编辑的 PowerPoint 文本框、原生形状与 SVG 图标。 |
+| **[CUHK Slides Template (HTML)](https://github.com/HarlandZZC/cuhk-slides-template-html)**<br><sub>HarlandZZC</sub> | 3 | 模板库 | MIT | 一份自包含的港中大配色 HTML 幻灯片模板,附带 Markdown 转幻灯片的 skill。 |
+| **[TaoHtml](https://github.com/TaoGEO/TaoHtml)**†<br><sub>TaoGEO</sub> | 3 | HTML | MIT | 把已有的 Word、PDF 或 PPT 重新设计成带分步动效、可离线交付的 16:9 HTML 演示文稿。 |
+| **[PPTWork](https://github.com/JunfengRan/PPTWork)** | 2 | PPTX | MIT | 两个 Anthropic 风格技能:从 HTML 规划、写作并导出 PowerPoint 演示文稿。 |
+| **[TikTok Slideshow Command Center](https://github.com/Meliwat/vyral-tiktok-slideshow-skill)**†<br><sub>Meliwat</sub> | 2 | 图片 | MIT | 规划 TikTok 图文轮播:内容切角、单页设计与发布节奏一次成型。 |
+| **[University PPT Skill](https://github.com/SiyuQiannn/university-ppt-skill)**<br><sub>SiyuQiannn</sub> | 1 | 模板库 | NOASSERTION | 以校色 token 与可复用版式库生成可编辑的高校主题 PPTX 演示文稿。 |
+| **[Claude PPT Skills](https://github.com/sunxiaohui2025/claude-ppt-skills)**†<br><sub>sunxiaohui2025</sub> | 1 | HTML | Unspecified | 生成六种风格的单文件 HTML 横向翻页 PPT,支持网页在线编辑与缩略图总览。 |
+| **[Course HTML Slides Builder](https://github.com/HelenSong/course-html-slides-skill)**†<br><sub>HelenSong</sub> | 1 | HTML | MIT | 把课程大纲转成多页 HTML 幻灯片,面向课堂投影与互动工作坊设计。 |
+| **[Inspiration Deck Workshop](https://github.com/zjsthmjialin/inspiration-deck-workshop)**<br><sub>zjsthmjialin</sub> | 1 | 模板库 | MIT | 23 套主题与 25 种页面版式,用一个小 CLI 生成带动效的静态 HTML 演示。 |
+| **[PPTX Deck Creation Kit](https://github.com/kimtth/agent-pptify-kit)**†<br><sub>kimtth</sub> | 1 | PPTX | MIT | 以显式坐标规格生成 PPTX,输出保持原生对象,并以 Copilot 插件形式分发。 |
+| **[PPT Deck Builder Skill](https://github.com/lk251066/ppt-deck-builder-skill)**†<br><sub>lk251066</sub> | 1 | 图片 | Unspecified | 逐页生成成品图,只返修出问题的单页,最后统一打包成 PPTX。 |
+| **[Paper Deck Reveal](https://github.com/O0000-code/paper-deck-reveal)** | 0 | 框架 | Apache-2.0 | 基于 reveal.js 的技能:把学术论文转为带交互演示的离线可投影幻灯片。 |
+| **[GHB PPT Skill](https://github.com/NickyLam/GHB-PPT-Skill)**<br><sub>NickyLam</sub> | 0 | PPTX | MIT | 基于企业模板输出 PPTX,SVG 转为可编辑 DrawingML,默认全离线验证。 |
+| **[Google Slides Deck Skill](https://github.com/eranw2000/google-slides-skill)**<br><sub>eranw2000</sub> | 0 | 框架 | MIT | 通过 API 重建 Google Slides 演示文稿,并把每页渲染成 PNG 回看以自查结果。 |
+| **[HTML Presentation Skill](https://github.com/defreitassl/html-presentation-skill)**†<br><sub>defreitassl</sub> | 0 | HTML | MIT | 把文档、笔记或简报转成独立的 HTML 演示页面,并对结果做校验。 |
+| **[Slide Deck Skill](https://github.com/jayworker/slide-deck-skill)**<br><sub>jayworker</sub> | 0 | HTML | MIT | 单文件 16:9 HTML 演示,浅色仪表盘风格,每页只讲一件事。 |
+| **[Marp Slides Studio](https://github.com/unsolublesugar/marp-slides-studio)**<br><sub>unsolublesugar</sub> | 0 | 模板库 | MIT | 50 套 Marp 主题,配主题画廊、对比度检查与四个面向 Agent 的 deck 制作 skill。 |
 
 ### 其他精选列表
 
 | 项目 | ⭐ | 路线 | License | 一句话 |
 |---|---:|---|---|---|
-| **[awesome-html-slide-skills](https://github.com/ToseaAI/awesome-html-slide-skills)**†<br><sub>ToseaAI</sub> | 104 | 列表 | Custom | HTML 演示 Skill 与模板库精选列表。本仓库的主要线索来源之一。 |
-| **[Awesome-PPT-Design-Skills](https://github.com/software-ai-life/Awesome-PPT-Design-Skills)**†<br><sub>software-ai-life</sub> | 71 | 列表 | Unspecified | Agent 无关的高端可编辑 PPT 风格集。 |
+| **[awesome-html-slide-skills](https://github.com/ToseaAI/awesome-html-slide-skills)**†<br><sub>ToseaAI</sub> | 112 | 列表 | Custom | HTML 演示 Skill 与模板库精选列表。本仓库的主要线索来源之一。 |
+| **[Awesome-PPT-Design-Skills](https://github.com/software-ai-life/Awesome-PPT-Design-Skills)**†<br><sub>software-ai-life</sub> | 72 | 列表 | Unspecified | Agent 无关的高端可编辑 PPT 风格集。 |
 
 <sub>`†` 来自自动发现，只核对了仓库自己写的一句话与协议，没人读过它的 SKILL.md，因此还没有安装命令和能力数据。没有剑标的是人工逐个读过的。<br>`*` monorepo star 数，反映整个仓库而非这一个 skill。`~` 上次刷新失败，为陈旧值。`⚠️` copyleft 协议，商用前请确认。</sub>
 <!-- END:REGISTRY -->
@@ -498,11 +498,11 @@ python scripts/pick.py find editorial         # 搜风格 ID 和描述
 > 第四步那句关于预览的描述，是从 frontend-slides 的 SKILL.md 里读到的，只对它成立。
 
 <!-- BEGIN:GALLERY -->
-**跳到：**[PPT Master](#gallery-ppt-master) <sub>24</sub> · [Frontend Slides](#gallery-frontend-slides) <sub>24</sub> · [Guizang PPT Skill](#gallery-guizang-ppt-skill) <sub>13</sub> · [Huashu Design](#gallery-huashu-design) <sub>24</sub> · [HTML PPT Studio](#gallery-html-ppt-skill) <sub>24</sub> · [open-slide](#gallery-open-slide) <sub>16</sub> · [Beautiful HTML Templates](#gallery-beautiful-html-templates) <sub>24</sub> · [PPT Agent Workflow San](#gallery-ppt-agent-workflow-san) <sub>10</sub> · [Frontend Slides Editable](#gallery-frontend-slides-editable) <sub>24</sub> · [PPT SVG Generator](#gallery-ppt-svg-generator) <sub>2</sub> · [Mck PPT Design System](#gallery-mck-ppt-design-skill) <sub>6</sub> · [PPT Agent Skill](#gallery-ppt-agent-skill) <sub>24</sub> · [HTML Slides](#gallery-html-slides-bluedusk) <sub>4</sub> · [KingDee PPT Skill](#gallery-kingdee-ppt-skill) <sub>1</sub> · [Slide Creator](#gallery-slide-creator) <sub>23</sub> · [next-slide](#gallery-next-slide) <sub>1</sub> · [Slide Writer](#gallery-slide-writer) <sub>5</sub> · [Skills Slides](#gallery-skills-slides) <sub>4</sub> · [PowerPoint Fancy Design](#gallery-powerpoint-fancy-design) <sub>24</sub> · [PPTX from Layouts](#gallery-pptx-from-layouts) <sub>1</sub> · [PPTWork](#gallery-pptwork) <sub>24</sub> · [Paper Deck Reveal](#gallery-paper-deck-reveal) <sub>22</sub> · [Codex Slides](#gallery-codex-slides) <sub>24</sub> · [3D HTML Slide Skill](#gallery-3d-html-slide-skill) <sub>2</sub> · [University PPT Skill](#gallery-university-ppt-skill) <sub>10</sub> · [Image to Editable PPT Skill (zhoujie97)](#gallery-image-to-editable-ppt-skill-zhoujie97) <sub>4</sub> · [Claude PPT Skills](#gallery-claude-ppt-skills) <sub>3</sub> · [Econ Slides Skill](#gallery-econ-slides-skill) <sub>5</sub> · [GHB PPT Skill](#gallery-ghb-ppt-skill) <sub>1</sub> · [OpenCode PPT Studio](#gallery-oc-sdk-ppt) <sub>3</sub> · [Course HTML Slides Builder](#gallery-course-html-slides-skill) <sub>9</sub> · [Excalidraw Slides Generator](#gallery-excalidraw-slides-skills) <sub>5</sub> · [CUHK Slides Template (HTML)](#gallery-cuhk-slides-template-html) <sub>2</sub> · [TaoHtml](#gallery-taohtml) <sub>12</sub> · [Google Slides Deck Skill](#gallery-google-slides-skill) <sub>1</sub> · [Inspiration Deck Workshop](#gallery-inspiration-deck-workshop) <sub>23</sub> · [HTML Presentation Skill](#gallery-html-presentation-skill) <sub>5</sub> · [PPTX Deck Creation Kit](#gallery-agent-pptify-kit) <sub>3</sub> · [TikTok Slideshow Command Center](#gallery-vyral-tiktok-slideshow-skill) <sub>6</sub> · [PPT Deck Builder Skill](#gallery-ppt-deck-builder-skill) <sub>4</sub> · [KR Brand Decks](#gallery-kr-brand-decks) <sub>24</sub> · [Slide Deck Skill](#gallery-slide-deck-skill) <sub>6</sub> · [Marp Slides Studio](#gallery-marp-slides-studio) <sub>9</sub>
+**跳到：**[PPT Master](#gallery-ppt-master) <sub>24</sub> · [Frontend Slides](#gallery-frontend-slides) <sub>24</sub> · [Guizang PPT Skill](#gallery-guizang-ppt-skill) <sub>13</sub> · [Huashu Design](#gallery-huashu-design) <sub>24</sub> · [HTML PPT Studio](#gallery-html-ppt-skill) <sub>24</sub> · [open-slide](#gallery-open-slide) <sub>16</sub> · [Beautiful HTML Templates](#gallery-beautiful-html-templates) <sub>24</sub> · [Codex Slides](#gallery-codex-slides) <sub>24</sub> · [PPT Agent Workflow San](#gallery-ppt-agent-workflow-san) <sub>10</sub> · [Frontend Slides Editable](#gallery-frontend-slides-editable) <sub>24</sub> · [PPT SVG Generator](#gallery-ppt-svg-generator) <sub>2</sub> · [Mck PPT Design System](#gallery-mck-ppt-design-skill) <sub>6</sub> · [PPT Agent Skill](#gallery-ppt-agent-skill) <sub>24</sub> · [HTML Slides](#gallery-html-slides-bluedusk) <sub>4</sub> · [KingDee PPT Skill](#gallery-kingdee-ppt-skill) <sub>1</sub> · [Slide Creator](#gallery-slide-creator) <sub>23</sub> · [next-slide](#gallery-next-slide) <sub>1</sub> · [Slide Writer](#gallery-slide-writer) <sub>5</sub> · [Skills Slides](#gallery-skills-slides) <sub>4</sub> · [PowerPoint Fancy Design](#gallery-powerpoint-fancy-design) <sub>24</sub> · [Excalidraw Slides Generator](#gallery-excalidraw-slides-skills) <sub>5</sub> · [OpenCode PPT Studio](#gallery-oc-sdk-ppt) <sub>3</sub> · [PPTX from Layouts](#gallery-pptx-from-layouts) <sub>1</sub> · [Econ Slides Skill](#gallery-econ-slides-skill) <sub>5</sub> · [KR Brand Decks](#gallery-kr-brand-decks) <sub>24</sub> · [3D HTML Slide Skill](#gallery-3d-html-slide-skill) <sub>2</sub> · [Image to Editable PPT Skill (zhoujie97)](#gallery-image-to-editable-ppt-skill-zhoujie97) <sub>4</sub> · [CUHK Slides Template (HTML)](#gallery-cuhk-slides-template-html) <sub>2</sub> · [TaoHtml](#gallery-taohtml) <sub>12</sub> · [PPTWork](#gallery-pptwork) <sub>24</sub> · [TikTok Slideshow Command Center](#gallery-vyral-tiktok-slideshow-skill) <sub>6</sub> · [University PPT Skill](#gallery-university-ppt-skill) <sub>10</sub> · [Claude PPT Skills](#gallery-claude-ppt-skills) <sub>3</sub> · [Course HTML Slides Builder](#gallery-course-html-slides-skill) <sub>9</sub> · [Inspiration Deck Workshop](#gallery-inspiration-deck-workshop) <sub>23</sub> · [PPTX Deck Creation Kit](#gallery-agent-pptify-kit) <sub>3</sub> · [PPT Deck Builder Skill](#gallery-ppt-deck-builder-skill) <sub>4</sub> · [Paper Deck Reveal](#gallery-paper-deck-reveal) <sub>22</sub> · [GHB PPT Skill](#gallery-ghb-ppt-skill) <sub>1</sub> · [Google Slides Deck Skill](#gallery-google-slides-skill) <sub>1</sub> · [HTML Presentation Skill](#gallery-html-presentation-skill) <sub>5</sub> · [Slide Deck Skill](#gallery-slide-deck-skill) <sub>6</sub> · [Marp Slides Studio](#gallery-marp-slides-studio) <sub>9</sub>
 
 <a id="gallery-ppt-master"></a>
 
-#### [PPT Master](https://github.com/hugohe3/ppt-master) · 41,774 ⭐ · PPTX
+#### [PPT Master](https://github.com/hugohe3/ppt-master) · 42,768 ⭐ · PPTX
 
 <sub>把文档或主题变成真正原生可编辑的 PPTX。</sub>
 
@@ -612,7 +612,7 @@ git clone https://github.com/hugohe3/ppt-master && pip install -r requirements.t
 
 <a id="gallery-frontend-slides"></a>
 
-#### [Frontend Slides](https://github.com/zarazhangrui/frontend-slides) · 26,568 ⭐ · HTML
+#### [Frontend Slides](https://github.com/zarazhangrui/frontend-slides) · 26,827 ⭐ · HTML
 
 <sub>用 Coding Agent 的前端能力做好看的网页幻灯片。</sub>
 
@@ -723,7 +723,7 @@ git clone https://github.com/hugohe3/ppt-master && pip install -r requirements.t
 
 <a id="gallery-guizang-ppt-skill"></a>
 
-#### [Guizang PPT Skill](https://github.com/op7418/guizang-ppt-skill) · 22,694 ⭐ · HTML
+#### [Guizang PPT Skill](https://github.com/op7418/guizang-ppt-skill) · 23,080 ⭐ · HTML
 
 <sub>杂志编辑风与瑞士国际风 HTML 幻灯片，以「锁死约束」保证一致性。</sub>
 
@@ -789,7 +789,7 @@ npx skills add https://github.com/op7418/guizang-ppt-skill --skill guizang-ppt-s
 
 <a id="gallery-huashu-design"></a>
 
-#### [Huashu Design](https://github.com/alchaincyf/huashu-design) · 22,190 ⭐ · 双路线
+#### [Huashu Design](https://github.com/alchaincyf/huashu-design) · 22,390 ⭐ · 双路线
 
 <sub>HTML 原生设计 skill —— 高保真原型、幻灯片、动效与设计评审，不止是 PPT。</sub>
 
@@ -899,7 +899,7 @@ npx skills add alchaincyf/huashu-design
 
 <a id="gallery-html-ppt-skill"></a>
 
-#### [HTML PPT Studio](https://github.com/lewislulu/html-ppt-skill) · 7,473 ⭐ · HTML
+#### [HTML PPT Studio](https://github.com/lewislulu/html-ppt-skill) · 7,594 ⭐ · HTML
 
 <sub>24 主题 × 31 布局 × 20+ 动效的专业 HTML 演示。</sub>
 
@@ -1009,7 +1009,7 @@ git clone https://github.com/lewislulu/html-ppt-skill ~/.claude/skills/html-ppt-
 
 <a id="gallery-open-slide"></a>
 
-#### [open-slide](https://github.com/1weiho/open-slide) · 6,042 ⭐ · 框架
+#### [open-slide](https://github.com/1weiho/open-slide) · 6,085 ⭐ · 框架
 
 <sub>为 Agent 而生的幻灯片框架 —— React 组件渲染到固定 1920×1080 画布。</sub>
 
@@ -1087,7 +1087,7 @@ npx @open-slide/cli init my-slide
 
 <a id="gallery-beautiful-html-templates"></a>
 
-#### [Beautiful HTML Templates](https://github.com/zarazhangrui/beautiful-html-templates) · 3,940 ⭐ · 模板库
+#### [Beautiful HTML Templates](https://github.com/zarazhangrui/beautiful-html-templates) · 4,010 ⭐ · 模板库
 
 <sub>34 套 HTML 幻灯片模板，配 index.json 元数据供任意 Agent 检索选用。</sub>
 
@@ -1195,9 +1195,119 @@ git clone https://github.com/zarazhangrui/beautiful-html-templates
 
 <sub><b>Emerald Editorial — slide 6</b> · <a href="https://github.com/zarazhangrui/beautiful-html-templates/blob/e5e204fb1f3b06290846e7dcd7aceddabeceec8c/screenshots/emerald-editorial-6.png"><code>screenshots/emerald-editorial-6.png</code></a></sub>
 
+<a id="gallery-codex-slides"></a>
+
+#### [Codex Slides](https://github.com/nexu-io/codex-slides) · 748 ⭐ · 框架
+
+<sub>面向 Codex 的 AI 幻灯片工作台:图像原生画布、并行渲染、支持 PDF/PPTX 导出。</sub>
+
+<sub>取自 [`nexu-io/codex-slides`](https://github.com/nexu-io/codex-slides) 的 48 张图，此处 24 张，靠前的几张是项目自己放在 README 里的</sub>
+
+```bash
+git clone https://github.com/nexu-io/codex-slides && cd codex-slides
+```
+
+<sub><b>下面出现的风格</b> `hero` · `01-home-community` · `02-community-styles` · `04-project-questions` · `06-visual-style` · `07-parallel-generation` · `08-editor` · `09-presenter-mode` · `10-export` · `nb-vintage-patent` · `nb-visual-info-guide` · `market-report` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/hero.png" width="100%" alt="Codex Slides — the open-source AI slide studio inside your coding agent, operated in the Codex in-app Browser">
+
+<sub><b>Codex Slides — the open-source AI slide studio inside your coding agent, operated in the Codex in-app Browser</b> · <code>hero</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/hero.png"><code>docs/assets/readme/hero.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/01-home-community.png" width="100%" alt="Codex Slides home with the prompt composer, scenario shortcuts, and Community Styles">
+
+<sub><b>Codex Slides home with the prompt composer, scenario shortcuts, and Community Styles</b> · <code>01-home-community</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/01-home-community.png"><code>docs/assets/readme/01-home-community.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/02-community-styles.png" width="100%" alt="Community Styles gallery with 73 visual directions">
+
+<sub><b>Community Styles gallery with 73 visual directions</b> · <code>02-community-styles</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/02-community-styles.png"><code>docs/assets/readme/02-community-styles.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/04-project-questions.png" width="100%" alt="English clarification form inside a Codex Slides project">
+
+<sub><b>English clarification form inside a Codex Slides project</b> · <code>04-project-questions</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/04-project-questions.png"><code>docs/assets/readme/04-project-questions.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/06-visual-style.png" width="100%" alt="Ranked visual direction picker inside a Codex Slides project">
+
+<sub><b>Ranked visual direction picker inside a Codex Slides project</b> · <code>06-visual-style</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/06-visual-style.png"><code>docs/assets/readme/06-visual-style.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/07-parallel-generation.png" width="100%" alt="English slide generation with completed and pending pages visible">
+
+<sub><b>English slide generation with completed and pending pages visible</b> · <code>07-parallel-generation</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/07-parallel-generation.png"><code>docs/assets/readme/07-parallel-generation.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/08-editor.png" width="100%" alt="English slide editor with the complete 16:9 canvas contained in view, editing toolbar, speaker notes, and thumbnails">
+
+<sub><b>English slide editor with the complete 16:9 canvas contained in view, editing toolbar, speaker notes, and thum</b> · <code>08-editor</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/08-editor.png"><code>docs/assets/readme/08-editor.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/09-presenter-mode.png" width="100%" alt="Audience playback and Presenter Mode menu with the complete slide visible behind it">
+
+<sub><b>Audience playback and Presenter Mode menu with the complete slide visible behind it</b> · <code>09-presenter-mode</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/09-presenter-mode.png"><code>docs/assets/readme/09-presenter-mode.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/10-export.png" width="100%" alt="English PDF and PowerPoint export menu above a fully contained 16:9 slide">
+
+<sub><b>English PDF and PowerPoint export menu above a fully contained 16:9 slide</b> · <code>10-export</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/10-export.png"><code>docs/assets/readme/10-export.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-vintage-patent.jpg" width="100%" alt="Vintage patent filing style technical page">
+
+<sub><b>Vintage patent filing style technical page</b> · <code>nb-vintage-patent</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-vintage-patent.jpg"><code>public/community/nb-vintage-patent.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-visual-info-guide.jpg" width="100%" alt="Clean visual information guide layout">
+
+<sub><b>Clean visual information guide layout</b> · <code>nb-visual-info-guide</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-visual-info-guide.jpg"><code>public/community/nb-visual-info-guide.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-market-report.png" width="100%" alt="Business and market report deck">
+
+<sub><b>Business and market report deck</b> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-market-report.png"><code>docs/assets/readme/case-market-report.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-data.png" width="100%" alt="Data visualization dashboard deck">
+
+<sub><b>Data visualization dashboard deck</b> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-data.png"><code>docs/assets/readme/case-data.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-keynote.png" width="100%" alt="Product keynote deck">
+
+<sub><b>Product keynote deck</b> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-keynote.png"><code>docs/assets/readme/case-keynote.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-editorial.png" width="100%" alt="Editorial magazine-style deck">
+
+<sub><b>Editorial magazine-style deck</b> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-editorial.png"><code>docs/assets/readme/case-editorial.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-bold-product-ad.jpg" width="100%" alt="Bold high-contrast product ad slide">
+
+<sub><b>Bold high-contrast product ad slide</b> · <code>nb-bold-product-ad</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-bold-product-ad.jpg"><code>public/community/nb-bold-product-ad.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-golden-serif-quote.jpg" width="100%" alt="Warm golden serif quote slide">
+
+<sub><b>Warm golden serif quote slide</b> · <code>nb-golden-serif-quote</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-golden-serif-quote.jpg"><code>public/community/nb-golden-serif-quote.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/foryou-pitch-midnight-traction.jpg" width="100%" alt="Midnight investor pitch title slide">
+
+<sub><b>Midnight investor pitch title slide</b> · <code>foryou-pitch-midnight-traction</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/foryou-pitch-midnight-traction.jpg"><code>public/community/foryou-pitch-midnight-traction.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/foryou-data-answer-first.jpg" width="100%" alt="Answer-first data slide with a national map and KPI callouts">
+
+<sub><b>Answer-first data slide with a national map and KPI callouts</b> · <code>foryou-data-answer-first</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/foryou-data-answer-first.jpg"><code>public/community/foryou-data-answer-first.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/foryou-craft-editorial-ink.jpg" width="100%" alt="Editorial ink-and-paper report title slide">
+
+<sub><b>Editorial ink-and-paper report title slide</b> · <code>foryou-craft-editorial-ink</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/foryou-craft-editorial-ink.jpg"><code>public/community/foryou-craft-editorial-ink.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-chalkboard-lesson.jpg" width="100%" alt="Warm chalkboard lesson layout with hand-drawn diagrams">
+
+<sub><b>Warm chalkboard lesson layout with hand-drawn diagrams</b> · <code>nb-chalkboard-lesson</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-chalkboard-lesson.jpg"><code>public/community/nb-chalkboard-lesson.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/03-scenarios.png" width="100%" alt="Scenario library with 24 presentation workflows">
+
+<sub><b>Scenario library with 24 presentation workflows</b> · <code>03-scenarios</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/03-scenarios.png"><code>docs/assets/readme/03-scenarios.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/05-research-brief.png" width="100%" alt="Source-backed English research brief in Design Files">
+
+<sub><b>Source-backed English research brief in Design Files</b> · <code>05-research-brief</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/05-research-brief.png"><code>docs/assets/readme/05-research-brief.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/05-research-outline.png" width="100%" alt="Editable English presentation outline">
+
+<sub><b>Editable English presentation outline</b> · <code>05-research-outline</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/05-research-outline.png"><code>docs/assets/readme/05-research-outline.png</code></a></sub>
+
 <a id="gallery-ppt-agent-workflow-san"></a>
 
-#### [PPT Agent Workflow San](https://github.com/mucsbr/ppt-agent-workflow-san) · 618 ⭐ · HTML
+#### [PPT Agent Workflow San](https://github.com/mucsbr/ppt-agent-workflow-san) · 624 ⭐ · HTML
 
 <sub>渐进交互式 PPT 生成 skill。</sub>
 
@@ -1251,7 +1361,7 @@ git clone https://github.com/mucsbr/ppt-agent-workflow-san
 
 <a id="gallery-frontend-slides-editable"></a>
 
-#### [Frontend Slides Editable](https://github.com/archlizheng/frontend-slides-editable) · 446 ⭐ · 双路线
+#### [Frontend Slides Editable](https://github.com/archlizheng/frontend-slides-editable) · 451 ⭐ · 双路线
 
 <sub>可编辑 HTML 幻灯片：拖拽缩放、页序调整、本地保存、PPTX 互转。</sub>
 
@@ -1361,7 +1471,7 @@ git clone https://github.com/archlizheng/frontend-slides-editable
 
 <a id="gallery-ppt-svg-generator"></a>
 
-#### [PPT SVG Generator](https://github.com/vigorX777/ppt-svg-generator) · 248 ⭐ · PPTX
+#### [PPT SVG Generator](https://github.com/vigorX777/ppt-svg-generator) · 250 ⭐ · PPTX
 
 <sub>Markdown → PPT / PDF，经 SVG 中转，多种预设风格。</sub>
 
@@ -1381,7 +1491,7 @@ git clone https://github.com/vigorX777/ppt-svg-generator
 
 <a id="gallery-mck-ppt-design-skill"></a>
 
-#### [Mck PPT Design System](https://github.com/likaku/Mck-ppt-design-skill) · 230 ⭐ · PPTX
+#### [Mck PPT Design System](https://github.com/likaku/Mck-ppt-design-skill) · 236 ⭐ · PPTX
 
 <sub>咨询公司风设计系统：70 种布局，扁平设计，python-pptx。</sub>
 
@@ -1417,7 +1527,7 @@ git clone https://github.com/likaku/Mck-ppt-design-skill
 
 <a id="gallery-ppt-agent-skill"></a>
 
-#### [PPT Agent Skill](https://github.com/Akxan/ppt-agent-skill) · 116 ⭐ · HTML
+#### [PPT Agent Skill](https://github.com/Akxan/ppt-agent-skill) · 119 ⭐ · HTML
 
 <sub>26 种风格、18 种图表，对标 Linear / Anthropic / Stripe / Apple / NYT。</sub>
 
@@ -1527,7 +1637,7 @@ git clone https://github.com/Akxan/ppt-agent-skill
 
 <a id="gallery-html-slides-bluedusk"></a>
 
-#### [HTML Slides](https://github.com/bluedusk/html-slides) · 70 ⭐ · HTML
+#### [HTML Slides](https://github.com/bluedusk/html-slides) · 72 ⭐ · HTML
 
 <sub>带演讲者备注的 HTML 幻灯片，配套放映 app。</sub>
 
@@ -1681,7 +1791,7 @@ git clone https://github.com/kaisersong/slide-creator
 
 <a id="gallery-next-slide"></a>
 
-#### [next-slide](https://github.com/codesstar/next-slide) · 43 ⭐ · HTML
+#### [next-slide](https://github.com/codesstar/next-slide) · 44 ⭐ · HTML
 
 <sub>「你的下个 slide，何必是 PPT」—— 26+ 风格，零依赖，中英双语。</sub>
 
@@ -1733,7 +1843,7 @@ git clone https://github.com/FeeiCN/slide-writer
 
 <a id="gallery-skills-slides"></a>
 
-#### [Skills Slides](https://github.com/nghiahsgs/skills-slides) · 29 ⭐ · HTML
+#### [Skills Slides](https://github.com/nghiahsgs/skills-slides) · 30 ⭐ · HTML
 
 <sub>50 美学 × 20 配色 × 10 字体 × 5 布局 × 30+ 特效 = 5 万种组合。</sub>
 
@@ -1871,9 +1981,60 @@ git clone https://github.com/Phlegonlabs/Powerpoint-fancy-design
 
 <sub><a href="https://github.com/Phlegonlabs/Powerpoint-fancy-design/blob/d6167dbc5d1ee9a0f3b2b90b399156322e9178ae/assets/style-preview-zh-tw-d.png"><code>assets/style-preview-zh-tw-d.png</code></a></sub>
 
+<a id="gallery-excalidraw-slides-skills"></a>
+
+#### [Excalidraw Slides Generator](https://github.com/ZunbaRan/excalidraw-slides-skills) · 18 ⭐ · 框架
+
+<sub>两阶段工作流:把文本转成 16:9 Excalidraw 幻灯片,并自动生成配套 SVG 插图。</sub>
+
+<sub>取自 [`ZunbaRan/excalidraw-slides-skills`](https://github.com/ZunbaRan/excalidraw-slides-skills) 的 5 张图，此处 5 张，靠前的几张是项目自己放在 README 里的</sub>
+
+
+<img src="https://github.com/user-attachments/assets/44db2400-3c6a-4de9-8c37-b26759b284c0" width="100%" alt="image">
+
+<sub><b>image</b> · GitHub 附件图</sub>
+
+<img src="https://github.com/user-attachments/assets/89f3fc36-f0b7-45e7-b457-01e3b4f00e28" width="100%" alt="image">
+
+<sub><b>image</b> · GitHub 附件图</sub>
+
+<img src="https://github.com/user-attachments/assets/5ab31d78-49af-499f-801b-5ec374aa70d1" width="100%" alt="image">
+
+<sub><b>image</b> · GitHub 附件图</sub>
+
+<img src="https://github.com/user-attachments/assets/68470fc6-6fdf-49aa-a7b1-c97ca93c8c23" width="100%" alt="image">
+
+<sub><b>image</b> · GitHub 附件图</sub>
+
+<img src="https://github.com/user-attachments/assets/a1167d48-1bc1-4f5b-940b-145f235249bd" width="100%" alt="image">
+
+<sub><b>image</b> · GitHub 附件图</sub>
+
+<a id="gallery-oc-sdk-ppt"></a>
+
+#### [OpenCode PPT Studio](https://github.com/Honghurumeng/oc_sdk_ppt) · 13 ⭐ · 双路线
+
+<sub>网页应用:先出大纲初稿,再开新会话精修,然后生成 HTML slides 并本地构建 PPTX。</sub>
+
+<sub>取自 [`Honghurumeng/oc_sdk_ppt`](https://github.com/Honghurumeng/oc_sdk_ppt) 的 3 张图，此处 3 张，靠前的几张是项目自己放在 README 里的</sub>
+
+<sub><b>下面出现的风格</b> `html` · `llm` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
+
+<img src="https://raw.githubusercontent.com/Honghurumeng/oc_sdk_ppt/3e2b8ba28d8c49f36c1bf1f98b14f4c3596dd9bd/images/3.png" width="100%" alt="HTML 预览与版本切换：支持按意见调整并激活某个版本">
+
+<sub><b>HTML 预览与版本切换：支持按意见调整并激活某个版本</b> · <a href="https://github.com/Honghurumeng/oc_sdk_ppt/blob/3e2b8ba28d8c49f36c1bf1f98b14f4c3596dd9bd/images/3.png"><code>images/3.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/Honghurumeng/oc_sdk_ppt/3e2b8ba28d8c49f36c1bf1f98b14f4c3596dd9bd/images/1.png" width="100%" alt="主页：创建/恢复任务与 LLM 配置入口">
+
+<sub><b>主页：创建/恢复任务与 LLM 配置入口</b> · <a href="https://github.com/Honghurumeng/oc_sdk_ppt/blob/3e2b8ba28d8c49f36c1bf1f98b14f4c3596dd9bd/images/1.png"><code>images/1.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/Honghurumeng/oc_sdk_ppt/3e2b8ba28d8c49f36c1bf1f98b14f4c3596dd9bd/images/2.png" width="100%" alt="构建日志：校验失败后自动修复并重试">
+
+<sub><b>构建日志：校验失败后自动修复并重试</b> · <a href="https://github.com/Honghurumeng/oc_sdk_ppt/blob/3e2b8ba28d8c49f36c1bf1f98b14f4c3596dd9bd/images/2.png"><code>images/2.png</code></a></sub>
+
 <a id="gallery-pptx-from-layouts"></a>
 
-#### [PPTX from Layouts](https://github.com/tristan-mcinnis/pptx-from-layouts-skill) · 9 ⭐ · PPTX
+#### [PPTX from Layouts](https://github.com/tristan-mcinnis/pptx-from-layouts-skill) · 12 ⭐ · PPTX
 
 <sub>严格通过模板母版版式，从 Markdown 生成 PPTX。</sub>
 
@@ -1889,449 +2050,9 @@ git clone https://github.com/tristan-mcinnis/pptx-from-layouts-skill
 
 <sub><b>Thumbnail</b> · <a href="https://github.com/tristan-mcinnis/pptx-from-layouts-skill/blob/53b0e750694d807e3510c2017744197c3c5089b0/examples/q1-strategy/thumbnail.jpg"><code>examples/q1-strategy/thumbnail.jpg</code></a></sub>
 
-<a id="gallery-pptwork"></a>
-
-#### [PPTWork](https://github.com/JunfengRan/PPTWork) · — ⭐ · PPTX
-
-<sub>两个 Anthropic 风格技能:从 HTML 规划、写作并导出 PowerPoint 演示文稿。</sub>
-
-<sub>取自 [`JunfengRan/PPTWork`](https://github.com/JunfengRan/PPTWork) 的 28 张图，此处 24 张，靠前的几张是项目自己放在 README 里的</sub>
-
-```bash
-git clone https://github.com/JunfengRan/PPTWork && cd PPTWork/ppt && npm install
-```
-
-<sub><b>下面出现的风格</b> `showcase` · `showcase-bento` · `showcase-kpi` · `showcase-two-col` · `showcase-export` · `thumbnail` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-cover.png" width="100%" alt="PPTWork capabilities cover slide">
-
-<sub><b>PPTWork capabilities cover slide</b> · <code>showcase</code> · 封面 · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-cover.png"><code>examples/showcase/showcase-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-bento.png" width="100%" alt="Two skills bento layout">
-
-<sub><b>Two skills bento layout</b> · <code>showcase-bento</code> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-bento.png"><code>examples/showcase/showcase-bento.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-kpi.png" width="100%" alt="AI agent market KPI row">
-
-<sub><b>AI agent market KPI row</b> · <code>showcase-kpi</code> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-kpi.png"><code>examples/showcase/showcase-kpi.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-two-col.png" width="100%" alt="Competitive landscape two-column slide">
-
-<sub><b>Competitive landscape two-column slide</b> · <code>showcase-two-col</code> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-two-col.png"><code>examples/showcase/showcase-two-col.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-export.png" width="100%" alt="Four-step CLI workflow">
-
-<sub><b>Four-step CLI workflow</b> · <code>showcase-export</code> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-export.png"><code>examples/showcase/showcase-export.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/closing/thumbnail.png" width="100%" alt="PPTWork sample">
-
-<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/closing/thumbnail.png"><code>examples/ai-agent-landscape-2026/closing/thumbnail.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/cover/thumbnail.png" width="100%" alt="PPTWork sample">
-
-<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/cover/thumbnail.png"><code>examples/ai-agent-landscape-2026/cover/thumbnail.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/landscape/thumbnail.png" width="100%" alt="PPTWork sample">
-
-<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/landscape/thumbnail.png"><code>examples/ai-agent-landscape-2026/landscape/thumbnail.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/market-size/thumbnail.png" width="100%" alt="PPTWork sample">
-
-<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/market-size/thumbnail.png"><code>examples/ai-agent-landscape-2026/market-size/thumbnail.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/problem/thumbnail.png" width="100%" alt="PPTWork sample">
-
-<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/problem/thumbnail.png"><code>examples/ai-agent-landscape-2026/problem/thumbnail.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/roadmap/thumbnail.png" width="100%" alt="PPTWork sample">
-
-<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/roadmap/thumbnail.png"><code>examples/ai-agent-landscape-2026/roadmap/thumbnail.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/tech-trends/thumbnail.png" width="100%" alt="PPTWork sample">
-
-<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/tech-trends/thumbnail.png"><code>examples/ai-agent-landscape-2026/tech-trends/thumbnail.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p01-cover/thumbnail.png" width="100%" alt="PPTWork sample">
-
-<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p01-cover/thumbnail.png"><code>examples/pptwork-capabilities/p01-cover/thumbnail.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p03-bento/thumbnail.png" width="100%" alt="PPTWork sample">
-
-<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p03-bento/thumbnail.png"><code>examples/pptwork-capabilities/p03-bento/thumbnail.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p04-metrics/thumbnail.png" width="100%" alt="PPTWork sample">
-
-<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p04-metrics/thumbnail.png"><code>examples/pptwork-capabilities/p04-metrics/thumbnail.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p06-workflow/thumbnail.png" width="100%" alt="PPTWork sample">
-
-<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p06-workflow/thumbnail.png"><code>examples/pptwork-capabilities/p06-workflow/thumbnail.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p07-philosophy/thumbnail.png" width="100%" alt="PPTWork sample">
-
-<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p07-philosophy/thumbnail.png"><code>examples/pptwork-capabilities/p07-philosophy/thumbnail.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p08-closing/thumbnail.png" width="100%" alt="PPTWork sample">
-
-<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p08-closing/thumbnail.png"><code>examples/pptwork-capabilities/p08-closing/thumbnail.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/bento-asymmetric/thumbnail.png" width="100%" alt="PPTWork sample">
-
-<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/bento-asymmetric/thumbnail.png"><code>ppt/assets/claude-warm/_preview/bento-asymmetric/thumbnail.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/cover-editorial/thumbnail.png" width="100%" alt="PPTWork sample">
-
-<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/cover-editorial/thumbnail.png"><code>ppt/assets/claude-warm/_preview/cover-editorial/thumbnail.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/flow-timeline/thumbnail.png" width="100%" alt="PPTWork sample">
-
-<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/flow-timeline/thumbnail.png"><code>ppt/assets/claude-warm/_preview/flow-timeline/thumbnail.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/quote-highlight/thumbnail.png" width="100%" alt="PPTWork sample">
-
-<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/quote-highlight/thumbnail.png"><code>ppt/assets/claude-warm/_preview/quote-highlight/thumbnail.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/section-divider/thumbnail.png" width="100%" alt="PPTWork sample">
-
-<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/section-divider/thumbnail.png"><code>ppt/assets/claude-warm/_preview/section-divider/thumbnail.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/corporate-light/_preview/agenda-grid/thumbnail.png" width="100%" alt="PPTWork sample">
-
-<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/corporate-light/_preview/agenda-grid/thumbnail.png"><code>ppt/assets/corporate-light/_preview/agenda-grid/thumbnail.png</code></a></sub>
-
-<a id="gallery-paper-deck-reveal"></a>
-
-#### [Paper Deck Reveal](https://github.com/O0000-code/paper-deck-reveal) · — ⭐ · 框架
-
-<sub>基于 reveal.js 的技能:把学术论文转为带交互演示的离线可投影幻灯片。</sub>
-
-<sub>取自 [`O0000-code/paper-deck-reveal`](https://github.com/O0000-code/paper-deck-reveal) 的 22 张图，此处 22 张，靠前的几张是项目自己放在 README 里的</sub>
-
-```bash
-git clone https://github.com/O0000-code/paper-deck-reveal && cd paper-deck-reveal
-```
-
-<sub><b>下面出现的风格</b> `hero` · `funnel` · `forest` · `interactive` · `speaker` · `presets` · `rstb20200390f02` · `rstb20200390f03` · `rstb20200390f06` · `rstb20200390f04` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/hero.png" width="100%" alt="Cover slide of a journal-club deck: a red hairline rule, a Chinese framing question set above the paper's English title ">
-
-<sub><b>Cover slide of a journal-club deck: a red hairline rule, a Chinese framing question set above the paper's Engl</b> · <code>hero</code> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/hero.png"><code>docs/screenshots/hero.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/funnel.png" width="100%" alt="Participant funnel slide: recruited N = 976 → excluded −59 → analysed N = 917">
-
-<sub><b>Participant funnel slide: recruited N = 976 → excluded −59 → analysed N = 917</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/funnel.png"><code>docs/screenshots/funnel.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/forest.png" width="100%" alt="Per-language results slide: the paper">
-
-<sub><b>Per-language results slide: the paper</b> · <code>forest</code> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/forest.png"><code>docs/screenshots/forest.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/interactive.png" width="100%" alt="Interactive slide: the participant">
-
-<sub><b>Interactive slide: the participant</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/interactive.png"><code>docs/screenshots/interactive.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/speaker.png" width="100%" alt="Speaker view: current slide, next slide, timers, and nested speaker notes">
-
-<sub><b>Speaker view: current slide, next slide, timers, and nested speaker notes</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/speaker.png"><code>docs/screenshots/speaker.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/presets.png" width="100%" alt="Eight accent presets applied to the same slide of the same deck">
-
-<sub><b>Eight accent presets applied to the same slide of the same deck</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/presets.png"><code>docs/screenshots/presets.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f02.jpg" width="100%" alt="Paper Deck Reveal sample">
-
-<sub><b>Rstb20200390f02</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f02.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f02.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f02.jpg" width="100%" alt="Paper Deck Reveal sample">
-
-<sub><b>Rstb20200390f02</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f02.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/rstb20200390f02.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f03.jpg" width="100%" alt="Paper Deck Reveal sample">
-
-<sub><b>Rstb20200390f03</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f03.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f03.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f03.jpg" width="100%" alt="Paper Deck Reveal sample">
-
-<sub><b>Rstb20200390f03</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f03.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/rstb20200390f03.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f06.jpg" width="100%" alt="Paper Deck Reveal sample">
-
-<sub><b>Rstb20200390f06</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f06.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f06.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f06.jpg" width="100%" alt="Paper Deck Reveal sample">
-
-<sub><b>Rstb20200390f06</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f06.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/rstb20200390f06.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f04.jpg" width="100%" alt="Paper Deck Reveal sample">
-
-<sub><b>Rstb20200390f04</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f04.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f04.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f04.jpg" width="100%" alt="Paper Deck Reveal sample">
-
-<sub><b>Rstb20200390f04</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f04.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/rstb20200390f04.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f02.jpg" width="100%" alt="Paper Deck Reveal sample">
-
-<sub><b>Rstb20200390f02</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f02.jpg"><code>docs/figures/provenance/rstb20200390f02.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f02.jpg" width="100%" alt="Paper Deck Reveal sample">
-
-<sub><b>Rstb20200390f02</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f02.jpg"><code>docs/figures/rstb20200390f02.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f03.jpg" width="100%" alt="Paper Deck Reveal sample">
-
-<sub><b>Rstb20200390f03</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f03.jpg"><code>docs/figures/provenance/rstb20200390f03.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f03.jpg" width="100%" alt="Paper Deck Reveal sample">
-
-<sub><b>Rstb20200390f03</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f03.jpg"><code>docs/figures/rstb20200390f03.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f06.jpg" width="100%" alt="Paper Deck Reveal sample">
-
-<sub><b>Rstb20200390f06</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f06.jpg"><code>docs/figures/provenance/rstb20200390f06.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f06.jpg" width="100%" alt="Paper Deck Reveal sample">
-
-<sub><b>Rstb20200390f06</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f06.jpg"><code>docs/figures/rstb20200390f06.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f04.jpg" width="100%" alt="Paper Deck Reveal sample">
-
-<sub><b>Rstb20200390f04</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f04.jpg"><code>docs/figures/provenance/rstb20200390f04.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f04.jpg" width="100%" alt="Paper Deck Reveal sample">
-
-<sub><b>Rstb20200390f04</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f04.jpg"><code>docs/figures/rstb20200390f04.jpg</code></a></sub>
-
-<a id="gallery-codex-slides"></a>
-
-#### [Codex Slides](https://github.com/nexu-io/codex-slides) · — ⭐ · 框架
-
-<sub>面向 Codex 的 AI 幻灯片工作台:图像原生画布、并行渲染、支持 PDF/PPTX 导出。</sub>
-
-<sub>取自 [`nexu-io/codex-slides`](https://github.com/nexu-io/codex-slides) 的 48 张图，此处 24 张，靠前的几张是项目自己放在 README 里的</sub>
-
-```bash
-git clone https://github.com/nexu-io/codex-slides && cd codex-slides
-```
-
-<sub><b>下面出现的风格</b> `hero` · `01-home-community` · `02-community-styles` · `04-project-questions` · `06-visual-style` · `07-parallel-generation` · `08-editor` · `09-presenter-mode` · `10-export` · `nb-vintage-patent` · `nb-visual-info-guide` · `market-report` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/hero.png" width="100%" alt="Codex Slides — the open-source AI slide studio inside your coding agent, operated in the Codex in-app Browser">
-
-<sub><b>Codex Slides — the open-source AI slide studio inside your coding agent, operated in the Codex in-app Browser</b> · <code>hero</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/hero.png"><code>docs/assets/readme/hero.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/01-home-community.png" width="100%" alt="Codex Slides home with the prompt composer, scenario shortcuts, and Community Styles">
-
-<sub><b>Codex Slides home with the prompt composer, scenario shortcuts, and Community Styles</b> · <code>01-home-community</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/01-home-community.png"><code>docs/assets/readme/01-home-community.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/02-community-styles.png" width="100%" alt="Community Styles gallery with 73 visual directions">
-
-<sub><b>Community Styles gallery with 73 visual directions</b> · <code>02-community-styles</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/02-community-styles.png"><code>docs/assets/readme/02-community-styles.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/04-project-questions.png" width="100%" alt="English clarification form inside a Codex Slides project">
-
-<sub><b>English clarification form inside a Codex Slides project</b> · <code>04-project-questions</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/04-project-questions.png"><code>docs/assets/readme/04-project-questions.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/06-visual-style.png" width="100%" alt="Ranked visual direction picker inside a Codex Slides project">
-
-<sub><b>Ranked visual direction picker inside a Codex Slides project</b> · <code>06-visual-style</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/06-visual-style.png"><code>docs/assets/readme/06-visual-style.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/07-parallel-generation.png" width="100%" alt="English slide generation with completed and pending pages visible">
-
-<sub><b>English slide generation with completed and pending pages visible</b> · <code>07-parallel-generation</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/07-parallel-generation.png"><code>docs/assets/readme/07-parallel-generation.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/08-editor.png" width="100%" alt="English slide editor with the complete 16:9 canvas contained in view, editing toolbar, speaker notes, and thumbnails">
-
-<sub><b>English slide editor with the complete 16:9 canvas contained in view, editing toolbar, speaker notes, and thum</b> · <code>08-editor</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/08-editor.png"><code>docs/assets/readme/08-editor.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/09-presenter-mode.png" width="100%" alt="Audience playback and Presenter Mode menu with the complete slide visible behind it">
-
-<sub><b>Audience playback and Presenter Mode menu with the complete slide visible behind it</b> · <code>09-presenter-mode</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/09-presenter-mode.png"><code>docs/assets/readme/09-presenter-mode.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/10-export.png" width="100%" alt="English PDF and PowerPoint export menu above a fully contained 16:9 slide">
-
-<sub><b>English PDF and PowerPoint export menu above a fully contained 16:9 slide</b> · <code>10-export</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/10-export.png"><code>docs/assets/readme/10-export.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-vintage-patent.jpg" width="100%" alt="Vintage patent filing style technical page">
-
-<sub><b>Vintage patent filing style technical page</b> · <code>nb-vintage-patent</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-vintage-patent.jpg"><code>public/community/nb-vintage-patent.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-visual-info-guide.jpg" width="100%" alt="Clean visual information guide layout">
-
-<sub><b>Clean visual information guide layout</b> · <code>nb-visual-info-guide</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-visual-info-guide.jpg"><code>public/community/nb-visual-info-guide.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-market-report.png" width="100%" alt="Business and market report deck">
-
-<sub><b>Business and market report deck</b> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-market-report.png"><code>docs/assets/readme/case-market-report.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-data.png" width="100%" alt="Data visualization dashboard deck">
-
-<sub><b>Data visualization dashboard deck</b> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-data.png"><code>docs/assets/readme/case-data.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-keynote.png" width="100%" alt="Product keynote deck">
-
-<sub><b>Product keynote deck</b> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-keynote.png"><code>docs/assets/readme/case-keynote.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-editorial.png" width="100%" alt="Editorial magazine-style deck">
-
-<sub><b>Editorial magazine-style deck</b> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/case-editorial.png"><code>docs/assets/readme/case-editorial.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-bold-product-ad.jpg" width="100%" alt="Bold high-contrast product ad slide">
-
-<sub><b>Bold high-contrast product ad slide</b> · <code>nb-bold-product-ad</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-bold-product-ad.jpg"><code>public/community/nb-bold-product-ad.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-golden-serif-quote.jpg" width="100%" alt="Warm golden serif quote slide">
-
-<sub><b>Warm golden serif quote slide</b> · <code>nb-golden-serif-quote</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-golden-serif-quote.jpg"><code>public/community/nb-golden-serif-quote.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/foryou-pitch-midnight-traction.jpg" width="100%" alt="Midnight investor pitch title slide">
-
-<sub><b>Midnight investor pitch title slide</b> · <code>foryou-pitch-midnight-traction</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/foryou-pitch-midnight-traction.jpg"><code>public/community/foryou-pitch-midnight-traction.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/foryou-data-answer-first.jpg" width="100%" alt="Answer-first data slide with a national map and KPI callouts">
-
-<sub><b>Answer-first data slide with a national map and KPI callouts</b> · <code>foryou-data-answer-first</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/foryou-data-answer-first.jpg"><code>public/community/foryou-data-answer-first.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/foryou-craft-editorial-ink.jpg" width="100%" alt="Editorial ink-and-paper report title slide">
-
-<sub><b>Editorial ink-and-paper report title slide</b> · <code>foryou-craft-editorial-ink</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/foryou-craft-editorial-ink.jpg"><code>public/community/foryou-craft-editorial-ink.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-chalkboard-lesson.jpg" width="100%" alt="Warm chalkboard lesson layout with hand-drawn diagrams">
-
-<sub><b>Warm chalkboard lesson layout with hand-drawn diagrams</b> · <code>nb-chalkboard-lesson</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/public/community/nb-chalkboard-lesson.jpg"><code>public/community/nb-chalkboard-lesson.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/03-scenarios.png" width="100%" alt="Scenario library with 24 presentation workflows">
-
-<sub><b>Scenario library with 24 presentation workflows</b> · <code>03-scenarios</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/03-scenarios.png"><code>docs/assets/readme/03-scenarios.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/05-research-brief.png" width="100%" alt="Source-backed English research brief in Design Files">
-
-<sub><b>Source-backed English research brief in Design Files</b> · <code>05-research-brief</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/05-research-brief.png"><code>docs/assets/readme/05-research-brief.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/nexu-io/codex-slides/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/05-research-outline.png" width="100%" alt="Editable English presentation outline">
-
-<sub><b>Editable English presentation outline</b> · <code>05-research-outline</code> · <a href="https://github.com/nexu-io/codex-slides/blob/dbc2a5992e937760e9ce8e587e11729f970881cb/docs/assets/readme/05-research-outline.png"><code>docs/assets/readme/05-research-outline.png</code></a></sub>
-
-<a id="gallery-3d-html-slide-skill"></a>
-
-#### [3D HTML Slide Skill](https://github.com/yoshifujidesign/3d-html-slide-skill) · — ⭐ · HTML
-
-<sub>Claude Code 技能:一键生成带 Three.js 线框背景的单文件 HTML 演示幻灯片。</sub>
-
-<sub>取自 [`yoshifujidesign/3d-html-slide-skill`](https://github.com/yoshifujidesign/3d-html-slide-skill) 的 2 张图，此处 2 张，靠前的几张是项目自己放在 README 里的</sub>
-
-
-<img src="https://github.com/user-attachments/assets/7d150a1c-73ee-429a-8315-8be2650ebe11" width="100%" alt="WS002985">
-
-<sub><b>WS002985</b> · GitHub 附件图</sub>
-
-<img src="https://github.com/user-attachments/assets/1e3be001-6598-40b8-bf9f-da10e7d77f5d" width="100%" alt="EP133-2_2">
-
-<sub><b>EP133-2_2</b> · GitHub 附件图</sub>
-
-<a id="gallery-university-ppt-skill"></a>
-
-#### [University PPT Skill](https://github.com/SiyuQiannn/university-ppt-skill) · — ⭐ · 模板库
-
-<sub>以校色 token 与可复用版式库生成可编辑的高校主题 PPTX 演示文稿。</sub>
-
-<sub>取自 [`SiyuQiannn/university-ppt-skill`](https://github.com/SiyuQiannn/university-ppt-skill) 的 10 张图，此处 10 张，靠前的几张是项目自己放在 README 里的</sub>
-
-```bash
-git clone https://github.com/SiyuQiannn/university-ppt-skill
-```
-
-<sub><b>下面出现的风格</b> `contact-sheet` · `02-图文案例证据-源模板复刻` · `05-对比分析框架-源模板复刻` · `03-流程时间线阶段-源模板复刻` · `01-综合卡片要点-源模板复刻` · `06-数据图表表格-源模板复刻` · `08-循环网络关系-源模板复刻` · `spec-driven-demo-contact-sheet` · `04-层级金字塔框架-源模板复刻` · `10-图标素材库-源模板复刻` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
-
-<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/examples/preview_contact_sheet.png" width="100%" alt="Preview">
-
-<sub><b>Preview</b> · <code>contact-sheet</code> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/examples/preview_contact_sheet.png"><code>examples/preview_contact_sheet.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_02_%E5%9B%BE%E6%96%87%E6%A1%88%E4%BE%8B%E8%AF%81%E6%8D%AE_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
-
-<sub><b>02 图文案例证据 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_02_图文案例证据_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_02_图文案例证据_源模板复刻.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_05_%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90%E6%A1%86%E6%9E%B6_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
-
-<sub><b>05 对比分析框架 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_05_对比分析框架_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_05_对比分析框架_源模板复刻.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_03_%E6%B5%81%E7%A8%8B%E6%97%B6%E9%97%B4%E7%BA%BF%E9%98%B6%E6%AE%B5_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
-
-<sub><b>03 流程时间线阶段 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_03_流程时间线阶段_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_03_流程时间线阶段_源模板复刻.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_01_%E7%BB%BC%E5%90%88%E5%8D%A1%E7%89%87%E8%A6%81%E7%82%B9_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
-
-<sub><b>01 综合卡片要点 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_01_综合卡片要点_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_01_综合卡片要点_源模板复刻.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_06_%E6%95%B0%E6%8D%AE%E5%9B%BE%E8%A1%A8%E8%A1%A8%E6%A0%BC_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
-
-<sub><b>06 数据图表表格 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_06_数据图表表格_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_06_数据图表表格_源模板复刻.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_08_%E5%BE%AA%E7%8E%AF%E7%BD%91%E7%BB%9C%E5%85%B3%E7%B3%BB_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
-
-<sub><b>08 循环网络关系 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_08_循环网络关系_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_08_循环网络关系_源模板复刻.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/examples/spec_driven_demo_contact_sheet.png" width="100%" alt="University PPT Skill sample">
-
-<sub><b>Spec Driven Demo Contact Sheet</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/examples/spec_driven_demo_contact_sheet.png"><code>examples/spec_driven_demo_contact_sheet.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_04_%E5%B1%82%E7%BA%A7%E9%87%91%E5%AD%97%E5%A1%94%E6%A1%86%E6%9E%B6_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
-
-<sub><b>04 层级金字塔框架 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_04_层级金字塔框架_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_04_层级金字塔框架_源模板复刻.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_10_%E5%9B%BE%E6%A0%87%E7%B4%A0%E6%9D%90%E5%BA%93_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
-
-<sub><b>10 图标素材库 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_10_图标素材库_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_10_图标素材库_源模板复刻.png</code></a></sub>
-
-<a id="gallery-image-to-editable-ppt-skill-zhoujie97"></a>
-
-#### [Image to Editable PPT Skill (zhoujie97)](https://github.com/zhoujie97/image-to-editable-ppt-skill) · — ⭐ · PPTX
-
-<sub>把截图与信息图重建为可编辑的 PowerPoint 文本框、原生形状与 SVG 图标。</sub>
-
-<sub>取自 [`zhoujie97/image-to-editable-ppt-skill`](https://github.com/zhoujie97/image-to-editable-ppt-skill) 的 4 张图，此处 4 张，靠前的几张是项目自己放在 README 里的</sub>
-
-<sub><b>下面出现的风格</b> `效果图1` · `效果图2` · `原图2` · `原图1` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
-
-<img src="https://raw.githubusercontent.com/zhoujie97/image-to-editable-ppt-skill/e3c39d907ec6abf5266e4491c6aa001b663b9207/%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%95%88%E6%9E%9C%E5%9B%BE1.png" width="100%" alt="alt text">
-
-<sub><b>alt text</b> · <code>效果图1</code> · <a href="https://github.com/zhoujie97/image-to-editable-ppt-skill/blob/e3c39d907ec6abf5266e4491c6aa001b663b9207/效果图/效果图1.png"><code>效果图/效果图1.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zhoujie97/image-to-editable-ppt-skill/e3c39d907ec6abf5266e4491c6aa001b663b9207/%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%95%88%E6%9E%9C%E5%9B%BE2.png" width="100%" alt="alt text">
-
-<sub><b>alt text</b> · <code>效果图2</code> · <a href="https://github.com/zhoujie97/image-to-editable-ppt-skill/blob/e3c39d907ec6abf5266e4491c6aa001b663b9207/效果图/效果图2.png"><code>效果图/效果图2.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zhoujie97/image-to-editable-ppt-skill/e3c39d907ec6abf5266e4491c6aa001b663b9207/%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%8E%9F%E5%9B%BE2.png" width="100%" alt="alt text">
-
-<sub><b>alt text</b> · <code>原图2</code> · <a href="https://github.com/zhoujie97/image-to-editable-ppt-skill/blob/e3c39d907ec6abf5266e4491c6aa001b663b9207/效果图/原图2.png"><code>效果图/原图2.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zhoujie97/image-to-editable-ppt-skill/e3c39d907ec6abf5266e4491c6aa001b663b9207/%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%8E%9F%E5%9B%BE1.jpg" width="100%" alt="alt text">
-
-<sub><b>alt text</b> · <code>原图1</code> · <a href="https://github.com/zhoujie97/image-to-editable-ppt-skill/blob/e3c39d907ec6abf5266e4491c6aa001b663b9207/效果图/原图1.jpg"><code>效果图/原图1.jpg</code></a></sub>
-
-<a id="gallery-claude-ppt-skills"></a>
-
-#### [Claude PPT Skills](https://github.com/sunxiaohui2025/claude-ppt-skills) · — ⭐ · HTML
-
-<sub>生成六种风格的单文件 HTML 横向翻页 PPT,支持网页在线编辑与缩略图总览。</sub>
-
-<sub>取自 [`sunxiaohui2025/claude-ppt-skills`](https://github.com/sunxiaohui2025/claude-ppt-skills) 的 3 张图，此处 3 张，靠前的几张是项目自己放在 README 里的</sub>
-
-
-<img src="https://github.com/user-attachments/assets/d8742e1d-0fc1-4930-ac9a-6cc783fd47cd" width="100%" alt="截屏2026-05-28 15 23 36">
-
-<sub><b>截屏2026-05-28 15 23 36</b> · GitHub 附件图</sub>
-
-<img src="https://github.com/user-attachments/assets/df1b2e93-14b7-49ac-b0e9-0d99e630d382" width="100%" alt="image">
-
-<sub><b>image</b> · GitHub 附件图</sub>
-
-<img src="https://github.com/user-attachments/assets/da11e54a-f568-4204-9146-35f7acc57f5a" width="100%" alt="image">
-
-<sub><b>image</b> · GitHub 附件图</sub>
-
 <a id="gallery-econ-slides-skill"></a>
 
-#### [Econ Slides Skill](https://github.com/hanlulong/econ-slides-skill) · — ⭐ · 框架
+#### [Econ Slides Skill](https://github.com/hanlulong/econ-slides-skill) · 7 ⭐ · 框架
 
 <sub>把经济学论文转成 Beamer 研讨会报告,并附带按时长排布的逐字讲稿。</sub>
 
@@ -2363,440 +2084,9 @@ git clone https://github.com/hanlulong/econ-slides-skill ~/.claude/skills/econ-s
 
 <sub><b>Fig3 Cohorts</b> · <a href="https://github.com/hanlulong/econ-slides-skill/blob/4ac998bfa98bc0b59d4d1776b4ced565b34b802c/docs/sample-talk/figures-slides/fig3_cohorts.png"><code>docs/sample-talk/figures-slides/fig3_cohorts.png</code></a></sub>
 
-<a id="gallery-ghb-ppt-skill"></a>
-
-#### [GHB PPT Skill](https://github.com/NickyLam/GHB-PPT-Skill) · — ⭐ · PPTX
-
-<sub>基于企业模板输出 PPTX,SVG 转为可编辑 DrawingML,默认全离线验证。</sub>
-
-<sub>取自 [`NickyLam/GHB-PPT-Skill`](https://github.com/NickyLam/GHB-PPT-Skill) 的 1 张图，此处 1 张</sub>
-
-```bash
-python3 -m pip install -r requirements.txt && python3 scripts/ghb_ppt.py doctor
-```
-
-<sub><b>下面出现的风格</b> `showcase` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
-
-<img src="https://raw.githubusercontent.com/NickyLam/GHB-PPT-Skill/e7ae128cb7dd7380a27a7d4a1e852beeb6734091/assets/readme/showcase.png" width="100%" alt="GHB PPT Skill sample">
-
-<sub><b>Showcase</b> · <a href="https://github.com/NickyLam/GHB-PPT-Skill/blob/e7ae128cb7dd7380a27a7d4a1e852beeb6734091/assets/readme/showcase.png"><code>assets/readme/showcase.png</code></a></sub>
-
-<a id="gallery-oc-sdk-ppt"></a>
-
-#### [OpenCode PPT Studio](https://github.com/Honghurumeng/oc_sdk_ppt) · — ⭐ · 双路线
-
-<sub>网页应用:先出大纲初稿,再开新会话精修,然后生成 HTML slides 并本地构建 PPTX。</sub>
-
-<sub>取自 [`Honghurumeng/oc_sdk_ppt`](https://github.com/Honghurumeng/oc_sdk_ppt) 的 3 张图，此处 3 张，靠前的几张是项目自己放在 README 里的</sub>
-
-<sub><b>下面出现的风格</b> `html` · `llm` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
-
-<img src="https://raw.githubusercontent.com/Honghurumeng/oc_sdk_ppt/3e2b8ba28d8c49f36c1bf1f98b14f4c3596dd9bd/images/3.png" width="100%" alt="HTML 预览与版本切换：支持按意见调整并激活某个版本">
-
-<sub><b>HTML 预览与版本切换：支持按意见调整并激活某个版本</b> · <a href="https://github.com/Honghurumeng/oc_sdk_ppt/blob/3e2b8ba28d8c49f36c1bf1f98b14f4c3596dd9bd/images/3.png"><code>images/3.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/Honghurumeng/oc_sdk_ppt/3e2b8ba28d8c49f36c1bf1f98b14f4c3596dd9bd/images/1.png" width="100%" alt="主页：创建/恢复任务与 LLM 配置入口">
-
-<sub><b>主页：创建/恢复任务与 LLM 配置入口</b> · <a href="https://github.com/Honghurumeng/oc_sdk_ppt/blob/3e2b8ba28d8c49f36c1bf1f98b14f4c3596dd9bd/images/1.png"><code>images/1.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/Honghurumeng/oc_sdk_ppt/3e2b8ba28d8c49f36c1bf1f98b14f4c3596dd9bd/images/2.png" width="100%" alt="构建日志：校验失败后自动修复并重试">
-
-<sub><b>构建日志：校验失败后自动修复并重试</b> · <a href="https://github.com/Honghurumeng/oc_sdk_ppt/blob/3e2b8ba28d8c49f36c1bf1f98b14f4c3596dd9bd/images/2.png"><code>images/2.png</code></a></sub>
-
-<a id="gallery-course-html-slides-skill"></a>
-
-#### [Course HTML Slides Builder](https://github.com/HelenSong/course-html-slides-skill) · — ⭐ · HTML
-
-<sub>把课程大纲转成多页 HTML 幻灯片,面向课堂投影与互动工作坊设计。</sub>
-
-<sub>取自 [`HelenSong/course-html-slides-skill`](https://github.com/HelenSong/course-html-slides-skill) 的 9 张图，此处 9 张，靠前的几张是项目自己放在 README 里的</sub>
-
-<sub><b>下面出现的风格</b> `collage` · `p01` · `p02-hook` · `p03-driving-question` · `p04-project-intro` · `p06-role-guide` · `p08-writing-guide` · `p11-practice` · `p12-share` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
-
-<img src="https://raw.githubusercontent.com/HelenSong/course-html-slides-skill/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/collage.png" width="100%" alt="Slide Collage">
-
-<sub><b>Slide Collage</b> · <a href="https://github.com/HelenSong/course-html-slides-skill/blob/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/collage.png"><code>docs/collage.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/HelenSong/course-html-slides-skill/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p01-cover.png" width="100%" alt="Course HTML Slides Builder sample">
-
-<sub><b>P01</b> · 封面 · <a href="https://github.com/HelenSong/course-html-slides-skill/blob/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p01-cover.png"><code>docs/screenshots/p01-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/HelenSong/course-html-slides-skill/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p02-hook.png" width="100%" alt="Course HTML Slides Builder sample">
-
-<sub><b>P02 Hook</b> · <a href="https://github.com/HelenSong/course-html-slides-skill/blob/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p02-hook.png"><code>docs/screenshots/p02-hook.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/HelenSong/course-html-slides-skill/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p03-driving-question.png" width="100%" alt="Course HTML Slides Builder sample">
-
-<sub><b>P03 Driving Question</b> · <a href="https://github.com/HelenSong/course-html-slides-skill/blob/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p03-driving-question.png"><code>docs/screenshots/p03-driving-question.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/HelenSong/course-html-slides-skill/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p04-project-intro.png" width="100%" alt="Course HTML Slides Builder sample">
-
-<sub><b>P04 Project Intro</b> · <a href="https://github.com/HelenSong/course-html-slides-skill/blob/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p04-project-intro.png"><code>docs/screenshots/p04-project-intro.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/HelenSong/course-html-slides-skill/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p06-role-guide.png" width="100%" alt="Course HTML Slides Builder sample">
-
-<sub><b>P06 Role Guide</b> · <a href="https://github.com/HelenSong/course-html-slides-skill/blob/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p06-role-guide.png"><code>docs/screenshots/p06-role-guide.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/HelenSong/course-html-slides-skill/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p08-writing-guide.png" width="100%" alt="Course HTML Slides Builder sample">
-
-<sub><b>P08 Writing Guide</b> · <a href="https://github.com/HelenSong/course-html-slides-skill/blob/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p08-writing-guide.png"><code>docs/screenshots/p08-writing-guide.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/HelenSong/course-html-slides-skill/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p11-practice.png" width="100%" alt="Course HTML Slides Builder sample">
-
-<sub><b>P11 Practice</b> · <a href="https://github.com/HelenSong/course-html-slides-skill/blob/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p11-practice.png"><code>docs/screenshots/p11-practice.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/HelenSong/course-html-slides-skill/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p12-share.png" width="100%" alt="Course HTML Slides Builder sample">
-
-<sub><b>P12 Share</b> · <a href="https://github.com/HelenSong/course-html-slides-skill/blob/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p12-share.png"><code>docs/screenshots/p12-share.png</code></a></sub>
-
-<a id="gallery-excalidraw-slides-skills"></a>
-
-#### [Excalidraw Slides Generator](https://github.com/ZunbaRan/excalidraw-slides-skills) · — ⭐ · 框架
-
-<sub>两阶段工作流:把文本转成 16:9 Excalidraw 幻灯片,并自动生成配套 SVG 插图。</sub>
-
-<sub>取自 [`ZunbaRan/excalidraw-slides-skills`](https://github.com/ZunbaRan/excalidraw-slides-skills) 的 5 张图，此处 5 张，靠前的几张是项目自己放在 README 里的</sub>
-
-
-<img src="https://github.com/user-attachments/assets/44db2400-3c6a-4de9-8c37-b26759b284c0" width="100%" alt="image">
-
-<sub><b>image</b> · GitHub 附件图</sub>
-
-<img src="https://github.com/user-attachments/assets/89f3fc36-f0b7-45e7-b457-01e3b4f00e28" width="100%" alt="image">
-
-<sub><b>image</b> · GitHub 附件图</sub>
-
-<img src="https://github.com/user-attachments/assets/5ab31d78-49af-499f-801b-5ec374aa70d1" width="100%" alt="image">
-
-<sub><b>image</b> · GitHub 附件图</sub>
-
-<img src="https://github.com/user-attachments/assets/68470fc6-6fdf-49aa-a7b1-c97ca93c8c23" width="100%" alt="image">
-
-<sub><b>image</b> · GitHub 附件图</sub>
-
-<img src="https://github.com/user-attachments/assets/a1167d48-1bc1-4f5b-940b-145f235249bd" width="100%" alt="image">
-
-<sub><b>image</b> · GitHub 附件图</sub>
-
-<a id="gallery-cuhk-slides-template-html"></a>
-
-#### [CUHK Slides Template (HTML)](https://github.com/HarlandZZC/cuhk-slides-template-html) · — ⭐ · 模板库
-
-<sub>一份自包含的港中大配色 HTML 幻灯片模板,附带 Markdown 转幻灯片的 skill。</sub>
-
-<sub>取自 [`HarlandZZC/cuhk-slides-template-html`](https://github.com/HarlandZZC/cuhk-slides-template-html) 的 2 张图，此处 2 张，靠前的几张是项目自己放在 README 里的</sub>
-
-```bash
-git clone https://github.com/HarlandZZC/cuhk-slides-template-html && cp -r skills/md-to-cuhk-slides .claude/skills/
-```
-
-<sub><b>下面出现的风格</b> `title` · `your-figure` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
-
-<img src="https://raw.githubusercontent.com/HarlandZZC/cuhk-slides-template-html/ee6ed50a5136d98c1fb06d48ee7112e3a45714d5/docs/screenshots/title.png" width="100%" alt="Title slide preview">
-
-<sub><b>Title slide preview</b> · <a href="https://github.com/HarlandZZC/cuhk-slides-template-html/blob/ee6ed50a5136d98c1fb06d48ee7112e3a45714d5/docs/screenshots/title.png"><code>docs/screenshots/title.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/HarlandZZC/cuhk-slides-template-html/ee6ed50a5136d98c1fb06d48ee7112e3a45714d5/your-figure.png" width="100%" alt="CUHK Slides Template (HTML) sample">
-
-<sub><b>Your Figure</b> · <a href="https://github.com/HarlandZZC/cuhk-slides-template-html/blob/ee6ed50a5136d98c1fb06d48ee7112e3a45714d5/your-figure.png"><code>your-figure.png</code></a></sub>
-
-<a id="gallery-taohtml"></a>
-
-#### [TaoHtml](https://github.com/TaoGEO/TaoHtml) · — ⭐ · HTML
-
-<sub>把已有的 Word、PDF 或 PPT 重新设计成带分步动效、可离线交付的 16:9 HTML 演示文稿。</sub>
-
-<sub>取自 [`TaoGEO/TaoHtml`](https://github.com/TaoGEO/TaoHtml) 的 12 张图，此处 12 张，靠前的几张是项目自己放在 README 里的</sub>
-
-<sub><b>下面出现的风格</b> `reference-style-reconstruction` · `corporate-template-fidelity` · `built-in-visual-systems` · `reference-vi-board` · `corporate-family` · `01-ai-search-mechanism` · `02-geo-four-keywords` · `03-recall-process` · `04-retest-report` · `corporate-template-reference` · `corporate-family-section` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
-
-<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/readme/v0.3.0/reference-style-reconstruction.png" width="100%" alt="参考风格重构 VI 设计标准图">
-
-<sub><b>参考风格重构 VI 设计标准图</b> · <code>reference-style-reconstruction</code> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/readme/v0.3.0/reference-style-reconstruction.png"><code>docs/assets/readme/v0.3.0/reference-style-reconstruction.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/readme/v0.3.0/corporate-template-fidelity.png" width="100%" alt="企业模板保真五页合成样例">
-
-<sub><b>企业模板保真五页合成样例</b> · <code>corporate-template-fidelity</code> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/readme/v0.3.0/corporate-template-fidelity.png"><code>docs/assets/readme/v0.3.0/corporate-template-fidelity.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/readme/v0.3.0/built-in-visual-systems.png" width="100%" alt="TaoHtml 四套内置视觉系统各五页总览">
-
-<sub><b>TaoHtml 四套内置视觉系统各五页总览</b> · <code>built-in-visual-systems</code> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/readme/v0.3.0/built-in-visual-systems.png"><code>docs/assets/readme/v0.3.0/built-in-visual-systems.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/examples/corporate-template-fidelity/reference-vi-board.png" width="100%" alt="TaoHtml sample">
-
-<sub><b>Reference Vi Board</b> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/examples/corporate-template-fidelity/reference-vi-board.png"><code>examples/corporate-template-fidelity/reference-vi-board.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-family-cover.png" width="100%" alt="TaoHtml sample">
-
-<sub><b>Corporate Family</b> · 封面 · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-family-cover.png"><code>tests/fixtures/corporate-family-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/01-ai-search-mechanism.png" width="100%" alt="TaoHtml sample">
-
-<sub><b>01 Ai Search Mechanism</b> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/01-ai-search-mechanism.png"><code>docs/assets/cases/geo-salon/01-ai-search-mechanism.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/02-geo-four-keywords.png" width="100%" alt="TaoHtml sample">
-
-<sub><b>02 Geo Four Keywords</b> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/02-geo-four-keywords.png"><code>docs/assets/cases/geo-salon/02-geo-four-keywords.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/03-recall-process.png" width="100%" alt="TaoHtml sample">
-
-<sub><b>03 Recall Process</b> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/03-recall-process.png"><code>docs/assets/cases/geo-salon/03-recall-process.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/04-retest-report.png" width="100%" alt="TaoHtml sample">
-
-<sub><b>04 Retest Report</b> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/04-retest-report.png"><code>docs/assets/cases/geo-salon/04-retest-report.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-template-reference.png" width="100%" alt="TaoHtml sample">
-
-<sub><b>Corporate Template Reference</b> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-template-reference.png"><code>tests/fixtures/corporate-template-reference.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-family-section.png" width="100%" alt="TaoHtml sample">
-
-<sub><b>Corporate Family Section</b> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-family-section.png"><code>tests/fixtures/corporate-family-section.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-family-toc.png" width="100%" alt="TaoHtml sample">
-
-<sub><b>Corporate Family</b> · 目录页 · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-family-toc.png"><code>tests/fixtures/corporate-family-toc.png</code></a></sub>
-
-<a id="gallery-google-slides-skill"></a>
-
-#### [Google Slides Deck Skill](https://github.com/eranw2000/google-slides-skill) · — ⭐ · 框架
-
-<sub>通过 API 重建 Google Slides 演示文稿,并把每页渲染成 PNG 回看以自查结果。</sub>
-
-<sub>取自 [`eranw2000/google-slides-skill`](https://github.com/eranw2000/google-slides-skill) 的 1 张图，此处 1 张，靠前的几张是项目自己放在 README 里的</sub>
-
-```bash
-cp -R google-slides-skill/enhance-slides ~/.claude/skills/
-```
-
-<sub><b>下面出现的风格</b> `enhance-slides-flow` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
-
-<img src="https://raw.githubusercontent.com/eranw2000/google-slides-skill/43127d4e79f963be2243e0369b779baf453eac28/docs/enhance-slides-flow.png" width="100%" alt="enhance-slides flow">
-
-<sub><b>enhance-slides flow</b> · <a href="https://github.com/eranw2000/google-slides-skill/blob/43127d4e79f963be2243e0369b779baf453eac28/docs/enhance-slides-flow.png"><code>docs/enhance-slides-flow.png</code></a></sub>
-
-<a id="gallery-inspiration-deck-workshop"></a>
-
-#### [Inspiration Deck Workshop](https://github.com/zjsthmjialin/inspiration-deck-workshop) · — ⭐ · 模板库
-
-<sub>23 套主题与 25 种页面版式,用一个小 CLI 生成带动效的静态 HTML 演示。</sub>
-
-<sub>取自 [`zjsthmjialin/inspiration-deck-workshop`](https://github.com/zjsthmjialin/inspiration-deck-workshop) 的 23 张图，此处 23 张，靠前的几张是项目自己放在 README 里的</sub>
-
-```bash
-git clone https://github.com/zjsthmjialin/inspiration-deck-workshop && node tools/cli.mjs new my-deck --template product-launch
-```
-
-<sub><b>下面出现的风格</b> `18-black-gold-stage` · `19-platinum-launch` · `21-signal-dashboard` · `23-vivid-pop` · `00-all-themes-contact-sheet` · `01-clear-board` · `02-mist-blue` · `03-data-brief` · `04-deep-code` · `05-terminal-signal` · `06-blueprint-grid` · `07-soft-card` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/18-black-gold-stage.png" width="100%" alt="Black Gold Stage">
-
-<sub><b>Black Gold Stage</b> · <code>18-black-gold-stage</code> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/18-black-gold-stage.png"><code>docs/assets/theme-showcase/18-black-gold-stage.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/19-platinum-launch.png" width="100%" alt="Platinum Launch">
-
-<sub><b>Platinum Launch</b> · <code>19-platinum-launch</code> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/19-platinum-launch.png"><code>docs/assets/theme-showcase/19-platinum-launch.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/21-signal-dashboard.png" width="100%" alt="Signal Dashboard">
-
-<sub><b>Signal Dashboard</b> · <code>21-signal-dashboard</code> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/21-signal-dashboard.png"><code>docs/assets/theme-showcase/21-signal-dashboard.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/23-vivid-pop.png" width="100%" alt="Vivid Pop">
-
-<sub><b>Vivid Pop</b> · <code>23-vivid-pop</code> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/23-vivid-pop.png"><code>docs/assets/theme-showcase/23-vivid-pop.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/00-all-themes-contact-sheet.png" width="100%" alt="All theme preview">
-
-<sub><b>All theme preview</b> · <code>00-all-themes-contact-sheet</code> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/00-all-themes-contact-sheet.png"><code>docs/assets/theme-showcase/00-all-themes-contact-sheet.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/01-clear-board.png" width="100%" alt="Inspiration Deck Workshop sample">
-
-<sub><b>01 Clear Board</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/01-clear-board.png"><code>docs/assets/theme-showcase/01-clear-board.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/02-mist-blue.png" width="100%" alt="Inspiration Deck Workshop sample">
-
-<sub><b>02 Mist Blue</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/02-mist-blue.png"><code>docs/assets/theme-showcase/02-mist-blue.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/03-data-brief.png" width="100%" alt="Inspiration Deck Workshop sample">
-
-<sub><b>03 Data Brief</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/03-data-brief.png"><code>docs/assets/theme-showcase/03-data-brief.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/04-deep-code.png" width="100%" alt="Inspiration Deck Workshop sample">
-
-<sub><b>04 Deep Code</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/04-deep-code.png"><code>docs/assets/theme-showcase/04-deep-code.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/05-terminal-signal.png" width="100%" alt="Inspiration Deck Workshop sample">
-
-<sub><b>05 Terminal Signal</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/05-terminal-signal.png"><code>docs/assets/theme-showcase/05-terminal-signal.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/06-blueprint-grid.png" width="100%" alt="Inspiration Deck Workshop sample">
-
-<sub><b>06 Blueprint Grid</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/06-blueprint-grid.png"><code>docs/assets/theme-showcase/06-blueprint-grid.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/07-soft-card.png" width="100%" alt="Inspiration Deck Workshop sample">
-
-<sub><b>07 Soft Card</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/07-soft-card.png"><code>docs/assets/theme-showcase/07-soft-card.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/08-editorial-space.png" width="100%" alt="Inspiration Deck Workshop sample">
-
-<sub><b>08 Editorial Space</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/08-editorial-space.png"><code>docs/assets/theme-showcase/08-editorial-space.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/09-journal-spark.png" width="100%" alt="Inspiration Deck Workshop sample">
-
-<sub><b>09 Journal Spark</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/09-journal-spark.png"><code>docs/assets/theme-showcase/09-journal-spark.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/11-glass-light.png" width="100%" alt="Inspiration Deck Workshop sample">
-
-<sub><b>11 Glass Light</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/11-glass-light.png"><code>docs/assets/theme-showcase/11-glass-light.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/12-brand-pop.png" width="100%" alt="Inspiration Deck Workshop sample">
-
-<sub><b>12 Brand Pop</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/12-brand-pop.png"><code>docs/assets/theme-showcase/12-brand-pop.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/13-paper-research.png" width="100%" alt="Inspiration Deck Workshop sample">
-
-<sub><b>13 Paper Research</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/13-paper-research.png"><code>docs/assets/theme-showcase/13-paper-research.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/14-consulting-pro.png" width="100%" alt="Inspiration Deck Workshop sample">
-
-<sub><b>14 Consulting Pro</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/14-consulting-pro.png"><code>docs/assets/theme-showcase/14-consulting-pro.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/15-minimal-stage.png" width="100%" alt="Inspiration Deck Workshop sample">
-
-<sub><b>15 Minimal Stage</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/15-minimal-stage.png"><code>docs/assets/theme-showcase/15-minimal-stage.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/16-neon-orbit.png" width="100%" alt="Inspiration Deck Workshop sample">
-
-<sub><b>16 Neon Orbit</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/16-neon-orbit.png"><code>docs/assets/theme-showcase/16-neon-orbit.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/17-quantum-grid.png" width="100%" alt="Inspiration Deck Workshop sample">
-
-<sub><b>17 Quantum Grid</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/17-quantum-grid.png"><code>docs/assets/theme-showcase/17-quantum-grid.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/20-executive-ink.png" width="100%" alt="Inspiration Deck Workshop sample">
-
-<sub><b>20 Executive Ink</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/20-executive-ink.png"><code>docs/assets/theme-showcase/20-executive-ink.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/22-editorial-luxe.png" width="100%" alt="Inspiration Deck Workshop sample">
-
-<sub><b>22 Editorial Luxe</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/22-editorial-luxe.png"><code>docs/assets/theme-showcase/22-editorial-luxe.png</code></a></sub>
-
-<a id="gallery-html-presentation-skill"></a>
-
-#### [HTML Presentation Skill](https://github.com/defreitassl/html-presentation-skill) · — ⭐ · HTML
-
-<sub>把文档、笔记或简报转成独立的 HTML 演示页面,并对结果做校验。</sub>
-
-<sub>取自 [`defreitassl/html-presentation-skill`](https://github.com/defreitassl/html-presentation-skill) 的 5 张图，此处 5 张，靠前的几张是项目自己放在 README 里的</sub>
-
-<sub><b>下面出现的风格</b> `artemis-program-overview` · `artemis-ii-executive-briefing` · `kubernetes-command-center` · `artemis-ii-mission-planner` · `who-air-pollution-dossier` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
-
-<img src="https://raw.githubusercontent.com/defreitassl/html-presentation-skill/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/artemis-program-overview.png" width="100%" alt="Artemis Program Overview preview">
-
-<sub><b>Artemis Program Overview preview</b> · <a href="https://github.com/defreitassl/html-presentation-skill/blob/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/artemis-program-overview.png"><code>assets/previews/artemis-program-overview.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/defreitassl/html-presentation-skill/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/artemis-ii-executive-briefing.png" width="100%" alt="Artemis II Executive Briefing preview">
-
-<sub><b>Artemis II Executive Briefing preview</b> · <a href="https://github.com/defreitassl/html-presentation-skill/blob/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/artemis-ii-executive-briefing.png"><code>assets/previews/artemis-ii-executive-briefing.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/defreitassl/html-presentation-skill/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/kubernetes-command-center.png" width="100%" alt="Kubernetes Command Center preview">
-
-<sub><b>Kubernetes Command Center preview</b> · <a href="https://github.com/defreitassl/html-presentation-skill/blob/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/kubernetes-command-center.png"><code>assets/previews/kubernetes-command-center.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/defreitassl/html-presentation-skill/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/artemis-ii-mission-planner.png" width="100%" alt="Artemis II Mission Planner preview">
-
-<sub><b>Artemis II Mission Planner preview</b> · <a href="https://github.com/defreitassl/html-presentation-skill/blob/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/artemis-ii-mission-planner.png"><code>assets/previews/artemis-ii-mission-planner.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/defreitassl/html-presentation-skill/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/who-air-pollution-dossier.png" width="100%" alt="WHO Ambient Air Pollution Dossier preview">
-
-<sub><b>WHO Ambient Air Pollution Dossier preview</b> · <code>who-air-pollution-dossier</code> · <a href="https://github.com/defreitassl/html-presentation-skill/blob/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/who-air-pollution-dossier.png"><code>assets/previews/who-air-pollution-dossier.png</code></a></sub>
-
-<a id="gallery-agent-pptify-kit"></a>
-
-#### [PPTX Deck Creation Kit](https://github.com/kimtth/agent-pptify-kit) · — ⭐ · PPTX
-
-<sub>以显式坐标规格生成 PPTX,输出保持原生对象,并以 Copilot 插件形式分发。</sub>
-
-<sub>取自 [`kimtth/agent-pptify-kit`](https://github.com/kimtth/agent-pptify-kit) 的 3 张图，此处 3 张，靠前的几张是项目自己放在 README 里的</sub>
-
-<sub><b>下面出现的风格</b> `pptify-kit-stress-demo-contact-sheet` · `pptify-kit-stress-demo-v3-contact-sheet` · `pptify-kit-stress-demo-v2-contact-sheet` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
-
-<img src="https://raw.githubusercontent.com/kimtth/agent-pptify-kit/831c9107b522baa8131e27c47d4cf04af5e54d93/docs/preview/pptify-kit-stress-demo-contact-sheet.png" width="100%" alt="Contact sheet of all 81 layouts in pptify-kit-stress-demo.pptx">
-
-<sub><b>Contact sheet of all 81 layouts in pptify-kit-stress-demo.pptx</b> · <code>pptify-kit-stress-demo-contact-sheet</code> · <a href="https://github.com/kimtth/agent-pptify-kit/blob/831c9107b522baa8131e27c47d4cf04af5e54d93/docs/preview/pptify-kit-stress-demo-contact-sheet.png"><code>docs/preview/pptify-kit-stress-demo-contact-sheet.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/kimtth/agent-pptify-kit/831c9107b522baa8131e27c47d4cf04af5e54d93/docs/preview/pptify-kit-stress-demo-v3-contact-sheet.png" width="100%" alt="Contact sheet of all 60 layouts in pptify-kit-stress-demo-v3.pptx">
-
-<sub><b>Contact sheet of all 60 layouts in pptify-kit-stress-demo-v3.pptx</b> · <code>pptify-kit-stress-demo-v3-contact-sheet</code> · <a href="https://github.com/kimtth/agent-pptify-kit/blob/831c9107b522baa8131e27c47d4cf04af5e54d93/docs/preview/pptify-kit-stress-demo-v3-contact-sheet.png"><code>docs/preview/pptify-kit-stress-demo-v3-contact-sheet.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/kimtth/agent-pptify-kit/831c9107b522baa8131e27c47d4cf04af5e54d93/docs/preview/pptify-kit-stress-demo-v2-contact-sheet.png" width="100%" alt="Contact sheet of all 50 layouts in pptify-kit-stress-demo-v2.pptx">
-
-<sub><b>Contact sheet of all 50 layouts in pptify-kit-stress-demo-v2.pptx</b> · <code>pptify-kit-stress-demo-v2-contact-sheet</code> · <a href="https://github.com/kimtth/agent-pptify-kit/blob/831c9107b522baa8131e27c47d4cf04af5e54d93/docs/preview/pptify-kit-stress-demo-v2-contact-sheet.png"><code>docs/preview/pptify-kit-stress-demo-v2-contact-sheet.png</code></a></sub>
-
-<a id="gallery-vyral-tiktok-slideshow-skill"></a>
-
-#### [TikTok Slideshow Command Center](https://github.com/Meliwat/vyral-tiktok-slideshow-skill) · — ⭐ · 图片
-
-<sub>规划 TikTok 图文轮播:内容切角、单页设计与发布节奏一次成型。</sub>
-
-<sub>取自 [`Meliwat/vyral-tiktok-slideshow-skill`](https://github.com/Meliwat/vyral-tiktok-slideshow-skill) 的 6 张图，此处 6 张，靠前的几张是项目自己放在 README 里的</sub>
-
-<sub><b>下面出现的风格</b> `slide-1` · `slide-3` · `slide-5` · `command-center` · `renders` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
-
-<img src="https://raw.githubusercontent.com/Meliwat/vyral-tiktok-slideshow-skill/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-01.jpg" width="100%" alt="Slide 1">
-
-<sub><b>Slide 1</b> · <a href="https://github.com/Meliwat/vyral-tiktok-slideshow-skill/blob/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-01.jpg"><code>skill/examples/renders/slide-01.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/Meliwat/vyral-tiktok-slideshow-skill/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-03.jpg" width="100%" alt="Slide 3">
-
-<sub><b>Slide 3</b> · <a href="https://github.com/Meliwat/vyral-tiktok-slideshow-skill/blob/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-03.jpg"><code>skill/examples/renders/slide-03.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/Meliwat/vyral-tiktok-slideshow-skill/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-05.jpg" width="100%" alt="Slide 5">
-
-<sub><b>Slide 5</b> · <a href="https://github.com/Meliwat/vyral-tiktok-slideshow-skill/blob/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-05.jpg"><code>skill/examples/renders/slide-05.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/Meliwat/vyral-tiktok-slideshow-skill/f22e11a960c06d706cacbccccf5ff20985e70b9d/docs/command-center.png" width="100%" alt="The Command Center planning board">
-
-<sub><b>The Command Center planning board</b> · <a href="https://github.com/Meliwat/vyral-tiktok-slideshow-skill/blob/f22e11a960c06d706cacbccccf5ff20985e70b9d/docs/command-center.png"><code>docs/command-center.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/Meliwat/vyral-tiktok-slideshow-skill/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-02.jpg" width="100%" alt="TikTok Slideshow Command Center sample">
-
-<sub><b>Renders</b> · <a href="https://github.com/Meliwat/vyral-tiktok-slideshow-skill/blob/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-02.jpg"><code>skill/examples/renders/slide-02.jpg</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/Meliwat/vyral-tiktok-slideshow-skill/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-04.jpg" width="100%" alt="TikTok Slideshow Command Center sample">
-
-<sub><b>Renders</b> · <a href="https://github.com/Meliwat/vyral-tiktok-slideshow-skill/blob/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-04.jpg"><code>skill/examples/renders/slide-04.jpg</code></a></sub>
-
-<a id="gallery-ppt-deck-builder-skill"></a>
-
-#### [PPT Deck Builder Skill](https://github.com/lk251066/ppt-deck-builder-skill) · — ⭐ · 图片
-
-<sub>逐页生成成品图,只返修出问题的单页,最后统一打包成 PPTX。</sub>
-
-<sub>取自 [`lk251066/ppt-deck-builder-skill`](https://github.com/lk251066/ppt-deck-builder-skill) 的 4 张图，此处 4 张，靠前的几张是项目自己放在 README 里的</sub>
-
-<sub><b>下面出现的风格</b> `slide-01` · `slide-04` · `slide-06` · `slide-08` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
-
-<img src="https://raw.githubusercontent.com/lk251066/ppt-deck-builder-skill/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-01.png" width="100%" alt="slide-01">
-
-<sub><b>slide-01</b> · <a href="https://github.com/lk251066/ppt-deck-builder-skill/blob/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-01.png"><code>examples/grsai_ai_science_deck_micro_modules/slide-01.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/lk251066/ppt-deck-builder-skill/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-04.png" width="100%" alt="slide-04">
-
-<sub><b>slide-04</b> · <a href="https://github.com/lk251066/ppt-deck-builder-skill/blob/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-04.png"><code>examples/grsai_ai_science_deck_micro_modules/slide-04.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/lk251066/ppt-deck-builder-skill/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-06.png" width="100%" alt="slide-06">
-
-<sub><b>slide-06</b> · <a href="https://github.com/lk251066/ppt-deck-builder-skill/blob/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-06.png"><code>examples/grsai_ai_science_deck_micro_modules/slide-06.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/lk251066/ppt-deck-builder-skill/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-08.png" width="100%" alt="slide-08">
-
-<sub><b>slide-08</b> · <a href="https://github.com/lk251066/ppt-deck-builder-skill/blob/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-08.png"><code>examples/grsai_ai_science_deck_micro_modules/slide-08.png</code></a></sub>
-
 <a id="gallery-kr-brand-decks"></a>
 
-#### [KR Brand Decks](https://github.com/sylvanus4/kr-brand-decks) · — ⭐ · 模板库
+#### [KR Brand Decks](https://github.com/sylvanus4/kr-brand-decks) · 5 ⭐ · 模板库
 
 <sub>23 个 skill,每个对应一家韩国企业品牌,从零构建符合该品牌规范的 PPTX。</sub>
 
@@ -2904,9 +2194,719 @@ git clone https://github.com/zjsthmjialin/inspiration-deck-workshop && node tool
 
 <sub><b>Sk Hynix</b> · 封面 · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-sk-hynix/examples/sk-hynix-cover.png"><code>skills/deck-sk-hynix/examples/sk-hynix-cover.png</code></a></sub>
 
+<a id="gallery-3d-html-slide-skill"></a>
+
+#### [3D HTML Slide Skill](https://github.com/yoshifujidesign/3d-html-slide-skill) · 3 ⭐ · HTML
+
+<sub>Claude Code 技能:一键生成带 Three.js 线框背景的单文件 HTML 演示幻灯片。</sub>
+
+<sub>取自 [`yoshifujidesign/3d-html-slide-skill`](https://github.com/yoshifujidesign/3d-html-slide-skill) 的 2 张图，此处 2 张，靠前的几张是项目自己放在 README 里的</sub>
+
+
+<img src="https://github.com/user-attachments/assets/7d150a1c-73ee-429a-8315-8be2650ebe11" width="100%" alt="WS002985">
+
+<sub><b>WS002985</b> · GitHub 附件图</sub>
+
+<img src="https://github.com/user-attachments/assets/1e3be001-6598-40b8-bf9f-da10e7d77f5d" width="100%" alt="EP133-2_2">
+
+<sub><b>EP133-2_2</b> · GitHub 附件图</sub>
+
+<a id="gallery-image-to-editable-ppt-skill-zhoujie97"></a>
+
+#### [Image to Editable PPT Skill (zhoujie97)](https://github.com/zhoujie97/image-to-editable-ppt-skill) · 3 ⭐ · PPTX
+
+<sub>把截图与信息图重建为可编辑的 PowerPoint 文本框、原生形状与 SVG 图标。</sub>
+
+<sub>取自 [`zhoujie97/image-to-editable-ppt-skill`](https://github.com/zhoujie97/image-to-editable-ppt-skill) 的 4 张图，此处 4 张，靠前的几张是项目自己放在 README 里的</sub>
+
+<sub><b>下面出现的风格</b> `效果图1` · `效果图2` · `原图2` · `原图1` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
+
+<img src="https://raw.githubusercontent.com/zhoujie97/image-to-editable-ppt-skill/e3c39d907ec6abf5266e4491c6aa001b663b9207/%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%95%88%E6%9E%9C%E5%9B%BE1.png" width="100%" alt="alt text">
+
+<sub><b>alt text</b> · <code>效果图1</code> · <a href="https://github.com/zhoujie97/image-to-editable-ppt-skill/blob/e3c39d907ec6abf5266e4491c6aa001b663b9207/效果图/效果图1.png"><code>效果图/效果图1.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zhoujie97/image-to-editable-ppt-skill/e3c39d907ec6abf5266e4491c6aa001b663b9207/%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%95%88%E6%9E%9C%E5%9B%BE2.png" width="100%" alt="alt text">
+
+<sub><b>alt text</b> · <code>效果图2</code> · <a href="https://github.com/zhoujie97/image-to-editable-ppt-skill/blob/e3c39d907ec6abf5266e4491c6aa001b663b9207/效果图/效果图2.png"><code>效果图/效果图2.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zhoujie97/image-to-editable-ppt-skill/e3c39d907ec6abf5266e4491c6aa001b663b9207/%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%8E%9F%E5%9B%BE2.png" width="100%" alt="alt text">
+
+<sub><b>alt text</b> · <code>原图2</code> · <a href="https://github.com/zhoujie97/image-to-editable-ppt-skill/blob/e3c39d907ec6abf5266e4491c6aa001b663b9207/效果图/原图2.png"><code>效果图/原图2.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zhoujie97/image-to-editable-ppt-skill/e3c39d907ec6abf5266e4491c6aa001b663b9207/%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%8E%9F%E5%9B%BE1.jpg" width="100%" alt="alt text">
+
+<sub><b>alt text</b> · <code>原图1</code> · <a href="https://github.com/zhoujie97/image-to-editable-ppt-skill/blob/e3c39d907ec6abf5266e4491c6aa001b663b9207/效果图/原图1.jpg"><code>效果图/原图1.jpg</code></a></sub>
+
+<a id="gallery-cuhk-slides-template-html"></a>
+
+#### [CUHK Slides Template (HTML)](https://github.com/HarlandZZC/cuhk-slides-template-html) · 3 ⭐ · 模板库
+
+<sub>一份自包含的港中大配色 HTML 幻灯片模板,附带 Markdown 转幻灯片的 skill。</sub>
+
+<sub>取自 [`HarlandZZC/cuhk-slides-template-html`](https://github.com/HarlandZZC/cuhk-slides-template-html) 的 2 张图，此处 2 张，靠前的几张是项目自己放在 README 里的</sub>
+
+```bash
+git clone https://github.com/HarlandZZC/cuhk-slides-template-html && cp -r skills/md-to-cuhk-slides .claude/skills/
+```
+
+<sub><b>下面出现的风格</b> `title` · `your-figure` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
+
+<img src="https://raw.githubusercontent.com/HarlandZZC/cuhk-slides-template-html/ee6ed50a5136d98c1fb06d48ee7112e3a45714d5/docs/screenshots/title.png" width="100%" alt="Title slide preview">
+
+<sub><b>Title slide preview</b> · <a href="https://github.com/HarlandZZC/cuhk-slides-template-html/blob/ee6ed50a5136d98c1fb06d48ee7112e3a45714d5/docs/screenshots/title.png"><code>docs/screenshots/title.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/HarlandZZC/cuhk-slides-template-html/ee6ed50a5136d98c1fb06d48ee7112e3a45714d5/your-figure.png" width="100%" alt="CUHK Slides Template (HTML) sample">
+
+<sub><b>Your Figure</b> · <a href="https://github.com/HarlandZZC/cuhk-slides-template-html/blob/ee6ed50a5136d98c1fb06d48ee7112e3a45714d5/your-figure.png"><code>your-figure.png</code></a></sub>
+
+<a id="gallery-taohtml"></a>
+
+#### [TaoHtml](https://github.com/TaoGEO/TaoHtml) · 3 ⭐ · HTML
+
+<sub>把已有的 Word、PDF 或 PPT 重新设计成带分步动效、可离线交付的 16:9 HTML 演示文稿。</sub>
+
+<sub>取自 [`TaoGEO/TaoHtml`](https://github.com/TaoGEO/TaoHtml) 的 12 张图，此处 12 张，靠前的几张是项目自己放在 README 里的</sub>
+
+<sub><b>下面出现的风格</b> `reference-style-reconstruction` · `corporate-template-fidelity` · `built-in-visual-systems` · `reference-vi-board` · `corporate-family` · `01-ai-search-mechanism` · `02-geo-four-keywords` · `03-recall-process` · `04-retest-report` · `corporate-template-reference` · `corporate-family-section` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/readme/v0.3.0/reference-style-reconstruction.png" width="100%" alt="参考风格重构 VI 设计标准图">
+
+<sub><b>参考风格重构 VI 设计标准图</b> · <code>reference-style-reconstruction</code> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/readme/v0.3.0/reference-style-reconstruction.png"><code>docs/assets/readme/v0.3.0/reference-style-reconstruction.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/readme/v0.3.0/corporate-template-fidelity.png" width="100%" alt="企业模板保真五页合成样例">
+
+<sub><b>企业模板保真五页合成样例</b> · <code>corporate-template-fidelity</code> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/readme/v0.3.0/corporate-template-fidelity.png"><code>docs/assets/readme/v0.3.0/corporate-template-fidelity.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/readme/v0.3.0/built-in-visual-systems.png" width="100%" alt="TaoHtml 四套内置视觉系统各五页总览">
+
+<sub><b>TaoHtml 四套内置视觉系统各五页总览</b> · <code>built-in-visual-systems</code> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/readme/v0.3.0/built-in-visual-systems.png"><code>docs/assets/readme/v0.3.0/built-in-visual-systems.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/examples/corporate-template-fidelity/reference-vi-board.png" width="100%" alt="TaoHtml sample">
+
+<sub><b>Reference Vi Board</b> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/examples/corporate-template-fidelity/reference-vi-board.png"><code>examples/corporate-template-fidelity/reference-vi-board.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-family-cover.png" width="100%" alt="TaoHtml sample">
+
+<sub><b>Corporate Family</b> · 封面 · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-family-cover.png"><code>tests/fixtures/corporate-family-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/01-ai-search-mechanism.png" width="100%" alt="TaoHtml sample">
+
+<sub><b>01 Ai Search Mechanism</b> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/01-ai-search-mechanism.png"><code>docs/assets/cases/geo-salon/01-ai-search-mechanism.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/02-geo-four-keywords.png" width="100%" alt="TaoHtml sample">
+
+<sub><b>02 Geo Four Keywords</b> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/02-geo-four-keywords.png"><code>docs/assets/cases/geo-salon/02-geo-four-keywords.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/03-recall-process.png" width="100%" alt="TaoHtml sample">
+
+<sub><b>03 Recall Process</b> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/03-recall-process.png"><code>docs/assets/cases/geo-salon/03-recall-process.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/04-retest-report.png" width="100%" alt="TaoHtml sample">
+
+<sub><b>04 Retest Report</b> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/04-retest-report.png"><code>docs/assets/cases/geo-salon/04-retest-report.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-template-reference.png" width="100%" alt="TaoHtml sample">
+
+<sub><b>Corporate Template Reference</b> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-template-reference.png"><code>tests/fixtures/corporate-template-reference.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-family-section.png" width="100%" alt="TaoHtml sample">
+
+<sub><b>Corporate Family Section</b> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-family-section.png"><code>tests/fixtures/corporate-family-section.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-family-toc.png" width="100%" alt="TaoHtml sample">
+
+<sub><b>Corporate Family</b> · 目录页 · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-family-toc.png"><code>tests/fixtures/corporate-family-toc.png</code></a></sub>
+
+<a id="gallery-pptwork"></a>
+
+#### [PPTWork](https://github.com/JunfengRan/PPTWork) · 2 ⭐ · PPTX
+
+<sub>两个 Anthropic 风格技能:从 HTML 规划、写作并导出 PowerPoint 演示文稿。</sub>
+
+<sub>取自 [`JunfengRan/PPTWork`](https://github.com/JunfengRan/PPTWork) 的 28 张图，此处 24 张，靠前的几张是项目自己放在 README 里的</sub>
+
+```bash
+git clone https://github.com/JunfengRan/PPTWork && cd PPTWork/ppt && npm install
+```
+
+<sub><b>下面出现的风格</b> `showcase` · `showcase-bento` · `showcase-kpi` · `showcase-two-col` · `showcase-export` · `thumbnail` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-cover.png" width="100%" alt="PPTWork capabilities cover slide">
+
+<sub><b>PPTWork capabilities cover slide</b> · <code>showcase</code> · 封面 · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-cover.png"><code>examples/showcase/showcase-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-bento.png" width="100%" alt="Two skills bento layout">
+
+<sub><b>Two skills bento layout</b> · <code>showcase-bento</code> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-bento.png"><code>examples/showcase/showcase-bento.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-kpi.png" width="100%" alt="AI agent market KPI row">
+
+<sub><b>AI agent market KPI row</b> · <code>showcase-kpi</code> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-kpi.png"><code>examples/showcase/showcase-kpi.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-two-col.png" width="100%" alt="Competitive landscape two-column slide">
+
+<sub><b>Competitive landscape two-column slide</b> · <code>showcase-two-col</code> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-two-col.png"><code>examples/showcase/showcase-two-col.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-export.png" width="100%" alt="Four-step CLI workflow">
+
+<sub><b>Four-step CLI workflow</b> · <code>showcase-export</code> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/showcase/showcase-export.png"><code>examples/showcase/showcase-export.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/closing/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/closing/thumbnail.png"><code>examples/ai-agent-landscape-2026/closing/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/cover/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/cover/thumbnail.png"><code>examples/ai-agent-landscape-2026/cover/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/landscape/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/landscape/thumbnail.png"><code>examples/ai-agent-landscape-2026/landscape/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/market-size/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/market-size/thumbnail.png"><code>examples/ai-agent-landscape-2026/market-size/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/problem/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/problem/thumbnail.png"><code>examples/ai-agent-landscape-2026/problem/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/roadmap/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/roadmap/thumbnail.png"><code>examples/ai-agent-landscape-2026/roadmap/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/tech-trends/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/ai-agent-landscape-2026/tech-trends/thumbnail.png"><code>examples/ai-agent-landscape-2026/tech-trends/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p01-cover/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p01-cover/thumbnail.png"><code>examples/pptwork-capabilities/p01-cover/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p03-bento/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p03-bento/thumbnail.png"><code>examples/pptwork-capabilities/p03-bento/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p04-metrics/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p04-metrics/thumbnail.png"><code>examples/pptwork-capabilities/p04-metrics/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p06-workflow/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p06-workflow/thumbnail.png"><code>examples/pptwork-capabilities/p06-workflow/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p07-philosophy/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p07-philosophy/thumbnail.png"><code>examples/pptwork-capabilities/p07-philosophy/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p08-closing/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/examples/pptwork-capabilities/p08-closing/thumbnail.png"><code>examples/pptwork-capabilities/p08-closing/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/bento-asymmetric/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/bento-asymmetric/thumbnail.png"><code>ppt/assets/claude-warm/_preview/bento-asymmetric/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/cover-editorial/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/cover-editorial/thumbnail.png"><code>ppt/assets/claude-warm/_preview/cover-editorial/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/flow-timeline/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/flow-timeline/thumbnail.png"><code>ppt/assets/claude-warm/_preview/flow-timeline/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/quote-highlight/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/quote-highlight/thumbnail.png"><code>ppt/assets/claude-warm/_preview/quote-highlight/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/section-divider/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/claude-warm/_preview/section-divider/thumbnail.png"><code>ppt/assets/claude-warm/_preview/section-divider/thumbnail.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/JunfengRan/PPTWork/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/corporate-light/_preview/agenda-grid/thumbnail.png" width="100%" alt="PPTWork sample">
+
+<sub><b>Thumbnail</b> · <a href="https://github.com/JunfengRan/PPTWork/blob/c538d921935f96e4f7706af9370f61198b34c5da/ppt/assets/corporate-light/_preview/agenda-grid/thumbnail.png"><code>ppt/assets/corporate-light/_preview/agenda-grid/thumbnail.png</code></a></sub>
+
+<a id="gallery-vyral-tiktok-slideshow-skill"></a>
+
+#### [TikTok Slideshow Command Center](https://github.com/Meliwat/vyral-tiktok-slideshow-skill) · 2 ⭐ · 图片
+
+<sub>规划 TikTok 图文轮播:内容切角、单页设计与发布节奏一次成型。</sub>
+
+<sub>取自 [`Meliwat/vyral-tiktok-slideshow-skill`](https://github.com/Meliwat/vyral-tiktok-slideshow-skill) 的 6 张图，此处 6 张，靠前的几张是项目自己放在 README 里的</sub>
+
+<sub><b>下面出现的风格</b> `slide-1` · `slide-3` · `slide-5` · `command-center` · `renders` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
+
+<img src="https://raw.githubusercontent.com/Meliwat/vyral-tiktok-slideshow-skill/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-01.jpg" width="100%" alt="Slide 1">
+
+<sub><b>Slide 1</b> · <a href="https://github.com/Meliwat/vyral-tiktok-slideshow-skill/blob/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-01.jpg"><code>skill/examples/renders/slide-01.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/Meliwat/vyral-tiktok-slideshow-skill/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-03.jpg" width="100%" alt="Slide 3">
+
+<sub><b>Slide 3</b> · <a href="https://github.com/Meliwat/vyral-tiktok-slideshow-skill/blob/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-03.jpg"><code>skill/examples/renders/slide-03.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/Meliwat/vyral-tiktok-slideshow-skill/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-05.jpg" width="100%" alt="Slide 5">
+
+<sub><b>Slide 5</b> · <a href="https://github.com/Meliwat/vyral-tiktok-slideshow-skill/blob/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-05.jpg"><code>skill/examples/renders/slide-05.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/Meliwat/vyral-tiktok-slideshow-skill/f22e11a960c06d706cacbccccf5ff20985e70b9d/docs/command-center.png" width="100%" alt="The Command Center planning board">
+
+<sub><b>The Command Center planning board</b> · <a href="https://github.com/Meliwat/vyral-tiktok-slideshow-skill/blob/f22e11a960c06d706cacbccccf5ff20985e70b9d/docs/command-center.png"><code>docs/command-center.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/Meliwat/vyral-tiktok-slideshow-skill/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-02.jpg" width="100%" alt="TikTok Slideshow Command Center sample">
+
+<sub><b>Renders</b> · <a href="https://github.com/Meliwat/vyral-tiktok-slideshow-skill/blob/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-02.jpg"><code>skill/examples/renders/slide-02.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/Meliwat/vyral-tiktok-slideshow-skill/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-04.jpg" width="100%" alt="TikTok Slideshow Command Center sample">
+
+<sub><b>Renders</b> · <a href="https://github.com/Meliwat/vyral-tiktok-slideshow-skill/blob/f22e11a960c06d706cacbccccf5ff20985e70b9d/skill/examples/renders/slide-04.jpg"><code>skill/examples/renders/slide-04.jpg</code></a></sub>
+
+<a id="gallery-university-ppt-skill"></a>
+
+#### [University PPT Skill](https://github.com/SiyuQiannn/university-ppt-skill) · 1 ⭐ · 模板库
+
+<sub>以校色 token 与可复用版式库生成可编辑的高校主题 PPTX 演示文稿。</sub>
+
+<sub>取自 [`SiyuQiannn/university-ppt-skill`](https://github.com/SiyuQiannn/university-ppt-skill) 的 10 张图，此处 10 张，靠前的几张是项目自己放在 README 里的</sub>
+
+```bash
+git clone https://github.com/SiyuQiannn/university-ppt-skill
+```
+
+<sub><b>下面出现的风格</b> `contact-sheet` · `02-图文案例证据-源模板复刻` · `05-对比分析框架-源模板复刻` · `03-流程时间线阶段-源模板复刻` · `01-综合卡片要点-源模板复刻` · `06-数据图表表格-源模板复刻` · `08-循环网络关系-源模板复刻` · `spec-driven-demo-contact-sheet` · `04-层级金字塔框架-源模板复刻` · `10-图标素材库-源模板复刻` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/examples/preview_contact_sheet.png" width="100%" alt="Preview">
+
+<sub><b>Preview</b> · <code>contact-sheet</code> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/examples/preview_contact_sheet.png"><code>examples/preview_contact_sheet.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_02_%E5%9B%BE%E6%96%87%E6%A1%88%E4%BE%8B%E8%AF%81%E6%8D%AE_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>02 图文案例证据 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_02_图文案例证据_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_02_图文案例证据_源模板复刻.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_05_%E5%AF%B9%E6%AF%94%E5%88%86%E6%9E%90%E6%A1%86%E6%9E%B6_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>05 对比分析框架 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_05_对比分析框架_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_05_对比分析框架_源模板复刻.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_03_%E6%B5%81%E7%A8%8B%E6%97%B6%E9%97%B4%E7%BA%BF%E9%98%B6%E6%AE%B5_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>03 流程时间线阶段 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_03_流程时间线阶段_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_03_流程时间线阶段_源模板复刻.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_01_%E7%BB%BC%E5%90%88%E5%8D%A1%E7%89%87%E8%A6%81%E7%82%B9_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>01 综合卡片要点 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_01_综合卡片要点_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_01_综合卡片要点_源模板复刻.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_06_%E6%95%B0%E6%8D%AE%E5%9B%BE%E8%A1%A8%E8%A1%A8%E6%A0%BC_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>06 数据图表表格 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_06_数据图表表格_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_06_数据图表表格_源模板复刻.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_08_%E5%BE%AA%E7%8E%AF%E7%BD%91%E7%BB%9C%E5%85%B3%E7%B3%BB_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>08 循环网络关系 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_08_循环网络关系_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_08_循环网络关系_源模板复刻.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/examples/spec_driven_demo_contact_sheet.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>Spec Driven Demo Contact Sheet</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/examples/spec_driven_demo_contact_sheet.png"><code>examples/spec_driven_demo_contact_sheet.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_04_%E5%B1%82%E7%BA%A7%E9%87%91%E5%AD%97%E5%A1%94%E6%A1%86%E6%9E%B6_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>04 层级金字塔框架 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_04_层级金字塔框架_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_04_层级金字塔框架_源模板复刻.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/SiyuQiannn/university-ppt-skill/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_10_%E5%9B%BE%E6%A0%87%E7%B4%A0%E6%9D%90%E5%BA%93_%E6%BA%90%E6%A8%A1%E6%9D%BF%E5%A4%8D%E5%88%BB.png" width="100%" alt="University PPT Skill sample">
+
+<sub><b>10 图标素材库 源模板复刻</b> · <a href="https://github.com/SiyuQiannn/university-ppt-skill/blob/0bcbaf2b4f332850ca929c990e00e03771a7349b/skill/university-ppt/assets/content-layouts/ruc_core/preview_10_图标素材库_源模板复刻.png"><code>skill/university-ppt/assets/content-layouts/ruc_core/preview_10_图标素材库_源模板复刻.png</code></a></sub>
+
+<a id="gallery-claude-ppt-skills"></a>
+
+#### [Claude PPT Skills](https://github.com/sunxiaohui2025/claude-ppt-skills) · 1 ⭐ · HTML
+
+<sub>生成六种风格的单文件 HTML 横向翻页 PPT,支持网页在线编辑与缩略图总览。</sub>
+
+<sub>取自 [`sunxiaohui2025/claude-ppt-skills`](https://github.com/sunxiaohui2025/claude-ppt-skills) 的 3 张图，此处 3 张，靠前的几张是项目自己放在 README 里的</sub>
+
+
+<img src="https://github.com/user-attachments/assets/d8742e1d-0fc1-4930-ac9a-6cc783fd47cd" width="100%" alt="截屏2026-05-28 15 23 36">
+
+<sub><b>截屏2026-05-28 15 23 36</b> · GitHub 附件图</sub>
+
+<img src="https://github.com/user-attachments/assets/df1b2e93-14b7-49ac-b0e9-0d99e630d382" width="100%" alt="image">
+
+<sub><b>image</b> · GitHub 附件图</sub>
+
+<img src="https://github.com/user-attachments/assets/da11e54a-f568-4204-9146-35f7acc57f5a" width="100%" alt="image">
+
+<sub><b>image</b> · GitHub 附件图</sub>
+
+<a id="gallery-course-html-slides-skill"></a>
+
+#### [Course HTML Slides Builder](https://github.com/HelenSong/course-html-slides-skill) · 1 ⭐ · HTML
+
+<sub>把课程大纲转成多页 HTML 幻灯片,面向课堂投影与互动工作坊设计。</sub>
+
+<sub>取自 [`HelenSong/course-html-slides-skill`](https://github.com/HelenSong/course-html-slides-skill) 的 9 张图，此处 9 张，靠前的几张是项目自己放在 README 里的</sub>
+
+<sub><b>下面出现的风格</b> `collage` · `p01` · `p02-hook` · `p03-driving-question` · `p04-project-intro` · `p06-role-guide` · `p08-writing-guide` · `p11-practice` · `p12-share` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
+
+<img src="https://raw.githubusercontent.com/HelenSong/course-html-slides-skill/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/collage.png" width="100%" alt="Slide Collage">
+
+<sub><b>Slide Collage</b> · <a href="https://github.com/HelenSong/course-html-slides-skill/blob/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/collage.png"><code>docs/collage.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/HelenSong/course-html-slides-skill/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p01-cover.png" width="100%" alt="Course HTML Slides Builder sample">
+
+<sub><b>P01</b> · 封面 · <a href="https://github.com/HelenSong/course-html-slides-skill/blob/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p01-cover.png"><code>docs/screenshots/p01-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/HelenSong/course-html-slides-skill/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p02-hook.png" width="100%" alt="Course HTML Slides Builder sample">
+
+<sub><b>P02 Hook</b> · <a href="https://github.com/HelenSong/course-html-slides-skill/blob/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p02-hook.png"><code>docs/screenshots/p02-hook.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/HelenSong/course-html-slides-skill/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p03-driving-question.png" width="100%" alt="Course HTML Slides Builder sample">
+
+<sub><b>P03 Driving Question</b> · <a href="https://github.com/HelenSong/course-html-slides-skill/blob/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p03-driving-question.png"><code>docs/screenshots/p03-driving-question.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/HelenSong/course-html-slides-skill/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p04-project-intro.png" width="100%" alt="Course HTML Slides Builder sample">
+
+<sub><b>P04 Project Intro</b> · <a href="https://github.com/HelenSong/course-html-slides-skill/blob/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p04-project-intro.png"><code>docs/screenshots/p04-project-intro.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/HelenSong/course-html-slides-skill/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p06-role-guide.png" width="100%" alt="Course HTML Slides Builder sample">
+
+<sub><b>P06 Role Guide</b> · <a href="https://github.com/HelenSong/course-html-slides-skill/blob/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p06-role-guide.png"><code>docs/screenshots/p06-role-guide.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/HelenSong/course-html-slides-skill/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p08-writing-guide.png" width="100%" alt="Course HTML Slides Builder sample">
+
+<sub><b>P08 Writing Guide</b> · <a href="https://github.com/HelenSong/course-html-slides-skill/blob/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p08-writing-guide.png"><code>docs/screenshots/p08-writing-guide.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/HelenSong/course-html-slides-skill/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p11-practice.png" width="100%" alt="Course HTML Slides Builder sample">
+
+<sub><b>P11 Practice</b> · <a href="https://github.com/HelenSong/course-html-slides-skill/blob/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p11-practice.png"><code>docs/screenshots/p11-practice.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/HelenSong/course-html-slides-skill/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p12-share.png" width="100%" alt="Course HTML Slides Builder sample">
+
+<sub><b>P12 Share</b> · <a href="https://github.com/HelenSong/course-html-slides-skill/blob/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p12-share.png"><code>docs/screenshots/p12-share.png</code></a></sub>
+
+<a id="gallery-inspiration-deck-workshop"></a>
+
+#### [Inspiration Deck Workshop](https://github.com/zjsthmjialin/inspiration-deck-workshop) · 1 ⭐ · 模板库
+
+<sub>23 套主题与 25 种页面版式,用一个小 CLI 生成带动效的静态 HTML 演示。</sub>
+
+<sub>取自 [`zjsthmjialin/inspiration-deck-workshop`](https://github.com/zjsthmjialin/inspiration-deck-workshop) 的 23 张图，此处 23 张，靠前的几张是项目自己放在 README 里的</sub>
+
+```bash
+git clone https://github.com/zjsthmjialin/inspiration-deck-workshop && node tools/cli.mjs new my-deck --template product-launch
+```
+
+<sub><b>下面出现的风格</b> `18-black-gold-stage` · `19-platinum-launch` · `21-signal-dashboard` · `23-vivid-pop` · `00-all-themes-contact-sheet` · `01-clear-board` · `02-mist-blue` · `03-data-brief` · `04-deep-code` · `05-terminal-signal` · `06-blueprint-grid` · `07-soft-card` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/18-black-gold-stage.png" width="100%" alt="Black Gold Stage">
+
+<sub><b>Black Gold Stage</b> · <code>18-black-gold-stage</code> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/18-black-gold-stage.png"><code>docs/assets/theme-showcase/18-black-gold-stage.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/19-platinum-launch.png" width="100%" alt="Platinum Launch">
+
+<sub><b>Platinum Launch</b> · <code>19-platinum-launch</code> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/19-platinum-launch.png"><code>docs/assets/theme-showcase/19-platinum-launch.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/21-signal-dashboard.png" width="100%" alt="Signal Dashboard">
+
+<sub><b>Signal Dashboard</b> · <code>21-signal-dashboard</code> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/21-signal-dashboard.png"><code>docs/assets/theme-showcase/21-signal-dashboard.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/23-vivid-pop.png" width="100%" alt="Vivid Pop">
+
+<sub><b>Vivid Pop</b> · <code>23-vivid-pop</code> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/23-vivid-pop.png"><code>docs/assets/theme-showcase/23-vivid-pop.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/00-all-themes-contact-sheet.png" width="100%" alt="All theme preview">
+
+<sub><b>All theme preview</b> · <code>00-all-themes-contact-sheet</code> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/00-all-themes-contact-sheet.png"><code>docs/assets/theme-showcase/00-all-themes-contact-sheet.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/01-clear-board.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>01 Clear Board</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/01-clear-board.png"><code>docs/assets/theme-showcase/01-clear-board.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/02-mist-blue.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>02 Mist Blue</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/02-mist-blue.png"><code>docs/assets/theme-showcase/02-mist-blue.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/03-data-brief.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>03 Data Brief</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/03-data-brief.png"><code>docs/assets/theme-showcase/03-data-brief.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/04-deep-code.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>04 Deep Code</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/04-deep-code.png"><code>docs/assets/theme-showcase/04-deep-code.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/05-terminal-signal.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>05 Terminal Signal</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/05-terminal-signal.png"><code>docs/assets/theme-showcase/05-terminal-signal.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/06-blueprint-grid.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>06 Blueprint Grid</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/06-blueprint-grid.png"><code>docs/assets/theme-showcase/06-blueprint-grid.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/07-soft-card.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>07 Soft Card</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/07-soft-card.png"><code>docs/assets/theme-showcase/07-soft-card.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/08-editorial-space.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>08 Editorial Space</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/08-editorial-space.png"><code>docs/assets/theme-showcase/08-editorial-space.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/09-journal-spark.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>09 Journal Spark</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/09-journal-spark.png"><code>docs/assets/theme-showcase/09-journal-spark.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/11-glass-light.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>11 Glass Light</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/11-glass-light.png"><code>docs/assets/theme-showcase/11-glass-light.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/12-brand-pop.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>12 Brand Pop</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/12-brand-pop.png"><code>docs/assets/theme-showcase/12-brand-pop.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/13-paper-research.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>13 Paper Research</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/13-paper-research.png"><code>docs/assets/theme-showcase/13-paper-research.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/14-consulting-pro.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>14 Consulting Pro</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/14-consulting-pro.png"><code>docs/assets/theme-showcase/14-consulting-pro.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/15-minimal-stage.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>15 Minimal Stage</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/15-minimal-stage.png"><code>docs/assets/theme-showcase/15-minimal-stage.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/16-neon-orbit.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>16 Neon Orbit</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/16-neon-orbit.png"><code>docs/assets/theme-showcase/16-neon-orbit.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/17-quantum-grid.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>17 Quantum Grid</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/17-quantum-grid.png"><code>docs/assets/theme-showcase/17-quantum-grid.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/20-executive-ink.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>20 Executive Ink</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/20-executive-ink.png"><code>docs/assets/theme-showcase/20-executive-ink.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/zjsthmjialin/inspiration-deck-workshop/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/22-editorial-luxe.png" width="100%" alt="Inspiration Deck Workshop sample">
+
+<sub><b>22 Editorial Luxe</b> · <a href="https://github.com/zjsthmjialin/inspiration-deck-workshop/blob/2c13fdf624b35b11b657d41273ec1a7930786643/docs/assets/theme-showcase/22-editorial-luxe.png"><code>docs/assets/theme-showcase/22-editorial-luxe.png</code></a></sub>
+
+<a id="gallery-agent-pptify-kit"></a>
+
+#### [PPTX Deck Creation Kit](https://github.com/kimtth/agent-pptify-kit) · 1 ⭐ · PPTX
+
+<sub>以显式坐标规格生成 PPTX,输出保持原生对象,并以 Copilot 插件形式分发。</sub>
+
+<sub>取自 [`kimtth/agent-pptify-kit`](https://github.com/kimtth/agent-pptify-kit) 的 3 张图，此处 3 张，靠前的几张是项目自己放在 README 里的</sub>
+
+<sub><b>下面出现的风格</b> `pptify-kit-stress-demo-contact-sheet` · `pptify-kit-stress-demo-v3-contact-sheet` · `pptify-kit-stress-demo-v2-contact-sheet` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
+
+<img src="https://raw.githubusercontent.com/kimtth/agent-pptify-kit/831c9107b522baa8131e27c47d4cf04af5e54d93/docs/preview/pptify-kit-stress-demo-contact-sheet.png" width="100%" alt="Contact sheet of all 81 layouts in pptify-kit-stress-demo.pptx">
+
+<sub><b>Contact sheet of all 81 layouts in pptify-kit-stress-demo.pptx</b> · <code>pptify-kit-stress-demo-contact-sheet</code> · <a href="https://github.com/kimtth/agent-pptify-kit/blob/831c9107b522baa8131e27c47d4cf04af5e54d93/docs/preview/pptify-kit-stress-demo-contact-sheet.png"><code>docs/preview/pptify-kit-stress-demo-contact-sheet.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/kimtth/agent-pptify-kit/831c9107b522baa8131e27c47d4cf04af5e54d93/docs/preview/pptify-kit-stress-demo-v3-contact-sheet.png" width="100%" alt="Contact sheet of all 60 layouts in pptify-kit-stress-demo-v3.pptx">
+
+<sub><b>Contact sheet of all 60 layouts in pptify-kit-stress-demo-v3.pptx</b> · <code>pptify-kit-stress-demo-v3-contact-sheet</code> · <a href="https://github.com/kimtth/agent-pptify-kit/blob/831c9107b522baa8131e27c47d4cf04af5e54d93/docs/preview/pptify-kit-stress-demo-v3-contact-sheet.png"><code>docs/preview/pptify-kit-stress-demo-v3-contact-sheet.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/kimtth/agent-pptify-kit/831c9107b522baa8131e27c47d4cf04af5e54d93/docs/preview/pptify-kit-stress-demo-v2-contact-sheet.png" width="100%" alt="Contact sheet of all 50 layouts in pptify-kit-stress-demo-v2.pptx">
+
+<sub><b>Contact sheet of all 50 layouts in pptify-kit-stress-demo-v2.pptx</b> · <code>pptify-kit-stress-demo-v2-contact-sheet</code> · <a href="https://github.com/kimtth/agent-pptify-kit/blob/831c9107b522baa8131e27c47d4cf04af5e54d93/docs/preview/pptify-kit-stress-demo-v2-contact-sheet.png"><code>docs/preview/pptify-kit-stress-demo-v2-contact-sheet.png</code></a></sub>
+
+<a id="gallery-ppt-deck-builder-skill"></a>
+
+#### [PPT Deck Builder Skill](https://github.com/lk251066/ppt-deck-builder-skill) · 1 ⭐ · 图片
+
+<sub>逐页生成成品图,只返修出问题的单页,最后统一打包成 PPTX。</sub>
+
+<sub>取自 [`lk251066/ppt-deck-builder-skill`](https://github.com/lk251066/ppt-deck-builder-skill) 的 4 张图，此处 4 张，靠前的几张是项目自己放在 README 里的</sub>
+
+<sub><b>下面出现的风格</b> `slide-01` · `slide-04` · `slide-06` · `slide-08` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
+
+<img src="https://raw.githubusercontent.com/lk251066/ppt-deck-builder-skill/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-01.png" width="100%" alt="slide-01">
+
+<sub><b>slide-01</b> · <a href="https://github.com/lk251066/ppt-deck-builder-skill/blob/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-01.png"><code>examples/grsai_ai_science_deck_micro_modules/slide-01.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/lk251066/ppt-deck-builder-skill/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-04.png" width="100%" alt="slide-04">
+
+<sub><b>slide-04</b> · <a href="https://github.com/lk251066/ppt-deck-builder-skill/blob/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-04.png"><code>examples/grsai_ai_science_deck_micro_modules/slide-04.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/lk251066/ppt-deck-builder-skill/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-06.png" width="100%" alt="slide-06">
+
+<sub><b>slide-06</b> · <a href="https://github.com/lk251066/ppt-deck-builder-skill/blob/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-06.png"><code>examples/grsai_ai_science_deck_micro_modules/slide-06.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/lk251066/ppt-deck-builder-skill/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-08.png" width="100%" alt="slide-08">
+
+<sub><b>slide-08</b> · <a href="https://github.com/lk251066/ppt-deck-builder-skill/blob/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-08.png"><code>examples/grsai_ai_science_deck_micro_modules/slide-08.png</code></a></sub>
+
+<a id="gallery-paper-deck-reveal"></a>
+
+#### [Paper Deck Reveal](https://github.com/O0000-code/paper-deck-reveal) · 0 ⭐ · 框架
+
+<sub>基于 reveal.js 的技能:把学术论文转为带交互演示的离线可投影幻灯片。</sub>
+
+<sub>取自 [`O0000-code/paper-deck-reveal`](https://github.com/O0000-code/paper-deck-reveal) 的 22 张图，此处 22 张，靠前的几张是项目自己放在 README 里的</sub>
+
+```bash
+git clone https://github.com/O0000-code/paper-deck-reveal && cd paper-deck-reveal
+```
+
+<sub><b>下面出现的风格</b> `hero` · `funnel` · `forest` · `interactive` · `speaker` · `presets` · `rstb20200390f02` · `rstb20200390f03` · `rstb20200390f06` · `rstb20200390f04` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/hero.png" width="100%" alt="Cover slide of a journal-club deck: a red hairline rule, a Chinese framing question set above the paper's English title ">
+
+<sub><b>Cover slide of a journal-club deck: a red hairline rule, a Chinese framing question set above the paper's Engl</b> · <code>hero</code> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/hero.png"><code>docs/screenshots/hero.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/funnel.png" width="100%" alt="Participant funnel slide: recruited N = 976 → excluded −59 → analysed N = 917">
+
+<sub><b>Participant funnel slide: recruited N = 976 → excluded −59 → analysed N = 917</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/funnel.png"><code>docs/screenshots/funnel.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/forest.png" width="100%" alt="Per-language results slide: the paper">
+
+<sub><b>Per-language results slide: the paper</b> · <code>forest</code> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/forest.png"><code>docs/screenshots/forest.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/interactive.png" width="100%" alt="Interactive slide: the participant">
+
+<sub><b>Interactive slide: the participant</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/interactive.png"><code>docs/screenshots/interactive.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/speaker.png" width="100%" alt="Speaker view: current slide, next slide, timers, and nested speaker notes">
+
+<sub><b>Speaker view: current slide, next slide, timers, and nested speaker notes</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/speaker.png"><code>docs/screenshots/speaker.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/presets.png" width="100%" alt="Eight accent presets applied to the same slide of the same deck">
+
+<sub><b>Eight accent presets applied to the same slide of the same deck</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/screenshots/presets.png"><code>docs/screenshots/presets.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f02.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f02</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f02.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f02.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f02.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f02</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f02.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/rstb20200390f02.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f03.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f03</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f03.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f03.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f03.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f03</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f03.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/rstb20200390f03.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f06.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f06</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f06.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f06.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f06.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f06</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f06.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/rstb20200390f06.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f04.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f04</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f04.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/provenance/rstb20200390f04.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f04.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f04</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/examples/cwiek-2022-bouba-kiki/figures/rstb20200390f04.jpg"><code>examples/cwiek-2022-bouba-kiki/figures/rstb20200390f04.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f02.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f02</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f02.jpg"><code>docs/figures/provenance/rstb20200390f02.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f02.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f02</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f02.jpg"><code>docs/figures/rstb20200390f02.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f03.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f03</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f03.jpg"><code>docs/figures/provenance/rstb20200390f03.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f03.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f03</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f03.jpg"><code>docs/figures/rstb20200390f03.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f06.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f06</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f06.jpg"><code>docs/figures/provenance/rstb20200390f06.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f06.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f06</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f06.jpg"><code>docs/figures/rstb20200390f06.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f04.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f04</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/provenance/rstb20200390f04.jpg"><code>docs/figures/provenance/rstb20200390f04.jpg</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/O0000-code/paper-deck-reveal/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f04.jpg" width="100%" alt="Paper Deck Reveal sample">
+
+<sub><b>Rstb20200390f04</b> · <a href="https://github.com/O0000-code/paper-deck-reveal/blob/9b1b779f0ffc31e5f5fb726ddc36b1c89a119a46/docs/figures/rstb20200390f04.jpg"><code>docs/figures/rstb20200390f04.jpg</code></a></sub>
+
+<a id="gallery-ghb-ppt-skill"></a>
+
+#### [GHB PPT Skill](https://github.com/NickyLam/GHB-PPT-Skill) · 0 ⭐ · PPTX
+
+<sub>基于企业模板输出 PPTX,SVG 转为可编辑 DrawingML,默认全离线验证。</sub>
+
+<sub>取自 [`NickyLam/GHB-PPT-Skill`](https://github.com/NickyLam/GHB-PPT-Skill) 的 1 张图，此处 1 张</sub>
+
+```bash
+python3 -m pip install -r requirements.txt && python3 scripts/ghb_ppt.py doctor
+```
+
+<sub><b>下面出现的风格</b> `showcase` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
+
+<img src="https://raw.githubusercontent.com/NickyLam/GHB-PPT-Skill/e7ae128cb7dd7380a27a7d4a1e852beeb6734091/assets/readme/showcase.png" width="100%" alt="GHB PPT Skill sample">
+
+<sub><b>Showcase</b> · <a href="https://github.com/NickyLam/GHB-PPT-Skill/blob/e7ae128cb7dd7380a27a7d4a1e852beeb6734091/assets/readme/showcase.png"><code>assets/readme/showcase.png</code></a></sub>
+
+<a id="gallery-google-slides-skill"></a>
+
+#### [Google Slides Deck Skill](https://github.com/eranw2000/google-slides-skill) · 0 ⭐ · 框架
+
+<sub>通过 API 重建 Google Slides 演示文稿,并把每页渲染成 PNG 回看以自查结果。</sub>
+
+<sub>取自 [`eranw2000/google-slides-skill`](https://github.com/eranw2000/google-slides-skill) 的 1 张图，此处 1 张，靠前的几张是项目自己放在 README 里的</sub>
+
+```bash
+cp -R google-slides-skill/enhance-slides ~/.claude/skills/
+```
+
+<sub><b>下面出现的风格</b> `enhance-slides-flow` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
+
+<img src="https://raw.githubusercontent.com/eranw2000/google-slides-skill/43127d4e79f963be2243e0369b779baf453eac28/docs/enhance-slides-flow.png" width="100%" alt="enhance-slides flow">
+
+<sub><b>enhance-slides flow</b> · <a href="https://github.com/eranw2000/google-slides-skill/blob/43127d4e79f963be2243e0369b779baf453eac28/docs/enhance-slides-flow.png"><code>docs/enhance-slides-flow.png</code></a></sub>
+
+<a id="gallery-html-presentation-skill"></a>
+
+#### [HTML Presentation Skill](https://github.com/defreitassl/html-presentation-skill) · 0 ⭐ · HTML
+
+<sub>把文档、笔记或简报转成独立的 HTML 演示页面,并对结果做校验。</sub>
+
+<sub>取自 [`defreitassl/html-presentation-skill`](https://github.com/defreitassl/html-presentation-skill) 的 5 张图，此处 5 张，靠前的几张是项目自己放在 README 里的</sub>
+
+<sub><b>下面出现的风格</b> `artemis-program-overview` · `artemis-ii-executive-briefing` · `kubernetes-command-center` · `artemis-ii-mission-planner` · `who-air-pollution-dossier` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
+
+<img src="https://raw.githubusercontent.com/defreitassl/html-presentation-skill/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/artemis-program-overview.png" width="100%" alt="Artemis Program Overview preview">
+
+<sub><b>Artemis Program Overview preview</b> · <a href="https://github.com/defreitassl/html-presentation-skill/blob/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/artemis-program-overview.png"><code>assets/previews/artemis-program-overview.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/defreitassl/html-presentation-skill/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/artemis-ii-executive-briefing.png" width="100%" alt="Artemis II Executive Briefing preview">
+
+<sub><b>Artemis II Executive Briefing preview</b> · <a href="https://github.com/defreitassl/html-presentation-skill/blob/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/artemis-ii-executive-briefing.png"><code>assets/previews/artemis-ii-executive-briefing.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/defreitassl/html-presentation-skill/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/kubernetes-command-center.png" width="100%" alt="Kubernetes Command Center preview">
+
+<sub><b>Kubernetes Command Center preview</b> · <a href="https://github.com/defreitassl/html-presentation-skill/blob/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/kubernetes-command-center.png"><code>assets/previews/kubernetes-command-center.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/defreitassl/html-presentation-skill/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/artemis-ii-mission-planner.png" width="100%" alt="Artemis II Mission Planner preview">
+
+<sub><b>Artemis II Mission Planner preview</b> · <a href="https://github.com/defreitassl/html-presentation-skill/blob/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/artemis-ii-mission-planner.png"><code>assets/previews/artemis-ii-mission-planner.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/defreitassl/html-presentation-skill/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/who-air-pollution-dossier.png" width="100%" alt="WHO Ambient Air Pollution Dossier preview">
+
+<sub><b>WHO Ambient Air Pollution Dossier preview</b> · <code>who-air-pollution-dossier</code> · <a href="https://github.com/defreitassl/html-presentation-skill/blob/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/who-air-pollution-dossier.png"><code>assets/previews/who-air-pollution-dossier.png</code></a></sub>
+
 <a id="gallery-slide-deck-skill"></a>
 
-#### [Slide Deck Skill](https://github.com/jayworker/slide-deck-skill) · — ⭐ · HTML
+#### [Slide Deck Skill](https://github.com/jayworker/slide-deck-skill) · 0 ⭐ · HTML
 
 <sub>单文件 16:9 HTML 演示,浅色仪表盘风格,每页只讲一件事。</sub>
 
@@ -2944,7 +2944,7 @@ git clone https://github.com/jayworker/slide-deck-skill "$HOME/.claude/skills/sl
 
 <a id="gallery-marp-slides-studio"></a>
 
-#### [Marp Slides Studio](https://github.com/unsolublesugar/marp-slides-studio) · — ⭐ · 模板库
+#### [Marp Slides Studio](https://github.com/unsolublesugar/marp-slides-studio) · 0 ⭐ · 模板库
 
 <sub>50 套 Marp 主题,配主题画廊、对比度检查与四个面向 Agent 的 deck 制作 skill。</sub>
 
@@ -2992,7 +2992,7 @@ gh repo create my-slides --template unsolublesugar/marp-slides-studio --private 
 
 <sub><b>Themes Select</b> · <a href="https://github.com/unsolublesugar/marp-slides-studio/blob/2d761c1abc2004fd75c06d2c8d225ebff0c21b0a/docs/themes-select.png"><code>docs/themes-select.png</code></a></sub>
 
-<sub>以下项目的仓库里没有可用图片：Slidev、Quarkdown、Banana Slides、Visual Explainer、HTML Anything、Dashi PPT Skill、Codex PPT Skill、NanoBanana PPT Skills、Baoyu Design、Gorden PPT Skill、Codex Claude Academic Skills、Oh My PPT、Image to Editable PPT Skill、Gorden Super PPT Skills、CyberPPT、Ian Handdrawn PPT、PPT Image First、GPT Image2 PPT Skills、PPT Agent Skills、Humanize PPT、Claude Office Skills、Academic PPTX、Claude Skills、Power Design、Reveal.js Skill、Visual Style PPT Skill、Beamer Skill、RW Consulting PPT、Paper2Anything、DOM to PPTX、Marp Slides、Beamer Academic、Planners PPT Hell、Thesis Defense PPTX Skill、Apple Bento Grid、Codex PPT Skill、Hands on Deck、Skywork Skills、PPT Image2 Editable Rebuild、Slide Image to Editable PPTX、Magic Slide、Presentation Skills、Claude Design Skill、Servasyy Skills、Ultimate PPT Master Skill、Future Slide、Slide Deck Generator、HTML PPT Designer、Presentation Skills、PowerPoint Skill、Make Slide、PPT Report Skills、AI Paper to Slide Skill、Literature Report PPT Builder、Image to PPTX Skill、Visual Cognition Slides、CN Academic Spark、Knowledge Cat PPT Skill、SJTU PPT Template Skill、Deck Factory、Space Multi Design PPT、Lieflat HTML Design、Jiarui SVG Skills、Awesome PPT Skills、Editable Image to PPT Skill、Presentation、Huawei Style PPT Skill、HTML to Editable PPTX、Claude Code Codex Slide、Baoyu Xuanyi Skills、Beautiful Hackathon Slides、ImageGen PPTX Pipeline、Paper PPT Skill、Presentation Skill、Codex Image to Editable PPT、Slidev Skills、PPT Skill、BL Captain PPT Skill、HTML to PPT PDF、Slides AI Plugin、Scholar PPT CN、Narrative Engine、Image PPT King、PPT Design DNA、PPT Creator Skills、Beamer Skill、Jingge Sense Deck、Presentation Skill、Econ Empirical Paper PPT Skill、HTML to PPTX、Neon Slides、Claude HTML Slide Builder、30x McKinsey Research Deck、Keynote Slides Skill、PPT Agent、Interactive Slides、PPTX Template Skills、KAI Presentation、AI Draw Skill、Keynot、MBB Decks、Slide Wright、CyberBin PPT Skill、Competition PPT Template Skill、Four-Up PPT Generator、NanoBanana PPT Skills、NanoBanana PPT Skills、PPT Image Share Builder、HalfAI Gufa PPT、Slide Design Skill、Better PPT HTML Deck、Create HTML Deck、AWS HTML Slides、Prada Slides、Japanese Corporate PPTX Skill、Editable Leadership PPTX、SlideStage Pack、Deckset Claude Skill、McKinsey HTML Design Skill、IML PPTX、GZR NSFC PPT Skill、HTML to PPTX Skill、Bento PPT Skill、SlideSmith、Fudan University PPT Skill、Presentation Chef、Paper Figure PPTX Skill、AI Editable PPT Skill、Hand-Drawn PPT Skill、Guizang PPT Skill、TalkTrack、HTML PPT Skill、HTML to PPTX、PPT Expert Team、Vela Slides、Paper to LaTeX PPT、SOIL Deck Skills、PPT Master、PPT Image to Editable、Modern PPT、Bruce PPTX Generator、PPT Skill、Xidian Slides Skill、Presentation Forge、Tekion Slide Generator、Paper to Slides Skill、PPT Skills、Editable PPTX Skill、Pitch Deck Iterator、Zhongguose PPT Skill、ZJ Lab Academic PPTX Skills、Research Group PPT Skill、Paper to Scholar Slides、Consulting Diagnosis PPT Skill、Token Slides、Aham PPT、Notrat PPT Studio、Web PPT、Codex XKPPT Skill、High Quality Slides、PPT Design Skill、PowerPoint Skill、Slide Weaver、Competition PPT Skill、HFUT Presentation Studio、SJTU Beamer PPT、Frontend Slides、HTML Report Generator、Demo Prep Skill、Avatar PPT Master、Special Achievement Report、HTML PPT Academic Skill、HTML PPT Video Skill、PPT Template Fill、AI PPT Skill、SVG to PPTX Skill、Doc to PPT Skill、Economics Empirical PPT Skill、SlideSage、USTC PPT Template、Starry Slides、Anthropic PPTX (official)、Baoyu Skills、AI Skills (Cross-Platform)。</sub>
+<sub>以下项目的仓库里没有可用图片：Slidev、Quarkdown、Banana Slides、Visual Explainer、HTML Anything、Dashi PPT Skill、Codex PPT Skill、NanoBanana PPT Skills、Baoyu Design、Gorden PPT Skill、Codex Claude Academic Skills、Oh My PPT、Image to Editable PPT Skill、Gorden Super PPT Skills、CyberPPT、Ian Handdrawn PPT、PPT Image First、GPT Image2 PPT Skills、PPT Agent Skills、Humanize PPT、Claude Office Skills、Academic PPTX、Claude Skills、Power Design、Reveal.js Skill、Visual Style PPT Skill、RW Consulting PPT、Paper2Anything、Beamer Skill、DOM to PPTX、Marp Slides、Beamer Academic、Planners PPT Hell、Thesis Defense PPTX Skill、Apple Bento Grid、Hands on Deck、Codex PPT Skill、Skywork Skills、PPT Image2 Editable Rebuild、Slide Image to Editable PPTX、Magic Slide、Claude Design Skill、Presentation Skills、Servasyy Skills、Ultimate PPT Master Skill、Future Slide、Slide Deck Generator、HTML PPT Designer、Presentation Skills、Make Slide、PowerPoint Skill、PPT Report Skills、AI Paper to Slide Skill、Literature Report PPT Builder、Image to PPTX Skill、Visual Cognition Slides、CN Academic Spark、Knowledge Cat PPT Skill、Starry Slides、SJTU PPT Template Skill、Deck Factory、Space Multi Design PPT、Lieflat HTML Design、Jiarui SVG Skills、Editable Image to PPT Skill、Awesome PPT Skills、Presentation、Huawei Style PPT Skill、HTML to Editable PPTX、Claude Code Codex Slide、Baoyu Xuanyi Skills、Beautiful Hackathon Slides、ImageGen PPTX Pipeline、Paper PPT Skill、Presentation Skill、Codex Image to Editable PPT、Slidev Skills、PPT Skill、BL Captain PPT Skill、HTML to PPT PDF、Scholar PPT CN、Slides AI Plugin、Image PPT King、Narrative Engine、PPT Design DNA、PPT Creator Skills、Beamer Skill、Jingge Sense Deck、Presentation Skill、Econ Empirical Paper PPT Skill、30x McKinsey Research Deck、PPT Agent、HTML to PPTX、Neon Slides、Claude HTML Slide Builder、Keynote Slides Skill、Interactive Slides、PPTX Template Skills、MBB Decks、KAI Presentation、AI Draw Skill、Keynot、Slide Wright、Four-Up PPT Generator、Create HTML Deck、CyberBin PPT Skill、Competition PPT Template Skill、NanoBanana PPT Skills、NanoBanana PPT Skills、PPT Image Share Builder、Slide Design Skill、HalfAI Gufa PPT、Better PPT HTML Deck、AWS HTML Slides、Prada Slides、Japanese Corporate PPTX Skill、Editable Leadership PPTX、McKinsey HTML Design Skill、SlideStage Pack、Deckset Claude Skill、IML PPTX、GZR NSFC PPT Skill、Fudan University PPT Skill、Presentation Chef、HTML to PPTX Skill、Bento PPT Skill、SlideSmith、Paper Figure PPTX Skill、Hand-Drawn PPT Skill、Guizang PPT Skill、TalkTrack、HTML PPT Skill、HTML to PPTX、AI Editable PPT Skill、PPT Expert Team、Vela Slides、Paper to LaTeX PPT、SOIL Deck Skills、Modern PPT、PPT Master、PPT Image to Editable、Research Group PPT Skill、Paper to Scholar Slides、Aham PPT、Bruce PPTX Generator、PPT Skill、Xidian Slides Skill、Presentation Forge、Tekion Slide Generator、Paper to Slides Skill、PPT Skills、Editable PPTX Skill、Pitch Deck Iterator、Zhongguose PPT Skill、ZJ Lab Academic PPTX Skills、Consulting Diagnosis PPT Skill、Token Slides、Notrat PPT Studio、Web PPT、Codex XKPPT Skill、High Quality Slides、PPT Design Skill、PowerPoint Skill、Slide Weaver、Competition PPT Skill、HFUT Presentation Studio、SJTU Beamer PPT、Frontend Slides、USTC PPT Template、HTML Report Generator、Demo Prep Skill、Avatar PPT Master、Special Achievement Report、HTML PPT Academic Skill、HTML PPT Video Skill、PPT Template Fill、AI PPT Skill、SVG to PPTX Skill、Doc to PPT Skill、Economics Empirical PPT Skill、SlideSage、Anthropic PPTX (official)、Baoyu Skills、AI Skills (Cross-Platform)。</sub>
 
 <sub>**共 485 张，全部来自各项目自己的仓库**，按原尺寸完整展示、不做缩略图 —— 幻灯片信息密度高，缩到 300px 根本看不清字体和层次。每张都读自锁定的 commit，出处写在它上方的说明里，并且直接由原仓库提供、没有复制到本仓库。**没有任何一张是本仓库跑出来的**，所以它反映的是每个团队愿意拿出来展示的样子，不是同题横评。用 `python scripts/fetch_samples.py` 重新生成。</sub>
 <!-- END:GALLERY -->

@@ -1,11 +1,11 @@
 {
-  "refreshed_at": "2026-07-29",
+  "refreshed_at": "2026-08-03",
   "failed": [],
   "repos": {
     "anthropics/skills": {
-      "stars": 164969,
-      "forks": 19599,
-      "open_issues": 1066,
+      "stars": 166005,
+      "forks": 19753,
+      "open_issues": 1058,
       "license": null,
       "created_at": "2025-09-22",
       "pushed_at": "2026-07-24",
@@ -14,31 +14,31 @@
       "default_branch": "main"
     },
     "slidevjs/slidev": {
-      "stars": 47889,
-      "forks": 2133,
-      "open_issues": 216,
+      "stars": 47948,
+      "forks": 2140,
+      "open_issues": 203,
       "license": "MIT",
       "created_at": "2021-04-24",
-      "pushed_at": "2026-07-22",
+      "pushed_at": "2026-08-03",
       "archived": false,
       "homepage": "https://sli.dev",
       "default_branch": "main"
     },
     "hugohe3/ppt-master": {
-      "stars": 41774,
-      "forks": 3464,
-      "open_issues": 4,
+      "stars": 42768,
+      "forks": 3530,
+      "open_issues": 7,
       "license": "MIT",
       "created_at": "2025-12-10",
-      "pushed_at": "2026-07-29",
+      "pushed_at": "2026-08-03",
       "archived": false,
       "homepage": "https://hugohe3.github.io/ppt-master/",
       "default_branch": "main"
     },
     "zarazhangrui/frontend-slides": {
-      "stars": 26568,
-      "forks": 2158,
-      "open_issues": 65,
+      "stars": 26827,
+      "forks": 2179,
+      "open_issues": 66,
       "license": "MIT",
       "created_at": "2026-01-28",
       "pushed_at": "2026-06-23",
@@ -47,8 +47,8 @@
       "default_branch": "main"
     },
     "JimLiu/baoyu-skills": {
-      "stars": 24310,
-      "forks": 2703,
+      "stars": 24513,
+      "forks": 2738,
       "open_issues": 5,
       "license": "MIT",
       "created_at": "2026-01-13",
@@ -58,9 +58,9 @@
       "default_branch": "main"
     },
     "op7418/guizang-ppt-skill": {
-      "stars": 22694,
-      "forks": 1646,
-      "open_issues": 31,
+      "stars": 23080,
+      "forks": 1669,
+      "open_issues": 33,
       "license": "AGPL-3.0",
       "created_at": "2026-04-23",
       "pushed_at": "2026-07-22",
@@ -69,9 +69,9 @@
       "default_branch": "main"
     },
     "alchaincyf/huashu-design": {
-      "stars": 22190,
-      "forks": 2625,
-      "open_issues": 7,
+      "stars": 22390,
+      "forks": 2636,
+      "open_issues": 0,
       "license": "MIT",
       "created_at": "2026-04-19",
       "pushed_at": "2026-07-27",
@@ -80,30 +80,30 @@
       "default_branch": "master"
     },
     "iamgio/quarkdown": {
-      "stars": 15836,
-      "forks": 489,
-      "open_issues": 28,
+      "stars": 15851,
+      "forks": 490,
+      "open_issues": 25,
       "license": "GPL-3.0",
       "created_at": "2024-01-30",
-      "pushed_at": "2026-07-29",
+      "pushed_at": "2026-08-03",
       "archived": false,
       "homepage": "https://quarkdown.com",
       "default_branch": "main"
     },
     "Anionex/banana-slides": {
-      "stars": 15346,
-      "forks": 1769,
-      "open_issues": 70,
+      "stars": 15375,
+      "forks": 1772,
+      "open_issues": 73,
       "license": "AGPL-3.0",
       "created_at": "2025-11-29",
-      "pushed_at": "2026-07-29",
+      "pushed_at": "2026-08-03",
       "archived": false,
       "homepage": "http://bananaslides.online",
       "default_branch": "main"
     },
     "nicobailon/visual-explainer": {
-      "stars": 9351,
-      "forks": 630,
+      "stars": 9398,
+      "forks": 631,
       "open_issues": 38,
       "license": "MIT",
       "created_at": "2026-02-16",
@@ -113,8 +113,8 @@
       "default_branch": "main"
     },
     "nexu-io/html-anything": {
-      "stars": 7996,
-      "forks": 785,
+      "stars": 8070,
+      "forks": 788,
       "open_issues": 57,
       "license": "Apache-2.0",
       "created_at": "2026-05-11",
@@ -124,8 +124,8 @@
       "default_branch": "main"
     },
     "lewislulu/html-ppt-skill": {
-      "stars": 7473,
-      "forks": 655,
+      "stars": 7594,
+      "forks": 672,
       "open_issues": 21,
       "license": "MIT",
       "created_at": "2026-04-15",
@@ -135,41 +135,41 @@
       "default_branch": "main"
     },
     "1weiho/open-slide": {
-      "stars": 6042,
-      "forks": 420,
-      "open_issues": 73,
+      "stars": 6085,
+      "forks": 430,
+      "open_issues": 79,
       "license": "MIT",
       "created_at": "2026-04-26",
-      "pushed_at": "2026-07-26",
+      "pushed_at": "2026-08-03",
       "archived": false,
       "homepage": "https://open-slide.dev",
       "default_branch": "main"
     },
     "chuspeeism/dashi-ppt-skill": {
-      "stars": 4388,
-      "forks": 417,
-      "open_issues": 6,
+      "stars": 4570,
+      "forks": 433,
+      "open_issues": 7,
       "license": "AGPL-3.0",
       "created_at": "2026-06-10",
-      "pushed_at": "2026-07-20",
+      "pushed_at": "2026-07-30",
       "archived": false,
       "homepage": null,
       "default_branch": "main"
     },
     "ningzimu/codex-ppt-skill": {
-      "stars": 4295,
-      "forks": 209,
-      "open_issues": 3,
+      "stars": 4469,
+      "forks": 222,
+      "open_issues": 2,
       "license": "MIT",
       "created_at": "2026-04-26",
-      "pushed_at": "2026-07-28",
+      "pushed_at": "2026-07-30",
       "archived": false,
       "homepage": "https://ppt-skill.ningzimu.vip",
       "default_branch": "main"
     },
     "zarazhangrui/beautiful-html-templates": {
-      "stars": 3940,
-      "forks": 338,
+      "stars": 4010,
+      "forks": 345,
       "open_issues": 2,
       "license": "MIT",
       "created_at": "2026-05-05",
@@ -179,8 +179,8 @@
       "default_branch": "main"
     },
     "op7418/NanoBanana-PPT-Skills": {
-      "stars": 3167,
-      "forks": 340,
+      "stars": 3183,
+      "forks": 341,
       "open_issues": 6,
       "license": null,
       "created_at": "2026-01-09",
@@ -190,19 +190,19 @@
       "default_branch": "main"
     },
     "JimLiu/baoyu-design": {
-      "stars": 2879,
-      "forks": 211,
-      "open_issues": 1,
+      "stars": 3015,
+      "forks": 220,
+      "open_issues": 0,
       "license": "MIT",
       "created_at": "2026-06-07",
-      "pushed_at": "2026-07-26",
+      "pushed_at": "2026-07-30",
       "archived": false,
       "homepage": null,
       "default_branch": "main"
     },
     "GordenSun/GordenPPTSkill": {
-      "stars": 2822,
-      "forks": 262,
+      "stars": 2859,
+      "forks": 264,
       "open_issues": 1,
       "license": "NOASSERTION",
       "created_at": "2026-05-27",
@@ -212,8 +212,8 @@
       "default_branch": "main"
     },
     "zLanqing/codex-claude-academic-skills": {
-      "stars": 2357,
-      "forks": 155,
+      "stars": 2524,
+      "forks": 160,
       "open_issues": 2,
       "license": "MIT",
       "created_at": "2026-05-14",
@@ -223,20 +223,20 @@
       "default_branch": "main"
     },
     "arcsin1/oh-my-ppt": {
-      "stars": 1810,
-      "forks": 169,
-      "open_issues": 9,
+      "stars": 1827,
+      "forks": 173,
+      "open_issues": 7,
       "license": "Apache-2.0",
       "created_at": "2026-04-24",
-      "pushed_at": "2026-07-29",
+      "pushed_at": "2026-08-03",
       "archived": false,
       "homepage": "http://www.ohmyppt.cc",
       "default_branch": "main"
     },
     "ningzimu/image-to-editable-ppt-skill": {
-      "stars": 1676,
-      "forks": 87,
-      "open_issues": 3,
+      "stars": 1774,
+      "forks": 97,
+      "open_issues": 2,
       "license": "MIT",
       "created_at": "2026-05-21",
       "pushed_at": "2026-07-28",
@@ -245,8 +245,8 @@
       "default_branch": "main"
     },
     "GordenSun/GordenSuperPPTSkills": {
-      "stars": 1659,
-      "forks": 143,
+      "stars": 1691,
+      "forks": 149,
       "open_issues": 1,
       "license": null,
       "created_at": "2026-06-07",
@@ -256,8 +256,8 @@
       "default_branch": "main"
     },
     "crazyykhllc-bit/CyberPPT": {
-      "stars": 1483,
-      "forks": 149,
+      "stars": 1504,
+      "forks": 153,
       "open_issues": 6,
       "license": "MIT",
       "created_at": "2026-06-24",
@@ -267,9 +267,9 @@
       "default_branch": "main"
     },
     "helloianneo/ian-handdrawn-ppt": {
-      "stars": 1292,
-      "forks": 117,
-      "open_issues": 2,
+      "stars": 1296,
+      "forks": 121,
+      "open_issues": 3,
       "license": "MIT",
       "created_at": "2026-04-25",
       "pushed_at": "2026-04-25",
@@ -278,9 +278,9 @@
       "default_branch": "main"
     },
     "NyxTides/ppt-image-first": {
-      "stars": 1175,
-      "forks": 89,
-      "open_issues": 1,
+      "stars": 1181,
+      "forks": 90,
+      "open_issues": 2,
       "license": "Apache-2.0",
       "created_at": "2026-04-26",
       "pushed_at": "2026-05-08",
@@ -289,18 +289,18 @@
       "default_branch": "master"
     },
     "JuneYaooo/gpt-image2-ppt-skills": {
-      "stars": 1118,
-      "forks": 59,
+      "stars": 1134,
+      "forks": 62,
       "open_issues": 2,
       "license": "Apache-2.0",
       "created_at": "2026-04-19",
-      "pushed_at": "2026-07-22",
+      "pushed_at": "2026-08-02",
       "archived": false,
-      "homepage": null,
+      "homepage": "https://slidecraft-template-gallery.vercel.app/",
       "default_branch": "main"
     },
     "sunbigfly/ppt-agent-skills": {
-      "stars": 862,
+      "stars": 870,
       "forks": 88,
       "open_issues": 4,
       "license": "NOASSERTION",
@@ -311,19 +311,19 @@
       "default_branch": "main"
     },
     "LearnPrompt/humanize-ppt": {
-      "stars": 837,
+      "stars": 848,
       "forks": 77,
       "open_issues": 1,
       "license": "NOASSERTION",
       "created_at": "2026-05-14",
-      "pushed_at": "2026-07-19",
+      "pushed_at": "2026-07-31",
       "archived": false,
       "homepage": "https://learnprompt.github.io/humanize-ppt/",
       "default_branch": "main"
     },
     "tfriedel/claude-office-skills": {
-      "stars": 798,
-      "forks": 116,
+      "stars": 801,
+      "forks": 117,
       "open_issues": 3,
       "license": null,
       "created_at": "2025-10-04",
@@ -332,9 +332,20 @@
       "homepage": null,
       "default_branch": "main"
     },
+    "nexu-io/codex-slides": {
+      "stars": 748,
+      "forks": 62,
+      "open_issues": 4,
+      "license": "MIT",
+      "created_at": "2026-07-10",
+      "pushed_at": "2026-07-21",
+      "archived": false,
+      "homepage": "https://github.com/nexu-io/codex-slides#readme",
+      "default_branch": "master"
+    },
     "Gabberflast/academic-pptx-skill": {
-      "stars": 724,
-      "forks": 88,
+      "stars": 734,
+      "forks": 91,
       "open_issues": 3,
       "license": "MIT",
       "created_at": "2026-02-28",
@@ -344,19 +355,19 @@
       "default_branch": "main"
     },
     "staruhub/ClaudeSkills": {
-      "stars": 632,
-      "forks": 121,
+      "stars": 658,
+      "forks": 123,
       "open_issues": 3,
       "license": "MIT",
       "created_at": "2025-10-31",
-      "pushed_at": "2026-07-21",
+      "pushed_at": "2026-08-03",
       "archived": false,
-      "homepage": null,
+      "homepage": "https://staruhub.github.io/ClaudeSkills/",
       "default_branch": "main"
     },
     "mucsbr/ppt-agent-workflow-san": {
-      "stars": 618,
-      "forks": 66,
+      "stars": 624,
+      "forks": 65,
       "open_issues": 1,
       "license": null,
       "created_at": "2026-03-19",
@@ -366,8 +377,8 @@
       "default_branch": "main"
     },
     "ItsssssJack/power-design": {
-      "stars": 575,
-      "forks": 78,
+      "stars": 586,
+      "forks": 80,
       "open_issues": 0,
       "license": "NOASSERTION",
       "created_at": "2026-05-03",
@@ -377,8 +388,8 @@
       "default_branch": "main"
     },
     "archlizheng/frontend-slides-editable": {
-      "stars": 446,
-      "forks": 42,
+      "stars": 451,
+      "forks": 43,
       "open_issues": 4,
       "license": "MIT",
       "created_at": "2026-04-04",
@@ -388,7 +399,7 @@
       "default_branch": "main"
     },
     "ryanbbrown/revealjs-skill": {
-      "stars": 379,
+      "stars": 380,
       "forks": 35,
       "open_issues": 2,
       "license": "MIT",
@@ -399,7 +410,7 @@
       "default_branch": "main"
     },
     "irenerachel/visual-style-ppt-skill": {
-      "stars": 359,
+      "stars": 364,
       "forks": 27,
       "open_issues": 5,
       "license": null,
@@ -410,7 +421,7 @@
       "default_branch": "main"
     },
     "sanjay3290/ai-skills": {
-      "stars": 359,
+      "stars": 363,
       "forks": 37,
       "open_issues": 3,
       "license": "Apache-2.0",
@@ -420,19 +431,8 @@
       "homepage": "https://deepwiki.com/sanjay3290/ai-skills",
       "default_branch": "main"
     },
-    "Noi1r/beamer-skill": {
-      "stars": 319,
-      "forks": 15,
-      "open_issues": 0,
-      "license": "MIT",
-      "created_at": "2026-03-10",
-      "pushed_at": "2026-06-15",
-      "archived": false,
-      "homepage": null,
-      "default_branch": "main"
-    },
     "Pikapika260214/rw-consulting-ppt": {
-      "stars": 317,
+      "stars": 333,
       "forks": 28,
       "open_issues": 4,
       "license": "MIT",
@@ -443,7 +443,7 @@
       "default_branch": "main"
     },
     "QuZhan51496/paper2anything": {
-      "stars": 316,
+      "stars": 331,
       "forks": 10,
       "open_issues": 0,
       "license": "Apache-2.0",
@@ -453,8 +453,19 @@
       "homepage": "https://quzhan51496.github.io/paper2anything/",
       "default_branch": "main"
     },
+    "Noi1r/beamer-skill": {
+      "stars": 322,
+      "forks": 15,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-03-10",
+      "pushed_at": "2026-06-15",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
     "atharva9167j/dom-to-pptx": {
-      "stars": 302,
+      "stars": 309,
       "forks": 62,
       "open_issues": 4,
       "license": "MIT",
@@ -465,7 +476,7 @@
       "default_branch": "master"
     },
     "robonuggets/marp-slides": {
-      "stars": 271,
+      "stars": 277,
       "forks": 59,
       "open_issues": 2,
       "license": null,
@@ -476,7 +487,7 @@
       "default_branch": "master"
     },
     "Faust-Donf/beamer-academic": {
-      "stars": 258,
+      "stars": 263,
       "forks": 11,
       "open_issues": 1,
       "license": "MIT",
@@ -487,7 +498,7 @@
       "default_branch": "main"
     },
     "vigorX777/ppt-svg-generator": {
-      "stars": 248,
+      "stars": 250,
       "forks": 21,
       "open_issues": 4,
       "license": "MIT",
@@ -498,8 +509,8 @@
       "default_branch": "main"
     },
     "likaku/Mck-ppt-design-skill": {
-      "stars": 230,
-      "forks": 32,
+      "stars": 236,
+      "forks": 33,
       "open_issues": 5,
       "license": "Apache-2.0",
       "created_at": "2026-03-03",
@@ -509,8 +520,8 @@
       "default_branch": "main"
     },
     "thePlannerIvan/planners-ppt-hell": {
-      "stars": 216,
-      "forks": 21,
+      "stars": 219,
+      "forks": 24,
       "open_issues": 0,
       "license": "AGPL-3.0",
       "created_at": "2026-06-26",
@@ -520,7 +531,7 @@
       "default_branch": "main"
     },
     "zouchenzhen/thesis-defense-pptx-skill": {
-      "stars": 209,
+      "stars": 211,
       "forks": 13,
       "open_issues": 3,
       "license": "Apache-2.0",
@@ -531,14 +542,25 @@
       "default_branch": "main"
     },
     "hubeiqiao/apple-bento-grid": {
-      "stars": 204,
-      "forks": 13,
+      "stars": 206,
+      "forks": 14,
       "open_issues": 0,
       "license": "MIT",
       "created_at": "2026-03-17",
       "pushed_at": "2026-03-17",
       "archived": false,
       "homepage": "https://github.com/hubeiqiao/apple-bento-grid",
+      "default_branch": "main"
+    },
+    "EveryInc/hands-on-deck": {
+      "stars": 200,
+      "forks": 14,
+      "open_issues": 9,
+      "license": "MIT",
+      "created_at": "2026-06-09",
+      "pushed_at": "2026-07-13",
+      "archived": false,
+      "homepage": "https://everyinc.github.io/hands-on-deck/",
       "default_branch": "main"
     },
     "Ronnie2025/codex-ppt-skill": {
@@ -552,19 +574,8 @@
       "homepage": null,
       "default_branch": "main"
     },
-    "EveryInc/hands-on-deck": {
-      "stars": 198,
-      "forks": 14,
-      "open_issues": 9,
-      "license": "MIT",
-      "created_at": "2026-06-09",
-      "pushed_at": "2026-07-13",
-      "archived": false,
-      "homepage": "https://everyinc.github.io/hands-on-deck/",
-      "default_branch": "main"
-    },
     "SkyworkAI/Skywork-Skills": {
-      "stars": 194,
+      "stars": 196,
       "forks": 25,
       "open_issues": 2,
       "license": "MIT",
@@ -575,7 +586,7 @@
       "default_branch": "main"
     },
     "wwe-dog/ppt-image2-editable-rebuild": {
-      "stars": 186,
+      "stars": 188,
       "forks": 12,
       "open_issues": 1,
       "license": "Unlicense",
@@ -586,8 +597,8 @@
       "default_branch": "main"
     },
     "w1163222589-coder/slide-image-to-editable-pptx": {
-      "stars": 172,
-      "forks": 13,
+      "stars": 177,
+      "forks": 14,
       "open_issues": 2,
       "license": "MIT",
       "created_at": "2026-05-27",
@@ -597,7 +608,7 @@
       "default_branch": "main"
     },
     "daniel-style/magic-slide": {
-      "stars": 170,
+      "stars": 171,
       "forks": 10,
       "open_issues": 0,
       "license": "MIT",
@@ -607,20 +618,9 @@
       "homepage": "https://magicslide.show",
       "default_branch": "main"
     },
-    "Sven-LI-sankyuu/presentation-skills": {
-      "stars": 162,
-      "forks": 18,
-      "open_issues": 1,
-      "license": null,
-      "created_at": "2026-03-05",
-      "pushed_at": "2026-07-29",
-      "archived": false,
-      "homepage": null,
-      "default_branch": "main"
-    },
     "jiji262/claude-design-skill": {
-      "stars": 162,
-      "forks": 24,
+      "stars": 167,
+      "forks": 25,
       "open_issues": 5,
       "license": "MIT",
       "created_at": "2026-04-20",
@@ -629,9 +629,20 @@
       "homepage": "https://skills.sh/jiji262/claude-design-skill/claude-design",
       "default_branch": "main"
     },
+    "Sven-LI-sankyuu/presentation-skills": {
+      "stars": 163,
+      "forks": 19,
+      "open_issues": 1,
+      "license": null,
+      "created_at": "2026-03-05",
+      "pushed_at": "2026-07-29",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
     "huangserva/servasyy_skills": {
-      "stars": 151,
-      "forks": 23,
+      "stars": 152,
+      "forks": 24,
       "open_issues": 1,
       "license": null,
       "created_at": "2026-02-05",
@@ -641,18 +652,18 @@
       "default_branch": "master"
     },
     "kdnsna/ultimate-ppt-master-skill": {
-      "stars": 147,
-      "forks": 16,
+      "stars": 152,
+      "forks": 17,
       "open_issues": 3,
       "license": "MIT",
       "created_at": "2026-04-26",
-      "pushed_at": "2026-07-24",
+      "pushed_at": "2026-08-02",
       "archived": false,
       "homepage": "https://kdnsna.github.io/ultimate-ppt-master-skill/",
       "default_branch": "main"
     },
     "bytonylee/future-slide": {
-      "stars": 143,
+      "stars": 144,
       "forks": 27,
       "open_issues": 0,
       "license": "Apache-2.0",
@@ -663,7 +674,7 @@
       "default_branch": "main"
     },
     "code-on-sunday/slide-deck-generator": {
-      "stars": 134,
+      "stars": 138,
       "forks": 35,
       "open_issues": 0,
       "license": "MIT",
@@ -674,7 +685,7 @@
       "default_branch": "main"
     },
     "Akxan/ppt-agent-skill": {
-      "stars": 116,
+      "stars": 119,
       "forks": 46,
       "open_issues": 0,
       "license": "MIT",
@@ -696,7 +707,7 @@
       "default_branch": "master"
     },
     "pamelafox/presentation-skills": {
-      "stars": 105,
+      "stars": 112,
       "forks": 21,
       "open_issues": 0,
       "license": "MIT",
@@ -706,30 +717,8 @@
       "homepage": null,
       "default_branch": "main"
     },
-    "Noi1r/powerpoint-skill": {
-      "stars": 104,
-      "forks": 9,
-      "open_issues": 0,
-      "license": "MIT",
-      "created_at": "2026-03-13",
-      "pushed_at": "2026-03-17",
-      "archived": false,
-      "homepage": null,
-      "default_branch": "main"
-    },
-    "Kuneosu/make-slide": {
-      "stars": 104,
-      "forks": 15,
-      "open_issues": 0,
-      "license": "MIT",
-      "created_at": "2026-03-18",
-      "pushed_at": "2026-04-10",
-      "archived": false,
-      "homepage": "https://make-slide.vercel.app",
-      "default_branch": "main"
-    },
     "ToseaAI/awesome-html-slide-skills": {
-      "stars": 104,
+      "stars": 112,
       "forks": 6,
       "open_issues": 0,
       "license": "NOASSERTION",
@@ -739,8 +728,30 @@
       "homepage": "https://tosea.ai",
       "default_branch": "main"
     },
+    "Kuneosu/make-slide": {
+      "stars": 111,
+      "forks": 15,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-03-18",
+      "pushed_at": "2026-04-10",
+      "archived": false,
+      "homepage": "https://make-slide.vercel.app",
+      "default_branch": "main"
+    },
+    "Noi1r/powerpoint-skill": {
+      "stars": 106,
+      "forks": 9,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-03-13",
+      "pushed_at": "2026-03-17",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
     "myunwang/ppt-report-skills": {
-      "stars": 96,
+      "stars": 98,
       "forks": 0,
       "open_issues": 0,
       "license": "MIT",
@@ -762,7 +773,7 @@
       "default_branch": "main"
     },
     "fangyuanopus/literature-report-ppt-builder": {
-      "stars": 91,
+      "stars": 94,
       "forks": 3,
       "open_issues": 3,
       "license": "MIT",
@@ -795,7 +806,7 @@
       "default_branch": "main"
     },
     "wycmochi/cn-academic-spark": {
-      "stars": 78,
+      "stars": 80,
       "forks": 3,
       "open_issues": 1,
       "license": "MIT",
@@ -806,7 +817,7 @@
       "default_branch": "main"
     },
     "gnipbao/knowledge-cat-ppt-skill": {
-      "stars": 77,
+      "stars": 78,
       "forks": 13,
       "open_issues": 1,
       "license": "MIT",
@@ -814,6 +825,17 @@
       "pushed_at": "2026-06-28",
       "archived": false,
       "homepage": null,
+      "default_branch": "main"
+    },
+    "StarryKit/starry-slides": {
+      "stars": 78,
+      "forks": 2,
+      "open_issues": 0,
+      "license": "Apache-2.0",
+      "created_at": "2026-04-29",
+      "pushed_at": "2026-07-06",
+      "archived": true,
+      "homepage": "https://starrykit.com",
       "default_branch": "main"
     },
     "ACTAshui/sjtu-ppt-template-skill": {
@@ -825,6 +847,17 @@
       "pushed_at": "2026-05-22",
       "archived": false,
       "homepage": null,
+      "default_branch": "main"
+    },
+    "bluedusk/html-slides": {
+      "stars": 72,
+      "forks": 14,
+      "open_issues": 8,
+      "license": "MIT",
+      "created_at": "2026-03-21",
+      "pushed_at": "2026-05-03",
+      "archived": false,
+      "homepage": "https://htmlslides.com",
       "default_branch": "main"
     },
     "gongnyang/deck-factory": {
@@ -839,7 +872,7 @@
       "default_branch": "master"
     },
     "software-ai-life/Awesome-PPT-Design-Skills": {
-      "stars": 71,
+      "stars": 72,
       "forks": 7,
       "open_issues": 0,
       "license": null,
@@ -849,19 +882,8 @@
       "homepage": null,
       "default_branch": "main"
     },
-    "bluedusk/html-slides": {
-      "stars": 70,
-      "forks": 14,
-      "open_issues": 8,
-      "license": "MIT",
-      "created_at": "2026-03-21",
-      "pushed_at": "2026-05-03",
-      "archived": false,
-      "homepage": "https://htmlslides.com",
-      "default_branch": "main"
-    },
     "SpaceZephyr/space-multi-design-ppt": {
-      "stars": 66,
+      "stars": 70,
       "forks": 2,
       "open_issues": 0,
       "license": null,
@@ -872,8 +894,8 @@
       "default_branch": "main"
     },
     "larashero3-dotcom/lieflat-html-design": {
-      "stars": 63,
-      "forks": 3,
+      "stars": 66,
+      "forks": 4,
       "open_issues": 0,
       "license": "MIT",
       "created_at": "2026-05-22",
@@ -883,12 +905,23 @@
       "default_branch": "main"
     },
     "shenxiaofeng-pro/jiarui-svg-skills": {
-      "stars": 60,
-      "forks": 1,
+      "stars": 61,
+      "forks": 3,
       "open_issues": 0,
       "license": null,
       "created_at": "2026-06-16",
-      "pushed_at": "2026-06-23",
+      "pushed_at": "2026-08-01",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "soulmujoco/EditableImage2PPTSkill": {
+      "stars": 58,
+      "forks": 5,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-05-02",
+      "pushed_at": "2026-05-03",
       "archived": false,
       "homepage": null,
       "default_branch": "main"
@@ -900,17 +933,6 @@
       "license": null,
       "created_at": "2026-04-29",
       "pushed_at": "2026-04-30",
-      "archived": false,
-      "homepage": null,
-      "default_branch": "main"
-    },
-    "soulmujoco/EditableImage2PPTSkill": {
-      "stars": 57,
-      "forks": 5,
-      "open_issues": 0,
-      "license": "MIT",
-      "created_at": "2026-05-02",
-      "pushed_at": "2026-05-03",
       "archived": false,
       "homepage": null,
       "default_branch": "main"
@@ -951,32 +973,32 @@
     "kaisersong/slide-creator": {
       "stars": 46,
       "forks": 7,
-      "open_issues": 1,
+      "open_issues": 2,
       "license": null,
       "created_at": "2026-03-07",
-      "pushed_at": "2026-07-17",
-      "archived": false,
-      "homepage": null,
-      "default_branch": "main"
-    },
-    "codesstar/next-slide": {
-      "stars": 43,
-      "forks": 5,
-      "open_issues": 0,
-      "license": "MIT",
-      "created_at": "2026-04-03",
-      "pushed_at": "2026-04-17",
+      "pushed_at": "2026-08-03",
       "archived": false,
       "homepage": null,
       "default_branch": "main"
     },
     "Hasasasa/html-to-editable-pptx": {
-      "stars": 43,
+      "stars": 46,
       "forks": 6,
       "open_issues": 1,
       "license": "MIT",
       "created_at": "2026-05-23",
       "pushed_at": "2026-07-07",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "codesstar/next-slide": {
+      "stars": 44,
+      "forks": 5,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-04-03",
+      "pushed_at": "2026-04-17",
       "archived": false,
       "homepage": null,
       "default_branch": "main"
@@ -1026,7 +1048,7 @@
       "default_branch": "main"
     },
     "eddyzzl/imagegen-pptx-pipeline": {
-      "stars": 37,
+      "stars": 38,
       "forks": 0,
       "open_issues": 1,
       "license": "MIT",
@@ -1037,7 +1059,7 @@
       "default_branch": "main"
     },
     "xiao634zhang/paper-ppt-skill": {
-      "stars": 35,
+      "stars": 37,
       "forks": 1,
       "open_issues": 0,
       "license": null,
@@ -1048,7 +1070,7 @@
       "default_branch": "master"
     },
     "siril9/presentation-skill": {
-      "stars": 34,
+      "stars": 36,
       "forks": 10,
       "open_issues": 0,
       "license": "MIT",
@@ -1059,12 +1081,12 @@
       "default_branch": "main"
     },
     "wiltonesten-web/codeximage-to-editable-ppt-v1": {
-      "stars": 34,
+      "stars": 35,
       "forks": 4,
       "open_issues": 0,
       "license": "MIT",
       "created_at": "2026-07-07",
-      "pushed_at": "2026-07-11",
+      "pushed_at": "2026-08-02",
       "archived": false,
       "homepage": null,
       "default_branch": "main"
@@ -1092,7 +1114,7 @@
       "default_branch": "main"
     },
     "dososo/blcaptain-ppt-skill": {
-      "stars": 31,
+      "stars": 32,
       "forks": 3,
       "open_issues": 0,
       "license": "NOASSERTION",
@@ -1114,7 +1136,7 @@
       "default_branch": "main"
     },
     "nghiahsgs/skills-slides": {
-      "stars": 29,
+      "stars": 30,
       "forks": 4,
       "open_issues": 1,
       "license": null,
@@ -1122,6 +1144,17 @@
       "pushed_at": "2026-04-01",
       "archived": false,
       "homepage": "https://nghiahsgs.github.io/skills-slides/",
+      "default_branch": "main"
+    },
+    "deathcats4/scholar-ppt-cn": {
+      "stars": 30,
+      "forks": 5,
+      "open_issues": 1,
+      "license": "MIT",
+      "created_at": "2026-06-03",
+      "pushed_at": "2026-07-30",
+      "archived": false,
+      "homepage": null,
       "default_branch": "main"
     },
     "proyecto26/slides-ai-plugin": {
@@ -1135,13 +1168,13 @@
       "homepage": "https://proyecto26.com/slides-ai-plugin/",
       "default_branch": "main"
     },
-    "deathcats4/scholar-ppt-cn": {
+    "TateZhouSiu/image-ppt-king": {
       "stars": 28,
-      "forks": 5,
-      "open_issues": 2,
+      "forks": 1,
+      "open_issues": 0,
       "license": "MIT",
-      "created_at": "2026-06-03",
-      "pushed_at": "2026-07-28",
+      "created_at": "2026-05-25",
+      "pushed_at": "2026-05-25",
       "archived": false,
       "homepage": null,
       "default_branch": "main"
@@ -1167,17 +1200,6 @@
       "archived": false,
       "homepage": null,
       "default_branch": "master"
-    },
-    "TateZhouSiu/image-ppt-king": {
-      "stars": 27,
-      "forks": 1,
-      "open_issues": 0,
-      "license": "MIT",
-      "created_at": "2026-05-25",
-      "pushed_at": "2026-05-25",
-      "archived": false,
-      "homepage": null,
-      "default_branch": "main"
     },
     "dakjdakd/PPT-Design-DNA": {
       "stars": 26,
@@ -1245,6 +1267,28 @@
       "homepage": null,
       "default_branch": "main"
     },
+    "norahe0304-art/30x-mckinsey-research-deck": {
+      "stars": 22,
+      "forks": 4,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-06-09",
+      "pushed_at": "2026-07-09",
+      "archived": false,
+      "homepage": "https://norahe0304-art.github.io/30x-mckinsey-research-deck/",
+      "default_branch": "master"
+    },
+    "joker-sxj/ppt-agent": {
+      "stars": 21,
+      "forks": 2,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-05-30",
+      "pushed_at": "2026-07-13",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
     "Emily27-alt/html-to-pptx": {
       "stars": 20,
       "forks": 1,
@@ -1278,35 +1322,13 @@
       "homepage": null,
       "default_branch": "master"
     },
-    "norahe0304-art/30x-mckinsey-research-deck": {
-      "stars": 20,
-      "forks": 4,
-      "open_issues": 0,
-      "license": "MIT",
-      "created_at": "2026-06-09",
-      "pushed_at": "2026-07-09",
-      "archived": false,
-      "homepage": "https://norahe0304-art.github.io/30x-mckinsey-research-deck/",
-      "default_branch": "master"
-    },
     "dbmcco/keynote-slides-skill": {
-      "stars": 19,
+      "stars": 20,
       "forks": 3,
       "open_issues": 0,
       "license": null,
       "created_at": "2026-01-14",
       "pushed_at": "2026-06-09",
-      "archived": false,
-      "homepage": null,
-      "default_branch": "main"
-    },
-    "joker-sxj/ppt-agent": {
-      "stars": 19,
-      "forks": 2,
-      "open_issues": 0,
-      "license": "MIT",
-      "created_at": "2026-05-30",
-      "pushed_at": "2026-07-13",
       "archived": false,
       "homepage": null,
       "default_branch": "main"
@@ -1323,12 +1345,34 @@
       "default_branch": "main"
     },
     "CxyZyr/PPTX-Template-Skills": {
-      "stars": 17,
+      "stars": 18,
       "forks": 1,
       "open_issues": 0,
       "license": "MIT",
       "created_at": "2026-06-12",
       "pushed_at": "2026-06-12",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "ZunbaRan/excalidraw-slides-skills": {
+      "stars": 18,
+      "forks": 2,
+      "open_issues": 1,
+      "license": null,
+      "created_at": "2026-01-24",
+      "pushed_at": "2026-01-26",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "floflo11/mbb-decks": {
+      "stars": 17,
+      "forks": 1,
+      "open_issues": 1,
+      "license": "MIT",
+      "created_at": "2026-05-03",
+      "pushed_at": "2026-05-05",
       "archived": false,
       "homepage": null,
       "default_branch": "main"
@@ -1345,7 +1389,7 @@
       "default_branch": "main"
     },
     "stone-yu/ai-draw-skill": {
-      "stars": 15,
+      "stars": 16,
       "forks": 1,
       "open_issues": 0,
       "license": null,
@@ -1366,17 +1410,6 @@
       "homepage": null,
       "default_branch": "main"
     },
-    "floflo11/mbb-decks": {
-      "stars": 15,
-      "forks": 1,
-      "open_issues": 1,
-      "license": "MIT",
-      "created_at": "2026-05-03",
-      "pushed_at": "2026-05-05",
-      "archived": false,
-      "homepage": null,
-      "default_branch": "main"
-    },
     "arifszn/slide-wright": {
       "stars": 14,
       "forks": 2,
@@ -1386,6 +1419,28 @@
       "pushed_at": "2026-06-30",
       "archived": false,
       "homepage": null,
+      "default_branch": "main"
+    },
+    "woniuniuniu/four-up-ppt-generator": {
+      "stars": 14,
+      "forks": 2,
+      "open_issues": 0,
+      "license": "AGPL-3.0",
+      "created_at": "2026-05-30",
+      "pushed_at": "2026-07-17",
+      "archived": false,
+      "homepage": "https://4ppt.vercel.app",
+      "default_branch": "main"
+    },
+    "awesome-skills/create-html-deck": {
+      "stars": 14,
+      "forks": 0,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-07-15",
+      "pushed_at": "2026-07-15",
+      "archived": false,
+      "homepage": "https://verifiable-goal-weekly-share-public.pages.dev",
       "default_branch": "main"
     },
     "caikankan/cyberbin-ppt-skill": {
@@ -1408,17 +1463,6 @@
       "pushed_at": "2026-07-13",
       "archived": false,
       "homepage": "https://github.com/che626/competition-ppt-template-first-skill",
-      "default_branch": "main"
-    },
-    "woniuniuniu/four-up-ppt-generator": {
-      "stars": 13,
-      "forks": 2,
-      "open_issues": 0,
-      "license": "AGPL-3.0",
-      "created_at": "2026-05-30",
-      "pushed_at": "2026-07-17",
-      "archived": false,
-      "homepage": "https://4ppt.vercel.app",
       "default_branch": "main"
     },
     "xj-bear/NanoBanana-PPT-Skills": {
@@ -1454,6 +1498,39 @@
       "homepage": "https://github.com/uuoov/ppt-image-share-builder/releases/latest",
       "default_branch": "main"
     },
+    "SlideSpeak/slide-design-skill": {
+      "stars": 13,
+      "forks": 1,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-05-26",
+      "pushed_at": "2026-06-25",
+      "archived": false,
+      "homepage": "https://slidespeak.co",
+      "default_branch": "main"
+    },
+    "Honghurumeng/oc_sdk_ppt": {
+      "stars": 13,
+      "forks": 1,
+      "open_issues": 0,
+      "license": null,
+      "created_at": "2026-02-05",
+      "pushed_at": "2026-03-19",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "tristan-mcinnis/pptx-from-layouts-skill": {
+      "stars": 12,
+      "forks": 2,
+      "open_issues": 3,
+      "license": "MIT",
+      "created_at": "2026-01-31",
+      "pushed_at": "2026-06-03",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
     "HalfAI1102/HalfAI-gufappt": {
       "stars": 12,
       "forks": 0,
@@ -1465,17 +1542,6 @@
       "homepage": null,
       "default_branch": "main"
     },
-    "SlideSpeak/slide-design-skill": {
-      "stars": 12,
-      "forks": 1,
-      "open_issues": 0,
-      "license": "MIT",
-      "created_at": "2026-05-26",
-      "pushed_at": "2026-06-25",
-      "archived": false,
-      "homepage": "https://slidespeak.co",
-      "default_branch": "main"
-    },
     "ziguishian/better-ppt-html-deck": {
       "stars": 12,
       "forks": 2,
@@ -1485,17 +1551,6 @@
       "pushed_at": "2026-06-14",
       "archived": false,
       "homepage": null,
-      "default_branch": "main"
-    },
-    "awesome-skills/create-html-deck": {
-      "stars": 12,
-      "forks": 0,
-      "open_issues": 0,
-      "license": "MIT",
-      "created_at": "2026-07-15",
-      "pushed_at": "2026-07-15",
-      "archived": false,
-      "homepage": "https://verifiable-goal-weekly-share-public.pages.dev",
       "default_branch": "main"
     },
     "lanceli93/aws-html-slides": {
@@ -1515,7 +1570,7 @@
       "open_issues": 0,
       "license": "MIT",
       "created_at": "2026-07-24",
-      "pushed_at": "2026-07-26",
+      "pushed_at": "2026-07-30",
       "archived": false,
       "homepage": null,
       "default_branch": "master"
@@ -1542,6 +1597,17 @@
       "homepage": null,
       "default_branch": "main"
     },
+    "likaku/mck-html-design-skill": {
+      "stars": 11,
+      "forks": 5,
+      "open_issues": 0,
+      "license": "Apache-2.0",
+      "created_at": "2026-03-20",
+      "pushed_at": "2026-05-13",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
     "SlideStage/slidestage-pack": {
       "stars": 10,
       "forks": 0,
@@ -1564,28 +1630,6 @@
       "homepage": "https://docs.deckset.com/English.lproj/",
       "default_branch": "main"
     },
-    "likaku/mck-html-design-skill": {
-      "stars": 10,
-      "forks": 5,
-      "open_issues": 0,
-      "license": "Apache-2.0",
-      "created_at": "2026-03-20",
-      "pushed_at": "2026-05-13",
-      "archived": false,
-      "homepage": null,
-      "default_branch": "main"
-    },
-    "tristan-mcinnis/pptx-from-layouts-skill": {
-      "stars": 9,
-      "forks": 1,
-      "open_issues": 3,
-      "license": "MIT",
-      "created_at": "2026-01-31",
-      "pushed_at": "2026-06-03",
-      "archived": false,
-      "homepage": null,
-      "default_branch": "main"
-    },
     "tangonho/iml-pptx": {
       "stars": 9,
       "forks": 1,
@@ -1606,6 +1650,28 @@
       "pushed_at": "2026-06-06",
       "archived": false,
       "homepage": null,
+      "default_branch": "main"
+    },
+    "JZCreative/Fudan-University-PPT-skill": {
+      "stars": 9,
+      "forks": 2,
+      "open_issues": 0,
+      "license": null,
+      "created_at": "2026-06-25",
+      "pushed_at": "2026-06-25",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "sacredvoid/presentation-chef": {
+      "stars": 9,
+      "forks": 0,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-02-23",
+      "pushed_at": "2026-02-25",
+      "archived": false,
+      "homepage": "https://sacredvoid.github.io/presentation-chef",
       "default_branch": "main"
     },
     "artifact-kit/html-to-pptx-skill": {
@@ -1641,28 +1707,6 @@
       "homepage": null,
       "default_branch": "main"
     },
-    "JZCreative/Fudan-University-PPT-skill": {
-      "stars": 8,
-      "forks": 2,
-      "open_issues": 0,
-      "license": null,
-      "created_at": "2026-06-25",
-      "pushed_at": "2026-06-25",
-      "archived": false,
-      "homepage": null,
-      "default_branch": "main"
-    },
-    "sacredvoid/presentation-chef": {
-      "stars": 8,
-      "forks": 0,
-      "open_issues": 0,
-      "license": "MIT",
-      "created_at": "2026-02-23",
-      "pushed_at": "2026-02-25",
-      "archived": false,
-      "homepage": "https://sacredvoid.github.io/presentation-chef",
-      "default_branch": "main"
-    },
     "fengting124/paper-figure-pptx-skill": {
       "stars": 8,
       "forks": 0,
@@ -1674,19 +1718,8 @@
       "homepage": null,
       "default_branch": "main"
     },
-    "iwbaga724-Hinda/ai-editable-ppt-skill": {
-      "stars": 7,
-      "forks": 0,
-      "open_issues": 0,
-      "license": null,
-      "created_at": "2026-05-14",
-      "pushed_at": "2026-05-14",
-      "archived": false,
-      "homepage": null,
-      "default_branch": "main"
-    },
     "danny0926/ppt-skills": {
-      "stars": 7,
+      "stars": 8,
       "forks": 1,
       "open_issues": 1,
       "license": null,
@@ -1697,7 +1730,7 @@
       "default_branch": "main"
     },
     "alingowangxr/guizang-ppt-skill": {
-      "stars": 7,
+      "stars": 8,
       "forks": 0,
       "open_issues": 0,
       "license": "MIT",
@@ -1708,7 +1741,7 @@
       "default_branch": "main"
     },
     "RuiqiWang-LGD/TalkTrack--": {
-      "stars": 7,
+      "stars": 8,
       "forks": 0,
       "open_issues": 0,
       "license": null,
@@ -1719,7 +1752,7 @@
       "default_branch": "main"
     },
     "chenyangji666/html-ppt-skill": {
-      "stars": 7,
+      "stars": 8,
       "forks": 3,
       "open_issues": 0,
       "license": "MIT",
@@ -1730,12 +1763,23 @@
       "default_branch": "main"
     },
     "nlj626/html-to-pptx": {
-      "stars": 7,
+      "stars": 8,
       "forks": 3,
       "open_issues": 2,
       "license": "MIT",
       "created_at": "2026-04-18",
       "pushed_at": "2026-04-18",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "iwbaga724-Hinda/ai-editable-ppt-skill": {
+      "stars": 7,
+      "forks": 0,
+      "open_issues": 0,
+      "license": null,
+      "created_at": "2026-05-14",
+      "pushed_at": "2026-05-14",
       "archived": false,
       "homepage": null,
       "default_branch": "main"
@@ -1757,7 +1801,7 @@
       "open_issues": 9,
       "license": "NOASSERTION",
       "created_at": "2026-03-28",
-      "pushed_at": "2026-07-27",
+      "pushed_at": "2026-08-03",
       "archived": false,
       "homepage": "https://agentiapt.github.io/vela-slides/",
       "default_branch": "main"
@@ -1784,6 +1828,28 @@
       "homepage": null,
       "default_branch": "master"
     },
+    "lainshao/modern-ppt": {
+      "stars": 7,
+      "forks": 0,
+      "open_issues": 0,
+      "license": "AGPL-3.0",
+      "created_at": "2026-06-13",
+      "pushed_at": "2026-07-09",
+      "archived": false,
+      "homepage": "https://lainshao.github.io/modern-ppt/",
+      "default_branch": "main"
+    },
+    "hanlulong/econ-slides-skill": {
+      "stars": 7,
+      "forks": 1,
+      "open_issues": 1,
+      "license": "MIT",
+      "created_at": "2026-07-15",
+      "pushed_at": "2026-07-20",
+      "archived": false,
+      "homepage": "https://openecon.ai",
+      "default_branch": "main"
+    },
     "Categorytyy/ppt-master": {
       "stars": 6,
       "forks": 1,
@@ -1806,15 +1872,37 @@
       "homepage": null,
       "default_branch": "main"
     },
-    "lainshao/modern-ppt": {
+    "lirouroud/research-group-ppt-skill": {
       "stars": 6,
       "forks": 0,
       "open_issues": 0,
-      "license": "AGPL-3.0",
-      "created_at": "2026-06-13",
-      "pushed_at": "2026-07-09",
+      "license": null,
+      "created_at": "2026-06-01",
+      "pushed_at": "2026-06-01",
       "archived": false,
-      "homepage": "https://lainshao.github.io/modern-ppt/",
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "ficooooo/Paper2ScholarSlides": {
+      "stars": 6,
+      "forks": 1,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-05-06",
+      "pushed_at": "2026-05-06",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "Aham-AIAPP/aham-ppt": {
+      "stars": 6,
+      "forks": 0,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-07-10",
+      "pushed_at": "2026-07-10",
+      "archived": false,
+      "homepage": "https://aham-aiapp.github.io/aham-ppt/",
       "default_branch": "main"
     },
     "bruc3van/bruce-pptx-generator": {
@@ -1853,10 +1941,10 @@
     "thmsgo18/presentation-forge": {
       "stars": 5,
       "forks": 0,
-      "open_issues": 1,
+      "open_issues": 0,
       "license": "MIT",
       "created_at": "2026-06-17",
-      "pushed_at": "2026-07-11",
+      "pushed_at": "2026-07-30",
       "archived": false,
       "homepage": "https://thmsgo18.github.io/presentation-forge/",
       "default_branch": "main"
@@ -1889,7 +1977,7 @@
       "open_issues": 0,
       "license": "MIT",
       "created_at": "2026-05-28",
-      "pushed_at": "2026-07-07",
+      "pushed_at": "2026-08-03",
       "archived": false,
       "homepage": null,
       "default_branch": "main"
@@ -1938,28 +2026,6 @@
       "homepage": null,
       "default_branch": "main"
     },
-    "lirouroud/research-group-ppt-skill": {
-      "stars": 5,
-      "forks": 0,
-      "open_issues": 0,
-      "license": null,
-      "created_at": "2026-06-01",
-      "pushed_at": "2026-06-01",
-      "archived": false,
-      "homepage": null,
-      "default_branch": "main"
-    },
-    "ficooooo/Paper2ScholarSlides": {
-      "stars": 5,
-      "forks": 1,
-      "open_issues": 0,
-      "license": "MIT",
-      "created_at": "2026-05-06",
-      "pushed_at": "2026-05-06",
-      "archived": false,
-      "homepage": null,
-      "default_branch": "main"
-    },
     "Carl-Marks/consulting-diagnosis-ppt-skill": {
       "stars": 5,
       "forks": 0,
@@ -1982,15 +2048,15 @@
       "homepage": null,
       "default_branch": "main"
     },
-    "Aham-AIAPP/aham-ppt": {
-      "stars": 4,
+    "sylvanus4/kr-brand-decks": {
+      "stars": 5,
       "forks": 0,
       "open_issues": 0,
-      "license": "MIT",
-      "created_at": "2026-07-10",
-      "pushed_at": "2026-07-10",
+      "license": "NOASSERTION",
+      "created_at": "2026-07-09",
+      "pushed_at": "2026-07-09",
       "archived": false,
-      "homepage": "https://aham-aiapp.github.io/aham-ppt/",
+      "homepage": null,
       "default_branch": "main"
     },
     "NestMold/notrat-ppt-studio-skill": {
@@ -2112,6 +2178,17 @@
       "pushed_at": "2026-07-23",
       "archived": false,
       "homepage": "https://dreamid27.github.io/frontend-slides/",
+      "default_branch": "main"
+    },
+    "zsc58/ustc-ppt-template": {
+      "stars": 4,
+      "forks": 0,
+      "open_issues": 0,
+      "license": "NOASSERTION",
+      "created_at": "2026-06-12",
+      "pushed_at": "2026-06-12",
+      "archived": false,
+      "homepage": null,
       "default_branch": "main"
     },
     "hpuhsp/html-report-generator": {
@@ -2246,13 +2323,200 @@
       "homepage": null,
       "default_branch": "main"
     },
-    "zsc58/ustc-ppt-template": {
+    "yoshifujidesign/3d-html-slide-skill": {
+      "stars": 3,
+      "forks": 1,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-04-22",
+      "pushed_at": "2026-04-22",
+      "archived": false,
+      "homepage": "https://re-presentation.jp",
+      "default_branch": "main"
+    },
+    "zhoujie97/image-to-editable-ppt-skill": {
       "stars": 3,
       "forks": 0,
       "open_issues": 0,
+      "license": null,
+      "created_at": "2026-08-01",
+      "pushed_at": "2026-08-02",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "HarlandZZC/cuhk-slides-template-html": {
+      "stars": 3,
+      "forks": 0,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-05-27",
+      "pushed_at": "2026-05-28",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "TaoGEO/TaoHtml": {
+      "stars": 3,
+      "forks": 0,
+      "open_issues": 1,
+      "license": "MIT",
+      "created_at": "2026-07-03",
+      "pushed_at": "2026-07-21",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "JunfengRan/PPTWork": {
+      "stars": 2,
+      "forks": 1,
+      "open_issues": 1,
+      "license": "MIT",
+      "created_at": "2026-05-13",
+      "pushed_at": "2026-07-22",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "Meliwat/vyral-tiktok-slideshow-skill": {
+      "stars": 2,
+      "forks": 0,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-06-09",
+      "pushed_at": "2026-06-09",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "SiyuQiannn/university-ppt-skill": {
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
       "license": "NOASSERTION",
-      "created_at": "2026-06-12",
-      "pushed_at": "2026-06-12",
+      "created_at": "2026-06-21",
+      "pushed_at": "2026-07-14",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "sunxiaohui2025/claude-ppt-skills": {
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "license": null,
+      "created_at": "2026-05-28",
+      "pushed_at": "2026-06-15",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "HelenSong/course-html-slides-skill": {
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-03-24",
+      "pushed_at": "2026-04-25",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "zjsthmjialin/inspiration-deck-workshop": {
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-07-11",
+      "pushed_at": "2026-07-15",
+      "archived": false,
+      "homepage": "https://zjsthmjialin.github.io/theme-motion-showroom-preview/",
+      "default_branch": "master"
+    },
+    "kimtth/agent-pptify-kit": {
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-05-21",
+      "pushed_at": "2026-07-17",
+      "archived": false,
+      "homepage": "https://github.com/github/awesome-copilot",
+      "default_branch": "main"
+    },
+    "lk251066/ppt-deck-builder-skill": {
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "license": null,
+      "created_at": "2026-03-08",
+      "pushed_at": "2026-04-29",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "O0000-code/paper-deck-reveal": {
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "license": "Apache-2.0",
+      "created_at": "2026-07-17",
+      "pushed_at": "2026-07-22",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "NickyLam/GHB-PPT-Skill": {
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-07-06",
+      "pushed_at": "2026-07-31",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "eranw2000/google-slides-skill": {
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-08-02",
+      "pushed_at": "2026-08-02",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "defreitassl/html-presentation-skill": {
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-06-26",
+      "pushed_at": "2026-07-01",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "jayworker/slide-deck-skill": {
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-07-07",
+      "pushed_at": "2026-07-13",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main"
+    },
+    "unsolublesugar/marp-slides-studio": {
+      "stars": 0,
+      "forks": 0,
+      "open_issues": 0,
+      "license": "MIT",
+      "created_at": "2026-08-02",
+      "pushed_at": "2026-08-02",
       "archived": false,
       "homepage": null,
       "default_branch": "main"
