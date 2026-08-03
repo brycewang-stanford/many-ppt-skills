@@ -3127,6 +3127,102 @@
       "tagline_en": "Turns a course outline into multi-page HTML slides built for classroom projection.",
       "tagline_zh": "把课程大纲转成多页 HTML 幻灯片,面向课堂投影与互动工作坊设计。",
       "source": "discovered"
+    },
+    {
+      "id": "excalidraw-slides-skills",
+      "repo": "ZunbaRan/excalidraw-slides-skills",
+      "name": "Excalidraw Slides Generator",
+      "author": "ZunbaRan",
+      "author_url": "https://github.com/ZunbaRan",
+      "route": "framework",
+      "license_note": "Unspecified",
+      "lang": "zh",
+      "tagline_en": "Two-phase workflow that turns text into 16:9 Excalidraw slides with generated SVG art.",
+      "tagline_zh": "两阶段工作流:把文本转成 16:9 Excalidraw 幻灯片,并自动生成配套 SVG 插图。",
+      "source": "discovered"
+    },
+    {
+      "id": "cuhk-slides-template-html",
+      "repo": "HarlandZZC/cuhk-slides-template-html",
+      "name": "CUHK Slides Template (HTML)",
+      "author": "HarlandZZC",
+      "author_url": "https://github.com/HarlandZZC",
+      "route": "templates",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "One self-contained HTML slide template in CUHK colours, plus a Markdown-to-slides skill.",
+      "tagline_zh": "一份自包含的港中大配色 HTML 幻灯片模板,附带 Markdown 转幻灯片的 skill。",
+      "highlights_en": [
+        "A single HTML file with inline CSS and JS: no build step, no runtime, and it survives git diff",
+        "14 demo slides across 8 slide types and 8 layouts, including feature grids with modals and animated stat counters",
+        "The companion md-to-cuhk-slides skill renders an outline in two reviewable steps rather than one blind pass",
+        "Deliberately avoids reveal.js, Marp and Beamer so the deck stays a plain file you can open offline"
+      ],
+      "highlights_zh": [
+        "单个 HTML 文件,CSS 与 JS 内联:无构建步骤、无运行时,且能正常 git diff",
+        "开箱 14 页示例,覆盖 8 种页型与 8 种版式,含可点开弹窗的特性网格与带计数动画的数据页",
+        "配套 md-to-cuhk-slides skill 分两步渲染大纲,每步都可复核,而不是一次性盲出",
+        "刻意不依赖 reveal.js / Marp / Beamer,成品仍是一个可离线打开的普通文件"
+      ],
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/HarlandZZC/cuhk-slides-template-html && cp -r skills/md-to-cuhk-slides .claude/skills/"
+      },
+      "requires": [
+        "A browser"
+      ],
+      "best_for_en": "Academic talks that need a fixed institutional palette and a deck that stays version-controllable.",
+      "best_for_zh": "需要固定院校配色、又希望成品能进版本控制的学术报告。",
+      "source": "discovered"
+    },
+    {
+      "id": "taohtml",
+      "repo": "TaoGEO/TaoHtml",
+      "name": "TaoHtml",
+      "author": "TaoGEO",
+      "author_url": "https://github.com/TaoGEO",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "zh",
+      "tagline_en": "Redesigns an existing Word, PDF or PPT into a 16:9 offline HTML deck with staged animation.",
+      "tagline_zh": "把已有的 Word、PDF 或 PPT 重新设计成带分步动效、可离线交付的 16:9 HTML 演示文稿。",
+      "source": "discovered"
+    },
+    {
+      "id": "google-slides-skill",
+      "repo": "eranw2000/google-slides-skill",
+      "name": "Google Slides Deck Skill",
+      "author": "eranw2000",
+      "author_url": "https://github.com/eranw2000",
+      "route": "framework",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Rebuilds a Google Slides deck through the API, rendering each slide to PNG to check its work.",
+      "tagline_zh": "通过 API 重建 Google Slides 演示文稿,并把每页渲染成 PNG 回看以自查结果。",
+      "highlights_en": [
+        "The only Google Slides route in this registry: it drives the Slides API rather than emitting HTML or PPTX",
+        "Pairs every batchUpdate with a render-and-look step, because a batchUpdate response never tells you the text overflowed",
+        "Runs in phases, so a failure at slide 40 does not undo the first 39",
+        "Pulls one design system from a brand you point it at, then applies card layouts, per-slide icons, real tables and a linked contents page"
+      ],
+      "highlights_zh": [
+        "本登记册中唯一走 Google Slides 路线的条目:直接驱动 Slides API,而不是产出 HTML 或 PPTX",
+        "每次 batchUpdate 都配一次渲染回看——batchUpdate 的返回值不会告诉你正文溢出了页面",
+        "分阶段执行,第 40 页出错不会推翻前 39 页的成果",
+        "从你指定的品牌提取一套设计系统,再套用卡片版式、逐页图标、真实表格与带跳转的目录页"
+      ],
+      "install": {
+        "method": "clone",
+        "command": "cp -R google-slides-skill/enhance-slides ~/.claude/skills/"
+      },
+      "requires": [
+        "Python 3",
+        "google-api-python-client",
+        "Google Slides API credentials"
+      ],
+      "best_for_en": "Teams already living in Google Slides who want an agent to fix a deck in place, not export a new one.",
+      "best_for_zh": "已经在用 Google Slides、希望 Agent 就地修好演示文稿而不是另导一份的团队。",
+      "source": "discovered"
     }
   ],
   "lists": [

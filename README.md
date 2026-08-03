@@ -9,7 +9,7 @@
 [简体中文](README.md) · [English](README.en.md)
 
 <!-- BEGIN:COUNTS -->
-**收录 214 个 skill**，其中 **32 个人工读过** · **合计 271,800 star** · HTML 路线 80 个 · PPTX 路线 78 个 · 双路线 25 个 · 数据刷新于 **2026-07-29**
+**收录 218 个 skill**，其中 **34 个人工读过** · **合计 271,800 star** · HTML 路线 81 个 · PPTX 路线 78 个 · 双路线 25 个 · 数据刷新于 **2026-07-29**
 <!-- END:COUNTS -->
 
 </div>
@@ -17,7 +17,7 @@
 ---
 
 Coding Agent 把 CSS 写好了，半年之内冒出一整个新品类：把文档变成不像机器做的幻灯片的
-Skill。这一页收录了 <!-- BEGIN:TRACKED -->214<!-- END:TRACKED --> 个，其中四个 star 数都超过 2 万。
+Skill。这一页收录了 <!-- BEGIN:TRACKED -->218<!-- END:TRACKED --> 个，其中四个 star 数都超过 2 万。
 
 而所有关于它们的排名，都只是 star 数的重新排序。**star 衡量的是作者会不会发推，不能告诉你
 哪一个能处理好你的代码块，也不能告诉你财务总监能不能编辑第 12 页。**
@@ -388,6 +388,10 @@ python scripts/pick.py find editorial         # 搜风格 ID 和描述
 | **[GHB PPT Skill](https://github.com/NickyLam/GHB-PPT-Skill)**<br><sub>NickyLam</sub> | — | PPTX | MIT | 基于企业模板输出 PPTX,SVG 转为可编辑 DrawingML,默认全离线验证。 |
 | **[OpenCode PPT Studio](https://github.com/Honghurumeng/oc_sdk_ppt)**†<br><sub>Honghurumeng</sub> | — | 双路线 | Unspecified | 网页应用:先出大纲初稿,再开新会话精修,然后生成 HTML slides 并本地构建 PPTX。 |
 | **[Course HTML Slides Builder](https://github.com/HelenSong/course-html-slides-skill)**†<br><sub>HelenSong</sub> | — | HTML | MIT | 把课程大纲转成多页 HTML 幻灯片,面向课堂投影与互动工作坊设计。 |
+| **[Excalidraw Slides Generator](https://github.com/ZunbaRan/excalidraw-slides-skills)**†<br><sub>ZunbaRan</sub> | — | 框架 | Unspecified | 两阶段工作流:把文本转成 16:9 Excalidraw 幻灯片,并自动生成配套 SVG 插图。 |
+| **[CUHK Slides Template (HTML)](https://github.com/HarlandZZC/cuhk-slides-template-html)**<br><sub>HarlandZZC</sub> | — | 模板库 | MIT | 一份自包含的港中大配色 HTML 幻灯片模板,附带 Markdown 转幻灯片的 skill。 |
+| **[TaoHtml](https://github.com/TaoGEO/TaoHtml)**†<br><sub>TaoGEO</sub> | — | HTML | MIT | 把已有的 Word、PDF 或 PPT 重新设计成带分步动效、可离线交付的 16:9 HTML 演示文稿。 |
+| **[Google Slides Deck Skill](https://github.com/eranw2000/google-slides-skill)**<br><sub>eranw2000</sub> | — | 框架 | MIT | 通过 API 重建 Google Slides 演示文稿,并把每页渲染成 PNG 回看以自查结果。 |
 
 ### 其他精选列表
 
@@ -459,7 +463,7 @@ python scripts/pick.py find editorial         # 搜风格 ID 和描述
 <!-- BEGIN:INSTALLMETHODS -->
 | 安装方式 | 实际发生了什么 | 数量 |
 |---|---|---:|
-| `clone` | 克隆进 `~/.claude/skills/`，也就是 Claude Code 找个人 skill 的地方。重开一个会话就能用。 | 25 |
+| `clone` | 克隆进 `~/.claude/skills/`，也就是 Claude Code 找个人 skill 的地方。重开一个会话就能用。 | 27 |
 | `python` | 需要本机有 Python。克隆下来、装依赖，然后让 agent 在这个目录里干活。 | 2 |
 | `plugin` | 两条命令是在 **Claude Code 里面**敲的，不是终端。先加 marketplace，再从里面装。 | 2 |
 | `skills-cli` | 跨 agent 的安装器，不止 Claude Code 能用。 | 2 |
@@ -485,7 +489,7 @@ python scripts/pick.py find editorial         # 搜风格 ID 和描述
 > 第四步那句关于预览的描述，是从 frontend-slides 的 SKILL.md 里读到的，只对它成立。
 
 <!-- BEGIN:GALLERY -->
-**跳到：**[PPT Master](#gallery-ppt-master) <sub>24</sub> · [Frontend Slides](#gallery-frontend-slides) <sub>24</sub> · [Guizang PPT Skill](#gallery-guizang-ppt-skill) <sub>13</sub> · [Huashu Design](#gallery-huashu-design) <sub>24</sub> · [HTML PPT Studio](#gallery-html-ppt-skill) <sub>24</sub> · [open-slide](#gallery-open-slide) <sub>16</sub> · [Beautiful HTML Templates](#gallery-beautiful-html-templates) <sub>24</sub> · [PPT Agent Workflow San](#gallery-ppt-agent-workflow-san) <sub>10</sub> · [Frontend Slides Editable](#gallery-frontend-slides-editable) <sub>24</sub> · [PPT SVG Generator](#gallery-ppt-svg-generator) <sub>2</sub> · [Mck PPT Design System](#gallery-mck-ppt-design-skill) <sub>6</sub> · [PPT Agent Skill](#gallery-ppt-agent-skill) <sub>24</sub> · [HTML Slides](#gallery-html-slides-bluedusk) <sub>4</sub> · [KingDee PPT Skill](#gallery-kingdee-ppt-skill) <sub>1</sub> · [Slide Creator](#gallery-slide-creator) <sub>23</sub> · [next-slide](#gallery-next-slide) <sub>1</sub> · [Slide Writer](#gallery-slide-writer) <sub>5</sub> · [Skills Slides](#gallery-skills-slides) <sub>4</sub> · [PowerPoint Fancy Design](#gallery-powerpoint-fancy-design) <sub>24</sub> · [PPTX from Layouts](#gallery-pptx-from-layouts) <sub>1</sub> · [PPTWork](#gallery-pptwork) <sub>24</sub> · [Paper Deck Reveal](#gallery-paper-deck-reveal) <sub>22</sub> · [Codex Slides](#gallery-codex-slides) <sub>24</sub> · [3D HTML Slide Skill](#gallery-3d-html-slide-skill) <sub>2</sub> · [University PPT Skill](#gallery-university-ppt-skill) <sub>10</sub> · [Image to Editable PPT Skill (zhoujie97)](#gallery-image-to-editable-ppt-skill-zhoujie97) <sub>4</sub> · [Claude PPT Skills](#gallery-claude-ppt-skills) <sub>3</sub> · [Econ Slides Skill](#gallery-econ-slides-skill) <sub>5</sub> · [GHB PPT Skill](#gallery-ghb-ppt-skill) <sub>1</sub> · [OpenCode PPT Studio](#gallery-oc-sdk-ppt) <sub>3</sub> · [Course HTML Slides Builder](#gallery-course-html-slides-skill) <sub>9</sub>
+**跳到：**[PPT Master](#gallery-ppt-master) <sub>24</sub> · [Frontend Slides](#gallery-frontend-slides) <sub>24</sub> · [Guizang PPT Skill](#gallery-guizang-ppt-skill) <sub>13</sub> · [Huashu Design](#gallery-huashu-design) <sub>24</sub> · [HTML PPT Studio](#gallery-html-ppt-skill) <sub>24</sub> · [open-slide](#gallery-open-slide) <sub>16</sub> · [Beautiful HTML Templates](#gallery-beautiful-html-templates) <sub>24</sub> · [PPT Agent Workflow San](#gallery-ppt-agent-workflow-san) <sub>10</sub> · [Frontend Slides Editable](#gallery-frontend-slides-editable) <sub>24</sub> · [PPT SVG Generator](#gallery-ppt-svg-generator) <sub>2</sub> · [Mck PPT Design System](#gallery-mck-ppt-design-skill) <sub>6</sub> · [PPT Agent Skill](#gallery-ppt-agent-skill) <sub>24</sub> · [HTML Slides](#gallery-html-slides-bluedusk) <sub>4</sub> · [KingDee PPT Skill](#gallery-kingdee-ppt-skill) <sub>1</sub> · [Slide Creator](#gallery-slide-creator) <sub>23</sub> · [next-slide](#gallery-next-slide) <sub>1</sub> · [Slide Writer](#gallery-slide-writer) <sub>5</sub> · [Skills Slides](#gallery-skills-slides) <sub>4</sub> · [PowerPoint Fancy Design](#gallery-powerpoint-fancy-design) <sub>24</sub> · [PPTX from Layouts](#gallery-pptx-from-layouts) <sub>1</sub> · [PPTWork](#gallery-pptwork) <sub>24</sub> · [Paper Deck Reveal](#gallery-paper-deck-reveal) <sub>22</sub> · [Codex Slides](#gallery-codex-slides) <sub>24</sub> · [3D HTML Slide Skill](#gallery-3d-html-slide-skill) <sub>2</sub> · [University PPT Skill](#gallery-university-ppt-skill) <sub>10</sub> · [Image to Editable PPT Skill (zhoujie97)](#gallery-image-to-editable-ppt-skill-zhoujie97) <sub>4</sub> · [Claude PPT Skills](#gallery-claude-ppt-skills) <sub>3</sub> · [Econ Slides Skill](#gallery-econ-slides-skill) <sub>5</sub> · [GHB PPT Skill](#gallery-ghb-ppt-skill) <sub>1</sub> · [OpenCode PPT Studio](#gallery-oc-sdk-ppt) <sub>3</sub> · [Course HTML Slides Builder](#gallery-course-html-slides-skill) <sub>9</sub> · [Excalidraw Slides Generator](#gallery-excalidraw-slides-skills) <sub>5</sub> · [CUHK Slides Template (HTML)](#gallery-cuhk-slides-template-html) <sub>2</sub> · [TaoHtml](#gallery-taohtml) <sub>12</sub> · [Google Slides Deck Skill](#gallery-google-slides-skill) <sub>1</sub>
 
 <a id="gallery-ppt-master"></a>
 
@@ -2436,9 +2440,136 @@ python3 -m pip install -r requirements.txt && python3 scripts/ghb_ppt.py doctor
 
 <sub><b>P12 Share</b> · <a href="https://github.com/HelenSong/course-html-slides-skill/blob/6e2c36a1f8a934cbfa89ffc27a562b70206a777c/docs/screenshots/p12-share.png"><code>docs/screenshots/p12-share.png</code></a></sub>
 
+<a id="gallery-excalidraw-slides-skills"></a>
+
+#### [Excalidraw Slides Generator](https://github.com/ZunbaRan/excalidraw-slides-skills) · — ⭐ · 框架
+
+<sub>两阶段工作流:把文本转成 16:9 Excalidraw 幻灯片,并自动生成配套 SVG 插图。</sub>
+
+<sub>取自 [`ZunbaRan/excalidraw-slides-skills`](https://github.com/ZunbaRan/excalidraw-slides-skills) 的 5 张图，此处 5 张，靠前的几张是项目自己放在 README 里的</sub>
+
+
+<img src="https://github.com/user-attachments/assets/44db2400-3c6a-4de9-8c37-b26759b284c0" width="100%" alt="image">
+
+<sub><b>image</b> · GitHub 附件图</sub>
+
+<img src="https://github.com/user-attachments/assets/89f3fc36-f0b7-45e7-b457-01e3b4f00e28" width="100%" alt="image">
+
+<sub><b>image</b> · GitHub 附件图</sub>
+
+<img src="https://github.com/user-attachments/assets/5ab31d78-49af-499f-801b-5ec374aa70d1" width="100%" alt="image">
+
+<sub><b>image</b> · GitHub 附件图</sub>
+
+<img src="https://github.com/user-attachments/assets/68470fc6-6fdf-49aa-a7b1-c97ca93c8c23" width="100%" alt="image">
+
+<sub><b>image</b> · GitHub 附件图</sub>
+
+<img src="https://github.com/user-attachments/assets/a1167d48-1bc1-4f5b-940b-145f235249bd" width="100%" alt="image">
+
+<sub><b>image</b> · GitHub 附件图</sub>
+
+<a id="gallery-cuhk-slides-template-html"></a>
+
+#### [CUHK Slides Template (HTML)](https://github.com/HarlandZZC/cuhk-slides-template-html) · — ⭐ · 模板库
+
+<sub>一份自包含的港中大配色 HTML 幻灯片模板,附带 Markdown 转幻灯片的 skill。</sub>
+
+<sub>取自 [`HarlandZZC/cuhk-slides-template-html`](https://github.com/HarlandZZC/cuhk-slides-template-html) 的 2 张图，此处 2 张，靠前的几张是项目自己放在 README 里的</sub>
+
+```bash
+git clone https://github.com/HarlandZZC/cuhk-slides-template-html && cp -r skills/md-to-cuhk-slides .claude/skills/
+```
+
+<sub><b>下面出现的风格</b> `title` · `your-figure` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
+
+<img src="https://raw.githubusercontent.com/HarlandZZC/cuhk-slides-template-html/ee6ed50a5136d98c1fb06d48ee7112e3a45714d5/docs/screenshots/title.png" width="100%" alt="Title slide preview">
+
+<sub><b>Title slide preview</b> · <a href="https://github.com/HarlandZZC/cuhk-slides-template-html/blob/ee6ed50a5136d98c1fb06d48ee7112e3a45714d5/docs/screenshots/title.png"><code>docs/screenshots/title.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/HarlandZZC/cuhk-slides-template-html/ee6ed50a5136d98c1fb06d48ee7112e3a45714d5/your-figure.png" width="100%" alt="CUHK Slides Template (HTML) sample">
+
+<sub><b>Your Figure</b> · <a href="https://github.com/HarlandZZC/cuhk-slides-template-html/blob/ee6ed50a5136d98c1fb06d48ee7112e3a45714d5/your-figure.png"><code>your-figure.png</code></a></sub>
+
+<a id="gallery-taohtml"></a>
+
+#### [TaoHtml](https://github.com/TaoGEO/TaoHtml) · — ⭐ · HTML
+
+<sub>把已有的 Word、PDF 或 PPT 重新设计成带分步动效、可离线交付的 16:9 HTML 演示文稿。</sub>
+
+<sub>取自 [`TaoGEO/TaoHtml`](https://github.com/TaoGEO/TaoHtml) 的 12 张图，此处 12 张，靠前的几张是项目自己放在 README 里的</sub>
+
+<sub><b>下面出现的风格</b> `reference-style-reconstruction` · `corporate-template-fidelity` · `built-in-visual-systems` · `reference-vi-board` · `corporate-family` · `01-ai-search-mechanism` · `02-geo-four-keywords` · `03-recall-process` · `04-retest-report` · `corporate-template-reference` · `corporate-family-section` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/readme/v0.3.0/reference-style-reconstruction.png" width="100%" alt="参考风格重构 VI 设计标准图">
+
+<sub><b>参考风格重构 VI 设计标准图</b> · <code>reference-style-reconstruction</code> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/readme/v0.3.0/reference-style-reconstruction.png"><code>docs/assets/readme/v0.3.0/reference-style-reconstruction.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/readme/v0.3.0/corporate-template-fidelity.png" width="100%" alt="企业模板保真五页合成样例">
+
+<sub><b>企业模板保真五页合成样例</b> · <code>corporate-template-fidelity</code> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/readme/v0.3.0/corporate-template-fidelity.png"><code>docs/assets/readme/v0.3.0/corporate-template-fidelity.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/readme/v0.3.0/built-in-visual-systems.png" width="100%" alt="TaoHtml 四套内置视觉系统各五页总览">
+
+<sub><b>TaoHtml 四套内置视觉系统各五页总览</b> · <code>built-in-visual-systems</code> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/readme/v0.3.0/built-in-visual-systems.png"><code>docs/assets/readme/v0.3.0/built-in-visual-systems.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/examples/corporate-template-fidelity/reference-vi-board.png" width="100%" alt="TaoHtml sample">
+
+<sub><b>Reference Vi Board</b> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/examples/corporate-template-fidelity/reference-vi-board.png"><code>examples/corporate-template-fidelity/reference-vi-board.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-family-cover.png" width="100%" alt="TaoHtml sample">
+
+<sub><b>Corporate Family</b> · 封面 · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-family-cover.png"><code>tests/fixtures/corporate-family-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/01-ai-search-mechanism.png" width="100%" alt="TaoHtml sample">
+
+<sub><b>01 Ai Search Mechanism</b> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/01-ai-search-mechanism.png"><code>docs/assets/cases/geo-salon/01-ai-search-mechanism.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/02-geo-four-keywords.png" width="100%" alt="TaoHtml sample">
+
+<sub><b>02 Geo Four Keywords</b> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/02-geo-four-keywords.png"><code>docs/assets/cases/geo-salon/02-geo-four-keywords.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/03-recall-process.png" width="100%" alt="TaoHtml sample">
+
+<sub><b>03 Recall Process</b> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/03-recall-process.png"><code>docs/assets/cases/geo-salon/03-recall-process.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/04-retest-report.png" width="100%" alt="TaoHtml sample">
+
+<sub><b>04 Retest Report</b> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/docs/assets/cases/geo-salon/04-retest-report.png"><code>docs/assets/cases/geo-salon/04-retest-report.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-template-reference.png" width="100%" alt="TaoHtml sample">
+
+<sub><b>Corporate Template Reference</b> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-template-reference.png"><code>tests/fixtures/corporate-template-reference.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-family-section.png" width="100%" alt="TaoHtml sample">
+
+<sub><b>Corporate Family Section</b> · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-family-section.png"><code>tests/fixtures/corporate-family-section.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/TaoGEO/TaoHtml/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-family-toc.png" width="100%" alt="TaoHtml sample">
+
+<sub><b>Corporate Family</b> · 目录页 · <a href="https://github.com/TaoGEO/TaoHtml/blob/3f304ab6ea8d42dd99b5dee28d4bb81b84485d98/tests/fixtures/corporate-family-toc.png"><code>tests/fixtures/corporate-family-toc.png</code></a></sub>
+
+<a id="gallery-google-slides-skill"></a>
+
+#### [Google Slides Deck Skill](https://github.com/eranw2000/google-slides-skill) · — ⭐ · 框架
+
+<sub>通过 API 重建 Google Slides 演示文稿,并把每页渲染成 PNG 回看以自查结果。</sub>
+
+<sub>取自 [`eranw2000/google-slides-skill`](https://github.com/eranw2000/google-slides-skill) 的 1 张图，此处 1 张，靠前的几张是项目自己放在 README 里的</sub>
+
+```bash
+cp -R google-slides-skill/enhance-slides ~/.claude/skills/
+```
+
+<sub><b>下面出现的风格</b> `enhance-slides-flow` —— 要哪个就在提示里点名。这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，不是本仓库起的名字。</sub>
+
+<img src="https://raw.githubusercontent.com/eranw2000/google-slides-skill/43127d4e79f963be2243e0369b779baf453eac28/docs/enhance-slides-flow.png" width="100%" alt="enhance-slides flow">
+
+<sub><b>enhance-slides flow</b> · <a href="https://github.com/eranw2000/google-slides-skill/blob/43127d4e79f963be2243e0369b779baf453eac28/docs/enhance-slides-flow.png"><code>docs/enhance-slides-flow.png</code></a></sub>
+
 <sub>以下项目的仓库里没有可用图片：Slidev、Quarkdown、Banana Slides、Visual Explainer、HTML Anything、Dashi PPT Skill、Codex PPT Skill、NanoBanana PPT Skills、Baoyu Design、Gorden PPT Skill、Codex Claude Academic Skills、Oh My PPT、Image to Editable PPT Skill、Gorden Super PPT Skills、CyberPPT、Ian Handdrawn PPT、PPT Image First、GPT Image2 PPT Skills、PPT Agent Skills、Humanize PPT、Claude Office Skills、Academic PPTX、Claude Skills、Power Design、Reveal.js Skill、Visual Style PPT Skill、Beamer Skill、RW Consulting PPT、Paper2Anything、DOM to PPTX、Marp Slides、Beamer Academic、Planners PPT Hell、Thesis Defense PPTX Skill、Apple Bento Grid、Codex PPT Skill、Hands on Deck、Skywork Skills、PPT Image2 Editable Rebuild、Slide Image to Editable PPTX、Magic Slide、Presentation Skills、Claude Design Skill、Servasyy Skills、Ultimate PPT Master Skill、Future Slide、Slide Deck Generator、HTML PPT Designer、Presentation Skills、PowerPoint Skill、Make Slide、PPT Report Skills、AI Paper to Slide Skill、Literature Report PPT Builder、Image to PPTX Skill、Visual Cognition Slides、CN Academic Spark、Knowledge Cat PPT Skill、SJTU PPT Template Skill、Deck Factory、Space Multi Design PPT、Lieflat HTML Design、Jiarui SVG Skills、Awesome PPT Skills、Editable Image to PPT Skill、Presentation、Huawei Style PPT Skill、HTML to Editable PPTX、Claude Code Codex Slide、Baoyu Xuanyi Skills、Beautiful Hackathon Slides、ImageGen PPTX Pipeline、Paper PPT Skill、Presentation Skill、Codex Image to Editable PPT、Slidev Skills、PPT Skill、BL Captain PPT Skill、HTML to PPT PDF、Slides AI Plugin、Scholar PPT CN、Narrative Engine、Image PPT King、PPT Design DNA、PPT Creator Skills、Beamer Skill、Jingge Sense Deck、Presentation Skill、Econ Empirical Paper PPT Skill、HTML to PPTX、Neon Slides、Claude HTML Slide Builder、30x McKinsey Research Deck、Keynote Slides Skill、PPT Agent、Interactive Slides、PPTX Template Skills、KAI Presentation、AI Draw Skill、Keynot、MBB Decks、Slide Wright、CyberBin PPT Skill、Competition PPT Template Skill、Four-Up PPT Generator、NanoBanana PPT Skills、NanoBanana PPT Skills、PPT Image Share Builder、HalfAI Gufa PPT、Slide Design Skill、Better PPT HTML Deck、Create HTML Deck、AWS HTML Slides、Prada Slides、Japanese Corporate PPTX Skill、Editable Leadership PPTX、SlideStage Pack、Deckset Claude Skill、McKinsey HTML Design Skill、IML PPTX、GZR NSFC PPT Skill、HTML to PPTX Skill、Bento PPT Skill、SlideSmith、Fudan University PPT Skill、Presentation Chef、Paper Figure PPTX Skill、AI Editable PPT Skill、Hand-Drawn PPT Skill、Guizang PPT Skill、TalkTrack、HTML PPT Skill、HTML to PPTX、PPT Expert Team、Vela Slides、Paper to LaTeX PPT、SOIL Deck Skills、PPT Master、PPT Image to Editable、Modern PPT、Bruce PPTX Generator、PPT Skill、Xidian Slides Skill、Presentation Forge、Tekion Slide Generator、Paper to Slides Skill、PPT Skills、Editable PPTX Skill、Pitch Deck Iterator、Zhongguose PPT Skill、ZJ Lab Academic PPTX Skills、Research Group PPT Skill、Paper to Scholar Slides、Consulting Diagnosis PPT Skill、Token Slides、Aham PPT、Notrat PPT Studio、Web PPT、Codex XKPPT Skill、High Quality Slides、PPT Design Skill、PowerPoint Skill、Slide Weaver、Competition PPT Skill、HFUT Presentation Studio、SJTU Beamer PPT、Frontend Slides、HTML Report Generator、Demo Prep Skill、Avatar PPT Master、Special Achievement Report、HTML PPT Academic Skill、HTML PPT Video Skill、PPT Template Fill、AI PPT Skill、SVG to PPTX Skill、Doc to PPT Skill、Economics Empirical PPT Skill、SlideSage、USTC PPT Template、Anthropic PPTX (official)、Baoyu Skills、AI Skills (Cross-Platform)。</sub>
 
-<sub>**共 385 张，全部来自各项目自己的仓库**，按原尺寸完整展示、不做缩略图 —— 幻灯片信息密度高，缩到 300px 根本看不清字体和层次。每张都读自锁定的 commit，出处写在它上方的说明里，并且直接由原仓库提供、没有复制到本仓库。**没有任何一张是本仓库跑出来的**，所以它反映的是每个团队愿意拿出来展示的样子，不是同题横评。用 `python scripts/fetch_samples.py` 重新生成。</sub>
+<sub>**共 405 张，全部来自各项目自己的仓库**，按原尺寸完整展示、不做缩略图 —— 幻灯片信息密度高，缩到 300px 根本看不清字体和层次。每张都读自锁定的 commit，出处写在它上方的说明里，并且直接由原仓库提供、没有复制到本仓库。**没有任何一张是本仓库跑出来的**，所以它反映的是每个团队愿意拿出来展示的样子，不是同题横评。用 `python scripts/fetch_samples.py` 重新生成。</sub>
 <!-- END:GALLERY -->
 
 ---
@@ -2545,7 +2676,7 @@ GitHub Action 每天跑一次，数字变化时自动开 PR。**手工改表格�
 - **生成式的方差是真实存在的。** 同一个 skill、同一个 prompt，两次产出就是不一样。在样本量
   进入两位数之前，小的分差不说明任何问题。
 - **描述基于文档**，不是基于「我亲手都做过 deck」。登记册里
-  <!-- BEGIN:RESEARCHED -->32<!-- END:RESEARCHED --> 个是人工逐个读过 SKILL.md 的，
+  <!-- BEGIN:RESEARCHED -->34<!-- END:RESEARCHED --> 个是人工逐个读过 SKILL.md 的，
   其余带 `†` 的只核对了仓库自己写的一句话。我实际跑过的，档案里会写明。
 - **这是个快速变化的领域。** 所有内容都带日期，请看清楚。
 
