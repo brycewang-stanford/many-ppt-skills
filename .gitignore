@@ -18,6 +18,9 @@ Thumbs.db
 node_modules/
 package-lock.json
 
+# Per-plan agent scratch dirs (SDD, etc.). Local-only.
+.superpowers/
+
 # Benchmark working files.
 # Committed artifacts (decks, screenshots, score.json) are the point of this
 # repo and must NOT be ignored — anyone should be able to re-score from them.

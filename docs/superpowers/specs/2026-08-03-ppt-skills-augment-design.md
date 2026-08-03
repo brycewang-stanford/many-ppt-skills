@@ -1,0 +1,139 @@
+---
+title: Add 10-20 new PPT/slide skills to the registry
+date: 2026-08-03
+status: approved
+---
+
+# Add 10-20 new PPT/slide skills to the registry
+
+## Goal
+
+Grow the registry in `data/skills.json` with 10-20 new, strictly-curated slide / presentation / deck projects, and surface them in the generated `README.md` and `README.en.md` with thumbnail samples harvested by the existing `scripts/fetch_samples.py` from each project's own README / repo.
+
+## Scope
+
+- Edit `data/skills.json` (the only hand-maintained data file).
+- Run `python scripts/fetch_samples.py --only <new_ids>` (or the full refresh without `--only`) to populate per-skill samples in `data/samples.json`. The file is generated; we do **not** hand-edit it. If `gh` CLI is unavailable or a target repo cannot be shallow-cloned, the script will fail loudly and that batch is parked, not hand-padded.
+- Re-run `python scripts/render.py` to regenerate `README.md` and `README.en.md`.
+- Run `python scripts/validate_registry.py`, `python scripts/render.py --check`, `python scripts/sync_plugin.py --check`, and `python scripts/check_links.py` until they all pass.
+- Commit on `main` and `git push` (user pre-authorized direct push to `main`).
+- Do **not** modify `scripts/`, `principles/`, CI workflows, the `plugin.json` manifest, the schema file, `data/samples.json`, or any generated output other than the two READMEs.
+- Do **not** install or run any of the new skills locally. No network calls beyond `WebSearch` / `WebFetch` for discovery.
+
+## Acceptance bar (strict)
+
+Every new entry must satisfy **all** of:
+
+1. Public GitHub repository `owner/name`; reachable without authentication.
+2. Repo contains a `SKILL.md`, `AGENTS.md`, or equivalent onboarding doc (verified by `WebFetch` on the repo root and/or the file).
+3. Core purpose is producing slides / decks / presentations (the project's README or skill doc must say so; image evidence counts).
+4. The repository is not already in `data/skills.json` (compare against the 203 existing `repo` values).
+5. License is known. If the license is AGPL-3.0-or-similar, the entry MUST also carry `license_warning: "<text>"` (matching the convention used by existing AGPL rows; if the project's existing entry uses a different exact string, copy that).
+6. The repo contains at least one image that `scripts/fetch_samples.py` will accept: an `.png` / `.jpg` / `.jpeg` / `.gif` / `.webp` file referenced from `README.md` / `README.zh-CN.md` / `README_CN.md` / `README.en.md` / `README_EN.md` / `SKILL.md` / `AGENTS.md` / `CLAUDE.md`, hosted somewhere other than the skip-host list inside `fetch_samples.py` (no shields/badges/star-history/etc.). Candidates with no acceptable image are rejected.
+
+If fewer than 10 candidates pass the strict bar in the time budget, stop at the count that does pass; the spec does not allow relaxing the bar.
+
+## Route emphasis
+
+Bias discovery toward `templates` (currently 3 entries) and `framework` (currently 6 entries) so users browsing the README get a noticeably broader set of choices. Up to 10 additional entries may be allocated to whichever under-represented route has the strongest candidates (likely `suite`, `image`, or `hybrid`). `html` and `pptx` are not the priority.
+
+Valid `route` values are exactly the eight in `scripts/validate_registry.py`: `html`, `pptx`, `hybrid`, `image`, `suite`, `framework`, `templates`, `list`. No new values are added.
+
+## Field strategy per entry
+
+Required for every new entry:
+
+- `id` — slug matching `scripts/ingest_discovered.py`: lowercased repo tail segment; if that collides with an existing `id`, prefix with the owner.
+- `repo` — `"owner/name"`.
+- `name` — human display name; copy the repo's own display name.
+- `route` — one of the eight valid values.
+- `tagline_en` — ≥ 15 chars, < 100 chars, no "powerful" / "seamlessly" or similar marketing filler. States what the project is, in one sentence.
+- `tagline_zh` — ≥ 6 chars, a translation of `tagline_en`, no new claim.
+- `lang` — `en`, `zh`, or `bilingual`. Read from the project's own README and from a sample of its doc.
+- `license_note` — short license name (e.g. `MIT`, `Apache-2.0`, `AGPL-3.0`).
+- `source` — `"discovered"`.
+
+Optional, included when known and accurate:
+
+- `author`, `author_url`, `homepage`.
+- `install` (with `method` ∈ `clone` / `plugin` / `skills-cli` / `python` / `npx`) — **only** for the 2-3 entries we choose to hand-grade. For these, also add `requires`, `highlights_en`, `highlights_zh`, `best_for_en`, `best_for_zh`. Hand-grade is selected per the next paragraph.
+
+### Hand-grade selection
+
+After discovery, pick the 2-3 entries whose `SKILL.md` is the most concrete (install steps + a runnable example) and add the optional hand-grade fields. The remaining 7-17 entries ship as `discovered` rows. `pick.py list --ready` will continue to skip them (this matches the existing 177 discovered rows).
+
+## Sample strategy
+
+`data/samples.json` is generated by `scripts/fetch_samples.py`. **We do not hand-edit it.** The flow is:
+
+1. Add the new entry to `data/skills.json` (Task 3 / 6).
+2. Run `python scripts/fetch_samples.py --only <id1>,<id2>,...` (or a full refresh without `--only`). The script shallow-clones each new repo at its default branch HEAD, parses `README.md` / `SKILL.md` / `AGENTS.md` / `CLAUDE.md` and the listed Chinese variants for image references, scans the repo tree for embedded images, and writes a per-skill record `{ repo, sha, found, skipped, samples: [{ url, repo, sha, path, label, style, role, alt, from_doc, source, measured, width, height }] }`.
+3. The script populates per-sample `style` and `label` automatically from upstream context (the 166-value `style` vocabulary in the existing file is not a free pick list — it is the union of how prior projects named things; new entries will produce their own `style` strings).
+4. The README gallery section consumes `samples.json` via `scripts/render.py:render_gallery`, which only reads `samples[].url`, `samples[].alt`, `samples[].source`, plus the per-skill `repo`, `sha`, `found`. Missing or empty `samples[]` makes a skill appear in the registry table without a preview thumbnail — still listed, just no gallery image.
+
+**Failure mode:** if `gh` CLI is not installed or a target repo cannot be shallow-cloned, `fetch_samples.py` exits with a non-zero code for that skill. The entry is still in `data/skills.json` (so the README table includes it), but no sample. We park such candidates for retry rather than hand-pad a partial record.
+
+## Discovery workflow
+
+1. `WebSearch` with the keyword set drawn from `scripts/discover.py`:
+   - `SKILL.md slide deck`
+   - `AGENTS.md presentation`
+   - `claude skill pptx`
+   - `claude skill template presentation`
+   - `slide generator skill`
+   - Chinese: `幻灯片 skill`, `演示文稿 模板 Claude`
+2. If reachable, also fetch `awesome-claude-skills` and `awesome-ai-agents-skills` for additional candidates.
+3. For each candidate, `WebFetch` the GitHub repo page or `raw.githubusercontent.com/.../SKILL.md` to confirm:
+   - The project actually targets slide/deck generation.
+   - It ships a SKILL.md / AGENTS.md / equivalent.
+   - Its README contains an image URL we can embed.
+   - Its `owner/name` is not already in `data/skills.json` (the 203-row set).
+4. Maintain a working notes list (kept in chat, not committed) of candidates, the verdict, and the field values chosen.
+5. Repeat until 10-20 strict candidates are found or the one-week budget elapses. Whichever happens first.
+
+## Validation pipeline
+
+Run, in order, on the final commit:
+
+```bash
+python scripts/validate_registry.py     # gates data/skills.json
+python scripts/fetch_samples.py --only <new_ids>   # populates data/samples.json
+python scripts/render.py               # regenerates README.md, README.en.md
+python scripts/render.py --check       # asserts READMEs match generator
+python scripts/sync_plugin.py --check  # skills/.../SKILL.md drift
+python scripts/check_links.py          # internal markdown links
+```
+
+If any of these fail, fix the input and re-run until all pass before `git push`.
+
+`data/stats.json`, `data/capabilities.json` are **not** refreshed locally. They are owned by the daily `refresh-stats.yml` cron workflow; local refresh requires a working `GITHUB_TOKEN` and `gh` CLI and is out of scope.
+
+## Commit and push
+
+- Working tree stays on `main` (user pre-authorized direct push).
+- Commit message: `chore: add 10-20 new slide skills with samples to registry`
+- `git push origin main`.
+- If `git push` fails for any reason, report the exact error and stop; do not retry indefinitely.
+
+## Time budget
+
+The user granted one week. Each day:
+
+- Spend at most ~30 minutes on search and candidate verification.
+- Stop the moment a comfortable batch (≥ 5 new entries) is ready; commit and push; resume next day.
+- Hard stop at one week or 20 entries, whichever comes first.
+
+## Risks and rollback
+
+- **Network blocked:** fall back to the existing aggregated registries (`awesome-*` lists). If those are also unreachable, the batch stops at the count found.
+- **`gh` CLI missing or `fetch_samples.py` cannot shallow-clone a target:** the affected entry stays in `data/skills.json` (it still appears in the README table) but has no preview thumbnail. We do not hand-pad a partial sample.
+- **Strict bar too tight to reach 10:** the spec accepts fewer than 10. The README still gets the entries that pass; the registry is not padded.
+- **Push rejected:** the local commit stays; the user is told the exact error and offered next steps (different remote, PR flow, or force-push if explicitly authorized).
+
+## Out of scope
+
+- Installing, running, or locally rendering any of the new skills.
+- Modifying `scripts/`, CI workflows, `principles/`, the `plugin.json` manifest, or the schema file.
+- Translating `principles/01..08-*.md` into Chinese.
+- Refreshing `data/stats.json`, `data/capabilities.json`, or any generated output other than the two READMEs.
+- Bumping the registry version or adding new `route` values.
