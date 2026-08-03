@@ -196,7 +196,7 @@
 - [ ] **Step 3.5: Populate samples for the new entries via the script**
 
   ```bash
-  python scripts/fetch_samples.py --only <id1>,<id2>,<id3>,<id4>,<id5>
+  python scripts/fetch_samples.py --only <id1> <id2> <id3> <id4> <id5>
   ```
 
   Expected: the script shallow-clones each repo, parses `README.md` / `SKILL.md` / `AGENTS.md` / `CLAUDE.md` for image references, and writes per-skill records into `data/samples.json`. If a single id fails to clone, the script exits non-zero for that id but continues with the others; capture per-id status from the log and decide whether to retry or drop. **Do not hand-edit `data/samples.json`.** If `gh` is missing or no candidate can be cloned, the batch moves on without samples and the user is told in Task 4's report.
@@ -344,7 +344,7 @@
 
 - [ ] **Step 6.3: Edit `data/skills.json`; run `fetch_samples.py`**
 
-  Same as Task 3.4-3.5. Insert each new entry into `data/skills.json`, then run `python scripts/fetch_samples.py --only <id1>,<id2>,...` to populate samples.
+  Same as Task 3.4-3.5. Insert each new entry into `data/skills.json`, then run `python scripts/fetch_samples.py --only <id1> <id2> ...` to populate samples. (Space-separated ids; comma form is a silent no-op.)
 
 - [ ] **Step 6.4: JSON validity + `validate_registry.py`**
 
