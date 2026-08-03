@@ -135,7 +135,7 @@ still open in ten years.
 
 These are not old versus new. They are different jobs.
 
-<details>
+<details open>
 <summary><b>Full decision tree</b></summary>
 
 ```

@@ -122,7 +122,7 @@ python scripts/pick.py find editorial         # 搜风格 ID 和描述
 
 这不是新旧之争，是两种不同的活。
 
-<details>
+<details open>
 <summary><b>完整决策树</b></summary>
 
 ```
