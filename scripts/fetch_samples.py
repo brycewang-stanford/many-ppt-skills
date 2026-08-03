@@ -71,7 +71,13 @@ SKIP_HOSTS = ("shields.io", "badge.fury.io", "badgen.net", "codecov.io",
 
 # Filename fragments that mark an asset as identity or solicitation rather than
 # output. Matched against the whole path, so `assets/logo/hero.png` is caught.
+# `wordmark` and `brand-asset` are here because a project that ships a brand kit
+# names those files after the mark, not after "logo" — starry-slides' four
+# `…-brand-assets/…-mark-*.png` sailed past every fragment above and would have
+# shown up in the gallery as if they were slides. A bare "mark" is not safe to
+# add: it is inside "markdown" and "watermark".
 SKIP_NAME = ("logo", "icon", "favicon", "badge", "avatar", "banner",
+             "wordmark", "brand-asset", "brand_asset",
              "qrcode", "qr-code", "qr_code", "wechat", "weixin", "donate",
              "sponsor", "coffee", "star-history", "contributors", "profile",
              "watermark", "placeholder", "二维码", "赞赏", "打赏", "公众号",

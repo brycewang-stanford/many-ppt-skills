@@ -9,7 +9,7 @@ See one you like in the [gallery](#what-they-look-like)? **[Make your own in 60 
 [简体中文](README.md) · [English](README.en.md)
 
 <!-- BEGIN:COUNTS -->
-**223 skills tracked**, **35 of them read by hand** · **271,800 combined stars** · 82 HTML-native · 79 native PPTX · 25 both · data refreshed **2026-07-29**
+**227 skills tracked**, **39 of them read by hand** · **271,800 combined stars** · 83 HTML-native · 79 native PPTX · 25 both · data refreshed **2026-07-29**
 <!-- END:COUNTS -->
 
 </div>
@@ -18,7 +18,7 @@ See one you like in the [gallery](#what-they-look-like)? **[Make your own in 60 
 
 Coding agents got good at CSS, and in six months a whole category appeared: skills that
 turn a document into a deck that does not look machine-made. This page tracks
-<!-- BEGIN:TRACKED -->223<!-- END:TRACKED --> of them, and four have over 20,000 stars each.
+<!-- BEGIN:TRACKED -->227<!-- END:TRACKED --> of them, and four have over 20,000 stars each.
 
 Every ranking of them is a re-sort of those star counts. Stars measure how well an author
 tweets. They do not tell you which one handles your code blocks, or whether the CFO will
@@ -411,6 +411,10 @@ essentially every scenario.
 | **[PPTX Deck Creation Kit](https://github.com/kimtth/agent-pptify-kit)**†<br><sub>kimtth</sub> | — | PPTX | MIT | Coordinate-explicit PPTX specs that stay native objects, shipped as a Copilot plugin. |
 | **[TikTok Slideshow Command Center](https://github.com/Meliwat/vyral-tiktok-slideshow-skill)**†<br><sub>Meliwat</sub> | — | Image | MIT | Plans TikTok photo carousels: content angle, slide design and posting cadence in one pass. |
 | **[PPT Deck Builder Skill](https://github.com/lk251066/ppt-deck-builder-skill)**†<br><sub>lk251066</sub> | — | Image | Unspecified | Renders each page as a finished image, repairs only the bad pages, then packs a PPTX. |
+| **[Starry Slides](https://github.com/StarryKit/starry-slides)**<br><sub>StarryKit</sub> | — | Framework | Apache-2.0 | Slide editor that gives your agent fully editable decks with HTML as the source file. |
+| **[KR Brand Decks](https://github.com/sylvanus4/kr-brand-decks)**<br><sub>sylvanus4</sub> | — | Templates | NOASSERTION | 23 skills, one per Korean enterprise brand, each building an on-brand PPTX from scratch. |
+| **[Slide Deck Skill](https://github.com/jayworker/slide-deck-skill)**<br><sub>jayworker</sub> | — | HTML | MIT | Single-file 16:9 HTML decks in a light dashboard style, one message per slide. |
+| **[Marp Slides Studio](https://github.com/unsolublesugar/marp-slides-studio)**<br><sub>unsolublesugar</sub> | — | Templates | MIT | 50 Marp themes with a gallery, contrast checker and four agent skills for deck work. |
 
 ### Other curated lists
 
@@ -489,10 +493,10 @@ installing into the wrong place is the usual reason nothing happens:
 <!-- BEGIN:INSTALLMETHODS -->
 | Install method | What it actually does | Skills |
 |---|---|---:|
-| `clone` | Clones into `~/.claude/skills/`, where Claude Code looks for personal skills. Restart the session and it is available. | 28 |
+| `clone` | Clones into `~/.claude/skills/`, where Claude Code looks for personal skills. Restart the session and it is available. | 30 |
+| `plugin` | Two commands typed **inside Claude Code**, not in a terminal. Adds the marketplace, then installs from it. | 3 |
+| `skills-cli` | Agent-agnostic installer. Works outside Claude Code too. | 3 |
 | `python` | Needs Python on your machine. Clone it, install the dependencies, then point your agent at the cloned directory. | 2 |
-| `plugin` | Two commands typed **inside Claude Code**, not in a terminal. Adds the marketplace, then installs from it. | 2 |
-| `skills-cli` | Agent-agnostic installer. Works outside Claude Code too. | 2 |
 | `npx` | Scaffolds a project rather than installing a skill — you get a working directory to build in. | 1 |
 <!-- END:INSTALLMETHODS -->
 
@@ -518,7 +522,7 @@ and builds from it. Want the options instead? Don't name one — just ask for a 
 > frontend-slides' SKILL.md and holds for that skill only.
 
 <!-- BEGIN:GALLERY -->
-**Jump to:** [PPT Master](#gallery-ppt-master) <sub>24</sub> · [Frontend Slides](#gallery-frontend-slides) <sub>24</sub> · [Guizang PPT Skill](#gallery-guizang-ppt-skill) <sub>13</sub> · [Huashu Design](#gallery-huashu-design) <sub>24</sub> · [HTML PPT Studio](#gallery-html-ppt-skill) <sub>24</sub> · [open-slide](#gallery-open-slide) <sub>16</sub> · [Beautiful HTML Templates](#gallery-beautiful-html-templates) <sub>24</sub> · [PPT Agent Workflow San](#gallery-ppt-agent-workflow-san) <sub>10</sub> · [Frontend Slides Editable](#gallery-frontend-slides-editable) <sub>24</sub> · [PPT SVG Generator](#gallery-ppt-svg-generator) <sub>2</sub> · [Mck PPT Design System](#gallery-mck-ppt-design-skill) <sub>6</sub> · [PPT Agent Skill](#gallery-ppt-agent-skill) <sub>24</sub> · [HTML Slides](#gallery-html-slides-bluedusk) <sub>4</sub> · [KingDee PPT Skill](#gallery-kingdee-ppt-skill) <sub>1</sub> · [Slide Creator](#gallery-slide-creator) <sub>23</sub> · [next-slide](#gallery-next-slide) <sub>1</sub> · [Slide Writer](#gallery-slide-writer) <sub>5</sub> · [Skills Slides](#gallery-skills-slides) <sub>4</sub> · [PowerPoint Fancy Design](#gallery-powerpoint-fancy-design) <sub>24</sub> · [PPTX from Layouts](#gallery-pptx-from-layouts) <sub>1</sub> · [PPTWork](#gallery-pptwork) <sub>24</sub> · [Paper Deck Reveal](#gallery-paper-deck-reveal) <sub>22</sub> · [Codex Slides](#gallery-codex-slides) <sub>24</sub> · [3D HTML Slide Skill](#gallery-3d-html-slide-skill) <sub>2</sub> · [University PPT Skill](#gallery-university-ppt-skill) <sub>10</sub> · [Image to Editable PPT Skill (zhoujie97)](#gallery-image-to-editable-ppt-skill-zhoujie97) <sub>4</sub> · [Claude PPT Skills](#gallery-claude-ppt-skills) <sub>3</sub> · [Econ Slides Skill](#gallery-econ-slides-skill) <sub>5</sub> · [GHB PPT Skill](#gallery-ghb-ppt-skill) <sub>1</sub> · [OpenCode PPT Studio](#gallery-oc-sdk-ppt) <sub>3</sub> · [Course HTML Slides Builder](#gallery-course-html-slides-skill) <sub>9</sub> · [Excalidraw Slides Generator](#gallery-excalidraw-slides-skills) <sub>5</sub> · [CUHK Slides Template (HTML)](#gallery-cuhk-slides-template-html) <sub>2</sub> · [TaoHtml](#gallery-taohtml) <sub>12</sub> · [Google Slides Deck Skill](#gallery-google-slides-skill) <sub>1</sub> · [Inspiration Deck Workshop](#gallery-inspiration-deck-workshop) <sub>23</sub> · [HTML Presentation Skill](#gallery-html-presentation-skill) <sub>5</sub> · [PPTX Deck Creation Kit](#gallery-agent-pptify-kit) <sub>3</sub> · [TikTok Slideshow Command Center](#gallery-vyral-tiktok-slideshow-skill) <sub>6</sub> · [PPT Deck Builder Skill](#gallery-ppt-deck-builder-skill) <sub>4</sub>
+**Jump to:** [PPT Master](#gallery-ppt-master) <sub>24</sub> · [Frontend Slides](#gallery-frontend-slides) <sub>24</sub> · [Guizang PPT Skill](#gallery-guizang-ppt-skill) <sub>13</sub> · [Huashu Design](#gallery-huashu-design) <sub>24</sub> · [HTML PPT Studio](#gallery-html-ppt-skill) <sub>24</sub> · [open-slide](#gallery-open-slide) <sub>16</sub> · [Beautiful HTML Templates](#gallery-beautiful-html-templates) <sub>24</sub> · [PPT Agent Workflow San](#gallery-ppt-agent-workflow-san) <sub>10</sub> · [Frontend Slides Editable](#gallery-frontend-slides-editable) <sub>24</sub> · [PPT SVG Generator](#gallery-ppt-svg-generator) <sub>2</sub> · [Mck PPT Design System](#gallery-mck-ppt-design-skill) <sub>6</sub> · [PPT Agent Skill](#gallery-ppt-agent-skill) <sub>24</sub> · [HTML Slides](#gallery-html-slides-bluedusk) <sub>4</sub> · [KingDee PPT Skill](#gallery-kingdee-ppt-skill) <sub>1</sub> · [Slide Creator](#gallery-slide-creator) <sub>23</sub> · [next-slide](#gallery-next-slide) <sub>1</sub> · [Slide Writer](#gallery-slide-writer) <sub>5</sub> · [Skills Slides](#gallery-skills-slides) <sub>4</sub> · [PowerPoint Fancy Design](#gallery-powerpoint-fancy-design) <sub>24</sub> · [PPTX from Layouts](#gallery-pptx-from-layouts) <sub>1</sub> · [PPTWork](#gallery-pptwork) <sub>24</sub> · [Paper Deck Reveal](#gallery-paper-deck-reveal) <sub>22</sub> · [Codex Slides](#gallery-codex-slides) <sub>24</sub> · [3D HTML Slide Skill](#gallery-3d-html-slide-skill) <sub>2</sub> · [University PPT Skill](#gallery-university-ppt-skill) <sub>10</sub> · [Image to Editable PPT Skill (zhoujie97)](#gallery-image-to-editable-ppt-skill-zhoujie97) <sub>4</sub> · [Claude PPT Skills](#gallery-claude-ppt-skills) <sub>3</sub> · [Econ Slides Skill](#gallery-econ-slides-skill) <sub>5</sub> · [GHB PPT Skill](#gallery-ghb-ppt-skill) <sub>1</sub> · [OpenCode PPT Studio](#gallery-oc-sdk-ppt) <sub>3</sub> · [Course HTML Slides Builder](#gallery-course-html-slides-skill) <sub>9</sub> · [Excalidraw Slides Generator](#gallery-excalidraw-slides-skills) <sub>5</sub> · [CUHK Slides Template (HTML)](#gallery-cuhk-slides-template-html) <sub>2</sub> · [TaoHtml](#gallery-taohtml) <sub>12</sub> · [Google Slides Deck Skill](#gallery-google-slides-skill) <sub>1</sub> · [Inspiration Deck Workshop](#gallery-inspiration-deck-workshop) <sub>23</sub> · [HTML Presentation Skill](#gallery-html-presentation-skill) <sub>5</sub> · [PPTX Deck Creation Kit](#gallery-agent-pptify-kit) <sub>3</sub> · [TikTok Slideshow Command Center](#gallery-vyral-tiktok-slideshow-skill) <sub>6</sub> · [PPT Deck Builder Skill](#gallery-ppt-deck-builder-skill) <sub>4</sub> · [KR Brand Decks](#gallery-kr-brand-decks) <sub>24</sub> · [Slide Deck Skill](#gallery-slide-deck-skill) <sub>6</sub> · [Marp Slides Studio](#gallery-marp-slides-studio) <sub>9</sub>
 
 <a id="gallery-ppt-master"></a>
 
@@ -2814,9 +2818,207 @@ git clone https://github.com/zjsthmjialin/inspiration-deck-workshop && node tool
 
 <sub><b>slide-08</b> · <a href="https://github.com/lk251066/ppt-deck-builder-skill/blob/aa3c9a23717aa836f6397407bfe7226969bd29bb/examples/grsai_ai_science_deck_micro_modules/slide-08.png"><code>examples/grsai_ai_science_deck_micro_modules/slide-08.png</code></a></sub>
 
-<sub>No imagery in the repositories of: Slidev, Quarkdown, Banana Slides, Visual Explainer, HTML Anything, Dashi PPT Skill, Codex PPT Skill, NanoBanana PPT Skills, Baoyu Design, Gorden PPT Skill, Codex Claude Academic Skills, Oh My PPT, Image to Editable PPT Skill, Gorden Super PPT Skills, CyberPPT, Ian Handdrawn PPT, PPT Image First, GPT Image2 PPT Skills, PPT Agent Skills, Humanize PPT, Claude Office Skills, Academic PPTX, Claude Skills, Power Design, Reveal.js Skill, Visual Style PPT Skill, Beamer Skill, RW Consulting PPT, Paper2Anything, DOM to PPTX, Marp Slides, Beamer Academic, Planners PPT Hell, Thesis Defense PPTX Skill, Apple Bento Grid, Codex PPT Skill, Hands on Deck, Skywork Skills, PPT Image2 Editable Rebuild, Slide Image to Editable PPTX, Magic Slide, Presentation Skills, Claude Design Skill, Servasyy Skills, Ultimate PPT Master Skill, Future Slide, Slide Deck Generator, HTML PPT Designer, Presentation Skills, PowerPoint Skill, Make Slide, PPT Report Skills, AI Paper to Slide Skill, Literature Report PPT Builder, Image to PPTX Skill, Visual Cognition Slides, CN Academic Spark, Knowledge Cat PPT Skill, SJTU PPT Template Skill, Deck Factory, Space Multi Design PPT, Lieflat HTML Design, Jiarui SVG Skills, Awesome PPT Skills, Editable Image to PPT Skill, Presentation, Huawei Style PPT Skill, HTML to Editable PPTX, Claude Code Codex Slide, Baoyu Xuanyi Skills, Beautiful Hackathon Slides, ImageGen PPTX Pipeline, Paper PPT Skill, Presentation Skill, Codex Image to Editable PPT, Slidev Skills, PPT Skill, BL Captain PPT Skill, HTML to PPT PDF, Slides AI Plugin, Scholar PPT CN, Narrative Engine, Image PPT King, PPT Design DNA, PPT Creator Skills, Beamer Skill, Jingge Sense Deck, Presentation Skill, Econ Empirical Paper PPT Skill, HTML to PPTX, Neon Slides, Claude HTML Slide Builder, 30x McKinsey Research Deck, Keynote Slides Skill, PPT Agent, Interactive Slides, PPTX Template Skills, KAI Presentation, AI Draw Skill, Keynot, MBB Decks, Slide Wright, CyberBin PPT Skill, Competition PPT Template Skill, Four-Up PPT Generator, NanoBanana PPT Skills, NanoBanana PPT Skills, PPT Image Share Builder, HalfAI Gufa PPT, Slide Design Skill, Better PPT HTML Deck, Create HTML Deck, AWS HTML Slides, Prada Slides, Japanese Corporate PPTX Skill, Editable Leadership PPTX, SlideStage Pack, Deckset Claude Skill, McKinsey HTML Design Skill, IML PPTX, GZR NSFC PPT Skill, HTML to PPTX Skill, Bento PPT Skill, SlideSmith, Fudan University PPT Skill, Presentation Chef, Paper Figure PPTX Skill, AI Editable PPT Skill, Hand-Drawn PPT Skill, Guizang PPT Skill, TalkTrack, HTML PPT Skill, HTML to PPTX, PPT Expert Team, Vela Slides, Paper to LaTeX PPT, SOIL Deck Skills, PPT Master, PPT Image to Editable, Modern PPT, Bruce PPTX Generator, PPT Skill, Xidian Slides Skill, Presentation Forge, Tekion Slide Generator, Paper to Slides Skill, PPT Skills, Editable PPTX Skill, Pitch Deck Iterator, Zhongguose PPT Skill, ZJ Lab Academic PPTX Skills, Research Group PPT Skill, Paper to Scholar Slides, Consulting Diagnosis PPT Skill, Token Slides, Aham PPT, Notrat PPT Studio, Web PPT, Codex XKPPT Skill, High Quality Slides, PPT Design Skill, PowerPoint Skill, Slide Weaver, Competition PPT Skill, HFUT Presentation Studio, SJTU Beamer PPT, Frontend Slides, HTML Report Generator, Demo Prep Skill, Avatar PPT Master, Special Achievement Report, HTML PPT Academic Skill, HTML PPT Video Skill, PPT Template Fill, AI PPT Skill, SVG to PPTX Skill, Doc to PPT Skill, Economics Empirical PPT Skill, SlideSage, USTC PPT Template, Anthropic PPTX (official), Baoyu Skills, AI Skills (Cross-Platform).</sub>
+<a id="gallery-kr-brand-decks"></a>
 
-<sub>**446 images, all of them the projects' own**, shown full size rather than as thumbnails — a slide is too dense to judge at 300px. Each was read from its repository at a pinned commit, credited in the caption above it, and served from that repository rather than copied here. Nothing was produced by running a skill, so treat it as what each team chose to show off — not as a like-for-like comparison. Regenerate with `python scripts/fetch_samples.py`.</sub>
+#### [KR Brand Decks](https://github.com/sylvanus4/kr-brand-decks) · — ⭐ · Templates
+
+<sub>23 skills, one per Korean enterprise brand, each building an on-brand PPTX from scratch.</sub>
+
+<sub>24 of 30 images in [`sylvanus4/kr-brand-decks`](https://github.com/sylvanus4/kr-brand-decks) · the leading frames are the ones the project puts in its own README</sub>
+
+```bash
+/plugin marketplace add sylvanus4/kr-brand-decks && /plugin install kr-brand-decks@kr-brand-decks
+```
+
+<sub><b>Styles below</b> `gallery` · `themes-gallery` · `celltrion` · `cj-cheiljedang` · `doosan` · `hanwha` · `hd-hyundai` · `hyundai-motor` · `kakao` · `kb-financial` · `kia` · `lg-electronics` — name one when you ask for a deck. These are the project's own strings, taken from the filenames and captions linked under each image, not names this registry made up.</sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/docs/gallery.png" width="100%" alt="Gallery of 23 brand cover slides">
+
+<sub><b>Gallery of 23 brand cover slides</b> · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/docs/gallery.png"><code>docs/gallery.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/docs/themes-gallery.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Themes Gallery</b> · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/docs/themes-gallery.png"><code>docs/themes-gallery.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-celltrion/examples/celltrion-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Celltrion</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-celltrion/examples/celltrion-cover.png"><code>skills/deck-celltrion/examples/celltrion-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-cj-cheiljedang/examples/cj-cheiljedang-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Cj Cheiljedang</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-cj-cheiljedang/examples/cj-cheiljedang-cover.png"><code>skills/deck-cj-cheiljedang/examples/cj-cheiljedang-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-doosan/examples/doosan-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Doosan</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-doosan/examples/doosan-cover.png"><code>skills/deck-doosan/examples/doosan-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-hanwha/examples/hanwha-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Hanwha</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-hanwha/examples/hanwha-cover.png"><code>skills/deck-hanwha/examples/hanwha-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-hd-hyundai/examples/hd-hyundai-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Hd Hyundai</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-hd-hyundai/examples/hd-hyundai-cover.png"><code>skills/deck-hd-hyundai/examples/hd-hyundai-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-hyundai-motor/examples/hyundai-motor-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Hyundai Motor</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-hyundai-motor/examples/hyundai-motor-cover.png"><code>skills/deck-hyundai-motor/examples/hyundai-motor-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-kakao/examples/kakao-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Kakao</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-kakao/examples/kakao-cover.png"><code>skills/deck-kakao/examples/kakao-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-kb-financial/examples/kb-financial-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Kb Financial</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-kb-financial/examples/kb-financial-cover.png"><code>skills/deck-kb-financial/examples/kb-financial-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-kia/examples/kia-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Kia</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-kia/examples/kia-cover.png"><code>skills/deck-kia/examples/kia-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-lg-electronics/examples/lg-electronics-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Lg Electronics</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-lg-electronics/examples/lg-electronics-cover.png"><code>skills/deck-lg-electronics/examples/lg-electronics-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-lg-energy/examples/lg-energy-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Lg Energy</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-lg-energy/examples/lg-energy-cover.png"><code>skills/deck-lg-energy/examples/lg-energy-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-naver/examples/naver-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Naver</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-naver/examples/naver-cover.png"><code>skills/deck-naver/examples/naver-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-ncsoft/examples/ncsoft-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Ncsoft</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-ncsoft/examples/ncsoft-cover.png"><code>skills/deck-ncsoft/examples/ncsoft-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-ncsoft/examples/tmpc-01.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Tmpc · 01</b> · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-ncsoft/examples/tmpc-01.png"><code>skills/deck-ncsoft/examples/tmpc-01.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-nongshim/examples/nongshim-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Nongshim</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-nongshim/examples/nongshim-cover.png"><code>skills/deck-nongshim/examples/nongshim-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-posco/examples/posco-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Posco</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-posco/examples/posco-cover.png"><code>skills/deck-posco/examples/posco-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-mobile/examples/samsung-mobile-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Samsung Mobile</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-mobile/examples/samsung-mobile-cover.png"><code>skills/deck-samsung-mobile/examples/samsung-mobile-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-sdi/examples/samsung-sdi-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Samsung Sdi</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-sdi/examples/samsung-sdi-cover.png"><code>skills/deck-samsung-sdi/examples/samsung-sdi-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-semi/examples/samsung-semi-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Samsung Semi</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-semi/examples/samsung-semi-cover.png"><code>skills/deck-samsung-semi/examples/samsung-semi-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-semi/examples/tmpc-01.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Tmpc · 01</b> · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-semi/examples/tmpc-01.png"><code>skills/deck-samsung-semi/examples/tmpc-01.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-shinhan/examples/shinhan-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Shinhan</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-shinhan/examples/shinhan-cover.png"><code>skills/deck-shinhan/examples/shinhan-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-sk-hynix/examples/sk-hynix-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Sk Hynix</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-sk-hynix/examples/sk-hynix-cover.png"><code>skills/deck-sk-hynix/examples/sk-hynix-cover.png</code></a></sub>
+
+<a id="gallery-slide-deck-skill"></a>
+
+#### [Slide Deck Skill](https://github.com/jayworker/slide-deck-skill) · — ⭐ · HTML
+
+<sub>Single-file 16:9 HTML decks in a light dashboard style, one message per slide.</sub>
+
+<sub>6 of 6 images in [`jayworker/slide-deck-skill`](https://github.com/jayworker/slide-deck-skill) · the leading frames are the ones the project puts in its own README</sub>
+
+```bash
+git clone https://github.com/jayworker/slide-deck-skill "$HOME/.claude/skills/slide-deck"
+```
+
+<sub><b>Styles below</b> `3` — name one when you ask for a deck. These are the project's own strings, taken from the filenames and captions linked under each image, not names this registry made up.</sub>
+
+<img src="https://raw.githubusercontent.com/jayworker/slide-deck-skill/76ecc8e16804558d8f0d2eb3ff97eb4b29273306/docs/screenshots/slide-1.png" width="100%" alt="표지">
+
+<sub><b>표지</b> · <a href="https://github.com/jayworker/slide-deck-skill/blob/76ecc8e16804558d8f0d2eb3ff97eb4b29273306/docs/screenshots/slide-1.png"><code>docs/screenshots/slide-1.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/jayworker/slide-deck-skill/76ecc8e16804558d8f0d2eb3ff97eb4b29273306/docs/screenshots/slide-2.png" width="100%" alt="3층 구조">
+
+<sub><b>3층 구조</b> · <a href="https://github.com/jayworker/slide-deck-skill/blob/76ecc8e16804558d8f0d2eb3ff97eb4b29273306/docs/screenshots/slide-2.png"><code>docs/screenshots/slide-2.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/jayworker/slide-deck-skill/76ecc8e16804558d8f0d2eb3ff97eb4b29273306/docs/screenshots/slide-3.png" width="100%" alt="아이콘 규칙">
+
+<sub><b>아이콘 규칙</b> · <a href="https://github.com/jayworker/slide-deck-skill/blob/76ecc8e16804558d8f0d2eb3ff97eb4b29273306/docs/screenshots/slide-3.png"><code>docs/screenshots/slide-3.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/jayworker/slide-deck-skill/76ecc8e16804558d8f0d2eb3ff97eb4b29273306/docs/screenshots/slide-4.png" width="100%" alt="데이터 슬라이드">
+
+<sub><b>데이터 슬라이드</b> · <a href="https://github.com/jayworker/slide-deck-skill/blob/76ecc8e16804558d8f0d2eb3ff97eb4b29273306/docs/screenshots/slide-4.png"><code>docs/screenshots/slide-4.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/jayworker/slide-deck-skill/76ecc8e16804558d8f0d2eb3ff97eb4b29273306/docs/screenshots/slide-5.png" width="100%" alt="데이터 색 규칙">
+
+<sub><b>데이터 색 규칙</b> · <a href="https://github.com/jayworker/slide-deck-skill/blob/76ecc8e16804558d8f0d2eb3ff97eb4b29273306/docs/screenshots/slide-5.png"><code>docs/screenshots/slide-5.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/jayworker/slide-deck-skill/76ecc8e16804558d8f0d2eb3ff97eb4b29273306/docs/screenshots/slide-6.png" width="100%" alt="액션 아이템">
+
+<sub><b>액션 아이템</b> · <a href="https://github.com/jayworker/slide-deck-skill/blob/76ecc8e16804558d8f0d2eb3ff97eb4b29273306/docs/screenshots/slide-6.png"><code>docs/screenshots/slide-6.png</code></a></sub>
+
+<a id="gallery-marp-slides-studio"></a>
+
+#### [Marp Slides Studio](https://github.com/unsolublesugar/marp-slides-studio) · — ⭐ · Templates
+
+<sub>50 Marp themes with a gallery, contrast checker and four agent skills for deck work.</sub>
+
+<sub>9 of 9 images in [`unsolublesugar/marp-slides-studio`](https://github.com/unsolublesugar/marp-slides-studio) · the leading frames are the ones the project puts in its own README</sub>
+
+```bash
+gh repo create my-slides --template unsolublesugar/marp-slides-studio --private --clone && npm install
+```
+
+<sub><b>Styles below</b> `theme-preview` · `themes` · `gallery` · `layouts` · `code-block` · `code-block-diff` · `patterns` · `tones` · `themes-select` — name one when you ask for a deck. These are the project's own strings, taken from the filenames and captions linked under each image, not names this registry made up.</sub>
+
+<img src="https://raw.githubusercontent.com/unsolublesugar/marp-slides-studio/2d761c1abc2004fd75c06d2c8d225ebff0c21b0a/docs/theme-preview.png" width="100%" alt="テーマ切替プレビュー">
+
+<sub><b>テーマ切替プレビュー</b> · <code>theme-preview</code> · <a href="https://github.com/unsolublesugar/marp-slides-studio/blob/2d761c1abc2004fd75c06d2c8d225ebff0c21b0a/docs/theme-preview.png"><code>docs/theme-preview.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/unsolublesugar/marp-slides-studio/2d761c1abc2004fd75c06d2c8d225ebff0c21b0a/docs/themes.png" width="100%" alt="テーマの例（レイアウト×配色×トーンの組み合わせ）">
+
+<sub><b>テーマの例（レイアウト×配色×トーンの組み合わせ）</b> · <code>themes</code> · <a href="https://github.com/unsolublesugar/marp-slides-studio/blob/2d761c1abc2004fd75c06d2c8d225ebff0c21b0a/docs/themes.png"><code>docs/themes.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/unsolublesugar/marp-slides-studio/2d761c1abc2004fd75c06d2c8d225ebff0c21b0a/docs/gallery.png" width="100%" alt="テーマギャラリー">
+
+<sub><b>テーマギャラリー</b> · <code>gallery</code> · <a href="https://github.com/unsolublesugar/marp-slides-studio/blob/2d761c1abc2004fd75c06d2c8d225ebff0c21b0a/docs/gallery.png"><code>docs/gallery.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/unsolublesugar/marp-slides-studio/2d761c1abc2004fd75c06d2c8d225ebff0c21b0a/docs/layouts.png" width="100%" alt="レイアウトバリエーション">
+
+<sub><b>レイアウトバリエーション</b> · <code>layouts</code> · <a href="https://github.com/unsolublesugar/marp-slides-studio/blob/2d761c1abc2004fd75c06d2c8d225ebff0c21b0a/docs/layouts.png"><code>docs/layouts.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/unsolublesugar/marp-slides-studio/2d761c1abc2004fd75c06d2c8d225ebff0c21b0a/docs/code-block.png" width="100%" alt="コードブロックの表示例">
+
+<sub><b>コードブロックの表示例</b> · <code>code-block</code> · <a href="https://github.com/unsolublesugar/marp-slides-studio/blob/2d761c1abc2004fd75c06d2c8d225ebff0c21b0a/docs/code-block.png"><code>docs/code-block.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/unsolublesugar/marp-slides-studio/2d761c1abc2004fd75c06d2c8d225ebff0c21b0a/docs/code-block-diff.png" width="100%" alt="diffの表示例">
+
+<sub><b>diffの表示例</b> · <code>code-block-diff</code> · <a href="https://github.com/unsolublesugar/marp-slides-studio/blob/2d761c1abc2004fd75c06d2c8d225ebff0c21b0a/docs/code-block-diff.png"><code>docs/code-block-diff.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/unsolublesugar/marp-slides-studio/2d761c1abc2004fd75c06d2c8d225ebff0c21b0a/docs/patterns.png" width="100%" alt="レイアウトパターン">
+
+<sub><b>レイアウトパターン</b> · <code>patterns</code> · <a href="https://github.com/unsolublesugar/marp-slides-studio/blob/2d761c1abc2004fd75c06d2c8d225ebff0c21b0a/docs/patterns.png"><code>docs/patterns.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/unsolublesugar/marp-slides-studio/2d761c1abc2004fd75c06d2c8d225ebff0c21b0a/docs/tones.png" width="100%" alt="トーンの違い">
+
+<sub><b>トーンの違い</b> · <code>tones</code> · <a href="https://github.com/unsolublesugar/marp-slides-studio/blob/2d761c1abc2004fd75c06d2c8d225ebff0c21b0a/docs/tones.png"><code>docs/tones.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/unsolublesugar/marp-slides-studio/2d761c1abc2004fd75c06d2c8d225ebff0c21b0a/docs/themes-select.png" width="100%" alt="Marp Slides Studio sample">
+
+<sub><b>Themes Select</b> · <a href="https://github.com/unsolublesugar/marp-slides-studio/blob/2d761c1abc2004fd75c06d2c8d225ebff0c21b0a/docs/themes-select.png"><code>docs/themes-select.png</code></a></sub>
+
+<sub>No imagery in the repositories of: Slidev, Quarkdown, Banana Slides, Visual Explainer, HTML Anything, Dashi PPT Skill, Codex PPT Skill, NanoBanana PPT Skills, Baoyu Design, Gorden PPT Skill, Codex Claude Academic Skills, Oh My PPT, Image to Editable PPT Skill, Gorden Super PPT Skills, CyberPPT, Ian Handdrawn PPT, PPT Image First, GPT Image2 PPT Skills, PPT Agent Skills, Humanize PPT, Claude Office Skills, Academic PPTX, Claude Skills, Power Design, Reveal.js Skill, Visual Style PPT Skill, Beamer Skill, RW Consulting PPT, Paper2Anything, DOM to PPTX, Marp Slides, Beamer Academic, Planners PPT Hell, Thesis Defense PPTX Skill, Apple Bento Grid, Codex PPT Skill, Hands on Deck, Skywork Skills, PPT Image2 Editable Rebuild, Slide Image to Editable PPTX, Magic Slide, Presentation Skills, Claude Design Skill, Servasyy Skills, Ultimate PPT Master Skill, Future Slide, Slide Deck Generator, HTML PPT Designer, Presentation Skills, PowerPoint Skill, Make Slide, PPT Report Skills, AI Paper to Slide Skill, Literature Report PPT Builder, Image to PPTX Skill, Visual Cognition Slides, CN Academic Spark, Knowledge Cat PPT Skill, SJTU PPT Template Skill, Deck Factory, Space Multi Design PPT, Lieflat HTML Design, Jiarui SVG Skills, Awesome PPT Skills, Editable Image to PPT Skill, Presentation, Huawei Style PPT Skill, HTML to Editable PPTX, Claude Code Codex Slide, Baoyu Xuanyi Skills, Beautiful Hackathon Slides, ImageGen PPTX Pipeline, Paper PPT Skill, Presentation Skill, Codex Image to Editable PPT, Slidev Skills, PPT Skill, BL Captain PPT Skill, HTML to PPT PDF, Slides AI Plugin, Scholar PPT CN, Narrative Engine, Image PPT King, PPT Design DNA, PPT Creator Skills, Beamer Skill, Jingge Sense Deck, Presentation Skill, Econ Empirical Paper PPT Skill, HTML to PPTX, Neon Slides, Claude HTML Slide Builder, 30x McKinsey Research Deck, Keynote Slides Skill, PPT Agent, Interactive Slides, PPTX Template Skills, KAI Presentation, AI Draw Skill, Keynot, MBB Decks, Slide Wright, CyberBin PPT Skill, Competition PPT Template Skill, Four-Up PPT Generator, NanoBanana PPT Skills, NanoBanana PPT Skills, PPT Image Share Builder, HalfAI Gufa PPT, Slide Design Skill, Better PPT HTML Deck, Create HTML Deck, AWS HTML Slides, Prada Slides, Japanese Corporate PPTX Skill, Editable Leadership PPTX, SlideStage Pack, Deckset Claude Skill, McKinsey HTML Design Skill, IML PPTX, GZR NSFC PPT Skill, HTML to PPTX Skill, Bento PPT Skill, SlideSmith, Fudan University PPT Skill, Presentation Chef, Paper Figure PPTX Skill, AI Editable PPT Skill, Hand-Drawn PPT Skill, Guizang PPT Skill, TalkTrack, HTML PPT Skill, HTML to PPTX, PPT Expert Team, Vela Slides, Paper to LaTeX PPT, SOIL Deck Skills, PPT Master, PPT Image to Editable, Modern PPT, Bruce PPTX Generator, PPT Skill, Xidian Slides Skill, Presentation Forge, Tekion Slide Generator, Paper to Slides Skill, PPT Skills, Editable PPTX Skill, Pitch Deck Iterator, Zhongguose PPT Skill, ZJ Lab Academic PPTX Skills, Research Group PPT Skill, Paper to Scholar Slides, Consulting Diagnosis PPT Skill, Token Slides, Aham PPT, Notrat PPT Studio, Web PPT, Codex XKPPT Skill, High Quality Slides, PPT Design Skill, PowerPoint Skill, Slide Weaver, Competition PPT Skill, HFUT Presentation Studio, SJTU Beamer PPT, Frontend Slides, HTML Report Generator, Demo Prep Skill, Avatar PPT Master, Special Achievement Report, HTML PPT Academic Skill, HTML PPT Video Skill, PPT Template Fill, AI PPT Skill, SVG to PPTX Skill, Doc to PPT Skill, Economics Empirical PPT Skill, SlideSage, USTC PPT Template, Starry Slides, Anthropic PPTX (official), Baoyu Skills, AI Skills (Cross-Platform).</sub>
+
+<sub>**485 images, all of them the projects' own**, shown full size rather than as thumbnails — a slide is too dense to judge at 300px. Each was read from its repository at a pinned commit, credited in the caption above it, and served from that repository rather than copied here. Nothing was produced by running a skill, so treat it as what each team chose to show off — not as a like-for-like comparison. Regenerate with `python scripts/fetch_samples.py`.</sub>
 <!-- END:GALLERY -->
 
 ---
@@ -2930,7 +3132,7 @@ git history.
 - **Generative variance is real.** Same skill, same prompt, different output. Small score
   gaps will not mean anything until run counts are in the double digits.
 - **Descriptions come from documentation**, not from having personally shipped a deck with
-  each one. <!-- BEGIN:RESEARCHED -->35<!-- END:RESEARCHED --> entries were read by hand,
+  each one. <!-- BEGIN:RESEARCHED -->39<!-- END:RESEARCHED --> entries were read by hand,
   SKILL.md included; the rest carry a `†` and rest on what the repository says about itself.
   Where I have run something, the dossier says so.
 - **This is a fast-moving field.** Everything here carries a date. Check it.

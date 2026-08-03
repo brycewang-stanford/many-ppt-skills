@@ -3309,6 +3309,157 @@
       "tagline_en": "Renders each page as a finished image, repairs only the bad pages, then packs a PPTX.",
       "tagline_zh": "逐页生成成品图,只返修出问题的单页,最后统一打包成 PPTX。",
       "source": "discovered"
+    },
+    {
+      "id": "starry-slides",
+      "repo": "StarryKit/starry-slides",
+      "name": "Starry Slides",
+      "author": "StarryKit",
+      "author_url": "https://github.com/StarryKit",
+      "route": "framework",
+      "license_note": "Apache-2.0",
+      "lang": "bilingual",
+      "tagline_en": "Slide editor that gives your agent fully editable decks with HTML as the source file.",
+      "tagline_zh": "以 HTML 为源文件的幻灯片编辑器,让 Agent 产出的整套 deck 保持完全可编辑。",
+      "highlights_en": [
+        "HTML is the deck's source file, so a finished deck stays inspectable, diffable and version-controlled",
+        "WYSIWYG editor plus a CLI: the agent writes the HTML, you keep editing it visually",
+        "Ships no built-in templates or style instructions by design — style comes from the context you supply",
+        "Upstream notice: the open-source repo is no longer actively maintained while the product version is built",
+        "No gallery row here: the repo demonstrates itself with a video, and its only still images are brand marks"
+      ],
+      "highlights_zh": [
+        "HTML 即 deck 源文件,成品仍可查看、可 diff、可进版本控制",
+        "所见即所得编辑器 + CLI:Agent 写 HTML,你继续可视化改",
+        "刻意不内置模板与风格指令,风格完全由你提供的上下文决定",
+        "上游声明:开源版本已停止主动维护,作者转向产品版,仅同步修复",
+        "本条无样图:该仓库用视频做演示,唯一的静态图是品牌标识"
+      ],
+      "install": {
+        "method": "skills-cli",
+        "command": "npx skills add StarryKit/starry-slides --skill starry-slides"
+      },
+      "requires": [
+        "Node.js"
+      ],
+      "best_for_en": "Teams that want the generated deck to stay an editable artifact rather than a one-shot export.",
+      "best_for_zh": "希望生成的 deck 是可持续编辑的产物,而不是一次性导出的团队。",
+      "source": "discovered"
+    },
+    {
+      "id": "kr-brand-decks",
+      "repo": "sylvanus4/kr-brand-decks",
+      "name": "KR Brand Decks",
+      "author": "sylvanus4",
+      "author_url": "https://github.com/sylvanus4",
+      "route": "templates",
+      "license_note": "NOASSERTION",
+      "lang": "en",
+      "tagline_en": "23 skills, one per Korean enterprise brand, each building an on-brand PPTX from scratch.",
+      "tagline_zh": "23 个 skill,每个对应一家韩国企业品牌,从零构建符合该品牌规范的 PPTX。",
+      "highlights_en": [
+        "One `deck-<company>` skill per brand, each with a verified colour palette and a reference-grade native layout set",
+        "Layouts cover cover, TOC, section dividers, Lucide icon grids, AS-IS/next comparison tables, Gantt roadmaps and before/after impact charts",
+        "An 11-slide sample PDF ships per company under skills/deck-<company>/examples/",
+        "24 visual themes orthogonal to brand colour, plus plan_deck.py to decide deck structure from content",
+        "Built on python-pptx from scratch — no proprietary template and no external service; unofficial brand-inspired themes that bundle no logo files",
+        "Runs fully local: no data leaves the machine and no API key is needed unless you opt into AI imagery"
+      ],
+      "highlights_zh": [
+        "每个品牌一个 `deck-<company>` skill,各自带经过核对的配色与参考级原生版式集",
+        "版式覆盖封面、目录、章节分隔、Lucide 图标网格、AS-IS/次世代对比表、甘特路线图与 before/after 影响力图表",
+        "每家公司附一份 11 页样例 PDF,位于 skills/deck-<company>/examples/",
+        "24 套与品牌色正交的视觉主题,外加 plan_deck.py 依内容决定整篇结构",
+        "基于 python-pptx 从零生成,不依赖专有模板或外部服务;主题为非官方品牌灵感,仓库不含任何 logo 文件",
+        "全本地运行,数据不外传,除非主动启用 AI 生图,否则无需 API key"
+      ],
+      "install": {
+        "method": "plugin",
+        "command": "/plugin marketplace add sylvanus4/kr-brand-decks && /plugin install kr-brand-decks@kr-brand-decks"
+      },
+      "requires": [
+        "Python 3",
+        "python-pptx"
+      ],
+      "best_for_en": "Decks that must read as a specific Korean enterprise's house style without a licensed template.",
+      "best_for_zh": "需要贴合某家韩国企业视觉规范、又拿不到官方模板的演示。",
+      "source": "discovered"
+    },
+    {
+      "id": "slide-deck-skill",
+      "repo": "jayworker/slide-deck-skill",
+      "name": "Slide Deck Skill",
+      "author": "jayworker",
+      "author_url": "https://github.com/jayworker",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "Single-file 16:9 HTML decks in a light dashboard style, one message per slide.",
+      "tagline_zh": "单文件 16:9 HTML 演示,浅色仪表盘风格,每页只讲一件事。",
+      "highlights_en": [
+        "Three-tier slide structure: badge and title, one large statement line, hero SVG or table, then three keyword chips",
+        "One colour means one thing — emphasis hues are kept separate from data hues, and meaning is never carried by colour alone",
+        "Page numbers are computed in JS, so adding, deleting or reordering slides never desynchronises them",
+        "Reads design tokens from a DESIGN.md-spec `design.md` in the working folder when one exists, otherwise uses its built-in set",
+        "Output is one HTML file: open it and press F11 to present (fonts and KaTeX come from a CDN)"
+      ],
+      "highlights_zh": [
+        "三层页面结构:徽标加标题 → 一句大字主张 → 主视觉 SVG 或表格 → 三个关键词标签",
+        "一种颜色只承担一种含义,强调色与数据色分离,且从不只靠颜色传达信息",
+        "页码由 JS 计算,增删或调序幻灯片都不会错位",
+        "工作目录若存在符合 DESIGN.md 规范的 design.md,则优先使用其 token,否则用内置一套",
+        "产物是单个 HTML 文件:打开后按 F11 即可演示(字体与 KaTeX 走 CDN)"
+      ],
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/jayworker/slide-deck-skill \"$HOME/.claude/skills/slide-deck\""
+      },
+      "requires": [
+        "A browser"
+      ],
+      "best_for_en": "Lab meetings and status updates where one clear message per slide beats a dense template.",
+      "best_for_zh": "组会与进展汇报——每页一个明确结论,胜过塞满内容的模板。",
+      "source": "discovered"
+    },
+    {
+      "id": "marp-slides-studio",
+      "repo": "unsolublesugar/marp-slides-studio",
+      "name": "Marp Slides Studio",
+      "author": "unsolublesugar",
+      "author_url": "https://github.com/unsolublesugar",
+      "route": "templates",
+      "license_note": "MIT",
+      "lang": "en",
+      "tagline_en": "50 Marp themes with a gallery, contrast checker and four agent skills for deck work.",
+      "tagline_zh": "50 套 Marp 主题,配主题画廊、对比度检查与四个面向 Agent 的 deck 制作 skill。",
+      "highlights_en": [
+        "50 themes selectable by tone (casual, pop, chic, business, pastel) and colour palette",
+        "Reusable layout patterns for tables, code, splits, comparisons and flow diagrams",
+        "Four skills — marp-deck, marp-check, marp-theme, marp-shots — cover authoring, checking, theming and screenshots",
+        "A contrast checker enforces 6:1 on code and 4.5:1 on body text against the theme gallery",
+        "Exports to HTML, PDF, PPTX and PNG, one deck per directory over a shared theme library",
+        "Documentation is Japanese; the themes, skills and CLI are language-independent"
+      ],
+      "highlights_zh": [
+        "50 套主题,可按语气(casual/pop/chic/business/pastel)与配色挑选",
+        "可复用版式:表格、代码、分栏、对比与流程图",
+        "四个 skill——marp-deck、marp-check、marp-theme、marp-shots——覆盖撰写、检查、换肤与截图",
+        "对比度检查器按主题画廊强制代码 6:1、正文 4.5:1",
+        "可导出 HTML、PDF、PPTX 与 PNG,一个目录一份 deck,共用同一主题库",
+        "文档为日语;主题、skill 与 CLI 本身与语言无关"
+      ],
+      "install": {
+        "method": "clone",
+        "command": "gh repo create my-slides --template unsolublesugar/marp-slides-studio --private --clone && npm install"
+      },
+      "requires": [
+        "Node.js 18+",
+        "Marp CLI 4.x",
+        "Chrome/Chromium (for PDF/PPTX/PNG export)"
+      ],
+      "best_for_en": "Talk decks where you want to pick a look from a rendered gallery and have contrast checked for you.",
+      "best_for_zh": "希望从渲染好的主题画廊里挑外观、并让工具替你检查对比度的演讲稿。",
+      "source": "discovered"
     }
   ],
   "lists": [
