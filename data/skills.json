@@ -3026,6 +3026,107 @@
       "tagline_en": "Single-file HTML decks in six styles, with in-browser editing and a thumbnail overview grid.",
       "tagline_zh": "生成六种风格的单文件 HTML 横向翻页 PPT,支持网页在线编辑与缩略图总览。",
       "source": "discovered"
+    },
+    {
+      "id": "econ-slides-skill",
+      "repo": "hanlulong/econ-slides-skill",
+      "name": "Econ Slides Skill",
+      "author": "hanlulong",
+      "author_url": "https://github.com/hanlulong",
+      "route": "framework",
+      "license_note": "MIT",
+      "lang": "bilingual",
+      "tagline_en": "Turns an economics paper into a Beamer seminar talk, with a timed speaker script.",
+      "tagline_zh": "把经济学论文转成 Beamer 研讨会报告,并附带按时长排布的逐字讲稿。",
+      "highlights_en": [
+        "Builds the talk from the paper's own argument graph — question, setup, evidence, interpretation — not a slide-per-section dump",
+        "Retargets one paper to a 15- or 90-minute session by cutting and deepening whole argumentative units, not by scaling every slide",
+        "Printable rehearsal script keyed to exact frame titles, reserving 20-25% of the session for questions",
+        "Discussant decks are a first-class genre, built to Dallas Fed / ASHEcon norms",
+        "Verifies its own output: compiles the deck, measures rendered geometry, and inspects every page before delivery"
+      ],
+      "highlights_zh": [
+        "按论文自身的论证图谱组织报告——问题、设定、证据、解释——而不是逐节堆页",
+        "同一篇论文改成 15 分钟或 90 分钟版本时,整块论证单元被删减或加深,而不是均匀压缩每一页",
+        "生成可打印的排练讲稿,与每张 frame 标题对齐,并预留 20-25% 时间给提问",
+        "把讨论人(discussant)报告作为一等场景,对齐 Dallas Fed / ASHEcon 的规范",
+        "自我验证:编译成稿、测量渲染几何、逐页检查后再交付"
+      ],
+      "install": {
+        "method": "clone",
+        "command": "git clone https://github.com/hanlulong/econ-slides-skill ~/.claude/skills/econ-slides"
+      },
+      "requires": [
+        "Python 3.10+",
+        "XeLaTeX (TeX Live / MacTeX / MiKTeX)",
+        "PyMuPDF"
+      ],
+      "best_for_en": "Research seminar and conference talks where the argument, not the template, is what has to hold up.",
+      "best_for_zh": "论证本身要经得起推敲的学术研讨会与会议报告。",
+      "source": "discovered"
+    },
+    {
+      "id": "ghb-ppt-skill",
+      "repo": "NickyLam/GHB-PPT-Skill",
+      "name": "GHB PPT Skill",
+      "author": "NickyLam",
+      "author_url": "https://github.com/NickyLam",
+      "route": "pptx",
+      "license_note": "MIT",
+      "lang": "zh",
+      "tagline_en": "Corporate-template PPTX where SVG becomes editable DrawingML, verified fully offline.",
+      "tagline_zh": "基于企业模板输出 PPTX,SVG 转为可编辑 DrawingML,默认全离线验证。",
+      "highlights_en": [
+        "Cover and masters come from the bundled corporate template; body content lands inside the safe area",
+        "SVG is converted to Office-safe DrawingML, so titles, cards and flows stay editable rather than being flat screenshots",
+        "Three workflow tiers — quick draft, standard delivery, strict audit — with a resumable CLI and .ghb/state.json checkpoints",
+        "Default pipeline is fully offline: no image API and no AI image key required",
+        "Font embedding refuses fonts whose OS/2 fsType forbids it, and records the licence evidence in the quality report"
+      ],
+      "highlights_zh": [
+        "封面与母版取自内置企业模板,正文内容落在安全区内",
+        "SVG 转成 Office-safe DrawingML,标题、卡片、流程保持可编辑,而不是整页截图",
+        "三档工作流:quick 草稿 / standard 正式 / strict 审计,配可断点续跑的 CLI 与 .ghb/state.json",
+        "默认流程纯离线,不依赖图片 API 或 AI 生图密钥",
+        "字体嵌入会拒绝 OS/2.fsType 禁止嵌入的字体,并在质量报告中留下许可证据"
+      ],
+      "install": {
+        "method": "python",
+        "command": "python3 -m pip install -r requirements.txt && python3 scripts/ghb_ppt.py doctor"
+      },
+      "requires": [
+        "Python 3.9+",
+        "LibreOffice + Poppler (optional, for rendering)"
+      ],
+      "best_for_en": "Brand-bound corporate decks that must open, stay editable and pass an audit trail.",
+      "best_for_zh": "必须可打开、可二次编辑并留下审计证据的品牌企业演示。",
+      "source": "discovered"
+    },
+    {
+      "id": "oc-sdk-ppt",
+      "repo": "Honghurumeng/oc_sdk_ppt",
+      "name": "OpenCode PPT Studio",
+      "author": "Honghurumeng",
+      "author_url": "https://github.com/Honghurumeng",
+      "route": "hybrid",
+      "license_note": "Unspecified",
+      "lang": "zh",
+      "tagline_en": "Web app that drafts an outline, refines it in a second session, then builds HTML and PPTX.",
+      "tagline_zh": "网页应用:先出大纲初稿,再开新会话精修,然后生成 HTML slides 并本地构建 PPTX。",
+      "source": "discovered"
+    },
+    {
+      "id": "course-html-slides-skill",
+      "repo": "HelenSong/course-html-slides-skill",
+      "name": "Course HTML Slides Builder",
+      "author": "HelenSong",
+      "author_url": "https://github.com/HelenSong",
+      "route": "html",
+      "license_note": "MIT",
+      "lang": "bilingual",
+      "tagline_en": "Turns a course outline into multi-page HTML slides built for classroom projection.",
+      "tagline_zh": "把课程大纲转成多页 HTML 幻灯片,面向课堂投影与互动工作坊设计。",
+      "source": "discovered"
     }
   ],
   "lists": [
