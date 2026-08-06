@@ -44,6 +44,24 @@ Write `tagline_en` and `tagline_zh` as **what it is**, not as marketing. If you 
 what makes it different from the nearest listed alternative, it probably does not need its
 own entry.
 
+The optional `motion` field feeds the motion table. It is the one piece of prose in the
+registry that could quietly become a claim nobody can trace, so it is checked: a note is
+rejected unless `data/capabilities.json` already recorded an `animation: yes` quote for
+that skill, or the project raises motion itself in its own tagline or highlights.
+
+```json
+"motion": {
+  "kind": "pptx",          // pptx = animation is in the .pptx file
+                           // html = it runs in a browser
+                           // video = the output is an MP4/GIF
+  "note_en": "One sentence on what actually moves.",
+  "note_zh": "一句话说清到底什么在动。"
+}
+```
+
+Say what the motion *is*, not that it exists — "47 animations, 27 CSS plus 20 canvas
+effects" earns its row; "supports animations" does not.
+
 ### Contributing a benchmark run
 
 Read [`benchmark/README.md`](benchmark/README.md) first — the protocol matters more than
@@ -126,6 +144,24 @@ python scripts/check_links.py          # 确认没有断链
 
 `tagline_en` 和 `tagline_zh` 请写**它是什么**，不要写宣传语。如果你说不出它和最接近的那个
 已收录项目有什么不同，那它大概不需要单独一条。
+
+可选的 `motion` 字段用来生成动效那张表。它是整个登记册里唯一一处**由我们自己写、又容易
+悄悄变成无出处论断**的文字，所以它是被校验的：除非 `data/capabilities.json` 里已经为这个
+skill 记下了 `animation: yes` 的引文，或者项目自己在 tagline / highlights 里主动提到了动效，
+否则这条 note 会被判为 error。
+
+```json
+"motion": {
+  "kind": "pptx",          // pptx = 动画写在 .pptx 文件里
+                           // html = 跑在浏览器里
+                           // video = 产物是 MP4 / GIF
+  "note_en": "One sentence on what actually moves.",
+  "note_zh": "一句话说清到底什么在动。"
+}
+```
+
+要写**动的是什么**，不是「它有动画」——「47 个动画：27 个 CSS + 20 个 canvas 特效」值得占
+一行，「支持动画效果」不值得。
 
 ### 贡献一次实测
 

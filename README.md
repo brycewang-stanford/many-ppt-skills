@@ -442,6 +442,86 @@ python scripts/pick.py find editorial         # 搜风格 ID 和描述
 
 ---
 
+## 动效：谁会动，怎么动
+
+上面那张表里的「动效」一列只回答了「会不会动」。真正决定选择的是下一个问题：**动的是什么，
+以及最后交出去的是什么文件。** 因为「做个带动画的 PPT」这句话，在这三十几个项目里指的是
+三件互不兼容的事 —— 而这三件事之间几乎没法互相转换。
+
+先想清楚你要交付什么，再往下看：
+
+- **对方要在 PowerPoint 里打开、并且自己改** → 只能看第一组，名单很短
+- **发个链接或者一个 HTML 文件就行** → 第二组，绝大多数项目在这里
+- **要发到群里 / 社交平台，一个视频文件** → 第三组
+
+<!-- BEGIN:MOTION -->
+#### 动画写在 .pptx 文件里
+
+<sub>PowerPoint 直接放，不经浏览器，收件人还能自己改时序。也是三条路里最难做的，所以这份名单只有这么长。</sub>
+
+| 项目 | ⭐ | 路线 | 依据 | 动效具体是什么 |
+|---|---:|---|:-:|---|
+| **[PPT Master](https://github.com/hugohe3/ppt-master)** | 43,139 | PPTX | ✅ | 进入 / 强调 / 退出 / 路径动画和转场，由 `pptx_animations.py` 直接写进文件；演讲备注还能转成旁白音频。 |
+| **[Notrat PPT Studio](https://github.com/NestMold/notrat-ppt-studio-skill)** | 4 | 双路线 | · | 自称图片型 / 原生可编辑 / 混合三种输出模式都支持动画。 |
+
+#### 动效跑在浏览器里
+
+<sub>便宜、能做得花，但对方一句「给我 PPT 源文件」就全没了。本登记册里的动效绝大多数在这一档。</sub>
+
+| 项目 | ⭐ | 路线 | 依据 | 动效具体是什么 |
+|---|---:|---|:-:|---|
+| **[Slidev](https://github.com/slidevjs/slidev)** | 47,959 | 框架 | ✅ | 点击动画（逐步显示）、页面转场与 motion 效果，全是框架内建的。 |
+| **[Frontend Slides](https://github.com/zarazhangrui/frontend-slides)** | 26,949 | HTML | ✅ | 「animation-rich」的零依赖单文件 HTML，动效随 12 个预设和 34 套模板一起给。 |
+| **[Guizang PPT Skill](https://github.com/op7418/guizang-ppt-skill)** | 23,232 | HTML | ✅ | Motion One 入场动效（本地 + CDN 双保险），另有 WebGL 动效并在低功耗设备上降级为静态。 |
+| **[Visual Explainer](https://github.com/nicobailon/visual-explainer)** | 9,411 | HTML | ✅ | 克制派：入场与 hover 动效只在能澄清层级时才用，尊重 `prefers-reduced-motion`，持续发光 / 脉冲 / 呼吸效果一律禁止。 |
+| **[HTML Anything](https://github.com/nexu-io/html-anything)** | 8,091 | 套件 | ✅ | 错峰揭示动画精确到毫秒：标题 0s、kicker 200ms、折线 stroke-dashoffset 1.2s 从 400ms 起、数据标签每 100ms 一个。 |
+| **[HTML PPT Studio](https://github.com/lewislulu/html-ppt-skill)** | 7,639 | HTML | ✅ | 47 个动画：27 个 CSS + 20 个 canvas 特效。单个 skill 里动效库最深的一个。 |
+| **[Dashi PPT Skill](https://github.com/chuspeeism/dashi-ppt-skill)** | 4,702 | 双路线 | ✅ | 元素出现动画用页面组件自带的原生效果；页面切换动画可以在预览控制面板里直接调。 |
+| **[Frontend Slides Editable](https://github.com/archlizheng/frontend-slides-editable)** | 452 | 双路线 | ✅ | 刻意只用纯 CSS 动画 —— 不引 React、不引 Motion 库。主张「一次编排好的错峰入场」胜过零散的微交互。 |
+| **[Magic Slide](https://github.com/daniel-style/magic-slide)** | 171 | HTML | · | Magic Move 风格转场：同一元素在前后两页之间平滑位移，而不是硬切。 |
+| **[Slide Deck Generator](https://github.com/code-on-sunday/slide-deck-generator)** | 138 | HTML | · | React + Vite + Framer Motion —— 这一个直接给你成熟动画库，而不是手写 CSS。 |
+| **[Visual Cognition Slides](https://github.com/edu-ai-builders/visual-cognition-slides)** | 81 | HTML | ✅ | `ANIMATIONS.md` 里 10 个章节的可复用动画代码，动效的理由是知识留存而不是好看。 |
+| **[HTML Slides](https://github.com/bluedusk/html-slides)** | 73 | HTML | ✅ | 「animation-rich」单文件 HTML，与 frontend-slides 同源同表述。 |
+| **[KingDee PPT Skill](https://github.com/WayneZhon/KingDee-PPT-Skill)** | 56 | HTML | ✅ | 两档：普通页用 Intersection Observer fade，要 Apple 式滚动叙事就上 GSAP ScrollTrigger。 |
+| **[Slide Creator](https://github.com/kaisersong/slide-creator)** | 46 | 双路线 | ✅ | 动画和颜色、字体一样被管起来：必须且只能来自选中的那个风格文件。 |
+| **[next-slide](https://github.com/codesstar/next-slide)** | 44 | HTML | ✅ | 「animation-rich」零依赖单文件，原生中英双语。 |
+| **[Slide Writer](https://github.com/FeeiCN/slide-writer)** | 40 | HTML | ✅ | reveal 动画属于设计系统的一部分：新建组件也必须沿用现有的那套。 |
+| **[Skills Slides](https://github.com/nghiahsgs/skills-slides)** | 30 | HTML | ✅ | 单个 `.html`，动画、自适应尺寸、键盘导航齐全；30+ 特效参与那套组合爆炸。 |
+| **[Slides AI Plugin](https://github.com/proyecto26/slides-ai-plugin)** | 29 | 双路线 | · | 一句提示，出「动态 HTML」或可编辑 PowerPoint 二选一。 |
+| **[Interactive Slides](https://github.com/sylvial928/interactive-slides)** | 18 | HTML | · | 带风格预设与品牌套件的动画交互式网页 deck，另有一键导出 PowerPoint。 |
+| **[AWS HTML Slides](https://github.com/lanceli93/aws-html-slides)** | 11 | HTML | · | 从零生成动画丰富的 HTML，也能把已有 .pptx 转过来。 |
+| **[Presentation Chef](https://github.com/sacredvoid/presentation-chef)** | 9 | HTML | · | 目标是 Keynote 风的「电影级」动画，成品仍是单文件。 |
+| **[Frontend Slides](https://github.com/dreamid27/frontend-slides)** | 4 | HTML | · | frontend-slides 的衍生：88 种布局预设 + 34 套模板的动画 HTML。 |
+| **[3D HTML Slide Skill](https://github.com/yoshifujidesign/3d-html-slide-skill)** | 3 | HTML | · | 单文件 deck 背后跑 Three.js 线框 3D 背景 —— 全表唯一一个 3D 的。 |
+| **[CUHK Slides Template (HTML)](https://github.com/HarlandZZC/cuhk-slides-template-html)** | 3 | 模板库 | · | 单个手写模板文件里就有带计数动画的数据页和可点开弹窗的特性网格。 |
+| **[TaoHtml](https://github.com/TaoGEO/TaoHtml)** | 3 | HTML | · | 把已有的 Word / PDF / PPT 重做成 16:9 离线 HTML，带分步揭示动效。 |
+| **[Inspiration Deck Workshop](https://github.com/zjsthmjialin/inspiration-deck-workshop)** | 1 | 模板库 | · | 23 套主题 × 25 种版式，由一个小 CLI 生成「带动效的静态 HTML」。 |
+
+#### 产物是视频文件
+
+<sub>它不是拿来讲的 deck，而是发出去的文件 —— MP4 / GIF，有的还带配音。严格说是另一件事，放在这里是因为有一半人说「要动画」指的就是它。</sub>
+
+| 项目 | ⭐ | 路线 | 依据 | 动效具体是什么 |
+|---|---:|---|:-:|---|
+| **[Huashu Design](https://github.com/alchaincyf/huashu-design)** | 22,487 | 双路线 | ✅ | 全表最像「动效引擎」的一个：Stage + Sprite 时间切片模型，`useTime` / `useSprite` / `interpolate` / `Easing` 四个 API，一条命令导出 MP4 / GIF、60fps 补帧、配 BGM。 |
+| **[NanoBanana PPT Skills](https://github.com/op7418/NanoBanana-PPT-Skills)** | 3,187 | 图片 | · | 生成幻灯片图片和视频，带智能转场与交互式播放 —— 走的是图片流，不是代码流。 |
+| **[Presentation Skills](https://github.com/Sven-LI-sankyuu/presentation-skills)** | 163 | 双路线 | · | Codex CLI 套件，后半段是端到端的网页演示视频合成工作流。 |
+| **[Servasyy Skills](https://github.com/huangserva/servasyy_skills)** | 153 | 套件 | · | 综合型 AI 套件，视频生成是里面另一个 skill，不是幻灯片动效本身。 |
+| **[NanoBanana PPT Skills](https://github.com/xj-bear/NanoBanana-PPT-Skills)** | 13 | PPTX | · | NanoBanana 的分支，加了 Veo 视频内容。 |
+| **[NanoBanana PPT Skills](https://github.com/girish6055/NanoBanana-PPT-Skills)** | 13 | PPTX | · | NanoBanana 的分支，自称有智能切换与交互式播放。 |
+| **[Web PPT](https://github.com/includewudi/web-ppt)** | 4 | HTML | · | 零依赖 HTML，另外支持把自己录成视频。 |
+| **[HTML PPT Video Skill](https://github.com/juguang/html-ppt-video-skill)** | 3 | HTML | · | 文档 → 带中文配音和字幕的 HTML 演示视频。 |
+
+<sub>✅ 该说法有项目文档原文佐证，引文在 [`data/capabilities.json`](data/capabilities.json) 里 · · 该说法来自项目自己的一句话简介，没有人对着它的 SKILL.md 核对过。<br>**另外 191 个 skill，在本登记册读过的地方一个字都没提动效。**这是「查无此说」，不是「确定没有」—— 其中好几个几乎肯定会动，只是没写下来。</sub>
+<!-- END:MOTION -->
+
+一句话总结这张表：**动效便宜的地方在浏览器，贵的地方在 .pptx。** 如果你的交付物必须是
+甲方能二次编辑的 PowerPoint 文件，可选项会立刻从二十几个缩到两个 —— 这个落差本身，
+往往比任何一行说明都更能帮你定方案。
+
+
+---
+
 ## 它们长什么样
 
 上面两张表说的是每个项目**是什么**、**声称能做什么**。但都没回答你真正的问题：

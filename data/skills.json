@@ -26,6 +26,11 @@
       "homepage": "https://hugohe3.github.io/ppt-master/",
       "tagline_en": "Documents or topics into genuinely native, editable PowerPoint decks.",
       "tagline_zh": "把文档或主题变成真正原生可编辑的 PPTX。",
+      "motion": {
+        "kind": "pptx",
+        "note_en": "Entrance / emphasis / exit / motion-path animations and slide transitions written straight into the file by `pptx_animations.py`; speaker notes can also be rendered to narration audio.",
+        "note_zh": "进入 / 强调 / 退出 / 路径动画和转场，由 `pptx_animations.py` 直接写进文件；演讲备注还能转成旁白音频。"
+      },
       "highlights_en": [
         "SVG pipeline converted to PowerPoint-native DrawingML via finalize_svg.py — real shapes, connectors and adjustment handles, not flattened images",
         "Data-backed native charts and tables (--native-charts-and-tables)",
@@ -63,6 +68,11 @@
       "lang": "en",
       "tagline_en": "Beautiful slides on the web using a coding agent's frontend skills.",
       "tagline_zh": "用 Coding Agent 的前端能力做好看的网页幻灯片。",
+      "motion": {
+        "kind": "html",
+        "note_en": "\"Animation-rich\" zero-dependency single-file HTML; the motion ships with the 12 presets and 34 templates.",
+        "note_zh": "「animation-rich」的零依赖单文件 HTML，动效随 12 个预设和 34 套模板一起给。"
+      },
       "highlights_en": [
         "\"Show, don't tell\" style discovery — generates 3 real previews (safe preset / bold template / wildcard) instead of asking you to describe a style",
         "Zero-dependency single-file HTML, fixed 1920x1080 stage",
@@ -97,6 +107,11 @@
       "lang": "zh",
       "tagline_en": "Editorial-magazine and Swiss-International HTML decks, with design locked down by constraint.",
       "tagline_zh": "杂志编辑风与瑞士国际风 HTML 幻灯片，以「锁死约束」保证一致性。",
+      "motion": {
+        "kind": "html",
+        "note_en": "Motion One entrance animations (bundled locally with a CDN fallback), plus WebGL motion that degrades to a static frame on low-power devices.",
+        "note_zh": "Motion One 入场动效（本地 + CDN 双保险），另有 WebGL 动效并在低功耗设备上降级为静态。"
+      },
       "highlights_en": [
         "Two visual systems: Style A (10 narrative layouts) and Style B (22 locked grid layouts, fact-oriented)",
         "Theme colors are presets only — custom hex values are not permitted",
@@ -130,6 +145,11 @@
       "lang": "bilingual",
       "tagline_en": "HTML-native design skill — prototypes, decks, motion and design critique, not just slides.",
       "tagline_zh": "HTML 原生设计 skill —— 高保真原型、幻灯片、动效与设计评审，不止是 PPT。",
+      "motion": {
+        "kind": "video",
+        "note_en": "The closest thing here to a real motion engine: a Stage + Sprite time-slice model behind `useTime` / `useSprite` / `interpolate` / `Easing`, exporting MP4 / GIF, 60fps interpolation and a scored soundtrack in one command.",
+        "note_zh": "全表最像「动效引擎」的一个：Stage + Sprite 时间切片模型，`useTime` / `useSprite` / `interpolate` / `Easing` 四个 API，一条命令导出 MP4 / GIF、60fps 补帧、配 BGM。"
+      },
       "highlights_en": [
         "Brand Asset Protocol — a five-step anti-hallucination flow for brand colors: ask, search, download, grep colors, document spec",
         "Fallback Advisor — when the brief is vague, generates 3 parallel visual directions from different logic systems",
@@ -166,6 +186,11 @@
       "lang": "en",
       "tagline_en": "Rich HTML pages or decks for diagrams, diff reviews, plan audits, data tables and project recaps.",
       "tagline_zh": "为图表、diff 评审、方案审计、数据表和项目复盘生成 HTML 页面或幻灯片。",
+      "motion": {
+        "kind": "html",
+        "note_en": "The restrained one: entrance and hover motion only where it clarifies hierarchy, `prefers-reduced-motion` respected, continuous glow / pulse / breathing banned outright.",
+        "note_zh": "克制派：入场与 hover 动效只在能澄清层级时才用，尊重 `prefers-reduced-motion`，持续发光 / 脉冲 / 呼吸效果一律禁止。"
+      },
       "highlights_en": [
         "Aimed at engineering communication rather than marketing decks",
         "Diff review and plan audit rendering are unique in this space",
@@ -193,6 +218,11 @@
       "lang": "bilingual",
       "tagline_en": "24 themes, 31 layouts and 20+ animations for professional HTML presentations.",
       "tagline_zh": "24 主题 × 31 布局 × 20+ 动效的专业 HTML 演示。",
+      "motion": {
+        "kind": "html",
+        "note_en": "47 animations — 27 CSS plus 20 canvas effects. The deepest motion library of any single skill here.",
+        "note_zh": "47 个动画：27 个 CSS + 20 个 canvas 特效。单个 skill 里动效库最深的一个。"
+      },
       "highlights_en": [
         "Largest curated theme x layout matrix in the mid-tier",
         "Animation library is unusually deep for a single skill"
@@ -390,6 +420,11 @@
       "lang": "bilingual",
       "tagline_en": "Editable HTML decks with drag-resize, reordering, local save and PPTX conversion.",
       "tagline_zh": "可编辑 HTML 幻灯片：拖拽缩放、页序调整、本地保存、PPTX 互转。",
+      "motion": {
+        "kind": "html",
+        "note_en": "CSS-only by design — no React, no Motion library. Argues one well-orchestrated staggered load beats scattered micro-interactions.",
+        "note_zh": "刻意只用纯 CSS 动画 —— 不引 React、不引 Motion 库。主张「一次编排好的错峰入场」胜过零散的微交互。"
+      },
       "highlights_en": [
         "A derivative of frontend-slides that adds a WYSIWYG editing layer",
         "PPTX-to-web conversion plus export back out",
@@ -492,6 +527,11 @@
       "lang": "bilingual",
       "tagline_en": "Slide design grounded in cognitive science and instructional design, optimized for retention.",
       "tagline_zh": "基于认知科学与教学设计的幻灯片，优化知识留存率。",
+      "motion": {
+        "kind": "html",
+        "note_en": "An `ANIMATIONS.md` library of reusable code across 10 chapters, with motion justified by retention rather than looks.",
+        "note_zh": "`ANIMATIONS.md` 里 10 个章节的可复用动画代码，动效的理由是知识留存而不是好看。"
+      },
       "highlights_en": [
         "The only skill in the registry optimizing for a measurable outcome (retention) rather than aesthetics",
         "Grounded in instructional design literature"
@@ -517,6 +557,11 @@
       "lang": "en",
       "tagline_en": "HTML slides with speaker notes, plus a companion presentation app.",
       "tagline_zh": "带演讲者备注的 HTML 幻灯片，配套放映 app。",
+      "motion": {
+        "kind": "html",
+        "note_en": "\"Animation-rich\" single-file HTML — same phrasing and lineage as frontend-slides.",
+        "note_zh": "「animation-rich」单文件 HTML，与 frontend-slides 同源同表述。"
+      },
       "highlights_en": [
         "Speaker notes are first-class",
         "Supports Gemini, Codex and Copilot alongside Claude"
@@ -542,6 +587,11 @@
       "lang": "zh",
       "tagline_en": "KingDee corporate style decks.",
       "tagline_zh": "将内容快速生成金蝶风格 PPT。",
+      "motion": {
+        "kind": "html",
+        "note_en": "Two tiers: Intersection Observer fades for the ordinary case, GSAP ScrollTrigger for Apple-style scroll narratives.",
+        "note_zh": "两档：普通页用 Intersection Observer fade，要 Apple 式滚动叙事就上 GSAP ScrollTrigger。"
+      },
       "highlights_en": [
         "Single-vendor corporate style — a useful reference for building your own brand skill"
       ],
@@ -588,6 +638,11 @@
       "lang": "en",
       "tagline_en": "AI planning, style discovery and PPTX export.",
       "tagline_zh": "AI 规划 + 风格发现 + PPTX 导出。",
+      "motion": {
+        "kind": "html",
+        "note_en": "Animation is governed like colour and type — it must come from the chosen style file and nowhere else.",
+        "note_zh": "动画和颜色、字体一样被管起来：必须且只能来自选中的那个风格文件。"
+      },
       "highlights_en": [
         "Adopts the show-don't-tell style discovery pattern popularized by frontend-slides"
       ],
@@ -611,6 +666,11 @@
       "lang": "bilingual",
       "tagline_en": "26+ styles, zero dependencies, bilingual.",
       "tagline_zh": "「你的下个 slide，何必是 PPT」—— 26+ 风格，零依赖，中英双语。",
+      "motion": {
+        "kind": "html",
+        "note_en": "\"Animation-rich\" zero-dependency single file, bilingual out of the box.",
+        "note_zh": "「animation-rich」零依赖单文件，原生中英双语。"
+      },
       "highlights_en": [
         "Bilingual by design",
         "Works with Claude Code and OpenClaw"
@@ -636,6 +696,11 @@
       "lang": "bilingual",
       "tagline_en": "Enterprise HTML decks from ideas, outlines, documents or speech drafts.",
       "tagline_zh": "从想法、大纲、文档或演讲稿生成企业级 HTML 演示。",
+      "motion": {
+        "kind": "html",
+        "note_en": "Reveal animations are part of the design system: even a newly built component has to reuse the existing ones.",
+        "note_zh": "reveal 动画属于设计系统的一部分：新建组件也必须沿用现有的那套。"
+      },
       "highlights_en": [
         "Accepts a speech draft as input — rare, and useful when the talk is written before the deck"
       ],
@@ -659,6 +724,11 @@
       "lang": "en",
       "tagline_en": "50 aesthetics x 20 palettes x 10 fonts x 5 layouts x 30+ effects.",
       "tagline_zh": "50 美学 × 20 配色 × 10 字体 × 5 布局 × 30+ 特效 = 5 万种组合。",
+      "motion": {
+        "kind": "html",
+        "note_en": "One `.html` with full animations, responsive sizing and keyboard navigation; 30+ effects feed the combinatorial style engine.",
+        "note_zh": "单个 `.html`，动画、自适应尺寸、键盘导航齐全；30+ 特效参与那套组合爆炸。"
+      },
       "highlights_en": [
         "Combinatorial approach to variety rather than curated presets",
         "Explicitly anti-AI-slop in its positioning"
@@ -734,6 +804,11 @@
       "lang": "en",
       "tagline_en": "A developer-focused framework for building presentation slides with Markdown and Vue.",
       "tagline_zh": "面向开发者的演示文稿框架，使用 Markdown 和 Vue 制作幻灯片。",
+      "motion": {
+        "kind": "html",
+        "note_en": "Click animations (step-by-step reveals), slide transitions and motion effects, all built into the framework.",
+        "note_zh": "点击动画（逐步显示）、页面转场与 motion 效果，全是框架内建的。"
+      },
       "source": "discovered"
     },
     {
@@ -771,6 +846,11 @@
       "lang": "en",
       "tagline_en": "An agentic HTML editor with 75 skills across 9 surface types including decks, posters, and prototypes.",
       "tagline_zh": "具有 75 个技能的智能 HTML 编辑器，涵盖幻灯片、海报和原型等 9 种输出类型。",
+      "motion": {
+        "kind": "html",
+        "note_en": "Staggered reveals specified to the millisecond: title at 0s, kicker at 200ms, a 1.2s stroke-dashoffset line draw from 400ms, then data labels every 100ms.",
+        "note_zh": "错峰揭示动画精确到毫秒：标题 0s、kicker 200ms、折线 stroke-dashoffset 1.2s 从 400ms 起、数据标签每 100ms 一个。"
+      },
       "source": "discovered"
     },
     {
@@ -783,6 +863,11 @@
       "lang": "en",
       "tagline_en": "Generates browser-editable presentations from multiple visual themes, exportable to HTML, PDF, and PPTX.",
       "tagline_zh": "从多种视觉主题生成可在浏览器编辑的演示文稿，支持导出为 HTML、PDF 和 PPTX。",
+      "motion": {
+        "kind": "html",
+        "note_en": "Element entrances use each component's own built-in effect; the slide-transition style is switchable from the preview control panel.",
+        "note_zh": "元素出现动画用页面组件自带的原生效果；页面切换动画可以在预览控制面板里直接调。"
+      },
       "source": "discovered",
       "license_warning": true
     },
@@ -808,6 +893,11 @@
       "lang": "zh",
       "tagline_en": "AI skill that generates high-quality PPT slide images and videos with transitions and interactive playback.",
       "tagline_zh": "AI 技能，自动生成高质量 PPT 幻灯片图片和视频，支持智能转场与交互式播放。",
+      "motion": {
+        "kind": "video",
+        "note_en": "Generates slide images and video with transitions and interactive playback — an image pipeline, not a code one.",
+        "note_zh": "生成幻灯片图片和视频，带智能转场与交互式播放 —— 走的是图片流，不是代码流。"
+      },
       "source": "discovered"
     },
     {
@@ -1181,6 +1271,11 @@
       "lang": "en",
       "tagline_en": "Generates self-contained HTML presentations with smooth Magic Move-style transitions between slides.",
       "tagline_zh": "生成带有流畅 Magic Move 风格转场动画的独立 HTML 演示文稿。",
+      "motion": {
+        "kind": "html",
+        "note_en": "Magic Move-style transitions: a shared element glides from its position on one slide to the next instead of cutting.",
+        "note_zh": "Magic Move 风格转场：同一元素在前后两页之间平滑位移，而不是硬切。"
+      },
       "source": "discovered"
     },
     {
@@ -1193,6 +1288,11 @@
       "lang": "zh",
       "tagline_en": "Codex CLI skill collection for editable PPT diagram collaboration and web demo video synthesis workflows.",
       "tagline_zh": "Codex CLI 技能集合，涵盖可编辑 PPT 图表协作与端到端网页演示视频合成工作流。",
+      "motion": {
+        "kind": "video",
+        "note_en": "A Codex CLI pack whose second half is an end-to-end web-demo video synthesis workflow.",
+        "note_zh": "Codex CLI 套件，后半段是端到端的网页演示视频合成工作流。"
+      },
       "source": "discovered"
     },
     {
@@ -1217,6 +1317,11 @@
       "lang": "zh",
       "tagline_en": "A suite of AI skills covering writing, illustration, PPT, podcast, video, and comic generation.",
       "tagline_zh": "一套覆盖写作、配图、PPT、播客、视频和漫画生成的AI技能集合。",
+      "motion": {
+        "kind": "video",
+        "note_en": "A general AI suite bundling a video-generation skill alongside the deck one — that video is not slide motion.",
+        "note_zh": "综合型 AI 套件，视频生成是里面另一个 skill，不是幻灯片动效本身。"
+      },
       "source": "discovered"
     },
     {
@@ -1241,6 +1346,11 @@
       "lang": "en",
       "tagline_en": "Creates browser-based slide decks using React, Vite, and Framer Motion from a coding agent prompt.",
       "tagline_zh": "通过编程智能体提示，使用React、Vite和Framer Motion创建基于浏览器的幻灯片。",
+      "motion": {
+        "kind": "html",
+        "note_en": "React + Vite + Framer Motion — the one that hands you a real animation library instead of hand-written CSS.",
+        "note_zh": "React + Vite + Framer Motion —— 这一个直接给你成熟动画库，而不是手写 CSS。"
+      },
       "source": "discovered"
     },
     {
@@ -1613,6 +1723,11 @@
       "lang": "en",
       "tagline_en": "Turns a single prompt into an animated HTML or editable PowerPoint presentation.",
       "tagline_zh": "将单个提示词转化为动态HTML或可编辑PowerPoint演示文稿。",
+      "motion": {
+        "kind": "html",
+        "note_en": "One prompt out to either an animated HTML deck or an editable PowerPoint.",
+        "note_zh": "一句提示，出「动态 HTML」或可编辑 PowerPoint 二选一。"
+      },
       "source": "discovered"
     },
     {
@@ -1734,6 +1849,11 @@
       "lang": "en",
       "tagline_en": "Generates PPT files with AI, including support for Veo video content.",
       "tagline_zh": "使用 AI 生成 PPT 文件，支持 Veo 视频内容。",
+      "motion": {
+        "kind": "video",
+        "note_en": "A NanoBanana fork that adds Veo video content.",
+        "note_zh": "NanoBanana 的分支，加了 Veo 视频内容。"
+      },
       "source": "discovered"
     },
     {
@@ -1746,6 +1866,11 @@
       "lang": "en",
       "tagline_en": "Generates PPT files with AI-driven smart transitions and interactive playback.",
       "tagline_zh": "使用 AI 生成带有智能切换和交互式播放功能的 PPT 文件。",
+      "motion": {
+        "kind": "video",
+        "note_en": "A NanoBanana fork claiming smart transitions and interactive playback.",
+        "note_zh": "NanoBanana 的分支，自称有智能切换与交互式播放。"
+      },
       "source": "discovered"
     },
     {
@@ -1818,6 +1943,11 @@
       "lang": "en",
       "tagline_en": "Creates animation-rich HTML presentations from scratch or converts existing PowerPoint files.",
       "tagline_zh": "从头创建富含动画效果的 HTML 演示文稿，或将现有 PowerPoint 文件转换为 HTML 格式。",
+      "motion": {
+        "kind": "html",
+        "note_en": "Animation-rich HTML from scratch, or converted out of an existing .pptx.",
+        "note_zh": "从零生成动画丰富的 HTML，也能把已有 .pptx 转过来。"
+      },
       "source": "discovered"
     },
     {
@@ -1986,6 +2116,11 @@
       "lang": "en",
       "tagline_en": "Creates animated, interactive web presentations with style presets, brand kit support, and one-click PowerPoint export.",
       "tagline_zh": "生成带有风格预设、品牌套件支持和一键导出 PowerPoint 功能的动画交互式网页演示文稿。",
+      "motion": {
+        "kind": "html",
+        "note_en": "Animated, interactive web decks with style presets and brand kits, plus one-click PowerPoint export.",
+        "note_zh": "带风格预设与品牌套件的动画交互式网页 deck，另有一键导出 PowerPoint。"
+      },
       "source": "discovered"
     },
     {
@@ -2207,6 +2342,11 @@
       "lang": "en",
       "tagline_en": "Converts any content into an Apple Keynote-style self-contained HTML presentation with cinematic animations.",
       "tagline_zh": "将任意内容转换为苹果 Keynote 风格的单文件 HTML 演示文稿，带有电影级动画效果。",
+      "motion": {
+        "kind": "html",
+        "note_en": "Aims at Keynote-style \"cinematic\" animation inside one self-contained file.",
+        "note_zh": "目标是 Keynote 风的「电影级」动画，成品仍是单文件。"
+      },
       "source": "discovered"
     },
     {
@@ -2580,6 +2720,11 @@
       "lang": "zh",
       "tagline_en": "Creates, edits, and reviews PowerPoint files with image, native-editable, and hybrid output modes plus animations.",
       "tagline_zh": "使用 Notrat 创建、改编和检查 PowerPoint 文件，支持图片型、原生可编辑型和混合型输出及动画效果。",
+      "motion": {
+        "kind": "pptx",
+        "note_en": "Claims animation across all three output modes — image, natively editable, and hybrid.",
+        "note_zh": "自称图片型 / 原生可编辑 / 混合三种输出模式都支持动画。"
+      },
       "source": "discovered"
     },
     {
@@ -2592,6 +2737,11 @@
       "lang": "zh",
       "tagline_en": "Generates self-contained HTML presentations that open directly in a browser and support video recording.",
       "tagline_zh": "生成零依赖的 HTML 演示文稿，可在浏览器直接打开，支持视频录制。",
+      "motion": {
+        "kind": "video",
+        "note_en": "Zero-dependency HTML that also records itself to video.",
+        "note_zh": "零依赖 HTML，另外支持把自己录成视频。"
+      },
       "source": "discovered"
     },
     {
@@ -2761,6 +2911,11 @@
       "lang": "zh",
       "tagline_en": "Converts documents into HTML presentation videos with Chinese voiceover and subtitles.",
       "tagline_zh": "将文档转换为带有中文配音和字幕的 HTML 演示视频。",
+      "motion": {
+        "kind": "video",
+        "note_en": "Documents to an HTML presentation video with Chinese voiceover and subtitles.",
+        "note_zh": "文档 → 带中文配音和字幕的 HTML 演示视频。"
+      },
       "source": "discovered"
     },
     {
@@ -2809,6 +2964,11 @@
       "lang": "en",
       "tagline_en": "Creates animation-rich HTML presentations from scratch or converts PowerPoint files, with 88 layout presets and 34 templates.",
       "tagline_zh": "提供 88 种布局预设和 34 套模板，从头生成或将 PowerPoint 转换为富含动画的独立 HTML 演示文稿。",
+      "motion": {
+        "kind": "html",
+        "note_en": "A frontend-slides derivative: animation-rich HTML with 88 layout presets and 34 templates.",
+        "note_zh": "frontend-slides 的衍生：88 种布局预设 + 34 套模板的动画 HTML。"
+      },
       "source": "discovered"
     },
     {
@@ -2959,6 +3119,11 @@
       "route": "html",
       "tagline_en": "Claude Code skill that generates a single-file HTML slide deck with Three.js wireframe backgrounds.",
       "tagline_zh": "Claude Code 技能:一键生成带 Three.js 线框背景的单文件 HTML 演示幻灯片。",
+      "motion": {
+        "kind": "html",
+        "note_en": "Three.js wireframe backgrounds behind an otherwise single-file deck — the only 3D entry in the registry.",
+        "note_zh": "单文件 deck 背后跑 Three.js 线框 3D 背景 —— 全表唯一一个 3D 的。"
+      },
       "lang": "en",
       "license_note": "MIT",
       "source": "discovered"
@@ -3152,6 +3317,11 @@
       "lang": "en",
       "tagline_en": "One self-contained HTML slide template in CUHK colours, plus a Markdown-to-slides skill.",
       "tagline_zh": "一份自包含的港中大配色 HTML 幻灯片模板,附带 Markdown 转幻灯片的 skill。",
+      "motion": {
+        "kind": "html",
+        "note_en": "Animated stat counters and modal-backed feature grids, inside one hand-written template file.",
+        "note_zh": "单个手写模板文件里就有带计数动画的数据页和可点开弹窗的特性网格。"
+      },
       "highlights_en": [
         "A single HTML file with inline CSS and JS: no build step, no runtime, and it survives git diff",
         "14 demo slides across 8 slide types and 8 layouts, including feature grids with modals and animated stat counters",
@@ -3186,6 +3356,11 @@
       "lang": "zh",
       "tagline_en": "Redesigns an existing Word, PDF or PPT into a 16:9 offline HTML deck with staged animation.",
       "tagline_zh": "把已有的 Word、PDF 或 PPT 重新设计成带分步动效、可离线交付的 16:9 HTML 演示文稿。",
+      "motion": {
+        "kind": "html",
+        "note_en": "Redesigns an existing Word / PDF / PPT into a 16:9 offline HTML deck with staged, build-up animation.",
+        "note_zh": "把已有的 Word / PDF / PPT 重做成 16:9 离线 HTML，带分步揭示动效。"
+      },
       "source": "discovered"
     },
     {
@@ -3235,6 +3410,11 @@
       "lang": "en",
       "tagline_en": "23 themes and 25 page layouts for animated static HTML decks, driven from a small CLI.",
       "tagline_zh": "23 套主题与 25 种页面版式,用一个小 CLI 生成带动效的静态 HTML 演示。",
+      "motion": {
+        "kind": "html",
+        "note_en": "23 themes and 25 layouts, all rendered as \"animated static HTML\" from a small CLI.",
+        "note_zh": "23 套主题 × 25 种版式，由一个小 CLI 生成「带动效的静态 HTML」。"
+      },
       "highlights_en": [
         "23 visual themes spanning business, technology, editorial, creative and premium-launch scenarios",
         "25 reusable page layouts for covers, timelines, metrics, comparisons, roadmaps and story sections",

@@ -457,6 +457,88 @@ exactly which sentence to go and check.
 
 ---
 
+## Motion: which ones animate, and how
+
+The "Motion" column above only answers *whether* something animates. The question that
+actually decides the choice is the next one: **what is moving, and what file do you hand
+over at the end.** Because "a deck with some animation in it" means three mutually
+incompatible things across these projects — and there is almost no converting between them.
+
+Work out what you have to deliver first, then read down:
+
+- **Someone must open it in PowerPoint and edit it** → the first group only, and it is short
+- **A link or a single HTML file is fine** → the second group, where nearly everything is
+- **A video file to post or send** → the third group
+
+<!-- BEGIN:MOTION -->
+#### Animation lives inside the .pptx
+
+<sub>PowerPoint plays it with no browser involved, and the recipient can edit the timings. Also the hardest of the three to produce, which is why the list is this short.</sub>
+
+| Skill | ⭐ | Route | Basis | What the motion actually is |
+|---|---:|---|:-:|---|
+| **[PPT Master](https://github.com/hugohe3/ppt-master)** | 43,139 | PPTX | ✅ | Entrance / emphasis / exit / motion-path animations and slide transitions written straight into the file by `pptx_animations.py`; speaker notes can also be rendered to narration audio. |
+| **[Notrat PPT Studio](https://github.com/NestMold/notrat-ppt-studio-skill)** | 4 | Both | · | Claims animation across all three output modes — image, natively editable, and hybrid. |
+
+#### Animation lives in the browser
+
+<sub>Cheap, expressive, and gone the moment someone asks for the .pptx. This is where almost all the motion in this registry actually is.</sub>
+
+| Skill | ⭐ | Route | Basis | What the motion actually is |
+|---|---:|---|:-:|---|
+| **[Slidev](https://github.com/slidevjs/slidev)** | 47,959 | Framework | ✅ | Click animations (step-by-step reveals), slide transitions and motion effects, all built into the framework. |
+| **[Frontend Slides](https://github.com/zarazhangrui/frontend-slides)** | 26,949 | HTML | ✅ | "Animation-rich" zero-dependency single-file HTML; the motion ships with the 12 presets and 34 templates. |
+| **[Guizang PPT Skill](https://github.com/op7418/guizang-ppt-skill)** | 23,232 | HTML | ✅ | Motion One entrance animations (bundled locally with a CDN fallback), plus WebGL motion that degrades to a static frame on low-power devices. |
+| **[Visual Explainer](https://github.com/nicobailon/visual-explainer)** | 9,411 | HTML | ✅ | The restrained one: entrance and hover motion only where it clarifies hierarchy, `prefers-reduced-motion` respected, continuous glow / pulse / breathing banned outright. |
+| **[HTML Anything](https://github.com/nexu-io/html-anything)** | 8,091 | Suite | ✅ | Staggered reveals specified to the millisecond: title at 0s, kicker at 200ms, a 1.2s stroke-dashoffset line draw from 400ms, then data labels every 100ms. |
+| **[HTML PPT Studio](https://github.com/lewislulu/html-ppt-skill)** | 7,639 | HTML | ✅ | 47 animations — 27 CSS plus 20 canvas effects. The deepest motion library of any single skill here. |
+| **[Dashi PPT Skill](https://github.com/chuspeeism/dashi-ppt-skill)** | 4,702 | Both | ✅ | Element entrances use each component's own built-in effect; the slide-transition style is switchable from the preview control panel. |
+| **[Frontend Slides Editable](https://github.com/archlizheng/frontend-slides-editable)** | 452 | Both | ✅ | CSS-only by design — no React, no Motion library. Argues one well-orchestrated staggered load beats scattered micro-interactions. |
+| **[Magic Slide](https://github.com/daniel-style/magic-slide)** | 171 | HTML | · | Magic Move-style transitions: a shared element glides from its position on one slide to the next instead of cutting. |
+| **[Slide Deck Generator](https://github.com/code-on-sunday/slide-deck-generator)** | 138 | HTML | · | React + Vite + Framer Motion — the one that hands you a real animation library instead of hand-written CSS. |
+| **[Visual Cognition Slides](https://github.com/edu-ai-builders/visual-cognition-slides)** | 81 | HTML | ✅ | An `ANIMATIONS.md` library of reusable code across 10 chapters, with motion justified by retention rather than looks. |
+| **[HTML Slides](https://github.com/bluedusk/html-slides)** | 73 | HTML | ✅ | "Animation-rich" single-file HTML — same phrasing and lineage as frontend-slides. |
+| **[KingDee PPT Skill](https://github.com/WayneZhon/KingDee-PPT-Skill)** | 56 | HTML | ✅ | Two tiers: Intersection Observer fades for the ordinary case, GSAP ScrollTrigger for Apple-style scroll narratives. |
+| **[Slide Creator](https://github.com/kaisersong/slide-creator)** | 46 | Both | ✅ | Animation is governed like colour and type — it must come from the chosen style file and nowhere else. |
+| **[next-slide](https://github.com/codesstar/next-slide)** | 44 | HTML | ✅ | "Animation-rich" zero-dependency single file, bilingual out of the box. |
+| **[Slide Writer](https://github.com/FeeiCN/slide-writer)** | 40 | HTML | ✅ | Reveal animations are part of the design system: even a newly built component has to reuse the existing ones. |
+| **[Skills Slides](https://github.com/nghiahsgs/skills-slides)** | 30 | HTML | ✅ | One `.html` with full animations, responsive sizing and keyboard navigation; 30+ effects feed the combinatorial style engine. |
+| **[Slides AI Plugin](https://github.com/proyecto26/slides-ai-plugin)** | 29 | Both | · | One prompt out to either an animated HTML deck or an editable PowerPoint. |
+| **[Interactive Slides](https://github.com/sylvial928/interactive-slides)** | 18 | HTML | · | Animated, interactive web decks with style presets and brand kits, plus one-click PowerPoint export. |
+| **[AWS HTML Slides](https://github.com/lanceli93/aws-html-slides)** | 11 | HTML | · | Animation-rich HTML from scratch, or converted out of an existing .pptx. |
+| **[Presentation Chef](https://github.com/sacredvoid/presentation-chef)** | 9 | HTML | · | Aims at Keynote-style "cinematic" animation inside one self-contained file. |
+| **[Frontend Slides](https://github.com/dreamid27/frontend-slides)** | 4 | HTML | · | A frontend-slides derivative: animation-rich HTML with 88 layout presets and 34 templates. |
+| **[3D HTML Slide Skill](https://github.com/yoshifujidesign/3d-html-slide-skill)** | 3 | HTML | · | Three.js wireframe backgrounds behind an otherwise single-file deck — the only 3D entry in the registry. |
+| **[CUHK Slides Template (HTML)](https://github.com/HarlandZZC/cuhk-slides-template-html)** | 3 | Templates | · | Animated stat counters and modal-backed feature grids, inside one hand-written template file. |
+| **[TaoHtml](https://github.com/TaoGEO/TaoHtml)** | 3 | HTML | · | Redesigns an existing Word / PDF / PPT into a 16:9 offline HTML deck with staged, build-up animation. |
+| **[Inspiration Deck Workshop](https://github.com/zjsthmjialin/inspiration-deck-workshop)** | 1 | Templates | · | 23 themes and 25 layouts, all rendered as "animated static HTML" from a small CLI. |
+
+#### The output is a video file
+
+<sub>Not a deck you present but a file you send — MP4 / GIF, sometimes with voiceover. Different job, filed here because it is what people mean about half the time they ask for animation.</sub>
+
+| Skill | ⭐ | Route | Basis | What the motion actually is |
+|---|---:|---|:-:|---|
+| **[Huashu Design](https://github.com/alchaincyf/huashu-design)** | 22,487 | Both | ✅ | The closest thing here to a real motion engine: a Stage + Sprite time-slice model behind `useTime` / `useSprite` / `interpolate` / `Easing`, exporting MP4 / GIF, 60fps interpolation and a scored soundtrack in one command. |
+| **[NanoBanana PPT Skills](https://github.com/op7418/NanoBanana-PPT-Skills)** | 3,187 | Image | · | Generates slide images and video with transitions and interactive playback — an image pipeline, not a code one. |
+| **[Presentation Skills](https://github.com/Sven-LI-sankyuu/presentation-skills)** | 163 | Both | · | A Codex CLI pack whose second half is an end-to-end web-demo video synthesis workflow. |
+| **[Servasyy Skills](https://github.com/huangserva/servasyy_skills)** | 153 | Suite | · | A general AI suite bundling a video-generation skill alongside the deck one — that video is not slide motion. |
+| **[NanoBanana PPT Skills](https://github.com/xj-bear/NanoBanana-PPT-Skills)** | 13 | PPTX | · | A NanoBanana fork that adds Veo video content. |
+| **[NanoBanana PPT Skills](https://github.com/girish6055/NanoBanana-PPT-Skills)** | 13 | PPTX | · | A NanoBanana fork claiming smart transitions and interactive playback. |
+| **[Web PPT](https://github.com/includewudi/web-ppt)** | 4 | HTML | · | Zero-dependency HTML that also records itself to video. |
+| **[HTML PPT Video Skill](https://github.com/juguang/html-ppt-video-skill)** | 3 | HTML | · | Documents to an HTML presentation video with Chinese voiceover and subtitles. |
+
+<sub>✅ the claim is backed by a quote from the project's own docs, recorded in [`data/capabilities.json`](data/capabilities.json) · · the claim is the project's own one-line description, which nobody has verified against its SKILL.md.<br>**The other 191 skills say nothing about motion anywhere this registry has read.** That is an absence of evidence, not evidence of absence — several of them almost certainly animate and simply never wrote it down.</sub>
+<!-- END:MOTION -->
+
+The one-line reading of this table: **motion is cheap in the browser and expensive in a
+.pptx.** If your deliverable has to be a PowerPoint file the client can edit, the field
+collapses from twenty-odd options to two — and that collapse tells you more about your
+plan than any single row here.
+
+
+---
+
 ## What they look like
 
 The two tables above say what each project *is* and what it *claims*. Neither answers

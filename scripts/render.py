@@ -360,6 +360,102 @@ def render_capabilities(data: dict, stats: dict, lang: str) -> str:
 
 
 
+MOTION_KIND = {
+    "pptx": (
+        "Animation lives inside the .pptx",
+        "动画写在 .pptx 文件里",
+        "PowerPoint plays it with no browser involved, and the recipient can edit "
+        "the timings. Also the hardest of the three to produce, which is why the "
+        "list is this short.",
+        "PowerPoint 直接放，不经浏览器，收件人还能自己改时序。也是三条路里最难做的，"
+        "所以这份名单只有这么长。",
+    ),
+    "html": (
+        "Animation lives in the browser",
+        "动效跑在浏览器里",
+        "Cheap, expressive, and gone the moment someone asks for the .pptx. This is "
+        "where almost all the motion in this registry actually is.",
+        "便宜、能做得花，但对方一句「给我 PPT 源文件」就全没了。本登记册里的动效绝大多数在这一档。",
+    ),
+    "video": (
+        "The output is a video file",
+        "产物是视频文件",
+        "Not a deck you present but a file you send — MP4 / GIF, sometimes with "
+        "voiceover. Different job, filed here because it is what people mean about "
+        "half the time they ask for animation.",
+        "它不是拿来讲的 deck，而是发出去的文件 —— MP4 / GIF，有的还带配音。"
+        "严格说是另一件事，放在这里是因为有一半人说「要动画」指的就是它。",
+    ),
+}
+
+
+def render_motion(data: dict, stats: dict, lang: str) -> str:
+    """What each skill animates, and where that claim came from.
+
+    The registry's own capability grid answers "does it animate" for its top ten
+    with a ✅. This answers the next question — *what kind of motion* — for every
+    entry that says anything about it at all, which is 36 of them and not 227.
+    Saying so in the footer matters more than the table: a reader who does not
+    find their skill here should conclude "its docs are silent", not "it can't".
+    """
+    caps = (json.loads(CAPS.read_text(encoding="utf-8")).get("skills", {})
+            if CAPS.exists() else {})
+
+    def verified(sid: str) -> bool:
+        cell = (caps.get(sid, {}).get("caps", {}) or {}).get("animation") or {}
+        return isinstance(cell, dict) and cell.get("verdict") == "yes"
+
+    entries = [e for e in data["skills"] if e.get("motion")]
+    if not entries:
+        return "> No motion notes recorded yet."
+
+    i = 0 if lang == "en" else 1
+    out: list[str] = []
+    for kind, labels in MOTION_KIND.items():
+        group = sorted((e for e in entries if e["motion"]["kind"] == kind),
+                       key=lambda e: -sort_key(e, stats))
+        if not group:
+            continue
+        out.append(f"#### {labels[i]}\n")
+        out.append(f"<sub>{labels[2 + i]}</sub>\n")
+        out.append(
+            "| Skill | ⭐ | Route | Basis | What the motion actually is |\n|---|---:|---|:-:|---|"
+            if lang == "en"
+            else "| 项目 | ⭐ | 路线 | 依据 | 动效具体是什么 |\n|---|---:|---|:-:|---|"
+        )
+        for e in group:
+            note = e["motion"]["note_en" if lang == "en" else "note_zh"]
+            out.append(
+                f"| **[{e['name']}]({repo_link(e)})** "
+                f"| {fmt_stars(e, stats)} "
+                f"| {ROUTE_LABEL[e['route']][i]} "
+                f"| {'✅' if verified(e['id']) else '·'} "
+                f"| {note} |"
+            )
+        out.append("")
+
+    silent = len(data["skills"]) - len(entries)
+    if lang == "en":
+        out.append(
+            f"<sub>✅ the claim is backed by a quote from the project's own docs, recorded in "
+            "[`data/capabilities.json`](data/capabilities.json) · "
+            "· the claim is the project's own one-line description, which nobody has "
+            "verified against its SKILL.md.<br>"
+            f"**The other {silent} skills say nothing about motion anywhere this registry "
+            "has read.** That is an absence of evidence, not evidence of absence — several "
+            "of them almost certainly animate and simply never wrote it down.</sub>"
+        )
+    else:
+        out.append(
+            f"<sub>✅ 该说法有项目文档原文佐证，引文在 "
+            "[`data/capabilities.json`](data/capabilities.json) 里 · "
+            "· 该说法来自项目自己的一句话简介，没有人对着它的 SKILL.md 核对过。<br>"
+            f"**另外 {silent} 个 skill，在本登记册读过的地方一个字都没提动效。**"
+            "这是「查无此说」，不是「确定没有」—— 其中好几个几乎肯定会动，只是没写下来。</sub>"
+        )
+    return "\n".join(out)
+
+
 SAMPLES = ROOT / "data" / "samples.json"
 
 # Every image the harvest kept, rendered at full width, one per line. A slide is
@@ -615,6 +711,7 @@ BLOCKS = {
     "RESEARCHED": render_researched,
     "SCORECARD": render_scorecard,
     "CAPABILITIES": render_capabilities,
+    "MOTION": render_motion,
     "GALLERY": render_gallery,
     "INSTALLMETHODS": render_install_methods,
 }
