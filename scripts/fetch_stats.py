@@ -158,6 +158,9 @@ def main() -> int:
         print(f"ok — {len(repos)} repos, refreshed {stats.get('refreshed_at')}")
         return 0
 
+    # Load the previous snapshot before checkpoints overwrite STATS.
+    prior = json.loads(STATS.read_text(encoding="utf-8")).get("repos", {}) if STATS.exists() else {}
+
     print(f"Fetching stats for {len(repos)} repos...")
     out: dict[str, dict] = {}
     failed: list[str] = []
@@ -175,8 +178,7 @@ def main() -> int:
 
     # Preserve prior values for repos that failed this run, so a transient
     # outage degrades to stale data rather than blank data.
-    if STATS.exists():
-        prior = json.loads(STATS.read_text(encoding="utf-8")).get("repos", {})
+    if prior:
         for repo in failed:
             if repo in prior:
                 stale = dict(prior[repo])
