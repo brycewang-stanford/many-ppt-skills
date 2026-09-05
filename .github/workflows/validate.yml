@@ -18,6 +18,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Stats refresh regression test
+        run: python scripts/test_fetch_stats.py
+
       - name: Registry JSON is well-formed
         run: |
           python -c "import json,pathlib; json.loads(pathlib.Path('data/skills.json').read_text())"
