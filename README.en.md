@@ -9,7 +9,7 @@ See one you like in the [gallery](#what-they-look-like)? **[Make your own in 60 
 [简体中文](README.md) · [English](README.en.md)
 
 <!-- BEGIN:COUNTS -->
-**227 skills tracked**, **39 of them read by hand** · **303,913 combined stars** · 83 HTML-native · 79 native PPTX · 25 both · data refreshed **2026-09-04**
+**227 skills tracked**, **39 of them read by hand** · **303,918 combined stars** · 83 HTML-native · 79 native PPTX · 25 both · data refreshed **2026-09-04**
 <!-- END:COUNTS -->
 
 </div>
@@ -378,6 +378,7 @@ essentially every scenario.
 | **[PPT Template Fill](https://github.com/xiongwenhao112/ppt-template-fill)**†<br><sub>xiongwenhao112</sub> | 5 | PPTX | MIT | Fills a user-supplied PPTX template with AI-generated content while preserving the original layout. |
 | **[SlideSage](https://github.com/vedraut/slidesage)**†<br><sub>vedraut</sub> | 5 | PPTX | MIT | Generates static .pptx decks from content using storytelling and instructional design principles. |
 | **[USTC PPT Template](https://github.com/zsc58/ustc-ppt-template)**†<br><sub>zsc58</sub> | 5 | Templates | NOASSERTION | Provides a 15-slide blue academic PPT template for USTC with navigation links and a LaTeX pipeline. |
+| **[KR Brand Decks](https://github.com/sylvanus4/kr-brand-decks)**<br><sub>sylvanus4</sub> | 5~ | Templates | NOASSERTION | 23 skills, one per Korean enterprise brand, each building an on-brand PPTX from scratch. |
 | **[Web PPT](https://github.com/includewudi/web-ppt)**†<br><sub>includewudi</sub> | 4 | HTML | Unspecified | Generates self-contained HTML presentations that open directly in a browser and support video recording. |
 | **[Codex XKPPT Skill](https://github.com/MURMURE11118586/codex-xkppt-skill)**†<br><sub>MURMURE11118586</sub> | 4 | PPTX | MIT | Generates editable presentations from topics, documents, PDFs, or Markdown, with template application and QA checks. |
 | **[PPT Design Skill](https://github.com/billLiao/PPT-Design-Skill)**†<br><sub>billLiao</sub> | 4 | PPTX | Unspecified | Combines multiple design styles to generate .pptx files directly rather than HTML output. |
@@ -412,7 +413,6 @@ essentially every scenario.
 | **[Paper Deck Reveal](https://github.com/O0000-code/paper-deck-reveal)** | 0 | Framework | Apache-2.0 | Reveal.js skill that turns an academic paper into an offline deck with interactive demos. |
 | **[GHB PPT Skill](https://github.com/NickyLam/GHB-PPT-Skill)**<br><sub>NickyLam</sub> | 0 | PPTX | MIT | Corporate-template PPTX where SVG becomes editable DrawingML, verified fully offline. |
 | **[HTML Presentation Skill](https://github.com/defreitassl/html-presentation-skill)**†<br><sub>defreitassl</sub> | 0 | HTML | MIT | Turns documents, notes or briefs into a standalone HTML presentation, then validates it. |
-| **[KR Brand Decks](https://github.com/sylvanus4/kr-brand-decks)**<br><sub>sylvanus4</sub> | — | Templates | NOASSERTION | 23 skills, one per Korean enterprise brand, each building an on-brand PPTX from scratch. |
 | **[Slide Deck Skill](https://github.com/jayworker/slide-deck-skill)**<br><sub>jayworker</sub> | 0 | HTML | MIT | Single-file 16:9 HTML decks in a light dashboard style, one message per slide. |
 | **[Marp Slides Studio](https://github.com/unsolublesugar/marp-slides-studio)**<br><sub>unsolublesugar</sub> | 0 | Templates | MIT | 50 Marp themes with a gallery, contrast checker and four agent skills for deck work. |
 
@@ -604,7 +604,7 @@ and builds from it. Want the options instead? Don't name one — just ask for a 
 > frontend-slides' SKILL.md and holds for that skill only.
 
 <!-- BEGIN:GALLERY -->
-**Jump to:** [PPT Master](#gallery-ppt-master) <sub>24</sub> · [Frontend Slides](#gallery-frontend-slides) <sub>24</sub> · [Guizang PPT Skill](#gallery-guizang-ppt-skill) <sub>13</sub> · [Huashu Design](#gallery-huashu-design) <sub>24</sub> · [HTML PPT Studio](#gallery-html-ppt-skill) <sub>24</sub> · [open-slide](#gallery-open-slide) <sub>16</sub> · [Beautiful HTML Templates](#gallery-beautiful-html-templates) <sub>24</sub> · [Codex Slides](#gallery-codex-slides) <sub>24</sub> · [PPT Agent Workflow San](#gallery-ppt-agent-workflow-san) <sub>10</sub> · [Frontend Slides Editable](#gallery-frontend-slides-editable) <sub>24</sub> · [Mck PPT Design System](#gallery-mck-ppt-design-skill) <sub>6</sub> · [PPT SVG Generator](#gallery-ppt-svg-generator) <sub>2</sub> · [PPT Agent Skill](#gallery-ppt-agent-skill) <sub>24</sub> · [HTML Slides](#gallery-html-slides-bluedusk) <sub>4</sub> · [KingDee PPT Skill](#gallery-kingdee-ppt-skill) <sub>1</sub> · [next-slide](#gallery-next-slide) <sub>1</sub> · [Slide Creator](#gallery-slide-creator) <sub>23</sub> · [Slide Writer](#gallery-slide-writer) <sub>5</sub> · [Skills Slides](#gallery-skills-slides) <sub>4</sub> · [PowerPoint Fancy Design](#gallery-powerpoint-fancy-design) <sub>24</sub> · [PPTX from Layouts](#gallery-pptx-from-layouts) <sub>1</sub> · [Excalidraw Slides Generator](#gallery-excalidraw-slides-skills) <sub>5</sub> · [Econ Slides Skill](#gallery-econ-slides-skill) <sub>5</sub> · [OpenCode PPT Studio](#gallery-oc-sdk-ppt) <sub>3</sub> · [CUHK Slides Template (HTML)](#gallery-cuhk-slides-template-html) <sub>2</sub> · [3D HTML Slide Skill](#gallery-3d-html-slide-skill) <sub>2</sub> · [Image to Editable PPT Skill (zhoujie97)](#gallery-image-to-editable-ppt-skill-zhoujie97) <sub>4</sub> · [TaoHtml](#gallery-taohtml) <sub>12</sub> · [TikTok Slideshow Command Center](#gallery-vyral-tiktok-slideshow-skill) <sub>6</sub> · [PPTWork](#gallery-pptwork) <sub>24</sub> · [Inspiration Deck Workshop](#gallery-inspiration-deck-workshop) <sub>23</sub> · [University PPT Skill](#gallery-university-ppt-skill) <sub>10</sub> · [Claude PPT Skills](#gallery-claude-ppt-skills) <sub>3</sub> · [Course HTML Slides Builder](#gallery-course-html-slides-skill) <sub>9</sub> · [Google Slides Deck Skill](#gallery-google-slides-skill) <sub>1</sub> · [PPTX Deck Creation Kit](#gallery-agent-pptify-kit) <sub>3</sub> · [PPT Deck Builder Skill](#gallery-ppt-deck-builder-skill) <sub>4</sub> · [Paper Deck Reveal](#gallery-paper-deck-reveal) <sub>22</sub> · [GHB PPT Skill](#gallery-ghb-ppt-skill) <sub>1</sub> · [HTML Presentation Skill](#gallery-html-presentation-skill) <sub>5</sub> · [KR Brand Decks](#gallery-kr-brand-decks) <sub>24</sub> · [Slide Deck Skill](#gallery-slide-deck-skill) <sub>6</sub> · [Marp Slides Studio](#gallery-marp-slides-studio) <sub>9</sub>
+**Jump to:** [PPT Master](#gallery-ppt-master) <sub>24</sub> · [Frontend Slides](#gallery-frontend-slides) <sub>24</sub> · [Guizang PPT Skill](#gallery-guizang-ppt-skill) <sub>13</sub> · [Huashu Design](#gallery-huashu-design) <sub>24</sub> · [HTML PPT Studio](#gallery-html-ppt-skill) <sub>24</sub> · [open-slide](#gallery-open-slide) <sub>16</sub> · [Beautiful HTML Templates](#gallery-beautiful-html-templates) <sub>24</sub> · [Codex Slides](#gallery-codex-slides) <sub>24</sub> · [PPT Agent Workflow San](#gallery-ppt-agent-workflow-san) <sub>10</sub> · [Frontend Slides Editable](#gallery-frontend-slides-editable) <sub>24</sub> · [Mck PPT Design System](#gallery-mck-ppt-design-skill) <sub>6</sub> · [PPT SVG Generator](#gallery-ppt-svg-generator) <sub>2</sub> · [PPT Agent Skill](#gallery-ppt-agent-skill) <sub>24</sub> · [HTML Slides](#gallery-html-slides-bluedusk) <sub>4</sub> · [KingDee PPT Skill](#gallery-kingdee-ppt-skill) <sub>1</sub> · [next-slide](#gallery-next-slide) <sub>1</sub> · [Slide Creator](#gallery-slide-creator) <sub>23</sub> · [Slide Writer](#gallery-slide-writer) <sub>5</sub> · [Skills Slides](#gallery-skills-slides) <sub>4</sub> · [PowerPoint Fancy Design](#gallery-powerpoint-fancy-design) <sub>24</sub> · [PPTX from Layouts](#gallery-pptx-from-layouts) <sub>1</sub> · [Excalidraw Slides Generator](#gallery-excalidraw-slides-skills) <sub>5</sub> · [Econ Slides Skill](#gallery-econ-slides-skill) <sub>5</sub> · [OpenCode PPT Studio](#gallery-oc-sdk-ppt) <sub>3</sub> · [KR Brand Decks](#gallery-kr-brand-decks) <sub>24</sub> · [CUHK Slides Template (HTML)](#gallery-cuhk-slides-template-html) <sub>2</sub> · [3D HTML Slide Skill](#gallery-3d-html-slide-skill) <sub>2</sub> · [Image to Editable PPT Skill (zhoujie97)](#gallery-image-to-editable-ppt-skill-zhoujie97) <sub>4</sub> · [TaoHtml](#gallery-taohtml) <sub>12</sub> · [TikTok Slideshow Command Center](#gallery-vyral-tiktok-slideshow-skill) <sub>6</sub> · [PPTWork](#gallery-pptwork) <sub>24</sub> · [Inspiration Deck Workshop](#gallery-inspiration-deck-workshop) <sub>23</sub> · [University PPT Skill](#gallery-university-ppt-skill) <sub>10</sub> · [Claude PPT Skills](#gallery-claude-ppt-skills) <sub>3</sub> · [Course HTML Slides Builder](#gallery-course-html-slides-skill) <sub>9</sub> · [Google Slides Deck Skill](#gallery-google-slides-skill) <sub>1</sub> · [PPTX Deck Creation Kit](#gallery-agent-pptify-kit) <sub>3</sub> · [PPT Deck Builder Skill](#gallery-ppt-deck-builder-skill) <sub>4</sub> · [Paper Deck Reveal](#gallery-paper-deck-reveal) <sub>22</sub> · [GHB PPT Skill](#gallery-ghb-ppt-skill) <sub>1</sub> · [HTML Presentation Skill](#gallery-html-presentation-skill) <sub>5</sub> · [Slide Deck Skill](#gallery-slide-deck-skill) <sub>6</sub> · [Marp Slides Studio](#gallery-marp-slides-studio) <sub>9</sub>
 
 <a id="gallery-ppt-master"></a>
 
@@ -2190,6 +2190,116 @@ git clone https://github.com/hanlulong/econ-slides-skill ~/.claude/skills/econ-s
 
 <sub><b>构建日志：校验失败后自动修复并重试</b> · <a href="https://github.com/Honghurumeng/oc_sdk_ppt/blob/3e2b8ba28d8c49f36c1bf1f98b14f4c3596dd9bd/images/2.png"><code>images/2.png</code></a></sub>
 
+<a id="gallery-kr-brand-decks"></a>
+
+#### [KR Brand Decks](https://github.com/sylvanus4/kr-brand-decks) · 5~ ⭐ · Templates
+
+<sub>23 skills, one per Korean enterprise brand, each building an on-brand PPTX from scratch.</sub>
+
+<sub>24 of 30 images in [`sylvanus4/kr-brand-decks`](https://github.com/sylvanus4/kr-brand-decks) · the leading frames are the ones the project puts in its own README</sub>
+
+```bash
+/plugin marketplace add sylvanus4/kr-brand-decks && /plugin install kr-brand-decks@kr-brand-decks
+```
+
+<sub><b>Styles below</b> `gallery` · `themes-gallery` · `celltrion` · `cj-cheiljedang` · `doosan` · `hanwha` · `hd-hyundai` · `hyundai-motor` · `kakao` · `kb-financial` · `kia` · `lg-electronics` — name one when you ask for a deck. These are the project's own strings, taken from the filenames and captions linked under each image, not names this registry made up.</sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/docs/gallery.png" width="100%" alt="Gallery of 23 brand cover slides">
+
+<sub><b>Gallery of 23 brand cover slides</b> · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/docs/gallery.png"><code>docs/gallery.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/docs/themes-gallery.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Themes Gallery</b> · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/docs/themes-gallery.png"><code>docs/themes-gallery.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-celltrion/examples/celltrion-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Celltrion</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-celltrion/examples/celltrion-cover.png"><code>skills/deck-celltrion/examples/celltrion-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-cj-cheiljedang/examples/cj-cheiljedang-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Cj Cheiljedang</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-cj-cheiljedang/examples/cj-cheiljedang-cover.png"><code>skills/deck-cj-cheiljedang/examples/cj-cheiljedang-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-doosan/examples/doosan-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Doosan</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-doosan/examples/doosan-cover.png"><code>skills/deck-doosan/examples/doosan-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-hanwha/examples/hanwha-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Hanwha</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-hanwha/examples/hanwha-cover.png"><code>skills/deck-hanwha/examples/hanwha-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-hd-hyundai/examples/hd-hyundai-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Hd Hyundai</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-hd-hyundai/examples/hd-hyundai-cover.png"><code>skills/deck-hd-hyundai/examples/hd-hyundai-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-hyundai-motor/examples/hyundai-motor-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Hyundai Motor</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-hyundai-motor/examples/hyundai-motor-cover.png"><code>skills/deck-hyundai-motor/examples/hyundai-motor-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-kakao/examples/kakao-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Kakao</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-kakao/examples/kakao-cover.png"><code>skills/deck-kakao/examples/kakao-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-kb-financial/examples/kb-financial-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Kb Financial</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-kb-financial/examples/kb-financial-cover.png"><code>skills/deck-kb-financial/examples/kb-financial-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-kia/examples/kia-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Kia</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-kia/examples/kia-cover.png"><code>skills/deck-kia/examples/kia-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-lg-electronics/examples/lg-electronics-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Lg Electronics</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-lg-electronics/examples/lg-electronics-cover.png"><code>skills/deck-lg-electronics/examples/lg-electronics-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-lg-energy/examples/lg-energy-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Lg Energy</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-lg-energy/examples/lg-energy-cover.png"><code>skills/deck-lg-energy/examples/lg-energy-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-naver/examples/naver-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Naver</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-naver/examples/naver-cover.png"><code>skills/deck-naver/examples/naver-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-ncsoft/examples/ncsoft-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Ncsoft</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-ncsoft/examples/ncsoft-cover.png"><code>skills/deck-ncsoft/examples/ncsoft-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-ncsoft/examples/tmpc-01.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Tmpc · 01</b> · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-ncsoft/examples/tmpc-01.png"><code>skills/deck-ncsoft/examples/tmpc-01.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-nongshim/examples/nongshim-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Nongshim</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-nongshim/examples/nongshim-cover.png"><code>skills/deck-nongshim/examples/nongshim-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-posco/examples/posco-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Posco</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-posco/examples/posco-cover.png"><code>skills/deck-posco/examples/posco-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-mobile/examples/samsung-mobile-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Samsung Mobile</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-mobile/examples/samsung-mobile-cover.png"><code>skills/deck-samsung-mobile/examples/samsung-mobile-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-sdi/examples/samsung-sdi-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Samsung Sdi</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-sdi/examples/samsung-sdi-cover.png"><code>skills/deck-samsung-sdi/examples/samsung-sdi-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-semi/examples/samsung-semi-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Samsung Semi</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-semi/examples/samsung-semi-cover.png"><code>skills/deck-samsung-semi/examples/samsung-semi-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-semi/examples/tmpc-01.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Tmpc · 01</b> · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-semi/examples/tmpc-01.png"><code>skills/deck-samsung-semi/examples/tmpc-01.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-shinhan/examples/shinhan-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Shinhan</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-shinhan/examples/shinhan-cover.png"><code>skills/deck-shinhan/examples/shinhan-cover.png</code></a></sub>
+
+<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-sk-hynix/examples/sk-hynix-cover.png" width="100%" alt="KR Brand Decks sample">
+
+<sub><b>Sk Hynix</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-sk-hynix/examples/sk-hynix-cover.png"><code>skills/deck-sk-hynix/examples/sk-hynix-cover.png</code></a></sub>
+
 <a id="gallery-cuhk-slides-template-html"></a>
 
 #### [CUHK Slides Template (HTML)](https://github.com/HarlandZZC/cuhk-slides-template-html) · 4 ⭐ · Templates
@@ -2899,116 +3009,6 @@ python3 -m pip install -r requirements.txt && python3 scripts/ghb_ppt.py doctor
 <img src="https://raw.githubusercontent.com/defreitassl/html-presentation-skill/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/who-air-pollution-dossier.png" width="100%" alt="WHO Ambient Air Pollution Dossier preview">
 
 <sub><b>WHO Ambient Air Pollution Dossier preview</b> · <code>who-air-pollution-dossier</code> · <a href="https://github.com/defreitassl/html-presentation-skill/blob/1e3b4d19d815d1d79b51a2faaf3197a6a272f10a/assets/previews/who-air-pollution-dossier.png"><code>assets/previews/who-air-pollution-dossier.png</code></a></sub>
-
-<a id="gallery-kr-brand-decks"></a>
-
-#### [KR Brand Decks](https://github.com/sylvanus4/kr-brand-decks) · — ⭐ · Templates
-
-<sub>23 skills, one per Korean enterprise brand, each building an on-brand PPTX from scratch.</sub>
-
-<sub>24 of 30 images in [`sylvanus4/kr-brand-decks`](https://github.com/sylvanus4/kr-brand-decks) · the leading frames are the ones the project puts in its own README</sub>
-
-```bash
-/plugin marketplace add sylvanus4/kr-brand-decks && /plugin install kr-brand-decks@kr-brand-decks
-```
-
-<sub><b>Styles below</b> `gallery` · `themes-gallery` · `celltrion` · `cj-cheiljedang` · `doosan` · `hanwha` · `hd-hyundai` · `hyundai-motor` · `kakao` · `kb-financial` · `kia` · `lg-electronics` — name one when you ask for a deck. These are the project's own strings, taken from the filenames and captions linked under each image, not names this registry made up.</sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/docs/gallery.png" width="100%" alt="Gallery of 23 brand cover slides">
-
-<sub><b>Gallery of 23 brand cover slides</b> · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/docs/gallery.png"><code>docs/gallery.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/docs/themes-gallery.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Themes Gallery</b> · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/docs/themes-gallery.png"><code>docs/themes-gallery.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-celltrion/examples/celltrion-cover.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Celltrion</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-celltrion/examples/celltrion-cover.png"><code>skills/deck-celltrion/examples/celltrion-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-cj-cheiljedang/examples/cj-cheiljedang-cover.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Cj Cheiljedang</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-cj-cheiljedang/examples/cj-cheiljedang-cover.png"><code>skills/deck-cj-cheiljedang/examples/cj-cheiljedang-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-doosan/examples/doosan-cover.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Doosan</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-doosan/examples/doosan-cover.png"><code>skills/deck-doosan/examples/doosan-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-hanwha/examples/hanwha-cover.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Hanwha</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-hanwha/examples/hanwha-cover.png"><code>skills/deck-hanwha/examples/hanwha-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-hd-hyundai/examples/hd-hyundai-cover.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Hd Hyundai</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-hd-hyundai/examples/hd-hyundai-cover.png"><code>skills/deck-hd-hyundai/examples/hd-hyundai-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-hyundai-motor/examples/hyundai-motor-cover.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Hyundai Motor</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-hyundai-motor/examples/hyundai-motor-cover.png"><code>skills/deck-hyundai-motor/examples/hyundai-motor-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-kakao/examples/kakao-cover.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Kakao</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-kakao/examples/kakao-cover.png"><code>skills/deck-kakao/examples/kakao-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-kb-financial/examples/kb-financial-cover.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Kb Financial</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-kb-financial/examples/kb-financial-cover.png"><code>skills/deck-kb-financial/examples/kb-financial-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-kia/examples/kia-cover.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Kia</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-kia/examples/kia-cover.png"><code>skills/deck-kia/examples/kia-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-lg-electronics/examples/lg-electronics-cover.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Lg Electronics</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-lg-electronics/examples/lg-electronics-cover.png"><code>skills/deck-lg-electronics/examples/lg-electronics-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-lg-energy/examples/lg-energy-cover.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Lg Energy</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-lg-energy/examples/lg-energy-cover.png"><code>skills/deck-lg-energy/examples/lg-energy-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-naver/examples/naver-cover.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Naver</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-naver/examples/naver-cover.png"><code>skills/deck-naver/examples/naver-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-ncsoft/examples/ncsoft-cover.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Ncsoft</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-ncsoft/examples/ncsoft-cover.png"><code>skills/deck-ncsoft/examples/ncsoft-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-ncsoft/examples/tmpc-01.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Tmpc · 01</b> · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-ncsoft/examples/tmpc-01.png"><code>skills/deck-ncsoft/examples/tmpc-01.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-nongshim/examples/nongshim-cover.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Nongshim</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-nongshim/examples/nongshim-cover.png"><code>skills/deck-nongshim/examples/nongshim-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-posco/examples/posco-cover.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Posco</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-posco/examples/posco-cover.png"><code>skills/deck-posco/examples/posco-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-mobile/examples/samsung-mobile-cover.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Samsung Mobile</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-mobile/examples/samsung-mobile-cover.png"><code>skills/deck-samsung-mobile/examples/samsung-mobile-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-sdi/examples/samsung-sdi-cover.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Samsung Sdi</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-sdi/examples/samsung-sdi-cover.png"><code>skills/deck-samsung-sdi/examples/samsung-sdi-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-semi/examples/samsung-semi-cover.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Samsung Semi</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-semi/examples/samsung-semi-cover.png"><code>skills/deck-samsung-semi/examples/samsung-semi-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-semi/examples/tmpc-01.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Tmpc · 01</b> · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-samsung-semi/examples/tmpc-01.png"><code>skills/deck-samsung-semi/examples/tmpc-01.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-shinhan/examples/shinhan-cover.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Shinhan</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-shinhan/examples/shinhan-cover.png"><code>skills/deck-shinhan/examples/shinhan-cover.png</code></a></sub>
-
-<img src="https://raw.githubusercontent.com/sylvanus4/kr-brand-decks/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-sk-hynix/examples/sk-hynix-cover.png" width="100%" alt="KR Brand Decks sample">
-
-<sub><b>Sk Hynix</b> · cover · <a href="https://github.com/sylvanus4/kr-brand-decks/blob/c6735ab91fb24afe31220358b419f87fb171d6d1/skills/deck-sk-hynix/examples/sk-hynix-cover.png"><code>skills/deck-sk-hynix/examples/sk-hynix-cover.png</code></a></sub>
 
 <a id="gallery-slide-deck-skill"></a>
 

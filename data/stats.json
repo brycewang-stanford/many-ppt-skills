@@ -2116,6 +2116,18 @@
       "homepage": null,
       "default_branch": "main"
     },
+    "sylvanus4/kr-brand-decks": {
+      "stars": 5,
+      "forks": 0,
+      "open_issues": 0,
+      "license": "NOASSERTION",
+      "created_at": "2026-07-09",
+      "pushed_at": "2026-08-08",
+      "archived": false,
+      "homepage": null,
+      "default_branch": "main",
+      "stale": true
+    },
     "includewudi/web-ppt": {
       "stars": 4,
       "forks": 1,
