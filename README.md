@@ -1,3 +1,5 @@
+![PPT 模板大全：227 个 Skills / 项目精选，436 张 README 样图](assets/ppt-template-atlas.png)
+
 <div align="center">
 
 # many-ppt-skills
