@@ -201,7 +201,8 @@ options, tell them not to name one.
 ## What else is here
 
 - `README.md` (Chinese) / `README.en.md` — the registry, the documented
-  capability grid, and the full sample gallery with usage instructions.
+  capability grid, and a two-frames-per-skill gallery with usage instructions.
+  The full harvest (up to 24 images per skill) stays in `data/samples.json`.
 - `principles/` — eight patterns extracted from reading these projects' source.
   Worth reading if the user is *writing* a skill rather than choosing one.
 - `data/skills.json` — the only hand-maintained data file. Everything else is

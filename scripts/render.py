@@ -458,14 +458,85 @@ def render_motion(data: dict, stats: dict, lang: str) -> str:
 
 SAMPLES = ROOT / "data" / "samples.json"
 
-# Every image the harvest kept, rendered at full width, one per line. A slide is
-# a dense object — a 32%-wide thumbnail of a 1920x1080 deck is ~300px across,
-# which is too small to read the type or judge the hierarchy, and judging exactly
-# those things is the entire reason to look. Downsizing them to fit more per row
-# optimises the page at the expense of the decision it exists to support.
-#
-# The cost is a long page, paid back by the jump index above the gallery.
-GALLERY_MAX = 24
+# Two frames per skill, each at full width. The harvest keeps up to 24 per
+# project in data/samples.json — that is where `pick.py styles` reads every
+# style id — but the page shows two. The reader's question here is which
+# *projects* to keep, not which slide of one, and two content-heavy frames
+# answer it; a 24-image run of one deck answered a question nobody asked and
+# put the page at 337KB. Still full width rather than a contact sheet: a slide
+# at 300px shows the palette and nothing else, and the palette is the one thing
+# the reader is not choosing on.
+GALLERY_MAX = 2
+
+# Frames that show a project's hand least. A title slide is the one slide every
+# deck gets right, and a `thumbnail.png` says nothing about which style it is.
+SPARSE_ROLES = {"cover", "title", "thanks", "toc", "end", "closing", "agenda"}
+GENERIC_STYLES = {
+    "thumbnail", "thumbnails", "preview", "previews", "screenshot", "screenshots",
+    "cover", "slide", "slides", "image", "images", "demo", "example", "examples",
+    "showcase", "sample", "samples", "output", "result", "screen", "page",
+}
+_FIRST_FRAME = re.compile(r"(?:^|[^0-9])0*1$")
+
+
+def is_first_frame(sample: dict) -> bool:
+    """`soft-editorial-1.png`, `Animation Showcase · 01`: frame one of a deck,
+    which is nearly always the cover — sparse by design."""
+    stem = Path(sample.get("path") or "").stem.lower()
+    label = (sample.get("label") or "").lower()
+    return bool(_FIRST_FRAME.search(stem)
+                or re.search(r"(?:slide\s*|·\s*|#\s*)0*1\s*$", label))
+
+
+def richness(sample: dict) -> tuple:
+    """Higher sorts first. Content slides over covers, the project's own README
+    picks over stray assets, later frames over frame one, a named style over
+    a generic filename, then sheer pixels — a 1920x1080 PNG carries more to
+    read than an 800px GIF."""
+    w, h = sample.get("width") or 0, sample.get("height") or 0
+    style = (sample.get("style") or "").lower()
+    return (
+        (sample.get("role") or "") not in SPARSE_ROLES,
+        sample.get("source") == "showcase",
+        not is_first_frame(sample),
+        bool(style) and style not in GENERIC_STYLES,
+        1.2 <= (w / h if h else 1.78) <= 2.2,
+        w * h if w and h else 1920 * 1080,
+    )
+
+
+def pick_frames(samples: list[dict], n: int = GALLERY_MAX) -> list[dict]:
+    """The n richest frames, spread across styles where the project has more
+    than one: the second frame should tell the reader something the first did
+    not, and a second slide of the same template rarely does."""
+    ranked = sorted(samples, key=richness, reverse=True)
+    picks: list[dict] = []
+    used: set[str] = set()
+    for s in ranked:
+        if len(picks) >= n:
+            break
+        st = (s.get("style") or "").lower()
+        if st and st in used:
+            continue
+        picks.append(s)
+        used.add(st)
+    for s in ranked:                      # fewer styles than n: allow repeats
+        if len(picks) >= n:
+            break
+        if s not in picks:
+            picks.append(s)
+    return picks
+
+
+def style_ids(entry: dict) -> list[str]:
+    """Every style id the harvest recorded for a skill, minus tokens that are
+    filenames rather than names — nobody should be told to ask for `thumbnail`."""
+    out: list[str] = []
+    for s in entry.get("samples", []):
+        st = s.get("style")
+        if st and st.lower() not in GENERIC_STYLES and st not in out:
+            out.append(st)
+    return out
 
 
 # What each install method in data/skills.json actually does. Five of them, and
@@ -543,7 +614,8 @@ def caption(sample: dict, skill: dict, lang: str) -> str:
         bits.append(f"<b>{label}</b>")
 
     style = sample.get("style")
-    if style and style.lower() not in label.lower().replace(" ", "-"):
+    if (style and style.lower() not in GENERIC_STYLES
+            and style.lower() not in label.lower().replace(" ", "-")):
         bits.append(f"<code>{style}</code>")
 
     role = ROLE_LABEL.get(sample.get("role") or "")
@@ -565,8 +637,15 @@ def caption(sample: dict, skill: dict, lang: str) -> str:
     return "<sub>" + " · ".join(bits) + "</sub>"
 
 
-def reproduce_block(skill: dict, picks: list[dict], lang: str) -> str:
-    """Install command plus the style names visible in this skill's own images.
+STYLES_SHOWN = 12
+
+
+def reproduce_block(skill: dict, entry: dict, lang: str) -> str:
+    """Install command plus the style ids the harvest found for this skill.
+
+    The ids come from the whole harvest, not from the two frames shown: the
+    frames are there to judge the project's hand, the ids are what you name in
+    a prompt, and the second list is usually longer than the first.
 
     Deliberately does not invent an invocation syntax. The install line is
     curated in data/skills.json; the style names are the project's own strings.
@@ -575,12 +654,10 @@ def reproduce_block(skill: dict, picks: list[dict], lang: str) -> str:
     the page.
     """
     install = (skill.get("install") or {}).get("command", "").strip()
-    styles: list[str] = []
-    for s in picks:
-        st = s.get("style")
-        if st and st not in styles:
-            styles.append(st)
-    styles = styles[:12]
+    styles = style_ids(entry)
+    more = max(0, len(styles) - STYLES_SHOWN)
+    styles = styles[:STYLES_SHOWN]
+    cmd = f"python scripts/pick.py styles {skill['id']}"
 
     out: list[str] = []
     if install:
@@ -588,27 +665,29 @@ def reproduce_block(skill: dict, picks: list[dict], lang: str) -> str:
     if styles:
         listed = " · ".join(f"`{s}`" for s in styles)
         if lang == "en":
+            tail = (f" · {more} more via `{cmd}`" if more else "")
             out.append(
-                f"<sub><b>Styles below</b> {listed} — name one when you ask for a "
-                "deck. These are the project's own strings, taken from the "
-                "filenames and captions linked under each image, not names this "
-                "registry made up.</sub>\n"
+                f"<sub><b>Style ids</b> {listed}{tail} — name one when you ask "
+                "for a deck. These are the project's own strings, read from its "
+                "filenames and captions, not names this registry made up; each "
+                "id's own sample image is listed by that command.</sub>\n"
             )
         else:
+            tail = (f" · 还有 {more} 个，`{cmd}` 全部列出" if more else "")
             out.append(
-                f"<sub><b>下面出现的风格</b> {listed} —— 要哪个就在提示里点名。"
-                "这些是<b>项目自己用的字符串</b>，取自每张图下面链接的文件名与说明，"
-                "不是本仓库起的名字。</sub>\n"
+                f"<sub><b>风格 id</b> {listed}{tail} —— 要哪个就在提示里点名。"
+                "这些是<b>项目自己用的字符串</b>，读自它的文件名与图注，不是本仓库起的名字；"
+                "每个 id 对应的样图用那条命令能查到。</sub>\n"
             )
     return "\n".join(out)
 
 
 def render_gallery(data: dict, stats: dict, lang: str) -> str:
-    """A picture of what each skill produces.
+    """Two pictures of what each skill produces.
 
     Every image here is the *project's own* screenshot, lifted from its
     repository at a pinned commit. None of them were produced by running the
-    skill, so this is a gallery of what 26 teams chose to show off — closer to
+    skill, so this is a gallery of what each team chose to show off — closer to
     marketing than to measurement, and labelled that way. It is still the
     fastest way to answer the question the tables cannot.
     """
@@ -627,20 +706,15 @@ def render_gallery(data: dict, stats: dict, lang: str) -> str:
     out: list[str] = []
     shown = 0
 
-    # Full-size images make a long page, so the way in is an index rather than a
-    # scroll. Explicit anchors, because GitHub's generated heading slugs would
-    # have to be reverse-engineered from a heading carrying a link and a star count.
+    # Explicit anchors, because GitHub's generated heading slugs would have to
+    # be reverse-engineered from a heading carrying a link and a star count.
     if withimg:
-        jumps = " · ".join(
-            f"[{s['name']}](#gallery-{s['id']}) "
-            f"<sub>{len((by_skill[s['id']])['samples'])}</sub>"
-            for s in withimg
-        )
+        jumps = " · ".join(f"[{s['name']}](#gallery-{s['id']})" for s in withimg)
         out.append(("**Jump to:** " if lang == "en" else "**跳到：**") + jumps + "\n")
 
     for skill in withimg:
         entry = by_skill[skill["id"]]
-        picks = entry["samples"][:GALLERY_MAX]
+        picks = pick_frames(entry["samples"])
         shown += len(picks)
         stars = fmt_stars(skill, stats)
         route = ROUTE_LABEL[skill["route"]][0 if lang == "en" else 1]
@@ -651,20 +725,18 @@ def render_gallery(data: dict, stats: dict, lang: str) -> str:
         out.append(f"<sub>{tag}</sub>\n")
 
         found = entry.get("found", len(entry["samples"]))
-        origin = "showcase" if picks[0]["source"] == "showcase" else "repo"
+        own = sum(1 for s in picks if s.get("source") == "showcase")
+        repo = f"[`{entry.get('repo') or skill['repo']}`]({repo_link(skill)})"
         if lang == "en":
-            note = (f"<sub>{len(picks)} of {found} images in "
-                    f"[`{entry.get('repo') or skill['repo']}`]({repo_link(skill)})"
-                    + (" · the leading frames are the ones the project puts in its "
-                       "own README" if origin == "showcase" else "")
-                    + "</sub>")
+            origin = {0: "", 1: " · one of them is the project's own README pick",
+                      2: " · both are the project's own README picks"}[min(own, 2)]
+            note = f"<sub>{len(picks)} of {found} images in {repo}{origin}</sub>"
         else:
-            note = (f"<sub>取自 [`{entry.get('repo') or skill['repo']}`]({repo_link(skill)}) "
-                    f"的 {found} 张图，此处 {len(picks)} 张"
-                    + ("，靠前的几张是项目自己放在 README 里的" if origin == "showcase" else "")
-                    + "</sub>")
+            origin = {0: "", 1: "，其中一张是项目自己放在 README 里的",
+                      2: "，两张都是项目自己放在 README 里的"}[min(own, 2)]
+            note = f"<sub>{repo} 里有 {found} 张图，这里挑了 {len(picks)} 张{origin}</sub>"
         out.append(note + "\n")
-        out.append(reproduce_block(skill, picks, lang))
+        out.append(reproduce_block(skill, entry, lang))
 
         # width="100%" rather than a pixel size: GitHub's content column is a
         # different width on desktop, mobile and in the sidebar preview, and a
@@ -683,23 +755,31 @@ def render_gallery(data: dict, stats: dict, lang: str) -> str:
             else f"<sub>以下项目的仓库里没有可用图片：{names}。</sub>\n"
         )
 
+    kept = sum(len(v.get("samples") or []) for v in by_skill.values())
     if lang == "en":
         out.append(
-            f"<sub>**{shown} images, all of them the projects' own**, shown full size "
-            "rather than as thumbnails — a slide is too dense to judge at 300px. Each "
-            "was read from its repository at a pinned commit, credited in the caption "
-            "above it, and served from that repository rather than copied here. "
-            "Nothing was produced by running a skill, so treat it as what each team "
-            "chose to show off — not as a like-for-like comparison. "
-            "Regenerate with `python scripts/fetch_samples.py`.</sub>"
+            f"<sub>**{shown} images, all of them the projects' own**, two per skill "
+            f"out of the {kept} the harvest keeps in "
+            "[`data/samples.json`](data/samples.json). The two are chosen for "
+            "content, not order: a slide with something on it over a title slide, "
+            "the project's own README picks over stray assets, and two different "
+            "styles where the project has them. Each was read from its repository "
+            "at a pinned commit, credited in the caption under it, and served from "
+            "that repository rather than copied here. Nothing was produced by "
+            "running a skill, so treat it as what each team chose to show off — not "
+            "as a like-for-like comparison. Regenerate with "
+            "`python scripts/fetch_samples.py`.</sub>"
         )
     else:
         out.append(
-            f"<sub>**共 {shown} 张，全部来自各项目自己的仓库**，按原尺寸完整展示、不做缩略图 —— "
-            "幻灯片信息密度高，缩到 300px 根本看不清字体和层次。每张都读自锁定的 commit，"
-            "出处写在它上方的说明里，并且直接由原仓库提供、没有复制到本仓库。"
-            "**没有任何一张是本仓库跑出来的**，所以它反映的是每个团队愿意拿出来展示的样子，"
-            "不是同题横评。用 `python scripts/fetch_samples.py` 重新生成。</sub>"
+            f"<sub>**共 {shown} 张，全部来自各项目自己的仓库**，每个 skill 两张，"
+            f"从 [`data/samples.json`](data/samples.json) 收着的 {kept} 张里挑。"
+            "挑的标准是内容而不是顺序：有内容的页优先于标题页，项目自己放进 README 的"
+            "优先于仓库里散落的素材，项目有多种风格时两张取不同风格。"
+            "每张都读自锁定的 commit，出处写在它下方的说明里，并且直接由原仓库提供、"
+            "没有复制到本仓库。**没有任何一张是本仓库跑出来的**，所以它反映的是每个团队"
+            "愿意拿出来展示的样子，不是同题横评。用 `python scripts/fetch_samples.py` "
+            "重新生成。</sub>"
         )
     return "\n".join(out)
 
